@@ -9,7 +9,8 @@ Agregador inicial de fuentes públicas de ciberseguridad, vulnerabilidades e inc
 - Consulta de CVE recientes mediante la API de NVD.
 - Normalización básica de URLs y títulos.
 - Deduplicación conservadora por URL y título exacto normalizado.
-- Panel web con búsqueda, filtros, categorías, regiones y estado de fuentes.
+- Panel web interactivo (`index.html`) con búsqueda, filtros, categorías, regiones y estado de fuentes.
+- Wallboard automático (`wallboard.html`) para pantallas de sala de monitoreo: sin scroll, indicadores, alertas prioritarias persistentes, rotación de publicaciones y reloj.
 - Actualización automática con GitHub Actions.
 - Datos públicos guardados en `data/incidents.json`.
 
@@ -41,13 +42,13 @@ pip install -r requirements.txt
 python scripts/collect.py
 ```
 
-Después, abre `index.html` en un navegador. Para evitar limitaciones del navegador al cargar JSON local, es mejor usar un servidor local sencillo:
+Después, abre `index.html` para el panel interactivo o `wallboard.html` para la pantalla de monitoreo. Para evitar limitaciones del navegador al cargar JSON local, es mejor usar un servidor local sencillo:
 
 ```bash
 python -m http.server 8000
 ```
 
-Luego visita `http://localhost:8000`.
+Luego visita `http://localhost:8000` para el panel interactivo o `http://localhost:8000/wallboard.html` para el wallboard.
 
 ## Publicar en GitHub Pages
 
@@ -60,6 +61,16 @@ Luego visita `http://localhost:8000`.
 7. Abre **Actions**, selecciona **Actualizar inteligencia pública** y ejecuta **Run workflow** para probar la primera recopilación.
 8. Revisa los registros de ejecución y el archivo `data/incidents.json`.
 9. Cuando Pages termine de publicar, usa la URL que aparece en **Settings → Pages**.
+10. Para el panel interactivo, abre `https://TU-USUARIO.github.io/cyberwatch-intel/`. Para la pantalla de sala, abre `https://TU-USUARIO.github.io/cyberwatch-intel/wallboard.html`. Sustituye `TU-USUARIO` por tu usuario de GitHub.
+11. En el equipo conectado a la pantalla, usa el navegador en pantalla completa. El botón ⛶ del wallboard activa pantalla completa; en algunos navegadores puede requerir una interacción inicial.
+
+## Wallboard para sala de monitoreo
+
+`wallboard.html` está diseñado para permanecer visible en una pantalla sin que una persona tenga que desplazarse por la página. Muestra indicadores generales, hasta tres alertas de prioridad alta, una publicación destacada que rota automáticamente cada 18 segundos, actividad reciente, hora local de Santiago y estado de las fuentes. Revisa si hay datos nuevos cada 60 segundos.
+
+Las alertas se priorizan a partir de los campos disponibles (CISA KEV, severidad y CVSS). Esto es una regla orientativa, no una evaluación completa del riesgo ni una confirmación de que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
+
+El wallboard utiliza el mismo `data/incidents.json` que el panel interactivo. No requiere una base de datos ni servicios pagados adicionales. Si el navegador o la pantalla se reinician, configura el equipo para volver a abrir la URL del wallboard.
 
 ## API de NVD
 
