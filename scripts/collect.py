@@ -390,6 +390,41 @@ def main() -> None:
         }
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    # Conserva collected_at en registros sin cambios y evita commits periódicos
+    # cuando el contenido y el estado de las fuentes siguen siendo iguales.
+    previous = None
+    if OUTPUT_PATH.exists():
+        try:
+            previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            previous = None
+
+    if isinstance(previous, dict):
+        previous_by_id = {str(item.get("id") or item.get("url") or item.get("title")): item
+                          for item in previous.get("items", []) if isinstance(item, dict)}
+        for item in payload["items"]:
+            key = str(item.get("id") or item.get("url") or item.get("title"))
+            old_item = previous_by_id.get(key)
+            if old_item:
+                old_comparable = {k: v for k, v in old_item.items() if k != "collected_at"}
+                new_comparable = {k: v for k, v in item.items() if k != "collected_at"}
+                if old_comparable == new_comparable and old_item.get("collected_at"):
+                    item["collected_at"] = old_item["collected_at"]
+
+        def comparable(data: dict) -> dict:
+            return {
+                "items": [{k: v for k, v in item.items() if k != "collected_at"}
+                          for item in data.get("items", [])],
+                "source_status": data.get("source_status", []),
+                "notice": data.get("notice", ""),
+                "stats": data.get("stats", {})
+            }
+
+        if comparable(previous) == comparable(payload):
+            logging.info("Sin cambios sustantivos; se conserva el archivo publicado para evitar commits innecesarios.")
+            return
+
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     logging.info("Guardado %s con %s publicaciones únicas", OUTPUT_PATH, len(unique_items))
 
