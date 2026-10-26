@@ -1,0 +1,109 @@
+{
+  "rss_sources": [
+    {
+      "name": "CISA Cybersecurity Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "category": "Gobierno / Alertas",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "Cisco Talos",
+      "url": "https://blog.talosintelligence.com/rss/",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/feed/",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "category": "Noticias de ciberseguridad",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado"
+      ]
+    },
+    {
+      "name": "NCSC UK",
+      "url": "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml",
+      "category": "Gobierno / Alertas",
+      "region": "Reino Unido",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "CERT-EU",
+      "url": "https://cert.europa.eu/publications/security-advisories-rss",
+      "category": "Gobierno / Alertas",
+      "region": "Europa",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "NIST Cybersecurity Insights",
+      "url": "https://www.nist.gov/blogs/cybersecurity-insights/rss.xml",
+      "category": "Investigación / Estándares",
+      "region": "Estados Unidos",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/rssfeed.xml",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    }
+  ],
+  "structured_sources": [
+    {
+      "name": "CISA Known Exploited Vulnerabilities (KEV)",
+      "type": "cisa_kev",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "category": "Vulnerabilidades explotadas",
+      "region": "Global"
+    },
+    {
+      "name": "NVD CVE API",
+      "type": "nvd_recent",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "lookback_days": 7,
+      "results_per_page": 100
+    }
+  ]
+}

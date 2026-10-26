@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agregador público de noticias, vulnerabilidades y alertas de ciberseguridad.">
+  <title>CyberWatch Intel | Centro de monitoreo</title>
+  <style>
+    :root {
+      --bg: #0b1220; --panel: #121d30; --panel2: #17243a; --text: #e8eef8;
+      --muted: #9fb0c8; --line: #263650; --accent: #58b7ff; --red: #ff7272;
+      --yellow: #ffd166; --green: #68dba5;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+    header { padding: 26px clamp(16px, 4vw, 54px); border-bottom: 1px solid var(--line); background: #0e192b; }
+    .brand { display:flex; gap:14px; align-items:center; }
+    .logo { width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:#16395a; color:var(--accent); font-weight:900; font-size:22px; }
+    h1 { font-size: clamp(22px, 3vw, 32px); margin:0; letter-spacing:-.5px; }
+    header p { color:var(--muted); margin:6px 0 0; }
+    main { max-width:1450px; margin:auto; padding:26px clamp(14px, 3vw, 38px) 50px; }
+    .topline { display:flex; justify-content:space-between; gap:14px; align-items:center; flex-wrap:wrap; margin-bottom:20px; color:var(--muted); font-size:13px; }
+    .stats { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px; margin-bottom:22px; }
+    .stat, .filters, .card, .statusbox { background:var(--panel); border:1px solid var(--line); border-radius:14px; }
+    .stat { padding:18px; }
+    .stat span { display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.7px; }
+    .stat strong { display:block; font-size:28px; margin-top:8px; }
+    .filters { padding:15px; display:grid; grid-template-columns: minmax(200px,2fr) repeat(3,minmax(145px,1fr)) auto; gap:10px; margin-bottom:18px; }
+    input, select, button { width:100%; border-radius:9px; border:1px solid #344660; background:#0c1728; color:var(--text); padding:11px 12px; font:inherit; }
+    button { background:#1262a3; border-color:#1262a3; cursor:pointer; font-weight:700; }
+    button:hover { background:#1878c4; }
+    .statusbox { padding:12px 15px; margin-bottom:18px; color:var(--muted); font-size:13px; }
+    .layout { display:grid; grid-template-columns:minmax(0,1fr) 290px; gap:18px; align-items:start; }
+    .section-title { display:flex; justify-content:space-between; align-items:center; gap:10px; margin:4px 0 14px; }
+    .section-title h2 { font-size:18px; margin:0; }
+    .section-title small { color:var(--muted); }
+    #items { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .card { padding:17px; min-width:0; }
+    .badges { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:10px; }
+    .badge { display:inline-block; border-radius:6px; padding:4px 7px; background:#1b3551; color:#a8d9ff; font-size:11px; font-weight:750; }
+    .badge.red { background:#48252e; color:#ffb4b4; }
+    .badge.gold { background:#44391e; color:#ffe09a; }
+    .card h3 { font-size:16px; line-height:1.45; margin:0 0 9px; overflow-wrap:anywhere; }
+    .card p { color:#b5c2d4; font-size:13px; line-height:1.6; margin:0 0 13px; overflow-wrap:anywhere; }
+    .meta { color:var(--muted); font-size:11px; display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+    .read { color:var(--accent); text-decoration:none; font-size:13px; font-weight:750; }
+    .read:hover { text-decoration:underline; }
+    aside .card { margin-bottom:14px; }
+    aside h3 { margin:0 0 10px; font-size:15px; }
+    aside p, aside li { color:var(--muted); font-size:12px; line-height:1.6; }
+    aside ul { padding-left:17px; margin:0; }
+    .empty { grid-column:1/-1; text-align:center; color:var(--muted); padding:40px 20px; border:1px dashed var(--line); border-radius:14px; }
+    footer { text-align:center; color:var(--muted); padding:26px; border-top:1px solid var(--line); font-size:12px; }
+    @media (max-width:1000px) { .filters { grid-template-columns:repeat(2,minmax(0,1fr)); } .layout { grid-template-columns:1fr; } }
+    @media (max-width:700px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } #items { grid-template-columns:1fr; } .filters { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">CW</div>
+    <div>
+      <h1>CyberWatch Intel</h1>
+      <p>Centro de monitoreo de amenazas, vulnerabilidades e incidentes públicos</p>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="topline">
+    <span>Fuentes públicas · Enlaces originales · Deduplicación conservadora</span>
+    <span id="updated">Última actualización: pendiente</span>
+  </div>
+
+  <section class="stats" aria-label="Resumen">
+    <div class="stat"><span>Publicaciones visibles</span><strong id="total">—</strong></div>
+    <div class="stat"><span>Vulnerabilidades explotadas</span><strong id="kev">—</strong></div>
+    <div class="stat"><span>Publicaciones con CVE</span><strong id="withcve">—</strong></div>
+    <div class="stat"><span>Fuentes consultadas</span><strong id="sources">—</strong></div>
+  </section>
+
+  <section class="filters" aria-label="Filtros">
+    <input id="search" type="search" placeholder="Buscar título, fuente, CVE o palabras clave…" aria-label="Buscar">
+    <select id="type"><option value="">Todos los tipos</option><option value="vulnerability">Vulnerabilidades</option><option value="article">Artículos y alertas</option></select>
+    <select id="tag"><option value="">Todas las categorías</option></select>
+    <select id="region"><option value="">Todas las regiones</option></select>
+    <button id="reset" type="button">Limpiar filtros</button>
+  </section>
+
+  <div class="statusbox" id="status" role="status">Cargando los datos publicados…</div>
+
+  <div class="layout">
+    <section>
+      <div class="section-title"><h2>Últimas publicaciones</h2><small id="result-count"></small></div>
+      <div id="items"><div class="empty">Cargando publicaciones…</div></div>
+    </section>
+    <aside>
+      <div class="card">
+        <h3>Cómo interpretar este panel</h3>
+        <p>La plataforma organiza fuentes públicas; no confirma por sí sola que un incidente, una atribución o una reclamación sea verdadero. Abre siempre la fuente original.</p>
+      </div>
+      <div class="card">
+        <h3>Vulnerabilidades explotadas</h3>
+        <p>La etiqueta CISA KEV indica que la vulnerabilidad figura en el catálogo de vulnerabilidades conocidas como explotadas de CISA. No implica que todos los sistemas estén afectados.</p>
+      </div>
+      <div class="card">
+        <h3>Fuentes con errores</h3>
+        <ul id="source-status"><li>Estado aún no disponible.</li></ul>
+      </div>
+      <div class="card">
+        <h3>Próximas mejoras</h3>
+        <p>La arquitectura permite añadir agrupación de incidentes, resúmenes, historial de cambios y relaciones con MITRE ATT&CK sin rehacer la interfaz.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer>
+  CyberWatch Intel · Proyecto personal · Respeta las condiciones de cada fuente y consulta los avisos oficiales.
+</footer>
+<script>
+  const DATA_URL = "./data/incidents.json";
+  let allItems = [];
+  let payload = {};
+
+  const $ = id => document.getElementById(id);
+  const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  }[c]));
+
+  function formatDate(value) {
+    if (!value) return "Fecha no disponible";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "Fecha no disponible";
+    return new Intl.DateTimeFormat("es-CL", {
+      dateStyle: "medium", timeStyle: "short", timeZone: "America/Santiago"
+    }).format(date);
+  }
+
+  function setupFilters(items) {
+    const tags = [...new Set(items.flatMap(item => item.tags || []))].sort();
+    const regions = [...new Set(items.map(item => item.region).filter(Boolean))].sort();
+    $("tag").innerHTML = '<option value="">Todas las categorías</option>' +
+      tags.map(t => `<option value="${esc(t)}">${esc(t.replaceAll("_"," "))}</option>`).join("");
+    $("region").innerHTML = '<option value="">Todas las regiones</option>' +
+      regions.map(r => `<option value="${esc(r)}">${esc(r)}</option>`).join("");
+  }
+
+  function render() {
+    const query = $("search").value.trim().toLowerCase();
+    const type = $("type").value;
+    const tag = $("tag").value;
+    const region = $("region").value;
+
+    const filtered = allItems.filter(item => {
+      const searchable = [
+        item.title, item.summary, item.source, item.category,
+        ...(item.cves || []), ...(item.tags || [])
+      ].join(" ").toLowerCase();
+      return (!query || searchable.includes(query))
+        && (!type || item.type === type)
+        && (!tag || (item.tags || []).includes(tag))
+        && (!region || item.region === region);
+    });
+
+    $("result-count").textContent = `${filtered.length} resultado(s)`;
+    const container = $("items");
+    if (!filtered.length) {
+      container.innerHTML = '<div class="empty">No hay publicaciones que coincidan con los filtros.</div>';
+      return;
+    }
+
+    container.innerHTML = filtered.slice(0, 300).map(item => {
+      const badges = [];
+      badges.push(`<span class="badge">${esc(item.category || item.type || "Ciberseguridad")}</span>`);
+      if (item.kev) badges.push('<span class="badge red">CISA KEV · Explotación conocida</span>');
+      if (item.severity) badges.push(`<span class="badge ${String(item.severity).toLowerCase()==="critical" ? "red" : "gold"}">Severidad: ${esc(item.severity)}</span>`);
+      if (item.cvss !== null && item.cvss !== undefined) badges.push(`<span class="badge">CVSS ${esc(item.cvss)}</span>`);
+      (item.cves || []).slice(0, 3).forEach(cve => badges.push(`<span class="badge">${esc(cve)}</span>`));
+      const sources = item.related_sources || [item.source];
+      const summary = item.summary || "La fuente no proporciona un resumen.";
+      return `<article class="card">
+        <div class="badges">${badges.join("")}</div>
+        <h3>${esc(item.title)}</h3>
+        <div class="meta"><span>${esc(item.source || "Fuente desconocida")}</span><span>·</span><span>${esc(formatDate(item.published_at))}</span></div>
+        <p>${esc(summary.slice(0, 420))}${summary.length > 420 ? "…" : ""}</p>
+        <div class="meta"><span>${sources.length} fuente(s) relacionada(s)</span><span>·</span><span>${esc(item.region || "Global")}</span></div>
+        <a class="read" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Abrir fuente original ↗</a>
+      </article>`;
+    }).join("");
+  }
+
+  async function loadData() {
+    try {
+      const response = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      payload = await response.json();
+      allItems = Array.isArray(payload.items) ? payload.items : [];
+      setupFilters(allItems);
+      $("updated").textContent = "Última actualización: " + formatDate(payload.generated_at);
+      $("total").textContent = allItems.length.toLocaleString("es-CL");
+      $("kev").textContent = allItems.filter(i => i.kev).length.toLocaleString("es-CL");
+      $("withcve").textContent = allItems.filter(i => (i.cves || []).length).length.toLocaleString("es-CL");
+      const statuses = payload.source_status || [];
+      $("sources").textContent = `${statuses.filter(s => s.ok).length}/${statuses.length}`;
+      $("status").textContent = payload.notice || "Datos cargados. Verifica siempre las fuentes originales.";
+      const failed = statuses.filter(s => !s.ok);
+      $("source-status").innerHTML = failed.length
+        ? failed.map(s => `<li>${esc(s.source)}: ${esc(s.error || "sin respuesta")}</li>`).join("")
+        : "<li>Todas las fuentes respondieron en la última ejecución.</li>";
+      render();
+    } catch (error) {
+      $("status").textContent = "No fue posible cargar data/incidents.json. Ejecuta el recopilador o espera la primera automatización.";
+      $("items").innerHTML = '<div class="empty">Aún no hay datos publicados. Revisa el archivo data/incidents.json y la ejecución de GitHub Actions.</div>';
+      $("source-status").innerHTML = `<li>${esc(error.message)}</li>`;
+      $("total").textContent = "0";
+      $("kev").textContent = "0";
+      $("withcve").textContent = "0";
+      $("sources").textContent = "—";
+    }
+  }
+
+  ["search", "type", "tag", "region"].forEach(id => $(id).addEventListener(id === "search" ? "input" : "change", render));
+  $("reset").addEventListener("click", () => {
+    $("search").value = ""; $("type").value = ""; $("tag").value = ""; $("region").value = ""; render();
+  });
+  loadData();
+</script>
+</body>
+</html>
