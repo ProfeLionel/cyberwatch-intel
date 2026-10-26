@@ -141,3 +141,12 @@ La separación entre componentes permite añadir más adelante:
 - NVD CVE API
 
 Verifica disponibilidad y condiciones de uso antes de confiar en la continuidad de cualquier fuente.
+
+
+### Fuentes de defensa y threat intelligence (versión v3)
+
+Se añadieron feeds RSS de Breaking Defense, The War Zone (TWZ), CyberScoop, Google Cloud Threat Intelligence (Mandiant) y SentinelLabs. Las URL se contrastaron con respuestas RSS accesibles o directorios recientes de feeds; aun así, la disponibilidad puede cambiar y se valida nuevamente en cada ejecución del recopilador.
+
+Se retiraron de `config/sources.json` las fuentes que reportaron errores: NATO CCDCOE, USCYBERCOM NetDefense, Defense One — Cyber y Cyber Defense Magazine.
+
+El feed específico de informes del NCSC UK (`report-rss-feed.xml`) no se agregó porque aparece como inactivo; se conserva el feed general del NCSC que ya existía. La URL `https://cert.europa.eu/rss` no se agregó porque no se pudo confirmar su respuesta; se conserva la fuente CERT-EU que ya estaba configurada (`publications/security-advisories-rss`), sin duplicarla.
