@@ -9,9 +9,11 @@ Agregador inicial de fuentes públicas de ciberseguridad, vulnerabilidades e inc
 - Consulta de CVE recientes mediante la API de NVD.
 - Normalización básica de URLs y títulos.
 - Deduplicación conservadora por URL y título exacto normalizado.
-- Panel web interactivo (`index.html`) con búsqueda, filtros, categorías, regiones y estado de fuentes.
+- Panel web interactivo (`index.html`) con búsqueda, filtros por tipo, categoría, región, fuente, prioridad estimada y antigüedad; incluye salud detallada de fuentes.
 - Wallboard automático (`wallboard.html`) para pantallas de sala de monitoreo: sin scroll, indicadores, alertas prioritarias persistentes, rotación de publicaciones y reloj.
 - Actualización automática con GitHub Actions.
+- Indicadores de última revisión, estado por fuente, latencia, código HTTP y última publicación disponible.
+- Puntaje heurístico de prioridad con motivos visibles; no representa probabilidad de ataque ni sustituye un análisis de riesgo.
 - Datos públicos guardados en `data/incidents.json`.
 
 ## Requisitos para ejecutar localmente
@@ -68,13 +70,15 @@ Luego visita `http://localhost:8000` para el panel interactivo o `http://localho
 
 `wallboard.html` está diseñado para permanecer visible en una pantalla sin que una persona tenga que desplazarse por la página. Muestra indicadores generales, hasta tres alertas de prioridad alta, una publicación destacada que rota automáticamente cada 18 segundos, actividad reciente, hora local de Santiago y estado de las fuentes. Revisa si hay datos nuevos cada 60 segundos.
 
-Las alertas se priorizan a partir de los campos disponibles (CISA KEV, severidad y CVSS). Esto es una regla orientativa, no una evaluación completa del riesgo ni una confirmación de que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
+Las alertas se priorizan con una heurística explicable que considera CISA KEV, severidad/CVSS y términos que pueden indicar explotación, ransomware, APT, zero-day o infraestructura crítica. El puntaje es orientativo, no representa probabilidad de ataque ni una evaluación completa del riesgo, y no confirma que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
 
 La tipografía del wallboard usa tamaños adaptables y un ajuste automático que reduce gradualmente el texto de los titulares y resúmenes cuando no cabe en el espacio disponible, manteniendo límites mínimos para proteger la legibilidad. El wallboard utiliza el mismo `data/incidents.json` que el panel interactivo. No requiere una base de datos ni servicios pagados adicionales. Si el navegador o la pantalla se reinician, configura el equipo para volver a abrir la URL del wallboard.
 
-### Fuentes de ciberdefensa añadidas
+### Fuentes de ciberdefensa y tecnología incorporadas
 
-Se incorporaron feeds especializados que no estaban en la configuración anterior: NATO CCDCOE, USCYBERCOM NetDefense, Defense One Cyber, C4ISRNET Cyber, EMAD/Mando Conjunto del Ciberespacio de España, Zona Militar Cyber y Cyber Defense Magazine. La fuente CISA ya estaba configurada, por lo que no se añadió una segunda copia. Los feeds pueden cambiar o presentar interrupciones; su disponibilidad se comprueba en cada ejecución.
+La configuración incluye fuentes públicas de CISA, Cisco Talos, Unit 42, BleepingComputer, NCSC UK, CERT-EU, NIST, SANS ISC, C4ISRNET (Cyber y Space), EMAD, Zona Militar, Breaking Defense, The War Zone, CyberScoop, Google Cloud Threat Intelligence/Mandiant y SentinelLabs. También se agregaron canales RSS/Atom revisados para Cisco PSIRT y Security Blog, Check Point Research, Microsoft Security Blog, Google Project Zero, AWS Security Blog y Security Bulletins, Oracle Security, OpenAI News, NVIDIA Developer Blog — Cybersecurity y Meta Engineering/News Security.
+
+Se omitieron los enlaces propuestos que devolvieron errores, redirigieron a páginas HTML en lugar de un feed, o ya estaban representados por una fuente existente. La verificación hecha desde el navegador confirma que varios endpoints responden con tipos de contenido RSS/Atom/XML; la comprobación final de que entreguen entradas válidas ocurre en el recopilador de GitHub Actions. Un feed puede cambiar o fallar temporalmente, por lo que el estado se registra en cada ejecución.
 
 ## API de NVD
 
@@ -97,7 +101,7 @@ Edita `config/sources.json` y agrega un objeto a `rss_sources` con:
 - `region`: región.
 - `sector`: sectores de interés.
 
-Comprueba primero que el canal RSS esté disponible y respeta los términos de uso, límites de acceso y atribución del proveedor. No todas las páginas ofrecen RSS y algunas fuentes pueden fallar temporalmente. El recopilador conserva la fecha de recolección de los registros sin cambios y evita reescribir `data/incidents.json` cuando no hay cambios sustantivos, reduciendo commits automáticos innecesarios.
+Comprueba primero que el canal RSS esté disponible y respeta los términos de uso, límites de acceso y atribución del proveedor. No todas las páginas ofrecen RSS y algunas fuentes pueden fallar temporalmente. El recopilador conserva la fecha de recolección de los registros sin cambios y evita reescribir `data/incidents.json` cuando no hay cambios sustantivos. Publica una marca de revisión cada dos horas para detectar datos potencialmente obsoletos sin generar commits cada 30 minutos.
 
 ## Qué significa la deduplicación en esta versión
 

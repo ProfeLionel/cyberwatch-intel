@@ -25,11 +25,27 @@
     .stat { padding:18px; }
     .stat span { display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.7px; }
     .stat strong { display:block; font-size:28px; margin-top:8px; }
-    .filters { padding:15px; display:grid; grid-template-columns: minmax(200px,2fr) repeat(3,minmax(145px,1fr)) auto; gap:10px; margin-bottom:18px; }
+    .filters { padding:15px; display:grid; grid-template-columns: minmax(220px,2fr) repeat(5,minmax(135px,1fr)) auto; gap:10px; margin-bottom:18px; }
     input, select, button { width:100%; border-radius:9px; border:1px solid #344660; background:#0c1728; color:var(--text); padding:11px 12px; font:inherit; }
     button { background:#1262a3; border-color:#1262a3; cursor:pointer; font-weight:700; }
     button:hover { background:#1878c4; }
-    .statusbox { padding:12px 15px; margin-bottom:18px; color:var(--muted); font-size:13px; }
+    .statusbox { padding:12px 15px; margin-bottom:18px; color:var(--muted); font-size:13px; line-height:1.55; }
+    .statusbox.stale { border-color:#9b6a27; color:#ffe0a0; background:#2a2114; }
+    .source-health-list { max-height:330px; overflow:auto; padding-left:0; list-style:none; }
+    .source-health-list li { border-bottom:1px solid var(--line); padding:7px 0; overflow-wrap:anywhere; }
+    .source-ok { color:var(--green); } .source-fail { color:var(--red); } .source-note { color:var(--muted); font-size:11px; }
+    .trends { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:17px; margin-bottom:18px; }
+    .trend-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .trend-title { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.6px; margin-bottom:12px; }
+    .trend-bars { display:flex; align-items:flex-end; gap:5px; height:105px; padding:0 2px; border-bottom:1px solid var(--line); }
+    .trend-day { display:flex; flex:1; min-width:0; height:100%; flex-direction:column; align-items:center; justify-content:flex-end; gap:5px; }
+    .trend-bar { width:min(100%,18px); min-height:2px; border-radius:4px 4px 0 0; background:var(--accent); opacity:.9; }
+    .trend-bar.kev { background:var(--red); }
+    .trend-label { color:var(--muted); font-size:10px; white-space:nowrap; transform:rotate(-35deg); transform-origin:center top; margin-top:7px; }
+    .trend-legend { display:flex; gap:14px; flex-wrap:wrap; margin-top:14px; color:var(--muted); font-size:11px; }
+    .legend-dot { display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:5px; background:var(--accent); }
+    .legend-dot.red { background:var(--red); }
+    @media (max-width:700px) { .trend-grid { grid-template-columns:1fr; } .trend-label { transform:none; } }
     .layout { display:grid; grid-template-columns:minmax(0,1fr) 290px; gap:18px; align-items:start; }
     .section-title { display:flex; justify-content:space-between; align-items:center; gap:10px; margin:4px 0 14px; }
     .section-title h2 { font-size:18px; margin:0; }
@@ -51,7 +67,7 @@
     aside ul { padding-left:17px; margin:0; }
     .empty { grid-column:1/-1; text-align:center; color:var(--muted); padding:40px 20px; border:1px dashed var(--line); border-radius:14px; }
     footer { text-align:center; color:var(--muted); padding:26px; border-top:1px solid var(--line); font-size:12px; }
-    @media (max-width:1000px) { .filters { grid-template-columns:repeat(2,minmax(0,1fr)); } .layout { grid-template-columns:1fr; } }
+    @media (max-width:1250px) { .filters { grid-template-columns:repeat(3,minmax(0,1fr)); } .layout { grid-template-columns:1fr; } }
     @media (max-width:700px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } #items { grid-template-columns:1fr; } .filters { grid-template-columns:1fr; } }
   </style>
 </head>
@@ -78,11 +94,20 @@
     <div class="stat"><span>Fuentes consultadas</span><strong id="sources">—</strong></div>
   </section>
 
+  <section class="trends" aria-label="Tendencias históricas">
+    <div class="section-title"><h2>Tendencias de los últimos 14 días</h2><small id="trend-caption">Historial diario</small></div>
+    <div id="trends" class="trend-grid"><div class="empty">El historial se completará con las ejecuciones diarias del recopilador.</div></div>
+    <div class="trend-legend"><span><i class="legend-dot"></i>Publicaciones recopiladas</span><span><i class="legend-dot red"></i>Vulnerabilidades CISA KEV</span></div>
+  </section>
+
   <section class="filters" aria-label="Filtros">
     <input id="search" type="search" placeholder="Buscar título, fuente, CVE o palabras clave…" aria-label="Buscar">
     <select id="type"><option value="">Todos los tipos</option><option value="vulnerability">Vulnerabilidades</option><option value="article">Artículos y alertas</option></select>
     <select id="tag"><option value="">Todas las categorías</option></select>
     <select id="region"><option value="">Todas las regiones</option></select>
+    <select id="source"><option value="">Todas las fuentes</option></select>
+    <select id="priority"><option value="">Todas las prioridades</option><option value="crítica">Crítica</option><option value="alta">Alta</option><option value="media">Media</option><option value="informativa">Informativa</option></select>
+    <select id="period"><option value="">Cualquier fecha</option><option value="1">Últimas 24 horas</option><option value="7">Últimos 7 días</option><option value="30">Últimos 30 días</option></select>
     <button id="reset" type="button">Limpiar filtros</button>
   </section>
 
@@ -103,8 +128,9 @@
         <p>La etiqueta CISA KEV indica que la vulnerabilidad figura en el catálogo de vulnerabilidades conocidas como explotadas de CISA. No implica que todos los sistemas estén afectados.</p>
       </div>
       <div class="card">
-        <h3>Fuentes con errores</h3>
-        <ul id="source-status"><li>Estado aún no disponible.</li></ul>
+        <h3>Salud de las fuentes</h3>
+        <p id="source-summary">Estado aún no disponible.</p>
+        <ul id="source-status" class="source-health-list"><li>Estado aún no disponible.</li></ul>
       </div>
       <div class="card">
         <h3>Próximas mejoras</h3>
@@ -120,6 +146,7 @@
   const DATA_URL = "./data/incidents.json";
   let allItems = [];
   let payload = {};
+  let historyData = [];
 
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({
@@ -138,10 +165,48 @@
   function setupFilters(items) {
     const tags = [...new Set(items.flatMap(item => item.tags || []))].sort();
     const regions = [...new Set(items.map(item => item.region).filter(Boolean))].sort();
+    const sources = [...new Set((payload.source_status || []).map(s => s.source).filter(Boolean))].sort();
     $("tag").innerHTML = '<option value="">Todas las categorías</option>' +
       tags.map(t => `<option value="${esc(t)}">${esc(t.replaceAll("_"," "))}</option>`).join("");
     $("region").innerHTML = '<option value="">Todas las regiones</option>' +
       regions.map(r => `<option value="${esc(r)}">${esc(r)}</option>`).join("");
+    $("source").innerHTML = '<option value="">Todas las fuentes</option>' +
+      sources.map(r => `<option value="${esc(r)}">${esc(r)}</option>`).join("");
+  }
+
+  function priorityOf(item) {
+    if (item.priority_label) return item.priority_label;
+    if (item.kev || String(item.severity || '').toLowerCase() === 'critical' || Number(item.cvss) >= 9) return 'crítica';
+    if (String(item.severity || '').toLowerCase() === 'high' || Number(item.cvss) >= 7) return 'alta';
+    const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+    if (/actively exploited|exploited in the wild|zero.day|ransomware|apt|state-sponsored|ciberespionaje/.test(text)) return 'alta';
+    if ((item.cves || []).length || (item.tags || []).some(t => ['vulnerabilidad','malware','espionaje','infraestructura_critica'].includes(t))) return 'media';
+    return 'informativa';
+  }
+
+  function ageHours(value) {
+    if (!value) return Infinity;
+    const time = new Date(value).getTime();
+    return Number.isNaN(time) ? Infinity : (Date.now() - time) / 3600000;
+  }
+
+  function renderTrends() {
+    const days = historyData.slice(-14);
+    if (!days.length) {
+      $("trends").innerHTML = '<div class="empty">Aún no hay historial suficiente. Se generará una muestra diaria automáticamente.</div>';
+      $("trend-caption").textContent = "Esperando primeras muestras";
+      return;
+    }
+    const maxItems = Math.max(1, ...days.map(d => Number(d.items_total) || 0));
+    const maxKev = Math.max(1, ...days.map(d => Number(d.kev_total) || 0));
+    const chart = (key, max, css, label) => `<div><div class="trend-title">${label}</div><div class="trend-bars">${days.map(d => {
+      const value = Number(d[key]) || 0;
+      const height = value ? Math.max(4, value / max * 88) : 2;
+      const day = String(d.date || '').slice(5);
+      return `<div class="trend-day" title="${esc(d.date)}: ${value}"><div class="trend-bar ${css}" style="height:${height}px" aria-label="${esc(d.date)}: ${value}"></div><span class="trend-label">${esc(day)}</span></div>`;
+    }).join('')}</div></div>`;
+    $("trends").innerHTML = chart('items_total', maxItems, '', 'Publicaciones registradas') + chart('kev_total', maxKev, 'kev', 'Vulnerabilidades en CISA KEV');
+    $("trend-caption").textContent = `${days.length} día(s) con datos · historial conservado hasta 90 días`;
   }
 
   function render() {
@@ -149,6 +214,9 @@
     const type = $("type").value;
     const tag = $("tag").value;
     const region = $("region").value;
+    const source = $("source").value;
+    const priority = $("priority").value;
+    const periodDays = Number($("period").value || 0);
 
     const filtered = allItems.filter(item => {
       const searchable = [
@@ -158,7 +226,10 @@
       return (!query || searchable.includes(query))
         && (!type || item.type === type)
         && (!tag || (item.tags || []).includes(tag))
-        && (!region || item.region === region);
+        && (!region || item.region === region)
+        && (!source || item.source === source || (item.related_sources || []).includes(source))
+        && (!priority || priorityOf(item) === priority)
+        && (!periodDays || (Date.now() - new Date(item.published_at || item.collected_at || 0).getTime()) <= periodDays * 86400000);
     });
 
     $("result-count").textContent = `${filtered.length} resultado(s)`;
@@ -171,6 +242,8 @@
     container.innerHTML = filtered.slice(0, 300).map(item => {
       const badges = [];
       badges.push(`<span class="badge">${esc(item.category || item.type || "Ciberseguridad")}</span>`);
+      const pLabel = priorityOf(item);
+      badges.push(`<span class="badge ${pLabel === 'crítica' ? 'red' : pLabel === 'alta' ? 'gold' : ''}" title="Criterios: ${esc((item.priority_basis || []).join(', ') || 'clasificación orientativa')}">Prioridad estimada: ${esc(pLabel)}</span>`);
       if (item.kev) badges.push('<span class="badge red">CISA KEV · Explotación conocida</span>');
       if (item.severity) badges.push(`<span class="badge ${String(item.severity).toLowerCase()==="critical" ? "red" : "gold"}">Severidad: ${esc(item.severity)}</span>`);
       if (item.cvss !== null && item.cvss !== undefined) badges.push(`<span class="badge">CVSS ${esc(item.cvss)}</span>`);
@@ -194,18 +267,33 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       payload = await response.json();
       allItems = Array.isArray(payload.items) ? payload.items : [];
+      try {
+        const historyResponse = await fetch("./data/history.json?t=" + Date.now(), { cache: "no-store" });
+        historyData = historyResponse.ok ? await historyResponse.json() : [];
+        if (!Array.isArray(historyData)) historyData = [];
+      } catch (_) { historyData = []; }
+      renderTrends();
       setupFilters(allItems);
-      $("updated").textContent = "Última actualización: " + formatDate(payload.generated_at);
+      const checkedAt = payload.last_checked_at || payload.generated_at;
+      $("updated").textContent = "Última revisión registrada: " + formatDate(checkedAt);
       $("total").textContent = allItems.length.toLocaleString("es-CL");
       $("kev").textContent = allItems.filter(i => i.kev).length.toLocaleString("es-CL");
       $("withcve").textContent = allItems.filter(i => (i.cves || []).length).length.toLocaleString("es-CL");
       const statuses = payload.source_status || [];
-      $("sources").textContent = `${statuses.filter(s => s.ok).length}/${statuses.length}`;
-      $("status").textContent = payload.notice || "Datos cargados. Verifica siempre las fuentes originales.";
+      const ok = statuses.filter(s => s.ok).length;
+      $("sources").textContent = `${ok}/${statuses.length}`;
+      const age = ageHours(checkedAt);
+      const stale = age > 3;
+      $("status").classList.toggle("stale", stale);
+      const freshness = !checkedAt ? "No hay marca de revisión disponible." : stale ? `ATENCIÓN: la última revisión registrada tiene ${Math.floor(age)} h. Verifica GitHub Actions antes de asumir que los datos están actualizados.` : `Datos revisados hace ${Math.max(0, Math.floor(age * 60))} min según la última marca registrada.`;
+      $("status").textContent = `${freshness} ${payload.notice || "Verifica siempre las fuentes originales."}`;
       const failed = statuses.filter(s => !s.ok);
-      $("source-status").innerHTML = failed.length
-        ? failed.map(s => `<li>${esc(s.source)}: ${esc(s.error || "sin respuesta")}</li>`).join("")
-        : "<li>Todas las fuentes respondieron en la última ejecución.</li>";
+      $("source-summary").textContent = `${ok} de ${statuses.length} fuentes respondieron correctamente; ${failed.length} con errores.`;
+      $("source-status").innerHTML = statuses.length ? [...statuses].sort((a,b)=>Number(a.ok)-Number(b.ok) || String(a.source).localeCompare(String(b.source))).map(s => {
+        const state = s.ok ? (Number(s.count) ? `${s.count} publicaciones/CVE` : 'sin publicaciones nuevas') : (s.error || 'sin respuesta');
+        const checked = s.checked_at ? ` · revisada ${formatDate(s.checked_at)}` : '';
+        return `<li><strong class="${s.ok?'source-ok':'source-fail'}">${s.ok?'●':'●'} ${esc(s.source)}</strong><br><span class="source-note">${esc(state)}${esc(checked)}</span></li>`;
+      }).join("") : "<li>Estado aún no disponible.</li>";
       render();
     } catch (error) {
       $("status").textContent = "No fue posible cargar data/incidents.json. Ejecuta el recopilador o espera la primera automatización.";
@@ -218,9 +306,9 @@
     }
   }
 
-  ["search", "type", "tag", "region"].forEach(id => $(id).addEventListener(id === "search" ? "input" : "change", render));
+  ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).addEventListener(id === "search" ? "input" : "change", render));
   $("reset").addEventListener("click", () => {
-    $("search").value = ""; $("type").value = ""; $("tag").value = ""; $("region").value = ""; render();
+    ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).value = ""); render();
   });
   loadData();
 </script>
