@@ -30,8 +30,9 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "sources.json"
 OUTPUT_PATH = ROOT / "data" / "incidents.json"
+HISTORY_PATH = ROOT / "data" / "history.json"
 USER_AGENT = "CyberWatchIntel/1.0 (public-source aggregator)"
-TIMEOUT = 25
+TIMEOUT = 15
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 SESSION = requests.Session()
@@ -132,6 +133,42 @@ def get_cves(text: str) -> list[str]:
     return sorted({x.upper() for x in CVE_PATTERN.findall(text or "")})
 
 
+def estimate_priority(text: str, kev: bool = False, severity: str | None = None,
+                      cvss: float | int | None = None) -> tuple[int, str, list[str]]:
+    """Puntaje heurístico transparente; no representa probabilidad de ataque."""
+    reasons: list[str] = []
+    score = 10
+    sev = (severity or "").lower()
+    try:
+        cvss_num = float(cvss) if cvss is not None else None
+    except (TypeError, ValueError):
+        cvss_num = None
+    if kev:
+        score += 70
+        reasons.append("incluida en CISA KEV")
+    if sev == "critical" or (cvss_num is not None and cvss_num >= 9):
+        score += 35
+        reasons.append("severidad crítica/CVSS ≥ 9")
+    elif sev == "high" or (cvss_num is not None and cvss_num >= 7):
+        score += 22
+        reasons.append("severidad alta/CVSS ≥ 7")
+    t = (text or "").lower()
+    keyword_rules = [
+        ("explotación mencionada", ["actively exploited", "exploited in the wild", "explotación activa", "explotada activamente"] , 20),
+        ("ransomware/campaña", ["ransomware", "campaign", "campaña", "mass exploitation"], 12),
+        ("APT/espionaje", ["apt ", "apt-", "advanced persistent threat", "state-sponsored", "state sponsored", "nation-state", "cyber espionage", "ciberespionaje"], 12),
+        ("infraestructura crítica", ["critical infrastructure", "infraestructura crítica", "industrial control", "ics/ot", "scada"], 10),
+        ("zero-day", ["zero-day", "zero day", "zero-day vulnerability", "día cero"], 15),
+    ]
+    for reason, terms, points in keyword_rules:
+        if any(term in t for term in terms):
+            score += points
+            reasons.append(reason)
+    score = min(score, 100)
+    label = "crítica" if score >= 85 else "alta" if score >= 65 else "media" if score >= 35 else "informativa"
+    return score, label, reasons or ["clasificación inicial por defecto"]
+
+
 def base_item(title: str, link: str, source: str, category: str, published: str | None,
               summary: str, region: str = "Global", item_type: str = "article",
               extra: dict | None = None) -> dict | None:
@@ -140,6 +177,7 @@ def base_item(title: str, link: str, source: str, category: str, published: str 
     if not url or not title:
         return None
     combined = f"{title} {summary}"
+    score, priority_label, priority_basis = estimate_priority(combined)
     item = {
         "id": stable_id(url),
         "title": title[:400],
@@ -152,19 +190,31 @@ def base_item(title: str, link: str, source: str, category: str, published: str 
         "type": item_type,
         "tags": classify(combined, category),
         "cves": get_cves(combined),
+        "priority_score": score,
+        "priority_label": priority_label,
+        "priority_basis": priority_basis,
         "collected_at": now_iso()
     }
     if extra:
         item.update(extra)
+    score, priority_label, priority_basis = estimate_priority(
+        f"{item.get('title', '')} {item.get('summary', '')}",
+        kev=bool(item.get("kev")), severity=item.get("severity"), cvss=item.get("cvss")
+    )
+    item["priority_score"] = score
+    item["priority_label"] = priority_label
+    item["priority_basis"] = priority_basis
     return item
 
 
 def fetch_rss(source: dict) -> tuple[list[dict], dict]:
     name = source["name"]
     url = source["url"]
-    status = {"source": name, "url": url, "ok": False, "count": 0, "error": None}
+    started = time.monotonic()
+    status = {"source": name, "url": url, "ok": False, "count": 0, "error": None, "checked_at": now_iso()}
     try:
         response = SESSION.get(url, timeout=TIMEOUT)
+        status["http_status"] = response.status_code
         response.raise_for_status()
         parsed = feedparser.parse(response.content)
         if parsed.bozo and not parsed.entries:
@@ -188,19 +238,23 @@ def fetch_rss(source: dict) -> tuple[list[dict], dict]:
             )
             if item:
                 items.append(item)
-        status.update({"ok": True, "count": len(items)})
+        status.update({"ok": True, "count": len(items), "last_published_at": max((i.get("published_at") or "" for i in items), default=None) or None})
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.info("%s: %s publicaciones", name, len(items))
         return items, status
     except Exception as exc:
         status["error"] = str(exc)[:300]
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.warning("%s: %s", name, status["error"])
         return [], status
 
 
 def fetch_cisa_kev(source: dict) -> tuple[list[dict], dict]:
-    status = {"source": source["name"], "url": source["url"], "ok": False, "count": 0, "error": None}
+    started = time.monotonic()
+    status = {"source": source["name"], "url": source["url"], "ok": False, "count": 0, "error": None, "checked_at": now_iso()}
     try:
         response = SESSION.get(source["url"], timeout=TIMEOUT)
+        status["http_status"] = response.status_code
         response.raise_for_status()
         payload = response.json()
         items = []
@@ -239,16 +293,19 @@ def fetch_cisa_kev(source: dict) -> tuple[list[dict], dict]:
             if item:
                 items.append(item)
         status.update({"ok": True, "count": len(items)})
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.info("%s: %s CVE en catálogo", source["name"], len(items))
         return items, status
     except Exception as exc:
         status["error"] = str(exc)[:300]
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.warning("%s: %s", source["name"], status["error"])
         return [], status
 
 
 def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
-    status = {"source": source["name"], "url": source["url"], "ok": False, "count": 0, "error": None}
+    started = time.monotonic()
+    status = {"source": source["name"], "url": source["url"], "ok": False, "count": 0, "error": None, "checked_at": now_iso()}
     try:
         days = int(source.get("lookback_days", 7))
         end = datetime.now(timezone.utc)
@@ -263,6 +320,7 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
         api_key = os.getenv("NVD_API_KEY")
         headers = {"apiKey": api_key} if api_key else {}
         response = SESSION.get(source["url"], params=params, headers=headers, timeout=TIMEOUT)
+        status["http_status"] = response.status_code
         response.raise_for_status()
         payload = response.json()
         items = []
@@ -301,10 +359,12 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
             if item:
                 items.append(item)
         status.update({"ok": True, "count": len(items)})
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.info("%s: %s CVE recientes", source["name"], len(items))
         return items, status
     except Exception as exc:
         status["error"] = str(exc)[:300]
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.warning("%s: %s", source["name"], status["error"])
         return [], status
 
@@ -374,8 +434,10 @@ def main() -> None:
         time.sleep(0.5)
 
     unique_items = deduplicate(all_items)
+    run_time = now_iso()
     payload = {
-        "generated_at": now_iso(),
+        "generated_at": run_time,
+        "last_checked_at": run_time,
         "items": unique_items[:1500],
         "source_status": statuses,
         "notice": (
@@ -390,6 +452,35 @@ def main() -> None:
         }
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    # Historial diario para observar tendencias sin registrar una fila por cada ejecución.
+    try:
+        history = json.loads(HISTORY_PATH.read_text(encoding="utf-8")) if HISTORY_PATH.exists() else []
+        if not isinstance(history, list):
+            history = []
+    except (json.JSONDecodeError, OSError):
+        history = []
+    today = datetime.now(timezone.utc).date().isoformat()
+    daily_snapshot = {
+        "date": today,
+        "items_total": len(unique_items),
+        "kev_total": sum(1 for item in unique_items if item.get("kev")),
+        "items_with_cve": sum(1 for item in unique_items if item.get("cves")),
+        "priority_high": sum(1 for item in unique_items if item.get("priority_label") in {"crítica", "alta"}),
+        "sources_ok": sum(1 for status in statuses if status.get("ok")),
+        "sources_total": len(statuses)
+    }
+    if history and history[-1].get("date") == today:
+        history[-1] = daily_snapshot
+    else:
+        history.append(daily_snapshot)
+    history = history[-90:]
+    history_changed = not HISTORY_PATH.exists()
+    if HISTORY_PATH.exists():
+        try:
+            history_changed = json.loads(HISTORY_PATH.read_text(encoding="utf-8")) != history
+        except (json.JSONDecodeError, OSError):
+            history_changed = True
 
     # Conserva collected_at en registros sin cambios y evita commits periódicos
     # cuando el contenido y el estado de las fuentes siguen siendo iguales.
@@ -412,20 +503,55 @@ def main() -> None:
                 if old_comparable == new_comparable and old_item.get("collected_at"):
                     item["collected_at"] = old_item["collected_at"]
 
+        # Si el estado de una fuente no cambió, conservar su sello de comprobación anterior.
+        old_status = {s.get("source"): s for s in previous.get("source_status", []) if isinstance(s, dict)}
+        status_volatile = {"checked_at", "duration_ms"}
+        for status in payload["source_status"]:
+            old = old_status.get(status.get("source"))
+            if old:
+                old_stable = {k: v for k, v in old.items() if k not in status_volatile}
+                new_stable = {k: v for k, v in status.items() if k not in status_volatile}
+                if old_stable == new_stable:
+                    for key in status_volatile:
+                        if key in old:
+                            status[key] = old[key]
+
         def comparable(data: dict) -> dict:
             return {
                 "items": [{k: v for k, v in item.items() if k != "collected_at"}
                           for item in data.get("items", [])],
-                "source_status": data.get("source_status", []),
+                "source_status": [{k: v for k, v in status.items() if k not in status_volatile}
+                                  for status in data.get("source_status", [])],
                 "notice": data.get("notice", ""),
                 "stats": data.get("stats", {})
             }
 
-        if comparable(previous) == comparable(payload):
-            logging.info("Sin cambios sustantivos; se conserva el archivo publicado para evitar commits innecesarios.")
-            return
+        same_content = comparable(previous) == comparable(payload)
+        previous_check = previous.get("last_checked_at") or previous.get("generated_at")
+        try:
+            last_check_dt = datetime.fromisoformat(str(previous_check).replace("Z", "+00:00"))
+            if last_check_dt.tzinfo is None:
+                last_check_dt = last_check_dt.replace(tzinfo=timezone.utc)
+            heartbeat_due = datetime.now(timezone.utc) - last_check_dt.astimezone(timezone.utc) >= timedelta(hours=2)
+        except Exception:
+            heartbeat_due = True
 
-    OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        if same_content and not heartbeat_due:
+            if history_changed:
+                HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                logging.info("Actualizado historial diario; sin cambios en las publicaciones actuales.")
+            else:
+                logging.info("Sin cambios sustantivos; se conserva el archivo publicado. Próximo sello de revisión en el siguiente ciclo de 2 h.")
+            return
+        if same_content:
+            # Un sello cada 2 horas permite advertir de datos obsoletos sin generar un commit cada 30 minutos.
+            payload["generated_at"] = previous.get("generated_at") or run_time
+            for status in payload["source_status"]:
+                status["checked_at"] = run_time
+
+    OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if history_changed:
+        HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     logging.info("Guardado %s con %s publicaciones únicas", OUTPUT_PATH, len(unique_items))
 
 
