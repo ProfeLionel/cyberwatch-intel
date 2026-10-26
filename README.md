@@ -70,7 +70,11 @@ Luego visita `http://localhost:8000` para el panel interactivo o `http://localho
 
 Las alertas se priorizan a partir de los campos disponibles (CISA KEV, severidad y CVSS). Esto es una regla orientativa, no una evaluación completa del riesgo ni una confirmación de que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
 
-El wallboard utiliza el mismo `data/incidents.json` que el panel interactivo. No requiere una base de datos ni servicios pagados adicionales. Si el navegador o la pantalla se reinician, configura el equipo para volver a abrir la URL del wallboard.
+La tipografía del wallboard usa tamaños adaptables y un ajuste automático que reduce gradualmente el texto de los titulares y resúmenes cuando no cabe en el espacio disponible, manteniendo límites mínimos para proteger la legibilidad. El wallboard utiliza el mismo `data/incidents.json` que el panel interactivo. No requiere una base de datos ni servicios pagados adicionales. Si el navegador o la pantalla se reinician, configura el equipo para volver a abrir la URL del wallboard.
+
+### Fuentes de ciberdefensa añadidas
+
+Se incorporaron feeds especializados que no estaban en la configuración anterior: NATO CCDCOE, USCYBERCOM NetDefense, Defense One Cyber, C4ISRNET Cyber, EMAD/Mando Conjunto del Ciberespacio de España, Zona Militar Cyber y Cyber Defense Magazine. La fuente CISA ya estaba configurada, por lo que no se añadió una segunda copia. Los feeds pueden cambiar o presentar interrupciones; su disponibilidad se comprueba en cada ejecución.
 
 ## API de NVD
 
@@ -93,7 +97,7 @@ Edita `config/sources.json` y agrega un objeto a `rss_sources` con:
 - `region`: región.
 - `sector`: sectores de interés.
 
-Comprueba primero que el canal RSS esté disponible y respeta los términos de uso, límites de acceso y atribución del proveedor. No todas las páginas ofrecen RSS y algunas fuentes pueden fallar temporalmente.
+Comprueba primero que el canal RSS esté disponible y respeta los términos de uso, límites de acceso y atribución del proveedor. No todas las páginas ofrecen RSS y algunas fuentes pueden fallar temporalmente. El recopilador conserva la fecha de recolección de los registros sin cambios y evita reescribir `data/incidents.json` cuando no hay cambios sustantivos, reduciendo commits automáticos innecesarios.
 
 ## Qué significa la deduplicación en esta versión
 
