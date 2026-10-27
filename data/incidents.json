@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-10-26T23:40:18+00:00",
-  "last_checked_at": "2026-10-26T23:40:18+00:00",
+  "generated_at": "2026-10-27T01:38:23+00:00",
+  "last_checked_at": "2026-10-27T01:38:23+00:00",
   "items": [
+    {
+      "id": "7098a1ac62df50de5f3c",
+      "title": "Experts temper emergency-level alarms over critical Brotli defect",
+      "url": "https://cyberscoop.com/brotli-critical-vulnerability-decompression-library-node2shell-broccoli2shell",
+      "source": "CyberScoop",
+      "category": "Política de ciberseguridad / Gobierno",
+      "region": "Estados Unidos / Global",
+      "published_at": "2026-10-27T00:22:54+00:00",
+      "summary": "The defect in a widely distributed open-source library provoked an emergency response, yet exploitation hasn’t been observed in the wild. The post Experts temper emergency-level alarms over critical Brotli defect appeared first on CyberScoop .",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:03+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CyberScoop"
+      ]
+    },
+    {
+      "id": "8c50fa4315476b18e4d5",
+      "title": "USAF Orders ARRW Hypersonic Missile Into Production, The Same Weapon It Nearly Cancelled",
+      "url": "https://www.twz.com/air/usaf-orders-arrw-hypersonic-missile-into-production-the-same-weapon-it-nearly-cancelled",
+      "source": "The War Zone (TWZ)",
+      "category": "Defensa / Inteligencia militar",
+      "region": "Estados Unidos / Global",
+      "published_at": "2026-10-27T00:04:14+00:00",
+      "summary": "The fortunes of the AGM-183A, which is now set to arm B-52 and B-1 bombers, have now been fully reversed. The post USAF Orders ARRW Hypersonic Missile Into Production, The Same Weapon It Nearly Cancelled appeared first on TWZ .",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:02+00:00",
+      "sectors": [
+        "publico",
+        "defensa"
+      ],
+      "related_sources": [
+        "The War Zone (TWZ)"
+      ]
+    },
     {
       "id": "344bdc9286a24997bdeb",
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -5483,35 +5540,6 @@
       ]
     },
     {
-      "id": "8507af883de666a72832",
-      "title": "Philippines-based American pleads guilty to running expansive fraud scheme targeting US servicemembers",
-      "url": "https://cyberscoop.com/identity-theft-fraud-military-servicemembers-veterans-guilty-robert-boling",
-      "source": "CyberScoop",
-      "category": "Política de ciberseguridad / Gobierno",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-20T23:36:10+00:00",
-      "summary": "Robert Wayne Boling Jr. was the mastermind of an identity theft conspiracy that victimized thousands of military members and veterans. He faces up to 40 years in prison. The post Philippines-based American pleads guilty to running expansive fraud scheme targeting US servicemembers appeared first on CyberScoop .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:01+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CyberScoop"
-      ]
-    },
-    {
       "id": "1700f92d30664f33d29e",
       "title": "Retired KC-10 Extender Tanker Has Risen From Boneyard To Fly Again",
       "url": "https://www.twz.com/air/retired-kc-10-extender-tanker-has-risen-from-boneyard-to-fly-again",
@@ -6061,6 +6089,1462 @@
       ]
     },
     {
+      "id": "075176a1adbbb981d96a",
+      "title": "CVE-2026-113356: DokuWiki before 2026-07-14c contains a PHP object injection vulnerability in Draft::getDraftText() that passes draft file contents to unserialize() without restricting allowed clas",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113356",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "DokuWiki before 2026-07-14c contains a PHP object injection vulnerability in Draft::getDraftText() that passes draft file contents to unserialize() without restricting allowed classes. Authenticated users with edit rights can race concurrent draft rewrites to splice serialized data, instantiating gadgets like MemoryIndex or Installer for arbitrary file write, deletion, and code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113356"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f5958d77c114e1e5f765",
+      "title": "CVE-2026-113357: @e2e-dev/github before 0.4.1 contains an improper authorization vulnerability that allows pull request commenters to hijack CI test reports by posting comments with the predictable",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113357",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "@e2e-dev/github before 0.4.1 contains an improper authorization vulnerability that allows pull request commenters to hijack CI test reports by posting comments with the predictable marker. Because findComment and upsertComment in post.ts never check the comment author, attackers can receive results in their own comment and edit failures to passes, or suppress genuine reports entirely.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113357"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1361d75674f4d5d0f351",
+      "title": "CVE-2026-113358: LavaLite CMS through 10.1.2 contains a missing authentication vulnerability in the Filer module that allows unauthenticated attackers to download stored files through the filer/dow",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113358",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "LavaLite CMS through 10.1.2 contains a missing authentication vulnerability in the Filer module that allows unauthenticated attackers to download stored files through the filer/download and filer/display routes. Attackers can supply arbitrary disk names and paths to FileController to retrieve private uploads from local storage or configured remote S3 disks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113358"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9385420a1470b1eac071",
+      "title": "CVE-2026-113349: OpenCATS before 0.10.0 contains a missing authorization vulnerability in CalendarUI::onEditEvent() and onDeleteEvent() that allows authenticated users to modify or delete other use",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113349",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability in CalendarUI::onEditEvent() and onDeleteEvent() that allows authenticated users to modify or delete other users' calendar events. Attackers with EDIT or DELETE access can supply arbitrary eventID values to alter or remove any user's events, including non-public ones restricted to their owner.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113349"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f0d9f025d52bb394ab9f",
+      "title": "CVE-2026-113350: react-admin before 5.15.5 contains a stored cross-site scripting vulnerability that allows attackers to inject scripts by storing javascript: URIs in record fields rendered by UrlF",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113350",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "react-admin before 5.15.5 contains a stored cross-site scripting vulnerability that allows attackers to inject scripts by storing javascript: URIs in record fields rendered by UrlField and FileField. Attackers who can influence URL-type backend fields can execute JavaScript in an administrator's authenticated session when the administrator clicks the rendered link.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113350"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "efdc2b02aeb212f4ccb8",
+      "title": "CVE-2026-113351: libexpat 2.7.2 through 2.9.0 contains a denial of service vulnerability because XML_ParserReset zeroes the direct byte count but never offsets tracked heap allocations. Attackers c",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113351",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "libexpat 2.7.2 through 2.9.0 contains a denial of service vulnerability because XML_ParserReset zeroes the direct byte count but never offsets tracked heap allocations. Attackers can submit a large XML document so later documents on the same reset parser fail with XML_ERROR_NO_MEMORY until it is recreated.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113351"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "cc78c4cc3a3549e6dffe",
+      "title": "CVE-2026-113352: uTox through 0.18.1 contains a path traversal vulnerability that allows Tox friends to write arbitrary files by sending absolute or ../ file names to victims with auto-accept enabl",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113352",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "uTox through 0.18.1 contains a path traversal vulnerability that allows Tox friends to write arbitrary files by sending absolute or ../ file names to victims with auto-accept enabled. Attackers can overwrite shell startup files or plant crafted .ftinfo resume records that ft_find_resumeable() loads, abusing FILE pointers to write /proc/self/mem and execute code.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113352"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "58bc5fbcc790c1f18ee5",
+      "title": "CVE-2026-113353: LearnPress before 4.4.10 contains a missing authorization vulnerability in the admin_course_editor, admin_quiz_editor and admin_question_editor lp-ajax actions, allowing instructor",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113353",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "LearnPress before 4.4.10 contains a missing authorization vulnerability in the admin_course_editor, admin_quiz_editor and admin_question_editor lp-ajax actions, allowing instructors to modify other instructors' content. Authenticated instructors can reuse their own generic editor nonce with another object's id parameter to alter courses, change quiz answers, and trash questions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113353"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e5cd88da348794df7b0d",
+      "title": "CVE-2026-113354: Dockhand before 1.0.46 contains an arbitrary file read vulnerability that allows non-admin users with stacks:edit permission to read files through the path parameter of /api/system",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113354",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "Dockhand before 1.0.46 contains an arbitrary file read vulnerability that allows non-admin users with stacks:edit permission to read files through the path parameter of /api/system/files/content. Attackers can supply absolute paths to read /etc/shadow, /etc/passwd, git .git/config credentials, and SSH keys from the Dockhand container.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113354"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d515f6921f1d535ea6a2",
+      "title": "CVE-2026-113355: Chatwoot before 4.14.0 contains a stored cross-site scripting vulnerability that allows account administrators to inject JavaScript by crafting video-embed links in Help Center art",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113355",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:19+00:00",
+      "summary": "Chatwoot before 4.14.0 contains a stored cross-site scripting vulnerability that allows account administrators to inject JavaScript by crafting video-embed links in Help Center articles. Attackers can use angle-bracket link destinations with double quotes to break out of the unescaped iframe src attribute in render_embed_from_match, executing scripts for public visitors and stealing cw_conversation widget tokens.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113355"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0ba0bb266bf2a5e21642",
+      "title": "CVE-2026-112783: OpenCATS before 0.10.0 contains a missing authorization vulnerability in ajax/deleteActivity.php and ajax/editActivity.php that allows READ-level users to edit and delete activity",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112783",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:18+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability in ajax/deleteActivity.php and ajax/editActivity.php that allows READ-level users to edit and delete activity entries. Authenticated attackers can supply an arbitrary activityID via GET or POST to modify or delete activity and pipeline history for candidates, contacts and companies.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112783"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a8430a6be7ee60964e3a",
+      "title": "CVE-2026-112784: OpenCATS before 0.10.0 contains a missing authorization vulnerability in ajax/testEmailSettings.php that allows any authenticated user to send mail through the configured SMTP rela",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112784",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:18+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability in ajax/testEmailSettings.php that allows any authenticated user to send mail through the configured SMTP relay. Read-level users can supply testEmailAddress and fromAddress parameters to send the fixed test message to any recipient with a spoofed From address.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112784"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "75645589f15af9637468",
+      "title": "CVE-2026-112785: OpenCATS before 0.10.0 contains a missing authorization vulnerability that allows READ-level users to create, rename, delete, and populate saved lists via AJAX endpoints. Authentic",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112785",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:18+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability that allows READ-level users to create, rename, delete, and populate saved lists via AJAX endpoints. Authenticated attackers can send requests to newList.php, editListName.php, deleteList.php, or addToLists.php with any savedListID to alter or delete any saved list site-wide.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112785"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "60592faf2a4ae52002c4",
+      "title": "CVE-2026-112786: OpenCATS before 0.10.0 contains a missing authorization vulnerability in ImportUI::handleRequest() that allows low-privileged authenticated users to roll back data imports. Attacke",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112786",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:18+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability in ImportUI::handleRequest() that allows low-privileged authenticated users to roll back data imports. Attackers with READ-level access can request the import module's revert action with an importID to mass-delete imported candidate, company, and contact records.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112786"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "90fc9606d48dc63c939d",
+      "title": "CVE-2026-112787: OpenCATS before 0.10.0 contains a missing authorization vulnerability in ReportsUI::handleRequest() that allows authenticated users to view EEO demographic reports without the canS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112787",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:18+00:00",
+      "summary": "OpenCATS before 0.10.0 contains a missing authorization vulnerability in ReportsUI::handleRequest() that allows authenticated users to view EEO demographic reports without the canSeeEEOInfo permission. Attackers can invoke the customizeEEOReport and generateEEOReportPreview actions to view aggregate ethnicity, veteran, gender and disability statistics.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-112787"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2d63eaa5de213d96a0d5",
+      "title": "CVE-2026-108089: ** UNSUPPORTED WHEN ASSIGNED ** Exposure of sensitive system information to an unauthorized control sphere vulnerability in Apache Cocoon. An unauthenticated user could gain access",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108089",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:17+00:00",
+      "summary": "** UNSUPPORTED WHEN ASSIGNED ** Exposure of sensitive system information to an unauthorized control sphere vulnerability in Apache Cocoon. An unauthenticated user could gain access to diagnostic interfaces, including triggering of cache, exposure of (verbose) debug logging and profile information. This issue affects Apache Cocoon: all versions. As this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108089"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "67b7bcd4c703544cd0e8",
+      "title": "CVE-2026-108062: Pre-authentication OIDC discovery and JWKS fetches run synchronously on the asyncio event loop, so one unauthenticated request stalls the whole service.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108062",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:16+00:00",
+      "summary": "Pre-authentication OIDC discovery and JWKS fetches run synchronously on the asyncio event loop, so one unauthenticated request stalls the whole service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108062"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "12828e6b98aaf2be23e5",
+      "title": "CVE-2026-108086: ** UNSUPPORTED WHEN ASSIGNED ** Improper restriction of recursive entity references in DTDs ('XML entity expansion') vulnerability in Apache Cocoon. This issue affects Apache Co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108086",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:16+00:00",
+      "summary": "** UNSUPPORTED WHEN ASSIGNED ** Improper restriction of recursive entity references in DTDs ('XML entity expansion') vulnerability in Apache Cocoon. This issue affects Apache Cocoon: all versions. XEE in the fp: form processor could lead to SSRF, including exposing files from the server to an untrusted external system As this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108086"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "899329614de97914020d",
+      "title": "CVE-2026-108087: ** UNSUPPORTED WHEN ASSIGNED ** Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Apache Cocoon. This issue affects Apache Co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108087",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:16+00:00",
+      "summary": "** UNSUPPORTED WHEN ASSIGNED ** Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Apache Cocoon. This issue affects Apache Cocoon: all versions. Missing input sanitation would allow arbitrary SQL injection through the SQL processor or sql:/esql: logicsheets. As this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-108087"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3b61c7ba088bf8c51271",
+      "title": "CVE-2026-108088: ** UNSUPPORTED WHEN ASSIGNED ** Use of cache containing sensitive information vulnerability in Apache Cocoon. When using the cache on a multi-user application, cached values for on",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108088",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:16+00:00",
+      "summary": "** UNSUPPORTED WHEN ASSIGNED ** Use of cache containing sensitive information vulnerability in Apache Cocoon. When using the cache on a multi-user application, cached values for one user could be used when serving content for other users. This issue affects Apache Cocoon: all versions. As this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108088"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "25e5c9120486d94ccb64",
+      "title": "CVE-2026-107597: PIA's token verification (`verify_token` in `pia/oidc.py`) fetches the OIDC discovery document of an allowlisted issuer and then follows the `jwks_uri` contained in that response w",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107597",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:15+00:00",
+      "summary": "PIA's token verification (`verify_token` in `pia/oidc.py`) fetches the OIDC discovery document of an allowlisted issuer and then follows the `jwks_uri` contained in that response without parsing it as a URL, comparing it against the approved issuer's origin, or requiring HTTPS — the only check is that the field is non-empty (`pia/oidc.py:42-52`). An approved identity provider — and every registered per-project Jenkins instance under `https://ci.eclipse.org/ /oidc` is a separate such party (`pia/models.py`) — can therefore direct PIA to issue a GET request to an arbitrary host and port, including over plaintext `http`, from PIA's own network position. The fetch happens before any signature is verified, as a side effect of an unauthenticated `POST /v1/upload/sbom` request that is ultimately rejected with 401.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107597"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7eefa45e9edf11a890c4",
+      "title": "CVE-2026-85267: A Cross-Site WebSocket Hijacking vulnerability in Cloud Shell prior to 2026-07-22 on Google Cloud Platform allows an unauthenticated attacker to hijack an active Cloud Shell sessio",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85267",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:07+00:00",
+      "summary": "A Cross-Site WebSocket Hijacking vulnerability in Cloud Shell prior to 2026-07-22 on Google Cloud Platform allows an unauthenticated attacker to hijack an active Cloud Shell session and exfiltrate the user's OAuth access token using a cross-origin WebSocket request. This vulnerability was patched on 22 July 2026, and no customer action is needed.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-85267"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f1502ccf44b78fe66507",
+      "title": "CVE-2026-43851: A path traversal vulnerability could allow an authenticated attacker to read arbitrary files on the system.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43851",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A path traversal vulnerability could allow an authenticated attacker to read arbitrary files on the system.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43851"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7128c46d31828f8effb7",
+      "title": "CVE-2026-43852: A vulnerability could allow an authenticated attacker to write files to arbitrary locations on the system.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43852",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A vulnerability could allow an authenticated attacker to write files to arbitrary locations on the system.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43852"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c50fa6526f772c9211f1",
+      "title": "CVE-2026-43853: A vulnerability could allow an attacker to send a crafted message to trigger an assertion fault, causing the service to crash.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43853",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A vulnerability could allow an attacker to send a crafted message to trigger an assertion fault, causing the service to crash.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43853"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "493dcbd28eec6d3f83a9",
+      "title": "CVE-2026-43854: A vulnerability could allow an attacker with access to an encrypted project file to retrieve administrator credentials for EdgeLink-enabled devices.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43854",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A vulnerability could allow an attacker with access to an encrypted project file to retrieve administrator credentials for EdgeLink-enabled devices.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43854"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ba49e574ad875a6730ef",
+      "title": "CVE-2026-43855: A heap-based buffer overflow vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43855",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A heap-based buffer overflow vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43855"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b6d94cebb7e1da818f80",
+      "title": "CVE-2026-43856: A stack-based buffer overflow vulnerability in the FileProcess::CheckDir function could allow a remote authenticated attacker to achieve arbitrary code execution via a path longer",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43856",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A stack-based buffer overflow vulnerability in the FileProcess::CheckDir function could allow a remote authenticated attacker to achieve arbitrary code execution via a path longer than 1024 bytes.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43856"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "793ff89cab0a1d5517e0",
+      "title": "CVE-2026-43857: A vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution with privileges on the service.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43857",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution with privileges on the service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43857"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "15864582e3bc3d915f10",
+      "title": "CVE-2026-43858: A stack-based buffer overflow vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43858",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:06+00:00",
+      "summary": "A stack-based buffer overflow vulnerability could allow a remote authenticated attacker to achieve arbitrary code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43858"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e3e14ae3a7f87149736e",
+      "title": "CVE-2026-113378: A security flaw has been discovered in mcollina mcp-ripgrep up to 0.4.0. Affected is an unknown function of the file src/index.ts of the component Advanced Search Tool. The manipul",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113378",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "A security flaw has been discovered in mcollina mcp-ripgrep up to 0.4.0. Affected is an unknown function of the file src/index.ts of the component Advanced Search Tool. The manipulation of the argument fileType results in os command injection. The attack requires a local approach. The exploit has been released to the public and may be used for attacks. The real existence of this vulnerability is still doubted at the moment. The code's own escapeShellArg on sibling arguments (skipped only for fileType) indicates that this is a CWE-78 oversight, not a documented design. The project maintainer cites the documentation: \"This MCP server executes shell commands using the ripgrep tool. While efforts have been made to safely escape arguments, use caution when providing input, as it runs commands on your machine.\"",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113378"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 1.9,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "973ef5776d2832eb2e9e",
+      "title": "CVE-2026-113381: A weakness has been identified in Osclass up to 8.3.1. Affected by this vulnerability is the function Item::findUserItems of the file oc-includes/osclass/model/Item.php of the comp",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113381",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "A weakness has been identified in Osclass up to 8.3.1. Affected by this vulnerability is the function Item::findUserItems of the file oc-includes/osclass/model/Item.php of the component Item Model Handler. This manipulation of the argument sPattern causes sql injection. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113381"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e0ec375b1a741fb3c90e",
+      "title": "CVE-2026-113442: Values entered by visitors were placed into the HTML summary email without being escaped. An unauthenticated attacker could use this to inject HTML into an email that is shown to t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113442",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "Values entered by visitors were placed into the HTML summary email without being escaped. An unauthenticated attacker could use this to inject HTML into an email that is shown to the recipient.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113442"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "03db8a12751c1a440807",
+      "title": "CVE-2026-113459: In versions running on TYPO3 10 and 11, the configured OpenAI API key is embedded in every backend page, so that the editor plugin can contact the OpenAI service directly from the",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113459",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "In versions running on TYPO3 10 and 11, the configured OpenAI API key is embedded in every backend page, so that the editor plugin can contact the OpenAI service directly from the browser. Any authenticated backend user can read the key and use it at the expense of the site operator. This only applies if an API key has been configured.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113459"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1c55193c4aa14a63e155",
+      "title": "CVE-2026-113468: The payment notification endpoint for PayPal accepts incoming data without verifying that it comes from the payment provider. Any site visitor can overwrite the stored payment noti",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113468",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "The payment notification endpoint for PayPal accepts incoming data without verifying that it comes from the payment provider. Any site visitor can overwrite the stored payment notification of an order that is still awaiting payment with arbitrary content. This requires a page that contains the shop's order plugin. Orders that are already paid are not affected.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113468"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b3836131f4981cbd92d2",
+      "title": "CVE-2026-43849: A heap memory read vulnerability could allow an attacker to exfiltrate sensitive data.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43849",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "A heap memory read vulnerability could allow an attacker to exfiltrate sensitive data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43849"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb137ace68134359b0c5",
+      "title": "CVE-2026-43850: A command injection vulnerability could allow an authenticated attacker to achieve root-level code execution on the system.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43850",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:05+00:00",
+      "summary": "A command injection vulnerability could allow an authenticated attacker to achieve root-level code execution on the system.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43850"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "da99d53ae833b312cde0",
+      "title": "CVE-2026-112068: The backend module does not check whether a backend user has access to the requested site. Users with access to the module can therefore open the analytics dashboard of any site.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112068",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The backend module does not check whether a backend user has access to the requested site. Users with access to the module can therefore open the analytics dashboard of any site.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-112068"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8344758a029cd21f98fa",
+      "title": "CVE-2026-112069: The extension no longer applied its access protection to files in file storages that use a non-default relative base path. These files were served directly by the web server, witho",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112069",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The extension no longer applied its access protection to files in file storages that use a non-default relative base path. These files were served directly by the web server, without any authentication or permission check. The issue is only exploitable when the extension is used on a website running TYPO3 14.3.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112069"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e2869d30d209406d9af6",
+      "title": "CVE-2026-112070: The AJAX routes of the extension do not check whether a backend user has access to the related module or dashboard widget. Any backend user can therefore retrieve analytics data of",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112070",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The AJAX routes of the extension do not check whether a backend user has access to the related module or dashboard widget. Any backend user can therefore retrieve analytics data of the sites they have page access to.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-112070"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3d10d66c616fddcff2a8",
+      "title": "CVE-2026-112071: The order cancellation function accepts an order identifier from the request and acts on that order without checking that the caller owns it. Any site visitor can set orders that a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112071",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The order cancellation function accepts an order identifier from the request and acts on that order without checking that the caller owns it. Any site visitor can set orders that are still awaiting payment to \"canceled\". This requires a page that contains the shop's order plugin. Orders that are already paid are not affected.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112071"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "cbd1d1dbc1ef4a79d82d",
+      "title": "CVE-2026-112237: The extension provides a public proxy endpoint that fetches a URL on behalf of the visitor. For one HTTP request method, the endpoint does not apply the authorization check that pr",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112237",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The extension provides a public proxy endpoint that fetches a URL on behalf of the visitor. For one HTTP request method, the endpoint does not apply the authorization check that protects the other methods, so the URL it fetches is fully controlled by the requester. An unauthenticated attacker can make the server send requests to arbitrary internal or external hosts. The attacker receives the status code and selected response headers, which allows probing of internal hosts and ports. Response bodies are not disclosed.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112237"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "892772990f448a657324",
+      "title": "CVE-2026-112238: The file search of the extension builds its database conditions by wrapping the search term in quotes itself. Only the wildcard characters of the LIKE operator are escaped, quote c",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112238",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The file search of the extension builds its database conditions by wrapping the search term in quotes itself. Only the wildcard characters of the LIKE operator are escaped, quote characters are not. A crafted search term can therefore leave the intended string value and change the database query. This allows an attacker to read data from the database. The issue affects every searched field.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112238"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ccac0be82419970a3d84",
+      "title": "CVE-2026-112239: The extension provides a backend endpoint that writes a submitted value into a submitted field of a submitted page record. It neither checks the user's permissions nor limits which",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112239",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The extension provides a backend endpoint that writes a submitted value into a submitted field of a submitted page record. It neither checks the user's permissions nor limits which fields can be changed. Any authenticated backend user can therefore change any property of any page, including its access permissions and configuration, outside the scope granted to them.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112239"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d881e35264e7fbf22b3f",
+      "title": "CVE-2026-112240: The download link for files uploaded through a form relied on a token that could be predicted. The file name in the request was also not verified in a way that resisted guessing. A",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112240",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:04+00:00",
+      "summary": "The download link for files uploaded through a form relied on a token that could be predicted. The file name in the request was also not verified in a way that resisted guessing. An unauthenticated attacker could use this to access files uploaded by other visitors. In addition, the token was shown in plain text in the text version of the notification email.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112240"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2840ff9488b76b2d5da3",
+      "title": "CVE-2026-112064: The backend module for reviewing the consent history accepted sorting, grouping and index options from the request and used them in a database query without validation. Only the fi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112064",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:03+00:00",
+      "summary": "The backend module for reviewing the consent history accepted sorting, grouping and index options from the request and used them in a database query without validation. Only the filter conditions of that query were bound as parameters. A backend user with access to the history or statistics functions could use this to read arbitrary data from the database, including password hashes of backend and frontend users.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-112064"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f4b9304e24ccfc7ee6bf",
+      "title": "CVE-2026-112065: The routes that provide consent history and statistics data did not check whether the backend user had access to the module or to the requested page. Any authenticated backend user",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112065",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:03+00:00",
+      "summary": "The routes that provide consent history and statistics data did not check whether the backend user had access to the module or to the requested page. Any authenticated backend user, regardless of permissions, could therefore retrieve consent data of any site in the installation.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-112065"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fe37296b66156661dd19",
+      "title": "CVE-2026-112066: The JSON import of the cookie consent configuration did not respect the backend user's permissions. Non-admin backend users with access to the module could import a configuration t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112066",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:03+00:00",
+      "summary": "The JSON import of the cookie consent configuration did not respect the backend user's permissions. Non-admin backend users with access to the module could import a configuration that adds arbitrary scripts to the frontend of the website.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112066"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b6e79ce0f99d28033f82",
+      "title": "CVE-2026-112067: The extension hides the correct answer to each CAPTCHA inside the image data of the CAPTCHA itself. Anyone who can request a CAPTCHA image can read the answer from it and submit it",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112067",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:03+00:00",
+      "summary": "The extension hides the correct answer to each CAPTCHA inside the image data of the CAPTCHA itself. Anyone who can request a CAPTCHA image can read the answer from it and submit it, so automated clients can pass the challenge. This applies to the default configuration, because the audio feature that causes the answer to be embedded is enabled by default. Forms that rely on the CAPTCHA as their only protection against automated submissions are exposed to abuse by bots.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112067"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ff9277786f884991c751",
+      "title": "CVE-2026-111844: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brizy Brizy brizy allows Stored XSS.This issue affects Brizy: 2.8.23.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111844",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T10:17:01+00:00",
+      "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brizy Brizy brizy allows Stored XSS.This issue affects Brizy: 2.8.23.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-111844"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "1725d137aa3debc0d8ae",
       "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
       "url": "https://openai.com/index/ted-taylor-restaurant",
@@ -6089,6 +7573,557 @@
       ]
     },
     {
+      "id": "bb447c16639c17116461",
+      "title": "CVE-2026-92287: Pass-through of unvalidated KMS URLs to KMS clients in Apache C++ Parquet and PyArrow versions 4.0.0 to 25.0.1. This affects users who read Parquet files and configure Parquet",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92287",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:12+00:00",
+      "summary": "Pass-through of unvalidated KMS URLs to KMS clients in Apache C++ Parquet and PyArrow versions 4.0.0 to 25.0.1. This affects users who read Parquet files and configure Parquet decryption properties with a KmsClient implementation. On the reader side, the KMS URL can be application-controlled (specified in the KmsConnectionConfig) or file-controlled. If the user does not leverage application control for this parameter, a file-controlled KMS URL is forwarded to a pluggable KmsClient implementation. If the KMS implementation does not perform host validation and makes use of the provided KMS URL, a KMS token can be sent to a malicious host set by an attacker in the file. Users are recommended to upgrade to version 26.0.0, which disables this behavior by default and requires that users opt-in to it by enabling the read_kms_url flag in the DecryptionConfiguration. Users of affected versions are recommended to either specify the KMS URL in the KmsConnectionConfig when reading files, or ensure any KmsClient implementations validate received KMS URLs. Users that opt-in to file-controlled KMS URLs in version 26.0.0 and later must ensure KmsClients validate KMS URLs.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-92287"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "566065de998b98d8b438",
+      "title": "CVE-2026-43846: A stack-based buffer overflow vulnerability in a non-functional feature could allow an authenticated attacker to achieve code execution.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43846",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:11+00:00",
+      "summary": "A stack-based buffer overflow vulnerability in a non-functional feature could allow an authenticated attacker to achieve code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43846"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fa311500910187ec7b82",
+      "title": "CVE-2026-43847: A vulnerability in the proprietary protocol could allow an attacker to brute force the administrator password without restrictions, even when the SafeEnhancement feature is enabled",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43847",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:11+00:00",
+      "summary": "A vulnerability in the proprietary protocol could allow an attacker to brute force the administrator password without restrictions, even when the SafeEnhancement feature is enabled.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43847"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c47de011bfb1d7741e7f",
+      "title": "CVE-2026-43848: A vulnerability in the bulk port configuration functionality could allow an unauthenticated attacker to crash the service.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43848",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:11+00:00",
+      "summary": "A vulnerability in the bulk port configuration functionality could allow an unauthenticated attacker to crash the service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43848"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "800e62a3b134fb28e673",
+      "title": "CVE-2026-43837: A buffer overflow vulnerability in the password verification functionality could allow an attacker with guest authentication to achieve code execution.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43837",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A buffer overflow vulnerability in the password verification functionality could allow an attacker with guest authentication to achieve code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43837"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6682b970609c50acf095",
+      "title": "CVE-2026-43838: A stack-based buffer overflow vulnerability in the login functionality could allow an attacker to achieve code execution.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43838",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A stack-based buffer overflow vulnerability in the login functionality could allow an attacker to achieve code execution.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43838"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 9.2,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "bdeb5a9fbbc705f9fcfd",
+      "title": "CVE-2026-43839: A NULL pointer dereference vulnerability in the logs management functionality could allow an unauthenticated attacker to crash the service.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43839",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A NULL pointer dereference vulnerability in the logs management functionality could allow an unauthenticated attacker to crash the service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43839"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e4b95e19afab1054bd18",
+      "title": "CVE-2026-43840: A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the on_disconnected callback function.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43840",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the on_disconnected callback function.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43840"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5bd033d93a6ed90795fc",
+      "title": "CVE-2026-43841: A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the rpc_rx_fsm function.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43841",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the rpc_rx_fsm function.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43841"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "da5bda237148c20fc31b",
+      "title": "CVE-2026-43842: A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the rpc_rx_fsm function when msglen is set",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43842",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A NULL pointer dereference vulnerability in the license manager service could allow an unauthenticated attacker to crash the service via the rpc_rx_fsm function when msglen is set to 0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43842"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f391bf5ec43cb13aca2c",
+      "title": "CVE-2026-43843: An integer overflow vulnerability in the license manager service could allow an unauthenticated attacker to crash the service.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43843",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "An integer overflow vulnerability in the license manager service could allow an unauthenticated attacker to crash the service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43843"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "076eaad7eb50357454a9",
+      "title": "CVE-2026-43844: A vulnerability in the proprietary protocol could allow an attacker to bypass the authentication mechanism.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43844",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A vulnerability in the proprietary protocol could allow an attacker to bypass the authentication mechanism.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43844"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "45fd922c4baffe7c1a7b",
+      "title": "CVE-2026-43845: A vulnerability in the password reset mechanism could allow an attacker to bypass the authentication mechanism.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43845",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:10+00:00",
+      "summary": "A vulnerability in the password reset mechanism could allow an attacker to bypass the authentication mechanism.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43845"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 9.2,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4b13355def4c8a942528",
+      "title": "CVE-2026-113465: It is possible to execute a DOM-based Cross-Site Scripting attack against Stormshield’s web administration panel. To exploit this vulnerability, an attacker would need to craft",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113465",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:09+00:00",
+      "summary": "It is possible to execute a DOM-based Cross-Site Scripting attack against Stormshield’s web administration panel. To exploit this vulnerability, an attacker would need to craft a URL containing a malicious script payload within a specific parameter and lure an authenticated administrator into visiting that link.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113465"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.6,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6345b50578b252863c5c",
+      "title": "CVE-2026-113469: A failure has been identified in the SNS during dynamic data files signature check. A logic error in the signature verification routine resulting in acceptance of unauthenticate",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113469",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:09+00:00",
+      "summary": "A failure has been identified in the SNS during dynamic data files signature check. A logic error in the signature verification routine resulting in acceptance of unauthenticated dynamic data update during Autoupdate routine.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113469"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e2d41c6c5a0fd6605b60",
+      "title": "CVE-2026-11959: Stored Cross-Site Scripting (XSS) in FacturaScripts, version 2025.61, caused by a lack of adequate validation or sanitisation of user input in the ‘city’ and ‘province’ fields in t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11959",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:09+00:00",
+      "summary": "Stored Cross-Site Scripting (XSS) in FacturaScripts, version 2025.61, caused by a lack of adequate validation or sanitisation of user input in the ‘city’ and ‘province’ fields in the ‘ListAlmacen’ endpoint. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript code in the victim’s browser (the application user) or to escalate privileges from a normal user to an administrator by executing specially crafted JavaScript code, thereby compromising the system’s confidentiality or hijacking the session (even with httpOnly cookies by extracting CSRF tokens).",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-11959"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "179a2098fc600890b037",
+      "title": "CVE-2026-11960: Enumeration of unauthenticated users in FacturaScripts, version 2025.61. The application returns different responses when attempting to log in with a valid username compared to an",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11960",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:09+00:00",
+      "summary": "Enumeration of unauthenticated users in FacturaScripts, version 2025.61. The application returns different responses when attempting to log in with a valid username compared to an invalid one. An unauthenticated attacker could systematically identify valid usernames by examining variations in the application’s responses, such as changes in response time, discrepancies between error messages or differences in HTTP status codes. A successful exploit allows the attacker to compile a list of valid user accounts. This list could be used to carry out targeted brute-force attacks, password spraying, credential stuffing or social engineering campaigns against the confirmed accounts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-11960"
+      ],
+      "priority_score": 22,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ac385e3e4163ce7f90c4",
+      "title": "CVE-2026-43836: A vulnerability could allow an attacker to forge a packet to execute arbitrary commands with maximum privileges.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43836",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:09+00:00",
+      "summary": "A vulnerability could allow an attacker to forge a packet to execute arbitrary commands with maximum privileges.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43836"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8d3375ba4232554d0878",
+      "title": "CVE-2026-101201: A malformed header in the binary file fed to QBinaryJson::fromBinaryData() can cause undefined behaviour because of out-of-bounds read.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101201",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T09:17:08+00:00",
+      "summary": "A malformed header in the binary file fed to QBinaryJson::fromBinaryData() can cause undefined behaviour because of out-of-bounds read.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-101201"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "d43f54e6dd6338953d79",
       "title": "CVE-2026-43834: A stack-based buffer overflow vulnerability in the logs settings functionality could allow an authenticated attacker to achieve code execution.",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43834",
@@ -6111,6 +8146,35 @@
       ],
       "collected_at": "2026-10-26T23:40:18+00:00",
       "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "391d8c0a2338bb2b596e",
+      "title": "CVE-2026-43835: A vulnerability in the firmware upgrade functionality could allow an authenticated attacker to upload a forged firmware upgrade file, potentially compromising the device permanentl",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43835",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T08:16:44+00:00",
+      "summary": "A vulnerability in the firmware upgrade functionality could allow an authenticated attacker to upload a forged firmware upgrade file, potentially compromising the device permanently.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-43835"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T01:38:23+00:00",
+      "cvss": 8.6,
       "severity": "HIGH",
       "kev": false,
       "related_sources": [
@@ -6980,2037 +9044,6 @@
       ],
       "collected_at": "2026-10-26T23:40:18+00:00",
       "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3da529fa447def0dded9",
-      "title": "CVE-2026-86963: A denial-of-service issue was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27. An attacker in a privileged network p",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86963",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "A denial-of-service issue was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27. An attacker in a privileged network position may be able to cause a denial-of-service.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86963"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0a2be90f74c234502584",
-      "title": "CVE-2026-86975: An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. Processing a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86975",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. Processing a maliciously crafted image may lead to unexpected process termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86975"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6704c8aca846d2c9de23",
-      "title": "CVE-2026-86976: An authorization issue was addressed with improved state management. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27. An app may be able to access sensitive user",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86976",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86976"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8393f712b495826ab087",
-      "title": "CVE-2026-86977: An authorization issue was addressed with improved network restrictions. This issue is fixed in iOS 27 and iPadOS 27. An app may be able to initiate calls or send messages.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86977",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "An authorization issue was addressed with improved network restrictions. This issue is fixed in iOS 27 and iPadOS 27. An app may be able to initiate calls or send messages.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86977"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "740444fcf9c24dbe7585",
-      "title": "CVE-2026-86979: A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86979",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86979"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7e330800a943a4db7382",
-      "title": "CVE-2026-86981: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpected system",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86981",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:29+00:00",
-      "summary": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86981"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "77dc95196c7aa98869a8",
-      "title": "CVE-2026-86940: This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86940",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86940"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7674f792d686083ccfaa",
-      "title": "CVE-2026-86944: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86944",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86944"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "10ea7f14eee85d37f634",
-      "title": "CVE-2026-86948: This issue was addressed by enforcing library validation on the affected binaries. This issue is fixed in Xcode 27. An app may be able to break out of its sandbox.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86948",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "This issue was addressed by enforcing library validation on the affected binaries. This issue is fixed in Xcode 27. An app may be able to break out of its sandbox.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86948"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5f68ae3f3d14bdb44a57",
-      "title": "CVE-2026-86949: This issue was addressed by enforcing library validation on the affected binaries. This issue is fixed in Xcode 27. A malicious app may be able to break out of its sandbox.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86949",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "This issue was addressed by enforcing library validation on the affected binaries. This issue is fixed in Xcode 27. A malicious app may be able to break out of its sandbox.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86949"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2ad396858aa93f1f6a93",
-      "title": "CVE-2026-86953: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. An at",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86953",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. An attacker in physical proximity may be able to cause a denial-of-service.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86953"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.6,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d19ad19bdc2507e965bf",
-      "title": "CVE-2026-86955: An authorization issue was addressed with improved state management. This issue is fixed in iOS 27 and iPadOS 27. An app may be able to access sensitive user data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86955",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 27 and iPadOS 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86955"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7eaaaf314deadd1eb19d",
-      "title": "CVE-2026-86957: An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8,",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86957",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27, visionOS 27, watchOS 27. An attacker in wireless proximity may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86957"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c77079f3b24c23511301",
-      "title": "CVE-2026-86959: An input validation issue was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 1",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86959",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "An input validation issue was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. Processing a maliciously crafted image may lead to unexpected process termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86959"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1ba177ae99dc056df4cb",
-      "title": "CVE-2026-86961: A race condition was addressed with additional validation. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27. A malicious app may be able to break out of its sandbo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86961",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "A race condition was addressed with additional validation. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27. A malicious app may be able to break out of its sandbox.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86961"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e7f8860d61ffc6eb3e7f",
-      "title": "CVE-2026-86962: A double free issue was addressed with improved memory management. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8,",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86962",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:28+00:00",
-      "summary": "A double free issue was addressed with improved memory management. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27, visionOS 27, watchOS 27. An app may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86962"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cdb1bd83f6ed18677833",
-      "title": "CVE-2026-86914: An information disclosure issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86914",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "An information disclosure issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensitive network connection information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86914"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0495cb3c7da3228ccf2d",
-      "title": "CVE-2026-86915: A race condition was addressed with improved locking. This issue is fixed in macOS Golden Gate 27. An app may be able to cause unexpected system termination.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86915",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A race condition was addressed with improved locking. This issue is fixed in macOS Golden Gate 27. An app may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86915"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.7,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2ff7e101cf58b8f176f4",
-      "title": "CVE-2026-86918: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. Proce",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86918",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. Processing a maliciously crafted image may lead to unexpected app termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86918"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4fa93d12e6d7915de687",
-      "title": "CVE-2026-86919: A stack overflow was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macO",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86919",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A stack overflow was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, visionOS 27. An attacker with a paired Bluetooth device may be able to execute arbitrary code.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86919"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "67a9114d080a932edb9b",
-      "title": "CVE-2026-86921: A permissions issue was addressed with improved validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, visionOS 27. A local attack",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86921",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A permissions issue was addressed with improved validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, visionOS 27. A local attacker may be able to overwrite restricted files.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86921"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.2,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4754b89f2bc37418a591",
-      "title": "CVE-2026-86922: A type confusion issue was addressed with improved state management. This issue is fixed in Safari 27, iOS 27 and iPadOS 27, macOS Golden Gate 27, visionOS 27. Processing malicious",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86922",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A type confusion issue was addressed with improved state management. This issue is fixed in Safari 27, iOS 27 and iPadOS 27, macOS Golden Gate 27, visionOS 27. Processing maliciously crafted web content may lead to arbitrary code execution.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86922"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8a91f94eee9b2afd2acf",
-      "title": "CVE-2026-86928: A path handling issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27. An app may be able to access protected user data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86928",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A path handling issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27. An app may be able to access protected user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86928"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "28a9aa454ae9ec34cc16",
-      "title": "CVE-2026-86932: An authorization issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86932",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "An authorization issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86932"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f82f22aacb6756240a27",
-      "title": "CVE-2026-86933: A permissions issue was addressed with additional sandbox restrictions. This issue is fixed in macOS Golden Gate 27. An app may be able to access information about a user's contact",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86933",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "A permissions issue was addressed with additional sandbox restrictions. This issue is fixed in macOS Golden Gate 27. An app may be able to access information about a user's contacts.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86933"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 3.3,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "efe507f95a90069eb5fd",
-      "title": "CVE-2026-86935: This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86935",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:27+00:00",
-      "summary": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86935"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9886f1ca7b1c999fbcdc",
-      "title": "CVE-2026-86907: An authorization issue was addressed with improved entitlement checks. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app with admin privileges may be able to modi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86907",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:26+00:00",
-      "summary": "An authorization issue was addressed with improved entitlement checks. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app with admin privileges may be able to modify the System Keychain.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86907"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c95503909da95d589496",
-      "title": "CVE-2026-86913: A use after free issue was addressed with improved memory management. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86913",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:26+00:00",
-      "summary": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27, visionOS 27, watchOS 27. Processing a maliciously crafted media file may lead to unexpected app termination or corrupt process memory.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86913"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8b4d73aeb10a8d5a63ff",
-      "title": "CVE-2026-86871: An integer underflow was addressed with improved input validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker with control of a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86871",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:25+00:00",
-      "summary": "An integer underflow was addressed with improved input validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker with control of a network file server may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86871"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "24e764b3c74b08fc62b4",
-      "title": "CVE-2026-86872: A logic issue was addressed with improved state management. This issue is fixed in Safari 27, visionOS 27, watchOS 27. Processing maliciously crafted web content may lead to unexpe",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86872",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:25+00:00",
-      "summary": "A logic issue was addressed with improved state management. This issue is fixed in Safari 27, visionOS 27, watchOS 27. Processing maliciously crafted web content may lead to unexpected behavior.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86872"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a97ec1b1155778c792f1",
-      "title": "CVE-2026-86874: An out-of-bounds read was addressed with improved input validation. This issue is fixed in Xcode 27. Parsing a maliciously crafted binary may lead to unexpected tool termination.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86874",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:25+00:00",
-      "summary": "An out-of-bounds read was addressed with improved input validation. This issue is fixed in Xcode 27. Parsing a maliciously crafted binary may lead to unexpected tool termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86874"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 3.3,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f2d58a52a0d633508394",
-      "title": "CVE-2026-86875: An input validation issue was addressed with improved input validation. This issue is fixed in Xcode 27. Parsing a maliciously crafted binary may lead to unexpected app termination",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86875",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:25+00:00",
-      "summary": "An input validation issue was addressed with improved input validation. This issue is fixed in Xcode 27. Parsing a maliciously crafted binary may lead to unexpected app termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86875"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "80c4d1f19698982f58b0",
-      "title": "CVE-2026-84613: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84613",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:24+00:00",
-      "summary": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27, visionOS 27, watchOS 27. An attacker in radio range may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84613"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "738c89fe21ee36413bc9",
-      "title": "CVE-2026-86868: An authentication issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker may be able to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86868",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:24+00:00",
-      "summary": "An authentication issue was addressed with improved state management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker may be able to impersonate other users.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86868"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "84eeda42a0b35726a998",
-      "title": "CVE-2026-84579: A logic issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. Opening a file referencing a network share may",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84579",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:23+00:00",
-      "summary": "A logic issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. Opening a file referencing a network share may lead to unexpected software execution.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84579"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1971cf0ae7d2cf0d56d9",
-      "title": "CVE-2026-84582: A privacy issue was addressed with improved access restrictions. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. An app may be",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84582",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:23+00:00",
-      "summary": "A privacy issue was addressed with improved access restrictions. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, tvOS 27, visionOS 27, watchOS 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84582"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6fbcfea4c9a8ab6e7a4d",
-      "title": "CVE-2026-84547: A memory corruption issue was addressed with improved input validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker in physical p",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84547",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:22+00:00",
-      "summary": "A memory corruption issue was addressed with improved input validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An attacker in physical proximity may be able to corrupt process memory.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84547"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 3.5,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cd6fb20060e8ccc3d290",
-      "title": "CVE-2026-77936: Letta through 0.16.8 ships a compose.yaml that does not enable LETTA_SERVER_SECURE, so the password middleware is never added and all API routes are unauthenticated, and it exposes",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77936",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:20+00:00",
-      "summary": "Letta through 0.16.8 ships a compose.yaml that does not enable LETTA_SERVER_SECURE, so the password middleware is never added and all API routes are unauthenticated, and it exposes a superuser PostgreSQL port with default credentials. Remote attackers can execute arbitrary Python via POST /v1/tools/run, manage /v1/admin users, or run OS commands via COPY PROGRAM.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77936"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "391b7e1190a9be07773c",
-      "title": "CVE-2026-77937: Letta through 0.16.8 contains an authentication bypass vulnerability that allows API callers to impersonate other users by supplying a self-asserted user_id HTTP header. Attackers",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77937",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:20+00:00",
-      "summary": "Letta through 0.16.8 contains an authentication bypass vulnerability that allows API callers to impersonate other users by supplying a self-asserted user_id HTTP header. Attackers can set user_id to another tenant's ID, even with LETTA_SERVER_SECURE enabled, to read and modify that user's agents, memory and configuration.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77937"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "95ccba91a70316f6c153",
-      "title": "CVE-2026-77938: Letta through 0.16.8 contains an information disclosure vulnerability that allows users running tools to read server secrets because LocalSandbox subprocesses inherit the full serv",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77938",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:20+00:00",
-      "summary": "Letta through 0.16.8 contains an information disclosure vulnerability that allows users running tools to read server secrets because LocalSandbox subprocesses inherit the full server environment. Attackers can run code via POST /v1/tools/run or custom tools to read LETTA_PG_URI, POSTGRES_PASSWORD, and provider API keys, then access cross-tenant database data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77938"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d3d6200d0846e079906c",
-      "title": "CVE-2026-84490: This issue was addressed through improved state management. This issue is fixed in iOS 27 and iPadOS 27. An attacker with physical access to a locked device may be able to bypass D",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84490",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:20+00:00",
-      "summary": "This issue was addressed through improved state management. This issue is fixed in iOS 27 and iPadOS 27. An attacker with physical access to a locked device may be able to bypass Digital ID authentication when iPhone Mirroring is active.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84490"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 2.0,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4901c0b1063816a42248",
-      "title": "CVE-2026-84508: This issue was addressed with improved validation of the caller's access. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Tahoe 26.7, visionOS 27. An app m",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84508",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:20+00:00",
-      "summary": "This issue was addressed with improved validation of the caller's access. This issue is fixed in iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Tahoe 26.7, visionOS 27. An app may be able to access protected user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-84508"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "da91e5e4c71214ada1b9",
-      "title": "CVE-2026-75128: Langchain-Chatchat through 0.3.1.3 exposes a POST /tools/call API endpoint that invokes any registered tool by name without authentication, leaving the always-registered shell tool",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75128",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "Langchain-Chatchat through 0.3.1.3 exposes a POST /tools/call API endpoint that invokes any registered tool by name without authentication, leaving the always-registered shell tool callable. Remote attackers can send a single request naming the shell tool to execute arbitrary OS commands as the server user (root in the shipped Docker image).",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-75128"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "90515a648ddd2aae1ff8",
-      "title": "CVE-2026-77926: Aix-DB 1.2.4 contains a remote code execution vulnerability that allows authenticated non-admin users to run operating system commands through the ChatBI common agent's ungated dee",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77926",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "Aix-DB 1.2.4 contains a remote code execution vulnerability that allows authenticated non-admin users to run operating system commands through the ChatBI common agent's ungated deepagents execute tool. Attackers can send crafted chat input to POST /dify/get_answer or upload documents with malicious text to run host commands, exposing datasource credentials and model API keys.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77926"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "644cac622486fc875ed0",
-      "title": "CVE-2026-77930: EvoScientist 0.1.0 before 0.2.5 contains an approval bypass vulnerability that allows attackers to run host shell commands by delegating them to async sub-agents lacking an interru",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77930",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "EvoScientist 0.1.0 before 0.2.5 contains an approval bypass vulnerability that allows attackers to run host shell commands by delegating them to async sub-agents lacking an interrupt_on gate. Attackers can plant instructions in ingested content such as fetched web pages, so the agent calls start_async_task and runs commands with user privileges and environment secrets.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77930"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "41e9115cfc44829e36c9",
-      "title": "CVE-2026-77932: DB-GPT through 0.8.2 contains an unauthenticated remote code execution vulnerability because the /api/v1/chat/react-agent endpoint relies on a mock get_user_from_headers function t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77932",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "DB-GPT through 0.8.2 contains an unauthenticated remote code execution vulnerability because the /api/v1/chat/react-agent endpoint relies on a mock get_user_from_headers function that grants every caller the admin role. Unauthenticated attackers can send prompts that make the ReAct agent's unsandboxed code_interpreter and shell_interpreter tools run arbitrary Python or bash as root in the webserver container, including reaching the bundled database with default credentials.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77932"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8abc1a3efde712f58d0e",
-      "title": "CVE-2026-77933: DB-GPT through 0.8.2 contains a hardcoded credentials vulnerability in its default docker-compose.yml that sets a static MYSQL_ROOT_PASSWORD and publishes port 3306 on all interfac",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77933",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "DB-GPT through 0.8.2 contains a hardcoded credentials vulnerability in its default docker-compose.yml that sets a static MYSQL_ROOT_PASSWORD and publishes port 3306 on all interfaces. Attackers reaching port 3306 or the shared dbgptnet network can authenticate as root@% to gain full database access including FILE and SUPER privileges.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77933"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5d4a06471dac7480cf8d",
-      "title": "CVE-2026-77934: Coze Studio before 0.5.0 contains an insecure default configuration that allows any registered user to execute commands by running workflow code nodes in an unsandboxed python3 sub",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77934",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "Coze Studio before 0.5.0 contains an insecure default configuration that allows any registered user to execute commands by running workflow code nodes in an unsandboxed python3 subprocess. Attackers can bypass the regex import filter with __import__('subprocess') to run commands, stealing environment variables, model API keys, and accessing MySQL, MinIO, Redis and etcd.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77934"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c59dd3d1a879e189506e",
-      "title": "CVE-2026-77935: Coze Studio through 0.5.1 contains an insecure direct object reference vulnerability in workflow.go that allows authenticated users to access other spaces' workflows by supplying f",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77935",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:19+00:00",
-      "summary": "Coze Studio through 0.5.1 contains an insecure direct object reference vulnerability in workflow.go that allows authenticated users to access other spaces' workflows by supplying foreign workflowIDs. Attackers can pair their own spaceID with another tenant's workflowID in save, update_meta, batch_delete, canvas, test_run and nodeDebug routes to read, run, overwrite or delete workflows.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-77935"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ddc98be74d36d226171c",
-      "title": "CVE-2026-65396: A buffer overflow was addressed with improved size validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpe",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65396",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:18+00:00",
-      "summary": "A buffer overflow was addressed with improved size validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpected system termination.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65396"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bda8b8a0b5e418c38cd2",
-      "title": "CVE-2026-65372: A race condition was addressed with additional validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. A malicious application may be able to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65372",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:17+00:00",
-      "summary": "A race condition was addressed with additional validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. A malicious application may be able to bypass Privacy preferences.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65372"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.7,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0039bbe66da694f49b8a",
-      "title": "CVE-2026-65379: The issue was addressed with improved handling of secure input state. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to acces",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65379",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:17+00:00",
-      "summary": "The issue was addressed with improved handling of secure input state. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65379"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0e915be7e0c6651523b4",
-      "title": "CVE-2026-65356: An access issue was addressed with improved access controls. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensiti",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65356",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:16+00:00",
-      "summary": "An access issue was addressed with improved access controls. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65356"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "10b79069ab05820cac53",
-      "title": "CVE-2026-28850: An authorization issue was addressed with improved state management. This issue is fixed in macOS Sequoia 15.8, visionOS 27. An app may be able to access sensitive user data.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28850",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:11+00:00",
-      "summary": "An authorization issue was addressed with improved state management. This issue is fixed in macOS Sequoia 15.8, visionOS 27. An app may be able to access sensitive user data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-28850"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "95ab99c3106c007ff82d",
-      "title": "CVE-2026-28853: The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to elevate privileges.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28853",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:11+00:00",
-      "summary": "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to elevate privileges.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-28853"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2e019dd32e69ff673121",
-      "title": "CVE-2026-28854: The issue was addressed with additional app bundle integrity checks. This issue is fixed in macOS Golden Gate 27. A maliciously modified app may not be prevented from launching.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28854",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:11+00:00",
-      "summary": "The issue was addressed with additional app bundle integrity checks. This issue is fixed in macOS Golden Gate 27. A maliciously modified app may not be prevented from launching.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-28854"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "965b8c9d1d0aca3ddb68",
-      "title": "CVE-2026-109440: LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web co",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109440",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:10+00:00",
-      "summary": "LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web content retrieved by the agent. Because Bash and ExecuteCode lack an allow-list and human-in-the-loop approval, attackers can run code in the workspace sandbox and exfiltrate vault secrets from _internal/.vault_secrets.json.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109440"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7315c9a24c3ded4120c1",
-      "title": "CVE-2026-109441: LangAlpha through 2026.09.07 contains an improper isolation vulnerability that places all tenants' sandbox containers on Docker's shared default bridge network with inter-container",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109441",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:10+00:00",
-      "summary": "LangAlpha through 2026.09.07 contains an improper isolation vulnerability that places all tenants' sandbox containers on Docker's shared default bridge network with inter-container communication enabled. Authenticated users with code execution in their own sandbox can connect directly to other tenants' containers, bypassing require_workspace_owner checks to read files such as vault secrets from exposed servers.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109441"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ed3ca0f33aab972e3076",
-      "title": "CVE-2026-109442: piflow 2.0.0 through 2.0.1 contains a remote code execution vulnerability in its DeepAgents chat agent, whose POST /chat and POST /chat/stream endpoints lack authentication. Attack",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109442",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:10+00:00",
-      "summary": "piflow 2.0.0 through 2.0.1 contains a remote code execution vulnerability in its DeepAgents chat agent, whose POST /chat and POST /chat/stream endpoints lack authentication. Attackers can instruct the agent to call the exec_shell tool, which runs arbitrary commands via subprocess.run without human approval or an allow-list, exposing environment secrets such as LLM API keys and database credentials.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109442"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "aa5c901f6c41c8998473",
-      "title": "CVE-2026-109443: JoySafeter through 1.0.0 contains a remote code execution vulnerability that allows authenticated users to run operating system commands via an unsandboxed execute tool in Copilot",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109443",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:10+00:00",
-      "summary": "JoySafeter through 1.0.0 contains a remote code execution vulnerability that allows authenticated users to run operating system commands via an unsandboxed execute tool in Copilot standard mode. Attackers can self-register, select standard mode in the WebSocket chat.start extension, and have the agent invoke subprocess.run with shell=True on the host to access other tenants' data and server secrets.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109443"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "013be7b0f8071b8ef129",
-      "title": "CVE-2026-109444: OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presente",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109444",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:10+00:00",
-      "summary": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presenter's execution_allowed() always returns True. Attackers can inject instructions into alerts or Slack messages triaged by the agent to run commands on the host and exfiltrate LLM, Slack and cloud credentials.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109444"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f9421c020304ba36a549",
-      "title": "CVE-2026-105297: Summary Before version 0.8.1, Pingora's HTTP/2 server used the h2 crate's default limits unless the application set its own 16 MiB decoded header-list size and no limit on concu",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105297",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:09+00:00",
-      "summary": "Summary Before version 0.8.1, Pingora's HTTP/2 server used the h2 crate's default limits unless the application set its own 16 MiB decoded header-list size and no limit on concurrent streams. A remote, unauthenticated client can send 1-byte HPACK references to a near-empty header, making the server allocate hundreds of thousands of header fields per stream across an unlimited number of streams on one connection, and use HTTP/2 flow control to keep those streams open. This can exhaust memory and degrade or terminate the Pingora process. Impact Remote, unauthenticated denial of service against any Pingora service that terminates HTTP/2 (h2 or h2c) without explicitly setting max_header_list_size and max_concurrent_streams. The reporter showed that a single connection could get a Pingora process with a 2 GiB memory limit OOM-killed. Note that Cloudflare CDN customers were unaffected, as internal Pingora services at Cloudflare do not have HTTP/2 clients. Mitigation: * Upgrade to pingora 0.8.1 or later (fix: https://github.com/cloudflare/pingora/commit/d193c8d49b8b7c1c1ede93183759caa4f6906bbd ). When no H2Options are supplied, Pingora now advertises and enforces a 64 KiB decoded header-l",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105297"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7c65f86ea76510352b82",
-      "title": "CVE-2026-105298: Summary Before version 0.9.0, Pingora accepted HTTP/2 requests whose Host header differed from the :authority pseudo-header. Request filters, cache keys, and logs that read the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105298",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:09+00:00",
-      "summary": "Summary Before version 0.9.0, Pingora accepted HTTP/2 requests whose Host header differed from the :authority pseudo-header. Request filters, cache keys, and logs that read the request URI (session.req_header().uri) saw the :authority value, but the upstream received the client-supplied Host value. Pingora also accepted :authority values containing userinfo (for example, user@example.com). This violates RFC 9113 Section 8.3.1, which requires an intermediary to use the :authority value for Host and replace any existing Host field. Root cause * HTTP/2 to HTTP/1.1: Host was generated from :authority only when the request had no Host header, so a conflicting client Host was forwarded unchanged. * HTTP/2 to HTTP/2: the client Host header was removed and used to overwrite the upstream :authority, after request filters had already run against the original :authority. * The HTTP/2 server did not compare Host with :authority and did not reject userinfo in the authority. Impact A remote, unauthenticated attacker can send a single HTTP/2 request that the application sees as one host and the upstream receives as another. Where request filters, access controls, or cache keys use the URI authori",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105298"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "be039a2baa270f2eb73e",
-      "title": "CVE-2026-109395: Ning compress-lzf before 1.2.0 contains an out-of-bounds memory access vulnerability in the sun.misc.Unsafe based UnsafeChunkDecoder that fails to validate back-references and lite",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109395",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T01:17:09+00:00",
-      "summary": "Ning compress-lzf before 1.2.0 contains an out-of-bounds memory access vulnerability in the sun.misc.Unsafe based UnsafeChunkDecoder that fails to validate back-references and literal runs. Attackers can supply crafted LZF streams to applications using the default LZFDecoder to leak unrelated JVM heap memory into decompressed output or crash the JVM.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "filtracion"
-      ],
-      "cves": [
-        "CVE-2026-109395"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ca9be4b26e53a56cd972",
-      "title": "CVE-2026-8355: IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation privileges to perform a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8355",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:19:20+00:00",
-      "summary": "IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation privileges to perform arbitrary HTTP POST requests to internal network resources and cloud metadata endpoints. The vulnerability occurs during OAuth-enabled gateway registration when the system fails to validate the oauth_config.token_url parameter. When registering a gateway with OAuth client credentials authentication, an attacker can supply a malicious token_url pointing to internal services, cloud metadata endpoints (AWS IMDSv1, GCP, Azure), or localhost-bound services. The application immediately performs an HTTP POST request to the attacker-controlled URL with form-encoded credentials in the body. If the response cannot be parsed as a valid OAuth token response, up to 256 characters of the response body are reflected back to the attacker in the HTTP 502 error message. This vulnerability bypasses existing SSRF protections that are applied to the gateway.url field but not to OAuth configuration parameters.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-8355"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cc092e5379113606d9fe",
-      "title": "CVE-2026-109126: IBM Verify Identity Access 11.0.3.1 and IBM Security Verify Access 10.0.9.3 Appliance could allow a physically proximate attacker to gain elevated privileges due to the use of hard",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109126",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:17:30+00:00",
-      "summary": "IBM Verify Identity Access 11.0.3.1 and IBM Security Verify Access 10.0.9.3 Appliance could allow a physically proximate attacker to gain elevated privileges due to the use of hard-coded credentials.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109126"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6e10ef250c847962bd13",
-      "title": "CVE-2026-112373: A security vulnerability has been detected in H3C Magic NX15 NX15V100R017. This impacts the function sub_416874 of the file /usr/bin/usrlist. Such manipulation leads to stack-based",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112373",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:17:30+00:00",
-      "summary": "A security vulnerability has been detected in H3C Magic NX15 NX15V100R017. This impacts the function sub_416874 of the file /usr/bin/usrlist. Such manipulation leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-112373"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.7,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d545a48cf4679ba99fe0",
-      "title": "CVE-2026-107366: IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bulk-delete another user's messages, overw",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107366",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:17:25+00:00",
-      "summary": "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bulk-delete another user's messages, overwrite message content to inject malicious prompts, or hijack an entire conversation session by reassigning its session ID.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107366"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.3,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0ce912862a7cec9d2b94",
-      "title": "CVE-2026-107400: IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper authentication.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107400",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:17:25+00:00",
-      "summary": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper authentication.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107400"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6fe3fd513a115ebed07b",
-      "title": "CVE-2026-105453: IBM Sterling Connect Direct for Unix 6.3.0.0 through 6.3.0.7 and 6.4.0.0 through 6.4.0.6 could allow a local attacker to gain elevated privileges due to improper privilege manageme",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105453",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T00:17:23+00:00",
-      "summary": "IBM Sterling Connect Direct for Unix 6.3.0.0 through 6.3.0.7 and 6.4.0.0 through 6.4.0.6 could allow a local attacker to gain elevated privileges due to improper privilege management.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105453"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.4,
       "severity": "HIGH",
       "kev": false,
       "related_sources": [
@@ -11140,14 +11173,14 @@
       ]
     },
     {
-      "id": "570fe3204556675e8dd9",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "url": "https://openai.com/index/sophos",
+      "id": "9bf93d58cc35db9987f8",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
       "type": "article",
       "tags": [
         "general"
@@ -11168,14 +11201,14 @@
       ]
     },
     {
-      "id": "9bf93d58cc35db9987f8",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "url": "https://openai.com/index/asana-browser-agent",
+      "id": "570fe3204556675e8dd9",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
       "type": "article",
       "tags": [
         "general"
@@ -13859,18 +13892,17 @@
       ]
     },
     {
-      "id": "50d71cd52400f551c336",
-      "title": "How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "id": "2fc54b690d7b20a2e143",
+      "title": "Towards safety cases for frontier AI training",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T19:00:00+00:00",
-      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
       "type": "article",
       "tags": [
-        "defensa_militar",
-        "sector_publico"
+        "general"
       ],
       "cves": [],
       "priority_score": 10,
@@ -13888,17 +13920,18 @@
       ]
     },
     {
-      "id": "2fc54b690d7b20a2e143",
-      "title": "Towards safety cases for frontier AI training",
-      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "id": "50d71cd52400f551c336",
+      "title": "How we will do better for Australia",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T19:00:00+00:00",
-      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
       "type": "article",
       "tags": [
-        "general"
+        "defensa_militar",
+        "sector_publico"
       ],
       "cves": [],
       "priority_score": 10,
@@ -49572,41 +49605,6 @@
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
       ]
-    },
-    {
-      "id": "b9b3e2d240b0dec6011b",
-      "title": "CVE-2021-25371: Samsung Mobile Devices Unspecified Vulnerability",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25371",
-      "source": "CISA Known Exploited Vulnerabilities (KEV)",
-      "category": "Vulnerabilidades explotadas (CISA KEV)",
-      "region": "Global",
-      "published_at": "2023-06-29T00:00:00+00:00",
-      "summary": "Samsung mobile devices contain an unspecified vulnerability within DSP driver that allows attackers to load ELF libraries inside DSP. Proveedor: Samsung. Producto: Mobile Devices. Acción requerida: Apply updates per vendor instructions or discontinue use of the product if updates are unavailable. Fecha agregada al catálogo: 2023-06-29. Uso en campañas de ransomware: Unknown.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "ransomware"
-      ],
-      "cves": [
-        "CVE-2021-25371"
-      ],
-      "priority_score": 92,
-      "priority_label": "crítica",
-      "priority_basis": [
-        "incluida en CISA KEV",
-        "ransomware/campaña"
-      ],
-      "collected_at": "2026-10-26T23:40:16+00:00",
-      "vendor": "Samsung",
-      "product": "Mobile Devices",
-      "kev": true,
-      "date_added": "2023-06-29",
-      "due_date": "2023-07-20",
-      "known_ransomware_campaign_use": "Unknown",
-      "required_action": "Apply updates per vendor instructions or discontinue use of the product if updates are unavailable",
-      "related_sources": [
-        "CISA Known Exploited Vulnerabilities (KEV)"
-      ]
     }
   ],
   "source_status": [
@@ -49746,12 +49744,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 29,
+      "count": 30,
       "error": null,
-      "checked_at": "2026-10-26T23:40:00+00:00",
+      "checked_at": "2026-10-27T01:38:01+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-26T23:23:37+00:00",
-      "duration_ms": 322
+      "last_published_at": "2026-10-27T00:04:14+00:00",
+      "duration_ms": 637
     },
     {
       "source": "CyberScoop",
@@ -49759,10 +49757,10 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "checked_at": "2026-10-26T23:40:01+00:00",
+      "checked_at": "2026-10-27T01:38:02+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-26T18:05:35+00:00",
-      "duration_ms": 238
+      "last_published_at": "2026-10-27T00:22:54+00:00",
+      "duration_ms": 345
     },
     {
       "source": "Google Cloud Threat Intelligence (Mandiant)",
@@ -49950,8 +49948,8 @@
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 2470,
-    "items_after_deduplication": 2463,
+    "items_before_deduplication": 2471,
+    "items_after_deduplication": 2464,
     "sources_ok": 29,
     "sources_total": 31
   }
