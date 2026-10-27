@@ -1,7 +1,65 @@
 {
-  "generated_at": "2026-10-27T01:38:23+00:00",
-  "last_checked_at": "2026-10-27T01:38:23+00:00",
+  "generated_at": "2026-10-27T06:51:54+00:00",
+  "last_checked_at": "2026-10-27T06:51:54+00:00",
   "items": [
+    {
+      "id": "b8af17c4e8e231442f93",
+      "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
+      "url": "https://isc.sans.edu/diary/rss/33462",
+      "source": "SANS Internet Storm Center",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "published_at": "2026-10-27T02:55:13+00:00",
+      "summary": "",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:32+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "SANS Internet Storm Center"
+      ]
+    },
+    {
+      "id": "344bdc9286a24997bdeb",
+      "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
+      "url": "https://isc.sans.edu/diary/rss/33458",
+      "source": "SANS Internet Storm Center",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "published_at": "2026-10-27T02:09:55+00:00",
+      "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:32+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "SANS Internet Storm Center"
+      ]
+    },
     {
       "id": "7098a1ac62df50de5f3c",
       "title": "Experts temper emergency-level alarms over critical Brotli defect",
@@ -57,35 +115,6 @@
       ],
       "related_sources": [
         "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "344bdc9286a24997bdeb",
-      "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
-      "url": "https://isc.sans.edu/diary/rss/33458",
-      "source": "SANS Internet Storm Center",
-      "category": "Investigación de amenazas",
-      "region": "Global",
-      "published_at": "2026-10-26T23:34:37+00:00",
-      "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:56+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "SANS Internet Storm Center"
       ]
     },
     {
@@ -5454,35 +5483,6 @@
       ]
     },
     {
-      "id": "95b6b6e7dc0fead63db8",
-      "title": "ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)",
-      "url": "https://isc.sans.edu/diary/rss/33438",
-      "source": "SANS Internet Storm Center",
-      "category": "Investigación de amenazas",
-      "region": "Global",
-      "published_at": "2026-10-21T02:00:03+00:00",
-      "summary": "",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:56+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "SANS Internet Storm Center"
-      ]
-    },
-    {
       "id": "3fe372fb2e8166f0e814",
       "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
       "url": "https://openai.com/index/cloudflare-cyber",
@@ -5829,6 +5829,297 @@
       ]
     },
     {
+      "id": "186649daf495e47ba23c",
+      "title": "CVE-2026-14933: Cross-site scripting in the embedded co-browsing feature in Unblu inc. Unblu Spark 7.0 through 7.57.7 and 8.0 through 8.39.2, on on-premises and cloud deployments, allows an unauth",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14933",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:30+00:00",
+      "summary": "Cross-site scripting in the embedded co-browsing feature in Unblu inc. Unblu Spark 7.0 through 7.57.7 and 8.0 through 8.39.2, on on-premises and cloud deployments, allows an unauthenticated remote attacker in the visitor role to execute arbitrary JavaScript in the browser of an agent taking part in the attacker's co-browsing session, via content of the co-browsed page that the agent's browser renders as HTML. The JavaScript runs in the context and under the identity of the agent's session in the Agent Desk or the Single Conversation Desk. Exploitation requires an agent to join an embedded co-browsing session with the attacker. Mobile co-apping isn't affected.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14933"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6c50216f253eea9c0670",
+      "title": "CVE-2026-113385: A vulnerability has been found in LeeDrOiD Labs Shortcutter 2 App 9.0.48 on Android. This issue affects the function Class.forName of the file ToggleGeneric.java. The manipulation",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113385",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "A vulnerability has been found in LeeDrOiD Labs Shortcutter 2 App 9.0.48 on Android. This issue affects the function Class.forName of the file ToggleGeneric.java. The manipulation of the argument Class leads to improper export of android application components. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. Upgrading to version 9.0.90 is capable of addressing this issue. It is suggested to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113385"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 1.9,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "951256d4c594c8e025cb",
+      "title": "CVE-2026-113388: A security flaw has been discovered in opensource-socialnetwork up to 9.11/10.1. This affects the function input of the file actions/administrator/cache/dynamic.php of the componen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113388",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "A security flaw has been discovered in opensource-socialnetwork up to 9.11/10.1. This affects the function input of the file actions/administrator/cache/dynamic.php of the component Cache Settings. Performing a manipulation of the argument host/port/username/password/type/status results in code injection. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The patch is named 40945057cb451f0f35153110bc7e889c094400e1. Applying a patch is the recommended action to fix this issue. The vendor explains: \"While we have implemented this patch as a defense-in-depth measure, we emphasize that in Open Source Social Network (OSSN), site administrators are fully trusted users who are intentionally granted broad system authority by design including the native ability to upload custom components/themes containing arbitrary PHP code.\"",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "defensa_militar"
+      ],
+      "cves": [
+        "CVE-2026-113388"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 1.9,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ae0c3e77099094a6ebe0",
+      "title": "CVE-2026-113389: A vulnerability was detected in DrayTek Vigor2960 1.5.1.6 Revision 8218. Affected by this vulnerability is the function set_table of the file /cgi-bin/mainfunction.cgi of the compo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113389",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "A vulnerability was detected in DrayTek Vigor2960 1.5.1.6 Revision 8218. Affected by this vulnerability is the function set_table of the file /cgi-bin/mainfunction.cgi of the component CGI Process. The manipulation of the argument sectiontype results in command injection. The attack may be launched remotely. The exploit is now public and may be used. The vendor explains: \"2960 1.5.1.7 has corrected many security issues. And 2960 is EoS with limited support, only major issues would be reviewed(e.g. unauthenticated vuln.)\". This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113389"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6f3707efe8c59c1ca997",
+      "title": "CVE-2026-113495: A flaw was found in cockpit-machines. Red Hat Subscription Management (RHSM) authentication tokens are passed as command-line arguments to background helper processes during image",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113495",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "A flaw was found in cockpit-machines. Red Hat Subscription Management (RHSM) authentication tokens are passed as command-line arguments to background helper processes during image retrieval operations. A local, unprivileged attacker on a system permitting cross-user process inspection can view these arguments while the process is active. This flaw can lead to information disclosure, potentially allowing unauthorized access to RHSM resources within the token's validity period.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113495"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 5.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5b5125340b873c548fb7",
+      "title": "CVE-2026-113496: A flaw was found in cockpit-machines. When saving Virtual Network Computing (VNC) console settings, the configured password is passed directly as a command-line argument to an unde",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113496",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "A flaw was found in cockpit-machines. When saving Virtual Network Computing (VNC) console settings, the configured password is passed directly as a command-line argument to an underlying system utility. A local unprivileged attacker on a host that allows cross-user process inspection could read the exposed password from the process list while another user modifies settings. This credential disclosure can allow unauthorized access to the guest virtual machine's graphical console.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113496"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 5.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ec7d08f4ba2d4773302f",
+      "title": "CVE-2026-113583: Cypht webmail 2.0.0 through 2.12.2 contains a DOM-based cross-site scripting vulnerability that allows remote attackers to execute arbitrary JavaScript by crafting malicious alt te",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113583",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:29+00:00",
+      "summary": "Cypht webmail 2.0.0 through 2.12.2 contains a DOM-based cross-site scripting vulnerability that allows remote attackers to execute arbitrary JavaScript by crafting malicious alt text or URL values in an HTML email's external image tag when ALLOW_EXTERNAL_IMAGE_SOURCES is enabled. Attackers can send a specially crafted email so that when the victim opens it, the externalResources.js code builds the blocked-image notice using innerHTML with decoded email-derived values, triggering script execution in the victim's authenticated session to read mailboxes, send email, or change settings.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113583"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "60fa3e70edf8f4f323fc",
+      "title": "CVE-2026-105311: The StreamsHub Console operator acts as a confused deputy: a Kubernetes tenant with permission to create a Console custom resource can set spec.kafkaClusters[].credentials.kafkaUse",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105311",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:28+00:00",
+      "summary": "The StreamsHub Console operator acts as a confused deputy: a Kubernetes tenant with permission to create a Console custom resource can set spec.kafkaClusters[].credentials.kafkaUser.namespace to any namespace. The operator, running with cluster-wide Secrets RBAC, reads the victim-namespace KafkaUser Secret (SASL credentials or TLS private keys) and writes the plaintext material into a Secret in the attacker's namespace. No same-namespace check or allowlist exists anywhere in the code path.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105311"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1054d4c2925d0eac5c01",
+      "title": "CVE-2026-105312: A Kubernetes tenant with create permission on Console custom resources can set spec.containers.api.spec.image to an arbitrary container image. The operator deploys this image into",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105312",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:28+00:00",
+      "summary": "A Kubernetes tenant with create permission on Console custom resources can set spec.containers.api.spec.image to an arbitrary container image. The operator deploys this image into a pod whose ServiceAccount is bound via ClusterRoleBinding to a ClusterRole granting cluster-wide get/list/watch on all Strimzi CRDs (including KafkaUsers), patch on Kafkas/KafkaRebalances, and cluster-monitoring-view. The attacker's code reads the projected SA token and gains cross-tenant Strimzi control-plane read+write access.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105312"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0f578e05b4de4c210831",
+      "title": "CVE-2026-105949: Cruise Control's Jetty ConstraintSecurityHandler registers security constraints on exact path specs without a catch-all wildcard constraint and without calling setDenyUncoveredHttp",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105949",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T12:17:28+00:00",
+      "summary": "Cruise Control's Jetty ConstraintSecurityHandler registers security constraints on exact path specs without a catch-all wildcard constraint and without calling setDenyUncoveredHttpMethods(true). The servlet routes requests using Path.of(pathInfo).getFileName(), which strips all leading segments and trailing slashes. Requests like POST /kafkacruisecontrol/x/rebalance bypass authentication entirely but still dispatch to admin endpoints. All 15 admin endpoints become reachable without authentication. In AMQ Streams, the Strimzi operator's NetworkPolicy restricts Cruise Control port 9090 to operator pods only, reducing effective severity to Important.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105949"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "552cbee8ac3d9b61c1e6",
       "title": "#StopRansomware: SafePay Ransomware",
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
@@ -6089,6 +6380,35 @@
       ]
     },
     {
+      "id": "0988d7dd40b68660dfc0",
+      "title": "CVE-2026-9589: Missing authorization in the configuration cascade operations of the Collaboration Server in Unblu inc. Unblu Spark 7.0 through 8.36.1-hotfix.0, on on-premises and cloud deployment",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9589",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:35+00:00",
+      "summary": "Missing authorization in the configuration cascade operations of the Collaboration Server in Unblu inc. Unblu Spark 7.0 through 8.36.1-hotfix.0, on on-premises and cloud deployments, allows an authenticated remote attacker to read and change configuration properties of entities they aren't authorized to access, including other users, other accounts and, in Unblu Cloud, other customers' accounts, via configuration read and write operations that target those entities. The Collaboration Server doesn't check whether the user reading or changing configuration has access to the entity the configuration belongs to. With certain non-default configuration validation settings, a registered user can additionally write configuration properties they aren't allowed to edit, in any scope. Exploitation requires an authenticated session but no user interaction.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-9589"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "075176a1adbbb981d96a",
       "title": "CVE-2026-113356: DokuWiki before 2026-07-14c contains a PHP object injection vulnerability in Draft::getDraftText() that passes draft file contents to unserialize() without restricting allowed clas",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113356",
@@ -6170,6 +6490,93 @@
       "collected_at": "2026-10-27T01:38:23+00:00",
       "cvss": 8.7,
       "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "083994a72521fcf6c9eb",
+      "title": "CVE-2026-113382: A security vulnerability has been detected in arizu-id fast-tunnel 1.0.0. Affected by this issue is the function ZipArchive::extractTo of the file backend/api_plugins.php of the co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113382",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "A security vulnerability has been detected in arizu-id fast-tunnel 1.0.0. Affected by this issue is the function ZipArchive::extractTo of the file backend/api_plugins.php of the component Plugin Installer. Such manipulation of the argument plugin_file leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 1.0.1 can resolve this issue. The name of the patch is 04573681420295f7b327c9da3b101aed2f3cf432. It is advisable to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113382"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "91af6b37b90f717279c2",
+      "title": "CVE-2026-113383: A vulnerability was detected in Optimal IdM OptimalCloud 5.0. This affects an unknown part of the file /v5.0/webapps/pages/public/Login. Performing a manipulation of the argument t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113383",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "A vulnerability was detected in Optimal IdM OptimalCloud 5.0. This affects an unknown part of the file /v5.0/webapps/pages/public/Login. Performing a manipulation of the argument tz results in cross site scripting. Remote exploitation of the attack is possible. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113383"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "08ab5331a7ba82389185",
+      "title": "CVE-2026-113384: A flaw has been found in Optimal IdM OptimalCloud 5.0. This vulnerability affects unknown code of the file /v5.0/social. Executing a manipulation of the argument state can lead to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113384",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-20T11:17:20+00:00",
+      "summary": "A flaw has been found in Optimal IdM OptimalCloud 5.0. This vulnerability affects unknown code of the file /v5.0/social. Executing a manipulation of the argument state can lead to open redirect. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113384"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-27T06:51:53+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -8642,412 +9049,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "ea470d3661a66fb9c188",
-      "title": "CVE-2026-96902: The Easy Property Listings WordPress plugin before 3.5.28 does not restrict which listing fields it adds to the public REST API output, allowing unauthenticated users to read detai",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96902",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T06:16:58+00:00",
-      "summary": "The Easy Property Listings WordPress plugin before 3.5.28 does not restrict which listing fields it adds to the public REST API output, allowing unauthenticated users to read details a site has chosen to hide on published listings, such as the asking price, sold price, street address and exact map coordinates.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-96902"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7f102a23bb3c66b707c4",
-      "title": "CVE-2026-96903: The Easy Property Listings WordPress plugin before 3.5.27 does not perform authorisation checks on several of its contact-management read AJAX actions, allowing any authenticated u",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96903",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T06:16:58+00:00",
-      "summary": "The Easy Property Listings WordPress plugin before 3.5.27 does not perform authorisation checks on several of its contact-management read AJAX actions, allowing any authenticated user with a role as low as subscriber to read other users' CRM contact and lead records, including their private activity notes.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-96903"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3a748743cf82b15f481c",
-      "title": "CVE-2026-97627: Hidden functionality issue exists in Multiple DVRs (Digital Video Recorders) provided by Atsumi Electric Co., Ltd. A user who can log in to the product with the administrator privi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97627",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T06:16:58+00:00",
-      "summary": "Hidden functionality issue exists in Multiple DVRs (Digital Video Recorders) provided by Atsumi Electric Co., Ltd. A user who can log in to the product with the administrator privilege may execute arbitrary OS commands.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-97627"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d6d39db0a27ca0c8d300",
-      "title": "CVE-2026-93300: The EventON - Subscriber plugin for WordPress is vulnerable to generic SQL Injection via the 'email' parameter in all versions up to, and including, 1.4.5 due to insufficient escap",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93300",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T06:16:57+00:00",
-      "summary": "The EventON - Subscriber plugin for WordPress is vulnerable to generic SQL Injection via the 'email' parameter in all versions up to, and including, 1.4.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-93300"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "094180dda945eeb3ecd0",
-      "title": "CVE-2026-100737: Hidden functionality issue exists in Multiple DVRs (Digital Video Recorders) provided by Atsumi Electric Co., Ltd. A user who can log in to the product with the administrator privi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100737",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T06:16:56+00:00",
-      "summary": "Hidden functionality issue exists in Multiple DVRs (Digital Video Recorders) provided by Atsumi Electric Co., Ltd. A user who can log in to the product with the administrator privilege may upgrade the affected product to unauthorized firmware.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-100737"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "70a368178e04e2096120",
-      "title": "CVE-2026-113380: In the RingRTC library before 2.72.0 for Signal, a peer that saturates a call's FSM queue can interfere with the ability of a local hangup to tear the call (with its audio and perh",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113380",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T05:16:54+00:00",
-      "summary": "In the RingRTC library before 2.72.0 for Signal, a peer that saturates a call's FSM queue can interfere with the ability of a local hangup to tear the call (with its audio and perhaps also video track) down.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113380"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7921c500172baf7cda26",
-      "title": "CVE-2026-113386: Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 are affected by IMAP command injection. A remote authenticated attacker can exploit this via CRLF sequences injected into the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113386",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T05:16:54+00:00",
-      "summary": "Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 are affected by IMAP command injection. A remote authenticated attacker can exploit this via CRLF sequences injected into the _uid parameter of the mail/headers and mail/viewsource actions to execute arbitrary IMAP commands.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113386"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "adbd019d06f566019a06",
-      "title": "CVE-2026-109831: UnRTF by GNU Project is vulnerable to out-of-bounds write. If a user opens an RTF file crafted by an attacker, it may lead to a denial-of-service (DoS) condition.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109831",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T05:16:53+00:00",
-      "summary": "UnRTF by GNU Project is vulnerable to out-of-bounds write. If a user opens an RTF file crafted by an attacker, it may lead to a denial-of-service (DoS) condition.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109831"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.1,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9cd3360800eac27d407a",
-      "title": "CVE-2026-86467: Apache Airflow Amazon provider: the AWS auth manager's SAML login flow does not bind the authentication response to the browser that began it. The login handler discards the AuthnR",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86467",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T03:17:16+00:00",
-      "summary": "Apache Airflow Amazon provider: the AWS auth manager's SAML login flow does not bind the authentication response to the browser that began it. The login handler discards the AuthnRequest ID and the callback validates the assertion without requiring a matching InResponseTo, so an unauthenticated attacker who can cause a victim to load a page can complete a SAML login in the victim's browser using the attacker's own assertion, silently logging the victim into the attacker's Airflow account. Subsequent work the victim performs lands in a session the attacker controls. Affects deployments using the AWS auth manager with SAML authentication. The victim needs only to visit an attacker-controlled page; no Airflow account or credential is required of the attacker. This is the same login-CSRF class fixed in the Keycloak auth manager as CVE-2026-40948. Users of apache-airflow-providers-amazon are recommended to upgrade to version 9.38.0, which fixes the issue.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86467"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "798edb68d33d560d99d2",
-      "title": "CVE-2026-12489: An incorrect authorization vulnerability in the Data Access Layer (DAL) of Zyxel EX3501-T0 firmware versions through 5.44(ACHR.6)C0 could allow an authenticated attacker to escalat",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12489",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T03:17:15+00:00",
-      "summary": "An incorrect authorization vulnerability in the Data Access Layer (DAL) of Zyxel EX3501-T0 firmware versions through 5.44(ACHR.6)C0 could allow an authenticated attacker to escalate privileges by modifying the login_privilege data on an affected device.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-12489"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b619e134b7b3285f935f",
-      "title": "CVE-2026-17518: Buffer Copy without Checking Size of Input in certain ASUS router models allows an adjacent authenticated user to corrupt device operations and cause a denial of service via an HTT",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17518",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T02:17:11+00:00",
-      "summary": "Buffer Copy without Checking Size of Input in certain ASUS router models allows an adjacent authenticated user to corrupt device operations and cause a denial of service via an HTTP request with input exceeding the expected length. Refer to the ' Security Update for ASUS Router Firmware' section on the ASUS Security Advisory for more information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-17518"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9552129bef7e9bac4f2f",
-      "title": "CVE-2026-75753: Missing Authentication for a Critical Function in certain ASUS routers allows an unauthorized nearby user to send specific commands via HTTP requests, causing the router to return",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75753",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T02:17:11+00:00",
-      "summary": "Missing Authentication for a Critical Function in certain ASUS routers allows an unauthorized nearby user to send specific commands via HTTP requests, causing the router to return device identification information and switch into a specific mode. As a result, when the router encounters abnormal conditions, it may be unable to perform self-recovery. Refer to the ' Security Update for ASUS Router Firmware' section on the ASUS Security Advisory for more information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-75753"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2af48e6dfe66f582ef14",
-      "title": "CVE-2026-102438: An uncontrolled search path element vulnerability in ASUS Armoury Crate allows local users to execute arbitrary code with SYSTEM privileges via replacement of a dynamic-link librar",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102438",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T02:17:08+00:00",
-      "summary": "An uncontrolled search path element vulnerability in ASUS Armoury Crate allows local users to execute arbitrary code with SYSTEM privileges via replacement of a dynamic-link library (DLL) that is later loaded by a high-privilege process. Refer to the ' Security Update for Armoury Crate App ' section on the ASUS Security Advisory for more information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-102438"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a42e5750b74522997f1f",
-      "title": "CVE-2026-105299: Summary Before version 0.9.0, the HTTP/1 upstream path in pingora-proxy passed the downstream request through upstream_request_filter and wrote it to the upstream without removi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105299",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-20T02:17:08+00:00",
-      "summary": "Summary Before version 0.9.0, the HTTP/1 upstream path in pingora-proxy passed the downstream request through upstream_request_filter and wrote it to the upstream without removing the client's Connection header, other hop-by-hop headers, or the headers Connection nominated, although RFC 9110 Section 7.6.1 requires intermediaries to remove them. The HTTP/2 upstream path already removed Connection and related HTTP/1-specific headers. A client could therefore nominate a header that the application adds in upstream_request_filter (for example, Connection: keep-alive, X-Forwarded-For). A downstream HTTP/1 intermediary that honors Connection would then strip the Pingora-added header before it reached the origin. Impact Specifically affects chained deployments where an HTTP/1 intermediary between Pingora and the origin processes Connection nominations (for example, Go's net/http/httputil.ReverseProxy) and the origin trusts headers added by that intermediary (for example, X-Forwarded-For for IP-based authorization). A remote, unauthenticated attacker can have those headers removed, potentially bypassing authorization. The reporter demonstrated access to an IP-restricted endpoint using X-Fo",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105299"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-26T23:40:18+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
       ]
     },
     {
@@ -49691,10 +49692,10 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "checked_at": "2026-10-26T23:39:56+00:00",
+      "checked_at": "2026-10-27T06:51:32+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-26T23:34:37+00:00",
-      "duration_ms": 298
+      "last_published_at": "2026-10-27T02:55:13+00:00",
+      "duration_ms": 261
     },
     {
       "source": "C4ISRNET — Cyber",
