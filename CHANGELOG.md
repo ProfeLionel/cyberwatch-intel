@@ -1,5 +1,14 @@
 # Cambios de CyberWatch Intel — versión mejorada
 
+## v4.2 — Wallboard de mapa global
+
+- Añadido `threatmap.html`: mapa mundial interactivo con arcos animados, clasificación por tipo, filtros, ranking de países y stream reciente.
+- Incorporado modo demostración, etiquetado explícitamente para no confundir simulación con telemetría real.
+- Añadidos enlaces de navegación entre dashboard, wallboard SOC y mapa global.
+- Añadida documentación para integrar futuras fuentes observadas sin inventar países destino.
+- Esta entrega no altera el colector ni los datos históricos/incidentes existentes.
+
+
 - Incorporación de 13 canales RSS/Atom adicionales verificados por respuesta con tipo de contenido RSS/Atom/XML.
 - Exclusión de URLs propuestas que devolvieron 404/403/410/502, redirigieron a páginas HTML o duplicaban feeds existentes.
 - Filtros del panel interactivo por fuente, prioridad estimada y antigüedad, además de los filtros previos.

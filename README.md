@@ -16,6 +16,31 @@ Agregador inicial de fuentes públicas de ciberseguridad, vulnerabilidades e inc
 - Puntaje heurístico de prioridad con motivos visibles; no representa probabilidad de ataque ni sustituye un análisis de riesgo.
 - Datos públicos guardados en `data/incidents.json`.
 
+
+## Mapa global de amenazas (nuevo wallboard)
+
+Se incorpora `threatmap.html`, un segundo wallboard con mapa mundial interactivo, arcos animados entre países, clasificación por tipo de actividad, métricas de sesión y un feed de eventos recientes. Incluye filtros para DDoS, malware, phishing, fuerza bruta, explotación, ransomware, botnet/C2 y reconocimiento. Los enlaces de navegación desde el dashboard y el wallboard SOC facilitan el acceso entre vistas.
+
+**Limitación importante de esta versión:** el mapa funciona en **modo demostración**. Los flujos, países, severidades y contadores de esta vista se generan en el navegador para ilustrar el diseño; **no representan ataques reales ni telemetría en directo**. El estado se muestra permanentemente en la interfaz para no confundir eventos de ejemplo con incidentes confirmados. Las fuentes RSS, NVD y CISA KEV que usa el colector actual aportan avisos, vulnerabilidades y boletines, no flujos de red de origen a destino.
+
+### Qué hace falta para activar datos observados
+
+Para dibujar rutas reales se necesita una fuente que publique ambos extremos geográficos del evento, o integrar telemetría propia (firewall, IDS/IPS, WAF, EDR, SIEM o proveedor DDoS). El origen puede ser una IP observada y geolocalizada; el destino debe proceder de la observación o del registro original, no elegirse al azar. Si una fuente solo informa países de origen o conteos agregados, el wallboard deberá mostrar puntos o estadísticas y no presentar líneas como rutas reales. Por ejemplo, SANS Internet Storm Center/DShield publica datos de fuentes observadas y explica que sus reportes son agregados y no deben usarse como blocklist sin análisis: https://isc.sans.edu/api/ y https://www.dshield.org/feeds_doc.html. Esa información por sí sola no acredita una ruta origen-destino real.
+
+Como mínimo, un adaptador de telemetría debería normalizar cada evento en campos equivalentes a: `observed_at`, `source_country`, `destination_country`, `attack_type`, `severity`, `source_name` y `evidence_url`/`source_id`. También debe incluir ventana temporal, método de geolocalización, límites de cobertura y procedencia. Antes de habilitar un modo conectado, hay que documentar sus permisos, límites de tasa, tratamiento de IP y disponibilidad del proveedor.
+
+### Funcionamiento visual
+
+- Requiere conexión a internet para cargar Leaflet y las teselas cartográficas de CARTO/OpenStreetMap.
+- El botón **Pausar/Reanudar** detiene o reinicia la generación visual; **Reiniciar** limpia los contadores de la sesión, y **Vista global** devuelve el mapa a su encuadre inicial.
+- Los filtros de categoría actualizan el mapa, los eventos visibles y los rankings de la sesión.
+- La vista está pensada para pantallas de monitoreo y también se adapta a móvil. Usa el botón de pantalla completa o la tecla `F`.
+- Mapa base: atribuciones de OpenStreetMap y CARTO incluidas en pantalla.
+
+### Añadir el segundo wallboard a una instalación existente
+
+Copia `threatmap.html` en la raíz del repositorio y actualiza `index.html`, `wallboard.html`, `README.md` y `CHANGELOG.md` desde el paquete incremental. **No reemplaces `data/incidents.json`**: contiene las publicaciones recopiladas de tu instalación.
+
 ## Requisitos para ejecutar localmente
 
 - Python 3.11 o posterior recomendado.

@@ -18,6 +18,9 @@
     .logo { width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:#16395a; color:var(--accent); font-weight:900; font-size:22px; }
     h1 { font-size: clamp(22px, 3vw, 32px); margin:0; letter-spacing:-.5px; }
     header p { color:var(--muted); margin:6px 0 0; }
+    .site-nav { display:flex; flex-wrap:wrap; gap:9px; margin-top:15px; }
+    .site-nav a { color:#cce8ff; text-decoration:none; border:1px solid #2b4b6a; background:#10243a; padding:8px 11px; border-radius:8px; font-size:12px; font-weight:800; }
+    .site-nav a:hover { background:#173653; border-color:#58b7ff; }
     main { max-width:1450px; margin:auto; padding:26px clamp(14px, 3vw, 38px) 50px; }
     .topline { display:flex; justify-content:space-between; gap:14px; align-items:center; flex-wrap:wrap; margin-bottom:20px; color:var(--muted); font-size:13px; }
     .stats { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px; margin-bottom:22px; }
@@ -78,6 +81,11 @@
     <div>
       <h1>CyberWatch Intel</h1>
       <p>Centro de monitoreo de amenazas, vulnerabilidades e incidentes públicos</p>
+      <nav class="site-nav" aria-label="Navegación del centro de monitoreo">
+        <a href="./index.html">▦ Dashboard de inteligencia</a>
+        <a href="./wallboard.html">▣ Wallboard SOC</a>
+        <a href="./threatmap.html">◎ Mapa global de amenazas</a>
+      </nav>
     </div>
   </div>
 </header>

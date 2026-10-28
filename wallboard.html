@@ -25,13 +25,16 @@
     @media(max-width:850px){.screen{padding:8px;gap:7px}.main{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric:nth-child(n+4){display:none}.main{grid-template-columns:1fr}.right-stack{grid-template-rows:minmax(0,1fr) minmax(0,.7fr)}.screen{grid-template-rows:auto auto minmax(0,1fr) auto}.subtitle{display:none}.feature-title{font-size:17px}footer .ticker{display:none}}
     @media(max-height:650px){.screen{gap:5px;padding-top:5px;padding-bottom:5px}.metric{padding:5px 10px}.metric-value{margin-top:2px}.feature-content{padding:7px 10px}.alert{padding:4px 8px}.panel-top{padding:5px 10px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.intel-list{overflow-y:auto;scrollbar-width:thin}}
+  
+    .map-link{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid #28516b;border-radius:9px;background:#10283a;color:#bcecff;text-decoration:none;font-size:12px;font-weight:850;white-space:nowrap}
+    .map-link:hover{background:#173a50;border-color:var(--cyan)}
   </style>
 </head>
 <body>
 <div class="screen">
   <header>
     <div class="brand"><div class="logo">CW</div><div><h1>CyberWatch Intel</h1><p class="subtitle">Centro de monitoreo · Inteligencia pública de ciberseguridad</p></div></div>
-    <div class="header-right"><div><div class="live"><span class="dot"></span> MONITOREO ACTIVO</div><div class="date" id="date">Cargando fecha…</div></div><div><div class="clock" id="clock">--:--:--</div><div class="date" id="data-updated">Datos: pendientes</div></div><button class="iconbtn" id="fullscreen" title="Activar o salir de pantalla completa" aria-label="Pantalla completa">⛶</button></div>
+    <div class="header-right"><div><div class="live"><span class="dot"></span> MONITOREO ACTIVO</div><div class="date" id="date">Cargando fecha…</div></div><div><div class="clock" id="clock">--:--:--</div><div class="date" id="data-updated">Datos: pendientes</div></div><a class="map-link" href="./threatmap.html" title="Abrir el mapa global de amenazas">◎ MAPA GLOBAL</a><button class="iconbtn" id="fullscreen" title="Activar o salir de pantalla completa" aria-label="Pantalla completa">⛶</button></div>
   </header>
   <section class="metrics" aria-label="Indicadores principales">
     <div class="metric danger"><div class="metric-label">Alertas críticas / altas</div><div class="metric-value" id="metric-priority">—</div><div class="metric-foot">Según datos disponibles</div></div>
@@ -53,7 +56,7 @@
       </div>
     </section>
   </main>
-  <footer><div class="foot-left"><span class="source-state"><span class="status-dot" id="health-dot"></span><span id="health-label">Comprobando fuentes</span></span><span id="refresh-status">Actualización automática habilitada</span></div><div class="ticker" id="ticker"><b>INTEL:</b> Cargando novedades…</div><div class="foot-right"><span>Fuentes públicas · Verificar siempre el origen</span></div></footer>
+  <footer><div class="foot-left"><span class="source-state"><span class="status-dot" id="health-dot"></span><span id="health-label">Comprobando fuentes</span></span><span id="refresh-status">Actualización automática habilitada</span></div><div class="ticker" id="ticker"><b>INTEL:</b> Cargando novedades…</div><div class="foot-right"><a class="map-link" href="./index.html">DASHBOARD</a><span>Fuentes públicas · Verificar siempre el origen</span></div></footer>
 </div>
 <script>
 (() => {
