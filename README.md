@@ -10,7 +10,7 @@ Agregador inicial de fuentes públicas de ciberseguridad, vulnerabilidades e inc
 - Normalización básica de URLs y títulos.
 - Deduplicación conservadora por URL y título exacto normalizado.
 - Panel web interactivo (`index.html`) con búsqueda, filtros por tipo, categoría, región, fuente, prioridad estimada y antigüedad; incluye salud detallada de fuentes.
-- Wallboard automático (`wallboard.html`) para pantallas de sala de monitoreo: sin scroll, indicadores, alertas prioritarias persistentes, rotación de publicaciones y reloj.
+- Wallboard automático (`wallboard.html`) para pantallas de sala de monitoreo: sin desplazamiento de página, indicadores, alertas prioritarias rotativas, actividad reciente con desplazamiento suave y reloj.
 - Actualización automática con GitHub Actions.
 - Indicadores de última revisión, estado por fuente, latencia, código HTTP y última publicación disponible.
 - Puntaje heurístico de prioridad con motivos visibles; no representa probabilidad de ataque ni sustituye un análisis de riesgo.
@@ -68,7 +68,7 @@ Luego visita `http://localhost:8000` para el panel interactivo o `http://localho
 
 ## Wallboard para sala de monitoreo
 
-`wallboard.html` está diseñado para permanecer visible en una pantalla sin que una persona tenga que desplazarse por la página. Muestra indicadores generales, hasta tres alertas de prioridad alta, una publicación destacada que rota automáticamente cada 18 segundos, actividad reciente, hora local de Santiago y estado de las fuentes. Revisa si hay datos nuevos cada 60 segundos.
+`wallboard.html` está diseñado para permanecer visible en una pantalla sin que una persona tenga que desplazarse por la página. Muestra indicadores generales, hasta tres alertas prioritarias por página, con revisiones sugeridas y rotación automática cada 18 segundos cuando existe más de una página. La publicación destacada también rota cada 18 segundos. Actividad Reciente desplaza hasta 15 publicaciones en un ciclo suave de 8 píxeles por segundo, con pausa al posar el puntero o enfocar el panel; respeta la preferencia de movimiento reducido del sistema. Revisa si hay datos nuevos cada 60 segundos.
 
 Las alertas se priorizan con una heurística explicable que considera CISA KEV, severidad/CVSS y términos que pueden indicar explotación, ransomware, APT, zero-day o infraestructura crítica. El puntaje es orientativo, no representa probabilidad de ataque ni una evaluación completa del riesgo, y no confirma que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
 
@@ -76,7 +76,7 @@ La tipografía del wallboard usa tamaños adaptables y un ajuste automático que
 
 ### Fuentes de ciberdefensa y tecnología incorporadas
 
-La configuración incluye fuentes públicas de CISA, Cisco Talos, Unit 42, BleepingComputer, NCSC UK, CERT-EU, NIST, SANS ISC, C4ISRNET (Cyber y Space), EMAD, Zona Militar, Breaking Defense, The War Zone, CyberScoop, Google Cloud Threat Intelligence/Mandiant y SentinelLabs. También se agregaron canales RSS/Atom revisados para Cisco PSIRT y Security Blog, Check Point Research, Microsoft Security Blog, Google Project Zero, AWS Security Blog y Security Bulletins, Oracle Security, OpenAI News, NVIDIA Developer Blog — Cybersecurity y Meta Engineering/News Security.
+La configuración incluye fuentes públicas de CISA, Cisco Talos, Unit 42, BleepingComputer, NCSC UK, CERT-EU, NIST, SANS ISC, C4ISRNET (Cyber y Space), EMAD, Zona Militar, Breaking Defense, The War Zone, CyberScoop, Google Cloud Threat Intelligence/Mandiant y SentinelLabs. También se agregaron canales RSS/Atom para Cisco PSIRT y Security Blog, Check Point Research, Microsoft Security Blog, Google Project Zero, Oracle Security Alerts, OpenAI News, NVIDIA Developer Blog — Cybersecurity y Meta Engineering/News Security. Se retiraron los feeds anteriores de AWS Security Blog, AWS Security Bulletins y Oracle Security Blog tras observarse problemas en su funcionamiento; la nueva fuente de Oracle usa `https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml`.
 
 Se omitieron los enlaces propuestos que devolvieron errores, redirigieron a páginas HTML en lugar de un feed, o ya estaban representados por una fuente existente. La verificación hecha desde el navegador confirma que varios endpoints responden con tipos de contenido RSS/Atom/XML; la comprobación final de que entreguen entradas válidas ocurre en el recopilador de GitHub Actions. Un feed puede cambiar o fallar temporalmente, por lo que el estado se registra en cada ejecución.
 

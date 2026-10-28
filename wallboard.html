@@ -18,13 +18,13 @@
     .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7vw}.metric{border:1px solid var(--line);border-radius:11px;background:linear-gradient(130deg,#102036,#0c1625);padding:1vh 1vw;min-width:0;position:relative;overflow:hidden}.metric:after{content:"";position:absolute;right:-18px;top:-28px;width:80px;height:80px;border:1px solid #29445f;border-radius:50%;opacity:.5}.metric-label{color:var(--muted);font-size:clamp(11px,.8vw,15px);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.metric-value{font-size:clamp(22px,2vw,36px);font-weight:850;line-height:1.2;margin-top:.5vh;font-variant-numeric:tabular-nums}.metric-foot{font-size:clamp(10px,.68vw,13px);color:var(--muted);margin-top:.2vh;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.danger .metric-value{color:var(--red)}.warn .metric-value{color:var(--amber)}.good .metric-value{color:var(--green)}.blue .metric-value{color:var(--blue)}
     .main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:.8vw;min-height:0}.column{display:grid;grid-template-rows:auto minmax(0,1fr);gap:.65vh;min-height:0}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;min-width:0}.section-head h2{font-size:clamp(15px,1.05vw,20px);margin:0;font-weight:800;letter-spacing:.2px}.section-note{color:var(--muted);font-size:.72em;white-space:nowrap}.panel{border:1px solid var(--line);background:linear-gradient(150deg,rgba(16,30,48,.97),rgba(10,19,32,.97));border-radius:12px;min-height:0;overflow:hidden}
     .critical-panel{display:flex;flex-direction:column}.panel-top{display:flex;justify-content:space-between;align-items:center;padding:.8vh .9vw;border-bottom:1px solid var(--line);background:rgba(255,98,110,.055);gap:10px}.panel-top strong{font-size:.78em;letter-spacing:.9px}.priority{color:var(--red);display:flex;align-items:center;gap:7px}.counter{font-size:.72em;color:var(--muted);font-variant-numeric:tabular-nums}
-    #critical-list{padding:.35vh .65vw;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:.45vh;min-height:0;flex:1}.alert{border:1px solid #29394d;border-left:3px solid var(--amber);border-radius:8px;padding:.7vh .75vw;display:flex;flex-direction:column;justify-content:center;gap:.4vh;min-height:0;overflow:hidden;background:rgba(18,34,56,.55)}.alert.critical{border-left-color:var(--red);background:rgba(73,25,38,.18)}.alert-title{font-weight:760;line-height:1.3;font-size:clamp(16px,1.1vw,22px);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.alert-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--muted);font-size:clamp(12px,.78vw,15px)}.pill{padding:2px 6px;border-radius:4px;font-size:.92em;font-weight:850;letter-spacing:.3px;background:#20354c;color:#b9d8f4}.pill.red{background:#4c222c;color:#ffb2b8}.pill.gold{background:#49371f;color:#ffdb9b}.alert-summary{color:#b5c6d9;font-size:clamp(14px,.9vw,17px);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.empty{color:var(--muted);display:grid;place-items:center;text-align:center;padding:20px;line-height:1.5}
+    #critical-list{padding:.35vh .65vw;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:.45vh;min-height:0;flex:1;opacity:1;transition:opacity .3s ease}#critical-list.is-changing{opacity:.12}.alert{border:1px solid #29394d;border-left:3px solid var(--amber);border-radius:8px;padding:.7vh .75vw;display:flex;flex-direction:column;justify-content:center;gap:.4vh;min-height:0;overflow:hidden;background:rgba(18,34,56,.55)}.alert.critical{border-left-color:var(--red);background:rgba(73,25,38,.18)}.alert-title{font-weight:760;line-height:1.3;font-size:clamp(16px,1.1vw,22px);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.alert-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--muted);font-size:clamp(12px,.78vw,15px)}.pill{padding:2px 6px;border-radius:4px;font-size:.92em;font-weight:850;letter-spacing:.3px;background:#20354c;color:#b9d8f4}.pill.red{background:#4c222c;color:#ffb2b8}.pill.gold{background:#49371f;color:#ffdb9b}.alert-summary{color:#b5c6d9;font-size:clamp(14px,.9vw,17px);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.alert-review{color:#d4e4f5;font-size:clamp(12px,.72vw,14px);line-height:1.25;font-weight:700;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.empty{color:var(--muted);display:grid;place-items:center;text-align:center;padding:20px;line-height:1.5}
     .right-stack{display:grid;grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr);gap:.7vh;min-height:0}.feature-panel{display:flex;flex-direction:column}.feature-content{padding:1.1vh 1vw;display:flex;flex-direction:column;gap:.75vh;flex:1;min-height:0}.feature-kicker{display:flex;align-items:center;gap:8px;color:var(--cyan);font-size:clamp(11px,.75vw,14px);font-weight:850;letter-spacing:.8px;text-transform:uppercase}.feature-title{font-size:clamp(22px,1.7vw,34px);line-height:1.27;margin:0;font-weight:850;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.feature-summary{font-size:clamp(15px,1vw,19px);line-height:1.5;color:#b9c9dc;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.feature-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto}.source-name{color:var(--muted);font-size:.72em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.source-link{color:var(--blue);font-weight:800;text-decoration:none;font-size:.75em;white-space:nowrap}.source-link:hover{text-decoration:underline}.feature-progress{height:3px;background:#203148}.feature-progress span{height:100%;display:block;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0%;transition:width .2s linear}
-    .intel-list{padding:.5vh .8vw;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:.25vh;min-height:0;flex:1}.intel-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center;border-bottom:1px solid rgba(35,54,76,.7);min-height:0;padding:.25vh 0}.intel-item:last-child{border-bottom:0}.intel-time{font-size:clamp(10px,.68vw,13px);color:var(--muted);font-variant-numeric:tabular-nums}.intel-title{font-size:clamp(14px,.95vw,18px);font-weight:720;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.intel-source{font-size:clamp(10px,.65vw,12px);color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .intel-list{padding:.5vh .8vw;display:block;position:relative;overflow:hidden;min-height:0;flex:1;overscroll-behavior:contain}.intel-track{display:flex;flex-direction:column;gap:0;will-change:transform}.intel-cycle{display:flex;flex-direction:column;gap:.2vh;padding-bottom:.2vh;flex:none}.intel-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center;border-bottom:1px solid rgba(35,54,76,.7);min-height:clamp(58px,7.1vh,82px);flex:0 0 auto;padding:.45vh 0}.intel-item:last-child{border-bottom:0}.intel-time{font-size:clamp(10px,.68vw,13px);color:var(--muted);font-variant-numeric:tabular-nums}.intel-title{font-size:clamp(14px,.95vw,18px);font-weight:720;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.intel-source{font-size:clamp(10px,.65vw,12px);color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     footer{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding-top:.65vh;color:var(--muted);font-size:clamp(10px,.68vw,13px);min-width:0}.foot-left,.foot-right{display:flex;align-items:center;gap:12px;min-width:0}.foot-right{justify-content:flex-end;text-align:right}.source-state{display:flex;align-items:center;gap:6px;white-space:nowrap}.status-dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}.status-dot.warn{background:var(--amber)}.status-dot.bad{background:var(--red)}#refresh-status{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ticker{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:36vw;color:#b8c9dd}.ticker b{color:var(--amber);margin-right:6px}
     @media(max-width:850px){.screen{padding:8px;gap:7px}.main{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric:nth-child(n+4){display:none}.main{grid-template-columns:1fr}.right-stack{grid-template-rows:minmax(0,1fr) minmax(0,.7fr)}.screen{grid-template-rows:auto auto minmax(0,1fr) auto}.subtitle{display:none}.feature-title{font-size:17px}footer .ticker{display:none}}
     @media(max-height:650px){.screen{gap:5px;padding-top:5px;padding-bottom:5px}.metric{padding:5px 10px}.metric-value{margin-top:2px}.feature-content{padding:7px 10px}.alert{padding:4px 8px}.panel-top{padding:5px 10px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.intel-list{overflow-y:auto;scrollbar-width:thin}}
   </style>
 </head>
 <body>
@@ -49,7 +49,7 @@
       <div class="section-head"><h2>▰ INTELIGENCIA EN FOCO</h2><span class="section-note" id="rotation-label">Rotación automática</span></div>
       <div class="right-stack">
         <div class="panel feature-panel"><div class="panel-top"><strong>PUBLICACIÓN DESTACADA</strong><span class="counter" id="feature-counter">— / —</span></div><div class="feature-content" id="feature-content"><div class="empty">Cargando publicaciones…</div></div><div class="feature-progress"><span id="progress"></span></div></div>
-        <div class="panel feature-panel"><div class="panel-top"><strong>ACTIVIDAD RECIENTE</strong><span class="counter">Últimas publicaciones</span></div><div class="intel-list" id="recent-list"><div class="empty">Esperando datos…</div></div></div>
+        <div class="panel feature-panel"><div class="panel-top"><strong>ACTIVIDAD RECIENTE</strong><span class="counter" id="recent-note">Desplazamiento suave · 8 px/s</span></div><div class="intel-list" id="recent-list" role="region" aria-label="Actividad reciente; desplazamiento automático lento" tabindex="0"><div class="empty">Esperando datos…</div></div></div>
       </div>
     </section>
   </main>
@@ -61,8 +61,13 @@
   const DATA_URL = './data/incidents.json';
   const REFRESH_MS = 60_000;
   const ROTATE_MS = 18_000;
+  const ALERT_ROTATE_MS = 18_000;
+  const ALERTS_PER_PAGE = 3;
+  const RECENT_SCROLL_PX_PER_SEC = 8; // Desplazamiento lento para lectura en pantalla.
   const $ = id => document.getElementById(id);
   let items = [], payload = {}, featured = [], featureIndex = 0, rotateStarted = Date.now(), lastDataSignature = '';
+  let criticalPageIndex = 0, priorityAlerts = [];
+  let recentOffset = 0, recentCycleHeight = 0, recentPaused = false, recentLastFrame = 0;
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const dateValue = v => { if(!v) return 0; const n = Date.parse(v); return Number.isFinite(n) ? n : 0; };
   const fmtDate = (v, withTime=true) => { const d = v ? new Date(v) : null; if(!d || Number.isNaN(d.getTime())) return 'Fecha no disponible'; return new Intl.DateTimeFormat('es-CL',{day:'2-digit',month:'short',...(withTime?{hour:'2-digit',minute:'2-digit'}:{}) ,timeZone:'America/Santiago'}).format(d); };
@@ -76,7 +81,7 @@
   // Ajusta la tipografía al espacio real disponible en cada panel. Prioriza legibilidad y reduce
   // el tamaño solo cuando el texto desborda; nunca baja de los mínimos definidos por tipo.
   function fitWallboardText(){
-    const selectors=[['.alert-title',16],['.alert-summary',14],['.feature-title',20],['.feature-summary',14],['.intel-title',14]];
+    const selectors=[['.alert-title',16],['.alert-summary',14],['.alert-review',12],['.feature-title',20],['.feature-summary',14],['.intel-title',14]];
     document.querySelectorAll(selectors.map(s=>s[0]).join(',')).forEach(el=>{
       if(!el.dataset.baseSize) el.dataset.baseSize=String(parseFloat(getComputedStyle(el).fontSize)||14);
       const base=Number(el.dataset.baseSize);
@@ -98,20 +103,100 @@
     const updated=checked?fmtDate(checked):'sin fecha';$('data-updated').textContent=`Revisión: ${updated}`;
     $('refresh-status').textContent=stale?`Atención: última revisión registrada hace ${Math.floor(ageHours)} h`:`Datos revisados hace ${Math.max(0,Math.floor(ageHours*60))} min · revisión automática cada ${Math.round(REFRESH_MS/1000)} s`;
   }
-  function renderCritical(){const list=$('critical-list');const chosen=[...items].filter(isHigh).sort((a,b)=>priorityScore(b)-priorityScore(a)).slice(0,3);$('critical-count').textContent=`${chosen.length} alerta${chosen.length===1?'':'s'}`;
+  function reviewRecommendation(i){
+    const severity=String(i.severity||'').toLowerCase();
+    const basis=String(i.priority_basis||'').toLowerCase();
+    if(i.kev) return 'Revisión sugerida: confirmar activos afectados y priorizar mitigación o parche.';
+    if(isCritical(i) || Number(i.cvss)>=9) return 'Revisión sugerida: validar exposición y coordinar corrección urgente.';
+    if(basis.includes('explot') || basis.includes('ransomware') || basis.includes('zero-day') || basis.includes('zero day')) return 'Revisión sugerida: buscar indicadores asociados y verificar mitigaciones.';
+    if(severity==='high' || (i.cves||[]).length) return 'Revisión sugerida: comprobar versiones afectadas y correcciones disponibles.';
+    return 'Revisión sugerida: evaluar aplicabilidad, alcance e impacto en activos propios.';
+  }
+  function renderCritical(){
+    const list=$('critical-list');
+    priorityAlerts=[...items].filter(isHigh).sort((a,b)=>priorityScore(b)-priorityScore(a));
+    const pageCount=Math.max(1,Math.ceil(priorityAlerts.length/ALERTS_PER_PAGE));
+    criticalPageIndex=criticalPageIndex%pageCount;
+    const start=criticalPageIndex*ALERTS_PER_PAGE;
+    const chosen=priorityAlerts.slice(start,start+ALERTS_PER_PAGE);
+    $('critical-count').textContent=priorityAlerts.length>ALERTS_PER_PAGE
+      ? `${start+1}–${Math.min(start+ALERTS_PER_PAGE,priorityAlerts.length)} de ${priorityAlerts.length}`
+      : `${priorityAlerts.length} alerta${priorityAlerts.length===1?'':'s'}`;
     if(!chosen.length){list.innerHTML='<div class="empty">No hay alertas de prioridad alta identificadas en los datos disponibles.<br><small>Esto no garantiza ausencia de amenazas; depende de las fuentes consultadas.</small></div>';return;}
-    list.innerHTML=chosen.map(i=>{const critical=isCritical(i);const pills=[`<span class="pill ${critical?'red':'gold'}">Prioridad estimada: ${esc(i.priority_label|| (critical?'crítica':'alta'))}</span>`];if(i.kev)pills.push('<span class="pill red">CISA KEV</span>');if(i.severity)pills.push(`<span class="pill ${critical?'red':'gold'}">${esc(String(i.severity).toUpperCase())}</span>`);if(i.cvss!==undefined&&i.cvss!==null)pills.push(`<span class="pill">CVSS ${esc(i.cvss)}</span>`);(i.cves||[]).slice(0,2).forEach(c=>pills.push(`<span class="pill">${esc(c)}</span>`));return `<article class="alert ${critical?'critical':''}"><div class="alert-meta">${pills.join('')}<span>${esc(i.source||'Fuente no identificada')}</span></div><div class="alert-title">${esc(titleText(i))}</div><div class="alert-summary">${esc(summaryText(i).slice(0,240))}</div></article>`;}).join('');
+    list.innerHTML=chosen.map(i=>{
+      const critical=isCritical(i);
+      const pills=[`<span class="pill ${critical?'red':'gold'}">Prioridad estimada: ${esc(i.priority_label|| (critical?'crítica':'alta'))}</span>`];
+      if(i.kev)pills.push('<span class="pill red">CISA KEV</span>');
+      if(i.severity)pills.push(`<span class="pill ${critical?'red':'gold'}">${esc(String(i.severity).toUpperCase())}</span>`);
+      if(i.cvss!==undefined&&i.cvss!==null)pills.push(`<span class="pill">CVSS ${esc(i.cvss)}</span>`);
+      (i.cves||[]).slice(0,2).forEach(c=>pills.push(`<span class="pill">${esc(c)}</span>`));
+      return `<article class="alert ${critical?'critical':''}" title="${esc(i.priority_basis||'Prioridad estimada por heurística')}" ><div class="alert-meta">${pills.join('')}<span>${esc(i.source||'Fuente no identificada')}</span></div><div class="alert-title">${esc(titleText(i))}</div><div class="alert-summary">${esc(summaryText(i).slice(0,210))}</div><div class="alert-review">${esc(reviewRecommendation(i))}</div></article>`;
+    }).join('');
+  }
+  function advanceCriticalPage(){
+    const pages=Math.ceil(priorityAlerts.length/ALERTS_PER_PAGE);
+    if(pages<=1)return;
+    const list=$('critical-list');
+    list.classList.add('is-changing');
+    window.setTimeout(()=>{
+      criticalPageIndex=(criticalPageIndex+1)%pages;
+      renderCritical();
+      list.classList.remove('is-changing');
+      queueFit();
+    },300);
   }
   function renderFeatured(){const area=$('feature-content');if(!featured.length){area.innerHTML='<div class="empty">Aún no hay publicaciones disponibles.<br>Comprueba la ejecución de GitHub Actions y data/incidents.json.</div>';$('feature-counter').textContent='0 / 0';$('progress').style.width='0%';return;}
     featureIndex=((featureIndex%featured.length)+featured.length)%featured.length;const i=featured[featureIndex];const tags=(i.tags||[]).slice(0,3).map(t=>`<span class="pill">${esc(t.replaceAll('_',' '))}</span>`).join('');const priorityPill=`<span class="pill ${['crítica'].includes(i.priority_label)?'red':(['alta'].includes(i.priority_label)?'gold':'')}">Prioridad estimada: ${esc(i.priority_label||'informativa')}</span>`;area.innerHTML=`<div class="feature-kicker">${i.kev?'<span class="pill red">CISA KEV</span>':'<span class="dot" style="color:var(--cyan)"></span>'}${esc(i.category||i.type||'Ciberseguridad')} ${priorityPill}</div><h3 class="feature-title">${esc(titleText(i))}</h3><p class="feature-summary">${esc(summaryText(i).slice(0,650))}</p><div class="alert-meta">${tags}${(i.cves||[]).slice(0,2).map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div><div class="feature-bottom"><span class="source-name">${esc(i.source||'Fuente desconocida')} · ${esc(fmtDate(i.published_at))}</span><a class="source-link" href="${esc(i.url||'#')}" target="_blank" rel="noopener noreferrer">FUENTE ORIGINAL ↗</a></div>`;$('feature-counter').textContent=`${featureIndex+1} / ${featured.length}`;$('progress').style.width='0%';rotateStarted=Date.now();
   }
-  function renderRecent(){const recent=sortedNewest(items).slice(0,3);$('recent-list').innerHTML=recent.length?recent.map(i=>`<div class="intel-item"><div class="intel-time">${esc(fmtDate(i.published_at||i.collected_at))}</div><div><div class="intel-title">${esc(titleText(i))}</div><div class="intel-source">${esc(i.source||'Fuente desconocida')} · ${esc((i.cves||[]).slice(0,1).join(' ')||i.category||'Ciberseguridad')}</div></div></div>`).join(''):'<div class="empty">Sin publicaciones disponibles.</div>';}
+  function renderRecent(){
+    const recent=sortedNewest(items).slice(0,15);
+    const markup=recent.map(i=>`<div class="intel-item"><div class="intel-time">${esc(fmtDate(i.published_at||i.collected_at))}</div><div><div class="intel-title">${esc(titleText(i))}</div><div class="intel-source">${esc(i.source||'Fuente desconocida')} · ${esc((i.cves||[]).slice(0,1).join(' ')||i.category||'Ciberseguridad')}</div></div></div>`).join('');
+    $('recent-list').innerHTML=markup?`<div class="intel-track" id="recent-track"><div class="intel-cycle">${markup}</div></div>`:'<div class="empty">Sin publicaciones disponibles.</div>';
+    recentOffset=0; recentCycleHeight=0; recentLastFrame=0;
+    requestAnimationFrame(setupRecentScroll);
+  }
+  function setupRecentScroll(){
+    const viewport=$('recent-list'), track=$('recent-track');
+    if(!viewport||!track)return;
+    const cycle=track.querySelector('.intel-cycle');
+    if(!cycle)return;
+    const oldClone=track.querySelector('.intel-cycle.clone'); if(oldClone)oldClone.remove();
+    track.style.transform='translate3d(0,0,0)'; recentOffset=0;
+    recentCycleHeight=cycle.getBoundingClientRect().height;
+    const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduceMotion || recentCycleHeight<=viewport.clientHeight+8){
+      viewport.classList.remove('auto-scrolling');
+      return;
+    }
+    const clone=cycle.cloneNode(true); clone.classList.add('clone'); clone.setAttribute('aria-hidden','true');
+    clone.querySelectorAll('a,button,input,[tabindex]').forEach(el=>el.setAttribute('tabindex','-1'));
+    track.appendChild(clone);
+    viewport.classList.add('auto-scrolling');
+  }
+  function animateRecentScroll(now){
+    if(!recentLastFrame)recentLastFrame=now;
+    const dt=Math.min(.05,Math.max(0,(now-recentLastFrame)/1000)); recentLastFrame=now;
+    const viewport=$('recent-list'),track=$('recent-track');
+    if(viewport&&track&&viewport.classList.contains('auto-scrolling')&&!recentPaused&&!document.hidden&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      recentOffset+=RECENT_SCROLL_PX_PER_SEC*dt;
+      if(recentCycleHeight>0&&recentOffset>=recentCycleHeight)recentOffset-=recentCycleHeight;
+      track.style.transform=`translate3d(0,${-recentOffset}px,0)`;
+    }
+    requestAnimationFrame(animateRecentScroll);
+  }
+  const recentViewport=$('recent-list');
+  recentViewport.addEventListener('mouseenter',()=>{recentPaused=true;});
+  recentViewport.addEventListener('mouseleave',()=>{recentPaused=false;});
+  recentViewport.addEventListener('focusin',()=>{recentPaused=true;});
+  recentViewport.addEventListener('focusout',()=>{recentPaused=false;});
+  if('ResizeObserver' in window){const recentObserver=new ResizeObserver(()=>setupRecentScroll());recentObserver.observe(recentViewport);}
+  window.addEventListener('resize',setupRecentScroll);
   function renderTicker(){const sorted=[...items].sort((a,b)=>priorityScore(b)-priorityScore(a));const i=sorted[0];$('ticker').innerHTML=i?`<b>DESTACADO:</b> ${esc(titleText(i))}`:'<b>INTEL:</b> Sin publicaciones disponibles. Verifica la recopilación.';}
-  function renderAll(){renderMetrics();renderCritical();featured=sortedNewest(items).sort((a,b)=>priorityScore(b)-priorityScore(a));featureIndex=0;renderFeatured();renderRecent();renderTicker();queueFit();}
+  function renderAll(){criticalPageIndex=0;renderMetrics();renderCritical();featured=sortedNewest(items).sort((a,b)=>priorityScore(b)-priorityScore(a));featureIndex=0;renderFeatured();renderRecent();renderTicker();queueFit();}
   async function loadData(silent=false){try{const response=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const next=await response.json();const signature=JSON.stringify([next.generated_at,(next.items||[]).length,(next.items||[]).map(i=>i.id||i.url||i.title)]);payload=next;items=Array.isArray(next.items)?next.items:[];if(signature!==lastDataSignature){lastDataSignature=signature;renderAll();}else{renderMetrics();}if(!silent)$('refresh-status').textContent=`Datos revisados ${new Intl.DateTimeFormat('es-CL',{hour:'2-digit',minute:'2-digit',timeZone:'America/Santiago'}).format(new Date())}`;}catch(err){$('health-dot').className='status-dot bad';$('health-label').textContent='No se pudo leer el archivo de datos';$('refresh-status').textContent=`Error de datos: ${err.message}`;if(!items.length){$('critical-list').innerHTML='<div class="empty">No se pudo cargar data/incidents.json.<br>Revisa GitHub Pages y la primera ejecución del recopilador.</div>';$('feature-content').innerHTML='<div class="empty">Sin datos para mostrar.</div>';}}}
   $('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen();}catch(e){$('refresh-status').textContent='Pantalla completa no disponible en este navegador';}});
   document.addEventListener('keydown',e=>{if(e.key==='f'||e.key==='F')$('fullscreen').click();});
-  updateClock();setInterval(updateClock,1000);loadData();setInterval(()=>loadData(true),REFRESH_MS);setInterval(()=>{if(featured.length){featureIndex=(featureIndex+1)%featured.length;renderFeatured();queueFit();}},ROTATE_MS);setInterval(()=>{if(featured.length){const elapsed=Date.now()-rotateStarted;$('progress').style.width=Math.min(100,elapsed/ROTATE_MS*100)+'%';}},250);
+  updateClock();setInterval(updateClock,1000);loadData();requestAnimationFrame(animateRecentScroll);setInterval(()=>loadData(true),REFRESH_MS);setInterval(()=>{if(featured.length){featureIndex=(featureIndex+1)%featured.length;renderFeatured();queueFit();}},ROTATE_MS);setInterval(()=>{if(featured.length){const elapsed=Date.now()-rotateStarted;$('progress').style.width=Math.min(100,elapsed/ROTATE_MS*100)+'%';}},250);setInterval(advanceCriticalPage,ALERT_ROTATE_MS);
 })();
 </script>
 </body>
