@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-10-28T01:46:07+00:00",
-  "last_checked_at": "2026-10-28T01:46:07+00:00",
+  "generated_at": "2026-10-28T07:30:53+00:00",
+  "last_checked_at": "2026-10-28T07:30:53+00:00",
   "items": [
+    {
+      "id": "00a10b377bfdcba15992",
+      "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
+      "url": "https://isc.sans.edu/diary/rss/33464",
+      "source": "SANS Internet Storm Center",
+      "category": "Investigación de amenazas",
+      "region": "Global",
+      "published_at": "2026-10-28T02:30:11+00:00",
+      "summary": "",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:30+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "SANS Internet Storm Center"
+      ]
+    },
     {
       "id": "efdd4eb73b2b1d2ecda4",
       "title": "Introducing Route 53 Resolved IP Validation for AWS Network Firewall",
@@ -5312,38 +5341,6 @@
       ]
     },
     {
-      "id": "8c93f156e67857743bde",
-      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
-      "url": "https://isc.sans.edu/diary/rss/33440",
-      "source": "SANS Internet Storm Center",
-      "category": "Investigación de amenazas",
-      "region": "Global",
-      "published_at": "2026-10-21T21:02:43+00:00",
-      "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:56+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "SANS Internet Storm Center"
-      ]
-    },
-    {
       "id": "3f1a11956436b1673800",
       "title": "Broad access through consistent standards",
       "url": "https://openai.com/index/broad-access-through-consistent-standards",
@@ -5829,6 +5826,65 @@
       ]
     },
     {
+      "id": "5d3d1192f5f5922e8914",
+      "title": "CVE-2024-4989: The callback URL parameter in WSO2 API Manager fails to validate user-supplied input, allowing it to be controlled by malicious actors. Exploitation of this vulnerability could le",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-4989",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T14:17:04+00:00",
+      "summary": "The callback URL parameter in WSO2 API Manager fails to validate user-supplied input, allowing it to be controlled by malicious actors. Exploitation of this vulnerability could lead to users being redirected to attacker-controlled web pages. This can be used in conjunction with social engineering techniques to trick users into interacting with malicious links, potentially resulting in phishing attacks aimed at acquiring sensitive information or causing other harm.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "phishing"
+      ],
+      "cves": [
+        "CVE-2024-4989"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "cbd002e43bbcc7bdb8e4",
+      "title": "CVE-2024-5139: The Authentication Endpoint accepts user-supplied input without sufficient encoding, allowing for the injection of malicious JavaScript payloads. This vulnerability can be triggere",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5139",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T14:17:04+00:00",
+      "summary": "The Authentication Endpoint accepts user-supplied input without sufficient encoding, allowing for the injection of malicious JavaScript payloads. This vulnerability can be triggered by submitting crafted input to the Authentication Endpoint. Successful exploitation allows an attacker to redirect the user's browser to a malicious website, modify the web page's user interface, or extract sensitive information from the browser. However, due to the `httpOnly` flag on session-related cookies, session hijacking is not possible.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2024-5139"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "74ef3f48ee253fb2552d",
       "title": "“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities",
       "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis",
@@ -5858,6 +5914,1284 @@
       ]
     },
     {
+      "id": "55c083fd032441cf92d2",
+      "title": "CVE-2026-97313: A recursive BIND server that receives a query with recursion desired (RD=1) followed by a non-recursive query (RD=0) may exit with an assertion failure, resulting in a denial of se",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97313",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:21:09+00:00",
+      "summary": "A recursive BIND server that receives a query with recursion desired (RD=1) followed by a non-recursive query (RD=0) may exit with an assertion failure, resulting in a denial of service. To be vulnerable, the BIND server must allow recursive queries and have at least two RPZ zones configured: one with the default setting of \"recursive-only yes\", and the other with \"recursive-only no\". This issue affects BIND 9 versions 9.16.0 through 9.18.50, 9.20.0 through 9.20.29, 9.21.0 through 9.21.26, 9.11.3-S1 through 9.18.50-S1, and 9.20.9-S1 through 9.20.29-S1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97313"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5fcd6c94de9baaf12929",
+      "title": "CVE-2026-94300: Replaying GSS-TSIG signed UDP messages can result in memory corruption in \"`named`\". An attacker who can capture a previously signed UDP message can replay it while the negotiated",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94300",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:21:08+00:00",
+      "summary": "Replaying GSS-TSIG signed UDP messages can result in memory corruption in \"`named`\". An attacker who can capture a previously signed UDP message can replay it while the negotiated TSIG key is still valid. By also sending crafted queries to a zone the attacker controls, the attacker may potentially achieve remote code execution. This issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through 9.20.29, 9.21.0 through 9.21.26, 9.11.3-S1 through 9.18.50-S1, and 9.20.9-S1 through 9.20.29-S1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-94300"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4e1d5c1c04b42e23efbc",
+      "title": "CVE-2026-96888: A BIND resolver that is configured with both a \"redirect\" zone and \"qname-minimization strict\" may abort with an assertion failure while processing the redirect. This issue affects",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96888",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:21:08+00:00",
+      "summary": "A BIND resolver that is configured with both a \"redirect\" zone and \"qname-minimization strict\" may abort with an assertion failure while processing the redirect. This issue affects BIND 9 versions 9.16.0 through 9.18.50, 9.20.0 through 9.20.29, 9.21.0 through 9.21.26, 9.16.8-S1 through 9.18.50-S1, and 9.20.9-S1 through 9.20.29-S1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-96888"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "94e0025b5ed9a6e694e9",
+      "title": "CVE-2026-90484: The MySQL client response parser in Apache bRPC dereferences a null pointer when the server peer sends a zero-payload-length response packet. A response packet whose declared paylo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90484",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:56+00:00",
+      "summary": "The MySQL client response parser in Apache bRPC dereferences a null pointer when the server peer sends a zero-payload-length response packet. A response packet whose declared payload length is zero is accepted by the frame-length check (is_full_package), after which the parser reads the response type byte via an unbounded 5-byte fetch that returns nullptr, and type = p[4] dereferences it, crashing the client process. Root Cause: In brpc::policy::MysqlReply::ConsumePartialIOBuf, buf.fetch(header, 5) returns nullptr when the buffered data only holds the 4-byte header of a zero-length packet, then the code reads p[4] (and, in the fast-auth path, p2[4]) without checking for a null or zero-length packet. Affected Scenarios: A brpc MySQL client connecting to a malicious or compromised MySQL server (or a MITM) can be crashed by a zero-length server response packet, resulting in denial of service of the client. Fix: The fix rejects zero-length response packets (returning PARSE_ERROR_ABSOLUTELY_WRONG) both for the initial response type determination and after a fast-auth marker, before reading the type byte. Upgrade to the Apache bRPC version 1.18.0 or apply the PR patch at https://github.c",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90484"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5f59fb72c293f40711ed",
+      "title": "CVE-2026-86146: Inconsistent interpretation of HTTP requests (HTTP request/response smuggling) in the bundled HTTP/1.1 parser of Apache bRPC (version < 1.18.0) on all platforms allows remote attac",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86146",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:04+00:00",
+      "summary": "Inconsistent interpretation of HTTP requests (HTTP request/response smuggling) in the bundled HTTP/1.1 parser of Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to smuggle requests and inject headers when bRPC is deployed behind a proxy or load balancer that parses the same bytes differently. Root Cause: The bRPC fork of http-parser accepts and acts on several HTTP/1.1 header forms that a conforming front-end either rejects or interprets differently, so the framing or the header set of a message can differ between the front-end and bRPC: 1. A space before the colon of framing headers (e.g. Content-Length : 5) is accepted; the value still drives bRPC's framing while the reported field name contains the trailing space. 2. Interior spaces inside a Content-Length value (e.g. Content-Length: 1 3) are skipped, so bRPC reads 13 where a front-end reads 1 or rejects the message (same class as CVE-2022-32213 in Node.js). 3. Obsolete line folding (obs-fold, RFC 7230 3.2.4) of Content-Length and Transfer-Encoding values is accepted, so a folded framing value drives bRPC's framing while a front-end that does not unfold sees a different message. 4. Chunked trailer fields ",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-86146"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "813aa8f9852fd3d931ca",
+      "title": "CVE-2026-86147: External control of file name or path and uncontrolled resource consumption in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers who can reach the builtin ser",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86147",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:04+00:00",
+      "summary": "External control of file name or path and uncontrolled resource consumption in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers who can reach the builtin service port to create directories and truncate/overwrite files with the privileges of the server process, or to hold the process-wide CPU/contention profiler for an arbitrarily long time. Root Cause: 1. The builtin /flags service allows gflags carrying a validator to be modified at runtime via ?setvalue=. The bvar/mbvar dump path gflags (bvar_dump_file, bvar_dump_tabs, mbvar_dump_file) were registered with an accept-anything validator whose only purpose was to wake the dumping thread. A remote attacker could therefore repoint the dump path (e.g. GET /flags/bvar_dump_file?setvalue=/victim/dir/target followed by GET /flags/bvar_dump?setvalue=true, or the equivalent for mbvar_dump_file, which is used verbatim without a forced suffix), making the dumping thread recursively create directories and open/truncate files at attacker-chosen locations. Tab names in bvar_dump_tabs were appended to the path without sanitization, allowing '..' to escape the configured directory. 2. The /pprof builtin service did not clamp",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-86147"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "630ff05954f391af9c54",
+      "title": "CVE-2026-86249: On a brpc::Server that sets both ServerOptions.auth and ServerOptions.internal_port, the HTTP built-in service exemption on internal_port can be abused to bypass authentication ent",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86249",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:04+00:00",
+      "summary": "On a brpc::Server that sets both ServerOptions.auth and ServerOptions.internal_port, the HTTP built-in service exemption on internal_port can be abused to bypass authentication entirely. VerifyHttpRequest() returns true without checking any credential when a built-in service is requested on internal_port, and this verdict is not per - request: verification runs only for the first message of a connection and the result latches the connection. Sending a request such as GET /status to internal_port first authenticates the whole connection, after which every subsequent request dispatched on the same connection is handled without ever calling VerifyHttpRequest(). This lets a remote attacker reach ordinary (non-built-in, non-tabbed) authenticated services without supplying valid credentials whenever the server uses ServerOptions.internal_port together with an Authenticator. The fix restricts internal_port so that it carries only built-in and Tabbed services; requests for ordinary services sent to internal_port are rejected with EPREM / HTTP 403. Mitigation / Fix: upgrade to 1.18.0 or apply PR https://github.com/apache/brpc/pull/3525 . Users who rely on serving normal services on internal",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-86249"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c63101535c01dc1dd5e3",
+      "title": "CVE-2026-87849: The Discovery naming-service reply parser in Apache bRPC (versions < 1.18.0) calls RapidJSON object-only accessors (FindMember) on JSON values without first validating that those v",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87849",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:04+00:00",
+      "summary": "The Discovery naming-service reply parser in Apache bRPC (versions < 1.18.0) calls RapidJSON object-only accessors (FindMember) on JSON values without first validating that those values are objects. A malformed Discovery response whose data/service members or instances list contain non-object entries (e.g. a bare integer) triggers the RapidJSON object-access precondition on the client, reading memory out of bounds and potentially crashing the bRPC client. Root Cause: In src/brpc/policy/discovery_naming_service.cpp, DiscoveryNamingService::GetServers() and DiscoveryNames::ListDiscoveryNodes() access JSON values with member functions on non-object values. RapidJSON only defines these operations for object types; invoking them on a non-object violates the class invariant and results in undefined behavior (out-of-bounds read), commonly crashing the process. Affected Scenarios: An operator-configured (or compromised) Discovery backend returns a malformed /discovery/nodes or /discovery/fetchs response whose data/service/instance entries are not JSON objects, crashing any bRPC client that refreshes its server list. How to Fix: 1. Upgrade bRPC to version 1.18.0 or later, which fixes this i",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-87849"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "59451358f3d7d6a5c952",
+      "title": "CVE-2026-82231: A Thrift client in Apache bRPC (version < 1.18.0, built with WITH_THRIFT which is off by default) can be crashed by the server peer it talks to. When the server returns a T_EXCEPTI",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82231",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "A Thrift client in Apache bRPC (version < 1.18.0, built with WITH_THRIFT which is off by default) can be crashed by the server peer it talks to. When the server returns a T_EXCEPTION reply whose exception struct is malformed, the client decodes it without catching what Apache Thrift throws (TProtocolException, TTransportException or std::length_error). The exception unwinds out of the bthread task function and the process calls std::terminate(), terminating the whole process along with every other in-flight RPC. This is the client response path, so the adversary is the server peer, which THREAT_MODEL.md treats as untrusted. It requires a WITH_THRIFT build (off by default). How to Fix: 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3500",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82231"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a3497cadf67a1baf20e7",
+      "title": "CVE-2026-82425: A reachable assertion in Apache bRPC (version < 1.18.0) on all platforms allows a malicious remote peer to crash the process, resulting in denial of service. Root Cause: When a So",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82425",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "A reachable assertion in Apache bRPC (version < 1.18.0) on all platforms allows a malicious remote peer to crash the process, resulting in denial of service. Root Cause: When a Socket with health checking enabled fails, Socket::WaitAndReset closes its file descriptor while the event dispatcher may still be delivering an input event (EPOLLIN/EVFILT_READ) that was fetched for the just-closed fd. If the health check then succeeds and revives the Socket, Socket::Address succeeds again while the fd is still -1 (the next write reconnects on demand). In that window, Socket::OnInputEvent hits CHECK(!(events & EPOLLIN)) (or the kqueue equivalent) because the Socket is addressable but has no fd. CHECK failures terminate the process when bRPC is built with glog or when the gflag -crash_on_fatal_log is enabled (CHECK always terminates in OFFICIAL_BUILD/NDEBUG builds as well). Affected Scenarios: Applications using bRPC clients with health check enabled (-health_check_interval). A malicious remote peer that the client connects to can deliberately abort connections and immediately accept the health check probes, racing connection teardown against health check revival to trigger the assertion and",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82425"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7376e1111d8dd0489e89",
+      "title": "CVE-2026-82942: A data race in the RDMA transport of Apache bRPC (versions < 1.18.0) allows a remote client to crash the server process (denial of service) when RDMA is enabled at build time and r",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82942",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "A data race in the RDMA transport of Apache bRPC (versions < 1.18.0) allows a remote client to crash the server process (denial of service) when RDMA is enabled at build time and runtime. Root Cause: When a bRPC server negotiates RDMA with a client, the handshake completes on the TCP fd, but the server kept parsing that fd afterwards as if it were still an RPC channel. The TCP-fd input stream and the RDMA QP input stream (driven by CQ events) shared the same Socket::_read_buf, preferred_index and parsing_context without synchronization. In addition, CQ event processing could start while the handshake parsing was still in progress, and the handshake ACK phase could consume bytes belonging to the next protocol. A remote, unauthenticated client that has completed the RDMA handshake can send data on the TCP fd at the same time RDMA messages are being processed, corrupting the shared input buffer and parser state and crashing the server process (CWE-362, availability impact). Affected Scenarios: Use a bRPC server with RDMA support enabled (built with BRPC_WITH_RDMA and serving rdma:// / SOCKET_MODE_RDMA sockets) and accept connections from untrusted clients. Deployments without RDMA are",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82942"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "79f3d6742fae61539b50",
+      "title": "CVE-2026-82953: NULL pointer dereference in the RTMP protocol implementation in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to crash the server (denial of service) via",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82953",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "NULL pointer dereference in the RTMP protocol implementation in Apache bRPC (version _onfail_id, causing the process to crash. Affected Scenarios: Run an Apache bRPC RTMP server whose RtmpService::NewStream() may return null (i.e., the service rejects createStream requests). A remote client that sends a createStream command and then closes the connection before the rejection response is written can crash the server. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3508",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82953"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "eccbbb995b2518b2b3ac",
+      "title": "CVE-2026-84727: Use-after-free in the RTMP protocol implementation in Apache bRPC (version < 1.18.0) on all platforms allows a malicious RTMP peer to crash the process or potentially corrupt memor",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84727",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "Use-after-free in the RTMP protocol implementation in Apache bRPC (version RtmpChunkStream::SerializeMessage) runs concurrently on sender threads and dereferences the same RtmpChunkStream object without synchronization. If a remote peer sends an Abort message naming a chunk stream that is concurrently being used to serialize an outgoing message, the stream object is freed while still in use, resulting in a use-after-free. Additionally, deleting the chunk stream discarded its previous message header, so subsequent compressed (type-3) chunk headers on that stream could no longer be decoded. Affected Scenarios: Any application using the bRPC RTMP protocol implementation (rtmp policy), either as an RTMP server or as an RTMP client, where the remote endpoint is untrusted. The attacker needs to send an Abort message targeting a chunk stream id that is concurrently used for sending, which can crash the process or lead to memory corruption. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3515",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84727"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6898f76e8d598d6ee975",
+      "title": "CVE-2026-84747: Interpretation conflict in the HTTP protocol implementation in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to bypass access control rules enforced by a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84747",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "Interpretation conflict in the HTTP protocol implementation in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to bypass access control rules enforced by a front proxy. Root Cause: The method dispatch function FindMethodPropertyByURI() in bRPC's HTTP protocol splits the request path with a string splitter that skips empty fields, so paths containing empty path segments (consecutive slashes), such as //flags, /flags// and /flags//port, are dispatched to the same method as their collapsed form /flags. Per RFC 3986 these are distinct paths. A front proxy that enforces an ACL (e.g. blocking access to builtin services such as /flags) matches the collapsed form only, and therefore forwards the padded literal to the bRPC server, where it is dispatched as if it were the collapsed form. This differential allows //flags?setvalue= to reach a builtin service that /flags is not allowed to reach. Additionally, the HTTP/2 implementation never validated the :path pseudo-header, so requests without a :path, or with a :path that neither begins with '/' nor is the asterisk-form '*', contrary to RFC 9113 section 8.3.1, were not rejected. Affected Scenarios: Deployments of Apach",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84747"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2889b1fb347f6453376f",
+      "title": "CVE-2026-84748: Improper authorization in Apache bRPC (versions < 1.18.0) on all platforms allows remote attackers to access builtin services through the public port. Root Cause: ServerOptions.in",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84748",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:03+00:00",
+      "summary": "Improper authorization in Apache bRPC (versions < 1.18.0) on all platforms allows remote attackers to access builtin services through the public port. Root Cause: ServerOptions.internal_port is documented to make builtin services (and Tabbed services) reachable only from the internal port, and the HTTP/h2 dispatch path enforced this. However, all protobuf-based protocol dispatch paths (baidu_std, hulu_pbrpc, sofa_pbrpc, and the nshead-based protocols public_pbrpc, nshead_mcpack, nova_pbrpc and ubrpc2pb) computed the security_mode flag but never enforced it between method resolution and method invocation. Since builtin services share the method map with user services, a client able to reach the public port could invoke builtin services such as brpc.vars or hotspots by name over these pb protocols and disclose sensitive runtime information (metrics, flags, profiler data) that the operator intended to expose only via the internal port. Affected Scenarios: Use a bRPC server with ServerOptions.internal_port configured (or with builtin/Tabbed services otherwise expected to be gated by it) while the public port is reachable from an untrusted network and any pb-based protocol is enabled. H",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-84748"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b1badcacc6e3b5727299",
+      "title": "CVE-2026-82210: Enforceable assertion in the streaming feature of Apache bRPC (version < 1.18.0) on all platforms allows a remote attacker to crash the server process by sending a malformed stream",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82210",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:02+00:00",
+      "summary": "Enforceable assertion in the streaming feature of Apache bRPC (version 0) and unconditionally asserts CHECK(buf.IsEmpty()) on the frame payload. A feedback frame that carries an unexpected payload, or a feedback frame received on a stream where flow control is disabled (cur_buf_size == 0), reaches these assertions. On failure, CHECK failures abort the process, allowing an unauthenticated single client (once a stream is established) to terminate the server and cause a denial of service. Affected Scenarios: Use bRPC server with the streaming control feature (Stream API) served from untrusted network. How to Fix: 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3494 The fix rejects malformed feedback frames with EPROTO and closes only the affected stream instead of crashing the whole process, and it bounds buffer shrinking so cur_buf_size never drops to 0 while flow control is enabled.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82210"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "21774ce703b572c58f61",
+      "title": "CVE-2026-82230: Uncontrolled recursion in the mcpack2pb component in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to make the server crash via sending deeply nested mcpa",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82230",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:20:02+00:00",
+      "summary": "Uncontrolled recursion in the mcpack2pb component in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to make the server crash via sending deeply nested mcpack data. Root Cause: The bRPC mcpack2pb parser (used to serve nshead_mcpack / ubrpc / public_pbrpc requests) recursively parses nested objects and arrays without any depth limit. For a protobuf message that references itself (e.g. a repeated message field), the generated parser recurses once per nesting level of the incoming mcpack object. A deeply nested request makes the recursion grow unbounded, overflow the stack and crash the process. Affected Scenarios: Use bRPC server with a recursive-schema protobuf message to serve nshead_mcpack / ubrpc / public_pbrpc requests from untrusted network. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3499 Note: No matter which option you choose, you should know that the fix enforces the documented parsing depth limit MAX_DEPTH (128) on the parse path, the same limit the serializer already applies. If your requests contain mcpack messages nested deepe",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82230"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb3e1519bedc200e286e",
+      "title": "CVE-2026-114405: Improper validation of array index vulnerability in Velneo vServer. This issue affects vServer: from 36.0 before 36.6 and from 37.0 before 37.2.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114405",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:32+00:00",
+      "summary": "Improper validation of array index vulnerability in Velneo vServer. This issue affects vServer: from 36.0 before 36.6 and from 37.0 before 37.2.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114405"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4bdc53388151b60ecaad",
+      "title": "CVE-2026-114407: e107 CMS before 2.3.13 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject malicious HTML by manipulating the author GET paramet",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114407",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:32+00:00",
+      "summary": "e107 CMS before 2.3.13 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject malicious HTML by manipulating the author GET parameter in search.php, which is parsed with parse_str() and concatenated unescaped into a rendered input tag via the form handler's 'other' option key. Attackers can craft a single GET request containing a crafted author parameter to break out of the HTML input tag and inject an img element with an onerror handler, executing arbitrary JavaScript in the victim's browser session.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114407"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "11816b785a6cd6fb3b51",
+      "title": "CVE-2026-19630: In a BIND resolver, inbound DNS protocol messages with a particular structure will result in additional processing, with no limit imposed by BIND. A DNS message with a maliciously",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19630",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:32+00:00",
+      "summary": "In a BIND resolver, inbound DNS protocol messages with a particular structure will result in additional processing, with no limit imposed by BIND. A DNS message with a maliciously large number of such structures will cause BIND to consume disproportionate amounts of CPU time and memory during processing. This issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through 9.20.29, 9.21.0 through 9.21.26, 9.11.3-S1 through 9.18.50-S1, and 9.20.9-S1 through 9.20.29-S1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-19630"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "249358d6dbc672187509",
+      "title": "CVE-2026-114399: Trudesk through 1.2.11 contains a path traversal vulnerability that allows administrators to delete arbitrary files by supplying encoded traversal sequences to DELETE /api/v1/backu",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114399",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "Trudesk through 1.2.11 contains a path traversal vulnerability that allows administrators to delete arbitrary files by supplying encoded traversal sequences to DELETE /api/v1/backup/:backup. Attackers can also pass unvalidated file values to POST /api/v1/backup/restore to restore archives from, or extract to, paths outside the intended directories.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114399"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.0,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1bfc5b9c534c998203da",
+      "title": "CVE-2026-114400: Trudesk through 1.2.11 contains a missing authentication vulnerability that allows unauthenticated attackers to download private ticket attachments under /uploads. Because express.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114400",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "Trudesk through 1.2.11 contains a missing authentication vulnerability that allows unauthenticated attackers to download private ticket attachments under /uploads. Because express.static serves the public/ directory before the hasAuth-guarded /uploads mount, attackers who know or guess a ticket ObjectId and filename can retrieve confidential attachments.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114400"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9e24919f26782b0d48c7",
+      "title": "CVE-2026-114401: Trudesk through 1.2.11 contains a regular expression injection vulnerability that allows unauthenticated attackers to enumerate usernames by submitting regex patterns to POST /api/",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114401",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "Trudesk through 1.2.11 contains a regular expression injection vulnerability that allows unauthenticated attackers to enumerate usernames by submitting regex patterns to POST /api/v1/login. Attackers can send alternations or prefixes like (admin|root) or a.* and distinguish 'Invalid User' from 'Invalid Password' responses to discover valid accounts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114401"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e029439cea6f6081283e",
+      "title": "CVE-2026-114402: Trudesk through 1.2.11 contains a path traversal and authorization bypass vulnerability in accountsController.uploadImage that allows authenticated users to overwrite other users'",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114402",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "Trudesk through 1.2.11 contains a path traversal and authorization bypass vulnerability in accountsController.uploadImage that allows authenticated users to overwrite other users' avatars via form-supplied _id and username fields. Attackers can supply a username like /../../../x to bypass the incomplete CVE-2022-1752 sanitization and write png, jpg, jpeg, or gif files outside public/uploads/users.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114402"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "22b4c77375114906637f",
+      "title": "CVE-2026-114403: PHPOffice PHPPresentation through 1.2.0 contains an insecure deserialization vulnerability that allows attackers to instantiate arbitrary PHP objects by supplying a crafted present",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114403",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "PHPOffice PHPPresentation through 1.2.0 contains an insecure deserialization vulnerability that allows attackers to instantiate arbitrary PHP objects by supplying a crafted presentation file. Attackers can upload a ZIP containing PhpPresentation.xml that IOFactory::load passes to unserialize(), enabling gadget-chain code execution, file writes, or denial of service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114403"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 9.2,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "de5e4c49f7fc77d9a6be",
+      "title": "CVE-2026-114404: PHPOffice PHPPresentation 1.2.0 contains a cross-site scripting vulnerability in the HTML writer that allows attackers who supply presentation content to inject script into generat",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114404",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:31+00:00",
+      "summary": "PHPOffice PHPPresentation 1.2.0 contains a cross-site scripting vulnerability in the HTML writer that allows attackers who supply presentation content to inject script into generated HTML. Attackers can craft a PPTX with malicious text runs, hyperlink relationship targets, or shape descr attributes that are emitted unescaped, executing script in viewers' browsers.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114404"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2a7e21403c16868bcfd3",
+      "title": "CVE-2026-114394: Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows authenticated users to post content attributed to other users by supplying user-controlled owner I",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114394",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:30+00:00",
+      "summary": "Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows authenticated users to post content attributed to other users by supplying user-controlled owner IDs. Attackers can set ownerId or owner in postComment, postInternalNote, and ticket create requests to forge administrator-authored comments, internal notes, and tickets on any ticket.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114394"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "017c39058ec3fe489047",
+      "title": "CVE-2026-114395: Trudesk through 1.2.11 contains an authorization bypass vulnerability in apiMessages.send that allows authenticated users to post messages as other users due to an incomplete CVE-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114395",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:30+00:00",
+      "summary": "Trudesk through 1.2.11 contains an authorization bypass vulnerability in apiMessages.send that allows authenticated users to post messages as other users due to an incomplete CVE-2022-1931 fix. Attackers can supply arbitrary owner and cId values to POST /api/v1/messages/send to inject spoofed messages into conversations they do not belong to.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114395"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f9349e0c3c61cd59caac",
+      "title": "CVE-2026-114396: Trudesk through 1.2.11 contains a server-side JavaScript injection vulnerability that allows authenticated users to inject code into a MongoDB $where clause via the search paramete",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114396",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:30+00:00",
+      "summary": "Trudesk through 1.2.11 contains a server-side JavaScript injection vulnerability that allows authenticated users to inject code into a MongoDB $where clause via the search parameter. Attackers can close the regular expression in GET /api/v1/tickets/search to loop mongod for denial of service or leak full ticket documents including internal notes.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "filtracion"
+      ],
+      "cves": [
+        "CVE-2026-114396"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "af0861707a9848e35c4e",
+      "title": "CVE-2026-114397: Trudesk through 1.2.11 contains a missing authentication vulnerability in debug routes enabled whenever NODE_ENV is unset, letting unauthenticated attackers invoke them remotely. A",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114397",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:30+00:00",
+      "summary": "Trudesk through 1.2.11 contains a missing authentication vulnerability in debug routes enabled whenever NODE_ENV is unset, letting unauthenticated attackers invoke them remotely. Attackers can call /debug/populatedb to delete all groups, tags and tickets, then log in with seeded accounts using the password 'password'.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114397"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 8.3,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ba948154ff7903e871fa",
+      "title": "CVE-2026-114398: Trudesk through 1.2.11 contains an unrestricted file upload vulnerability that allows any authenticated user to place HTML or SVG files in the public webroot via the uploadlogo, up",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114398",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:30+00:00",
+      "summary": "Trudesk through 1.2.11 contains an unrestricted file upload vulnerability that allows any authenticated user to place HTML or SVG files in the public webroot via the uploadlogo, uploadpagelogo and uploadfavicon endpoints. Attackers can spoof an image MIME type to upload script-bearing files served unauthenticated from /assets/, enabling stored cross-site scripting and replacement of instance branding.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114398"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f27e77500a1f6895cf19",
+      "title": "CVE-2026-114388: Chamilo LMS 2.0.0 pre-releases from 2.0.0-alpha.1 before 2.0.0-RC.3 contain a missing access control vulnerability in GradebookController that allows unauthenticated users to modif",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114388",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "Chamilo LMS 2.0.0 pre-releases from 2.0.0-alpha.1 before 2.0.0-RC.3 contain a missing access control vulnerability in GradebookController that allows unauthenticated users to modify gradebook certificates. Attackers can request the set_default_certificate endpoint with any course id and document id to tamper with certificate configuration for any course.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114388"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "75f6e90b058bc4a420a0",
+      "title": "CVE-2026-114389: Chamilo LMS from 2.0.0-alpha.4 before 2.0.0-RC.3 contains a missing authorization vulnerability in AiController::openAnswerGrade that allows any authenticated user to obtain AI gra",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114389",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "Chamilo LMS from 2.0.0-alpha.4 before 2.0.0-RC.3 contains a missing authorization vulnerability in AiController::openAnswerGrade that allows any authenticated user to obtain AI grading of other students' exam attempts. Attackers can enumerate exeId and questionId values sent to the open_answer_grade endpoint to expose other students' answers through feedback and consume AI quota.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114389"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a3ac63ef0898a9b8e8b4",
+      "title": "CVE-2026-114390: Chamilo LMS from 2.0.0-alpha.1 before 2.0.0-RC.3 contains a missing authorization vulnerability in legacy AJAX handlers under public/main/inc/ajax/ that exposes user names and cert",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114390",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "Chamilo LMS from 2.0.0-alpha.1 before 2.0.0-RC.3 contains a missing authorization vulnerability in legacy AJAX handlers under public/main/inc/ajax/ that exposes user names and certificates. Unauthenticated or low-privileged users can call actions like get_users_by_group_course, user_by_all_roles, and export_all_certificates to harvest user names and other learners' certificate PDFs.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114390"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c97b46474023aa53a4d4",
+      "title": "CVE-2026-114391: ZenTao PMS before 22.3 contains an authorization bypass vulnerability in commonModel::isOpenMethod() that lets logged-in users skip group-based ACL checks for any method containing",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114391",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "ZenTao PMS before 22.3 contains an authorization bypass vulnerability in commonModel::isOpenMethod() that lets logged-in users skip group-based ACL checks for any method containing 'ajax'. Minimal-privilege users can call methods like task.ajaxGetByID, system.ajaxDBAuthUrl and admin.ajaxChangeTableEngine to read data, obtain database credentials, trigger CI jobs and alter tables.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114391"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8e72c75ad6ff830738df",
+      "title": "CVE-2026-114392: Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows authenticated users to read tickets outside their groups via GET /api/v1/tickets/:uid. Attackers c",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114392",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows authenticated users to read tickets outside their groups via GET /api/v1/tickets/:uid. Attackers can enumerate sequential ticket uids to read every ticket's subject, issue, comments, owner and assignee, because the apiTickets.single handler skips group membership checks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114392"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a318caa595eedd32f5d8",
+      "title": "CVE-2026-114393: Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows any authenticated user to modify tickets outside their groups via PUT /api/v1/tickets/:id and PUT",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114393",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:29+00:00",
+      "summary": "Trudesk through 1.2.11 contains an authorization bypass vulnerability that allows any authenticated user to modify tickets outside their groups via PUT /api/v1/tickets/:id and PUT /api/v2/tickets/batch. Attackers can supply arbitrary ticket ObjectIds to change status, subject, group, priority or assignee, or mass-close tickets, since only the default tickets:update role grant is checked.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114393"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2bedd7fcc374bc282457",
+      "title": "CVE-2026-114245: A weakness has been identified in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this issue",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114245",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:28+00:00",
+      "summary": "A weakness has been identified in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this issue is some unknown functionality of the file /Admin/includes/Admin-Register-inc.php of the component Add New Admin Form. Executing a manipulation of the argument submit/Admin_id/password can lead to improper authorization. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. The project was informed of the problem early through an issue report but has not responded yet.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114245"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b00b96682d19f5a7b914",
+      "title": "CVE-2026-114248: A security vulnerability has been detected in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. This affec",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114248",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:28+00:00",
+      "summary": "A security vulnerability has been detected in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. This affects an unknown part of the file /Admin/includes/AddNewPlan-inc.php of the component Plan Management Form. The manipulation of the argument submit/Plan_no/Name leads to missing authentication. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114248"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "635b65998f9eb803ca91",
+      "title": "CVE-2026-114386: Pydantic AI Harness before 0.59.0 fails to enforce UsageLimits.tool_calls_limit on nested tool calls dispatched from run_code in the CodeMode toolset. Users or prompt-injected cont",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114386",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:28+00:00",
+      "summary": "Pydantic AI Harness before 0.59.0 fails to enforce UsageLimits.tool_calls_limit on nested tool calls dispatched from run_code in the CodeMode toolset. Users or prompt-injected content can make the sandboxed program invoke tools via run_nested_call() without check_before_tool_call, exceeding operator limits on costly or side-effecting tools.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114386"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0178dd77394f3190957b",
+      "title": "CVE-2026-114387: Shopper from 2.0.0 before 2.6.0 contains a missing authorization vulnerability that allows admin-panel users holding only access_dashboard to create administrators and grant permis",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114387",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:28+00:00",
+      "summary": "Shopper from 2.0.0 before 2.6.0 contains a missing authorization vulnerability that allows admin-panel users holding only access_dashboard to create administrators and grant permissions. Attackers can call CreateTeamMember::store() or Permissions::togglePermission() directly over /livewire/update to create admin accounts and escalate to full administrator.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114387"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c54243d36c4bb955608c",
+      "title": "CVE-2026-111849: Missing Authorization vulnerability in Magepeople inc. WpTravelly tour-booking-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Wp",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111849",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:27+00:00",
+      "summary": "Missing Authorization vulnerability in Magepeople inc. WpTravelly tour-booking-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WpTravelly: from n/a through 2.3.5.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-111849"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "94d928295412cec8245d",
+      "title": "CVE-2026-114120: SchedulePress before 5.3.5 contains a missing authorization vulnerability that allows authenticated Contributor-level users to change any post's status and publish date via the wps",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114120",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:27+00:00",
+      "summary": "SchedulePress before 5.3.5 contains a missing authorization vulnerability that allows authenticated Contributor-level users to change any post's status and publish date via the wpsp_el_editor_form AJAX action. Attackers can reuse the wpsp-el-editor nonce from the Elementor modal to unpublish or reschedule administrator posts, or publish other users' pending or draft posts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114120"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0abb62432f942e50821d",
+      "title": "CVE-2026-114243: A security flaw has been discovered in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114243",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T13:18:27+00:00",
+      "summary": "A security flaw has been discovered in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this vulnerability is the function mysqli_query of the file /Agent/ManagePolicy/EditPolicyHolder.php. Performing a manipulation of the argument Policy_no/Name results in sql injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The project was informed of the problem early through an issue report but has not responded yet.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114243"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "b1215e1aefc04c61e203",
       "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
       "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
@@ -5883,6 +7217,210 @@
       ],
       "related_sources": [
         "OpenAI News"
+      ]
+    },
+    {
+      "id": "62ac5f15ba1410cefcd3",
+      "title": "CVE-2026-80463: Unbounded memory accumulation in the stream message reassembly path of Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to exhaust the memory of a server (de",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80463",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:24+00:00",
+      "summary": "Unbounded memory accumulation in the stream message reassembly path of Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to exhaust the memory of a server (denial of service) by sending an endless sequence of continuation data frames. Root Cause: The streaming RPC protocol bounds every single data frame by max_body_size, but a fragmented stream message accumulates continuation frames into one buffer (_pending_buf) without any limit on the accumulated size. A malicious peer that can open a stream can therefore keep sending continuation frames to make the receiver accumulate an arbitrarily large in-memory message. Since the default flow-control settings (socket_max_streams_unconsumed_bytes=0) do not throttle the sending rate, the receiver's memory grows until the process runs out of memory and crashes or becomes unavailable. Affected Scenarios: Services that accept streams from untrusted clients (for example using brpc::StreamAccept or brpc::StreamCreate with the built-in streaming protocol) are affected. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brp",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-80463"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9b84fb77c8b497de7beb",
+      "title": "CVE-2026-81755: Uncontrolled resource consumption in the streaming RPC component of Apache bRPC (version < 1.18.0) allows a remote attacker to exhaust server memory and cause denial of service by",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81755",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:24+00:00",
+      "summary": "Uncontrolled resource consumption in the streaming RPC component of Apache bRPC (version < 1.18.0) allows a remote attacker to exhaust server memory and cause denial of service by sending a single RPC request that declares an excessive number of streams. Root Cause: In the streaming RPC feature, a client can declare multiple streams in one RPC request by putting extra stream identifiers into the repeated field `stream_settings.extra_stream_ids` of the RPC meta. On the server side, `StreamAccept` creates one response stream for every stream identifier declared by the request, without limiting the number of streams accepted in a single RPC. The request body size is only bounded by `max_body_size` (default 64MB), which is enough to carry millions of stream identifiers. Each accepted stream allocates its own bthread execution queue and associated resources, so a single crafted request can make the server create a huge number of streams and exhaust memory, leading to denial of service. Affected Scenarios: Use a bRPC server that serves streaming RPC and calls `StreamAccept` to accept streams from untrusted clients. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to the ",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-81755"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "18262ad4ad8a37c3bbab",
+      "title": "CVE-2026-78048: A reachable-assertion flaw in the HPACK header-compression decoder of the HTTP/2 (h2/gRPC) stack in Apache bRPC (version < 1.18.0) on all platforms allows a remote attacker to cras",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78048",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:23+00:00",
+      "summary": "A reachable-assertion flaw in the HPACK header-compression decoder of the HTTP/2 (h2/gRPC) stack in Apache bRPC (version = 1 byte + value >= 1 byte + 32 bytes of overhead). However, RFC 7541 section 4.1 specifies that the minimum entry size is 33 bytes, because the value may be empty (name >= 1 byte + value == 0 + 32 bytes). For the default 4096-byte table this allocates only 120 slots (4096/34). Eviction in AddHeader is driven by byte usage (_max_size), not by slot count, so a peer can add 121 minimal 33-byte entries (121*33 = 3993 <= 4096) without triggering eviction. The 121st AddHeader then hits CHECK(!_header_queue.full()), which aborts the process. Affected Scenarios: Use a bRPC server that serves HTTP/2 or gRPC requests (e.g. via the h2 protocol) from an untrusted network. The malicious header block is processed during HPACK decoding of incoming requests without authentication. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3462 Note: The fix sizes the dynamic table for the 33-byte minimum entry (max_size / (32 + 1)) and ensures at least one ring-buffer slot",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78048"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6742b381012d8ec672b1",
+      "title": "CVE-2026-78058: Uncontrolled resource consumption in the HTTP/2 (h2) receive path of Apache bRPC (version < 1.18.0) on all platforms allows a remote unauthenticated attacker to crash the server or",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78058",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:23+00:00",
+      "summary": "Uncontrolled resource consumption in the HTTP/2 (h2) receive path of Apache bRPC (version < 1.18.0) on all platforms allows a remote unauthenticated attacker to crash the server or grow its memory without bound by sending crafted HTTP/2 frames. Root Cause: The h2 parser, enabled by default on every bRPC server port and used by h2/gRPC clients, trusts the peer to respect receive-side limits that bRPC advertises but never enforces: 1. SETTINGS_MAX_CONCURRENT_STREAMS defaulted to unlimited and was never checked on the server, letting a peer pin an unbounded number of pending streams per connection (~100x memory amplification). 2. SETTINGS_MAX_HEADER_LIST_SIZE defaulted to unlimited and was never enforced; 1-byte HPACK indexed references amplify a small HEADERS frame ~4000x into an unbounded decoded header list (\"HPACK bomb\"), and a never-completed HEADERS/CONTINUATION block accumulates memory without limit. 3. Control-frame acks (PING/SETTINGS acks, RST_STREAM, GOAWAY, WINDOW_UPDATE) unconditionally bypassed the -socket_max_unwritten_bytes write cap, so a PING flood combined with withheld TCP reads grew the connection buffer without the documented bound. 4. The HPACK dynamic table siz",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78058"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b7a6ed0e3c658473b234",
+      "title": "CVE-2026-78066: Resource exhaustion in Apache bRPC (version < 1.18.0) on all platforms: multiple parsers that accept wire-controlled input bound no limit on the sizes declared by the client or on",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78066",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:23+00:00",
+      "summary": "Resource exhaustion in Apache bRPC (version < 1.18.0) on all platforms: multiple parsers that accept wire-controlled input bound no limit on the sizes declared by the client or on decompressed output, which attackers can use to drive disproportionate memory use and crash the process. Root Cause: 1) The gzip/zlib/snappy decompressors enforce no output limit: -max_body_size is checked against the compressed bytes only, so a cap-compliant body (e.g. 64 MiB) can decompress to tens of GiB. 2) The AMF string readers allocate the declared length before the bytes are actually available. 3) RTMP chunk headers may re-declare a message length mid-stream; the declared length was never bounded and the partial reassembly buffer kept growing. 4) The sofa-pbrpc parser does not bound meta_size. 5) mcpack2pb trusts wire-declared item counts for Reserve() and a string value_size of 0 underflows the buffer size, aborting the process. Affected Scenarios: Any bRPC service accepting gzip/zlib/snappy-compressed bodies or rtmp, sofa-pbrpc, or mcpack2pb messages from untrusted clients. How to Fix:(Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this p",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78066"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c77e7bc692988d0ce5c4",
+      "title": "CVE-2026-78334: Missing authentication in the streaming RPC path of Apache bRPC (version < 1.18.0) on all platforms allows a remote attacker to bypass server authentication and inject or deliver s",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78334",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:23+00:00",
+      "summary": "Missing authentication in the streaming RPC path of Apache bRPC (version < 1.18.0) on all platforms allows a remote attacker to bypass server authentication and inject or deliver streaming frames, when a server is configured with an Authenticator. Root Cause: When authentication is configured, streaming RPC frames are consumed directly by the streaming parser (ParseStreamingMessage) and never pass through InputMessenger's authentication hook, so an unauthenticated peer can exchange frames without being authenticated. In addition, a server-accepted stream is bound lazily to the first frame that happens to carry its id, so a stream could accept a frame carrying its id from a socket other than the socket that created the stream. Affected Scenarios: A bRPC server configured with authentication that serves streaming RPC from an untrusted network, or a deployment where a foreign connection can impersonate a stream by id, can be made to accept unauthorized streaming frames. How to Fix: Upgrade bRPC to 1.18.0, which fixes this issue, or apply the patch in PR https://github.com/apache/brpc/pull/3481. Note: The fix rejects streaming frames on server sockets when configured authentication has",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78334"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6e4af7acba9ab81ec606",
+      "title": "CVE-2026-79704: An out-of-bounds read vulnerability exists in the streaming RPC client of Apache bRPC (versions 1.11.0 through 1.17.0) on all platforms. A client that creates multiple streams in",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79704",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:23+00:00",
+      "summary": "An out-of-bounds read vulnerability exists in the streaming RPC client of Apache bRPC (versions 1.11.0 through 1.17.0) on all platforms. A client that creates multiple streams in a single RPC expects the server response to carry exactly one extra_stream_id for every additional stream. The response handling path indexed the returned identifiers using the locally created stream count without first validating the size of the returned list, so a malicious or compromised server (or an on-path attacker) can trigger an out-of-bounds read in the client by returning a malformed StreamSettings response with fewer extra_stream_ids than expected. This may crash the client process (denial of service) or leak unintended memory contents into subsequent stream handling; surplus identifiers have no valid client-stream mapping and are processed inconsistently. Root Cause: Since bRPC 1.11.0, a client can create multiple streams in one RPC via batch StreamCreate. The expected behavior is that the server response must return exactly (N-1) extra_stream_ids, where N is the number of locally created streams. In Controller::HandleStreamConnection, the response path reads extra_stream_ids[i-1] for each addi",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "filtracion"
+      ],
+      "cves": [
+        "CVE-2026-79704"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
       ]
     },
     {
@@ -5994,6 +7532,93 @@
         "clasificación inicial por defecto"
       ],
       "collected_at": "2026-10-28T01:46:06+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "03c8c101c9b748bd6aae",
+      "title": "CVE-2026-74755: An integer underflow in the mcpack2pb component of Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to crash a bRPC server by sending a request containing a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74755",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:22+00:00",
+      "summary": "An integer underflow in the mcpack2pb component of Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to crash a bRPC server by sending a request containing a string field with a zero value_size. The UnparsedValue::as_string() function computes `_size - 1` without validating `_size`; when value_size is 0 the expression underflows to SIZE_MAX, resize() throws std::length_error, and because the exception is not caught on the request parsing path the process aborts (SIGABRT). Root Cause: In src/mcpack2pb/parser.cpp, UnparsedValue::as_string() resizes the output string to `_size - 1`, where `_size` is the value_size of a string field taken directly from the network data. A value_size of 0 underflows the unsigned size_t, and the subsequent resize() throws an exception that is not caught. Affected Scenarios: bRPC servers that accept nshead frames wired to the ubrpc mcpack2 adaptor (for example the NsheadService + UbrpcMcpack2Adaptor deployment pattern) can be crashed by a single unauthenticated request. Stock open-source bRPC registers the ubrpc/nshead_mcpack protocols as client-only, so default server configurations are not affected. How to Fix: 1. Upgrade bRPC to a",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-74755"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e03debb418e214bc2419",
+      "title": "CVE-2026-74757: Uncontrolled resource allocation in the mcpack2pb component in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to make the server allocate a large amount of",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74757",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:22+00:00",
+      "summary": "Uncontrolled resource allocation in the mcpack2pb component in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to make the server allocate a large amount of memory via sending a crafted mcpack request with a huge array item count. Root Cause: The bRPC mcpack2pb parser trusts the item count stored in the mcpack array header without validating it against the actual payload size. The code generated by the mcpack2pb protoc plugin uses this count to preallocate memory for repeated protobuf fields via Reserve(). A malformed request declaring item_count = 0x7fffffff can force the server to preallocate about 16GB of virtual memory, which may abort the process (SIGABRT) on memory-constrained hosts. Affected Scenarios: Use a bRPC server that wires a NsheadService to UbrpcMcpack2Adaptor (the Baidu ubrpc deployment pattern) and parses requests with code generated by the mcpack2pb protoc plugin. The request body is parsed before authentication. How to Fix: (Choose one of the following options) 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3451 Note: No matter which option you choose, you should know th",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-74757"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6d290314631dcc8ae2d5",
+      "title": "CVE-2026-74758: A heap use-after-free in the RTMP protocol component of Apache bRPC (versions < 1.18.0) allows a remote attacker to crash a bRPC RTMP server by sending a crafted Abort control mess",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74758",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-21T12:17:22+00:00",
+      "summary": "A heap use-after-free in the RTMP protocol component of Apache bRPC (versions < 1.18.0) allows a remote attacker to crash a bRPC RTMP server by sending a crafted Abort control message. No authentication or application-level request is required. Root Cause: When an RTMP Abort control message names the chunk stream that is currently being parsed (the chunk stream carrying the message itself), RtmpChunkStream::OnAbortMessage calls RtmpContext::ClearChunkStream, which deletes the RtmpChunkStream while its Feed() is still running. After the message handler returns, Feed() continues to access members of the deleted object, resulting in a heap-use-after-free. Affected Scenarios: bRPC servers that enable RTMP support (ServerOptions.rtmp_service set) and accept connections from untrusted networks. How to Fix: 1. Upgrade bRPC to version 1.18.0, which fixes this issue. 2. Apply this patch: https://github.com/apache/brpc/pull/3452 The fix skips clearing the chunk stream when the Abort message targets the chunk stream that is currently being parsed.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-74758"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T07:30:52+00:00",
       "cvss": null,
       "severity": null,
       "kev": false,
@@ -7397,1400 +9022,6 @@
       ]
     },
     {
-      "id": "9b8dfdf24c1e4e667281",
-      "title": "CVE-2026-93856: In OpenStack Cinder through 29.0.0, cross-project information disclosure can occur in the Messages API. A non-admin user with the project-scoped 'member' or 'reader' role making th",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93856",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:51+00:00",
-      "summary": "In OpenStack Cinder through 29.0.0, cross-project information disclosure can occur in the Messages API. A non-admin user with the project-scoped 'member' or 'reader' role making the Block Storage API v3.3 \"List messages\" call finds the non-expired user messages for other projects included in the response, resulting in the leakage of UUIDs of resources owned by other projects, in addition to the user message about the other projects' resources (which, by design, are sanitized generic messages). All Cinder deployments are affected.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "filtracion"
-      ],
-      "cves": [
-        "CVE-2026-93856"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8958dcbba84c0c8dfcf1",
-      "title": "CVE-2026-96901: The Cart Abandonment Recovery for WooCommerce WordPress plugin before 2.2.0 does not verify the integrity of its cart-recovery token before acting on it and still accepts an unsig",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96901",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:51+00:00",
-      "summary": "The Cart Abandonment Recovery for WooCommerce WordPress plugin before 2.2.0 does not verify the integrity of its cart-recovery token before acting on it and still accepts an unsigned legacy token format, allowing unauthenticated attackers who know a victim's cart session identifier to modify that victim's abandoned-cart record, for example unsubscribing them from recovery emails or applying an arbitrary coupon to their restored cart.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-96901"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 3.7,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2495e3c4bb094d3ee14f",
-      "title": "CVE-2026-85642: The Formidable Forms WordPress plugin before 7.0 does not verify the identity of the caller before recording the timestamp it uses to rate limit payment gateway verification reque",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85642",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Formidable Forms WordPress plugin before 7.0 does not verify the identity of the caller before recording the timestamp it uses to rate limit payment gateway verification requests, allowing unauthenticated attackers to consume the daily allowance and cause legitimate verification attempts to be refused for the next 24 hours.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-85642"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f2707714f0330e888741",
-      "title": "CVE-2026-86611: The Download Manager WordPress plugin before 3.3.71, Download Manager WordPress plugin before 7.5.9 does not have CSRF checks in some places, allowing attackers to make a logged in",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86611",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Download Manager WordPress plugin before 3.3.71, Download Manager WordPress plugin before 7.5.9 does not have CSRF checks in some places, allowing attackers to make a logged in admin update its privacy and storage settings via a crafted link, including the credential that gates its unauthenticated maintenance endpoint.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-86611"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "826e38ac22d89d62d36f",
-      "title": "CVE-2026-87837: The Wava Payment Plugin WordPress plugin before 0.3.10 does not verify the authenticity of incoming payment-provider notifications, nor restrict who may send them, allowing unauthe",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87837",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Wava Payment Plugin WordPress plugin before 0.3.10 does not verify the authenticity of incoming payment-provider notifications, nor restrict who may send them, allowing unauthenticated attackers to change the status of any WooCommerce order in the store, including marking an unpaid order as paid and completed, and cancelling other customers' orders. In versions up to 0.3.7 the response additionally returns the affected order's billing details, disclosing customer names, addresses, email addresses and phone numbers to the same unauthenticated caller.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-87837"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "46a6fe985530bd73359b",
-      "title": "CVE-2026-87838: The Wava Payment Plugin WordPress plugin before 0.3.10 does not perform any authorisation, nonce or origin verification on one of its public REST endpoints, allowing unauthenticate",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87838",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Wava Payment Plugin WordPress plugin before 0.3.10 does not perform any authorisation, nonce or origin verification on one of its public REST endpoints, allowing unauthenticated attackers to overwrite the stored credential that identifies the merchant account the store's payments are created against, to force the integration into a verified state the site owner never completed, and to remove the payment method from the store's checkout.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-87838"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f13530828a9d73103da3",
-      "title": "CVE-2026-88784: The Translate WordPress with Weglot 2.0 WordPress plugin before 6.4.3 does not escape the URLs it re-inserts into a page when rewriting links for a translated language, and revers",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88784",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Translate WordPress with Weglot 2.0 WordPress plugin before 6.4.3 does not escape the URLs it re-inserts into a page when rewriting links for a translated language, and reverses the encoding that was applied to them beforehand, allowing unauthenticated users to store a payload which executes in the browser of anyone viewing the page in a translated language.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-88784"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "06415e987fb0e44992ba",
-      "title": "CVE-2026-92997: The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not properly validate a parameter before using it as a column identifier in a SQL query, allowing unau",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92997",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not properly validate a parameter before using it as a column identifier in a SQL query, allowing unauthenticated attackers to perform SQL injection attacks.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92997"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c2c5925d286b2d93630e",
-      "title": "CVE-2026-92998: The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not sanitise sort parameters before using them in a SQL ORDER BY clause, allowing unauthenticated atta",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92998",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not sanitise sort parameters before using them in a SQL ORDER BY clause, allowing unauthenticated attackers to perform SQL injection attacks.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92998"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c85c8dc038f6070fc47f",
-      "title": "CVE-2026-92999: The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not perform any authorization check on a lead-export handler, allowing unauthenticated users to downlo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92999",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:50+00:00",
-      "summary": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not perform any authorization check on a lead-export handler, allowing unauthenticated users to download every captured contact record (names, email addresses and phone numbers).",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92999"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bce9b3d87d34d266a9d9",
-      "title": "CVE-2026-71195: In OpenStack Manila before 23.0.1, multiple Manila API operations on public shares do not verify that the caller owns the share. The API controllers authorize operations against th",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71195",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:49+00:00",
-      "summary": "In OpenStack Manila before 23.0.1, multiple Manila API operations on public shares do not verify that the caller owns the share. The API controllers authorize operations against the caller's own project context, then load a foreign public share without re-authorizing against the share's actual owner. This affects the following operations: allow_access: grant data-plane read/write access to another tenant's share; deny_access: revoke the owner's existing access rules; update_access: escalate access level (e.g., ro to rw); create_share_backup: exfiltrate share data via a backup created under the attacker's project; soft_delete: move a foreign share to the recycle bin; restore: interfere with the owner's deletion workflow; export location metadata: create, update, and delete metadata on foreign export locations; access rule listing: disclose IPs, usernames, and CephFS keys. Any authenticated project member can exploit these operations on any public share. The share UUID is visible since the share is public.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-71195"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "250202994e63402a28dc",
-      "title": "CVE-2026-79627: The Advanced File Manager WordPress plugin before 6.0.0 does not correctly determine whether a stored file is an SVG before sanitising it, allowing users granted file-manager acce",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79627",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:49+00:00",
-      "summary": "The Advanced File Manager WordPress plugin before 6.0.0 does not correctly determine whether a stored file is an SVG before sanitising it, allowing users granted file-manager access by an administrator to store a file containing script that is not stripped and that runs in the browser of anyone who opens it, including an administrator.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-79627"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f5275f72414b13cff493",
-      "title": "CVE-2026-81812: The Elementor Website Builder WordPress plugin before 4.3.5 does not sanitize uploaded SVG files on every upload route, allowing users with the Author role and above to upload a f",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81812",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:49+00:00",
-      "summary": "The Elementor Website Builder WordPress plugin before 4.3.5 does not sanitize uploaded SVG files on every upload route, allowing users with the Author role and above to upload a file containing JavaScript, which will run in the browser of any user who opens it. Exploitation requires unfiltered file uploads to be enabled in the Elementor Website Builder WordPress plugin before 4.3.5 settings, which is not the default.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-81812"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4ddc5ba96191d5c2f146",
-      "title": "CVE-2026-81813: The Elementor Website Builder WordPress plugin before 4.3.5 does not sanitize the text content of SVG files, checking only their elements and attributes, allowing users with the C",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81813",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:49+00:00",
-      "summary": "The Elementor Website Builder WordPress plugin before 4.3.5 does not sanitize the text content of SVG files, checking only their elements and attributes, allowing users with the Contributor role and above to store a payload which breaks out when the SVG is rendered inline in a page and executes in the browser of any user viewing it. Execution is specific to Chromium-based browsers; Firefox is not affected.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-81813"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6ef2940aa71259e56d3f",
-      "title": "CVE-2026-110982: The AI Engine WordPress plugin before 3.8.6 does not check that the caller is allowed to edit the targeted object before updating its title and excerpt, allowing users with the Ed",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110982",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The AI Engine WordPress plugin before 3.8.6 does not check that the caller is allowed to edit the targeted object before updating its title and excerpt, allowing users with the Editor role and above to modify arbitrary posts of any type, including content they cannot otherwise edit such as navigation menus, block templates, global styles and WooCommerce coupons.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110982"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "098737756ffa3a620845",
-      "title": "CVE-2026-111574: The Redirection for Contact Form 7 WordPress plugin before 3.2.12 does not sanitise or escape submitted form data stored as lead entries before outputting it in the lead debug meta",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111574",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The Redirection for Contact Form 7 WordPress plugin before 3.2.12 does not sanitise or escape submitted form data stored as lead entries before outputting it in the lead debug metabox, allowing unauthenticated attackers to store a malicious script that executes when a logged-in user views the entry with the Redirection for Contact Form 7 WordPress plugin before 3.2.12's debug mode enabled.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111574"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "18bfddba018517612d2d",
-      "title": "CVE-2026-111596: The Kliken: Ads + Pixel for Meta WordPress plugin before 1.2.3 does not verify that a visitor holds an order's key before outputting that order's details on the order confirmation",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111596",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The Kliken: Ads + Pixel for Meta WordPress plugin before 1.2.3 does not verify that a visitor holds an order's key before outputting that order's details on the order confirmation page, allowing unauthenticated users to retrieve the billing location, purchased products and totals of other customers' orders by enumerating order IDs.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111596"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "047ee4190401b06fa9ef",
-      "title": "CVE-2026-111947: The Pricing Table WordPress Plugin WordPress plugin before 4.1.3 does not perform authorisation checks when duplicating a legacy pricing table, allowing users with the contributor",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111947",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The Pricing Table WordPress Plugin WordPress plugin before 4.1.3 does not perform authorisation checks when duplicating a legacy pricing table, allowing users with the contributor role and above to clone and publish any post or page on the site, including private and draft content belonging to other users.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111947"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "72b15461a237bef19243",
-      "title": "CVE-2026-111948: The User Profile Builder WordPress plugin before 4.0.1 does not escape the current page URL before outputting it in a JavaScript context on one of its admin pages, leading to Refl",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111948",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The User Profile Builder WordPress plugin before 4.0.1 does not escape the current page URL before outputting it in a JavaScript context on one of its admin pages, leading to Reflected Cross-Site Scripting against high-privilege users.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111948"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "596702ef28ec3ed7956e",
-      "title": "CVE-2026-111949: The miniOrange 2FA WordPress plugin before 6.3.1 does not prevent a pending passkey login from registering an additional passkey on an account that already has one configured, all",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111949",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The miniOrange 2FA WordPress plugin before 6.3.1 does not prevent a pending passkey login from registering an additional passkey on an account that already has one configured, allowing an attacker who knows a user's password to add their own authenticator and bypass the second factor.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111949"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "05409b40accc667b69ca",
-      "title": "CVE-2026-111955: The WholesaleX WordPress plugin before 3.0.9 does not check that a stored account confirmation code is set before comparing it with the one supplied in a request, allowing unauthe",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111955",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The WholesaleX WordPress plugin before 3.0.9 does not check that a stored account confirmation code is set before comparing it with the one supplied in a request, allowing unauthenticated users to activate pending accounts and bypass the administrator approval required before login.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111955"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6d1b16a64494d979bc41",
-      "title": "CVE-2026-111956: The WholesaleX WordPress plugin before 3.0.9 does not protect or remove the user-import file it keeps in a publicly accessible location under a predictable name, allowing unauthen",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111956",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The WholesaleX WordPress plugin before 3.0.9 does not protect or remove the user-import file it keeps in a publicly accessible location under a predictable name, allowing unauthenticated users to download the most recently imported user data, including any account passwords and customer contact and address details it contains.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111956"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0dddc3a4537a49ef7c75",
-      "title": "CVE-2026-111957: The SUMIT Payment Gateway for WooCommerce WordPress plugin before 4.0.0 does not bind the payment it confirms with the provider to the order being completed, nor check the payment",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111957",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The SUMIT Payment Gateway for WooCommerce WordPress plugin before 4.0.0 does not bind the payment it confirms with the provider to the order being completed, nor check the payment amount against the order total, allowing unauthenticated users to mark a pending order as paid by replaying a payment identifier obtained from any single genuine payment.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111957"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4ce0b50e5fa81108a6b6",
-      "title": "CVE-2026-15261: The TI WooCommerce Wishlist WordPress plugin before 2.13.0 does not enforce the same owner-only access control on its REST API that it applies on the front-end, allowing unauthenti",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15261",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:48+00:00",
-      "summary": "The TI WooCommerce Wishlist WordPress plugin before 2.13.0 does not enforce the same owner-only access control on its REST API that it applies on the front-end, allowing unauthenticated users to read the metadata and item contents of private wishlists.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-15261"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c96a7fb856872bfa3167",
-      "title": "CVE-2026-107788: The SmartyParcel WordPress plugin before 1.23.4 does not perform authorisation checks when deleting shipping label records, allowing any authenticated user such as a subscriber to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107788",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The SmartyParcel WordPress plugin before 1.23.4 does not perform authorisation checks when deleting shipping label records, allowing any authenticated user such as a subscriber to delete the shipping label and tracking records of arbitrary orders store-wide.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107788"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e6a30bfb0254ffc245b9",
-      "title": "CVE-2026-107789: The SmartyParcel WordPress plugin before 1.23.4 does not perform authorisation checks when serving shipping label downloads, allowing unauthenticated users to obtain the shipping",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107789",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The SmartyParcel WordPress plugin before 1.23.4 does not perform authorisation checks when serving shipping label downloads, allowing unauthenticated users to obtain the shipping labels of arbitrary orders, which contain customer names, addresses and phone numbers.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107789"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2eb0b6310dc060a9871a",
-      "title": "CVE-2026-107790: The HireZoot WordPress plugin before 4.1.1 does not sanitise and escape some of its stored data before outputting it in the admin dashboard, and additionally reverses the HTML-ent",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107790",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The HireZoot WordPress plugin before 4.1.1 does not sanitise and escape some of its stored data before outputting it in the admin dashboard, and additionally reverses the HTML-entity encoding that would otherwise neutralise it, allowing users with the Author role to perform Stored Cross-Site Scripting attacks that execute in the context of a logged-in administrator.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107790"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ba8b423048dc2d8b555f",
-      "title": "CVE-2026-108073: The SureCart WordPress plugin before 4.9.5 does not restrict which related objects an anonymous visitor may include when reading a single upsell funnel through its REST API, nor s",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108073",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The SureCart WordPress plugin before 4.9.5 does not restrict which related objects an anonymous visitor may include when reading a single upsell funnel through its REST API, nor strip private fields from those objects, allowing unauthenticated users to read merchant-private catalog data such as pricing, commission, stock, SKU and tax internals, including unpublished products.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-108073"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "381da9df4ff282bc5cc6",
-      "title": "CVE-2026-109147: The WP Booking System WordPress plugin before 2.1.0.3 does not validate and escape one of its parameters before reflecting it back in an admin page, leading to Reflected Cross-Sit",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109147",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The WP Booking System WordPress plugin before 2.1.0.3 does not validate and escape one of its parameters before reflecting it back in an admin page, leading to Reflected Cross-Site Scripting which could be used against high privilege users such as administrators.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109147"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f232f43408c8760e32fa",
-      "title": "CVE-2026-109926: The Productive Commerce WordPress plugin before 1.1.49 does not perform a capability check in one of its AJAX actions and exposes the nonce that guards it on every admin-area page",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109926",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The Productive Commerce WordPress plugin before 1.1.49 does not perform a capability check in one of its AJAX actions and exposes the nonce that guards it on every admin-area page, allowing any authenticated user such as a subscriber to activate arbitrary Productive Commerce WordPress plugin before 1.1.49 already installed on the site.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109926"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cee00f2f90ab16eb110b",
-      "title": "CVE-2026-110514: The WPZOOM Portfolio Lite WordPress plugin before 1.4.34 does not check that a user is allowed to edit a post before changing its type and order, which could allow users with the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110514",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The WPZOOM Portfolio Lite WordPress plugin before 1.4.34 does not check that a user is allowed to edit a post before changing its type and order, which could allow users with the contributor role and above to convert any other user's posts and pages into portfolio items, removing them from their original listings and URLs.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110514"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cf9a7ee7915212805a77",
-      "title": "CVE-2026-110523: The WP User Manager WordPress plugin before 2.9.26 does not keep its paid-registration capability restrictions in force once the payment gateway is disconnected, while a published",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110523",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The WP User Manager WordPress plugin before 2.9.26 does not keep its paid-registration capability restrictions in force once the payment gateway is disconnected, while a published paid registration form continues to assign its configured role, allowing unauthenticated users to register and immediately obtain a privileged administrator-equivalent role without completing the payment meant to gate it.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110523"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f14a4f115e39028ac6ad",
-      "title": "CVE-2026-110651: The Swift Performance Lite WordPress plugin before 2.3.7.4 does not properly sanitize and escape a value before using it in a SQL statement, which could allow users with the author",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110651",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:47+00:00",
-      "summary": "The Swift Performance Lite WordPress plugin before 2.3.7.4 does not properly sanitize and escape a value before using it in a SQL statement, which could allow users with the author role and above to perform SQL injection attacks.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110651"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "169c56eddf4dce3d34d0",
-      "title": "CVE-2026-105262: The Falang multilanguage for WordPress plugin before 1.4.6 does not perform a capability check when saving term translations, and exposes a valid nonce to any logged-in user throug",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105262",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Falang multilanguage for WordPress plugin before 1.4.6 does not perform a capability check when saving term translations, and exposes a valid nonce to any logged-in user through an unprotected handler, allowing users with Subscriber-level access and above to store content that is later output without proper escaping, leading to Stored Cross-Site Scripting that executes in the context of higher-privileged users such as administrators.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105262"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.0,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e461aecb83aeaac7e537",
-      "title": "CVE-2026-105992: The Ettrick Escape Room Booking WordPress plugin before 1.3.1 does not verify a booking's payment status against the payment provider before marking it paid and confirmed, allowing",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105992",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Ettrick Escape Room Booking WordPress plugin before 1.3.1 does not verify a booking's payment status against the payment provider before marking it paid and confirmed, allowing unauthenticated attackers to mark bookings as paid without paying.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105992"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "829fcb57ec47c68fad70",
-      "title": "CVE-2026-105996: The Booking Package WordPress plugin before 1.7.31 does not generate booking cancellation tokens using a secure source of randomness, deriving them instead from values it exposes p",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105996",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Booking Package WordPress plugin before 1.7.31 does not generate booking cancellation tokens using a secure source of randomness, deriving them instead from values it exposes publicly, so an unauthenticated attacker can reconstruct an arbitrary booking's token, disclose that booking's personal data and, where visitor cancellation is enabled, cancel the booking.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105996"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 4.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5ca2190ad5241fb1ce78",
-      "title": "CVE-2026-105998: The Booking Package WordPress plugin before 1.7.31 does not perform any authorization or validity check before resetting its premium subscription state, allowing unauthenticated at",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105998",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Booking Package WordPress plugin before 1.7.31 does not perform any authorization or validity check before resetting its premium subscription state, allowing unauthenticated attackers to disable the Booking Package WordPress plugin before 1.7.31's paid features.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105998"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "87c5007863ed8026e52e",
-      "title": "CVE-2026-105999: The Booking Package WordPress plugin before 1.7.31 does not perform authorization checks before returning calendar-account configuration in a response, allowing unauthenticated use",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105999",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Booking Package WordPress plugin before 1.7.31 does not perform authorization checks before returning calendar-account configuration in a response, allowing unauthenticated users to disclose sensitive settings including the administrator's notification email addresses.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105999"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d779b9dde56ae5fd4299",
-      "title": "CVE-2026-106932: The Moloni WordPress plugin before 5.0.14 does not perform capability or nonce checks on several of its authenticated AJAX actions, relying only on whether the site holds a stored",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106932",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Moloni WordPress plugin before 5.0.14 does not perform capability or nonce checks on several of its authenticated AJAX actions, relying only on whether the site holds a stored connection to its external invoicing provider, allowing any authenticated user such as a Subscriber to generate fiscal invoices for arbitrary orders, discard arbitrary orders, and create or modify products and stock.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-106932"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0f33940e3433a553c20f",
-      "title": "CVE-2026-107127: The Uncanny Toolkit for LearnDash WordPress plugin before 3.8.2 does not validate the origin of a password-reset request, allowing an unauthenticated attacker to set the password o",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107127",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Uncanny Toolkit for LearnDash WordPress plugin before 3.8.2 does not validate the origin of a password-reset request, allowing an unauthenticated attacker to set the password of a user who is partway through a password reset to an attacker-chosen value through a forged request, resulting in full account takeover.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107127"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b6e20ffca337dc0ff04a",
-      "title": "CVE-2026-107128: The Uncanny Toolkit for LearnDash WordPress plugin before 3.8.2 does not verify that the acting user is permitted to manage the targeted accounts before changing their verification",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107128",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Uncanny Toolkit for LearnDash WordPress plugin before 3.8.2 does not verify that the acting user is permitted to manage the targeted accounts before changing their verification state, allowing a subsite administrator on a multisite network to mark arbitrary network users outside their own site as unverified and prevent those users from logging in.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107128"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.0,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "61e8d50158489415af28",
-      "title": "CVE-2026-107237: The Backup and Staging by WP Time Capsule WordPress plugin before 1.22.28 does not perform capability or nonce checks on the handler that deploys a staging site to the live site, a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107237",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Backup and Staging by WP Time Capsule WordPress plugin before 1.22.28 does not perform capability or nonce checks on the handler that deploys a staging site to the live site, allowing any authenticated user with a Subscriber account on a WP Time Capsule staging site to overwrite the separate live site's database and configuration and take it offline.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107237"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b20472fcbb97394c7614",
-      "title": "CVE-2026-107506: The Simple Banner WordPress plugin before 3.3.3 does not correctly limit the capabilities it grants to the user roles an administrator allows to manage its banners, granting such",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107506",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:46+00:00",
-      "summary": "The Simple Banner WordPress plugin before 3.3.3 does not correctly limit the capabilities it grants to the user roles an administrator allows to manage its banners, granting such roles the full administrator capability, which allows users in a low-privileged role to escalate their privileges and fully compromise the site.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107506"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "33fad42f81b46e3ca620",
-      "title": "CVE-2026-102499: The Modern Events Calendar Lite WordPress plugin before 7.37.0, Modern Event Calendar Pro WordPress plugin before 7.37.0 do not sanitise and escape a parameter before using it in a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102499",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:45+00:00",
-      "summary": "The Modern Events Calendar Lite WordPress plugin before 7.37.0, Modern Event Calendar Pro WordPress plugin before 7.37.0 do not sanitise and escape a parameter before using it in a SQL statement, which allows authenticated users with Subscriber-level access and above to append additional SQL queries into already existing queries and extract sensitive data from the database.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-102499"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c2c7510cf1057be8ab56",
-      "title": "CVE-2026-103302: The Payment Gateway for Idram WordPress plugin before 2.1.6 does not verify the authenticity of incoming payment notifications, because the merchant credentials used to compute the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103302",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:45+00:00",
-      "summary": "The Payment Gateway for Idram WordPress plugin before 2.1.6 does not verify the authenticity of incoming payment notifications, because the merchant credentials used to compute their checksum are empty by default, allowing unauthenticated attackers to forge a valid payment confirmation and mark arbitrary orders as paid, and to force arbitrary orders into a failed state regardless of the gateway's configuration.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103302"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "61cadb2bbe8ba661ae53",
-      "title": "CVE-2026-105257: The Appointment Booking Plugin WordPress plugin before 5.7.5 does not verify that an authenticated agent-level user is assigned to a customer before returning or searching that cu",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105257",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:45+00:00",
-      "summary": "The Appointment Booking Plugin WordPress plugin before 5.7.5 does not verify that an authenticated agent-level user is assigned to a customer before returning or searching that customer's record, allowing any agent to read and enumerate the personal information of every customer on the site, including those managed by other agents.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105257"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 2.7,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bb413aa6782eef0315e4",
-      "title": "CVE-2026-100145: The Synchrony Financing WordPress plugin before 1.1.2 does not properly authorise requests to one of its REST routes that modifies WooCommerce orders, allowing unauthenticated atta",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100145",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T06:16:44+00:00",
-      "summary": "The Synchrony Financing WordPress plugin before 1.1.2 does not properly authorise requests to one of its REST routes that modifies WooCommerce orders, allowing unauthenticated attackers to reassign any order to an account they control, tamper with its details, and read the associated customer's personal data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-100145"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ba6fa1b1d29a680a50c5",
-      "title": "CVE-2026-82819: A vulnerability in Cerberus FTP Server allows an authenticated remote attacker to perform UNC path injection via a manipulated parameter. By supplying a malicious SMB share path, a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82819",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T05:16:43+00:00",
-      "summary": "A vulnerability in Cerberus FTP Server allows an authenticated remote attacker to perform UNC path injection via a manipulated parameter. By supplying a malicious SMB share path, an attacker can execute authentication coercion against the underlying server, resulting in the leakage of the Cerberus service account's Net-NTLMv2 hash. This issue has been resolved in Cerberus FTP Server: 2026.3.0.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "filtracion"
-      ],
-      "cves": [
-        "CVE-2026-82819"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "64ddfb139fec8a1cb459",
       "title": "Using thousands of AI agents to uncover new leads in biological data",
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
@@ -8816,238 +9047,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "aacff751faaa13fb7d2f",
-      "title": "CVE-2026-92823: A flaw was found in libmodulemd. In builds with rpmio support enabled, compressed modulemd YAML is decompressed through a custom read handler that does not enforce a cumulative dec",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92823",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T04:18:12+00:00",
-      "summary": "A flaw was found in libmodulemd. In builds with rpmio support enabled, compressed modulemd YAML is decompressed through a custom read handler that does not enforce a cumulative decompressed-size limit before parsing. An attacker who can supply a highly compressible compressed YAML file can cause excessive CPU and memory consumption, resulting in a denial of service.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92823"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.2,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8d3235b822e8eb3d9313",
-      "title": "CVE-2026-92824: A flaw was found in libmodulemd. In the module stream v2 rpm-map emission path, an inner loop incorrectly uses the count of digest algorithms as its bound instead of the number of",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92824",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T04:18:12+00:00",
-      "summary": "A flaw was found in libmodulemd. In the module stream v2 rpm-map emission path, an inner loop incorrectly uses the count of digest algorithms as its bound instead of the number of checksums in the current digest table. Crafted modulemd v2 metadata with multiple digest types can trigger an out-of-bounds read during YAML serialization, typically causing a crash and resulting in a denial of service.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92824"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.2,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "905e83aa27e8c0bc6594",
-      "title": "CVE-2026-92822: A flaw was found in libmodulemd. When parsing module metadata, the xmd field is converted into nested GVariant values through recursive YAML mapping and sequence helpers without a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92822",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T04:18:11+00:00",
-      "summary": "A flaw was found in libmodulemd. When parsing module metadata, the xmd field is converted into nested GVariant values through recursive YAML mapping and sequence helpers without a recursion-depth or node-count limit. An attacker who can supply crafted modulemd YAML with deeply nested xmd content can cause stack exhaustion or excessive resource consumption, resulting in a denial of service.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92822"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 6.2,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5ca9bfe148609da97a07",
-      "title": "CVE-2026-114040: A security vulnerability has been detected in DT42 BerryNet up to 3.10.2. The affected element is the function DLModelManager.get_model_meta of the file berrynet/dlmodelmgr.py of t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114040",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T04:18:10+00:00",
-      "summary": "A security vulnerability has been detected in DT42 BerryNet up to 3.10.2. The affected element is the function DLModelManager.get_model_meta of the file berrynet/dlmodelmgr.py of the component Model Package Metadata Handler. The manipulation of the argument label leads to path traversal. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-114040"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 2.0,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1cbd19289718b4fa9270",
-      "title": "CVE-2026-114039: A weakness has been identified in projectworlds Advanced Library Management System 1.0. Impacted is the function mysqli_query of the file report_search.php. Executing a manipulatio",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114039",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T04:18:09+00:00",
-      "summary": "A weakness has been identified in projectworlds Advanced Library Management System 1.0. Impacted is the function mysqli_query of the file report_search.php. Executing a manipulation of the argument dateto/datefrom can lead to sql injection. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-114039"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "efe29b9cf11b50796fe0",
-      "title": "CVE-2026-113744: A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component ht",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113744",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T02:17:07+00:00",
-      "summary": "A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component httpd Web Management Service. Such manipulation of the argument firewallEn leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed publicly and may be used.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113744"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "db58ed8aae99090a30f5",
-      "title": "CVE-2026-82814: The Duplicator and Duplicator Pro plugins for WordPress are vulnerable to PHP Object Injection in all versions up to, and including, 1.5.17 and 4.6.10, respectively, via deserializ",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82814",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T02:17:07+00:00",
-      "summary": "The Duplicator and Duplicator Pro plugins for WordPress are vulnerable to PHP Object Injection in all versions up to, and including, 1.5.17 and 4.6.10, respectively, via deserialization of untrusted database content in DUPX_UpdateEngine::unserializeTest() during migration. This allows unauthenticated attackers to store a serialized object in public site content before an administrator builds a package and later performs a migration or import that runs database search-and-replace. Duplicator Free bundles a Requests 1.7 POP chain that permits attacker-selected callbacks, resulting in direct operating-system command execution. Duplicator Pro bundles an IndexList destructor gadget that permits deletion of an attacker-selected existing file when its containing directory is writable by the installer PHP process; deletion of wp-config.php can expose the setup wizard and lead to site takeover and code execution if the attacker reaches it first and supplies a reachable database they control. The package must be created after the carrier is stored, and a later administrator migration action is required.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82814"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3db847fcb2cf413a30f7",
-      "title": "CVE-2026-113743: A weakness has been identified in Tenstorrent tt-metal up to 0.80.0. The affected element is the function load_hf_state_dict_filtered of the file models/tt_transformers/tt/load_che",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113743",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-21T02:17:06+00:00",
-      "summary": "A weakness has been identified in Tenstorrent tt-metal up to 0.80.0. The affected element is the function load_hf_state_dict_filtered of the file models/tt_transformers/tt/load_checkpoints.py. This manipulation of the argument weight_map causes path traversal. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 0.81.0-dev20261016 is sufficient to fix this issue. Patch name: 4851ccf347f6903c3d819eed60705600386e52c3. It is suggested to upgrade the affected component.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113743"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:46:06+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
       ]
     },
     {
@@ -10179,34 +10178,6 @@
       ]
     },
     {
-      "id": "86dbfdb5b436c283839e",
-      "title": "How Grupo Boticário uses AI to strengthen human connections",
-      "url": "https://openai.com/index/grupo-boticario",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:45:54+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
       "id": "d3b9ba6f7bd01af06315",
       "title": "How Localiza reorganized work around generative AI",
       "url": "https://openai.com/index/localiza-generative-ai",
@@ -10235,14 +10206,42 @@
       ]
     },
     {
-      "id": "b6756c0a180ee554226c",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
+      "id": "86dbfdb5b436c283839e",
+      "title": "How Grupo Boticário uses AI to strengthen human connections",
+      "url": "https://openai.com/index/grupo-boticario",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T01:45:54+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
+      "id": "9e63539289a31c8631b6",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
       "type": "article",
       "tags": [
         "general"
@@ -10263,14 +10262,14 @@
       ]
     },
     {
-      "id": "9e63539289a31c8631b6",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "id": "b6756c0a180ee554226c",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
       "type": "article",
       "tags": [
         "general"
@@ -15363,14 +15362,14 @@
       ]
     },
     {
-      "id": "52b80abd4e046c041ffb",
-      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "id": "4e56c7312349a760a0ed",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
       "type": "article",
       "tags": [
         "general"
@@ -15419,14 +15418,14 @@
       ]
     },
     {
-      "id": "4e56c7312349a760a0ed",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
+      "id": "52b80abd4e046c041ffb",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
       "type": "article",
       "tags": [
         "general"
@@ -49636,10 +49635,10 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "checked_at": "2026-10-27T06:51:32+00:00",
+      "checked_at": "2026-10-28T07:30:30+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-27T02:55:13+00:00",
-      "duration_ms": 261
+      "last_published_at": "2026-10-28T02:30:11+00:00",
+      "duration_ms": 147
     },
     {
       "source": "C4ISRNET — Cyber",
