@@ -20,6 +20,8 @@ jobs:
 
       - name: Bajar feeds y geolocalizar
         run: python scripts/fetch_feeds.py
+        env:
+          ABUSECH_AUTH_KEY: ${{ secrets.ABUSECH_AUTH_KEY }}
 
       - name: Commit si hay cambios
         run: |
