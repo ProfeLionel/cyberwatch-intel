@@ -1,27 +1,41 @@
-# Cambios de CyberWatch Intel — versión mejorada
+# Cambios de CyberWatch Intel
 
-## v4.2 — Wallboard de mapa global
+## v4.6 — Threatmap conectado a fuentes públicas
+- El Threatmap deja el generador visual de demostración y consulta Cloudflare Radar, DShield/SANS ISC, ThreatFox y URLhaus.
+- Se incorporan arcos agregados país-país de Cloudflare Layer 7, sin presentarlos como sesiones individuales.
+- Se añaden marcadores para IP públicas observadas/IOC que obtengan geolocalización aproximada.
+- Se incorpora IPWho.is con caché de 30 días y un máximo de 12 IP nuevas consultadas por ejecución.
+- Nuevo recopilador independiente `scripts/collect_threatmap.py` y workflow horario `update-threatmap.yml`.
+- Nuevo snapshot `data/threatmap.json`; no se alteran `data/incidents.json` ni `data/history.json`.
+- Rediseño de `threatmap.html` con mapa central, capas y filtros, estadísticas, ranking regional, eventos recientes y estado/atribución de fuentes.
+- Si una fuente falla, se conserva la última captura válida y se informa el estado.
+- Se documentan límites, atribución y metodología de cada fuente.
+- El panel Top regiones permite alternar entre IP únicas geolocalizadas, IOC de malware y URL de URLhaus, respetando el filtro regional.
+- Los paneles de capas muestran la fecha de actualización de cada fuente; las rutas usan SVG para permitir su animación.
 
-- Añadido `threatmap.html`: mapa mundial interactivo con arcos animados, clasificación por tipo, filtros, ranking de países y stream reciente.
-- Incorporado modo demostración, etiquetado explícitamente para no confundir simulación con telemetría real.
-- Añadidos enlaces de navegación entre dashboard, wallboard SOC y mapa global.
-- Añadida documentación para integrar futuras fuentes observadas sin inventar países destino.
-- Esta entrega no altera el colector ni los datos históricos/incidentes existentes.
 
+## v4.5 — Ajuste de distribución vertical del Threatmap
+- Se redujeron espacios vacíos y se acercaron mapa y paneles al encabezado.
+- Se mantuvo la altura de los indicadores superiores ajustada a su contenido.
 
-- Incorporación de 13 canales RSS/Atom adicionales verificados por respuesta con tipo de contenido RSS/Atom/XML.
-- Exclusión de URLs propuestas que devolvieron 404/403/410/502, redirigieron a páginas HTML o duplicaban feeds existentes.
-- Filtros del panel interactivo por fuente, prioridad estimada y antigüedad, además de los filtros previos.
-- Indicador de frescura de datos y lista detallada de salud por fuente.
-- Priorización heurística explicable basada en CISA KEV, CVSS/severidad y señales textuales; no equivale a probabilidad de ataque.
-- Historial diario de hasta 90 días para tendencias de publicaciones, KEV, CVE y alertas prioritarias.
-- Wallboard con tipografía base más grande, ajuste automático de texto y advertencia de datos potencialmente desactualizados.
-- Marca de revisión cada dos horas para reducir commits de mantenimiento.
-- Timeout HTTP reducido a 15 segundos para que el recopilador pueda procesar un mayor número de fuentes dentro del tiempo límite de GitHub Actions.
+## v4.4 — Ajuste de cuadros superiores
+- Los indicadores pueden ocupar el ancho disponible con altura autoajustada al texto.
+
+## v4.3 — CARTO Voyager
+- Se incorporó el mapa base CARTO Voyager y se ajustó el encabezado de indicadores.
+
+## v4.2 — Wallboard de mapa global (modo de demostración)
+- Añadido `threatmap.html` con mapa mundial, clasificación por tipo, filtros y enlaces entre vistas.
+- Esta etapa inicial utilizaba rutas visuales de demostración, sustituidas en v4.6 por datos públicos agregados y observados.
 
 ## v4.1 — Rotación de revisiones y actividad reciente
+- Alertas prioritarias con recomendaciones de revisión y rotación.
+- Actividad reciente con desplazamiento suave y pausa accesible.
+- Se retiraron los feeds AWS Security Blog, AWS Security Bulletins y Oracle Security Blog, y se añadió Oracle Security Alerts.
 
-- Alertas prioritarias: muestran hasta tres recomendaciones de revisión por página y rotan cada 18 segundos cuando existen más de tres alertas de prioridad alta. El contador indica el tramo visible.
-- Cada alerta incluye una sugerencia inicial de revisión según señales como CISA KEV, severidad, CVSS o CVE. Es orientación heurística, no un diagnóstico de exposición.
-- Actividad reciente: presenta hasta 15 publicaciones y se desplaza automáticamente a 8 px/s; el movimiento se pausa al pasar el puntero o dar foco al panel y se desactiva cuando el sistema solicita movimiento reducido.
-- Fuentes: se retiraron AWS Security Blog, AWS Security Bulletins y Oracle Security Blog. Se añadió Oracle Security Alerts con el feed proporcionado por el mantenedor. La URL respondió como XML al comprobarla desde el navegador y figura como activa en un directorio de feeds consultado; la validación real de entradas se confirma en el siguiente ciclo de GitHub Actions.
+## v4.0 — Mejoras de fuentes, prioridades e historial
+- Incorporación de canales RSS/Atom adicionales.
+- Filtros por fuente, prioridad y antigüedad.
+- Indicador de frescura de datos, salud por fuente y prioridad heurística explicable.
+- Historial diario de hasta 90 días para tendencias.
+- Mejoras del wallboard y reducción de timeout HTTP del recopilador.

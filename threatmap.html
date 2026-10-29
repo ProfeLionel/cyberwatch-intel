@@ -1,139 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071019">
-  <meta name="description" content="Mapa mundial de actividad y tipos de amenazas de ciberseguridad para CyberWatch Intel.">
-  <title>CyberWatch Intel | Mapa global de amenazas</title>
+  <meta name="theme-color" content="#06111f">
+  <meta name="description" content="CyberWatch Intel: mapa mundial de actividad cibernética observada e inteligencia de amenazas pública.">
+  <title>CyberWatch Intel | Threatmap global</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <style>
-    :root{color-scheme:dark;--bg:#071019;--panel:#0d1a27;--panel2:#102131;--line:#20384a;--text:#e7f2f8;--muted:#8ca6b8;--cyan:#55e6df;--blue:#5eaaff;--green:#65e6a5;--amber:#ffc56b;--red:#ff6177;--violet:#bd8cff;--orange:#ff9558}
-    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}body{background:radial-gradient(ellipse at 50% -28%,#153349 0,var(--bg) 55%)}a{color:inherit}
-    .app{min-height:100vh;padding:14px 18px 12px;display:grid;grid-template-rows:auto auto auto minmax(470px,1fr) auto;gap:12px;max-width:2400px;margin:0 auto}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;min-width:0}.brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(140deg,#16445b,#12302e);color:var(--cyan);font-size:22px;font-weight:950;border:1px solid #2b5b69;flex:none}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--cyan);font-weight:900;text-transform:uppercase}.brand h1{font-size:clamp(19px,2vw,28px);letter-spacing:-.6px;margin:2px 0 0}.brand p{margin:3px 0 0;font-size:12px;color:var(--muted)}.header-right{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}.clockbox{text-align:right}.clock{font:700 20px/1.1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1px}.small-date{font-size:10px;color:var(--muted);margin-top:4px}.navbtn,.toolbtn{border:1px solid #294459;border-radius:8px;padding:9px 12px;background:#102434;color:#d9f3ff;text-decoration:none;font-size:11px;font-weight:850;cursor:pointer}.navbtn:hover,.toolbtn:hover{border-color:var(--cyan);background:#153345}.mode-pill{display:flex;align-items:center;gap:7px;border:1px solid #724d2a;background:#302318;color:#ffd6a0;border-radius:7px;padding:8px 10px;font-size:10px;font-weight:950;letter-spacing:1px;white-space:nowrap}.mode-pill i{display:block;width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px #ffb453}
-    .notice{display:flex;align-items:center;gap:10px;background:#201d18;border:1px solid #604727;color:#f2d8b2;border-radius:9px;padding:9px 12px;font-size:11px;line-height:1.5}.notice strong{color:#ffd298;white-space:nowrap}.notice .notice-icon{font-size:16px}.notice a{color:#a9d8ff}
-    .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:8px}.metric{width:100%;height:max-content;align-self:start;min-height:0;border:1px solid var(--line);background:linear-gradient(145deg,#102130,#0b1722);border-radius:9px;padding:7px 11px;min-width:0;position:relative;overflow:hidden}.metric:after{content:"";position:absolute;height:2px;left:0;right:30%;top:0;background:var(--metric,var(--cyan));opacity:.85}.metric-label{font-size:9px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:850;white-space:normal;line-height:1.25}.metric-value{font-size:clamp(19px,1.45vw,25px);font-weight:900;line-height:1.05;margin-top:3px;font-variant-numeric:tabular-nums}.metric-foot{font-size:9px;color:var(--muted);margin-top:2px;white-space:normal;line-height:1.3}
-    .workspace{min-height:0;display:grid;grid-template-columns:minmax(205px,250px) minmax(0,1fr) minmax(260px,320px);gap:12px}.side{min-width:0;min-height:0;display:flex;flex-direction:column;gap:12px}.panel{background:rgba(13,26,39,.96);border:1px solid var(--line);border-radius:11px;overflow:hidden;min-width:0}.panel-head{padding:11px 12px 9px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:8px}.panel-head h2{font-size:11px;letter-spacing:1.1px;margin:0;font-weight:900}.panel-head span{font-size:9px;color:var(--muted);white-space:nowrap}.panel-body{padding:11px 12px}.kicker{font-size:9px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;font-weight:900;margin-bottom:10px}.legend{display:grid;gap:9px}.legend-row{display:flex;align-items:center;gap:9px;color:#c7d7e2;font-size:11px;min-width:0}.legend-row button{background:transparent;border:0;padding:0;color:inherit;display:flex;align-items:center;gap:9px;min-width:0;width:100%;text-align:left;cursor:pointer;opacity:1}.legend-row button.off{opacity:.37;text-decoration:line-through}.legend-row button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.swatch{height:8px;width:8px;border-radius:50%;flex:none;box-shadow:0 0 9px currentColor;background:currentColor}.legend-count{margin-left:auto;color:var(--muted);font:10px ui-monospace,monospace}
-    .source-bars{display:grid;gap:10px}.bar-row{display:grid;grid-template-columns:85px minmax(0,1fr) 25px;gap:7px;align-items:center;font-size:10px}.bar-name{color:#bed0dc;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bar-track{height:5px;border-radius:99px;background:#1a2c3b;overflow:hidden}.bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#2896bb,var(--cyan));width:0;transition:width .4s}.bar-num{text-align:right;font:10px ui-monospace,monospace;color:var(--muted)}.method-note{font-size:10px;line-height:1.6;color:var(--muted)}.method-note strong{color:#d7e6ee}
-    .map-panel{position:relative;display:flex;flex-direction:column;min-height:0}.map-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border-bottom:1px solid var(--line);background:#0d1b28;flex-wrap:wrap}.map-title{font-size:11px;font-weight:900;letter-spacing:1px}.map-title small{display:block;color:var(--muted);font-size:9px;font-weight:600;letter-spacing:.1px;margin-top:4px}.map-tools{display:flex;gap:6px;align-items:center}.toolbtn{padding:6px 8px;font-size:10px}.map-stage{position:relative;flex:1;min-height:380px;background:#07131d;overflow:hidden}#map{position:absolute;inset:0;background:#07131d}.leaflet-container{background:#07131d;color:var(--text)}.leaflet-control-attribution{background:rgba(7,16,25,.8)!important;color:#8298a9!important;font-size:9px!important}.leaflet-control-attribution a{color:#a8d8ec!important}.leaflet-control-zoom a{background:#102434!important;color:#d9eff7!important;border-color:#294255!important}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0f2130;color:var(--text);border:1px solid #31516a}.leaflet-popup-content{font-size:11px;line-height:1.6}.map-overlay{position:absolute;z-index:500;pointer-events:none;top:12px;left:12px;display:flex;flex-direction:column;gap:6px}.map-tag{padding:6px 9px;border-radius:6px;background:rgba(7,16,25,.88);border:1px solid #274356;color:#c4d9e6;font-size:9px;font-weight:850;letter-spacing:.8px;backdrop-filter:blur(8px)}.map-tag b{color:var(--cyan)}.scale-note{position:absolute;z-index:500;pointer-events:none;bottom:12px;left:12px;background:rgba(7,16,25,.83);border:1px solid #274356;border-radius:6px;padding:7px 9px;color:#9ab1c1;font-size:9px;max-width:80%;line-height:1.45}.scale-note span{color:var(--cyan)}
-    .flow-line{stroke-linecap:round;stroke-dasharray:8 12;animation:dashmove 1.3s linear infinite;filter:drop-shadow(0 0 3px currentColor)}.flow-glow{stroke-linecap:round;filter:blur(3px);opacity:.34}.map-dot{filter:drop-shadow(0 0 6px currentColor)}.pulse-ring{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes dashmove{to{stroke-dashoffset:-40}}@keyframes pulse{0%{opacity:.8;transform:scale(.5)}100%{opacity:0;transform:scale(2.4)}}.leaflet-interactive{transition:opacity .25s}
-    .event-list{display:flex;flex-direction:column;min-height:0;max-height:calc(100vh - 420px);overflow:auto;scrollbar-width:thin;scrollbar-color:#2f5267 #0d1a27}.event{padding:10px 12px;border-bottom:1px solid #1c3141;position:relative}.event:last-child{border-bottom:0}.event-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.event-type{display:flex;gap:7px;align-items:center;font-size:10px;font-weight:900;min-width:0}.event-type i{width:6px;height:6px;border-radius:50%;background:var(--event-color,var(--cyan));box-shadow:0 0 8px var(--event-color,var(--cyan));flex:none}.event-time{font:9px ui-monospace,monospace;color:var(--muted);white-space:nowrap}.event-route{font-size:11px;font-weight:800;margin-top:8px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}.event-route .arrow{color:var(--cyan)}.country-code{font:10px ui-monospace,monospace;color:#9bb7c8;background:#172b3b;padding:2px 4px;border-radius:4px}.event-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:7px;font-size:9px;color:var(--muted)}.sev{font-size:8px;font-weight:950;letter-spacing:.7px;border-radius:4px;padding:3px 5px;text-transform:uppercase}.sev.critical{background:#492430;color:#ffb1bd}.sev.high{background:#482e20;color:#ffc18b}.sev.medium{background:#413a20;color:#f8df91}.sev.low{background:#163a35;color:#a4ebc9}
-    .footer{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--muted);font-size:10px;padding:2px 2px 0}.footer a{color:#a6dfff;text-decoration:none}.footer-left,.footer-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.connection{display:flex;align-items:center;gap:6px}.connection i{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}.disclaimer{color:#f1c88d}
-    @media(max-width:1180px){.workspace{grid-template-columns:210px minmax(0,1fr)}.right-side{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.event-list{max-height:300px}.map-stage{min-height:420px}}
-    @media(max-width:800px){.app{padding:10px;grid-template-rows:auto auto auto auto auto}.workspace{grid-template-columns:1fr}.left-side,.right-side{display:grid;grid-template-columns:1fr 1fr}.map-stage{min-height:400px}.header-right .clockbox{display:none}.notice{align-items:flex-start}.notice strong{white-space:normal}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.event-list{max-height:330px}}
-    @media(max-width:520px){header{align-items:flex-start}.brand p{max-width:240px}.header-right{max-width:132px}.navbtn{display:none}.left-side,.right-side{grid-template-columns:1fr}.map-stage{min-height:360px}.metrics{grid-template-columns:1fr;gap:7px}.metric{padding:7px 9px}.metric-label{font-size:8px;letter-spacing:.65px}.metric-foot{font-size:8px}.footer{align-items:flex-start;flex-direction:column}.map-tools .toolbtn{padding:6px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.flow-line{stroke-dasharray:none}}
+    :root{color-scheme:dark;--bg:#06111f;--panel:#081a2b;--panel2:#0b2034;--line:#183753;--text:#eaf4ff;--muted:#8da8c2;--cyan:#35d8e6;--blue:#258bff;--green:#18cba0;--red:#ff536f;--amber:#ffb547;--purple:#9b79ff;--shadow:0 12px 30px #0005}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}body{background:radial-gradient(ellipse at 55% -25%,#123451 0,transparent 47%),var(--bg)}a{color:inherit;text-decoration:none}button,select{font:inherit}
+    .app{min-height:100vh;display:grid;grid-template-columns:162px minmax(0,1fr);max-width:2400px;margin:0 auto}.sidebar{background:#061322;border-right:1px solid var(--line);padding:15px 10px;display:flex;flex-direction:column;gap:24px}.side-brand{display:flex;align-items:center;gap:9px;padding:4px 6px 16px;border-bottom:1px solid var(--line)}.brand-shield{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#0f4d79,#073b47);color:#65e6ff;font-size:22px;border:1px solid #26739a}.brand-mini{font-size:13px;font-weight:900;line-height:1.1}.brand-mini span{color:#7db9ee}.brand-mini small{display:block;color:var(--muted);font-size:8px;font-weight:650;letter-spacing:.8px;margin-top:4px}.side-nav{display:grid;gap:6px}.side-nav a{display:flex;align-items:center;gap:10px;padding:10px 9px;border-radius:8px;color:#afc4d9;font-size:11px;font-weight:750;border:1px solid transparent}.side-nav a.active,.side-nav a:hover{color:#fff;background:#0b2c53;border-color:#174a80}.nav-icon{width:16px;text-align:center;font-size:15px}.side-note{margin-top:auto;border:1px solid var(--line);background:#091b2a;border-radius:9px;padding:10px;font-size:9px;line-height:1.5;color:var(--muted)}.side-note b{display:block;color:#8cece7;margin-bottom:4px}
+    .main{min-width:0;padding:0 15px 12px}.topbar{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);margin:0 -15px 12px;padding:10px 18px;background:#061322d9}.top-left{display:flex;align-items:center;gap:18px;min-width:0}.page-tabs{display:flex;align-items:center;gap:15px}.page-tabs a{font-size:11px;color:var(--muted);padding:9px 2px;border-bottom:2px solid transparent}.page-tabs a.current{color:#58b9ff;border-color:#258bff}.top-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}.scope-pill,.status-pill{border:1px solid #24445f;background:#0b2032;border-radius:7px;padding:7px 10px;font-size:10px;color:#c8d9ea;white-space:nowrap}.status-pill{display:flex;align-items:center;gap:7px}.dot{width:7px;height:7px;border-radius:100%;background:var(--green);box-shadow:0 0 9px currentColor}.top-time{text-align:right;font:650 11px ui-monospace,monospace;color:#d2e5f6}.top-time small{display:block;color:var(--muted);font:9px system-ui;margin-top:4px}
+    .content{display:grid;gap:12px}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:12px;min-height:0}.panel{background:linear-gradient(145deg,#0a1c2d,#071727);border:1px solid var(--line);border-radius:11px;overflow:hidden;min-width:0;box-shadow:var(--shadow)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}.panel-head h2{font-size:11px;font-weight:900;letter-spacing:.4px;margin:0}.panel-head small{font-size:9px;color:var(--muted);white-space:nowrap}.map-panel{display:flex;flex-direction:column;min-height:550px}.map-head-left{display:grid;gap:3px}.map-head-left strong{font-size:16px;letter-spacing:-.2px}.map-head-left span{font-size:10px;color:var(--muted)}.map-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.toolbtn{border:1px solid #244760;background:#0b2339;border-radius:7px;padding:7px 9px;color:#cce3f5;font-size:9px;font-weight:800;cursor:pointer}.toolbtn:hover{border-color:var(--cyan);color:#fff}.map-stage{position:relative;min-height:0;flex:1;background:#071522}#map{position:absolute;inset:0;background:#071522}.leaflet-container{background:#071522;color:var(--text)}.leaflet-control-attribution{background:#071522d9!important;color:#91a9bd!important;font-size:9px!important}.leaflet-control-attribution a{color:#a4d8ff!important}.leaflet-control-zoom a{background:#0b2032!important;color:#d9efff!important;border-color:#25435b!important}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0d2235;color:var(--text);border:1px solid #2a506e}.leaflet-popup-content{font-size:11px;line-height:1.55}.map-overlay{position:absolute;z-index:500;pointer-events:none;left:12px;bottom:12px;display:grid;gap:7px}.focus-card{background:#061726e8;border:1px solid #168b8d;border-left:3px solid var(--cyan);border-radius:8px;padding:9px 11px;min-width:205px;backdrop-filter:blur(8px)}.focus-card b{display:block;font-size:11px;color:#69e4e0}.focus-card span{font-size:9px;color:#b2ccdf}.map-legend{position:absolute;z-index:500;right:12px;bottom:12px;background:#061726e8;border:1px solid #244761;border-radius:8px;padding:9px 11px;display:grid;gap:6px;pointer-events:none;backdrop-filter:blur(8px)}.legend-item{display:flex;align-items:center;gap:8px;font-size:9px;color:#d5e4f0}.legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;box-shadow:0 0 8px currentColor}.legend-line{width:21px;height:2px;background:var(--blue);display:inline-block;box-shadow:0 0 7px var(--blue)}.flow-arc{stroke-dasharray:8 12;animation:flowDash 2.2s linear infinite}.flow-arc.is-paused{animation-play-state:paused}@keyframes flowDash{to{stroke-dashoffset:-40}}.leaflet-interactive{outline:none}
+    .right-rail{display:flex;flex-direction:column;gap:12px;min-width:0}.right-rail .panel{box-shadow:none}.layer-list{display:grid}.layer-row{display:grid;grid-template-columns:23px minmax(0,1fr) auto;gap:8px;align-items:center;padding:10px 11px;border-bottom:1px solid #163149}.layer-row:last-child{border-bottom:0}.layer-symbol{width:21px;height:21px;border-radius:6px;display:grid;place-items:center;font-size:12px;background:#102a42}.layer-title{font-size:10px;font-weight:800;line-height:1.25}.layer-sub{font-size:8px;color:var(--muted);margin-top:3px;line-height:1.3}.switch{appearance:none;width:29px;height:16px;border-radius:99px;background:#294257;position:relative;cursor:pointer;outline:none;border:0}.switch:checked{background:#147ee5}.switch:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#d5e9f8;left:3px;top:3px;transition:transform .15s}.switch:checked:before{transform:translateX(13px);background:#fff}.filters{padding:10px 11px;display:grid;gap:9px}.filter-row{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;align-items:center}.filter-row label{font-size:9px;color:#b6cce0}.filter-row select{width:100%;min-width:0;background:#081a2c;border:1px solid #24445f;border-radius:7px;color:#e4f1fb;padding:8px 9px;font-size:9px}.filter-note{font-size:8px;line-height:1.45;color:var(--muted)}.method-note{font-size:9px;line-height:1.55;color:var(--muted);padding:10px 11px}.method-note b{color:#cfe2f2}
+    .bottom-grid{display:grid;grid-template-columns:minmax(260px,1.25fr) minmax(180px,.85fr) minmax(260px,1fr) minmax(220px,.9fr);gap:12px}.bottom-panel{min-height:220px}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px}.stat-card{border:1px solid #1f4663;border-radius:8px;padding:10px;background:linear-gradient(145deg,#0b2034,#081929);min-width:0}.stat-card .stat-label{font-size:8px;color:#a9c2d7;line-height:1.35;min-height:22px}.stat-card .stat-value{font-size:25px;font-weight:900;line-height:1.1;margin-top:5px;font-variant-numeric:tabular-nums}.stat-card .stat-foot{font-size:8px;color:var(--muted);margin-top:4px;line-height:1.35}.rank-tabs{display:flex;gap:4px;padding:9px 10px 0}.rank-tab{border:0;border-radius:6px;padding:6px 9px;background:#0c2134;color:#97b3ca;font-size:8px;cursor:pointer}.rank-tab.active{background:#0c3970;color:#e5f3ff}.rank-list{display:grid;gap:0;padding:4px 11px 9px}.rank-row{display:grid;grid-template-columns:20px minmax(0,1fr) auto;gap:7px;align-items:center;padding:8px 0;border-bottom:1px solid #173148;font-size:9px}.rank-row:last-child{border-bottom:0}.rank-n{color:#83a4c1;font:10px ui-monospace,monospace}.rank-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rank-value{font:750 9px ui-monospace,monospace;color:#d8ebfb}.event-list{display:grid;max-height:242px;overflow:auto}.event-row{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;padding:9px 11px;border-bottom:1px solid #173148}.event-row:last-child{border-bottom:0}.event-icon{width:21px;height:21px;border-radius:6px;display:grid;place-items:center;font-size:11px;background:#0d2b44}.event-title{font-size:9px;font-weight:800;line-height:1.35;overflow-wrap:anywhere}.event-sub{font-size:8px;color:var(--muted);line-height:1.4;margin-top:3px}.empty-state{padding:18px 12px;color:var(--muted);font-size:9px;line-height:1.5}.source-list{display:grid;padding:0 10px}.source-row{display:grid;grid-template-columns:23px minmax(0,1fr) auto;gap:8px;align-items:center;padding:9px 0;border-bottom:1px solid #173148}.source-row:last-child{border-bottom:0}.source-mark{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;background:#102941;font-size:11px}.source-name{font-size:9px;font-weight:850}.source-desc{font-size:8px;color:var(--muted);margin-top:3px;line-height:1.35}.source-state{font-size:8px;border-radius:99px;padding:4px 7px;background:#2a1e22;color:#ff9ba7;white-space:nowrap}.source-state.ok{background:#063b3a;color:#5de2be}.source-state.stale{background:#40301a;color:#ffd08a}.footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 3px 1px;color:var(--muted);font-size:8px;line-height:1.5}.footer a{color:#99cfff}.footer-right{max-width:70%;text-align:right}.data-warning{display:none;background:#352718;border:1px solid #6d4a21;color:#ffdaa0;border-radius:8px;padding:8px 10px;font-size:9px;line-height:1.45}.data-warning.show{display:block}
+    @media(min-width:1650px){.map-panel{min-height:620px}.bottom-panel{min-height:235px}.stat-card .stat-value{font-size:29px}}
+    @media(max-width:1250px){.app{grid-template-columns:62px minmax(0,1fr)}.sidebar{padding:12px 7px}.side-brand{justify-content:center;padding:0 0 13px}.brand-mini,.side-nav .nav-label,.side-note{display:none}.side-nav a{justify-content:center;padding:11px 4px}.nav-icon{font-size:17px}.hero-grid{grid-template-columns:minmax(0,1fr) 285px}.bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.map-panel{min-height:520px}.right-rail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.right-rail .method-panel{grid-column:1/-1}.bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.page-tabs{display:none}}
+    @media(max-width:560px){.app{grid-template-columns:48px minmax(0,1fr)}.main{padding:0 8px 10px}.topbar{margin:0 -8px 9px;padding:9px}.brand-shield{width:30px;height:30px}.top-right{gap:6px}.top-time{display:none}.scope-pill{font-size:8px;padding:6px}.status-pill{font-size:8px;padding:6px}.hero-grid{gap:9px}.map-panel{min-height:440px}.map-head-left strong{font-size:13px}.map-tools .toolbtn{padding:6px}.right-rail{grid-template-columns:1fr}.right-rail .method-panel{grid-column:auto}.bottom-grid{grid-template-columns:1fr}.bottom-panel{min-height:0}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.map-legend{right:7px;bottom:7px;padding:7px}.focus-card{min-width:0;padding:7px 9px}.footer{align-items:flex-start;flex-direction:column}.footer-right{max-width:100%;text-align:left}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
 <div class="app">
-  <header>
-    <div class="brand"><div class="logo">◎</div><div><div class="eyebrow">CyberWatch Intel / Global Operations</div><h1>Mapa global de amenazas</h1><p>Vista geográfica interactiva · clasificación de actividad cibernética</p></div></div>
-    <div class="header-right"><div class="mode-pill"><i></i><span id="mode-label">MODO DEMOSTRACIÓN</span></div><div class="clockbox"><div class="clock" id="clock">--:--:--</div><div class="small-date" id="date">Cargando fecha…</div></div><a class="navbtn" href="./wallboard.html">▣ WALLBOARD SOC</a><a class="navbtn" href="./index.html">▦ DASHBOARD</a><button class="toolbtn" id="fullscreen" type="button" title="Pantalla completa (F)">⛶ FULLSCREEN</button></div>
-  </header>
-  <div class="notice"><span class="notice-icon">ⓘ</span><strong>TRANSPARENCIA DE DATOS</strong><span>Las rutas animadas de esta versión son <b>simulaciones visuales</b>, no ataques reales confirmados. El recopilador actual obtiene avisos, CVE y boletines, pero no telemetría de origen/destino. El mapa deja esta distinción visible para evitar conclusiones falsas.</span></div>
-  <section class="metrics" aria-label="Indicadores de sesión">
-    <div class="metric" style="--metric:var(--cyan)"><div class="metric-label">Eventos visualizados</div><div class="metric-value" id="metric-events">0</div><div class="metric-foot">Generados en esta sesión demo</div></div>
-    <div class="metric" style="--metric:var(--red)"><div class="metric-label">Flujos activos</div><div class="metric-value" id="metric-flows">0</div><div class="metric-foot">Animaciones en pantalla</div></div>
-    <div class="metric" style="--metric:var(--blue)"><div class="metric-label">Países en actividad</div><div class="metric-value" id="metric-countries">0</div><div class="metric-foot">Orígenes y destinos simulados</div></div>
-    <div class="metric" style="--metric:var(--amber)"><div class="metric-label">Categorías representadas</div><div class="metric-value" id="metric-types">8</div><div class="metric-foot">Familias habituales de amenaza</div></div>
-  </section>
-  <main class="workspace">
-    <aside class="side left-side">
-      <section class="panel"><div class="panel-head"><h2>TIPO DE ACTIVIDAD</h2><span>FILTROS</span></div><div class="panel-body"><div class="kicker">Selecciona las categorías visibles</div><div class="legend" id="legend"></div></div></section>
-      <section class="panel"><div class="panel-head"><h2>ORÍGENES · SESIÓN</h2><span>DEMO</span></div><div class="panel-body"><div class="source-bars" id="origins"></div></div></section>
-      <section class="panel"><div class="panel-head"><h2>METODOLOGÍA</h2><span>ACERCA DEL MAPA</span></div><div class="panel-body method-note"><strong>¿Qué significa una línea?</strong><br>Representa un escenario de ejemplo con país de origen, país de destino y categoría asignados por el generador visual.<br><br><strong>¿Es una atribución real?</strong><br>No. La ubicación geográfica de una IP no prueba quién opera desde ella ni quién es la víctima.<br><br><strong>Fuente de eventos:</strong> generador local de demostración. No usar para respuesta a incidentes ni bloqueo de IP.</div></section>
-    </aside>
-    <section class="panel map-panel">
-      <div class="map-toolbar"><div class="map-title">ACTIVIDAD GLOBAL <small id="map-caption">Flujos ilustrativos · continentes y países</small></div><div class="map-tools"><button class="toolbtn" id="pause" type="button">Ⅱ PAUSAR</button><button class="toolbtn" id="clear" type="button">↺ REINICIAR</button><button class="toolbtn" id="reset-view" type="button">⌖ VISTA GLOBAL</button></div></div>
-      <div class="map-stage"><div id="map" role="img" aria-label="Mapa mundial interactivo con arcos animados ilustrativos entre países"></div><div class="map-overlay"><div class="map-tag"><b>CYBERWATCH</b> · GLOBAL MAP</div><div class="map-tag" id="flow-state">ANIMACIÓN ACTIVA</div></div><div class="scale-note"><span>●</span> Origen &nbsp; <span>→</span> Ruta ilustrativa &nbsp; <span>●</span> Destino<br>El color identifica la categoría; la ruta no es telemetría real.</div></div>
-    </section>
-    <aside class="side right-side">
-      <section class="panel"><div class="panel-head"><h2>FLUJOS RECIENTES</h2><span id="stream-count">0 eventos</span></div><div class="event-list" id="events" aria-live="polite"><div class="panel-body method-note">Preparando animación de demostración…</div></div></section>
-      <section class="panel"><div class="panel-head"><h2>DESTINOS · SESIÓN</h2><span>DEMO</span></div><div class="panel-body"><div class="source-bars" id="destinations"></div></div></section>
-    </aside>
-  </main>
-  <footer class="footer"><div class="footer-left"><span class="connection"><i></i><span id="connection-state">Generador visual local activo</span></span><span class="disclaimer">No representa ataques en directo</span></div><div class="footer-right"><span>Mapa base © OpenStreetMap · Carto</span><a href="https://threatmap.bitdefender.com/" target="_blank" rel="noopener">Bitdefender</a><a href="https://fortiguard.fortinet.com/threat-map" target="_blank" rel="noopener">FortiGuard</a><a href="https://horizon.netscout.com/" target="_blank" rel="noopener">NETSCOUT</a><a href="https://threatmap.checkpoint.com/" target="_blank" rel="noopener">Check Point</a><a href="https://livethreatmap.radware.com/" target="_blank" rel="noopener">Radware</a></div></footer>
+  <aside class="sidebar">
+    <div class="side-brand"><div class="brand-shield">⬡</div><div class="brand-mini">CyberWatch <span>Intel</span><small>THREAT INTELLIGENCE</small></div></div>
+    <nav class="side-nav" aria-label="Navegación">
+      <a class="active" href="#map-panel"><span class="nav-icon">◎</span><span class="nav-label">Threatmap</span></a>
+      <a href="#stats-panel"><span class="nav-icon">▦</span><span class="nav-label">Resumen</span></a>
+      <a href="#events-panel"><span class="nav-icon">♢</span><span class="nav-label">Actividad</span></a>
+      <a href="#sources-panel"><span class="nav-icon">◉</span><span class="nav-label">Fuentes</span></a>
+      <a href="./index.html"><span class="nav-icon">⌂</span><span class="nav-label">Dashboard</span></a>
+      <a href="./wallboard.html"><span class="nav-icon">▣</span><span class="nav-label">Wallboard SOC</span></a>
+    </nav>
+    <div class="side-note"><b>COBERTURA GLOBAL</b>Datos públicos y observaciones agregadas. Chile y Latinoamérica destacados cuando existen registros disponibles.</div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="top-left">
+        <div class="brand-mini">CyberWatch <span>Intel</span><small>GLOBAL THREAT OPERATIONS</small></div>
+        <nav class="page-tabs"><a class="current" href="#map-panel">Threatmap</a><a href="./index.html">Indicadores</a><a href="#events-panel">Eventos</a><a href="#sources-panel">Fuentes</a></nav>
+      </div>
+      <div class="top-right">
+        <div class="scope-pill">◉ Cobertura: Mundial + LATAM</div>
+        <div class="status-pill"><i class="dot" id="global-dot"></i><span id="global-status">Comprobando fuentes…</span></div>
+        <div class="top-time"><span id="clock">--:-- UTC</span><small id="last-update">Sin actualización registrada</small></div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="data-warning" id="stale-warning"></div>
+      <div class="hero-grid">
+        <section class="panel map-panel" id="map-panel">
+          <div class="panel-head">
+            <div class="map-head-left"><strong>Threatmap global</strong><span>Actividad agregada, IP observadas e indicadores geolocalizados</span></div>
+            <div class="map-tools"><button class="toolbtn" id="pause-animation" type="button">Ⅱ Pausar animación</button><button class="toolbtn" id="reset-view" type="button">⌖ Vista global</button><button class="toolbtn" id="refresh-data" type="button">↻ Actualizar vista</button></div>
+          </div>
+          <div class="map-stage"><div id="map" role="img" aria-label="Mapa mundial con arcos agregados de Cloudflare Radar y marcadores de IP observadas e indicadores geolocalizados"></div>
+            <div class="map-overlay"><div class="focus-card"><b>Chile y Latinoamérica</b><span id="regional-summary">Foco regional · datos disponibles según fuentes</span></div></div>
+            <div class="map-legend">
+              <div class="legend-item"><span class="legend-line"></span> Arcos L7 agregados · Cloudflare</div>
+              <div class="legend-item"><span class="legend-dot" style="color:#18cba0"></span> IP observada · DShield</div>
+              <div class="legend-item"><span class="legend-dot" style="color:#ff536f"></span> IOC malware · ThreatFox</div>
+              <div class="legend-item"><span class="legend-dot" style="color:#ffb547"></span> Host IP malicioso · URLhaus</div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-rail">
+          <section class="panel">
+            <div class="panel-head"><h2>CAPAS DEL MAPA</h2><small>ACTIVAR / DESACTIVAR</small></div>
+            <div class="layer-list">
+              <div class="layer-row"><div class="layer-symbol" style="color:#4d9dff">⌁</div><div><div class="layer-title">Ataques geográficos</div><div class="layer-sub">Cloudflare Radar · pares L7 agregados · <span id="layer-updated-cloudflare">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-cloudflare" checked aria-label="Mostrar ataques geográficos"></div>
+              <div class="layer-row"><div class="layer-symbol" style="color:#18cba0">◉</div><div><div class="layer-title">Actividad observada</div><div class="layer-sub">DShield · IP reportadas por sensores · <span id="layer-updated-dshield">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-dshield" checked aria-label="Mostrar IP DShield"></div>
+              <div class="layer-row"><div class="layer-symbol" style="color:#ff536f">▲</div><div><div class="layer-title">Indicadores de malware</div><div class="layer-sub">ThreatFox · IOC recientes con IP · <span id="layer-updated-threatfox">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-threatfox" checked aria-label="Mostrar IP ThreatFox"></div>
+              <div class="layer-row"><div class="layer-symbol" style="color:#ffb547">◆</div><div><div class="layer-title">URL maliciosas</div><div class="layer-sub">URLhaus · hosts IP geolocalizables · <span id="layer-updated-urlhaus">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-urlhaus" checked aria-label="Mostrar IP URLhaus"></div>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>FILTROS</h2><small>VISTA DEL MAPA</small></div>
+            <div class="filters">
+              <div class="filter-row"><label for="region-filter">Región</label><select id="region-filter"><option value="global">Mundial</option><option value="latam">Latinoamérica</option><option value="chile">Chile</option></select></div>
+              <div class="filter-row"><label for="type-filter">Actividad</label><select id="type-filter"><option value="all">Todas las capas</option><option value="cloudflare">Ataques L7 agregados</option><option value="dshield">IP observadas</option><option value="threatfox">IOC de malware</option><option value="urlhaus">URL maliciosas</option></select></div>
+              <div class="filter-note">Los filtros afectan las capas geográficas. Los datos sin coordenadas siguen visibles en los paneles de inteligencia.</div>
+              <button class="toolbtn" id="reset-filters" type="button">↺ Restablecer filtros</button>
+            </div>
+          </section>
+          <section class="panel method-panel"><div class="panel-head"><h2>LECTURA DEL MAPA</h2><small>METODOLOGÍA</small></div><div class="method-note"><b>Arcos:</b> pares de países y porcentajes agregados publicados por Cloudflare Radar (capa 7). No son sesiones individuales ni necesariamente ataques directos.<br><br><b>Marcadores:</b> IP reportadas por sensores o contenidas en IOC públicos, ubicadas de forma aproximada por IPWho.is.<br><br><b>Importante:</b> la geolocalización no identifica a una persona ni confirma una víctima. Un hash, dominio o URL sin IP no se dibuja en el mapa.</div></section>
+        </aside>
+      </div>
+
+      <div class="bottom-grid">
+        <section class="panel bottom-panel" id="stats-panel"><div class="panel-head"><h2>ESTADÍSTICAS GLOBALES</h2><small>ÚLTIMA CAPTURA</small></div>
+          <div class="stats-grid">
+            <div class="stat-card" style="border-color:#315a9f"><div class="stat-label">Pares geográficos L7</div><div class="stat-value" id="stat-pairs">—</div><div class="stat-foot">Cloudflare Radar · 24 h</div></div>
+            <div class="stat-card" style="border-color:#136c65"><div class="stat-label">IP observadas</div><div class="stat-value" id="stat-dshield">—</div><div class="stat-foot">DShield · Top IP feed</div></div>
+            <div class="stat-card" style="border-color:#793b59"><div class="stat-label">Indicadores de malware</div><div class="stat-value" id="stat-threatfox">—</div><div class="stat-foot">ThreatFox · últimos 24 h</div></div>
+            <div class="stat-card" style="border-color:#795627"><div class="stat-label">URL maliciosas recientes</div><div class="stat-value" id="stat-urlhaus">—</div><div class="stat-foot">URLhaus · feed reciente</div></div>
+          </div>
+        </section>
+        <section class="panel bottom-panel"><div class="panel-head"><h2>TOP REGIONES</h2><small id="rank-subtitle">IP OBSERVADAS</small></div><div class="rank-tabs"><button class="rank-tab active" data-rank="ip">IP</button><button class="rank-tab" data-rank="malware">Malware</button><button class="rank-tab" data-rank="urls">URLs</button></div><div class="rank-list" id="rank-list"><div class="empty-state">Esperando registros geolocalizados.</div></div></section>
+        <section class="panel bottom-panel" id="events-panel"><div class="panel-head"><h2>ÚLTIMOS EVENTOS</h2><small id="event-total">0 registros</small></div><div class="event-list" id="event-list"><div class="empty-state">Cargando datos públicos…</div></div></section>
+        <section class="panel bottom-panel" id="sources-panel"><div class="panel-head"><h2>FUENTES Y ATRIBUCIÓN</h2><small>ESTADO</small></div><div class="source-list" id="source-list"><div class="empty-state">Comprobando fuentes…</div></div></section>
+      </div>
+      <footer class="footer"><div>CyberWatch Intel · Threatmap de inteligencia de amenazas</div><div class="footer-right">Cloudflare Radar (CC BY-NC 4.0) · SANS ISC/DShield · abuse.ch ThreatFox y URLhaus · IPWho.is. Datos públicos, agregados y geolocalización aproximada; no representan una visión completa de Internet.</div></footer>
+    </main>
+  </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const TYPE_INFO = {
-    'DDoS': {color:'#ff6177',label:'DDoS / denegación de servicio'},
-    'Malware': {color:'#ff9558',label:'Malware / infección'},
-    'Phishing': {color:'#ffc56b',label:'Phishing / suplantación'},
-    'Fuerza bruta': {color:'#bd8cff',label:'Fuerza bruta / acceso'},
-    'Explotación': {color:'#ff4f96',label:'Explotación de vulnerabilidad'},
-    'Ransomware': {color:'#ff6b4a',label:'Ransomware / extorsión'},
-    'Botnet / C2': {color:'#55e6df',label:'Botnet / comando y control'},
-    'Reconocimiento': {color:'#5eaaff',label:'Escaneo / reconocimiento'}
+  const LATAM = new Set(['AR','BO','BR','CL','CO','CR','CU','DO','EC','GT','GY','HT','HN','MX','NI','PA','PE','PR','PY','SV','SR','TT','UY','VE','BZ','JM','BS','BB']);
+  const fmt = n => Number(n || 0).toLocaleString('es-CL');
+  const fmtDate = value => {
+    if (!value) return 'No informado';
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return esc(value);
+    return new Intl.DateTimeFormat('es-CL',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'America/Santiago'}).format(d);
   };
-  const COUNTRIES = [
-    {name:'Chile',code:'CL',lat:-33.45,lng:-70.66},{name:'Estados Unidos',code:'US',lat:38.9,lng:-77.04},{name:'Canadá',code:'CA',lat:45.42,lng:-75.69},
-    {name:'México',code:'MX',lat:19.43,lng:-99.13},{name:'Brasil',code:'BR',lat:-15.79,lng:-47.88},{name:'Argentina',code:'AR',lat:-34.6,lng:-58.38},
-    {name:'Reino Unido',code:'GB',lat:51.5,lng:-0.12},{name:'Alemania',code:'DE',lat:52.52,lng:13.4},{name:'Francia',code:'FR',lat:48.86,lng:2.35},
-    {name:'España',code:'ES',lat:40.42,lng:-3.7},{name:'Países Bajos',code:'NL',lat:52.37,lng:4.9},{name:'Suecia',code:'SE',lat:59.33,lng:18.07},
-    {name:'Polonia',code:'PL',lat:52.23,lng:21.01},{name:'Ucrania',code:'UA',lat:50.45,lng:30.52},{name:'Rusia',code:'RU',lat:55.75,lng:37.62},
-    {name:'Turquía',code:'TR',lat:39.93,lng:32.86},{name:'Israel',code:'IL',lat:31.77,lng:35.21},{name:'Emiratos Árabes Unidos',code:'AE',lat:24.45,lng:54.65},
-    {name:'India',code:'IN',lat:28.61,lng:77.21},{name:'Singapur',code:'SG',lat:1.35,lng:103.82},{name:'China',code:'CN',lat:39.9,lng:116.4},
-    {name:'Japón',code:'JP',lat:35.68,lng:139.69},{name:'Corea del Sur',code:'KR',lat:37.57,lng:126.98},{name:'Australia',code:'AU',lat:-35.28,lng:149.13},
-    {name:'Indonesia',code:'ID',lat:-6.21,lng:106.85},{name:'Sudáfrica',code:'ZA',lat:-25.75,lng:28.19},{name:'Nigeria',code:'NG',lat:9.08,lng:7.49},
-    {name:'Kenia',code:'KE',lat:-1.29,lng:36.82},{name:'Italia',code:'IT',lat:41.9,lng:12.5},{name:'Suiza',code:'CH',lat:46.95,lng:7.45}
-  ];
-  const SEVERITIES = ['Crítica','Alta','Alta','Media','Media','Baja'];
-  const SEVERITY_CLASS = {'Crítica':'critical','Alta':'high','Media':'medium','Baja':'low'};
-  const enabledTypes = new Set(Object.keys(TYPE_INFO));
-  const routeLayers = new Set();
-  let events = [], flowCount = 0, paused = false, timer = null, statsTimer = null, sequence = 0, lastEvents = 0;
-  let map = null, flowLayer = null, markerLayer = null;
-  const counters = {origins:{}, destinations:{}, types:{}};
-  const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const nowLabel = d => new Intl.DateTimeFormat('es-CL',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'America/Santiago'}).format(d);
-  const timeLabel = d => new Intl.DateTimeFormat('es-CL',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'America/Santiago'}).format(d);
-  const randomItem = arr => arr[Math.floor(Math.random()*arr.length)];
-  function updateClock(){const n=new Date();$('clock').textContent=nowLabel(n);$('date').textContent=new Intl.DateTimeFormat('es-CL',{weekday:'short',day:'2-digit',month:'short',year:'numeric',timeZone:'America/Santiago'}).format(n);}
-  function makeLegend(){ $('legend').innerHTML=Object.entries(TYPE_INFO).map(([type,info])=>`<div class="legend-row"><button type="button" data-type="${escapeHtml(type)}" aria-pressed="true"><i class="swatch" style="color:${info.color}"></i><span>${escapeHtml(type)}</span><span class="legend-count" id="legend-${slug(type)}">0</span></button></div>`).join(''); $('legend').querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{const type=btn.dataset.type;if(enabledTypes.has(type)){enabledTypes.delete(type);btn.classList.add('off');btn.setAttribute('aria-pressed','false');}else{enabledTypes.add(type);btn.classList.remove('off');btn.setAttribute('aria-pressed','true');}renderEvents();renderStats();})); }
-  function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  let map, data = null, paused = false;
+  let layers = {};
+  const layerIds = ['cloudflare','dshield','threatfox','urlhaus'];
+  const COLORS = {cloudflare:'#438fff',dshield:'#18cba0',threatfox:'#ff536f',urlhaus:'#ffb547'};
+
+  function updateClock(){
+    const now = new Date();
+    $('clock').textContent = new Intl.DateTimeFormat('es-CL',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC'}).format(now)+' UTC';
+  }
   function initMap(){
-    if(!window.L){$('map-caption').textContent='No se pudo cargar la biblioteca de mapas; revisa la conexión a internet.';$('connection-state').textContent='Biblioteca cartográfica no disponible';return false;}
-    map=L.map('map',{worldCopyJump:true,preferCanvas:true,zoomControl:true,minZoom:2,maxZoom:6,zoomSnap:.25,worldCopyJump:true}).setView([22,4],2);
-    let tileErrors=0;
-    const cartoTiles=L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_4x8s_1_28d7a74f1381b6e02b781967',{minZoom:0,maxZoom:20,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions/">CARTO</a>',crossOrigin:true});
-    cartoTiles.on('tileerror',()=>{tileErrors++;if(tileErrors>=2){$('map-caption').textContent='CARTO Voyager no carga correctamente. Verifica conexión y clave de API.';$('connection-state').textContent='Error al cargar el mapa base';}});
-    cartoTiles.on('load',()=>{if(tileErrors===0){$('map-caption').textContent='CARTO Voyager · flujos ilustrativos';$('connection-state').textContent='Mapa base cargado · eventos de demostración';}else{$('map-caption').textContent='Algunos mosaicos de CARTO fallaron; verifica clave o conexión.';}});
-    cartoTiles.addTo(map);
-    flowLayer=L.layerGroup().addTo(map);markerLayer=L.layerGroup().addTo(map);
-    map.on('click',e=>{const nearest=[...COUNTRIES].sort((a,b)=>distance2(a,e.latlng)-distance2(b,e.latlng))[0];if(nearest&&distance2(nearest,e.latlng)<600){L.popup().setLatLng([nearest.lat,nearest.lng]).setContent(`<strong>${escapeHtml(nearest.name)}</strong><br><span style="color:#8ca6b8">Punto geográfico de referencia</span>`).openOn(map);}});
+    if (!window.L) { $('global-status').textContent='Biblioteca de mapas no disponible'; return false; }
+    map = L.map('map',{worldCopyJump:true,zoomControl:true,minZoom:2,maxZoom:7}).setView([15,-18],2);
+    L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_4x8s_1_28d7a74f1381b6e02b781967',{
+      minZoom:0,maxZoom:20,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions/">CARTO</a>',crossOrigin:true
+    }).addTo(map);
+    layerIds.forEach(id => layers[id] = L.layerGroup().addTo(map));
+    setTimeout(() => map.invalidateSize(),250);
     return true;
   }
-  function distance2(c,ll){return Math.pow(c.lat-ll.lat,2)+Math.pow((c.lng-ll.lng)*Math.cos(ll.lat*Math.PI/180),2);}
-  function choosePair(){let a=randomItem(COUNTRIES),b=randomItem(COUNTRIES);let attempts=0;while((a.code===b.code||Math.abs(a.lng-b.lng)<14&&Math.abs(a.lat-b.lat)<8)&&attempts++<20)b=randomItem(COUNTRIES);return {source:a,target:b};}
-  function createEvent(){const pair=choosePair(),type=randomItem(Object.keys(TYPE_INFO)),severity=randomItem(SEVERITIES),now=new Date();return {id:`demo-${++sequence}`,time:now,source:pair.source,target:pair.target,type,severity,signature:randomItem(signatures(type)),confidence:'SIMULADO'};}
-  function signatures(type){const values={
-    'DDoS':['UDP flood ilustrativo','HTTP request flood','SYN flood conceptual','Ataque volumétrico demo'],
-    'Malware':['Actividad de malware demo','Descarga de payload simulada','Señal de infección ilustrativa'],
-    'Phishing':['Campaña de phishing demo','Suplantación de identidad','Señal de correo malicioso demo'],
-    'Fuerza bruta':['Intentos de acceso simulados','Password spraying demo','Autenticación repetida ilustrativa'],
-    'Explotación':['Exploit de aplicación demo','Intento contra servicio vulnerable','Patrón de explotación ilustrativo'],
-    'Ransomware':['Indicador de ransomware demo','Actividad de extorsión simulada','Cadena de ataque ilustrativa'],
-    'Botnet / C2':['Señal de beacon C2 demo','Comunicación botnet simulada','Conexión de mando y control demo'],
-    'Reconocimiento':['Escaneo de puertos demo','Descubrimiento de servicios','Reconocimiento de superficie expuesta']};return values[type]||['Actividad de demostración'];}
-  function curvePoints(a,b){let endLng=b.lng,delta=endLng-a.lng;if(delta>180)endLng-=360;else if(delta< -180)endLng+=360;delta=endLng-a.lng;const distance=Math.sqrt(delta*delta+Math.pow(b.lat-a.lat,2));const bump=Math.min(24,Math.max(7,distance*.12));const points=[];const count=30;for(let i=0;i<=count;i++){const t=i/count;let lat=a.lat+(b.lat-a.lat)*t+Math.sin(Math.PI*t)*bump;let lng=a.lng+delta*t;while(lng>180)lng-=360;while(lng< -180)lng+=360;points.push([lat,lng]);}return points;}
-  function drawFlow(ev){if(!map||!flowLayer||!markerLayer||!enabledTypes.has(ev.type))return;const color=TYPE_INFO[ev.type].color,points=curvePoints(ev.source,ev.target);const glow=L.polyline(points,{color,weight:7,opacity:.16,interactive:false,className:'flow-glow'});const line=L.polyline(points,{color,weight:1.8,opacity:.9,interactive:true,className:'flow-line'});line.bindPopup(`<strong style="color:${color}">${escapeHtml(ev.type)}</strong><br>${escapeHtml(ev.source.name)} → ${escapeHtml(ev.target.name)}<br>${escapeHtml(ev.signature)}<br><span style="color:#ffc56b">Evento ilustrativo, no real</span>`);const markerA=L.circleMarker([ev.source.lat,ev.source.lng],{radius:4,color,weight:1,fillColor:color,fillOpacity:.9,className:'map-dot'});const markerB=L.circleMarker([ev.target.lat,ev.target.lng],{radius:4,color,weight:1,fillColor:color,fillOpacity:.9,className:'map-dot'});const pulse=L.circleMarker([ev.target.lat,ev.target.lng],{radius:7,color,weight:1,fillOpacity:0,className:'pulse-ring'});[glow,line,markerA,markerB,pulse].forEach(layer=>layer.addTo(flowLayer));const bundle={id:ev.id,layers:[glow,line,markerA,markerB,pulse],expires:Date.now()+(reduceMotion?3500:7200)};routeLayers.add(bundle);setTimeout(()=>{bundle.layers.forEach(l=>{try{flowLayer.removeLayer(l);}catch(_){}});routeLayers.delete(bundle);renderStats();},reduceMotion?3600:7300);}
-  function addEvent(ev){events.unshift(ev);events=events.slice(0,40);flowCount++;counters.origins[ev.source.name]=(counters.origins[ev.source.name]||0)+1;counters.destinations[ev.target.name]=(counters.destinations[ev.target.name]||0)+1;counters.types[ev.type]=(counters.types[ev.type]||0)+1;drawFlow(ev);renderEvents();renderStats();}
-  function renderEvents(){const visible=events.filter(e=>enabledTypes.has(e.type)).slice(0,14);$('stream-count').textContent=`${visible.length} eventos visibles`;if(!visible.length){$('events').innerHTML='<div class="panel-body method-note">No hay eventos para los filtros seleccionados.</div>';return;}$('events').innerHTML=visible.map(e=>{const color=TYPE_INFO[e.type].color;return `<article class="event" style="--event-color:${color}"><div class="event-top"><div class="event-type"><i></i><span>${escapeHtml(e.type)}</span></div><span class="event-time">${timeLabel(e.time)}</span></div><div class="event-route"><span class="country-code">${escapeHtml(e.source.code)}</span><span>${escapeHtml(e.source.name)}</span><span class="arrow">→</span><span class="country-code">${escapeHtml(e.target.code)}</span><span>${escapeHtml(e.target.name)}</span></div><div class="event-meta"><span>${escapeHtml(e.signature)}</span><span class="sev ${SEVERITY_CLASS[e.severity]}">${escapeHtml(e.severity)}</span></div></article>`;}).join('');}
-  function makeBars(id,data){const list=Object.entries(data).sort((a,b)=>b[1]-a[1]).slice(0,5);if(!list.length){$(id).innerHTML='<div class="method-note">Esperando eventos…</div>';return;}const max=Math.max(...list.map(x=>x[1]),1);$(id).innerHTML=list.map(([name,n])=>`<div class="bar-row"><span class="bar-name" title="${escapeHtml(name)}">${escapeHtml(name)}</span><div class="bar-track"><div class="bar-fill" style="width:${Math.max(6,n/max*100)}%"></div></div><span class="bar-num">${n}</span></div>`).join('');}
-  function renderStats(){ $('metric-events').textContent=flowCount.toLocaleString('es-CL');$('metric-flows').textContent=routeLayers.size.toLocaleString('es-CL');const involved=new Set(events.slice(0,30).flatMap(e=>[e.source.code,e.target.code]));$('metric-countries').textContent=involved.size.toLocaleString('es-CL');$('metric-types').textContent=Object.keys(TYPE_INFO).filter(t=>enabledTypes.has(t)).length.toLocaleString('es-CL');makeBars('origins',counters.origins);makeBars('destinations',counters.destinations);for(const type of Object.keys(TYPE_INFO)){const el=$('legend-'+slug(type));if(el)el.textContent=(counters.types[type]||0).toLocaleString('es-CL');} }
-  function clearMapFlows(){if(flowLayer)flowLayer.clearLayers();routeLayers.clear();events=[];flowCount=0;sequence=0;for(const key of Object.keys(counters)){counters[key]={};}renderEvents();renderStats();}
-  function tick(){if(paused||!map)return;const count=Math.random()<.18?2:1;for(let i=0;i<count;i++)addEvent(createEvent());}
-  function start(){if(timer)clearInterval(timer);tick();timer=setInterval(tick,reduceMotion?3600:1750);$('pause').textContent='Ⅱ PAUSAR';$('flow-state').textContent='ANIMACIÓN ACTIVA';$('connection-state').textContent='Generador visual local activo';}
-  function stop(){paused=true;if(timer)clearInterval(timer);timer=null;$('pause').textContent='▶ REANUDAR';$('flow-state').textContent='ANIMACIÓN EN PAUSA';$('connection-state').textContent='Animación pausada';}
-  $('pause').addEventListener('click',()=>{if(paused){paused=false;start();}else stop();});$('clear').addEventListener('click',()=>{clearMapFlows();if(!paused)tick();});$('reset-view').addEventListener('click',()=>{if(map)map.setView([22,4],2);});$('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen();}catch(_){$('connection-state').textContent='Pantalla completa no disponible';}});document.addEventListener('keydown',e=>{if(e.key==='f'||e.key==='F')$('fullscreen').click();if(e.key===' '&&e.target===document.body){e.preventDefault();$('pause').click();}});
-  makeLegend();const ready=initMap();updateClock();setInterval(updateClock,1000);if(ready)start();else{$('metric-events').textContent='—';$('metric-flows').textContent='—';$('metric-countries').textContent='—';$('metric-types').textContent='—';}
+  function arcPoints(a,b){
+    const [lat1,lon1]=a,[lat2,lon2]=b;
+    if (lat1===lat2 && lon1===lon2) {
+      const loop=[]; for(let i=0;i<=28;i++){const t=i/28*Math.PI*2;loop.push([lat1+2.4*Math.sin(t),lon1+2.4*Math.cos(t)]);} return loop;
+    }
+    let lonB=lon2; while(lonB-lon1>180)lonB-=360; while(lonB-lon1< -180)lonB+=360;
+    const dx=lonB-lon1,dy=lat2-lat1,dist=Math.sqrt(dx*dx+dy*dy),bend=Math.min(18,Math.max(4,dist*.16));
+    const mx=(lon1+lonB)/2,my=(lat1+lat2)/2;
+    const px= -dy/(dist||1)*bend,py=dx/(dist||1)*bend;
+    const points=[];
+    for(let i=0;i<=28;i++){const t=i/28,u=1-t;const lon=u*u*lon1+2*u*t*(mx+px)+t*t*lonB;const lat=u*u*lat1+2*u*t*(my+py)+t*t*lat2;points.push([lat,lon]);}
+    return points;
+  }
+  function regionAllows(code){
+    const mode=$('region-filter').value;
+    if(mode==='latam')return LATAM.has(code);
+    if(mode==='chile')return code==='CL';
+    return true;
+  }
+  function typeAllows(type){const selected=$('type-filter').value;return selected==='all'||selected===type;}
+  function renderCloudflare(){
+    const pairs=data?.cloudflare?.pairs||[];
+    pairs.forEach(pair=>{
+      if(!pair.origin_coords||!pair.target_coords)return;
+      if(!regionAllows(pair.origin_code)&&!regionAllows(pair.target_code))return;
+      if(!typeAllows('cloudflare'))return;
+      const pct=Number(pair.value_pct||0),weight=Math.max(1.4,Math.min(5.5,1.3+pct*.35));
+      const line=L.polyline(arcPoints(pair.origin_coords,pair.target_coords),{color:COLORS.cloudflare,weight,opacity:.78,dashArray:'8 11',className:paused?'flow-arc is-paused':'flow-arc'}).addTo(layers.cloudflare);
+      line.bindPopup(`<b>Cloudflare Radar · actividad L7 agregada</b><br>${esc(pair.origin_country)} → ${esc(pair.target_country)}<br>Participación reportada: <b>${pct.toFixed(2)}%</b><br><small>Periodo: últimas 24 horas · no es una sesión individual</small>`);
+      L.circleMarker(pair.origin_coords,{radius:3.5,color:COLORS.cloudflare,weight:1,fillOpacity:.9,fillColor:COLORS.cloudflare}).addTo(layers.cloudflare);
+      L.circleMarker(pair.target_coords,{radius:3.5,color:'#a9cfff',weight:1,fillOpacity:.9,fillColor:'#a9cfff'}).addTo(layers.cloudflare);
+    });
+  }
+  function addIpMarker(row,source){
+    const geo=row.geo;
+    if(!geo||typeof geo.lat!=='number'||typeof geo.lon!=='number')return;
+    if(!regionAllows(geo.country_code))return;
+    if(!typeAllows(source))return;
+    const color=COLORS[source],radius=source==='dshield'?6:source==='threatfox'?6:5.5;
+    const marker=L.circleMarker([geo.lat,geo.lon],{radius,color,weight:1.5,fillColor:color,fillOpacity:.78}).addTo(layers[source]);
+    const label=source==='dshield'?'IP observada por sensores DShield':source==='threatfox'?'IOC relacionado con malware · ThreatFox':'Host IP incluido en URLhaus';
+    marker.bindPopup(`<b>${label}</b><br>IP: <code>${esc(row.ip)}</code><br>Ubicación aproximada: ${esc(geo.country||'No disponible')}${geo.region?', '+esc(geo.region):''}<br><small>Geolocalización: IPWho.is · no identifica al operador ni a una víctima</small>`);
+  }
+  function renderMarkers(){
+    (data?.dshield?.ips||[]).forEach(row=>addIpMarker(row,'dshield'));
+    (data?.threatfox?.indicators||[]).forEach(row=>{if(row.ip)addIpMarker(row,'threatfox');});
+    (data?.urlhaus?.urls||[]).forEach(row=>{if(row.ip)addIpMarker(row,'urlhaus');});
+  }
+  function applyLayerToggles(){
+    layerIds.forEach(id=>{
+      const enabled=$('toggle-'+id).checked;
+      if(enabled&&!map.hasLayer(layers[id]))map.addLayer(layers[id]);
+      if(!enabled&&map.hasLayer(layers[id]))map.removeLayer(layers[id]);
+    });
+  }
+  function renderStats(){
+    const stats=data?.stats||{};
+    $('stat-pairs').textContent=fmt(stats.cloudflare_pairs);
+    $('stat-dshield').textContent=fmt(stats.dshield_ips);
+    $('stat-threatfox').textContent=fmt(stats.threatfox_iocs_24h);
+    $('stat-urlhaus').textContent=fmt(stats.urlhaus_urls_recent);
+    const geoCount=(data?.dshield?.ips||[]).filter(x=>x.geo).length;
+    $('regional-summary').textContent=`${geoCount} IP DShield geolocalizadas · Chile/LATAM destacado según registros`;
+  }
+  function collectGeoRows(mode='ip'){
+    const rows=[];
+    if(mode==='ip'){
+      const unique=new Map();
+      (data?.dshield?.ips||[]).forEach(x=>{if(x.ip&&x.geo&&!unique.has(x.ip))unique.set(x.ip,{...x,source:'DShield'});});
+      (data?.threatfox?.indicators||[]).forEach(x=>{if(x.ip&&x.geo&&!unique.has(x.ip))unique.set(x.ip,{...x,source:'ThreatFox'});});
+      (data?.urlhaus?.urls||[]).forEach(x=>{if(x.ip&&x.geo&&!unique.has(x.ip))unique.set(x.ip,{...x,source:'URLhaus'});});
+      return [...unique.values()];
+    }
+    if(mode==='malware'){
+      (data?.threatfox?.indicators||[]).forEach(x=>{if(x.ip&&x.geo)rows.push({...x,source:'ThreatFox'});});
+      return rows;
+    }
+    if(mode==='urls'){
+      (data?.urlhaus?.urls||[]).forEach(x=>{if(x.ip&&x.geo)rows.push({...x,source:'URLhaus'});});
+      return rows;
+    }
+    return rows;
+  }
+  function renderRanks(mode='ip'){
+    const counts={};
+    const selectedRegion=$('region-filter').value;
+    collectGeoRows(mode).forEach(row=>{
+      const code=row.geo?.country_code||'ZZ';
+      if(selectedRegion==='latam'&&!LATAM.has(code))return;
+      if(selectedRegion==='chile'&&code!=='CL')return;
+      const name=row.geo?.country||'País no identificado';
+      counts[name]=(counts[name]||0)+1;
+    });
+    const items=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,5);
+    const subtitles={ip:'IP ÚNICAS GEOLOCALIZADAS',malware:'IOC CON IP · THREATFOX',urls:'URL CON HOST IP · URLHAUS'};
+    $('rank-subtitle').textContent=subtitles[mode]||subtitles.ip;
+    const unit=mode==='ip'?'IP':mode==='malware'?'IOC':'URL';
+    $('rank-list').innerHTML=items.length?items.map(([name,count],i)=>`<div class="rank-row"><span class="rank-n">${i+1}</span><span class="rank-name">${esc(name)}</span><span class="rank-value">${fmt(count)} ${unit}</span></div>`).join(''):`<div class="empty-state">No hay ${unit} geolocalizadas para este filtro. Los registros sin ubicación no se asignan a un país.</div>`;
+  }
+  function eventRecords(){
+    const out=[];
+    const cf=data?.cloudflare||{};
+    (cf.pairs||[]).slice(0,8).forEach(pair=>out.push({time:cf.meta?.lastUpdated||cf.checked_at,title:`Actividad L7 agregada: ${pair.origin_country} → ${pair.target_country}`,sub:`Cloudflare Radar · ${Number(pair.value_pct||0).toFixed(2)}% del total reportado`,icon:'⌁',color:COLORS.cloudflare}));
+    (data?.dshield?.ips||[]).slice(0,6).forEach(row=>out.push({time:data.dshield.checked_at,title:`IP observada: ${row.ip}`,sub:`DShield · ${row.geo?.country||'país no geolocalizado'} · feed Top IP`,icon:'◉',color:COLORS.dshield}));
+    (data?.threatfox?.indicators||[]).slice(0,12).forEach(row=>out.push({time:row.last_seen||row.first_seen,title:`IOC ${row.threat_type||'malware'}: ${row.ioc}`,sub:`ThreatFox · ${row.malware||row.ioc_type||'indicador'}`,icon:'▲',color:COLORS.threatfox}));
+    (data?.urlhaus?.urls||[]).slice(0,8).forEach(row=>out.push({time:row.date_added,title:`URL maliciosa: ${row.host||row.url}`,sub:`URLhaus · ${row.threat||'malware'} · ${row.url_status||'estado desconocido'}`,icon:'◆',color:COLORS.urlhaus}));
+    return out.sort((a,b)=>new Date(b.time||0)-new Date(a.time||0)).slice(0,20);
+  }
+  function renderEvents(){
+    const rows=eventRecords();
+    $('event-total').textContent=`${fmt(rows.length)} registros`;
+    $('event-list').innerHTML=rows.length?rows.map(row=>`<div class="event-row"><div class="event-icon" style="color:${row.color}">${row.icon}</div><div><div class="event-title">${esc(row.title)}</div><div class="event-sub">${esc(row.sub)} · ${fmtDate(row.time)}</div></div></div>`).join(''):`<div class="empty-state">Aún no hay eventos disponibles. Ejecuta el workflow de recopilación.</div>`;
+  }
+  function renderSources(){
+    const mapStatus={cloudflare:'Cloudflare Radar',dshield:'DShield / SANS ISC',threatfox:'ThreatFox',urlhaus:'URLhaus',geoip:'Geolocalización IP · IPWho.is'};
+    const icon={cloudflare:'⌁',dshield:'◉',threatfox:'▲',urlhaus:'◆',geoip:'◎'};
+    const rows=data?.source_status||[];
+    $('source-list').innerHTML=rows.map(row=>{
+      const state=row.stale_data?'Datos anteriores':row.ok?'Operativa':'Error';
+      const klass=row.stale_data?'stale':row.ok?'ok':'';
+      const count=row.key==='geoip'?`${fmt(row.count)} IP ubicadas`:`${fmt(row.count)} registros`;
+      return `<div class="source-row"><div class="source-mark">${icon[row.key]||'•'}</div><div><div class="source-name">${esc(mapStatus[row.key]||row.name)}</div><div class="source-desc">${esc(count)} · ${fmtDate(row.stale_data ? row.last_success_at : (row.source_updated_at||row.checked_at))}</div></div><span class="source-state ${klass}" title="${esc(row.error||'Sin errores registrados')}">${state}</span></div>`;
+    }).join('')||'<div class="empty-state">Sin estado de fuentes. Esperando la primera ejecución.</div>';
+    const byKey=Object.fromEntries(rows.map(row=>[row.key,row]));
+    ['cloudflare','dshield','threatfox','urlhaus'].forEach(key=>{
+      const row=byKey[key];
+      const stamp=row ? (row.stale_data ? row.last_success_at : (row.source_updated_at||row.checked_at)) : null;
+      const target=$(`layer-updated-${key}`);
+      if(target)target.textContent=row ? `${row.stale_data?'datos anteriores':'actualizado'} ${fmtDate(stamp)}` : 'sin captura';
+    });
+    const sourceOk=rows.filter(x=>['cloudflare','dshield','threatfox','urlhaus'].includes(x.key)&&x.ok).length;
+    $('global-status').textContent=`${sourceOk}/4 fuentes operativas`;
+    $('global-dot').style.background=sourceOk===4?'#18cba0':sourceOk?'#ffb547':'#ff536f';
+  }
+  function renderDataHealth(){
+    const stamp=data?.last_checked_at||data?.generated_at;
+    $('last-update').textContent=stamp?`Recopilado: ${fmtDate(stamp)}`:'Sin actualización registrada';
+    if(!stamp){$('stale-warning').textContent='Aún no existe una captura de las fuentes. Configura CLOUDFLARE_RADAR_TOKEN y ABUSECH_AUTH_KEY en GitHub Actions y ejecuta update-threatmap.';$('stale-warning').classList.add('show');return;}
+    const age=(Date.now()-new Date(stamp).getTime())/3600000;
+    if(age>3){$('stale-warning').textContent=`Datos posiblemente desactualizados: la última recolección fue hace ${age.toFixed(1)} horas. Se conserva la última captura válida; revisa GitHub Actions.`;$('stale-warning').classList.add('show');}
+    else $('stale-warning').classList.remove('show');
+  }
+  function renderMap(){
+    layerIds.forEach(id=>layers[id].clearLayers());
+    renderCloudflare();renderMarkers();applyLayerToggles();
+  }
+  function renderAll(){
+    if(!data)return;
+    renderStats();renderRanks(document.querySelector('.rank-tab.active')?.dataset.rank||'ip');renderEvents();renderSources();renderDataHealth();renderMap();
+  }
+  async function loadData(showMessage=false){
+    try{
+      const response=await fetch(`./data/threatmap.json?ts=${Date.now()}`,{cache:'no-store'});
+      if(!response.ok)throw new Error(`HTTP ${response.status}`);
+      const payload=await response.json();
+      data=payload;renderAll();
+      if(showMessage){$('global-status').textContent='Vista actualizada';setTimeout(renderSources,1800);}
+    }catch(error){
+      $('global-status').textContent='No se pudo leer data/threatmap.json';
+      $('stale-warning').textContent=`No fue posible cargar los datos del mapa (${error.message}). Comprueba que el workflow haya generado data/threatmap.json y que GitHub Pages esté publicado.`;
+      $('stale-warning').classList.add('show');
+    }
+  }
+  function setAnimationPaused(){
+    document.querySelectorAll('.flow-arc').forEach(el=>el.classList.toggle('is-paused',paused));
+    $('pause-animation').textContent=paused?'▶ Reanudar animación':'Ⅱ Pausar animación';
+  }
+  function focusRegion(value){
+    if(value==='chile')map.setView([-33.5,-71],4);
+    else if(value==='latam')map.fitBounds([[-57,-118],[33,-30]],{padding:[25,25]});
+    else map.setView([15,-18],2);
+    renderMap();
+  }
+  function init(){
+    updateClock();setInterval(updateClock,15000);
+    if(!initMap())return;
+    $('pause-animation').addEventListener('click',()=>{paused=!paused;setAnimationPaused();});
+    $('reset-view').addEventListener('click',()=>focusRegion('global'));
+    $('refresh-data').addEventListener('click',()=>loadData(true));
+    $('region-filter').addEventListener('change',e=>{focusRegion(e.target.value);renderRanks(document.querySelector('.rank-tab.active')?.dataset.rank||'ip');});
+    $('type-filter').addEventListener('change',renderMap);
+    $('reset-filters').addEventListener('click',()=>{$('region-filter').value='global';$('type-filter').value='all';layerIds.forEach(id=>$('toggle-'+id).checked=true);focusRegion('global');renderRanks(document.querySelector('.rank-tab.active')?.dataset.rank||'ip');});
+    layerIds.forEach(id=>$('toggle-'+id).addEventListener('change',applyLayerToggles));
+    document.querySelectorAll('.rank-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.rank-tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderRanks(btn.dataset.rank);}));
+    loadData();setInterval(()=>loadData(),15*60*1000);
+    window.addEventListener('resize',()=>map.invalidateSize());
+  }
+  document.addEventListener('DOMContentLoaded',init);
 })();
 </script>
 </body>

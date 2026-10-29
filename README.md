@@ -1,181 +1,114 @@
 # CyberWatch Intel
 
-Agregador inicial de fuentes públicas de ciberseguridad, vulnerabilidades e incidentes. Diseñado para publicarse en GitHub Pages y evolucionar hacia una plataforma de Cyber Threat Intelligence (CTI).
+Agregador de inteligencia pública de ciberseguridad, vulnerabilidades e incidentes. Diseñado para GitHub Pages y GitHub Actions.
 
 ## Qué incluye
 
 - Fuentes RSS/Atom configurables en `config/sources.json`.
-- Catálogo CISA Known Exploited Vulnerabilities (KEV).
-- Consulta de CVE recientes mediante la API de NVD.
-- Normalización básica de URLs y títulos.
-- Deduplicación conservadora por URL y título exacto normalizado.
-- Panel web interactivo (`index.html`) con búsqueda, filtros por tipo, categoría, región, fuente, prioridad estimada y antigüedad; incluye salud detallada de fuentes.
-- Wallboard automático (`wallboard.html`) para pantallas de sala de monitoreo: sin desplazamiento de página, indicadores, alertas prioritarias rotativas, actividad reciente con desplazamiento suave y reloj.
-- Actualización automática con GitHub Actions.
-- Indicadores de última revisión, estado por fuente, latencia, código HTTP y última publicación disponible.
-- Puntaje heurístico de prioridad con motivos visibles; no representa probabilidad de ataque ni sustituye un análisis de riesgo.
-- Datos públicos guardados en `data/incidents.json`.
+- Catálogo CISA Known Exploited Vulnerabilities (KEV) y CVE recientes mediante NVD.
+- Deduplicación conservadora por URL normalizada y título exacto normalizado.
+- Dashboard interactivo (`index.html`) con búsqueda, filtros, salud de fuentes e indicadores.
+- Wallboard SOC (`wallboard.html`) con alertas prioritarias rotativas y actividad reciente con desplazamiento suave.
+- Threatmap conectado (`threatmap.html`) con datos públicos de Cloudflare Radar, DShield, ThreatFox y URLhaus.
+- Recopilación horaria independiente para el Threatmap mediante GitHub Actions.
 
+## Threatmap global conectado — v4.6
 
-## Mapa global de amenazas (nuevo wallboard)
+El Threatmap separa las fuentes por tipo de evidencia para evitar presentar indicadores o estadísticas como ataques individuales confirmados:
 
-Se incorpora `threatmap.html`, un segundo wallboard con mapa mundial interactivo, arcos animados entre países, clasificación por tipo de actividad, métricas de sesión y un feed de eventos recientes. Incluye filtros para DDoS, malware, phishing, fuerza bruta, explotación, ransomware, botnet/C2 y reconocimiento. Los enlaces de navegación desde el dashboard y el wallboard SOC facilitan el acceso entre vistas.
+| Capa | Fuente | Representación |
+|---|---|---|
+| Ataques geográficos L7 | Cloudflare Radar | Arcos entre países basados en pares y porcentajes agregados de ataques de capa 7 mitigados durante el periodo de consulta. |
+| Actividad observada | DShield / SANS ISC | Marcadores de IP públicas incluidas en el feed Top 10 de sensores DShield. No es una lista confirmada de atacantes. |
+| IOC de malware | ThreatFox | Indicadores recientes. Solo se dibujan IP públicas cuando se geolocalizan; hashes y dominios permanecen en el panel. |
+| URL de malware | URLhaus | URL recientes de distribución de malware. Solo se dibujan hosts que sean IP públicas y puedan geolocalizarse. |
+| Geolocalización | IPWho.is | País, región y coordenadas aproximadas de la IP. No identifica a una persona ni demuestra dónde está una víctima. |
 
-**Limitación importante de esta versión:** el mapa funciona en **modo demostración**. Los flujos, países, severidades y contadores de esta vista se generan en el navegador para ilustrar el diseño; **no representan ataques reales ni telemetría en directo**. El estado se muestra permanentemente en la interfaz para no confundir eventos de ejemplo con incidentes confirmados. Las fuentes RSS, NVD y CISA KEV que usa el colector actual aportan avisos, vulnerabilidades y boletines, no flujos de red de origen a destino.
+Los arcos Cloudflare expresan relaciones agregadas país-país (no sesiones individuales ni números absolutos). Los marcadores DShield/ThreatFox/URLhaus son capas distintas y no se conectan artificialmente entre sí. La interfaz informa fuente, estado y última actualización.
 
-### Qué hace falta para activar datos observados
+### Secretos necesarios para el Threatmap
 
-Para dibujar rutas reales se necesita una fuente que publique ambos extremos geográficos del evento, o integrar telemetría propia (firewall, IDS/IPS, WAF, EDR, SIEM o proveedor DDoS). El origen puede ser una IP observada y geolocalizada; el destino debe proceder de la observación o del registro original, no elegirse al azar. Si una fuente solo informa países de origen o conteos agregados, el wallboard deberá mostrar puntos o estadísticas y no presentar líneas como rutas reales. Por ejemplo, SANS Internet Storm Center/DShield publica datos de fuentes observadas y explica que sus reportes son agregados y no deben usarse como blocklist sin análisis: https://isc.sans.edu/api/ y https://www.dshield.org/feeds_doc.html. Esa información por sí sola no acredita una ruta origen-destino real.
+En GitHub, abre **Settings → Secrets and variables → Actions** y crea estos secretos si aún no existen:
 
-Como mínimo, un adaptador de telemetría debería normalizar cada evento en campos equivalentes a: `observed_at`, `source_country`, `destination_country`, `attack_type`, `severity`, `source_name` y `evidence_url`/`source_id`. También debe incluir ventana temporal, método de geolocalización, límites de cobertura y procedencia. Antes de habilitar un modo conectado, hay que documentar sus permisos, límites de tasa, tratamiento de IP y disponibilidad del proveedor.
+- `CLOUDFLARE_RADAR_TOKEN`: token de Cloudflare con permiso de lectura de Radar.
+- `ABUSECH_AUTH_KEY`: Auth-Key comunitaria de abuse.ch para ThreatFox y URLhaus.
 
-### Funcionamiento visual
+Las claves se leen desde el workflow y no se guardan en HTML ni en JSON. DShield e IPWho.is no requieren un token para los usos incorporados aquí.
 
-- Requiere conexión a internet para cargar Leaflet y las teselas cartográficas de CARTO/OpenStreetMap.
-- El botón **Pausar/Reanudar** detiene o reinicia la generación visual; **Reiniciar** limpia los contadores de la sesión, y **Vista global** devuelve el mapa a su encuadre inicial.
-- Los filtros de categoría actualizan el mapa, los eventos visibles y los rankings de la sesión.
-- La vista está pensada para pantallas de monitoreo y también se adapta a móvil. Usa el botón de pantalla completa o la tecla `F`.
-- Mapa base: atribuciones de OpenStreetMap y CARTO incluidas en pantalla.
+### Actualización y límites
 
-### Añadir el segundo wallboard a una instalación existente
+- Workflow: `.github/workflows/update-threatmap.yml`.
+- Programación: una vez por hora (minuto 23 UTC) y ejecución manual disponible.
+- DShield: feed estático `top10.txt`, consultado como máximo una vez por hora.
+- ThreatFox: IOC de los últimos 1 día; se conserva el recuento total y una muestra de hasta 250 indicadores para la vista.
+- URLhaus: hasta 50 URL recientes por ejecución.
+- IPWho.is: máximo de 12 consultas de IP nuevas por ejecución, caché de 30 días y máximo de 300 entradas para limitar consumo.
+- Si una fuente falla, se conserva su última captura válida y el panel marca los datos como anteriores/error. GitHub Actions puede retrasar ejecuciones programadas.
 
-Copia `threatmap.html` en la raíz del repositorio y actualiza `index.html`, `wallboard.html`, `README.md` y `CHANGELOG.md` desde el paquete incremental. **No reemplaces `data/incidents.json`**: contiene las publicaciones recopiladas de tu instalación.
+Los datos se guardan en `data/threatmap.json`, separado de `data/incidents.json` y `data/history.json`. Esto evita alterar el dashboard y su histórico actual.
+
+### Atribución y condiciones de uso
+
+- Cloudflare Radar: mostrar atribución a Cloudflare Radar y respetar CC BY-NC 4.0. Esta integración está preparada para el uso personal, educativo y demostrativo no comercial declarado para el proyecto.
+- DShield: atribuir a SANS Technology Institute, Internet Storm Center, `https://isc.sans.edu`. No revender los datos ni descargar feeds estáticos más de una vez por hora.
+- ThreatFox y URLhaus: uso comunitario sujeto a fair use y condiciones de abuse.ch.
+- IPWho.is: endpoint gratuito sin clave, con límite documentado de 1.000 solicitudes diarias por IP cliente.
+- CARTO y OpenStreetMap: se conserva la atribución visible en el mapa.
+
+Consulta `docs/THREATMAP-FUENTES-Y-DATOS.md` para metodología, condiciones, estructura y limitaciones.
+
+## Publicar en GitHub Pages
+
+1. Copia los archivos del paquete conservando sus rutas dentro de la raíz del repositorio.
+2. No reemplaces `data/incidents.json` ni `data/history.json`.
+3. Comprueba que los secretos `CLOUDFLARE_RADAR_TOKEN` y `ABUSECH_AUTH_KEY` existen en GitHub Actions.
+4. En GitHub, abre **Actions → Actualizar datos del Threatmap → Run workflow** para la primera ejecución manual.
+5. Revisa los registros y comprueba que se genere/actualice `data/threatmap.json`.
+6. Cuando GitHub Pages publique el cambio, abre `https://TU-USUARIO.github.io/cyberwatch-intel/threatmap.html`.
+
+El dashboard y wallboard SOC existentes continúan usando `data/incidents.json`; el nuevo Threatmap consume `data/threatmap.json`.
 
 ## Requisitos para ejecutar localmente
 
 - Python 3.11 o posterior recomendado.
 - Conexión a Internet.
+- `requests` para el recopilador del Threatmap; el colector principal mantiene las dependencias de `requirements.txt`.
 
 ```bash
 python -m venv .venv
-```
-
-Activar el entorno:
-
-**macOS / Linux**
-```bash
 source .venv/bin/activate
-```
-
-**Windows PowerShell**
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Instalar dependencias y ejecutar:
-
-```bash
 pip install -r requirements.txt
-python scripts/collect.py
-```
-
-Después, abre `index.html` para el panel interactivo o `wallboard.html` para la pantalla de monitoreo. Para evitar limitaciones del navegador al cargar JSON local, es mejor usar un servidor local sencillo:
-
-```bash
 python -m http.server 8000
 ```
 
-Luego visita `http://localhost:8000` para el panel interactivo o `http://localhost:8000/wallboard.html` para el wallboard.
+Para probar el Threatmap localmente, configura en el entorno `CLOUDFLARE_RADAR_TOKEN` y `ABUSECH_AUTH_KEY`, ejecuta `python scripts/collect_threatmap.py` y abre `http://localhost:8000/threatmap.html`.
 
-## Publicar en GitHub Pages
+## Wallboard SOC
 
-1. Crea un repositorio público llamado `cyberwatch-intel`.
-2. Sube todos los archivos y carpetas de este proyecto conservando su estructura.
-3. En GitHub, abre **Settings → Pages**.
-4. En **Build and deployment**, elige **Deploy from a branch**.
-5. Selecciona la rama `main` y la carpeta `/(root)`, luego guarda.
-6. En **Settings → Actions → General**, confirma que el flujo de trabajo tenga permisos de lectura y escritura para el contenido del repositorio si la organización permite modificar esa opción.
-7. Abre **Actions**, selecciona **Actualizar inteligencia pública** y ejecuta **Run workflow** para probar la primera recopilación.
-8. Revisa los registros de ejecución y el archivo `data/incidents.json`.
-9. Cuando Pages termine de publicar, usa la URL que aparece en **Settings → Pages**.
-10. Para el panel interactivo, abre `https://TU-USUARIO.github.io/cyberwatch-intel/`. Para la pantalla de sala, abre `https://TU-USUARIO.github.io/cyberwatch-intel/wallboard.html`. Sustituye `TU-USUARIO` por tu usuario de GitHub.
-11. En el equipo conectado a la pantalla, usa el navegador en pantalla completa. El botón ⛶ del wallboard activa pantalla completa; en algunos navegadores puede requerir una interacción inicial.
+`wallboard.html` presenta alertas prioritarias y actividad reciente utilizando los registros del recopilador principal. Su puntuación es heurística y orientativa; no representa probabilidad de ataque ni confirma que un sistema esté comprometido.
 
-## Wallboard para sala de monitoreo
+## Fuentes RSS y ciberseguridad
 
-`wallboard.html` está diseñado para permanecer visible en una pantalla sin que una persona tenga que desplazarse por la página. Muestra indicadores generales, hasta tres alertas prioritarias por página, con revisiones sugeridas y rotación automática cada 18 segundos cuando existe más de una página. La publicación destacada también rota cada 18 segundos. Actividad Reciente desplaza hasta 15 publicaciones en un ciclo suave de 8 píxeles por segundo, con pausa al posar el puntero o enfocar el panel; respeta la preferencia de movimiento reducido del sistema. Revisa si hay datos nuevos cada 60 segundos.
+La configuración existente incluye fuentes públicas de CISA, Cisco Talos, Unit 42, BleepingComputer, NCSC UK, CERT-EU, NIST, SANS ISC, C4ISRNET, EMAD, Zona Militar, Breaking Defense, The War Zone, CyberScoop, Google Cloud Threat Intelligence/Mandiant, SentinelLabs, Cisco PSIRT, Check Point Research, Microsoft Security Blog, Google Project Zero, Oracle Security Alerts, OpenAI News, NVIDIA Developer Blog y Meta Engineering/News Security, entre otras. La disponibilidad de cada feed puede cambiar y se valida en cada ejecución.
 
-Las alertas se priorizan con una heurística explicable que considera CISA KEV, severidad/CVSS y términos que pueden indicar explotación, ransomware, APT, zero-day o infraestructura crítica. El puntaje es orientativo, no representa probabilidad de ataque ni una evaluación completa del riesgo, y no confirma que un sistema concreto esté comprometido. La ausencia de alertas visibles no significa ausencia de amenazas. Los enlaces abren las fuentes originales en otra pestaña.
+## Deduplicación
 
-La tipografía del wallboard usa tamaños adaptables y un ajuste automático que reduce gradualmente el texto de los titulares y resúmenes cuando no cabe en el espacio disponible, manteniendo límites mínimos para proteger la legibilidad. El wallboard utiliza el mismo `data/incidents.json` que el panel interactivo. No requiere una base de datos ni servicios pagados adicionales. Si el navegador o la pantalla se reinician, configura el equipo para volver a abrir la URL del wallboard.
-
-### Fuentes de ciberdefensa y tecnología incorporadas
-
-La configuración incluye fuentes públicas de CISA, Cisco Talos, Unit 42, BleepingComputer, NCSC UK, CERT-EU, NIST, SANS ISC, C4ISRNET (Cyber y Space), EMAD, Zona Militar, Breaking Defense, The War Zone, CyberScoop, Google Cloud Threat Intelligence/Mandiant y SentinelLabs. También se agregaron canales RSS/Atom para Cisco PSIRT y Security Blog, Check Point Research, Microsoft Security Blog, Google Project Zero, Oracle Security Alerts, OpenAI News, NVIDIA Developer Blog — Cybersecurity y Meta Engineering/News Security. Se retiraron los feeds anteriores de AWS Security Blog, AWS Security Bulletins y Oracle Security Blog tras observarse problemas en su funcionamiento; la nueva fuente de Oracle usa `https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml`.
-
-Se omitieron los enlaces propuestos que devolvieron errores, redirigieron a páginas HTML en lugar de un feed, o ya estaban representados por una fuente existente. La verificación hecha desde el navegador confirma que varios endpoints responden con tipos de contenido RSS/Atom/XML; la comprobación final de que entreguen entradas válidas ocurre en el recopilador de GitHub Actions. Un feed puede cambiar o fallar temporalmente, por lo que el estado se registra en cada ejecución.
-
-## API de NVD
-
-La API pública de NVD puede utilizarse sin una clave, pero sus límites de solicitudes son menores. Si necesitas una clave, solicítala en el portal oficial de NVD y guárdala en:
-
-**Settings → Secrets and variables → Actions → New repository secret**
-
-- Nombre: `NVD_API_KEY`
-- Valor: la clave que te entregue NVD
-
-No guardes claves en el código, JSON, HTML ni en un repositorio público.
-
-## Añadir fuentes
-
-Edita `config/sources.json` y agrega un objeto a `rss_sources` con:
-
-- `name`: nombre visible de la fuente.
-- `url`: URL RSS/Atom.
-- `category`: categoría.
-- `region`: región.
-- `sector`: sectores de interés.
-
-Comprueba primero que el canal RSS esté disponible y respeta los términos de uso, límites de acceso y atribución del proveedor. No todas las páginas ofrecen RSS y algunas fuentes pueden fallar temporalmente. El recopilador conserva la fecha de recolección de los registros sin cambios y evita reescribir `data/incidents.json` cuando no hay cambios sustantivos. Publica una marca de revisión cada dos horas para detectar datos potencialmente obsoletos sin generar commits cada 30 minutos.
-
-## Qué significa la deduplicación en esta versión
-
-Se agrupan publicaciones que tienen la misma URL normalizada o el mismo título normalizado. No se fusionan automáticamente títulos solo parecidos, porque podrían referirse a incidentes diferentes.
-
-Las fichas CVE de NVD y CISA KEV pueden coexistir como registros relacionados. La siguiente fase puede incorporar una vista unificada por CVE, relaciones entre incidentes y agrupación semántica revisable.
-
-## Arquitectura preparada para evolucionar
-
-La separación entre componentes permite añadir más adelante:
-
-- Un modelo de datos de incidentes separado de artículos fuente.
-- Agrupación de incidentes por entidades, fecha, CVE y similitud.
-- Relaciones con MITRE ATT&CK cuando las fuentes las documenten.
-- Resúmenes con citas y enlaces a fuentes.
-- Historial de cambios y alertas.
-- Un backend o base de datos si los límites de archivos JSON dejan de ser suficientes.
+Se agrupan publicaciones que tienen la misma URL normalizada o el mismo título normalizado. No se fusionan automáticamente títulos solo parecidos, porque podrían referirse a incidentes diferentes. Las fichas CVE de NVD y CISA KEV pueden coexistir como registros relacionados.
 
 ## Limitaciones y buenas prácticas
 
-- La recopilación es de información pública; no accede a inteligencia clasificada.
+- La recopilación utiliza información pública y no accede a inteligencia clasificada.
+- La geolocalización IP es aproximada; no identifica personas ni atribuye autoría.
+- Los arcos Cloudflare son datos agregados y no prueban una conexión individual.
+- Los feeds/API y sus políticas pueden cambiar; verifica condiciones de uso y atribución.
 - El resultado no sustituye la verificación humana ni la respuesta a incidentes.
-- Las afirmaciones de atribución pueden ser preliminares o disputadas.
-- Los canales RSS, las APIs y las políticas pueden cambiar.
-- GitHub Actions no garantiza que cada ejecución programada ocurra exactamente a la hora prevista.
-- Los repositorios y sitios públicos son visibles por otras personas; nunca publiques credenciales, datos sensibles ni información interna.
-- Los resúmenes del RSS pueden contener HTML; el panel los muestra como texto para reducir riesgos de inyección.
-- La información pertenece a sus respectivas fuentes. Conserva la atribución y consulta las condiciones de reutilización.
+- Nunca publiques credenciales ni datos sensibles. Los repositorios públicos son visibles por terceros.
+- GitHub Actions no garantiza que cada ejecución ocurra exactamente a la hora prevista.
 
-## Fuentes configuradas inicialmente
+## Referencias oficiales
 
-- CISA Cybersecurity Advisories
-- Cisco Talos
-- Unit 42
-- BleepingComputer
-- NCSC UK
-- CERT-EU
-- NIST Cybersecurity Insights
-- SANS Internet Storm Center
-- CISA KEV
-- NVD CVE API
-
-Verifica disponibilidad y condiciones de uso antes de confiar en la continuidad de cualquier fuente.
-
-
-### Fuentes de defensa y threat intelligence (versión v3)
-
-Se añadieron feeds RSS de Breaking Defense, The War Zone (TWZ), CyberScoop, Google Cloud Threat Intelligence (Mandiant) y SentinelLabs. Las URL se contrastaron con respuestas RSS accesibles o directorios recientes de feeds; aun así, la disponibilidad puede cambiar y se valida nuevamente en cada ejecución del recopilador.
-
-Se retiraron de `config/sources.json` las fuentes que reportaron errores: NATO CCDCOE, USCYBERCOM NetDefense, Defense One — Cyber y Cyber Defense Magazine.
-
-El feed específico de informes del NCSC UK (`report-rss-feed.xml`) no se agregó porque aparece como inactivo; se conserva el feed general del NCSC que ya existía. La URL `https://cert.europa.eu/rss` no se agregó porque no se pudo confirmar su respuesta; se conserva la fuente CERT-EU que ya estaba configurada (`publications/security-advisories-rss`), sin duplicarla.
+- [Cloudflare Radar API](https://developers.cloudflare.com/radar/)
+- [DShield feeds](https://www.dshield.org/feeds_doc.html)
+- [ThreatFox Community API](https://threatfox.abuse.ch/api/)
+- [URLhaus Community API](https://urlhaus.abuse.ch/api/)
+- [IPWho.is API](https://ipwhois.io/documentation)
