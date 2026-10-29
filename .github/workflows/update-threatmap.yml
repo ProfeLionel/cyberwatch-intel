@@ -1,0 +1,61 @@
+name: Actualizar datos del Threatmap
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Una ejecución por hora. GitHub Actions puede retrasar los schedules.
+    - cron: "23 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-threatmap
+  cancel-in-progress: false
+
+jobs:
+  collect-threatmap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v5
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependencia del recopilador
+        run: python -m pip install --disable-pip-version-check "requests==2.32.5"
+
+      - name: Recopilar datos de Threatmap
+        env:
+          CLOUDFLARE_RADAR_TOKEN: ${{ secrets.CLOUDFLARE_RADAR_TOKEN }}
+          ABUSECH_AUTH_KEY: ${{ secrets.ABUSECH_AUTH_KEY }}
+        run: python scripts/collect_threatmap.py
+
+      - name: Publicar snapshot del Threatmap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/threatmap.json
+          if git diff --cached --quiet; then
+            echo "No hay cambios que guardar."
+          else
+            git commit -m "Actualizar datos del Threatmap"
+            # Rebase/retry para evitar perder una actualización si el workflow
+            # principal del dashboard publica otro archivo al mismo tiempo.
+            for attempt in 1 2 3; do
+              git fetch origin "$GITHUB_REF_NAME"
+              git rebase "origin/$GITHUB_REF_NAME"
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                exit 0
+              fi
+              echo "Push no realizado; reintentando (${attempt}/3)."
+              sleep $((attempt * 3))
+            done
+            echo "No fue posible publicar el snapshot después de 3 intentos."
+            exit 1
+          fi
