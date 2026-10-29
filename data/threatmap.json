@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "last_checked_at": null,
+  "notice": "Pendiente de la primera ejecución del workflow. Cloudflare muestra estadísticas agregadas de capa 7. DShield informa IP observadas por sensores. ThreatFox y URLhaus publican IOC. Una IP geolocalizada no identifica a una persona ni demuestra una víctima.",
+  "cloudflare": {"pairs": [], "meta": {}, "checked_at": null, "last_success_at": null},
+  "dshield": {"ips": [], "count": 0, "checked_at": null, "last_success_at": null},
+  "threatfox": {"indicator_count": 0, "indicators": [], "checked_at": null, "last_success_at": null},
+  "urlhaus": {"url_count": 0, "urls": [], "checked_at": null, "last_success_at": null},
+  "geo_cache": {},
+  "source_status": [
+    {"key": "cloudflare", "name": "Cloudflare Radar", "ok": false, "checked_at": null, "count": 0, "error": "Pendiente de la primera ejecución.", "stale_data": false},
+    {"key": "dshield", "name": "DShield / SANS ISC", "ok": false, "checked_at": null, "count": 0, "error": "Pendiente de la primera ejecución.", "stale_data": false},
+    {"key": "threatfox", "name": "ThreatFox", "ok": false, "checked_at": null, "count": 0, "error": "Pendiente de la primera ejecución.", "stale_data": false},
+    {"key": "urlhaus", "name": "URLhaus", "ok": false, "checked_at": null, "count": 0, "error": "Pendiente de la primera ejecución.", "stale_data": false},
+    {"key": "geoip", "name": "Geolocalización IP (IPWho.is)", "ok": false, "checked_at": null, "count": 0, "error": "Pendiente de la primera ejecución."}
+  ],
+  "stats": {"cloudflare_pairs": 0, "dshield_ips": 0, "threatfox_iocs_24h": 0, "urlhaus_urls_recent": 0, "geolocated_dshield_ips": 0, "sources_ok": 0, "sources_total": 4},
+  "attribution": {
+    "cloudflare": "Cloudflare Radar · datos bajo CC BY-NC 4.0",
+    "dshield": "SANS Technology Institute, Internet Storm Center · isc.sans.edu",
+    "threatfox": "abuse.ch / ThreatFox · uso comunitario sujeto a fair use",
+    "urlhaus": "abuse.ch / URLhaus · uso comunitario sujeto a fair use",
+    "geoip": "IPWho.is · geolocalización aproximada"
+  }
+}
