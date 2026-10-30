@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T22:42:47+00:00",
-  "last_checked_at": "2026-10-29T22:42:47+00:00",
+  "generated_at": "2026-10-30T02:41:26+00:00",
+  "last_checked_at": "2026-10-30T02:41:26+00:00",
   "notice": "Cloudflare muestra estadísticas agregadas de capa 7. DShield informa IP observadas por sensores. ThreatFox y URLhaus publican IOC. Una IP geolocalizada no identifica a una persona ni demuestra una víctima.",
   "cloudflare": {
     "pairs": [
@@ -10,7 +10,7 @@
         "origin_country": "United States",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 11.036928,
+        "value_pct": 10.614889,
         "origin_coords": [
           39.8,
           -98.6
@@ -26,7 +26,7 @@
         "origin_country": "China",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 4.800251,
+        "value_pct": 4.939571,
         "origin_coords": [
           35.9,
           104.2
@@ -42,7 +42,7 @@
         "origin_country": "Netherlands",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 4.737758,
+        "value_pct": 4.125786,
         "origin_coords": [
           52.1,
           5.3
@@ -58,7 +58,7 @@
         "origin_country": "Germany",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 3.764353,
+        "value_pct": 3.689806,
         "origin_coords": [
           51.2,
           10.4
@@ -70,11 +70,43 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
+        "origin_code": "ID",
+        "origin_country": "Indonesia",
+        "target_code": "CY",
+        "target_country": "Cyprus",
+        "value_pct": 2.68405,
+        "origin_coords": [
+          -0.8,
+          113.9
+        ],
+        "target_coords": [
+          35.1,
+          33.4
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "US",
+        "origin_country": "United States",
+        "target_code": "CN",
+        "target_country": "China",
+        "value_pct": 2.538684,
+        "origin_coords": [
+          39.8,
+          -98.6
+        ],
+        "target_coords": [
+          35.9,
+          104.2
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
         "origin_code": "RU",
         "origin_country": "Russian Federation",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 2.087256,
+        "value_pct": 2.456054,
         "origin_coords": [
           61.5,
           105.3
@@ -88,25 +120,9 @@
       {
         "origin_code": "US",
         "origin_country": "United States",
-        "target_code": "CN",
-        "target_country": "China",
-        "value_pct": 2.032069,
-        "origin_coords": [
-          39.8,
-          -98.6
-        ],
-        "target_coords": [
-          35.9,
-          104.2
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "US",
-        "origin_country": "United States",
         "target_code": "CA",
         "target_country": "Canada",
-        "value_pct": 1.918436,
+        "value_pct": 2.158852,
         "origin_coords": [
           39.8,
           -98.6
@@ -118,11 +134,27 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
+        "origin_code": "ID",
+        "origin_country": "Indonesia",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.92131,
+        "origin_coords": [
+          -0.8,
+          113.9
+        ],
+        "target_coords": [
+          39.8,
+          -98.6
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
         "origin_code": "SG",
         "origin_country": "Singapore",
         "target_code": "IL",
         "target_country": "Israel",
-        "value_pct": 1.846747,
+        "value_pct": 1.77219,
         "origin_coords": [
           1.35,
           103.8
@@ -134,59 +166,11 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
-        "origin_code": "BR",
-        "origin_country": "Brazil",
-        "target_code": "US",
-        "target_country": "United States",
-        "value_pct": 1.697284,
-        "origin_coords": [
-          -10.8,
-          -52.9
-        ],
-        "target_coords": [
-          39.8,
-          -98.6
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "ID",
-        "origin_country": "Indonesia",
-        "target_code": "US",
-        "target_country": "United States",
-        "value_pct": 1.621585,
-        "origin_coords": [
-          -0.8,
-          113.9
-        ],
-        "target_coords": [
-          39.8,
-          -98.6
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "ID",
-        "origin_country": "Indonesia",
-        "target_code": "CY",
-        "target_country": "Cyprus",
-        "value_pct": 1.525951,
-        "origin_coords": [
-          -0.8,
-          113.9
-        ],
-        "target_coords": [
-          35.1,
-          33.4
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
         "origin_code": "VN",
         "origin_country": "Vietnam",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.512807,
+        "value_pct": 1.750277,
         "origin_coords": [
           16.0,
           107.8
@@ -198,46 +182,14 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
-        "origin_code": "US",
-        "origin_country": "United States",
-        "target_code": "HK",
-        "target_country": "Hong Kong",
-        "value_pct": 1.380731,
-        "origin_coords": [
-          39.8,
-          -98.6
-        ],
-        "target_coords": [
-          22.3,
-          114.2
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "PL",
-        "origin_country": "Poland",
+        "origin_code": "BR",
+        "origin_country": "Brazil",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.26465,
+        "value_pct": 1.658268,
         "origin_coords": [
-          52.0,
-          19.1
-        ],
-        "target_coords": [
-          39.8,
-          -98.6
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "SG",
-        "origin_country": "Singapore",
-        "target_code": "US",
-        "target_country": "United States",
-        "value_pct": 1.200668,
-        "origin_coords": [
-          1.35,
-          103.8
+          -10.8,
+          -52.9
         ],
         "target_coords": [
           39.8,
@@ -250,10 +202,74 @@
         "origin_country": "France",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.199885,
+        "value_pct": 1.296187,
         "origin_coords": [
           46.2,
           2.2
+        ],
+        "target_coords": [
+          39.8,
+          -98.6
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "US",
+        "origin_country": "United States",
+        "target_code": "HK",
+        "target_country": "Hong Kong",
+        "value_pct": 1.272941,
+        "origin_coords": [
+          39.8,
+          -98.6
+        ],
+        "target_coords": [
+          22.3,
+          114.2
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "SG",
+        "origin_country": "Singapore",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.227614,
+        "origin_coords": [
+          1.35,
+          103.8
+        ],
+        "target_coords": [
+          39.8,
+          -98.6
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "FI",
+        "origin_country": "Finland",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.180535,
+        "origin_coords": [
+          64.0,
+          26.0
+        ],
+        "target_coords": [
+          39.8,
+          -98.6
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "JP",
+        "origin_country": "Japan",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.165918,
+        "origin_coords": [
+          36.2,
+          138.3
         ],
         "target_coords": [
           39.8,
@@ -266,7 +282,7 @@
         "origin_country": "India",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.181568,
+        "value_pct": 1.138735,
         "origin_coords": [
           21.0,
           78.0
@@ -278,18 +294,18 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
-        "origin_code": "DE",
-        "origin_country": "Germany",
-        "target_code": "AU",
-        "target_country": "Australia",
-        "value_pct": 1.173918,
+        "origin_code": "PL",
+        "origin_country": "Poland",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.08868,
         "origin_coords": [
-          51.2,
-          10.4
+          52.0,
+          19.1
         ],
         "target_coords": [
-          -25.3,
-          133.8
+          39.8,
+          -98.6
         ],
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
@@ -298,7 +314,7 @@
         "origin_country": "United States",
         "target_code": "JP",
         "target_country": "Japan",
-        "value_pct": 1.142446,
+        "value_pct": 1.077229,
         "origin_coords": [
           39.8,
           -98.6
@@ -308,30 +324,14 @@
           138.3
         ],
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "FI",
-        "origin_country": "Finland",
-        "target_code": "US",
-        "target_country": "United States",
-        "value_pct": 1.098946,
-        "origin_coords": [
-          64.0,
-          26.0
-        ],
-        "target_coords": [
-          39.8,
-          -98.6
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       }
     ],
     "meta": {
-      "last_updated": "2026-10-29T21:30:00Z",
+      "last_updated": "2026-10-30T00:30:00Z",
       "date_range": [
         {
-          "startTime": "2026-10-28T22:00:00Z",
-          "endTime": "2026-10-29T22:00:00Z"
+          "startTime": "2026-10-29T02:00:00Z",
+          "endTime": "2026-10-30T02:00:00Z"
         }
       ],
       "normalization": "PERCENTAGE",
@@ -342,8 +342,8 @@
         }
       ]
     },
-    "checked_at": "2026-10-29T22:42:42+00:00",
-    "last_success_at": "2026-10-29T22:42:42+00:00"
+    "checked_at": "2026-10-30T02:41:22+00:00",
+    "last_success_at": "2026-10-30T02:41:22+00:00"
   },
   "dshield": {
     "ips": [
@@ -499,8 +499,8 @@
       }
     ],
     "count": 10,
-    "checked_at": "2026-10-29T22:42:44+00:00",
-    "last_success_at": "2026-10-29T22:42:44+00:00",
+    "checked_at": "2026-10-30T02:41:23+00:00",
+    "last_success_at": "2026-10-30T02:41:23+00:00",
     "feed_url": "https://feeds.dshield.org/feeds/top10.txt"
   },
   "threatfox": {
@@ -513,353 +513,56 @@
     "url_count": 50,
     "urls": [
       {
-        "id": "4045125",
-        "url": "https://github.com/Pausebeyondmattock/happ-win64/releases/download/happ-win64/happ_windows.exe",
-        "host": "github.com",
+        "id": "4045647",
+        "url": "http://123.8.55.68:54062/i",
+        "host": "123.8.55.68",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:21 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045124",
-        "url": "https://github.com/Pausebeyondmattock/happ-desktop/releases/download/happ-desktop/happ_windows.exe",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:21 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045123",
-        "url": "https://github.com/Pausebeyondmattock/happ-proxy/releases/download/happ-proxy/happ_windows.exe",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:21 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045122",
-        "url": "https://github.com/Pauseiurampart/happ-vpn/releases/download/happ-vpn/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045121",
-        "url": "https://github.com/Pauseiurampart/happ/releases/download/happ/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045120",
-        "url": "https://github.com/Pathzorseek32/happ-vpn/releases/download/happ-vpn/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045119",
-        "url": "https://github.com/Passbinhelix93/happ-plus/releases/download/happ-plus/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045118",
-        "url": "https://github.com/Passbinhelix93/happ/releases/download/happ/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045117",
-        "url": "https://github.com/Passbinhelix93/happ-vpn/releases/download/happ-vpn/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045116",
-        "url": "https://github.com/Passbinhelix93/happ/releases/download/happ/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:17 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045115",
-        "url": "https://github.com/Passbinhelix93/happ-plus-vpn/releases/download/happ-plus-vpn/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:15 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045114",
-        "url": "https://github.com/Pausebeyondmattock/happ/releases/download/happ/happ_windows.exe",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:13 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045113",
-        "url": "https://github.com/Pathzorseek32/happ-plus/releases/download/happ-plus/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:11 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045112",
-        "url": "https://github.com/Passbinhelix93/happ-vpn/releases/download/happ-vpn/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:10 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045111",
-        "url": "https://github.com/Pauseiurampart/happ/releases/download/happ/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:09 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045110",
-        "url": "https://github.com/Pauseiurampart/happ-plus/releases/download/happ-plus/happ_windows.rar",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:09 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045109",
-        "url": "https://github.com/Pathzorseek32/happ-vpn/releases/download/happ-vpn/happ_windows.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:41:09 UTC",
-        "last_online": null,
-        "tags": [
-          "exe",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045108",
-        "url": "http://83.249.238.97:42426/bin.sh",
-        "host": "83.249.238.97",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:32:06 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "83.249.238.97",
-        "geo": {
-          "country": "Sweden",
-          "country_code": "SE",
-          "region": "Stockholm County",
-          "city": "Stockholm",
-          "lat": 59.3293755,
-          "lon": 18.0687077,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-29T22:42:47+00:00"
-        }
-      },
-      {
-        "id": "4045107",
-        "url": "http://45.231.145.15:46651/bin.sh",
-        "host": "45.231.145.15",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:28:16 UTC",
+        "date_added": "2026-10-30 02:39:18 UTC",
         "last_online": null,
         "tags": [
           "32-bit",
-          "arm",
           "elf",
-          "mirai",
+          "mips",
           "Mozi"
         ],
         "reporter": "geenensp",
-        "ip": "45.231.145.15",
+        "ip": "123.8.55.68",
         "geo": {
-          "country": "Brazil",
-          "country_code": "BR",
-          "region": "Minas Gerais",
-          "city": "Governador Valadares",
-          "lat": -18.8511097,
-          "lon": -41.9494416,
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577783,
+          "lon": 113.648608,
           "geo_source": "IPWho.is",
           "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-29T22:42:47+00:00"
+          "lookup_at": "2026-10-30T02:41:24+00:00"
         }
       },
       {
-        "id": "4045106",
-        "url": "https://github.com/OctagonHunterAwning/FREe-vpN/releases/download/1.9.1/freevpn.zip",
+        "id": "4045646",
+        "url": "https://github.com/RegimentChef/happ-windows-11/releases/download/4.2.4/happ_windows.exe",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:50 UTC",
+        "date_added": "2026-10-30 02:34:06 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045645",
+        "url": "https://github.com/Samuraiireliminate/pLANEt_vPn/releases/download/1.14.8/planetvpn.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:23 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -871,12 +574,284 @@
         "geo": null
       },
       {
-        "id": "4045105",
-        "url": "https://github.com/NatureDriverUncover/frEE_vPn/releases/download/1.14.0/freevpn.zip",
+        "id": "4045644",
+        "url": "https://github.com/PulseMasterShadow/happ-vpn/releases/download/4.2.1/happ_windows.exe",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:45 UTC",
+        "date_added": "2026-10-30 02:33:20 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045643",
+        "url": "https://github.com/PulseMasterShadow/happ-windows/releases/download/4.2.1/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:20 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045642",
+        "url": "https://github.com/RegimentChef/happ/releases/download/4.2.7/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:19 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045641",
+        "url": "https://github.com/RegimentChef/happ-desktop/releases/download/4.2.6/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:18 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045640",
+        "url": "https://github.com/RedArtisan53/happ/releases/download/4.2.7/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:18 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045639",
+        "url": "https://github.com/RedArtisan53/happ-windows/releases/download/4.2.3/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:17 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045638",
+        "url": "https://github.com/RegimentChef/happ-win64/releases/download/4.2.5/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:17 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045637",
+        "url": "https://github.com/RedArtisan53/happ-desktop/releases/download/4.2.6/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:13 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045636",
+        "url": "https://github.com/PulseMasterShadow/happ-desktop/releases/download/4.2.1/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:10 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045635",
+        "url": "https://github.com/RegimentChef/happ-windows-10/releases/download/4.2.3/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:10 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045634",
+        "url": "https://github.com/PulseMasterShadow/happ-proxy/releases/download/4.2.1/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045633",
+        "url": "https://github.com/RegimentChef/happ-windows/releases/download/4.2.3/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045632",
+        "url": "https://github.com/RedArtisan53/happ-windows-11/releases/download/4.2.4/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045631",
+        "url": "https://github.com/RedArtisan53/happ-win64/releases/download/4.2.5/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045630",
+        "url": "https://github.com/RedArtisan53/happ-windows-10/releases/download/4.2.3/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:07 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045629",
+        "url": "https://github.com/PulseMasterShadow/happ/releases/download/4.2.1/happ_windows.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:33:07 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045628",
+        "url": "https://github.com/tgwsproxy-socks5/tgwsproxy-socks5.github.io/releases/download/TgWsProxy/tg-ws-proxy.exe",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:32:40 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045627",
+        "url": "https://github.com/Samuraiireliminate/WinDow-VpN/releases/download/1.8.4/vpnwindow.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:32:27 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -888,12 +863,12 @@
         "geo": null
       },
       {
-        "id": "4045104",
-        "url": "https://github.com/Nebulaoemanor/ProTON-VPn/releases/download/1.14.3/protonvpn.zip",
+        "id": "4045626",
+        "url": "https://github.com/Samuraianillustrate/mICroSOFt_ACtivAtion/releases/download/3.12/Microsoft-Activation-Scripts.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:41 UTC",
+        "date_added": "2026-10-30 02:32:21 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -905,12 +880,12 @@
         "geo": null
       },
       {
-        "id": "4045103",
-        "url": "https://github.com/Nebulaoemanor/FREE-vPn/releases/download/1.14.2/freevpn.zip",
+        "id": "4045625",
+        "url": "https://github.com/Samuraianillustrate/mICROsOFt_aCtivatIon_sCRIptS/releases/download/3.12/Microsoft-Activation-Scripts.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:40 UTC",
+        "date_added": "2026-10-30 02:32:19 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -922,12 +897,12 @@
         "geo": null
       },
       {
-        "id": "4045102",
-        "url": "https://github.com/NatureDriverUncover/WInDOw_VPn/releases/download/1.12.8/vpnwindow.zip",
+        "id": "4045624",
+        "url": "https://github.com/Samuraiireliminate/PRotON-Vpn/releases/download/1.14.6/protonvpn.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:35 UTC",
+        "date_added": "2026-10-30 02:32:10 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -939,265 +914,269 @@
         "geo": null
       },
       {
-        "id": "4045101",
-        "url": "https://github.com/Nebulaoemanor/PLanEt-vPn/releases/download/1.14.0/planetvpn.zip",
-        "host": "github.com",
+        "id": "4045623",
+        "url": "http://175.174.75.114:52133/bin.sh",
+        "host": "175.174.75.114",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:32 UTC",
+        "date_added": "2026-10-30 02:32:09 UTC",
         "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "175.174.75.114",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Liaoning Sheng",
+          "city": "Shenyang",
+          "lat": 41.7922226,
+          "lon": 123.4327789,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:24+00:00"
+        }
       },
       {
-        "id": "4045100",
-        "url": "https://github.com/NatureDriverUncover/protOn_vpn/releases/download/1.14.1/protonvpn.zip",
-        "host": "github.com",
+        "id": "4045622",
+        "url": "http://123.7.220.16:36962/bin.sh",
+        "host": "123.7.220.16",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:27:27 UTC",
+        "date_added": "2026-10-30 02:32:09 UTC",
         "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "123.7.220.16",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577774,
+          "lon": 113.6486113,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:24+00:00"
+        }
       },
       {
-        "id": "4045099",
-        "url": "https://github.com/NatureDriverUncover/adguARD-VPN/releases/download/1.14.0/adguardvpn.zip",
-        "host": "github.com",
+        "id": "4045621",
+        "url": "http://116.138.47.85:52289/bin.sh",
+        "host": "116.138.47.85",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:26:39 UTC",
+        "date_added": "2026-10-30 02:32:08 UTC",
         "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "116.138.47.85",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Beijing",
+          "city": "Beijing",
+          "lat": 39.9074752,
+          "lon": 116.3972298,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:25+00:00"
+        }
       },
       {
-        "id": "4045098",
-        "url": "https://github.com/OctagonHunterAwning/prOtoN-Vpn/releases/download/1.9.2/protonvpn.zip",
-        "host": "github.com",
-        "url_status": "offline",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:24:26 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045097",
-        "url": "https://github.com/OliveInfiltrator/frEE-Vpn/releases/download/1.8.5/freevpn.zip",
-        "host": "github.com",
+        "id": "4045620",
+        "url": "http://171.38.217.6:45678/i",
+        "host": "171.38.217.6",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045096",
-        "url": "https://github.com/OliveInfiltrator/PlanEt_vpn/releases/download/1.8.5/planetvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045095",
-        "url": "https://github.com/OliveInfiltrator/pROton-VPN/releases/download/1.8.5/protonvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045094",
-        "url": "https://github.com/OliveInfiltrator/adGUARd-vPN/releases/download/1.8.5/adguardvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045093",
-        "url": "https://github.com/NatureDriverUncover/pLaNet-vpN/releases/download/1.13.8/planetvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045092",
-        "url": "https://github.com/OliveInfiltrator/WiNDOw-vPn/releases/download/1.8.5/vpnwindow.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045091",
-        "url": "https://github.com/OctagonHunterAwning/PLaNeT-vPN/releases/download/1.9.2/planetvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:16 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045090",
-        "url": "https://github.com/Nebulaoemanor/WInDOw_vPN/releases/download/1.12.9/vpnwindow.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:23:15 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045089",
-        "url": "http://58.247.242.14:47291/i",
-        "host": "58.247.242.14",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:19:24 UTC",
+        "date_added": "2026-10-30 02:32:08 UTC",
         "last_online": null,
         "tags": [
           "mirai"
         ],
         "reporter": "adliwahid",
-        "ip": "58.247.242.14",
-        "geo": null
+        "ip": "171.38.217.6",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Guangxi Zhuangzu Zizhiqu",
+          "city": "Nanning",
+          "lat": 22.8166707,
+          "lon": 108.3166722,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:25+00:00"
+        }
       },
       {
-        "id": "4045088",
-        "url": "http://118.251.114.47:58069/i",
-        "host": "118.251.114.47",
+        "id": "4045619",
+        "url": "https://github.com/Samuraianillustrate/mICrOsOft-kmS-ActiVAtion-SCIptS/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:19:18 UTC",
+        "date_added": "2026-10-30 02:32:08 UTC",
         "last_online": null,
         "tags": [
-          "32-bit",
-          "arm",
-          "elf",
-          "mirai",
-          "Mozi"
+          "github",
+          "SalatStealer",
+          "zapret"
         ],
-        "reporter": "geenensp",
-        "ip": "118.251.114.47",
+        "reporter": "wristhulk",
+        "ip": null,
         "geo": null
       },
       {
-        "id": "4045087",
-        "url": "http://42.231.90.20:60447/i",
-        "host": "42.231.90.20",
+        "id": "4045618",
+        "url": "http://182.121.84.130:42684/i",
+        "host": "182.121.84.130",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:19:09 UTC",
+        "date_added": "2026-10-30 02:32:08 UTC",
         "last_online": null,
         "tags": [
           "Mozi"
         ],
         "reporter": "adliwahid",
-        "ip": "42.231.90.20",
-        "geo": null
+        "ip": "182.121.84.130",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577783,
+          "lon": 113.648608,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:25+00:00"
+        }
       },
       {
-        "id": "4045086",
-        "url": "https://github.com/MysticGunsmithCock/MiCrOsoft-ActivAtioN_ScrIpTS-GIthUb/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "id": "4045617",
+        "url": "http://59.96.142.175:47749/i",
+        "host": "59.96.142.175",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:32:08 UTC",
+        "last_online": null,
+        "tags": [
+          "Mozi"
+        ],
+        "reporter": "adliwahid",
+        "ip": "59.96.142.175",
+        "geo": {
+          "country": "India",
+          "country_code": "IN",
+          "region": "Tamil Nadu",
+          "city": "Chennai",
+          "lat": 13.087844,
+          "lon": 80.2784675,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:25+00:00"
+        }
+      },
+      {
+        "id": "4045616",
+        "url": "http://125.43.230.30:41236/bin.sh",
+        "host": "125.43.230.30",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:26:18 UTC",
+        "last_online": null,
+        "tags": [
+          "32-bit",
+          "elf",
+          "mips",
+          "Mozi"
+        ],
+        "reporter": "geenensp",
+        "ip": "125.43.230.30",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577783,
+          "lon": 113.648608,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:25+00:00"
+        }
+      },
+      {
+        "id": "4045615",
+        "url": "https://github.com/SavageManagerBarn/happ-windows/releases/download/happ-windows/happ_windows.rar",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:19:03 UTC",
+        "date_added": "2026-10-30 02:21:15 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045614",
+        "url": "https://github.com/SavageManagerBarn/happ-vpn-free/releases/download/happ-vpn-free/happ_windows.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:21:13 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045613",
+        "url": "https://github.com/SavageManagerBarn/happ-proxy/releases/download/happ-proxy/happ_windows.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:21:11 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045612",
+        "url": "https://github.com/SavageManagerBarn/happ-github/releases/download/happ-github/happ_windows.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:21:10 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045611",
+        "url": "https://github.com/SaviorConverter/haPp/releases/download/1.8.4/happ.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:20:16 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1209,12 +1188,105 @@
         "geo": null
       },
       {
-        "id": "4045085",
-        "url": "https://github.com/MysticGunsmithCock/MicrOSofT_ACTivATion_kEy/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "id": "4045610",
+        "url": "https://github.com/SavageManagerBarn/happ-github/releases/download/happ-github/happ_windows.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:18:54 UTC",
+        "date_added": "2026-10-30 02:19:17 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045609",
+        "url": "https://github.com/SavageManagerBarn/happ-proxy/releases/download/happ-proxy/happ_windows.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:19:17 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045608",
+        "url": "https://github.com/SavageManagerBarn/happ-windows/releases/download/happ-windows/happ_windows.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:19:14 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045607",
+        "url": "https://github.com/SavageManagerBarn/happ-vpn-free/releases/download/happ-vpn-free/happ_windows.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:19:10 UTC",
+        "last_online": null,
+        "tags": [
+          "exe",
+          "github",
+          "SalatStealer"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4045606",
+        "url": "http://160.176.196.201:51769/i",
+        "host": "160.176.196.201",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:17:06 UTC",
+        "last_online": null,
+        "tags": [
+          "Mozi"
+        ],
+        "reporter": "adliwahid",
+        "ip": "160.176.196.201",
+        "geo": {
+          "country": "Morocco",
+          "country_code": "MA",
+          "region": "Fes-Meknes",
+          "city": "Meknes",
+          "lat": 33.8935215,
+          "lon": -5.5472654,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:26+00:00"
+        }
+      },
+      {
+        "id": "4045605",
+        "url": "https://github.com/Samuraianillustrate/mICroSoft-ACTIvaTIoN-Key/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 02:10:19 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1226,12 +1298,12 @@
         "geo": null
       },
       {
-        "id": "4045084",
-        "url": "https://github.com/Nucleusaoexterminate/MICroSoFt-kMS-AcTIvatiON-Scipts/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "id": "4045604",
+        "url": "https://github.com/Samuraianillustrate/miCrosOFt_ACtIVAtIOn-ScrIptS_gITHUB/releases/download/3.12/Microsoft-Activation-Scripts.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:18:49 UTC",
+        "date_added": "2026-10-30 02:10:12 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1243,12 +1315,12 @@
         "geo": null
       },
       {
-        "id": "4045083",
-        "url": "https://github.com/OctagonStatesman/mICROSOFT-aCTiVatIOn/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "id": "4045603",
+        "url": "https://github.com/Routeeicut23/prOTOn_vpN/releases/download/1.10.0/protonvpn.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:18:47 UTC",
+        "date_added": "2026-10-30 02:02:12 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1260,12 +1332,12 @@
         "geo": null
       },
       {
-        "id": "4045082",
-        "url": "https://github.com/OctagonStatesman/mICrosOFT_activaTion-key/releases/download/3.12/Microsoft-Activation-Scripts.zip",
+        "id": "4045602",
+        "url": "https://github.com/Routeeicut23/WIndow-vpn/releases/download/1.10.0/vpnwindow.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:18:45 UTC",
+        "date_added": "2026-10-30 02:02:11 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1277,110 +1349,90 @@
         "geo": null
       },
       {
-        "id": "4045081",
-        "url": "https://github.com/Nucleusaoexterminate/mIcrosoft-aCtiVATiON-scRiPtS/releases/download/3.12/Microsoft-Activation-Scripts.zip",
-        "host": "github.com",
+        "id": "4045601",
+        "url": "https://raw.githubusercontent.com/Saharshba/Student-Learning-Management-System/refs/heads/main/.tools/apache-maven-3.9.9-bin.zip",
+        "host": "raw.githubusercontent.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:17:19 UTC",
+        "date_added": "2026-10-30 02:02:07 UTC",
         "last_online": null,
         "tags": [
           "github",
-          "SalatStealer",
-          "zapret"
+          "SmartLoader",
+          "zip"
         ],
         "reporter": "wristhulk",
         "ip": null,
         "geo": null
       },
       {
-        "id": "4045080",
-        "url": "https://github.com/MysticGunsmithCock/mIcROsoFT-ActIVatIon/releases/download/3.12/Microsoft-Activation-Scripts.zip",
-        "host": "github.com",
+        "id": "4045600",
+        "url": "http://182.116.38.41:49535/i",
+        "host": "182.116.38.41",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:17:04 UTC",
+        "date_added": "2026-10-30 02:02:07 UTC",
         "last_online": null,
         "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
+          "Mozi"
         ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
+        "reporter": "adliwahid",
+        "ip": "182.116.38.41",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577774,
+          "lon": 113.6486113,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:26+00:00"
+        }
       },
       {
-        "id": "4045079",
-        "url": "https://github.com/Nucleusaoexterminate/MicrOSoft-aCtiVATION/releases/download/3.12/Microsoft-Activation-Scripts.zip",
-        "host": "github.com",
-        "url_status": "offline",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:14:22 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045078",
-        "url": "https://github.com/OctagonStatesman/miCRosOft-actIvAtion_SCRipTs/releases/download/3.12/Microsoft-Activation-Scripts.zip",
-        "host": "github.com",
+        "id": "4045599",
+        "url": "http://125.46.131.53:41661/i",
+        "host": "125.46.131.53",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:14:14 UTC",
+        "date_added": "2026-10-30 02:02:07 UTC",
         "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "125.46.131.53",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577774,
+          "lon": 113.6486113,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-30T02:41:26+00:00"
+        }
       },
       {
-        "id": "4045077",
-        "url": "https://github.com/MuseumSergeantRemedy/AdGUArD-vPN/releases/download/1.7.7/adguardvpn.zip",
-        "host": "github.com",
+        "id": "4045598",
+        "url": "https://raw.githubusercontent.com/terrestris/shogun-docker/refs/heads/main/shogun-geoserver/additional_libs/geoserver-2.28.0-sec-keycloak-plugin.zip",
+        "host": "raw.githubusercontent.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-29 22:14:13 UTC",
+        "date_added": "2026-10-30 01:48:09 UTC",
         "last_online": null,
         "tags": [
           "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4045076",
-        "url": "https://github.com/Nebulaoemanor/AdgUaRd-vpN/releases/download/1.14.3/adguardvpn.zip",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-29 22:14:13 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
+          "SmartLoader",
+          "zip"
         ],
         "reporter": "wristhulk",
         "ip": null,
         "geo": null
       }
     ],
-    "checked_at": "2026-10-29T22:42:44+00:00",
-    "last_success_at": "2026-10-29T22:42:44+00:00"
+    "checked_at": "2026-10-30T02:41:23+00:00",
+    "last_success_at": "2026-10-30T02:41:23+00:00"
   },
   "geo_cache": {
     "23.94.68.19": {
@@ -1514,6 +1566,127 @@
       "geo_source": "IPWho.is",
       "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
       "lookup_at": "2026-10-29T22:42:47+00:00"
+    },
+    "123.8.55.68": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:24+00:00"
+    },
+    "175.174.75.114": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Liaoning Sheng",
+      "city": "Shenyang",
+      "lat": 41.7922226,
+      "lon": 123.4327789,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:24+00:00"
+    },
+    "123.7.220.16": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577774,
+      "lon": 113.6486113,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:24+00:00"
+    },
+    "116.138.47.85": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Beijing",
+      "city": "Beijing",
+      "lat": 39.9074752,
+      "lon": 116.3972298,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:25+00:00"
+    },
+    "171.38.217.6": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Guangxi Zhuangzu Zizhiqu",
+      "city": "Nanning",
+      "lat": 22.8166707,
+      "lon": 108.3166722,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:25+00:00"
+    },
+    "182.121.84.130": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:25+00:00"
+    },
+    "59.96.142.175": {
+      "country": "India",
+      "country_code": "IN",
+      "region": "Tamil Nadu",
+      "city": "Chennai",
+      "lat": 13.087844,
+      "lon": 80.2784675,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:25+00:00"
+    },
+    "125.43.230.30": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:25+00:00"
+    },
+    "160.176.196.201": {
+      "country": "Morocco",
+      "country_code": "MA",
+      "region": "Fes-Meknes",
+      "city": "Meknes",
+      "lat": 33.8935215,
+      "lon": -5.5472654,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:26+00:00"
+    },
+    "182.116.38.41": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577774,
+      "lon": 113.6486113,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:26+00:00"
+    },
+    "125.46.131.53": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577774,
+      "lon": 113.6486113,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-30T02:41:26+00:00"
     }
   },
   "source_status": [
@@ -1521,17 +1694,17 @@
       "key": "cloudflare",
       "name": "Cloudflare Radar",
       "ok": true,
-      "checked_at": "2026-10-29T22:42:42+00:00",
+      "checked_at": "2026-10-30T02:41:22+00:00",
       "count": 20,
       "error": null,
-      "source_updated_at": "2026-10-29T21:30:00Z",
+      "source_updated_at": "2026-10-30T00:30:00Z",
       "stale_data": false
     },
     {
       "key": "dshield",
       "name": "DShield / SANS ISC",
       "ok": true,
-      "checked_at": "2026-10-29T22:42:44+00:00",
+      "checked_at": "2026-10-30T02:41:23+00:00",
       "count": 10,
       "error": null,
       "stale_data": false
@@ -1540,7 +1713,7 @@
       "key": "threatfox",
       "name": "ThreatFox",
       "ok": false,
-      "checked_at": "2026-10-29T22:42:44+00:00",
+      "checked_at": "2026-10-30T02:41:23+00:00",
       "count": 0,
       "error": "ThreatFox query_status=no_json",
       "stale_data": false,
@@ -1550,7 +1723,7 @@
       "key": "urlhaus",
       "name": "URLhaus",
       "ok": true,
-      "checked_at": "2026-10-29T22:42:44+00:00",
+      "checked_at": "2026-10-30T02:41:23+00:00",
       "count": 50,
       "error": null,
       "stale_data": false
@@ -1559,8 +1732,8 @@
       "key": "geoip",
       "name": "Geolocalización IP (IPWho.is)",
       "ok": true,
-      "checked_at": "2026-10-29T22:42:47+00:00",
-      "count": 12,
+      "checked_at": "2026-10-30T02:41:26+00:00",
+      "count": 21,
       "error": null,
       "stale_data": false,
       "note": "Aproximada; límite de 12 IP nuevas por ejecución."
