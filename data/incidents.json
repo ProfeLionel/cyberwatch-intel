@@ -1,7 +1,35 @@
 {
-  "generated_at": "2026-10-31T17:56:50+00:00",
-  "last_checked_at": "2026-10-31T17:56:50+00:00",
+  "generated_at": "2026-10-31T21:38:05+00:00",
+  "last_checked_at": "2026-10-31T21:38:05+00:00",
   "items": [
+    {
+      "id": "7a318fe996e6117e2975",
+      "title": "Northflank security breach leads to abuse of customers' AI API keys",
+      "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys",
+      "source": "BleepingComputer",
+      "category": "Noticias de ciberseguridad",
+      "region": "Global",
+      "published_at": "2026-10-31T18:01:12+00:00",
+      "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]",
+      "type": "article",
+      "tags": [
+        "filtracion"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T21:37:43+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "BleepingComputer"
+      ]
+    },
     {
       "id": "d14f290bbf9e3d459f59",
       "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
@@ -1427,34 +1455,6 @@
       "priority_label": "informativa",
       "priority_basis": [
         "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-29T23:19:07+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "BleepingComputer"
-      ]
-    },
-    {
-      "id": "97e1eb09d975c625903c",
-      "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
-      "url": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining",
-      "source": "BleepingComputer",
-      "category": "Noticias de ciberseguridad",
-      "region": "Global",
-      "published_at": "2026-10-29T22:09:24+00:00",
-      "summary": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fake Solana starter kit on GitHub is positioned to trick AI coding agents into installing a NetSupport RAT. [...]",
-      "type": "article",
-      "tags": [
-        "malware"
-      ],
-      "cves": [],
-      "priority_score": 22,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "ransomware/campaña"
       ],
       "collected_at": "2026-10-29T23:19:07+00:00",
       "sectors": [
@@ -4246,6 +4246,93 @@
       ]
     },
     {
+      "id": "573d3ea08fcd154b973d",
+      "title": "CVE-2026-116189: rclone from 1.55.0 before 1.75.2 contains a signature verification bypass in stable selfupdate that trusts checksums from unsigned bytes preceding the PGP-clearsigned SHA256SUMS bl",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116189",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "rclone from 1.55.0 before 1.75.2 contains a signature verification bypass in stable selfupdate that trusts checksums from unsigned bytes preceding the PGP-clearsigned SHA256SUMS block. Attackers controlling the release distribution path can prepend an unsigned checksum line matching a malicious archive, causing selfupdate to install an attacker-controlled rclone executable.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116189"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T21:38:04+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3b234e2555e73d889cec",
+      "title": "CVE-2026-116190: rclone from v1.56.0 before v1.75.2 contains an information disclosure vulnerability in the WebDAV backend that forwards operator-configured custom credential headers to different h",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116190",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "rclone from v1.56.0 before v1.75.2 contains an information disclosure vulnerability in the WebDAV backend that forwards operator-configured custom credential headers to different hosts on HTTP 3xx redirects. Attackers who control or influence a cross-host redirect can capture headers such as X-Auth-Token set via --webdav-headers and replay them against the original WebDAV service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116190"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T21:38:04+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "bef8c8bc0a92ed2a799c",
+      "title": "CVE-2026-116191: Rclone before 1.75.2 contains a path traversal vulnerability in serve webdav that allows unauthenticated attackers to write above the served root by sending an unvalidated '..' pat",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116191",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "Rclone before 1.75.2 contains a path traversal vulnerability in serve webdav that allows unauthenticated attackers to write above the served root by sending an unvalidated '..' path component. Attackers can send MKCOL /.. to plant a VFS node, then PUT, MOVE, COPY, or MKCOL to create, overwrite, or delete files belonging to other tenants.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116191"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T21:38:04+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "c10be48df53556fd5b94",
       "title": "CVE-2026-116182: phpMyFAQ before 4.1.10 contains a server-side request forgery vulnerability in the PDF export feature that fetches external images referenced in FAQ answers. Attackers who can infl",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116182",
@@ -4385,6 +4472,64 @@
       "collected_at": "2026-10-31T17:56:49+00:00",
       "cvss": 2.3,
       "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8495d9f6d266b7c912b5",
+      "title": "CVE-2026-116187: Rclone from v1.68.0 before v1.75.2 contains an authorization bypass vulnerability in serve s3 --auth-proxy that allows authenticated tenants to manipulate other tenants' multipart",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116187",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:58+00:00",
+      "summary": "Rclone from v1.68.0 before v1.75.2 contains an authorization bypass vulnerability in serve s3 --auth-proxy that allows authenticated tenants to manipulate other tenants' multipart uploads by referencing their upload IDs. Attackers who learn a victim's bucket, object, and upload ID can inject parts, complete, or abort in-flight uploads and view upload and object metadata across tenants.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116187"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T21:38:04+00:00",
+      "cvss": 6.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "242e82bd2a9850f3d26b",
+      "title": "CVE-2026-116188: rclone serve s3 versions 1.75.0 before 1.75.2 contain an integer overflow vulnerability in multipart reorder-memory accounting that bypasses the configured buffer limit. Attackers",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116188",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:58+00:00",
+      "summary": "rclone serve s3 versions 1.75.0 before 1.75.2 contain an integer overflow vulnerability in multipart reorder-memory accounting that bypasses the configured buffer limit. Attackers can open two concurrent current-part PUT requests declaring huge lengths to wrap the signed int64 counter and retain out-of-order parts in memory, exhausting the host.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116188"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T21:38:04+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -7015,151 +7160,6 @@
       ]
     },
     {
-      "id": "8f65bb18640cbc38e8b9",
-      "title": "CVE-2026-114820: Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE). Supported versions that are affected ar",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114820",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T19:17:04+00:00",
-      "summary": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE). Supported versions that are affected are Oracle Java SE: 8u511-b32, 8u511-perf-b32, 11.0.33.0.2, 17.0.21.0.2, 21.0.13.0.2, 25.0.5.0.2, 27.0.1.0.2; Oracle GraalVM for JDK: 17.0.21.0.2 and 21.0.13.0.2; Oracle GraalVM Enterprise Edition: 21.3.20.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data as well as unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-114820"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-30T21:06:49+00:00",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3512920c89dae6b4bee5",
-      "title": "CVE-2026-115973: A vulnerability was identified in FaveoSuite Faveo Helpdesk 2.0.3. Affected by this issue is the function ForgotPasswordController::sendResetLinkEmail/PasswordController::reset of",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115973",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T19:17:04+00:00",
-      "summary": "A vulnerability was identified in FaveoSuite Faveo Helpdesk 2.0.3. Affected by this issue is the function ForgotPasswordController::sendResetLinkEmail/PasswordController::reset of the file app/Http/Controllers/Auth/ForgotPasswordController.php. The manipulation leads to weak password recovery. The attack may be initiated remotely. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115973"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f5f6e853fe24cf47463d",
-      "title": "CVE-2026-115970: A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import Endpoint. Such manipulation",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115970",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T18:16:48+00:00",
-      "summary": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import Endpoint. Such manipulation leads to code injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The project has been completely taken offline and deprecated. The project maintainer explains: \"The mentioned security risk was a design flaw that manifested primarily in local environments during earlier stages of version development. We previously addressed and resolved this specific risk; however, because the project was restricted to a small learning scope and the main versions were intended to run exclusively on localhost, the security fix was only pushed directly to our GitHub repository before it went private.\" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115970"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T21:06:49+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "272640c4e8ef02a164e7",
-      "title": "CVE-2026-115971: A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing handler. Performing a man",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115971",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T18:16:48+00:00",
-      "summary": "A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing handler. Performing a manipulation results in denial of service. The attack can be initiated remotely. The exploit has been made public and could be used. The project has been completely taken offline and deprecated. The project maintainer explains: \"The mentioned security risk was a design flaw that manifested primarily in local environments during earlier stages of version development. We previously addressed and resolved this specific risk; however, because the project was restricted to a small learning scope and the main versions were intended to run exclusively on localhost, the security fix was only pushed directly to our GitHub repository before it went private.\" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115971"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T21:06:49+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7baecd269f418443c47e",
-      "title": "CVE-2026-115972: A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function UnAuthController.changeStatus/UnAuthController.close/UnAuthC",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115972",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T18:16:48+00:00",
-      "summary": "A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function UnAuthController.changeStatus/UnAuthController.close/UnAuthController.open/UnAuthController.resolve of the file app/Http/Controllers/Client/helpdesk/UnAuthController.php. Executing a manipulation of the argument id/status can lead to missing authorization. The attack can be launched remotely. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115972"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T21:06:49+00:00",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "1c8bea2d85fd044b4230",
       "title": "On The Brink Of Epic Fury Round Two?",
       "url": "https://www.twz.com/news-features/on-the-brink-of-epic-fury-round-two",
@@ -9676,62 +9676,6 @@
       ]
     },
     {
-      "id": "132f32fa6ab8f9cc05a6",
-      "title": "Navy F/A-18 Super Hornet Spotted Carrying New AIM-174B And AIM-260 Long-Range Missiles Together",
-      "url": "https://www.twz.com/air/navy-f-a-18-super-hornet-spotted-carrying-new-aim-174b-and-aim-260-long-range-missiles-together",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-21T18:14:49+00:00",
-      "summary": "The image of the VX-31 Super Hornet gives us a glimpse of what's soon to appear in the fleet, and the two missiles will also be joined by the AIM-424 Malice. The post Navy F/A-18 Super Hornet Spotted Carrying New AIM-174B And AIM-260 Long-Range Missiles Together appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:01+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "2100bd919afbb007306e",
-      "title": "Any Decision To Buy New-Build F-16s Not An “Urgent” Priority: USAF",
-      "url": "https://www.twz.com/air/any-decision-to-buy-new-build-f-16s-not-an-urgent-priority-usaf",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-21T17:55:28+00:00",
-      "summary": "A top USAF general said new F-16s are \"maybe the lazy\" route, but are an option as the service strives for 1,509 combat-coded fighters by 2035. The post Any Decision To Buy New-Build F-16s Not An “Urgent” Priority: USAF appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:01+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
       "id": "39cad894cdd240fbe2db",
       "title": "How AT&T is rethinking in-house legal work with OpenAI",
       "url": "https://openai.com/index/att-legal",
@@ -10984,34 +10928,6 @@
       ]
     },
     {
-      "id": "86dbfdb5b436c283839e",
-      "title": "How Grupo Boticário uses AI to strengthen human connections",
-      "url": "https://openai.com/index/grupo-boticario",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:45:54+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
       "id": "d3b9ba6f7bd01af06315",
       "title": "How Localiza reorganized work around generative AI",
       "url": "https://openai.com/index/localiza-generative-ai",
@@ -11040,14 +10956,42 @@
       ]
     },
     {
-      "id": "b6756c0a180ee554226c",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
+      "id": "86dbfdb5b436c283839e",
+      "title": "How Grupo Boticário uses AI to strengthen human connections",
+      "url": "https://openai.com/index/grupo-boticario",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T01:45:54+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
+      "id": "9e63539289a31c8631b6",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
       "type": "article",
       "tags": [
         "general"
@@ -11068,14 +11012,14 @@
       ]
     },
     {
-      "id": "9e63539289a31c8631b6",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "id": "b6756c0a180ee554226c",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
       "type": "article",
       "tags": [
         "general"
@@ -12381,14 +12325,14 @@
       ]
     },
     {
-      "id": "570fe3204556675e8dd9",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "url": "https://openai.com/index/sophos",
+      "id": "9bf93d58cc35db9987f8",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
       "type": "article",
       "tags": [
         "general"
@@ -12409,14 +12353,14 @@
       ]
     },
     {
-      "id": "9bf93d58cc35db9987f8",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "url": "https://openai.com/index/asana-browser-agent",
+      "id": "570fe3204556675e8dd9",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
       "type": "article",
       "tags": [
         "general"
@@ -14750,14 +14694,14 @@
       ]
     },
     {
-      "id": "eb674100bb687fff7643",
-      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "id": "833e9419a34f8836dc9d",
+      "title": "Are you a Codex Original?",
+      "url": "https://openai.com/form/codex-originals",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T00:00:00+00:00",
-      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
       "type": "article",
       "tags": [
         "general"
@@ -14778,14 +14722,14 @@
       ]
     },
     {
-      "id": "833e9419a34f8836dc9d",
-      "title": "Are you a Codex Original?",
-      "url": "https://openai.com/form/codex-originals",
+      "id": "eb674100bb687fff7643",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T00:00:00+00:00",
-      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
+      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
       "type": "article",
       "tags": [
         "general"
@@ -15452,14 +15396,14 @@
       ]
     },
     {
-      "id": "4e56c7312349a760a0ed",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
+      "id": "52b80abd4e046c041ffb",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
       "type": "article",
       "tags": [
         "general"
@@ -15508,14 +15452,14 @@
       ]
     },
     {
-      "id": "347b65ce144a221e189c",
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "id": "4e56c7312349a760a0ed",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
       "type": "article",
       "tags": [
         "general"
@@ -15536,14 +15480,14 @@
       ]
     },
     {
-      "id": "52b80abd4e046c041ffb",
-      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "id": "347b65ce144a221e189c",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+      "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
       "type": "article",
       "tags": [
         "general"
@@ -49668,6 +49612,76 @@
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
       ]
+    },
+    {
+      "id": "cdc0c4d5cb05ac2c854b",
+      "title": "CVE-2021-44026: Roundcube Webmail SQL Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44026",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Roundcube Webmail is vulnerable to SQL injection via search or search_params. Proveedor: Roundcube. Producto: Roundcube Webmail. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2021-44026"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T21:38:03+00:00",
+      "vendor": "Roundcube",
+      "product": "Roundcube Webmail",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "18aa6b20b0ac150f3b82",
+      "title": "CVE-2016-9079: Mozilla Firefox, Firefox ESR, and Thunderbird Use-After-Free Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9079",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Mozilla Firefox, Firefox ESR, and Thunderbird contain a use-after-free vulnerability in SVG Animation, targeting Firefox and Tor browser users on Windows. Proveedor: Mozilla. Producto: Firefox, Firefox ESR, and Thunderbird. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2016-9079"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T21:38:03+00:00",
+      "vendor": "Mozilla",
+      "product": "Firefox, Firefox ESR, and Thunderbird",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
     }
   ],
   "source_status": [
@@ -49710,10 +49724,10 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "checked_at": "2026-10-31T17:56:25+00:00",
+      "checked_at": "2026-10-31T21:37:43+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-31T15:35:11+00:00",
-      "duration_ms": 188
+      "last_published_at": "2026-10-31T18:01:12+00:00",
+      "duration_ms": 104
     },
     {
       "source": "NCSC UK",
@@ -49807,12 +49821,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 36,
+      "count": 34,
       "error": null,
-      "checked_at": "2026-10-31T17:56:33+00:00",
+      "checked_at": "2026-10-31T21:37:49+00:00",
       "http_status": 200,
       "last_published_at": "2026-10-31T00:19:01+00:00",
-      "duration_ms": 569
+      "duration_ms": 456
     },
     {
       "source": "CyberScoop",
@@ -49990,8 +50004,8 @@
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 2465,
-    "items_after_deduplication": 2454,
+    "items_before_deduplication": 2463,
+    "items_after_deduplication": 2452,
     "sources_ok": 28,
     "sources_total": 29
   }
