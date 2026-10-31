@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-10-31T00:49:09+00:00",
-  "last_checked_at": "2026-10-31T00:49:09+00:00",
+  "generated_at": "2026-10-31T07:01:01+00:00",
+  "last_checked_at": "2026-10-31T07:01:01+00:00",
   "items": [
+    {
+      "id": "9fac1b25def9005ef503",
+      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor",
+      "source": "Microsoft Security Blog",
+      "category": "Threat intelligence / Seguridad de plataformas",
+      "region": "Global",
+      "published_at": "2026-10-31T01:02:57+00:00",
+      "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog .",
+      "type": "article",
+      "tags": [
+        "malware"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:00:51+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "Microsoft Security Blog"
+      ]
+    },
     {
       "id": "502f2de82d517f091e1d",
       "title": "Surface-To-Air Missiles Deployed To Protect Trump’s Mar-a-Lago Estate",
@@ -4188,6 +4217,557 @@
       ]
     },
     {
+      "id": "b2864c6f256c3937ca20",
+      "title": "CVE-2026-116139: WWBN AVideo 26.0 through 29.3.0 contains a stored cross-site scripting vulnerability that allows authenticated commenters to inject JavaScript because markDownToHTML() preserves ev",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116139",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:51+00:00",
+      "summary": "WWBN AVideo 26.0 through 29.3.0 contains a stored cross-site scripting vulnerability that allows authenticated commenters to inject JavaScript because markDownToHTML() preserves event-handler attributes in leading HTML blocks. Attackers can post a comment starting with an img tag carrying an onerror handler, which bypasses the inline sanitizer and executes in viewers' browsers under the application origin.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116139"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "167207d9e6cd6b0b54a7",
+      "title": "CVE-2026-116140: ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 incorrectly parses delegate invocations, which can allow an executable blocked in policy.xml to still run. An attacker who gets",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116140",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:51+00:00",
+      "summary": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 incorrectly parses delegate invocations, which can allow an executable blocked in policy.xml to still run. An attacker who gets ImageMagick to process input that triggers a delegate invocation can bypass the administrator-defined policy and execute the blocked program.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116140"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "572063d31c945a9cad87",
+      "title": "CVE-2026-116141: ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because extent checks occur afte",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116141",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:51+00:00",
+      "summary": "ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because extent checks occur after decoding. Attackers can supply crafted UHDR images with oversized dimensions that are fully decoded before policy limits are enforced, causing excessive resource consumption.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116141"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d73e4ae7bcd432946063",
+      "title": "CVE-2026-116053: A weakness has been identified in dbcli mycli up to 2.29.4/2.30.1. The impacted element is the function source_special_command_is_safe of the file mycli/packages/special/source.py",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116053",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:50+00:00",
+      "summary": "A weakness has been identified in dbcli mycli up to 2.29.4/2.30.1. The impacted element is the function source_special_command_is_safe of the file mycli/packages/special/source.py of the component Whitelist. Executing a manipulation can lead to os command injection. It is possible to launch the attack on the local host. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116053"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 1.9,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "89266f459151df4aff85",
+      "title": "CVE-2026-116052: A security flaw has been discovered in LinkStackOrg LinkStack up to 4.8.8. The affected element is an unknown function. Performing a manipulation results in cross-site request forg",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116052",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T13:16:27+00:00",
+      "summary": "A security flaw has been discovered in LinkStackOrg LinkStack up to 4.8.8. The affected element is an unknown function. Performing a manipulation results in cross-site request forgery. Remote exploitation of the attack is possible. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116052"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a5b0fda41a50f91b77c6",
+      "title": "CVE-2026-116136: ProjectSend 2.0.0 through 2.7.1 contains an incomplete authorization vulnerability in FileVersions::link() that allows staff users to share files without authorization by linking f",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116136",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:30+00:00",
+      "summary": "ProjectSend 2.0.0 through 2.7.1 contains an incomplete authorization vulnerability in FileVersions::link() that allows staff users to share files without authorization by linking file versions. Attackers can link their file onto an intermediate revision or assign out-of-scope clients, causing moveAssignmentsToRoot() to expose protected original files to unauthorized clients.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116136"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8c06a2744d5bf061431f",
+      "title": "CVE-2026-116137: adm-zip through 0.6.1 contains a duplicate-entry validation bypass that allows attackers to evade the readEntries() check by using canonically equivalent entry names like './hello.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116137",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:30+00:00",
+      "summary": "adm-zip through 0.6.1 contains a duplicate-entry validation bypass that allows attackers to evade the readEntries() check by using canonically equivalent entry names like './hello.txt' and 'hello.txt'. Attackers can craft ZIP archives where getEntry() or readAsText() validates benign content while extractAllTo() writes malicious content to the same path, bypassing integrity checks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116137"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f5b87d65e11db16264bb",
+      "title": "CVE-2026-116068: Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116068",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values. Attackers can call procedures like saveEnvironment, updateTraefikConfig, deploy, or stop to overwrite environment variables and build secrets, repoint sources, and disrupt other tenants' applications.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116068"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3752b8a9002f1eaedd61",
+      "title": "CVE-2026-116069: NiubiGEO before 0.3.2 contains an unauthenticated server-side request forgery vulnerability that allows remote attackers to make the server fetch internal addresses by supplying a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116069",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "NiubiGEO before 0.3.2 contains an unauthenticated server-side request forgery vulnerability that allows remote attackers to make the server fetch internal addresses by supplying a crafted domain value to POST /audit-plan. Attackers can submit IP literals, localhost, or private and link-local hosts to read loopback, internal-network, or cloud metadata responses returned in the plan's siteEvidence JSON.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116069"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b4db4cc6b148efc403dc",
+      "title": "CVE-2026-116070: Docker-Proxy through 5.1.9 contains a missing authentication vulnerability in the hubcmdui routes/config.js that allows unauthenticated attackers to read and overwrite configuratio",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116070",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "Docker-Proxy through 5.1.9 contains a missing authentication vulnerability in the hubcmdui routes/config.js that allows unauthenticated attackers to read and overwrite configuration via /api/config. Attackers can retrieve the WeChat webhook URL and Telegram bot token, and overwrite menuItems links, proxyDomain, and the monitoring webhook destination receiving alerts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116070"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b72f297cda9f95a55a8a",
+      "title": "CVE-2026-116071: rotki before 1.44.2 contains a weak key derivation vulnerability that allows attackers to brute-force backups because the premium sync key is a single unsalted SHA-256 of the user",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116071",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "rotki before 1.44.2 contains a weak key derivation vulnerability that allows attackers to brute-force backups because the premium sync key is a single unsalted SHA-256 of the user password. Attackers who obtain an uploaded backup blob can run GPU-parallel offline password guessing and decrypt the database containing exchange API keys, secrets, wallet addresses and transaction history.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116071"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fd5a332c632cedeee946",
+      "title": "CVE-2026-116072: Infinity for Reddit through 8.3.4 contains a login cross-site request forgery vulnerability that allows attackers to log victims into an attacker-controlled account because the exp",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116072",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "Infinity for Reddit through 8.3.4 contains a login cross-site request forgery vulnerability that allows attackers to log victims into an attacker-controlled account because the exported LoginChromeCustomTabActivity redirect handler checks a hardcoded OAuth state value. Attackers can authorize the app's client ID with their own Reddit account, then deliver an infinity://localhost redirect containing their code and the constant state, causing the victim's posts, messages, and browsing to occur on the attacker's account.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116072"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "eee8d513546388f87df5",
+      "title": "CVE-2026-116073: Leon before commit 50df142 contains a path traversal vulnerability in getModelFileNameFromURL() that allows attackers to write files outside the models directory via percent-encode",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116073",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:29+00:00",
+      "summary": "Leon before commit 50df142 contains a path traversal vulnerability in getModelFileNameFromURL() that allows attackers to write files outside the models directory via percent-encoded separators. Attackers can trick a user into running '/download model' with a crafted URL containing encoded '../' sequences to write attacker-controlled content to arbitrary paths writable by Leon.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116073"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "663333b73989fd96eba3",
+      "title": "CVE-2026-116067: Paisa before 0.7.8 contains a path traversal vulnerability in the GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers that lets unauthenticated attackers read files a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116067",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:28+00:00",
+      "summary": "Paisa before 0.7.8 contains a path traversal vulnerability in the GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers that lets unauthenticated attackers read files and delete backups through ../ sequences in file names. Attackers can send crafted names to the editor file and delete_backups endpoints to read any server-readable file and remove backup files outside the journal or sheets directory.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116067"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "82177f865386d775b6b7",
+      "title": "CVE-2026-116066: Firecrawl before 2.11.586 contains a server-side request forgery vulnerability in the Playwright service SSRF proxy that allows attackers to bypass isInternalHost checks via DNS re",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116066",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T12:16:27+00:00",
+      "summary": "Firecrawl before 2.11.586 contains a server-side request forgery vulnerability in the Playwright service SSRF proxy that allows attackers to bypass isInternalHost checks via DNS rebinding. Attackers controlling DNS for a scrape target can return a public address during validation and a private address at connect time, retrieving cloud metadata and internal resources through the scrape API.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116066"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 7.0,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "75e3c072c0c324f2cf51",
+      "title": "CVE-2026-116049: A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function mysql_query of the file /source",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116049",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T09:16:27+00:00",
+      "summary": "A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function mysql_query of the file /source/registerform2.php of the component Registration Wizard. Executing a manipulation of the argument university/institute/branch/degree/status/cpi/semester/experience can lead to sql injection. It is possible to launch the attack remotely. The exploit has been published and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116049"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ce8f13bf4a27d1d7a7fb",
+      "title": "CVE-2026-116050: A vulnerability has been found in krupalshah Employee Recruitment System up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. This affects an unknown part of the file /source/registerfo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116050",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T09:16:27+00:00",
+      "summary": "A vulnerability has been found in krupalshah Employee Recruitment System up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. This affects an unknown part of the file /source/registerform3.php of the component Registration. The manipulation of the argument pemail leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116050"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9c568ccc9c741ce4ab7f",
+      "title": "CVE-2026-116047: A vulnerability has been found in Privoce Vocechat up to 0.9.121. This issue affects some unknown processing of the file widget.html of the component Query Parameter Handler. Such",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116047",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T08:16:26+00:00",
+      "summary": "A vulnerability has been found in Privoce Vocechat up to 0.9.121. This issue affects some unknown processing of the file widget.html of the component Query Parameter Handler. Such manipulation of the argument welcome leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116047"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c9c77afdd49a638dd0c8",
+      "title": "CVE-2026-116048: A vulnerability was detected in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this vulnerability is the function mysql_query of t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116048",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T08:16:26+00:00",
+      "summary": "A vulnerability was detected in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this vulnerability is the function mysql_query of the file /source/registerform1.php of the component Registration. Performing a manipulation of the argument firstname/middlename/lastname/gender/birthdate/state/statespecify/city/cityspecify results in sql injection. It is possible to initiate the attack remotely. The exploit is now public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116048"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:01:00+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "272d30e016edf7f87599",
       "title": "CVE-2026-116046: A flaw has been found in eventcatalog sdk up to 2.29.0. This vulnerability affects the function getCustomDoc/writeCustomDoc/rmCustomDoc of the file packages/sdk/src/custom-docs.ts",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116046",
@@ -6542,557 +7122,6 @@
       ]
     },
     {
-      "id": "ee4a99f3a267741ed875",
-      "title": "CVE-2026-113674: The GeoDirectory WordPress plugin before 2.8.194 does not correctly verify ownership of listings submitted by logged-out users before allowing them to be edited, allowing unauthen",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113674",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:37+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not correctly verify ownership of listings submitted by logged-out users before allowing them to be edited, allowing unauthenticated attackers to modify, unpublish, attach images to, or reassign any guest-submitted listing when guest posting is enabled.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113674"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 3.7,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d58424919743de2ff7d0",
-      "title": "CVE-2026-114429: The WPVR WordPress plugin before 9.0.3 does not properly sanitise and escape some of its tour hotspot content before storing it and outputting it on the front end, which could all",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114429",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:37+00:00",
-      "summary": "The WPVR WordPress plugin before 9.0.3 does not properly sanitise and escape some of its tour hotspot content before storing it and outputting it on the front end, which could allow users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute in the browser of any user viewing the affected tour.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-114429"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f8eaa91be96dce88d81d",
-      "title": "CVE-2026-87835: The Front End Users WordPress plugin through 3.2.35 does not restrict which account attributes a visitor may set when registering through its front-end forms, allowing unauthentica",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87835",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:37+00:00",
-      "summary": "The Front End Users WordPress plugin through 3.2.35 does not restrict which account attributes a visitor may set when registering through its front-end forms, allowing unauthenticated users to assign themselves an arbitrary membership level and to mark their own account as approved, confirmed and paid, bypassing the Front End Users WordPress plugin through 3.2.35's content restrictions and its registration gating.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-87835"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a8c0cbf8dffc328998d7",
-      "title": "CVE-2026-97352: The News Kit Addons For Elementor WordPress plugin before 1.4.9 does not perform a capability check on one of its AJAX actions, allowing authenticated users with subscriber-level a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97352",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:37+00:00",
-      "summary": "The News Kit Addons For Elementor WordPress plugin before 1.4.9 does not perform a capability check on one of its AJAX actions, allowing authenticated users with subscriber-level access and above to install and activate a specific News Kit Addons For Elementor WordPress plugin before 1.4.9 from the WordPress.org repository.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-97352"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9c156e2db20df55a49bd",
-      "title": "CVE-2026-97353: The News Kit Addons For Elementor WordPress plugin through 1.4.7 does not perform capability or ownership checks before updating post metadata in one of its authenticated AJAX acti",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97353",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:37+00:00",
-      "summary": "The News Kit Addons For Elementor WordPress plugin through 1.4.7 does not perform capability or ownership checks before updating post metadata in one of its authenticated AJAX actions, allowing users with subscriber-level access and above to write arbitrary post meta, under attacker-chosen keys, to any post including those owned by other users. This can be used to overwrite protected core metadata and tamper with content created by higher-privileged users.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-97353"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "87887b167e95465cf38b",
-      "title": "CVE-2026-110956: The asVereinbase WordPress plugin before 1.1.8 does not require a valid password or a genuine second factor before authenticating a user, treating an empty stored value as a match",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110956",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The asVereinbase WordPress plugin before 1.1.8 does not require a valid password or a genuine second factor before authenticating a user, treating an empty stored value as a match, so an unauthenticated attacker can log in as any user, including an administrator.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110956"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "220eeb1c1d435dbe2961",
-      "title": "CVE-2026-112207: The Download Monitor WordPress plugin before 5.3.4 does not properly validate that a clicked link belongs to the site before fetching it client-side and rendering part of the respo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112207",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The Download Monitor WordPress plugin before 5.3.4 does not properly validate that a clicked link belongs to the site before fetching it client-side and rendering part of the response in the page, which allows unauthenticated attackers to execute arbitrary JavaScript in the browser of any user who is tricked into clicking a crafted link.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-112207"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5f141ee097d038add107",
-      "title": "CVE-2026-113489: The GeoDirectory WordPress plugin before 2.8.194 does not verify that a referenced attachment belongs to the listing being saved, allowing users with Subscriber-level access and a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113489",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not verify that a referenced attachment belongs to the listing being saved, allowing users with Subscriber-level access and above to modify the title, caption, moderation status and featured flag of images belonging to other users' listings, and to claim another user's image as their own featured image.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113489"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c69eeea3d9ebcbd37de1",
-      "title": "CVE-2026-113490: The GeoDirectory WordPress plugin before 2.8.194 does not perform any status or ownership check when rendering a listing's map-popup through one of its single-item REST routes, al",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113490",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not perform any status or ownership check when rendering a listing's map-popup through one of its single-item REST routes, allowing unauthenticated users to read the title, permalink and card fields of non-public (draft, pending, private and trashed) listings by supplying the listing ID.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113490"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c0292fa7df983b6f7cc5",
-      "title": "CVE-2026-113491: The GeoDirectory WordPress plugin before 2.8.194 does not validate a user-supplied image URL before using it as a local file path when saving a front-end listing, allowing users w",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113491",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not validate a user-supplied image URL before using it as a local file path when saving a front-end listing, allowing users with Subscriber-level access and above to read files from outside the web root and to delete files on the server, limited to file names that carry an allowed media extension. A disclosed file is re-published at a public URL and its original is deleted as a side effect.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113491"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4e5ff695a1f02a40df73",
-      "title": "CVE-2026-113492: The GeoDirectory WordPress plugin before 2.8.194 does not perform status, ownership or password checks when loading listings for one of its unauthenticated AJAX handlers, allowing",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113492",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not perform status, ownership or password checks when loading listings for one of its unauthenticated AJAX handlers, allowing unauthenticated users to disclose the content of non-public (draft, pending and private) listings by supplying their IDs.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113492"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b7d26a50329077b118f6",
-      "title": "CVE-2026-113493: The GeoDirectory WordPress plugin before 2.8.194 does not sanitise and escape some of its map shortcode attributes before outputting them within a style attribute, allowing users",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113493",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not sanitise and escape some of its map shortcode attributes before outputting them within a style attribute, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute in the context of any user viewing the affected content.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113493"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "973fc68df4c1d26af5cf",
-      "title": "CVE-2026-113673: The GeoDirectory WordPress plugin before 2.8.194 does not properly escape administrator-defined text before writing it into a generated PHP file in its own folder, allowing high p",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113673",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:36+00:00",
-      "summary": "The GeoDirectory WordPress plugin before 2.8.194 does not properly escape administrator-defined text before writing it into a generated PHP file in its own folder, allowing high privilege users such as a subsite administrator on a multisite network, who cannot otherwise run code, to achieve Remote Code Execution that any unauthenticated visitor can trigger.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113673"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4b0da0e6b62d0cd2ec0d",
-      "title": "CVE-2026-107887: The Advanced Twenty Seventeen WordPress plugin through 1.3.1 does not perform any capability or nonce check on the action that creates and activates its bundled child , allowing an",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107887",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:35+00:00",
-      "summary": "The Advanced Twenty Seventeen WordPress plugin through 1.3.1 does not perform any capability or nonce check on the action that creates and activates its bundled child , allowing any authenticated user such as a subscriber to switch the site's active site-wide, and allowing the same action to be triggered against any logged-in user including an administrator via CSRF.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107887"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9b45ab14f374babe51c9",
-      "title": "CVE-2026-107907: The MAS Videos WordPress plugin through 1.3.4 does not perform any capability or ownership check when handling its front-end video and playlist deletion requests, and the nonce it",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107907",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:35+00:00",
-      "summary": "The MAS Videos WordPress plugin through 1.3.4 does not perform any capability or ownership check when handling its front-end video and playlist deletion requests, and the nonce it verifies is tied only to a static action rather than to the targeted object, allowing any authenticated user with a minimal role to permanently delete arbitrary posts, pages, attachments and other content belonging to other users.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107907"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cac5d66eaa19158a1f8f",
-      "title": "CVE-2026-105199: The Pixel Tag Manager for WooCommerce WordPress plugin before 2.2.3 does not perform a capability check in one of its AJAX actions, and exposes the nonce protecting it to any user",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105199",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T06:16:34+00:00",
-      "summary": "The Pixel Tag Manager for WooCommerce WordPress plugin before 2.2.3 does not perform a capability check in one of its AJAX actions, and exposes the nonce protecting it to any user able to access the admin dashboard, allowing users with a role as low as Contributor to overwrite the Pixel Tag Manager for WooCommerce WordPress plugin before 2.2.3's tracking configuration and have arbitrary JavaScript executed in the browsers of all visitors, including administrators.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105199"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "529543f0541b5fbf932d",
-      "title": "CVE-2026-115807: The User Profile Builder – Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to Limited Privilege Escalation in all versions up",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115807",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T05:17:06+00:00",
-      "summary": "The User Profile Builder – Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to Limited Privilege Escalation in all versions up to, and including, 4.0.3. This is due to the Gutenberg Register block passing the attacker-controlled Assigned Role attribute directly into the `[wppb-register]` shortcode without server-side authorization. The role guard in the form builder only downgrades roles that carry the manage_options or remove_users capability, leaving the Editor role and other privileged non-Administrator roles completely unrestricted. This makes it possible for authenticated attackers with Author-level access and above to create new WordPress accounts bearing the Editor role (or any other role that lacks the two guarded capabilities).",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115807"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "18dd3901eba033639e74",
-      "title": "CVE-2026-115806: The Prime Mover – Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115806",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T05:17:04+00:00",
-      "summary": "The Prime Mover – Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input in the migration search-and-replace routine (recursiveUnserializeReplace()). An unauthenticated attacker can store a crafted, base64-encoded serialized object in wp_comments.comment_content through the standard comment-submission endpoint (wp-comments-post.php). When an administrator subsequently performs a routine Prime Mover export or restore, the plugin base64-decodes that stored value and passes it to unserialize() with no allowed_classes restriction. A Property-Oriented Programming (POP) chain is present in the plugin's own bundled Freemius library (FS_Clone_Manager::__set → FS_Option_Manager::set_option → store() → update_option()), so no additional plugin or theme is required — the plugin ships the gadget itself.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115806"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b53a5e13c5f16bc661f1",
-      "title": "CVE-2026-115929: MongoDB Compass relies on Electron, a third-party runtime that carries its own TLS root certificate store. This root certificate store has the recoverable eMudhra intermediate CA c",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115929",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T01:17:08+00:00",
-      "summary": "MongoDB Compass relies on Electron, a third-party runtime that carries its own TLS root certificate store. This root certificate store has the recoverable eMudhra intermediate CA certificates. Issue is resolved by updating to Compass 1.53.1, which includes Electron 44.9.1.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115929"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-10-30T16:43:25+00:00",
-      "cvss": 7.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "1c8bea2d85fd044b4230",
       "title": "On The Brink Of Epic Fury Round Two?",
       "url": "https://www.twz.com/news-features/on-the-brink-of-epic-fury-round-two",
@@ -7232,35 +7261,6 @@
       ],
       "related_sources": [
         "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "78dc4f6b2c458bdbf932",
-      "title": "2026-018: Critical Vulnerabilities in PHP",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-018",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-10-23T16:36:26+00:00",
-      "summary": "On 20 October 2026, the PHP project announced an upcoming security release addressing two critical vulnerabilities in PHP. Public reports indicated that these vulnerabilities could lead to remote code execution (RCE). The PHP team released the fixes today, 21 October 2026 at 13:30 UTC, in PHP versions 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Both vulnerabilities can allow unauthenticated remote code execution. Technical details are now being discussed publicly, and initial proofs of concept (PoCs) have begun to circulate. This raises the likelihood that attackers are already exploiting the vulnerabilities. [New] On 23 October, PHP disclosed a new RCE vulnerability. However, it affects only web applications configured in an unusual way, and PHP considers it an unlikely risk. PHP will not issue an out-of-band release for this vulnerability. Instead, organisations are advised to apply mitigation to fully protect from this RCE vector. CERT-EU advises organisations to patch affected assets immediately. Where that is not feasible, organisations should consider isolating internet-facing applications from public networks until a fix is applied and verified.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -9409,35 +9409,6 @@
       ]
     },
     {
-      "id": "044415185030eba9cc59",
-      "title": "2026-019: Critical Vulnerability in GitLab Community and Enterprise Editions",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-019",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-10-22T11:14:22+00:00",
-      "summary": "On 21 October 2026, GitLab published a security advisory addressing several vulnerabilities among which a critical flaw that could allow an unauthenticated user to execute arbitrary code on a GitLab server. CERT-EU recommends organisations to update affected assets as soon as possible, prioritising internet facing assets, and to run an assessment to identify compromised assets.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
-      ]
-    },
-    {
       "id": "6400feb681472530a689",
       "title": "What FDE means at OpenAI",
       "url": "https://openai.com/index/forward-deployed-engineering-means",
@@ -10945,34 +10916,6 @@
       ]
     },
     {
-      "id": "86dbfdb5b436c283839e",
-      "title": "How Grupo Boticário uses AI to strengthen human connections",
-      "url": "https://openai.com/index/grupo-boticario",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T01:45:54+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
       "id": "d3b9ba6f7bd01af06315",
       "title": "How Localiza reorganized work around generative AI",
       "url": "https://openai.com/index/localiza-generative-ai",
@@ -11001,14 +10944,42 @@
       ]
     },
     {
-      "id": "b6756c0a180ee554226c",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
+      "id": "86dbfdb5b436c283839e",
+      "title": "How Grupo Boticário uses AI to strengthen human connections",
+      "url": "https://openai.com/index/grupo-boticario",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-28T01:45:54+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
+      "id": "9e63539289a31c8631b6",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
       "type": "article",
       "tags": [
         "general"
@@ -11029,14 +11000,14 @@
       ]
     },
     {
-      "id": "9e63539289a31c8631b6",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "id": "b6756c0a180ee554226c",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
       "type": "article",
       "tags": [
         "general"
@@ -11376,36 +11347,6 @@
       ],
       "related_sources": [
         "NCSC UK"
-      ]
-    },
-    {
-      "id": "401d79007b302ae9fbc1",
-      "title": "2026-017: Critical Vulnerability in Cisco Secure Email Gateway",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-017",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-10-15T11:38:20+00:00",
-      "summary": "On 14 October 2026, Cisco published a security advisory addressing a critical vulnerability affecting the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway. This vulnerability could allow an unauthenticated, remote attacker to write arbitrary files and execute commands with root privileges on the underlying operating system. The Cisco PSIRT is aware of active exploitation of this vulnerability. CERT-EU strongly recommends updating the Content Scanner Tools package or upgrading Cisco AsyncOS Software to a fixed release as soon as possible, prioritising appliances reachable from the internet. CERT-EU also recommends checking all affected appliances for indicators of compromise.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad",
-        "malware"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -12254,35 +12195,6 @@
       ]
     },
     {
-      "id": "9b07f52f62c784a15536",
-      "title": "2026-016: Critical Vulnerability in GitLab CE and EE",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-016",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-10-12T14:57:02+00:00",
-      "summary": "On 12 October 2026, GitLab released versions 19.4.2, 19.3.4 and 19.2.8 of GitLab Community Edition (CE) and Enterprise Edition (EE), fixing 24 security issues among which a critical vulnerability that could allow an unauthenticated attacker to execute arbitrary code on the server. CERT-EU strongly recommends upgrading self-managed GitLab CE/EE instances to a fixed version as soon as possible, starting with internet-facing instances.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
-      ]
-    },
-    {
       "id": "3a864e0d330c39352fcc",
       "title": "12th October – Threat Intelligence Report",
       "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report",
@@ -12395,35 +12307,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "f8463585bc0a024bc05d",
-      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now",
-      "source": "Microsoft Security Blog",
-      "category": "Threat intelligence / Seguridad de plataformas",
-      "region": "Global",
-      "published_at": "2026-10-08T20:44:28+00:00",
-      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security Blog .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-27T22:38:43+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "Microsoft Security Blog"
       ]
     },
     {
@@ -13408,35 +13291,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "3d7f7c58cbe0781568d5",
-      "title": "2026-015: Critical Vulnerability in Multiple Atlassian Products",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-015",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-10-07T09:52:48+00:00",
-      "summary": "On 5 October 2026, Atlassian published a security advisory addressing a critical arbitrary file access vulnerability. It affects Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye. CERT-EU strongly recommends upgrading all affected installations to a fixed version as soon as possible, starting with instances accessible from the internet. CERT-EU also recommends checking access logs for signs of exploitation.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -14571,17 +14425,18 @@
       ]
     },
     {
-      "id": "2fc54b690d7b20a2e143",
-      "title": "Towards safety cases for frontier AI training",
-      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "id": "50d71cd52400f551c336",
+      "title": "How we will do better for Australia",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T19:00:00+00:00",
-      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
       "type": "article",
       "tags": [
-        "general"
+        "defensa_militar",
+        "sector_publico"
       ],
       "cves": [],
       "priority_score": 10,
@@ -14599,18 +14454,17 @@
       ]
     },
     {
-      "id": "50d71cd52400f551c336",
-      "title": "How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "id": "2fc54b690d7b20a2e143",
+      "title": "Towards safety cases for frontier AI training",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-09-28T19:00:00+00:00",
-      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
       "type": "article",
       "tags": [
-        "defensa_militar",
-        "sector_publico"
+        "general"
       ],
       "cves": [],
       "priority_score": 10,
@@ -14823,35 +14677,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "c05ef08b277db680b36c",
-      "title": "2026-014: Critical Vulnerabilities in Citrix NetScaler ADC and Gateway",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-014",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-09-27T19:40:52+00:00",
-      "summary": "On 27 September 2026, Citrix published a security bulletin addressing 8 vulnerabilities affecting customer-managed Citrix NetScaler ADC and Citrix NetScaler Gateway, among which 2 critical unauthenticated Remote Code Execution (RCE) vulnerabilities. Citrix has confirmed active exploitation of these 2 critical vulnerabilities in the wild. CERT-EU recommends updating affected software and running a compromise assessment on those exposed on the internet.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -15472,34 +15297,6 @@
       ]
     },
     {
-      "id": "4e56c7312349a760a0ed",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:12+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
       "id": "52b80abd4e046c041ffb",
       "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
       "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
@@ -15536,6 +15333,34 @@
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
       "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-26T23:40:12+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
+      "id": "4e56c7312349a760a0ed",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
       "type": "article",
       "tags": [
         "general"
@@ -15721,35 +15546,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "fe04982a63261503a78a",
-      "title": "2026-013: Critical Vulnerability in F5 BIG-IP APM",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-013",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-09-22T18:52:36+00:00",
-      "summary": "On 22 September 2026, F5 published an advisory addressing a critical vulnerability affecting its BIG-IP APM product. The vendor confirmed active exploitation in the wild. CERT-EU recommends taking appropriate actions as soon as possible.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -17023,35 +16819,6 @@
       ]
     },
     {
-      "id": "ae00cd00ca0ba7482fea",
-      "title": "2026-012: Critical Vulnerabilities in Check Point Products",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-012",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-09-10T10:20:06+00:00",
-      "summary": "On 9 September 2026, Check Point released emergency security updates addressing two critical vulnerabilities affecting Check Point Security Gateway, Security Management Server, and Spark Firewall deployments configured to use Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated, remote attacker to execute arbitrary code on affected appliances. CERT-EU strongly recommends applying the available hotfixes as soon as possible, prioritising internet-facing and perimeter appliances.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
-      ]
-    },
-    {
       "id": "bce01b3a75cca3382244",
       "title": "CVE-2026-86060: MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
@@ -17121,38 +16888,6 @@
       "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
-      ]
-    },
-    {
-      "id": "c6f30b581859c88e89f2",
-      "title": "2026-011: Critical Vulnerabilities in SAP Kernel and NetWeaver Message Server",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-011",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-09-09T15:07:59+00:00",
-      "summary": "On 8 September 2026, as part of its September Security Patch Day, SAP released Security Notes addressing two critical vulnerabilities affecting a broad range of SAP products[3]. The most severe, CVE-2026-44756 (CVSS 10.0), is a memory corruption vulnerability in SAP Extended Passport (EPP) processing, nicknamed \"OVERPASS\" by the Onapsis Research Labs (ORL), which discovered and responsibly disclosed it[3]. The second, CVE-2026-58240 (CVSS 9.8), nicknamed \"S4GET\", is a missing authentication check in the SAP NetWeaver Message Server[6]. Both are remotely exploitable without authentication. According to the reporting researchers, successful exploitation of either can result in arbitrary operating system command execution under the account that owns the SAP installation, leading to full compromise of the affected system and the business data it holds[6]. CERT-EU strongly recommends applying SAP Security Notes 3747649 and 3759472 as soon as possible.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-44756",
-        "CVE-2026-58240"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -18725,35 +18460,6 @@
       "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
-      ]
-    },
-    {
-      "id": "c6be4acd77a6e14a8c86",
-      "title": "2026-010: Critical Vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway",
-      "url": "https://cert.europa.eu/publications/security-advisories/2026-010",
-      "source": "CERT-EU",
-      "category": "Gobierno / Alertas",
-      "region": "Europa",
-      "published_at": "2026-08-19T18:13:47+00:00",
-      "summary": "On 19 August 2026, Citrix published a security advisory addressing multiple critical vulnerabilities in NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway). CERT-EU recommends updating affected devices as soon as possible.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:39:55+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CERT-EU"
       ]
     },
     {
@@ -49653,6 +49359,349 @@
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
       ]
+    },
+    {
+      "id": "7eddf464947481206408",
+      "title": "CVE-2020-12641: Roundcube Webmail Remote Code Execution Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-12641",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Roundcube Webmail contains an remote code execution vulnerability that allows attackers to execute code via shell metacharacters in a configuration setting for im_convert_path or im_identify_path. Proveedor: Roundcube. Producto: Roundcube Webmail. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2020-12641"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Roundcube",
+      "product": "Roundcube Webmail",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "cdc0c4d5cb05ac2c854b",
+      "title": "CVE-2021-44026: Roundcube Webmail SQL Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44026",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Roundcube Webmail is vulnerable to SQL injection via search or search_params. Proveedor: Roundcube. Producto: Roundcube Webmail. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2021-44026"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Roundcube",
+      "product": "Roundcube Webmail",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "18aa6b20b0ac150f3b82",
+      "title": "CVE-2016-9079: Mozilla Firefox, Firefox ESR, and Thunderbird Use-After-Free Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9079",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Mozilla Firefox, Firefox ESR, and Thunderbird contain a use-after-free vulnerability in SVG Animation, targeting Firefox and Tor browser users on Windows. Proveedor: Mozilla. Producto: Firefox, Firefox ESR, and Thunderbird. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2016-9079"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Mozilla",
+      "product": "Firefox, Firefox ESR, and Thunderbird",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "5c2bbb7feff2ef06da7b",
+      "title": "CVE-2016-0165: Microsoft Win32k Privilege Escalation Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-0165",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Microsoft Win32k contains an unspecified vulnerability that allows for privilege escalation. Proveedor: Microsoft. Producto: Win32k. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2016-0165"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Microsoft",
+      "product": "Win32k",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "06925e0eb510f5f4657c",
+      "title": "NVIDIA AI Red Team: An Introduction",
+      "url": "https://developer.nvidia.com/blog/nvidia-ai-red-team-an-introduction",
+      "source": "NVIDIA Developer Blog — Cybersecurity",
+      "category": "Seguridad de IA / Hardware",
+      "region": "Global",
+      "published_at": "2023-06-14T22:00:16+00:00",
+      "summary": "Machine learning has the promise to improve our world, and in many ways it already has. However, research and lived experiences continue to show this technology...",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-31T07:00:54+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "NVIDIA Developer Blog — Cybersecurity"
+      ]
+    },
+    {
+      "id": "ac0841caa96e5451c6a2",
+      "title": "CVE-2023-27997: Fortinet FortiOS and FortiProxy SSL-VPN Heap-Based Buffer Overflow Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-13T00:00:00+00:00",
+      "summary": "Fortinet FortiOS and FortiProxy SSL-VPN contain a heap-based buffer overflow vulnerability which can allow an unauthenticated, remote attacker to execute code or commands via specifically crafted requests. Proveedor: Fortinet. Producto: FortiOS and FortiProxy SSL-VPN. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-13. Uso en campañas de ransomware: Known.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2023-27997"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Fortinet",
+      "product": "FortiOS and FortiProxy SSL-VPN",
+      "kev": true,
+      "date_added": "2023-06-13",
+      "due_date": "2023-07-04",
+      "known_ransomware_campaign_use": "Known",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "e0a3b2f081d4ebbf7cf9",
+      "title": "CVE-2023-3079: Google Chromium V8 Type Confusion Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-3079",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-07T00:00:00+00:00",
+      "summary": "Google Chromium V8 Engine contains a type confusion vulnerability that allows a remote attacker to potentially exploit heap corruption via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. Proveedor: Google. Producto: Chromium V8. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-07. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2023-3079"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "kev": true,
+      "date_added": "2023-06-07",
+      "due_date": "2023-06-28",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "8c07ccf497772c39b003",
+      "title": "CVE-2023-33009: Zyxel Multiple Firewalls Buffer Overflow Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33009",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-05T00:00:00+00:00",
+      "summary": "Zyxel ATP, USG FLEX, USG FLEX 50(W), USG20(W)-VPN, VPN, and ZyWALL/USG firewalls contain a buffer overflow vulnerability in the notification function that could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and remote code execution on an affected device. Proveedor: Zyxel. Producto: Multiple Firewalls. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-05. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2023-33009"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Zyxel",
+      "product": "Multiple Firewalls",
+      "kev": true,
+      "date_added": "2023-06-05",
+      "due_date": "2023-06-26",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "acd71d93ed2ee09089c0",
+      "title": "CVE-2023-33010: Zyxel Multiple Firewalls Buffer Overflow Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33010",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-05T00:00:00+00:00",
+      "summary": "Zyxel ATP, USG FLEX, USG FLEX 50(W), USG20(W)-VPN, VPN, and ZyWALL/USG firewalls contain a buffer overflow vulnerability in the ID processing function that could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and remote code execution on an affected device. Proveedor: Zyxel. Producto: Multiple Firewalls. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-05. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2023-33010"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Zyxel",
+      "product": "Multiple Firewalls",
+      "kev": true,
+      "date_added": "2023-06-05",
+      "due_date": "2023-06-26",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
+    },
+    {
+      "id": "ec0f898a089fda839567",
+      "title": "CVE-2023-34362: Progress MOVEit Transfer SQL Injection Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34362",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-02T00:00:00+00:00",
+      "summary": "Progress MOVEit Transfer contains a SQL injection vulnerability that could allow an unauthenticated attacker to gain unauthorized access to MOVEit Transfer's database. Depending on the database engine being used (MySQL, Microsoft SQL Server, or Azure SQL), an attacker may be able to infer information about the structure and contents of the database in addition to executing SQL statements that alter or delete database elements. Proveedor: Progress. Producto: MOVEit Transfer. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-02. Uso en campañas de ransomware: Known.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2023-34362"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-10-31T07:00:57+00:00",
+      "vendor": "Progress",
+      "product": "MOVEit Transfer",
+      "kev": true,
+      "date_added": "2023-06-02",
+      "due_date": "2023-06-23",
+      "known_ransomware_campaign_use": "Known",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
     }
   ],
   "source_status": [
@@ -49714,13 +49763,11 @@
     {
       "source": "CERT-EU",
       "url": "https://cert.europa.eu/publications/security-advisories-rss",
-      "ok": true,
-      "count": 10,
-      "error": null,
-      "checked_at": "2026-10-26T23:39:54+00:00",
-      "http_status": 200,
-      "last_published_at": "2026-10-23T16:36:26+00:00",
-      "duration_ms": 751
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='cert.europa.eu', port=443): Read timed out. (read timeout=15)",
+      "checked_at": "2026-10-31T07:00:23+00:00",
+      "duration_ms": 15385
     },
     {
       "source": "NIST Cybersecurity Insights",
@@ -49871,10 +49918,10 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "checked_at": "2026-10-30T16:43:12+00:00",
+      "checked_at": "2026-10-31T07:00:51+00:00",
       "http_status": 200,
-      "last_published_at": "2026-10-30T16:11:44+00:00",
-      "duration_ms": 203
+      "last_published_at": "2026-10-31T01:02:57+00:00",
+      "duration_ms": 235
     },
     {
       "source": "Google Project Zero",
@@ -49975,9 +50022,9 @@
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 2466,
-    "items_after_deduplication": 2455,
-    "sources_ok": 28,
+    "items_before_deduplication": 2456,
+    "items_after_deduplication": 2445,
+    "sources_ok": 27,
     "sources_total": 29
   }
 }
