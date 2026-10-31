@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T21:36:10+00:00",
-  "last_checked_at": "2026-10-30T21:36:10+00:00",
+  "generated_at": "2026-10-31T01:40:28+00:00",
+  "last_checked_at": "2026-10-31T01:40:28+00:00",
   "notice": "Cloudflare muestra estadísticas agregadas de capa 7. DShield informa IP observadas por sensores. ThreatFox y URLhaus publican IOC. Una IP geolocalizada no identifica a una persona ni demuestra una víctima.",
   "cloudflare": {
     "pairs": [
@@ -10,7 +10,7 @@
         "origin_country": "United States",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 13.1194,
+        "value_pct": 12.800763,
         "origin_coords": [
           39.8,
           -98.6
@@ -26,7 +26,7 @@
         "origin_country": "China",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 7.990692,
+        "value_pct": 7.53504,
         "origin_coords": [
           35.9,
           104.2
@@ -42,7 +42,7 @@
         "origin_country": "Netherlands",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 4.313929,
+        "value_pct": 4.176569,
         "origin_coords": [
           52.1,
           5.3
@@ -58,7 +58,7 @@
         "origin_country": "Indonesia",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 3.965291,
+        "value_pct": 4.17136,
         "origin_coords": [
           -0.8,
           113.9
@@ -74,7 +74,7 @@
         "origin_country": "Germany",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 3.511743,
+        "value_pct": 3.388944,
         "origin_coords": [
           51.2,
           10.4
@@ -90,7 +90,7 @@
         "origin_country": "Russian Federation",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 2.68542,
+        "value_pct": 2.181407,
         "origin_coords": [
           61.5,
           105.3
@@ -106,7 +106,7 @@
         "origin_country": "United States",
         "target_code": "CA",
         "target_country": "Canada",
-        "value_pct": 2.398148,
+        "value_pct": 2.097236,
         "origin_coords": [
           39.8,
           -98.6
@@ -118,27 +118,11 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
-        "origin_code": "US",
-        "origin_country": "United States",
-        "target_code": "CN",
-        "target_country": "China",
-        "value_pct": 2.390196,
-        "origin_coords": [
-          39.8,
-          -98.6
-        ],
-        "target_coords": [
-          35.9,
-          104.2
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
         "origin_code": "FR",
         "origin_country": "France",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.757573,
+        "value_pct": 1.7707,
         "origin_coords": [
           46.2,
           2.2
@@ -150,46 +134,30 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
+        "origin_code": "US",
+        "origin_country": "United States",
+        "target_code": "CN",
+        "target_country": "China",
+        "value_pct": 1.754492,
+        "origin_coords": [
+          39.8,
+          -98.6
+        ],
+        "target_coords": [
+          35.9,
+          104.2
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
         "origin_code": "BR",
         "origin_country": "Brazil",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.70254,
+        "value_pct": 1.570033,
         "origin_coords": [
           -10.8,
           -52.9
-        ],
-        "target_coords": [
-          39.8,
-          -98.6
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "ID",
-        "origin_country": "Indonesia",
-        "target_code": "CY",
-        "target_country": "Cyprus",
-        "value_pct": 1.679488,
-        "origin_coords": [
-          -0.8,
-          113.9
-        ],
-        "target_coords": [
-          35.1,
-          33.4
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "VN",
-        "origin_country": "Vietnam",
-        "target_code": "US",
-        "target_country": "United States",
-        "value_pct": 1.623604,
-        "origin_coords": [
-          16.0,
-          107.8
         ],
         "target_coords": [
           39.8,
@@ -202,7 +170,7 @@
         "origin_country": "Belgium",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.615709,
+        "value_pct": 1.544051,
         "origin_coords": [
           50.5,
           4.5
@@ -218,7 +186,7 @@
         "origin_country": "India",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.566369,
+        "value_pct": 1.505774,
         "origin_coords": [
           21.0,
           78.0
@@ -234,10 +202,42 @@
         "origin_country": "Japan",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.463958,
+        "value_pct": 1.407156,
         "origin_coords": [
           36.2,
           138.3
+        ],
+        "target_coords": [
+          39.8,
+          -98.6
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "ID",
+        "origin_country": "Indonesia",
+        "target_code": "BG",
+        "target_country": "Bulgaria",
+        "value_pct": 1.341647,
+        "origin_coords": [
+          -0.8,
+          113.9
+        ],
+        "target_coords": [
+          42.7,
+          25.5
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
+        "origin_code": "VN",
+        "origin_country": "Vietnam",
+        "target_code": "US",
+        "target_country": "United States",
+        "value_pct": 1.326561,
+        "origin_coords": [
+          16.0,
+          107.8
         ],
         "target_coords": [
           39.8,
@@ -250,7 +250,7 @@
         "origin_country": "Singapore",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.250386,
+        "value_pct": 1.218512,
         "origin_coords": [
           1.35,
           103.8
@@ -262,11 +262,27 @@
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
       {
+        "origin_code": "ID",
+        "origin_country": "Indonesia",
+        "target_code": "CY",
+        "target_country": "Cyprus",
+        "value_pct": 1.099912,
+        "origin_coords": [
+          -0.8,
+          113.9
+        ],
+        "target_coords": [
+          35.1,
+          33.4
+        ],
+        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
+      },
+      {
         "origin_code": "FI",
         "origin_country": "Finland",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.225921,
+        "value_pct": 1.0874,
         "origin_coords": [
           64.0,
           26.0
@@ -280,32 +296,16 @@
       {
         "origin_code": "US",
         "origin_country": "United States",
-        "target_code": "HK",
-        "target_country": "Hong Kong",
-        "value_pct": 1.160744,
+        "target_code": "BG",
+        "target_country": "Bulgaria",
+        "value_pct": 1.08006,
         "origin_coords": [
           39.8,
           -98.6
         ],
         "target_coords": [
-          22.3,
-          114.2
-        ],
-        "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
-      },
-      {
-        "origin_code": "SG",
-        "origin_country": "Singapore",
-        "target_code": "IL",
-        "target_country": "Israel",
-        "value_pct": 1.107626,
-        "origin_coords": [
-          1.35,
-          103.8
-        ],
-        "target_coords": [
-          31.0,
-          34.9
+          42.7,
+          25.5
         ],
         "evidence": "Estadística agregada de ataques L7 mitigados por Cloudflare"
       },
@@ -314,7 +314,7 @@
         "origin_country": "Poland",
         "target_code": "US",
         "target_country": "United States",
-        "value_pct": 1.05458,
+        "value_pct": 0.993662,
         "origin_coords": [
           52.0,
           19.1
@@ -327,11 +327,11 @@
       }
     ],
     "meta": {
-      "last_updated": "2026-10-30T19:30:00Z",
+      "last_updated": "2026-10-30T23:30:00Z",
       "date_range": [
         {
-          "startTime": "2026-10-29T21:00:00Z",
-          "endTime": "2026-10-30T21:00:00Z"
+          "startTime": "2026-10-30T01:00:00Z",
+          "endTime": "2026-10-31T01:00:00Z"
         }
       ],
       "normalization": "PERCENTAGE",
@@ -342,8 +342,8 @@
         }
       ]
     },
-    "checked_at": "2026-10-30T21:36:06+00:00",
-    "last_success_at": "2026-10-30T21:36:06+00:00"
+    "checked_at": "2026-10-31T01:40:24+00:00",
+    "last_success_at": "2026-10-31T01:40:24+00:00"
   },
   "dshield": {
     "ips": [
@@ -499,8 +499,8 @@
       }
     ],
     "count": 10,
-    "checked_at": "2026-10-30T21:36:06+00:00",
-    "last_success_at": "2026-10-30T21:36:06+00:00",
+    "checked_at": "2026-10-31T01:40:25+00:00",
+    "last_success_at": "2026-10-31T01:40:25+00:00",
     "feed_url": "https://feeds.dshield.org/feeds/top10.txt"
   },
   "threatfox": {
@@ -513,21 +513,192 @@
     "url_count": 50,
     "urls": [
       {
-        "id": "4047828",
-        "url": "http://42.5.244.70:52754/i",
-        "host": "42.5.244.70",
+        "id": "4047898",
+        "url": "http://59.96.142.174:36975/bin.sh",
+        "host": "59.96.142.174",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 21:33:14 UTC",
+        "date_added": "2026-10-31 01:39:14 UTC",
         "last_online": null,
         "tags": [
-          "32-bit",
+          "elf"
+        ],
+        "reporter": "wristhulk",
+        "ip": "59.96.142.174",
+        "geo": {
+          "country": "India",
+          "country_code": "IN",
+          "region": "Tamil Nadu",
+          "city": "Chennai",
+          "lat": 13.087844,
+          "lon": 80.2784675,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:26+00:00"
+        }
+      },
+      {
+        "id": "4047897",
+        "url": "http://123.5.138.16:48624/bin.sh",
+        "host": "123.5.138.16",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:32:06 UTC",
+        "last_online": null,
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "123.5.138.16",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577783,
+          "lon": 113.648608,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:26+00:00"
+        }
+      },
+      {
+        "id": "4047896",
+        "url": "http://125.40.112.202:60611/bin.sh",
+        "host": "125.40.112.202",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:32:06 UTC",
+        "last_online": null,
+        "tags": [
+          "mirai"
+        ],
+        "reporter": "adliwahid",
+        "ip": "125.40.112.202",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577783,
+          "lon": 113.648608,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:26+00:00"
+        }
+      },
+      {
+        "id": "4047895",
+        "url": "https://raw.githubusercontent.com/Arshadiqball/ai-news-scraper/refs/heads/main/fagald/ai-news-scraper.zip",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:29:07 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SmartLoader",
+          "zip"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047894",
+        "url": "https://raw.githubusercontent.com/Arshadiqball/CV/refs/heads/main/refacilitate/CV.zip",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:29:06 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SmartLoader",
+          "zip"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047893",
+        "url": "https://raw.githubusercontent.com/Arshadiqball/cpp-high-performance-boids/refs/heads/main/include/boids_cpp_high_performance_1.7.zip",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:29:06 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SmartLoader",
+          "zip"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047892",
+        "url": "http://2.182.119.123:56830/i",
+        "host": "2.182.119.123",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:20:12 UTC",
+        "last_online": null,
+        "tags": [
+          "cowrie",
           "elf",
+          "honeypot",
           "mips",
           "Mozi"
         ],
-        "reporter": "geenensp",
-        "ip": "42.5.244.70",
+        "reporter": "ksi_digital",
+        "ip": "2.182.119.123",
+        "geo": {
+          "country": "Iran",
+          "country_code": "IR",
+          "region": "Razavi Khorasan Province",
+          "city": "Mashhad",
+          "lat": 36.2980734,
+          "lon": 59.6056734,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:27+00:00"
+        }
+      },
+      {
+        "id": "4047891",
+        "url": "http://154.242.138.193:46424/i",
+        "host": "154.242.138.193",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:17:05 UTC",
+        "last_online": null,
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "154.242.138.193",
+        "geo": {
+          "country": "Algeria",
+          "country_code": "DZ",
+          "region": "Wilaya de Chlef",
+          "city": "Oued Fodda",
+          "lat": 36.185034,
+          "lon": 1.5329876,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:27+00:00"
+        }
+      },
+      {
+        "id": "4047890",
+        "url": "http://119.114.154.71:44181/i",
+        "host": "119.114.154.71",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 01:02:06 UTC",
+        "last_online": null,
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "119.114.154.71",
         "geo": {
           "country": "China",
           "country_code": "CN",
@@ -537,197 +708,22 @@
           "lon": 123.4327812,
           "geo_source": "IPWho.is",
           "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
+          "lookup_at": "2026-10-31T01:40:27+00:00"
         }
       },
       {
-        "id": "4047827",
-        "url": "http://112.198.178.17:55334/bin.sh",
-        "host": "112.198.178.17",
+        "id": "4047889",
+        "url": "http://27.215.126.91:53170/i",
+        "host": "27.215.126.91",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 21:32:08 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "112.198.178.17",
-        "geo": {
-          "country": "Philippines",
-          "country_code": "PH",
-          "region": "Calabarzon (Region IV-A)",
-          "city": "Nasugbu",
-          "lat": 14.0669434,
-          "lon": 120.6318123,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
-        }
-      },
-      {
-        "id": "4047826",
-        "url": "https://github.com/Jacksony100/CHEBURNET/releases/download/v1.0.0-rc.1/CHEBURNET.exe",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:32:07 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047825",
-        "url": "https://github.com/Jacksony100/CHEBURNET/releases/download/v1.0.0-rc.3/CHEBURNET.exe",
-        "host": "github.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:32:07 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SalatStealer",
-          "zapret"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047824",
-        "url": "http://123.11.77.131:52742/bin.sh",
-        "host": "123.11.77.131",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:32:05 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "123.11.77.131",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Nanyang",
-          "lat": 33.0052396,
-          "lon": 112.5465868,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
-        }
-      },
-      {
-        "id": "4047823",
-        "url": "http://115.49.8.59:46203/i",
-        "host": "115.49.8.59",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:22:12 UTC",
-        "last_online": null,
-        "tags": [
-          "arm",
-          "cowrie",
-          "elf",
-          "honeypot",
-          "mirai",
-          "Mozi"
-        ],
-        "reporter": "ksi_digital",
-        "ip": "115.49.8.59",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Zhengzhou",
-          "lat": 34.7577783,
-          "lon": 113.648608,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
-        }
-      },
-      {
-        "id": "4047822",
-        "url": "https://raw.githubusercontent.com/CCesar-c/jogo-style-space-invaders/refs/heads/main/css/jogo-style-space-invaders_v1.5-alpha.5.zip",
-        "host": "raw.githubusercontent.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:19:06 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047821",
-        "url": "http://42.224.82.160:53154/i",
-        "host": "42.224.82.160",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:17:07 UTC",
+        "date_added": "2026-10-31 01:02:06 UTC",
         "last_online": null,
         "tags": [
           "Mozi"
         ],
         "reporter": "adliwahid",
-        "ip": "42.224.82.160",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Luoyang",
-          "lat": 34.6734476,
-          "lon": 112.4368372,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
-        }
-      },
-      {
-        "id": "4047820",
-        "url": "http://125.47.51.172:54405/bin.sh",
-        "host": "125.47.51.172",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:17:07 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "125.47.51.172",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Zhengzhou",
-          "lat": 34.7577783,
-          "lon": 113.648608,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:09+00:00"
-        }
-      },
-      {
-        "id": "4047819",
-        "url": "http://39.89.167.219:35567/bin.sh",
-        "host": "39.89.167.219",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:17:06 UTC",
-        "last_online": null,
-        "tags": [
-          "Mozi"
-        ],
-        "reporter": "adliwahid",
-        "ip": "39.89.167.219",
+        "ip": "27.215.126.91",
         "geo": {
           "country": "China",
           "country_code": "CN",
@@ -737,56 +733,22 @@
           "lon": 116.9972244,
           "geo_source": "IPWho.is",
           "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:09+00:00"
+          "lookup_at": "2026-10-31T01:40:27+00:00"
         }
       },
       {
-        "id": "4047818",
-        "url": "https://raw.githubusercontent.com/AlexandrCherezau/MeteoritePlugin/refs/heads/master/run/libraries/commons-lang/commons-lang/2.6/commons-lang-2.6.jar",
-        "host": "raw.githubusercontent.com",
+        "id": "4047888",
+        "url": "http://182.112.28.106:45442/i",
+        "host": "182.112.28.106",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 21:10:10 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047817",
-        "url": "https://raw.githubusercontent.com/AlexandrCherezau/MeteoritePlugin/refs/heads/master/run/libraries/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar",
-        "host": "raw.githubusercontent.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:10:06 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047816",
-        "url": "http://182.113.24.32:44441/bin.sh",
-        "host": "182.113.24.32",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 21:02:08 UTC",
+        "date_added": "2026-10-31 01:02:06 UTC",
         "last_online": null,
         "tags": [
           "Mozi"
         ],
         "reporter": "adliwahid",
-        "ip": "182.113.24.32",
+        "ip": "182.112.28.106",
         "geo": {
           "country": "China",
           "country_code": "CN",
@@ -796,22 +758,123 @@
           "lon": 113.6486113,
           "geo_source": "IPWho.is",
           "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:09+00:00"
+          "lookup_at": "2026-10-31T01:40:27+00:00"
         }
       },
       {
-        "id": "4047815",
-        "url": "http://115.49.8.59:46203/bin.sh",
-        "host": "115.49.8.59",
+        "id": "4047887",
+        "url": "http://27.215.126.91:53170/bin.sh",
+        "host": "27.215.126.91",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 21:02:07 UTC",
+        "date_added": "2026-10-31 00:32:06 UTC",
         "last_online": null,
         "tags": [
-          "mirai"
+          "Mozi"
         ],
         "reporter": "adliwahid",
-        "ip": "115.49.8.59",
+        "ip": "27.215.126.91",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Shandong Sheng",
+          "city": "Jinan",
+          "lat": 36.6683294,
+          "lon": 116.9972244,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:27+00:00"
+        }
+      },
+      {
+        "id": "4047886",
+        "url": "http://182.112.28.106:45442/bin.sh",
+        "host": "182.112.28.106",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 00:32:06 UTC",
+        "last_online": null,
+        "tags": [
+          "Mozi"
+        ],
+        "reporter": "adliwahid",
+        "ip": "182.112.28.106",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577774,
+          "lon": 113.6486113,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:27+00:00"
+        }
+      },
+      {
+        "id": "4047885",
+        "url": "http://219.155.220.3:56964/i",
+        "host": "219.155.220.3",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 00:17:08 UTC",
+        "last_online": null,
+        "tags": [
+          "Mozi"
+        ],
+        "reporter": "adliwahid",
+        "ip": "219.155.220.3",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Henan Sheng",
+          "city": "Zhengzhou",
+          "lat": 34.7577774,
+          "lon": 113.6486113,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:27+00:00"
+        }
+      },
+      {
+        "id": "4047884",
+        "url": "http://113.231.88.61:34873/i",
+        "host": "113.231.88.61",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 00:17:07 UTC",
+        "last_online": null,
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "113.231.88.61",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Liaoning Sheng",
+          "city": "Fushun",
+          "lat": 41.8866861,
+          "lon": 123.9436345,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:28+00:00"
+        }
+      },
+      {
+        "id": "4047883",
+        "url": "http://115.58.95.39:54317/bin.sh",
+        "host": "115.58.95.39",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-31 00:02:09 UTC",
+        "last_online": null,
+        "tags": [
+          "32-bit",
+          "elf",
+          "mips",
+          "Mozi"
+        ],
+        "reporter": "geenensp",
+        "ip": "115.58.95.39",
         "geo": {
           "country": "China",
           "country_code": "CN",
@@ -821,273 +884,16 @@
           "lon": 113.648608,
           "geo_source": "IPWho.is",
           "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
+          "lookup_at": "2026-10-31T01:40:28+00:00"
         }
       },
       {
-        "id": "4047814",
-        "url": "http://124.112.71.33:34187/i",
-        "host": "124.112.71.33",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:13 UTC",
-        "last_online": null,
-        "tags": [
-          "mirai"
-        ],
-        "reporter": "adliwahid",
-        "ip": "124.112.71.33",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Anhui Sheng",
-          "city": "Hefei",
-          "lat": 31.863885,
-          "lon": 117.2808328,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:09+00:00"
-        }
-      },
-      {
-        "id": "4047813",
-        "url": "http://123.11.76.217:37289/i",
-        "host": "123.11.76.217",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:11 UTC",
-        "last_online": null,
-        "tags": [
-          "Mozi"
-        ],
-        "reporter": "adliwahid",
-        "ip": "123.11.76.217",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Nanyang",
-          "lat": 33.0052396,
-          "lon": 112.5465868,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:09+00:00"
-        }
-      },
-      {
-        "id": "4047812",
-        "url": "http://222.241.233.0:50704/i",
-        "host": "222.241.233.0",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:07 UTC",
-        "last_online": null,
-        "tags": [
-          "mirai"
-        ],
-        "reporter": "adliwahid",
-        "ip": "222.241.233.0",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Hunan Sheng",
-          "city": "Changsha",
-          "lat": 28.1987397,
-          "lon": 112.9708739,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:10+00:00"
-        }
-      },
-      {
-        "id": "4047811",
-        "url": "http://42.224.82.160:53154/bin.sh",
-        "host": "42.224.82.160",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:07 UTC",
-        "last_online": null,
-        "tags": [
-          "Mozi"
-        ],
-        "reporter": "adliwahid",
-        "ip": "42.224.82.160",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Luoyang",
-          "lat": 34.6734476,
-          "lon": 112.4368372,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:08+00:00"
-        }
-      },
-      {
-        "id": "4047810",
-        "url": "http://125.46.215.28:40892/i",
-        "host": "125.46.215.28",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:06 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "125.46.215.28",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Zhengzhou",
-          "lat": 34.7577774,
-          "lon": 113.6486113,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:10+00:00"
-        }
-      },
-      {
-        "id": "4047809",
-        "url": "http://42.229.220.48:42387/i",
-        "host": "42.229.220.48",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:06 UTC",
-        "last_online": null,
-        "tags": [
-          "Mozi"
-        ],
-        "reporter": "adliwahid",
-        "ip": "42.229.220.48",
-        "geo": null
-      },
-      {
-        "id": "4047808",
-        "url": "http://115.56.172.200:50959/bin.sh",
-        "host": "115.56.172.200",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:47:06 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "115.56.172.200",
-        "geo": null
-      },
-      {
-        "id": "4047807",
-        "url": "https://raw.githubusercontent.com/GooseProvide/prIZRak-Box_GitHuB/refs/heads/main/prizrak-box.bat",
-        "host": "raw.githubusercontent.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:43:13 UTC",
-        "last_online": null,
-        "tags": [
-          "dropper",
-          "github",
-          "SalatStealer"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047806",
-        "url": "http://46.236.65.9:41753/bin.sh",
-        "host": "46.236.65.9",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:38:12 UTC",
-        "last_online": null,
-        "tags": [
-          "32-bit",
-          "elf",
-          "mips",
-          "Mozi"
-        ],
-        "reporter": "geenensp",
-        "ip": "46.236.65.9",
-        "geo": null
-      },
-      {
-        "id": "4047805",
-        "url": "http://125.46.215.28:40892/bin.sh",
-        "host": "125.46.215.28",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:32:07 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "125.46.215.28",
-        "geo": {
-          "country": "China",
-          "country_code": "CN",
-          "region": "Henan Sheng",
-          "city": "Zhengzhou",
-          "lat": 34.7577774,
-          "lon": 113.6486113,
-          "geo_source": "IPWho.is",
-          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
-          "lookup_at": "2026-10-30T21:36:10+00:00"
-        }
-      },
-      {
-        "id": "4047804",
-        "url": "http://42.229.220.48:42387/bin.sh",
-        "host": "42.229.220.48",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:32:07 UTC",
-        "last_online": null,
-        "tags": [
-          "Mozi"
-        ],
-        "reporter": "adliwahid",
-        "ip": "42.229.220.48",
-        "geo": null
-      },
-      {
-        "id": "4047803",
-        "url": "http://120.28.161.170:35419/i",
-        "host": "120.28.161.170",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:32:07 UTC",
-        "last_online": null,
-        "tags": [
-          "mirai"
-        ],
-        "reporter": "adliwahid",
-        "ip": "120.28.161.170",
-        "geo": null
-      },
-      {
-        "id": "4047802",
-        "url": "http://42.224.147.209:38638/i",
-        "host": "42.224.147.209",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:25:21 UTC",
-        "last_online": null,
-        "tags": [
-          "32-bit",
-          "elf",
-          "mips",
-          "Mozi"
-        ],
-        "reporter": "geenensp",
-        "ip": "42.224.147.209",
-        "geo": null
-      },
-      {
-        "id": "4047801",
-        "url": "https://github.com/Haylesley/origins-tcg-ru-fix/releases/download/v1.0/OriginsTCG-fix-RU.zip",
+        "id": "4047882",
+        "url": "https://github.com/4anti/discord-bypass-turkey/releases/download/v1.3.0/DiscordBypassTurkey-portable-1.3.0.zip",
         "host": "github.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:25:10 UTC",
+        "date_added": "2026-10-30 23:50:44 UTC",
         "last_online": null,
         "tags": [
           "github",
@@ -1099,27 +905,58 @@
         "geo": null
       },
       {
-        "id": "4047800",
-        "url": "http://47.22.166.163:38371/i",
-        "host": "47.22.166.163",
+        "id": "4047881",
+        "url": "http://60.18.127.98:60211/i",
+        "host": "60.18.127.98",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:17:06 UTC",
+        "date_added": "2026-10-30 23:47:08 UTC",
         "last_online": null,
-        "tags": [
-          "mirai"
-        ],
+        "tags": [],
         "reporter": "adliwahid",
-        "ip": "47.22.166.163",
-        "geo": null
+        "ip": "60.18.127.98",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Liaoning Sheng",
+          "city": "Shenyang",
+          "lat": 41.7922214,
+          "lon": 123.4327783,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:28+00:00"
+        }
       },
       {
-        "id": "4047799",
-        "url": "http://75.1.240.64:34898/i",
-        "host": "75.1.240.64",
+        "id": "4047880",
+        "url": "http://113.231.88.61:34873/bin.sh",
+        "host": "113.231.88.61",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:16:16 UTC",
+        "date_added": "2026-10-30 23:47:06 UTC",
+        "last_online": null,
+        "tags": [],
+        "reporter": "adliwahid",
+        "ip": "113.231.88.61",
+        "geo": {
+          "country": "China",
+          "country_code": "CN",
+          "region": "Liaoning Sheng",
+          "city": "Fushun",
+          "lat": 41.8866861,
+          "lon": 123.9436345,
+          "geo_source": "IPWho.is",
+          "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+          "lookup_at": "2026-10-31T01:40:28+00:00"
+        }
+      },
+      {
+        "id": "4047879",
+        "url": "http://105.184.88.93:40275/i",
+        "host": "105.184.88.93",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:36:07 UTC",
         "last_online": null,
         "tags": [
           "32-bit",
@@ -1129,284 +966,49 @@
           "Mozi"
         ],
         "reporter": "geenensp",
-        "ip": "75.1.240.64",
+        "ip": "105.184.88.93",
         "geo": null
       },
       {
-        "id": "4047798",
-        "url": "https://github.com/vukhang16/Docker-For-Laravel-Application/raw/refs/heads/master/services/mysql/Application_Laravel_For_Docker_2.6-alpha.5.zip",
-        "host": "github.com",
+        "id": "4047878",
+        "url": "http://219.157.180.252:34918/i",
+        "host": "219.157.180.252",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:15:09 UTC",
+        "date_added": "2026-10-30 23:32:18 UTC",
         "last_online": null,
         "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
+          "32-bit",
+          "elf",
+          "mips",
+          "Mozi"
         ],
-        "reporter": "wristhulk",
-        "ip": null,
+        "reporter": "geenensp",
+        "ip": "219.157.180.252",
         "geo": null
       },
       {
-        "id": "4047797",
-        "url": "https://raw.githubusercontent.com/vukhang16/Scanners-Box/master/.github/workflows/Scanners_Box_1.3.zip",
-        "host": "raw.githubusercontent.com",
+        "id": "4047877",
+        "url": "http://120.28.197.69:59367/i",
+        "host": "120.28.197.69",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:15:08 UTC",
+        "date_added": "2026-10-30 23:17:07 UTC",
         "last_online": null,
         "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047796",
-        "url": "http://140.150.227.94/333/kmecmmp.txt",
-        "host": "140.150.227.94",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:10:07 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "abuse_ch",
-        "ip": "140.150.227.94",
-        "geo": null
-      },
-      {
-        "id": "4047795",
-        "url": "http://85.11.167.101/jlgloader.sh",
-        "host": "85.11.167.101",
-        "url_status": "offline",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:10:05 UTC",
-        "last_online": null,
-        "tags": [
-          " sh",
-          " ua-wget",
           "mirai"
         ],
-        "reporter": "amanda_anonymous",
-        "ip": "85.11.167.101",
+        "reporter": "adliwahid",
+        "ip": "120.28.197.69",
         "geo": null
       },
       {
-        "id": "4047794",
-        "url": "http://140.150.227.94/333/doAarfb.txt",
-        "host": "140.150.227.94",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:09:06 UTC",
-        "last_online": null,
-        "tags": [],
-        "reporter": "abuse_ch",
-        "ip": "140.150.227.94",
-        "geo": null
-      },
-      {
-        "id": "4047793",
-        "url": "https://dellabetgiris.live/pxhcoaw/pahfcn1/rfkodtj/asap/secured_sstub.ps1",
-        "host": "dellabetgiris.live",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:08:09 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "opendir",
-          "powershell",
-          "ps1"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047792",
-        "url": "https://raw.githubusercontent.com/ChinaOpenClaw/20191031test/refs/heads/master/chintai-migration-cms/WebContent/WEB-INF/lib/commons-lang-2.6.jar",
-        "host": "raw.githubusercontent.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:08:05 UTC",
-        "last_online": null,
-        "tags": [
-          "github",
-          "SmartLoader",
-          "zip"
-        ],
-        "reporter": "wristhulk",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047791",
-        "url": "https://dellabetgiris.live/pxhcoaw/pahfcn1/rfkodtj/asap/secured_stbub.ps1",
-        "host": "dellabetgiris.live",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:07:09 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "opendir",
-          "powershell",
-          "ps1"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047790",
-        "url": "https://dellabetgiris.live/pxhcoaw/pahfcn1/rfkodtj/asap/secured_stub.ps1",
-        "host": "dellabetgiris.live",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:07:09 UTC",
-        "last_online": null,
-        "tags": [
-          "AgentTesla",
-          "ascii",
-          "opendir",
-          "powershell",
-          "ps1"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047789",
-        "url": "https://dellabetgiris.live/pxhcoaw/pahfcn1/rfkodtj/asap/securedc_stub.ps1",
-        "host": "dellabetgiris.live",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:07:08 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "opendir",
-          "powershell",
-          "ps1"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047788",
-        "url": "https://dellabetgiris.live/pxhcoaw/pahfcn1/rfkodtj/asap/securedb_stub.ps1",
-        "host": "dellabetgiris.live",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:06:07 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "Formbook",
-          "opendir",
-          "powershell",
-          "ps1"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047787",
-        "url": "https://xsealslogisticsltd.com/img_011538.png",
-        "host": "xsealslogisticsltd.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:05:07 UTC",
-        "last_online": null,
-        "tags": [
-          "stego",
-          "xworm"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047786",
-        "url": "https://white-band-a6fb.to-o-ls-mee.workers.dev/helksvqsy",
-        "host": "white-band-a6fb.to-o-ls-mee.workers.dev",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:04:10 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "Encoded",
-          "xworm"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047785",
-        "url": "https://white-band-a6fb.to-o-ls-mee.workers.dev/ooqurpxrg",
-        "host": "white-band-a6fb.to-o-ls-mee.workers.dev",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:04:09 UTC",
-        "last_online": null,
-        "tags": [
-          "ascii",
-          "DarkCloud",
-          "Encoded"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047784",
-        "url": "https://seasquadshipping.com/oseaque/oboimg_023859.png",
-        "host": "seasquadshipping.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:04:08 UTC",
-        "last_online": null,
-        "tags": [
-          "stego",
-          "xworm"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047783",
-        "url": "https://xsealslogisticsltd.com/img_011659.png",
-        "host": "xsealslogisticsltd.com",
-        "url_status": "online",
-        "threat": "malware_download",
-        "date_added": "2026-10-30 20:04:07 UTC",
-        "last_online": null,
-        "tags": [
-          "DarkCloud",
-          "stego"
-        ],
-        "reporter": "abuse_ch",
-        "ip": null,
-        "geo": null
-      },
-      {
-        "id": "4047782",
-        "url": "http://46.41.109.97:56328/i",
+        "id": "4047876",
+        "url": "http://46.41.109.97:56328/bin.sh",
         "host": "46.41.109.97",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:03:07 UTC",
+        "date_added": "2026-10-30 23:17:06 UTC",
         "last_online": null,
         "tags": [
           "Mozi"
@@ -1416,49 +1018,447 @@
         "geo": null
       },
       {
-        "id": "4047781",
-        "url": "https://fuzerom.cfd/sprint/AdFmobm.txt",
-        "host": "fuzerom.cfd",
+        "id": "4047875",
+        "url": "https://raw.githubusercontent.com/Luisricardo2825/Concessionaria/refs/heads/master/lib/commons-lang-2.6.jar",
+        "host": "raw.githubusercontent.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:02:09 UTC",
+        "date_added": "2026-10-30 23:16:05 UTC",
         "last_online": null,
-        "tags": [],
-        "reporter": "abuse_ch",
+        "tags": [
+          "github",
+          "SmartLoader",
+          "zip"
+        ],
+        "reporter": "wristhulk",
         "ip": null,
         "geo": null
       },
       {
-        "id": "4047780",
-        "url": "http://182.117.28.2:59279/i",
-        "host": "182.117.28.2",
+        "id": "4047874",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323451/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:02:07 UTC",
+        "date_added": "2026-10-30 23:14:47 UTC",
         "last_online": null,
         "tags": [
-          "Mozi"
+          "github",
+          "zapret"
         ],
-        "reporter": "adliwahid",
-        "ip": "182.117.28.2",
+        "reporter": "wristhulk",
+        "ip": null,
         "geo": null
       },
       {
-        "id": "4047779",
-        "url": "http://182.116.35.198:35882/bin.sh",
-        "host": "182.116.35.198",
+        "id": "4047873",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_re123123poz2432itori34254323456/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
         "url_status": "online",
         "threat": "malware_download",
-        "date_added": "2026-10-30 20:02:06 UTC",
+        "date_added": "2026-10-30 23:14:47 UTC",
         "last_online": null,
-        "tags": [],
-        "reporter": "adliwahid",
-        "ip": "182.116.35.198",
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047872",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323456342111/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:47 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047871",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/6teori34254323456/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:41 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047870",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323324/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:41 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047869",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/6teori34254323456/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:38 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047868",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_repoz2432itori34254323456/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:38 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047867",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_repoz2432itori34254323456/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:38 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047866",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_re123123poz2432itori34254323456/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:35 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047865",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323456342111/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:35 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047864",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_repoz2432itori34254323433/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:35 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047863",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori342543234563423/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:32 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047862",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori3425432345634232/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:30 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047861",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323456/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:29 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047860",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori342543234563423/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:16 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047859",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323456/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:16 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047858",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323451/refs/heads/main/general.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:16 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047857",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori3425432345634232/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:16 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047856",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/test_repoz2432itori34254323433/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:15 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047855",
+        "url": "https://raw.githubusercontent.com/Axisnudisplay/teori34254323324/refs/heads/main/service.bat",
+        "host": "raw.githubusercontent.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:14:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047854",
+        "url": "https://github.com/Axisnudisplay/teori342543234563423/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:59 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047853",
+        "url": "https://github.com/Axisnudisplay/teori34254323324/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:59 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047852",
+        "url": "https://github.com/Axisnudisplay/teori34254323451/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:59 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047851",
+        "url": "https://github.com/Axisnudisplay/6teori34254323456/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:56 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047850",
+        "url": "https://github.com/Axisnudisplay/teori3425432345634232/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:40 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
+        "geo": null
+      },
+      {
+        "id": "4047849",
+        "url": "https://github.com/Axisnudisplay/teori34254323456/releases/download/v1/zapret-discord-youtube-1-10-0.rar",
+        "host": "github.com",
+        "url_status": "online",
+        "threat": "malware_download",
+        "date_added": "2026-10-30 23:12:09 UTC",
+        "last_online": null,
+        "tags": [
+          "github",
+          "SalatStealer",
+          "zapret"
+        ],
+        "reporter": "wristhulk",
+        "ip": null,
         "geo": null
       }
     ],
-    "checked_at": "2026-10-30T21:36:07+00:00",
-    "last_success_at": "2026-10-30T21:36:07+00:00"
+    "checked_at": "2026-10-31T01:40:25+00:00",
+    "last_success_at": "2026-10-31T01:40:25+00:00"
   },
   "geo_cache": {
     "23.94.68.19": {
@@ -1999,6 +1999,138 @@
       "geo_source": "IPWho.is",
       "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
       "lookup_at": "2026-10-30T21:36:10+00:00"
+    },
+    "59.96.142.174": {
+      "country": "India",
+      "country_code": "IN",
+      "region": "Tamil Nadu",
+      "city": "Chennai",
+      "lat": 13.087844,
+      "lon": 80.2784675,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:26+00:00"
+    },
+    "123.5.138.16": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:26+00:00"
+    },
+    "125.40.112.202": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:26+00:00"
+    },
+    "2.182.119.123": {
+      "country": "Iran",
+      "country_code": "IR",
+      "region": "Razavi Khorasan Province",
+      "city": "Mashhad",
+      "lat": 36.2980734,
+      "lon": 59.6056734,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "154.242.138.193": {
+      "country": "Algeria",
+      "country_code": "DZ",
+      "region": "Wilaya de Chlef",
+      "city": "Oued Fodda",
+      "lat": 36.185034,
+      "lon": 1.5329876,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "119.114.154.71": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Liaoning Sheng",
+      "city": "Shenyang",
+      "lat": 41.7922221,
+      "lon": 123.4327812,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "27.215.126.91": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Shandong Sheng",
+      "city": "Jinan",
+      "lat": 36.6683294,
+      "lon": 116.9972244,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "182.112.28.106": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577774,
+      "lon": 113.6486113,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "219.155.220.3": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577774,
+      "lon": 113.6486113,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:27+00:00"
+    },
+    "113.231.88.61": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Liaoning Sheng",
+      "city": "Fushun",
+      "lat": 41.8866861,
+      "lon": 123.9436345,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:28+00:00"
+    },
+    "115.58.95.39": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Henan Sheng",
+      "city": "Zhengzhou",
+      "lat": 34.7577783,
+      "lon": 113.648608,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:28+00:00"
+    },
+    "60.18.127.98": {
+      "country": "China",
+      "country_code": "CN",
+      "region": "Liaoning Sheng",
+      "city": "Shenyang",
+      "lat": 41.7922214,
+      "lon": 123.4327783,
+      "geo_source": "IPWho.is",
+      "accuracy_note": "Geolocalización aproximada de una IP; no identifica a una persona ni una víctima.",
+      "lookup_at": "2026-10-31T01:40:28+00:00"
     }
   },
   "source_status": [
@@ -2006,17 +2138,17 @@
       "key": "cloudflare",
       "name": "Cloudflare Radar",
       "ok": true,
-      "checked_at": "2026-10-30T21:36:06+00:00",
+      "checked_at": "2026-10-31T01:40:24+00:00",
       "count": 20,
       "error": null,
-      "source_updated_at": "2026-10-30T19:30:00Z",
+      "source_updated_at": "2026-10-30T23:30:00Z",
       "stale_data": false
     },
     {
       "key": "dshield",
       "name": "DShield / SANS ISC",
       "ok": true,
-      "checked_at": "2026-10-30T21:36:06+00:00",
+      "checked_at": "2026-10-31T01:40:25+00:00",
       "count": 10,
       "error": null,
       "stale_data": false
@@ -2025,7 +2157,7 @@
       "key": "threatfox",
       "name": "ThreatFox",
       "ok": false,
-      "checked_at": "2026-10-30T21:36:07+00:00",
+      "checked_at": "2026-10-31T01:40:25+00:00",
       "count": 0,
       "error": "ThreatFox query_status=no_json",
       "stale_data": false,
@@ -2035,7 +2167,7 @@
       "key": "urlhaus",
       "name": "URLhaus",
       "ok": true,
-      "checked_at": "2026-10-30T21:36:07+00:00",
+      "checked_at": "2026-10-31T01:40:25+00:00",
       "count": 50,
       "error": null,
       "stale_data": false
@@ -2044,7 +2176,7 @@
       "key": "geoip",
       "name": "Geolocalización IP (IPWho.is)",
       "ok": true,
-      "checked_at": "2026-10-30T21:36:10+00:00",
+      "checked_at": "2026-10-31T01:40:28+00:00",
       "count": 22,
       "error": null,
       "stale_data": false,
