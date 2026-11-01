@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T21:38:05+00:00",
-  "last_checked_at": "2026-10-31T21:38:05+00:00",
+  "generated_at": "2026-11-01T00:27:22+00:00",
+  "last_checked_at": "2026-11-01T00:27:22+00:00",
   "items": [
     {
       "id": "7a318fe996e6117e2975",
@@ -4246,6 +4246,124 @@
       ]
     },
     {
+      "id": "6a8deabb3d1fa4cc42d3",
+      "title": "CVE-2026-116196: Rclone before v1.75.2 contains a credential exposure vulnerability in the b2 backend that leaks the live account Authorization token and SSE-C keys on HTTP redirects from --b2-down",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116196",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:17:00+00:00",
+      "summary": "Rclone before v1.75.2 contains a credential exposure vulnerability in the b2 backend that leaks the live account Authorization token and SSE-C keys on HTTP redirects from --b2-download-url hosts. Attackers can observe a same-host HTTPS-to-HTTP downgrade redirect to capture the cleartext B2 token, or receive cross-host redirects disclosing SSE-C customer encryption keys.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "filtracion"
+      ],
+      "cves": [
+        "CVE-2026-116196"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 6.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "00314822333032322f50",
+      "title": "CVE-2026-116197: Edgeless Systems Contrast from 1.21.0 before 1.25.0 contains a non-deterministic registry selection flaw in imagepuller that can prefer wildcard configuration entries over concrete",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116197",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:17:00+00:00",
+      "summary": "Edgeless Systems Contrast from 1.21.0 before 1.25.0 contains a non-deterministic registry selection flaw in imagepuller that can prefer wildcard configuration entries over concrete domain matches. When a pull configuration lists both a concrete domain and its parent wildcard, registry credentials, CA bundles, or mirror settings intended for the wildcard may be applied to the concrete registry, leaking credentials or pull metadata.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "filtracion"
+      ],
+      "cves": [
+        "CVE-2026-116197"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0687eaf83aa8677cddbf",
+      "title": "CVE-2026-116198: Snipe-IT before 8.7.0 contains a missing encryption vulnerability in Api\\AssetsController::store that writes plaintext into encrypted-flagged custom-field columns when callers lack",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116198",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:17:00+00:00",
+      "summary": "Snipe-IT before 8.7.0 contains a missing encryption vulnerability in Api\\AssetsController::store that writes plaintext into encrypted-flagged custom-field columns when callers lack assets.view.encrypted_custom_fields. Authenticated API users without that permission can create assets whose sensitive custom-field values persist unencrypted in the database, exposing them through backups, replicas, or direct database access.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116198"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5b43a427c75980f11e9d",
+      "title": "CVE-2026-116199: Snipe-IT before 8.6.3 contains an authentication bypass in GoogleAuthController::handleGoogleCallback, which logs in the user whose username matches the Google account email withou",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116199",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:17:00+00:00",
+      "summary": "Snipe-IT before 8.6.3 contains an authentication bypass in GoogleAuthController::handleGoogleCallback, which logs in the user whose username matches the Google account email without enforcing the activated flag. Deactivated users with email-shaped usernames and still-live Google identities can sign in via Google SSO and regain sessions at their original permission level, including admin.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116199"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 9.2,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "573d3ea08fcd154b973d",
       "title": "CVE-2026-116189: rclone from 1.55.0 before 1.75.2 contains a signature verification bypass in stable selfupdate that trusts checksums from unsigned bytes preceding the PGP-clearsigned SHA256SUMS bl",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116189",
@@ -4326,6 +4444,122 @@
       ],
       "collected_at": "2026-10-31T21:38:04+00:00",
       "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "27382a6c4dfebf4ccb37",
+      "title": "CVE-2026-116192: rclone from 1.37 before 1.74.2 contains a server-side request forgery vulnerability that allows unauthenticated attackers to redirect http and netstorage backend requests by supply",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116192",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "rclone from 1.37 before 1.74.2 contains a server-side request forgery vulnerability that allows unauthenticated attackers to redirect http and netstorage backend requests by supplying a double-slash root on an existing named remote via --rc-serve. Attackers can make HEAD/GET requests to attacker-chosen hosts to read responses, capture configured custom headers, or obtain valid NetStorage request signatures.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116192"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6fce4a948ed2f02358dc",
+      "title": "CVE-2026-116193: Rclone from 1.64.0 before 1.75.2 contains an authentication bypass vulnerability in serve webdav that lets unauthenticated attackers skip authentication by sending OPTIONS requests",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116193",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "Rclone from 1.64.0 before 1.75.2 contains an authentication bypass vulnerability in serve webdav that lets unauthenticated attackers skip authentication by sending OPTIONS requests. Attackers can probe arbitrary paths and compare Allow header values to determine whether files or collections exist, enabling namespace enumeration.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116193"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "01098f5836dc10b35cbc",
+      "title": "CVE-2026-116194: Rclone from 1.52.0 before 1.75.2 contains a cross-site request forgery vulnerability in the pCloud backend's localhost OAuth callback, which disables the state check and trusts the",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116194",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "Rclone from 1.52.0 before 1.75.2 contains a cross-site request forgery vulnerability in the pCloud backend's localhost OAuth callback, which disables the state check and trusts the hostname parameter. Malicious web pages can send a stateless request to port 53682 during authorization, planting attacker tokens and API hosts so later transfers reach the attacker.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116194"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 7.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "62ec3de35a18619bbb00",
+      "title": "CVE-2026-116195: Rclone before 1.75.2 contains a path traversal vulnerability in the local backend's translateLink function, which trims the .rclonelink suffix from a path after the containment che",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116195",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-25T14:16:59+00:00",
+      "summary": "Rclone before 1.75.2 contains a path traversal vulnerability in the local backend's translateLink function, which trims the .rclonelink suffix from a path after the containment check, so a name can resolve outside the destination root. Attackers can plant a directory named ...rclonelink in a source tree synced with --links and --metadata to change ownership, timestamps, and xattrs of the destination's parent directory.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116195"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-01T00:27:21+00:00",
+      "cvss": 7.0,
       "severity": "HIGH",
       "kev": false,
       "related_sources": [
@@ -6926,240 +7160,6 @@
       ]
     },
     {
-      "id": "c18dc55f2ec7fa3ddb2b",
-      "title": "CVE-2026-115997: A flaw has been found in pig-mesh pig up to 4.1.0. This impacts the function orderItem.getColumn of the file pig-common/pig-common-data/src/main/java/com/pig4cloud/pig/common/data/",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115997",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-25T00:16:45+00:00",
-      "summary": "A flaw has been found in pig-mesh pig up to 4.1.0. This impacts the function orderItem.getColumn of the file pig-common/pig-common-data/src/main/java/com/pig4cloud/pig/common/data/resolver/SqlFilterArgumentResolver.java. Executing a manipulation of the argument ascs/descs can lead to sql injection. The attack may be launched remotely. The exploit has been published and may be used. Upgrading to version 4.1.1 will fix this issue. This patch is called 9b6311161e346d7626c81d993044072fed2dca07. It is suggested to upgrade the affected component. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115997"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7c7dcdedc36bcf0e6395",
-      "title": "CVE-2026-89284: Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89284",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T23:16:59+00:00",
-      "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-89284"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0c58f00d058cba6807de",
-      "title": "CVE-2026-111326: Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111326",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T23:16:58+00:00",
-      "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111326"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "73bcfeea38c0bb80596c",
-      "title": "CVE-2026-115995: A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the componen",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115995",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T23:16:58+00:00",
-      "summary": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads to os command injection. The attack can be launched remotely. Upgrading to version 1.1.11.5 is sufficient to resolve this issue. You should upgrade the affected component. The vendor confirmed early: \"Submission 990502 corresponds to our internal ticket #474 (Go2 chat_go set_volume OS command injection, CWE-78).\"",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "infraestructura_critica"
-      ],
-      "cves": [
-        "CVE-2026-115995"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 9.4,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "da80bea2ab2be34688b0",
-      "title": "CVE-2026-115996: A vulnerability was detected in Unitree Robotics Unitree Go2 up to 1.1.13/1.1.14.1/1.1.15.1. This affects the function WebSocketClient.connect of the file websocket.py of the compo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115996",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T23:16:58+00:00",
-      "summary": "A vulnerability was detected in Unitree Robotics Unitree Go2 up to 1.1.13/1.1.14.1/1.1.15.1. This affects the function WebSocketClient.connect of the file websocket.py of the component chat_go. Performing a manipulation results in improper certificate validation. The attack may be initiated remotely. The attack's complexity is rated as high. The exploitability is reported as difficult. The vendor confirmed early: \"These issues were previously submitted by the researcher through our Security Response Center platform and are tracked internally as follows: Submission 990504 corresponds to our internal ticket #616 (Go2 chat_go WSS client disabled TLS server certificate validation, CWE-295).\"",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "infraestructura_critica"
-      ],
-      "cves": [
-        "CVE-2026-115996"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "631cc17b751d0a0ee932",
-      "title": "CVE-2026-109111: Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109111",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T23:16:57+00:00",
-      "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-109111"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": null,
-      "severity": null,
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "cd34d0e68a364a2622d8",
-      "title": "CVE-2026-115981: A security vulnerability has been detected in phpIPAM up to 1.8.3. Affected by this vulnerability is an unknown functionality of the file upgrade/index.php. Such manipulation of th",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115981",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T22:16:27+00:00",
-      "summary": "A security vulnerability has been detected in phpIPAM up to 1.8.3. Affected by this vulnerability is an unknown functionality of the file upgrade/index.php. Such manipulation of the argument REQUEST_URI leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115981"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 1.9,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "83aef3caf1433a450e1e",
-      "title": "CVE-2026-115982: A vulnerability was detected in phpIPAM up to 1.8.3. Affected by this issue is the function create_rack_link of the file app/tools/racks/show-rack-popup.php of the component Rack L",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115982",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-24T22:16:27+00:00",
-      "summary": "A vulnerability was detected in phpIPAM up to 1.8.3. Affected by this issue is the function create_rack_link of the file app/tools/racks/show-rack-popup.php of the component Rack Link Creation. Performing a manipulation of the argument deviceid results in cross site scripting. Remote exploitation of the attack is possible. The exploit is now public and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115982"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-31T00:49:09+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "1c8bea2d85fd044b4230",
       "title": "On The Brink Of Epic Fury Round Two?",
       "url": "https://www.twz.com/news-features/on-the-brink-of-epic-fury-round-two",
@@ -9558,34 +9558,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "ca51fa509ce6e8e2544c",
-      "title": "How The U.S. Army’s ‘Navy’ Aims To Go More Autonomous With Its Vessels In The Pacific",
-      "url": "https://www.twz.com/sea/how-the-u-s-armys-navy-aims-to-go-more-autonomous-with-its-vessels-in-the-pacific",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-21T23:30:27+00:00",
-      "summary": "The Army wants to buy up to 100 new USVs and add autonomous capabilities into existing crewed vessels. The post How The U.S. Army’s ‘Navy’ Aims To Go More Autonomous With Its Vessels In The Pacific appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:01+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
       ]
     },
     {
@@ -49682,6 +49654,41 @@
       "related_sources": [
         "CISA Known Exploited Vulnerabilities (KEV)"
       ]
+    },
+    {
+      "id": "5c2bbb7feff2ef06da7b",
+      "title": "CVE-2016-0165: Microsoft Win32k Privilege Escalation Vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-0165",
+      "source": "CISA Known Exploited Vulnerabilities (KEV)",
+      "category": "Vulnerabilidades explotadas (CISA KEV)",
+      "region": "Global",
+      "published_at": "2023-06-22T00:00:00+00:00",
+      "summary": "Microsoft Win32k contains an unspecified vulnerability that allows for privilege escalation. Proveedor: Microsoft. Producto: Win32k. Acción requerida: Apply updates per vendor instructions.. Fecha agregada al catálogo: 2023-06-22. Uso en campañas de ransomware: Unknown.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "ransomware"
+      ],
+      "cves": [
+        "CVE-2016-0165"
+      ],
+      "priority_score": 92,
+      "priority_label": "crítica",
+      "priority_basis": [
+        "incluida en CISA KEV",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-11-01T00:27:20+00:00",
+      "vendor": "Microsoft",
+      "product": "Win32k",
+      "kev": true,
+      "date_added": "2023-06-22",
+      "due_date": "2023-07-13",
+      "known_ransomware_campaign_use": "Unknown",
+      "required_action": "Apply updates per vendor instructions.",
+      "related_sources": [
+        "CISA Known Exploited Vulnerabilities (KEV)"
+      ]
     }
   ],
   "source_status": [
@@ -49821,12 +49828,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 34,
+      "count": 33,
       "error": null,
-      "checked_at": "2026-10-31T21:37:49+00:00",
+      "checked_at": "2026-11-01T00:27:01+00:00",
       "http_status": 200,
       "last_published_at": "2026-10-31T00:19:01+00:00",
-      "duration_ms": 456
+      "duration_ms": 882
     },
     {
       "source": "CyberScoop",
@@ -50004,8 +50011,8 @@
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 2463,
-    "items_after_deduplication": 2452,
+    "items_before_deduplication": 2462,
+    "items_after_deduplication": 2451,
     "sources_ok": 28,
     "sources_total": 29
   }
