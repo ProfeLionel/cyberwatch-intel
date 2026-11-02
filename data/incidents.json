@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-11-02T02:33:43+00:00",
-  "last_checked_at": "2026-11-02T02:33:43+00:00",
+  "generated_at": "2026-11-02T10:00:52+00:00",
+  "last_checked_at": "2026-11-02T10:00:52+00:00",
   "items": [
+    {
+      "id": "bcfce8074fe98f42a51d",
+      "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks",
+      "source": "BleepingComputer",
+      "category": "Noticias de ciberseguridad",
+      "region": "Global",
+      "published_at": "2026-11-02T09:33:26+00:00",
+      "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [],
+      "priority_score": 25,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "zero-day"
+      ],
+      "collected_at": "2026-11-02T10:00:11+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "BleepingComputer"
+      ]
+    },
     {
       "id": "ba013b14a8bc9a30aa75",
       "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
@@ -1359,34 +1388,6 @@
       "type": "article",
       "tags": [
         "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-30T16:42:57+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "BleepingComputer"
-      ]
-    },
-    {
-      "id": "642f147345e48ec870d0",
-      "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks",
-      "source": "BleepingComputer",
-      "category": "Noticias de ciberseguridad",
-      "region": "Global",
-      "published_at": "2026-10-30T10:16:07+00:00",
-      "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
       ],
       "cves": [],
       "priority_score": 10,
@@ -4070,6 +4071,1461 @@
       ]
     },
     {
+      "id": "d469bb948656de88f30b",
+      "title": "CVE-2026-116485: danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is u",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116485",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:37+00:00",
+      "summary": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116485"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6a8bd14e564ad6b502b1",
+      "title": "CVE-2026-116486: Objenesis before 3.6 contains a type confusion vulnerability that allows code in one class loader to substitute objects into another by exploiting instantiator caching keyed on cla",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116486",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:37+00:00",
+      "summary": "Objenesis before 3.6 contains a type confusion vulnerability that allows code in one class loader to substitute objects into another by exploiting instantiator caching keyed on class name. When a shared ObjenesisStd instance caches instantiators by clazz.getName() in ObjenesisBase.getInstantiatorOf(), same-named classes collide, causing newInstance() to return wrong-class objects and ClassCastException failures.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116486"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.0,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "881f6fd8cef3e9680f82",
+      "title": "CVE-2026-116487: NXP MCUXpresso SDK USB middleware (mcuxsdk-middleware-usb) before 2.13.0 contains an out-of-bounds read vulnerability in USB_DeviceCdcRndisSetCommand() that trusts a host-supplied",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116487",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:37+00:00",
+      "summary": "NXP MCUXpresso SDK USB middleware (mcuxsdk-middleware-usb) before 2.13.0 contains an out-of-bounds read vulnerability in USB_DeviceCdcRndisSetCommand() that trusts a host-supplied informationBufferOffset. A malicious USB host can send RNDIS SET messages for OID_GEN_CURRENT_PACKET_FILTER or OID_802_3_MULTICAST_LIST with an out-of-range offset to read and disclose device memory.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116487"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f1936bd799da1cb353a1",
+      "title": "CVE-2026-116488: NXP MCUXpresso SDK USB middleware (mcuxsdk-middleware-usb) before 2.13.0 contains a heap buffer overflow in host audio, video and CDC class drivers that trust device-supplied bNumE",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116488",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:37+00:00",
+      "summary": "NXP MCUXpresso SDK USB middleware (mcuxsdk-middleware-usb) before 2.13.0 contains a heap buffer overflow in host audio, video and CDC class drivers that trust device-supplied bNumEndpoints and bLength values. A malicious USB device can supply crafted descriptors that write endpoint entries past the fixed-size epList array, corrupting heap memory for code execution or denial of service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116488"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.0,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "da466eb59116a0a42c0d",
+      "title": "CVE-2026-116492: Frappe CRM app before 1.89.1 contains a missing authorization vulnerability that allows authenticated low-privileged users to read CRM Lead records they are not permitted to access",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116492",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:37+00:00",
+      "summary": "Frappe CRM app before 1.89.1 contains a missing authorization vulnerability that allows authenticated low-privileged users to read CRM Lead records they are not permitted to access by querying the get_contact_by_phone_number API, which performs raw database queries without invoking the permission system. Attackers can supply a known phone number to the crm.integrations.api.get_contact_by_phone_number endpoint to retrieve full lead details otherwise blocked by standard API and UI access controls, resulting in unauthorized disclosure of sensitive CRM data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116492"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d8edaeba4277b9b08999",
+      "title": "CVE-2026-116283: A weakness has been identified in Kameleo up to 5.0.1.26. This affects an unknown part of the file /profiles of the component Local API. This manipulation causes information disclo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116283",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:36+00:00",
+      "summary": "A weakness has been identified in Kameleo up to 5.0.1.26. This affects an unknown part of the file /profiles of the component Local API. This manipulation causes information disclosure. The attack is possible to be carried out remotely. Upgrading to version 5.2.0 is able to mitigate this issue. Upgrading the affected component is advised.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116283"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "85e1bc1a4076424497ce",
+      "title": "CVE-2026-116219: Dolibarr ERP CRM before 24.0.0 contains an OS command injection vulnerability in htdocs/admin/tools/export.php that lets authenticated administrators bypass the restrict_os_command",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116219",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "Dolibarr ERP CRM before 24.0.0 contains an OS command injection vulnerability in htdocs/admin/tools/export.php that lets authenticated administrators bypass the restrict_os_commands allowlist. Attackers can submit a mysqldump value chaining commands with & characters around an allowlisted basename to execute operating system commands as the web server user.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116219"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "567bacb067f0ff57ef53",
+      "title": "CVE-2026-116274: A vulnerability has been found in JIZHICMS up to 2.5.6. This affects the function Pay of the file app/home/c/OrderController.php of the component Front-end Order Handler. Such mani",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116274",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "A vulnerability has been found in JIZHICMS up to 2.5.6. This affects the function Pay of the file app/home/c/OrderController.php of the component Front-end Order Handler. Such manipulation of the argument orderno leads to improper authorization. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116274"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8b3dc4f5c2f876b6b907",
+      "title": "CVE-2026-116275: A vulnerability was found in AllenAI AllenNLP up to 2.10.1. This impacts the function Registrable.resolve_class_name of the file allennlp/common/registrable.py of the component Reg",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116275",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "A vulnerability was found in AllenAI AllenNLP up to 2.10.1. This impacts the function Registrable.resolve_class_name of the file allennlp/common/registrable.py of the component Registrable Configuration Machinery. Performing a manipulation of the argument Type results in code injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116275"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "71d494f900f9de3e48f9",
+      "title": "CVE-2026-116280: A vulnerability was determined in Kameleo up to 5.0.1.26. Affected is the function InternalController.TestProxy of the file client-engine-application/f.cs of the component Proxy Va",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116280",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "A vulnerability was determined in Kameleo up to 5.0.1.26. Affected is the function InternalController.TestProxy of the file client-engine-application/f.cs of the component Proxy Validation. Executing a manipulation of the argument host/port can lead to server-side request forgery. The attack may be launched remotely. Upgrading to version 5.2.0 is able to address this issue. It is suggested to upgrade the affected component. The route has been removed and replaced with /general/test-proxy in 5.2.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116280"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2867d52de69d1aea5f53",
+      "title": "CVE-2026-116281: A vulnerability was identified in Kameleo up to 5.0.1.26. Affected by this vulnerability is the function ListProfiles of the file client-engine-application/t.cs of the component Pr",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116281",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "A vulnerability was identified in Kameleo up to 5.0.1.26. Affected by this vulnerability is the function ListProfiles of the file client-engine-application/t.cs of the component Profile Controller. The manipulation leads to information disclosure. The attack can only be performed from a local environment. Upgrading to version 5.2.0 addresses this issue. Upgrading the affected component is recommended.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116281"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "809476bbb775a52fe69a",
+      "title": "CVE-2026-116282: A security flaw has been discovered in Kameleo up to 5.3.1. Affected by this issue is the function CookieController.ListCookies of the file client-engine-application/w.cs of the co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116282",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:35+00:00",
+      "summary": "A security flaw has been discovered in Kameleo up to 5.3.1. Affected by this issue is the function CookieController.ListCookies of the file client-engine-application/w.cs of the component Cookie Controller. The manipulation of the argument guid results in information disclosure. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116282"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b99f0acfa053a171269b",
+      "title": "CVE-2026-116213: Webasyst Framework through 4.4.0 contains an arbitrary file read vulnerability in waArchiveTar::writeItem() that creates symlinks from theme archives without validating link target",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116213",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "Webasyst Framework through 4.4.0 contains an arbitrary file read vulnerability in waArchiveTar::writeItem() that creates symlinks from theme archives without validating link targets. Authenticated users with theme management rights can upload themes containing symlinks to wa-config/db.php or /etc/passwd and read them through the public theme path.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116213"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f0a929e2f779e8decfdd",
+      "title": "CVE-2026-116214: MacCMS v10 before 2026.1000.4054 contains an authentication bypass vulnerability that allows unauthenticated attackers to reset any member's password because check_msg() never comp",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116214",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "MacCMS v10 before 2026.1000.4054 contains an authentication bypass vulnerability that allows unauthenticated attackers to reset any member's password because check_msg() never compares msg_to. Attackers can request a recovery code to their own mailbox via user/findpass_msg, then submit it to user/findpass_reset with the victim's email or phone to take over the account.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116214"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2ae3aea05eba6290ad91",
+      "title": "CVE-2026-116215: MacCMS v10 through 2026.1000.4056 contains a race condition vulnerability in Card::useData() that allows authenticated members to redeem one recharge card multiple times via the us",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116215",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "MacCMS v10 through 2026.1000.4056 contains a race condition vulnerability in Card::useData() that allows authenticated members to redeem one recharge card multiple times via the user/buy endpoint. Attackers can send many concurrent flag=card requests that pass the non-locking card read before it is marked used, inflating user_points to buy VIP upgrades and paid content.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116215"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.3,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ed7623bd10ddeb5be62a",
+      "title": "CVE-2026-116216: MacCMS v10 through 2026.1000.4056 contains a mass assignment vulnerability in index/Comment::saveData() that allows unauthenticated attackers to set arbitrary mac_comment columns i",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116216",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "MacCMS v10 through 2026.1000.4056 contains a mass assignment vulnerability in index/Comment::saveData() that allows unauthenticated attackers to set arbitrary mac_comment columns including user_id. Attackers can submit anonymous comments with a crafted user_id parameter to attribute them to any registered member, displaying that member's avatar and impersonating them.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116216"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "71d8366f9862b6e2e26e",
+      "title": "CVE-2026-116217: RosarioSIS before 12.9.2 contains a reflected cross-site scripting vulnerability in modules/Food_Service/MenuReports.php that allows unauthenticated attackers to inject attributes",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116217",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "RosarioSIS before 12.9.2 contains a reflected cross-site scripting vulnerability in modules/Food_Service/MenuReports.php that allows unauthenticated attackers to inject attributes via unescaped menu_id and modname parameters. Attackers can lure a logged-in administrator to a crafted Modules.php link whose double-quoted menu_id injects an onmouseover handler, stealing session and CSRF tokens to act as the administrator.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116217"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c9f42d9b0b7fb151aa76",
+      "title": "CVE-2026-116218: Dolibarr ERP CRM 19.0.0 before 23.0.4 contains an SQL injection vulnerability that allows authenticated API users to inject SQL via the type field of the third-party bankaccounts R",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116218",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:34+00:00",
+      "summary": "Dolibarr ERP CRM 19.0.0 before 23.0.4 contains an SQL injection vulnerability that allows authenticated API users to inject SQL via the type field of the third-party bankaccounts REST endpoint. Attackers with only societe/creer permission can break out of the unescaped type value in CompanyBankAccount::create() to read password hashes and API keys via time-based blind subqueries.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116218"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6a31078c5f0686e4b18f",
+      "title": "CVE-2026-116210: Webasyst Framework through 4.4.0 contains a cross-site request forgery vulnerability in the Photos app that allows remote attackers to perform backend actions because the app does",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116210",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:33+00:00",
+      "summary": "Webasyst Framework through 4.4.0 contains a cross-site request forgery vulnerability in the Photos app that allows remote attackers to perform backend actions because the app does not enable the framework's opt-in CSRF check. Attackers can lure logged-in Photos users to a malicious page that submits forged POST requests to photo/delete, album/save, photo/manageAccessSave or photo/saveField, deleting photos and changing access rights.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116210"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9588d9a98674fe1b264a",
+      "title": "CVE-2026-116212: Webasyst Framework through 4.4.0 contains a stored cross-site scripting vulnerability in the Photos app that allows authenticated backend users to inject JavaScript via the album u",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116212",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:33+00:00",
+      "summary": "Webasyst Framework through 4.4.0 contains a stored cross-site scripting vulnerability in the Photos app that allows authenticated backend users to inject JavaScript via the album url parameter. Attackers with album edit rights can save a url value that breaks out of the unescaped attribute in DialogAlbumSettings.html, executing JavaScript in administrators' backend sessions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116212"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a243bc73b3838267c66c",
+      "title": "CVE-2026-115700: Interpretation Conflict vulnerability in hackney_url in benoitc hackney allows Server Side Request Forgery via a percent-encoded bracketed IPv6 literal or an IP literal with a trai",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115700",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:32+00:00",
+      "summary": "Interpretation Conflict vulnerability in hackney_url in benoitc hackney allows Server Side Request Forgery via a percent-encoded bracketed IPv6 literal or an IP literal with a trailing dot. A host such as %5B%3A%3Affff%3A127%2E0%2E0%2E1%5D (decoding to [::ffff:127.0.0.1]) or 127.0.0.1. is not an IP address to a caller's allowlist built on uri_string:parse/1 and inet:parse_address/1, while hackney connects to the address it denotes. The same applies to a Location target when redirects are followed. The IP-literal gate that hackney_url:normalize/2 applies to a percent-decoded host, added to close the percent-encoded IP bypass of CVE-2026-47076, passes the decoded value to inet_parse:address/1 as is. The connect path in hackney_happy:parse_address/1 drops a surrounding bracket pair, and the resolver ignores a trailing dot, so both forms pass the gate and still reach the literal address. Domain names with a trailing dot and unencoded IPv6 literals are not affected. This issue affects hackney: from 4.0.1 before 4.9.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115700"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2423b25e7fb548b1b716",
+      "title": "CVE-2026-115195: A broken access control vulnerability exists in the Mautic Stats API (/api/stats/{table}). The endpoint did not enforce permissions for several internal tables: an intended adminis",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115195",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:31+00:00",
+      "summary": "A broken access control vulnerability exists in the Mautic Stats API (/api/stats/{table}). The endpoint did not enforce permissions for several internal tables: an intended administrator-only restriction was never applied, and tables without an explicit permission mapping were readable by default. As a result, any authenticated API user, including one whose role grants no permissions, could read data from these tables, including the application audit log with actions performed by all users and change details that may contain contact personal data, stored visitor IP addresses and their geolocation details, and tracked redirect URLs and their channel mappings.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115195"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ea0fc8d76a0ccbcf67e9",
+      "title": "CVE-2026-115196: An Open Redirect vulnerability exists in the public form submission endpoint (/form/submit) of Mautic. After a form is submitted, the application redirects the visitor to a return",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115196",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:31+00:00",
+      "summary": "An Open Redirect vulnerability exists in the public form submission endpoint (/form/submit) of Mautic. After a form is submitted, the application redirects the visitor to a return address supplied with the submission without verifying that it points to the Mautic instance or another trusted host. An unauthenticated attacker can exploit this to send visitors from a legitimate Mautic domain to an arbitrary external website, for example to phishing pages that imitate the original landing page or to sites that deliver malware. Any Mautic instance with a published form is affected. Exploitation requires the victim to submit a form prepared by the attacker.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "malware",
+        "phishing"
+      ],
+      "cves": [
+        "CVE-2026-115196"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5caeabb67fd78502973e",
+      "title": "CVE-2026-115269: Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 request body reader of mtrudel bandit allows an unauthenticated remote attacker to hold stream proc",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115269",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:31+00:00",
+      "summary": "Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 request body reader of mtrudel bandit allows an unauthenticated remote attacker to hold stream processes open indefinitely via WINDOW_UPDATE or empty SETTINGS frames sent while a Plug reads the request body. Bandit.HTTP2.Stream.do_read_data/4 in lib/bandit/http2/stream.ex waits for each frame with a fresh read_timeout. A stream WINDOW_UPDATE, or the zero-delta window update that every empty SETTINGS frame delivers to all streams, ends the wait without delivering any body data, and the loop starts a new full countdown. A client that sends one of these 9-byte frames before each countdown expires keeps read_body blocked, together with the stream process and whatever the application holds while reading, for as long as it likes. This issue affects bandit: from 1.4.0 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115269"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "249a682fadcabe4ab0b7",
+      "title": "CVE-2026-115693: Improper Certificate Validation vulnerability in hackney_ssl in benoitc hackney allows an on-path attacker to impersonate a server pinned to a private certificate authority via a c",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115693",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:31+00:00",
+      "summary": "Improper Certificate Validation vulnerability in hackney_ssl in benoitc hackney allows an on-path attacker to impersonate a server pinned to a private certificate authority via a certificate chain that ends in a publicly trusted root. hackney adds {partial_chain, fun hackney_ssl:partial_chain/1} to every verify_peer configuration. The callback returns any certificate in the peer chain whose public key matches a root in the bundled certifi store as the trust anchor, and OTP honours that callback over the configured cacerts. hackney_ssl:merge_ssl_opts/3 kept the callback when the caller replaced the trust store with cacerts or cacertfile in ssl_options, so a connection pinned to a private CA still accepted any chain that carried a publicly trusted root. The hostname check still applies, so the attacker needs a publicly trusted certificate for the pinned hostname. This issue affects hackney: from 1.24.0 before 4.9.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115693"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "79c9f45b3916a0441742",
+      "title": "CVE-2026-115188: An unrestricted file upload vulnerability exists in the campaign import feature of Mautic 7. When processing an uploaded campaign archive, the application copies the bundled asset",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115188",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "An unrestricted file upload vulnerability exists in the campaign import feature of Mautic 7. When processing an uploaded campaign archive, the application copies the bundled asset files into a publicly accessible media directory without restricting their file names or types. An authenticated user with permission to create campaign imports can exploit this through the user interface or the API (/api/campaigns/import) to place arbitrary files, including server-side scripts, in the web root. Administrator privileges are not required. On web servers that honor per-directory configuration, such as the default Apache setup of the official Mautic Docker image, this leads to remote code execution with the privileges of the web server user, including access to the Mautic configuration, application secrets, and contact data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115188"
+      ],
+      "priority_score": 57,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "79cb3f85a8db6ed2b644",
+      "title": "CVE-2026-115189: A server-side template injection vulnerability exists in the Twig theme rendering sandbox of Mautic. The sandbox introduced to restrict user-uploaded theme templates (the fix for G",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115189",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "A server-side template injection vulnerability exists in the Twig theme rendering sandbox of Mautic. The sandbox introduced to restrict user-uploaded theme templates (the fix for GHSA-9fx4-7cmj-47vg) does not fully enforce its restrictions, allowing a crafted theme template to escape the sandbox. An authenticated user with the core:themes:create permission can upload a malicious theme whose template is later rendered, resulting in execution of arbitrary code on the server with the privileges of the web server process. This allows the attacker to execute operating system commands, read server-side files including configuration files and database credentials, write files, and reach internal services. In default installations the core:themes:create permission is granted to the Administrator role, and in multi-operator setups it may be delegated to other roles. This is an incomplete fix for GHSA-9fx4-7cmj-47vg.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115189"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6dfa55692b56ef733d2e",
+      "title": "CVE-2026-115190: An insecure deserialization (PHP object injection) vulnerability exists in Mautic's handling of segment filters and custom field properties. Several code paths that read these stor",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115190",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "An insecure deserialization (PHP object injection) vulnerability exists in Mautic's handling of segment filters and custom field properties. Several code paths that read these stored values from the database deserialize them without restricting which PHP classes may be instantiated, instead of using Mautic's safe deserialization helper. An attacker who is able to store a crafted serialized value in these segment filter or custom field properties can cause arbitrary PHP objects to be instantiated when Mautic later processes the data, for example during segment evaluation, contact export, or custom field API requests. Combined with gadget chains available in Mautic's dependencies, this could allow an attacker to execute arbitrary code on the server, read, modify, or delete data stored in the Mautic instance, including contact data, and affect its availability. Exploitation requires high privileges or an existing ability to write to the affected stored data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115190"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.0,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "156a046aa438227ce313",
+      "title": "CVE-2026-115191: A SQL injection vulnerability exists in a contact lookup AJAX endpoint of the Mautic administration interface (/s/ajax). A request parameter that selects the contact field to searc",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115191",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "A SQL injection vulnerability exists in a contact lookup AJAX endpoint of the Mautic administration interface (/s/ajax). A request parameter that selects the contact field to search by is not properly validated before it is used in a database query. Any authenticated Mautic user can exploit this, regardless of the role or permissions assigned to the account. Using blind (boolean-based or time-based) techniques, the attacker can run arbitrary SQL queries against the Mautic database and read any data the Mautic database user can access, including Mautic user accounts with email addresses and password hashes, contact data, and campaign and email content.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115191"
+      ],
+      "priority_score": 44,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "de081062505f356685a7",
+      "title": "CVE-2026-115192: An SQL Injection vulnerability exists in the dashboard widget data API endpoint (/api/data/{type}). Chart filter parameters supplied by the client are not properly validated before",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115192",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "An SQL Injection vulnerability exists in the dashboard widget data API endpoint (/api/data/{type}). Chart filter parameters supplied by the client are not properly validated before they are used in the database queries that build dashboard chart data. An authenticated user with API access can exploit this to inject SQL into these reporting queries. Using blind SQL injection techniques, the attacker can read arbitrary data from the Mautic database, including contact and other marketing data and user account data with password hashes. The injected SQL can also be used to slow down database queries, which can have a limited impact on availability. Data modification is not possible through this vulnerability. Exploitation requires the Mautic API to be enabled.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115192"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "689d7182255099f098b4",
+      "title": "CVE-2026-115193: A stored Cross-Site Scripting (XSS) vulnerability exists in the contact detail view of Mautic 7. Values of HTML-type custom contact fields are rendered without output sanitization.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115193",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "A stored Cross-Site Scripting (XSS) vulnerability exists in the contact detail view of Mautic 7. Values of HTML-type custom contact fields are rendered without output sanitization. A user or integration able to write a value to such a field (for example, through contact editing, the contact API, or a form submission mapped to the field) can store a script payload in it. When another user, including an administrator, opens the affected contact's detail page, the injected script executes within the context of their active browser session. This could allow an attacker to perform administrative actions on behalf of the victim, such as creating new administrator accounts, altering system configuration, or accessing contact and campaign data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115193"
+      ],
+      "priority_score": 44,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7",
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "863a22b20bdd86c62107",
+      "title": "CVE-2026-115194: A path traversal vulnerability exists in the Mautic Asset API. When creating a local asset through the API, the supplied file path is not restricted to the asset upload directory.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115194",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:30+00:00",
+      "summary": "A path traversal vulnerability exists in the Mautic Asset API. When creating a local asset through the API, the supplied file path is not restricted to the asset upload directory. An authenticated API user with permission to create assets can register any file that is readable by the web server process as a Mautic asset. When the asset is published, its public download URL serves the contents of that file without authentication. This allows the attacker to read arbitrary files from the server, including Mautic configuration files containing the database password, secret key, and mail (SMTP) credentials, as well as system files and any other file readable by the web server user. Exposed credentials can be used to access the database or other connected services, and anyone with the public asset URL can retrieve the file contents.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115194"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "15a71535860a8cc48645",
+      "title": "CVE-2026-114213: Allocation of Resources Without Limits or Throttling vulnerability in the WebSocket fragment reassembly of mtrudel bandit allows an unauthenticated remote attacker to exhaust serve",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114213",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:29+00:00",
+      "summary": "Allocation of Resources Without Limits or Throttling vulnerability in the WebSocket fragment reassembly of mtrudel bandit allows an unauthenticated remote attacker to exhaust server memory via a fragmented message made of many 1-byte continuation frames. Bandit.WebSocket.Connection checks max_fragmented_message_size against the payload bytes received, but keeps every non-final continuation frame as a new list cell around its own binary, and nothing limits the number of fragments. A 1-byte fragment costs 7 bytes on the wire but about 150 to 170 bytes of server memory, so one connection can hold about 150 times the configured limit, roughly 1.2 to 1.4 GB at the default 8 MB. Ping frames between fragments keep the connection alive past the idle timeout. This issue affects bandit: from 1.11.0 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114213"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0b9c4b6ec041986b2e87",
+      "title": "CVE-2026-114216: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') vulnerability in the HTTP/1.1 chunked body reader of mtrudel bandit allows an unauthenticated remot",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114216",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:29+00:00",
+      "summary": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') vulnerability in the HTTP/1.1 chunked body reader of mtrudel bandit allows an unauthenticated remote attacker to smuggle a second request past a front-end proxy via a chunk extension that contains a bare LF. The chunked reader in lib/bandit/http1/socket.ex takes the chunk-size line to be everything up to the first CRLF and discards everything after ; without checking it against the RFC 9112 chunk-ext grammar, so bare LF, bare CR and other control bytes pass. A proxy that ends the size line at a bare LF reads 2;\\nxx\\r\\n40\\r\\n... as one request whose second chunk holds a GET /admin, while Bandit ends the body early and dispatches GET /admin as a separate pipelined request. Deployments without such a proxy in front of Bandit are not affected. This issue affects bandit: from 1.12.4 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114216"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1ebd5699dde67bcb649c",
+      "title": "CVE-2026-111590: A wide range of Harbor versions allow SSRF via its webhook delivery component which does not properly validate web hook target addresses, allowing usage of private and link-local I",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111590",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:28+00:00",
+      "summary": "A wide range of Harbor versions allow SSRF via its webhook delivery component which does not properly validate web hook target addresses, allowing usage of private and link-local IP ranges. An authenticated attacker with ProjectAdmin permissions can configure a webhook policy pointing to a private internal address. When a project event fires, Harbor jobservice makes unauthenticated outbound HTTP POST requests to the target. If the target answers with an error status, the response body is written to the webhook execution log, which project members can read, potentially exposing cloud metadata or other network-restricted resources.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-111590"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "70df8ea8f61b13965f71",
+      "title": "CVE-2026-112880: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting') vulnerability in hackney_http_connect in benoitc hackney allows HTTP Request Splitting",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112880",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:28+00:00",
+      "summary": "Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting') vulnerability in hackney_http_connect in benoitc hackney allows HTTP Request Splitting via the value a proxy_auth_fun callback returns. After a 407 response from an HTTP CONNECT proxy, hackney_http_connect:handle_proxy_auth/11 calls the caller's proxy_auth_fun with the status code and the response headers and writes the returned binary into the Proxy-Authorization line of the CONNECT retry without checking it. A CR, LF or NUL byte in that value adds header lines to the request sent to the proxy. The value is attacker-influenced when the callback derives it from untrusted data, for example from the proxy's challenge headers. Other caller-supplied values on the CONNECT path, such as the target host and the request headers, were already checked for control bytes. This issue affects hackney: from 2.0.0 before 4.9.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112880"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "87938d473299f5e4cddc",
+      "title": "CVE-2026-113436: Inefficient Algorithmic Complexity vulnerability in the header integer parser of mtrudel bandit allows an unauthenticated remote attacker to consume server CPU via a content-length",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113436",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:28+00:00",
+      "summary": "Inefficient Algorithmic Complexity vulnerability in the header integer parser of mtrudel bandit allows an unauthenticated remote attacker to consume server CPU via a content-length value or a Host or :authority port made of thousands of digits. Bandit.Headers.parse_integer/2 in lib/bandit/headers.ex builds the number one digit at a time with no limit on the digit count, allocating a new bignum at each step, so one value costs time quadratic in its length. It runs on raw request input over HTTP/1 and HTTP/2, before any range check. Over HTTP/2, a 4,000-digit value can be stored once in the HPACK dynamic table and re-sent on each new stream for about one byte: 124 KB of traffic kept the server busy for 27.9 s. This issue affects bandit: from 1.0.0-pre.7 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113436"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0b8ff9a352f29e4119b5",
+      "title": "CVE-2026-113440: Insufficiently Protected Credentials vulnerability in hackney in benoitc hackney allows a redirecting server to obtain the basic_auth and cookie credentials of a request via a same",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113440",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:28+00:00",
+      "summary": "Insufficiently Protected Credentials vulnerability in hackney in benoitc hackney allows a redirecting server to obtain the basic_auth and cookie credentials of a request via a same-host redirect to another scheme or port. With follow_redirect enabled, hackney:follow_redirect/10 in src/hackney.erl reissues the request to the Location target after hackney:maybe_strip_auth_on_redirect/3, which compared only the hostname of the current and the redirect URL. A redirect from https to http on the same host resent the Authorization and Cookie headers in cleartext, where an on-path attacker can read them, and a redirect to another port on the same host handed them to a different service. location_trusted forwards credentials to any target by design and is unchanged. This issue affects hackney: from 2.0.0 before 4.9.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113440"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ae6925e517264889e20f",
+      "title": "CVE-2026-111101: Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/1.1 chunked body reader of mtrudel bandit allows an unauthenticated remote attacker to exhaust server",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111101",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:27+00:00",
+      "summary": "Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/1.1 chunked body reader of mtrudel bandit allows an unauthenticated remote attacker to exhaust server memory and CPU via a request body made of many 1-byte chunks. The chunked reader in lib/bandit/http1/socket.ex keeps every chunk as its own list cell and binary term until IO.iodata_to_binary/1 joins them, and nothing limits the number of chunks. The :length option of read_body/2 counts only data bytes, so tiny chunks cost far more memory than their payload: 48 MB of 1-byte chunks grew one handler process to about 500 MB and took about 6 s of CPU. The route does not need to read the body, because on keep-alive connections ensure_completed/1 drains unread bodies through the same reader. This issue affects bandit: from 0.1.0 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-111101"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c9bef1c8b3b9d0987028",
+      "title": "CVE-2026-111103: Improper Cleanup on Thrown Exception vulnerability in the HTTP/2 handler of mtrudel bandit allows an unauthenticated remote attacker to bypass per-connection resource limits via a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111103",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:27+00:00",
+      "summary": "Improper Cleanup on Thrown Exception vulnerability in the HTTP/2 handler of mtrudel bandit allows an unauthenticated remote attacker to bypass per-connection resource limits via a single TCP write that carries several frames, one of which raises a stream error. When a frame raises StreamError partway through a chunk, Bandit.HTTP2.Handler.handle_data/3 sends RST_STREAM and continues with the connection state from before the chunk, dropping the rest of it. Streams opened by earlier frames in the chunk keep running their Plug calls, but the stream counts, last_stream_id, the rapid-reset timestamps, the HPACK decoder state and the buffer roll back, so max_concurrent_streams, max_requests and the rapid-reset limiter never see those streams. A client that sends one HEADERS frame more than max_concurrent_streams in each write has the extra refused and the others forgotten: with a limit of 10, five such writes run 50 Plug calls at once. This issue affects bandit: from 1.9.0 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-111103"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3aefb27cb8ea196449c6",
+      "title": "CVE-2026-110474: This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote at",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110474",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:26+00:00",
+      "summary": "This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110474"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1c8de19df10090979604",
+      "title": "CVE-2026-110475: This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110475",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:26+00:00",
+      "summary": "This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110475"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7c3537bc4b01b4002fdb",
+      "title": "CVE-2026-110499: Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to grow per-connection m",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110499",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:26+00:00",
+      "summary": "Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to grow per-connection memory and CPU cost without bound via a large SETTINGS_HEADER_TABLE_SIZE. Bandit resizes its HPACK encoder table to whatever size the client advertises, up to 2^32-1 bytes, and indexes response headers into it. Because responses carry distinct values such as date or content-length, nothing is evicted and the table grows with every response for the life of the connection, while each lookup scans it linearly. The SETTINGS handling in Bandit.HTTP2.Connection (lib/bandit/http2/connection.ex) passes remote_settings.header_table_size to HPAX.resize/2 with no server-side cap, and encode_headers encodes every response header as :store. Serving N responses on one connection therefore costs O(N²) CPU in the connection process. This issue affects bandit: from 0.3.6 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110499"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "50c365ac60e8f4348598",
+      "title": "CVE-2026-109584: Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust s",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109584",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:25+00:00",
+      "summary": "Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust server memory via a small HPACK-compressed HEADERS block. The block stores one large cookie value in the HPACK dynamic table and then references it tens of thousands of times with 1-byte indexed fields. In the reporter's run, a 49 KB block made a server with default settings allocate a 183 MB cookie binary before any application code ran, and every concurrent stream can repeat the cost. Bandit.HTTP2.Connection caps only the compressed block (max_header_block_size), and its check of the decoded list against max_header_list_size never fires because that setting defaults to :infinity. combine_cookie_crumbs/1 in lib/bandit/http2/stream.ex then joins every crumb into one binary. This issue affects bandit: from 0.3.3 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-109584"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "852b599c5db656a1bcd9",
+      "title": "CVE-2026-110314: Client-Side Enforcement of Server-Side Security vulnerability in the WebSocket connection handling of mtrudel bandit allows a remote client to keep running WebSock handler code aft",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110314",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:25+00:00",
+      "summary": "Client-Side Enforcement of Server-Side Security vulnerability in the WebSocket connection handling of mtrudel bandit allows a remote client to keep running WebSock handler code after the server has stopped its connection, via data frames sent after ignoring the server's Close frame. When a WebSock callback returns {:stop, ...}, Bandit.WebSocket.Connection calls terminate/2, sends Close and shuts down the write side, but keeps the connection process running in a :closing state. handle_frame/3 and handle_info/3 never check that state, so later frames still reach handle_in/2 and later messages reach handle_info/2, with the state from the stop tuple, until the client sends Close, TCP drops or the idle timeout fires. A client refused in init/1 after a failed token check could still run an admin-only action. This issue affects bandit: from 0.5.1 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110314"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3505c848de19d4eec919",
+      "title": "CVE-2026-107656: An authentication bypass using an alternate path or channel vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.6, FortiSandbox 4.4.0 through 4.4.9, FortiSandbox 4.2 all versi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107656",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:24+00:00",
+      "summary": "An authentication bypass using an alternate path or channel vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.6, FortiSandbox 4.4.0 through 4.4.9, FortiSandbox 4.2 all versions, FortiSandbox PaaS 5.0.0 through 5.0.6, FortiSandbox PaaS 4.4 all versions, FortiSandbox PaaS 4.2 all versions may allow attacker to execute unauthorized code or commands via crafted HTTP requests",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107656"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "45aef49eab240c0e074f",
+      "title": "CVE-2026-108525: Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust server memory",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108525",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:24+00:00",
+      "summary": "Allocation of Resources Without Limits or Throttling vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust server memory via DATA frames sent past the advertised receive window. The attacker requests a response larger than the 65,535-byte initial window and withholds WINDOW_UPDATE, so the stream process blocks while sending and stops reading, then floods small DATA frames on that stream. Every frame is queued in the stream's mailbox until the BEAM node runs out of memory. Bandit.HTTP2.Connection.handle_frame/3 in lib/bandit/http2/connection.ex forwards each DATA frame to the stream process without consulting the receive window, and Bandit.HTTP2.FlowControl.compute_recv_window/2 replenishes the window as data arrives rather than as it is consumed, and never answers a violation with FLOW_CONTROL_ERROR. This issue affects bandit: from 0.3.1 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108525"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8abb3087bc559f32cd18",
+      "title": "CVE-2026-108529: Inefficient Algorithmic Complexity vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust server CPU via small SETTINGS o",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108529",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:24+00:00",
+      "summary": "Inefficient Algorithmic Complexity vulnerability in the HTTP/2 implementation of mtrudel bandit allows an unauthenticated remote attacker to exhaust server CPU via small SETTINGS or connection-level WINDOW_UPDATE frames. The attacker opens thousands of streams whose responses block on the connection send window, then sends cheap frames that each make the server walk the whole queue of blocked sends. In the reporter's run, with 3,000 blocked streams a single 9-byte SETTINGS frame took 133 ms to process. do_pending_sends/2 in lib/bandit/http2/connection.ex retries every queued send and, before each retry, removes that entry from the queue with List.delete/2, so one frame costs O(n²) list operations for n blocked streams. max_concurrent_streams defaults to :infinity, so the attacker chooses n. This issue affects bandit: from 0.3.4 before 1.14.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108529"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6a19351ea88ea151edbd",
+      "title": "CVE-2026-107092: NexoPOS v6.2.4 is vulnerable to Directory Traversal via the api/update endpoint.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107092",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:23+00:00",
+      "summary": "NexoPOS v6.2.4 is vulnerable to Directory Traversal via the api/update endpoint.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107092"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b70b414bfe4a48630963",
+      "title": "CVE-2026-107157: Specially crafted CBOR input passed to QCborValue::fromCbor() in Qt Core can cause an out-of-bounds read, which may crash the application and could expose information.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107157",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T14:16:23+00:00",
+      "summary": "Specially crafted CBOR input passed to QCborValue::fromCbor() in Qt Core can cause an out-of-bounds read, which may crash the application and could expose information.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107157"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.0,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "7d972df501d01ba1f64a",
       "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
       "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
@@ -4095,6 +5551,325 @@
       ],
       "related_sources": [
         "OpenAI News"
+      ]
+    },
+    {
+      "id": "432905c6f33de8175ed8",
+      "title": "CVE-2026-94380: Weak Password Recovery Mechanism for Forgotten Password vulnerability in HAVELSAN Inc. Liman MYS allows Password Recovery Exploitation. This issue affects Liman MYS: from 2.3.4-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94380",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:08+00:00",
+      "summary": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in HAVELSAN Inc. Liman MYS allows Password Recovery Exploitation. This issue affects Liman MYS: from 2.3.4-1124 before 2.3.5-1131.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-94380"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "336c373b1d20d66c8395",
+      "title": "CVE-2026-96432: A malicious or compromised HTTP/2 server withholding SETTINGS ACK can send RST_STREAM on a completed stream, planting a null pointer, and then send a PUSH_PROMISE for that stream,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96432",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:08+00:00",
+      "summary": "A malicious or compromised HTTP/2 server withholding SETTINGS ACK can send RST_STREAM on a completed stream, planting a null pointer, and then send a PUSH_PROMISE for that stream, causing a null pointer dereference in the QNetworkAccessManager class of the Qt Network module that crashes the application.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-96432"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "76f45d4726830f16327c",
+      "title": "CVE-2026-116263: A flaw has been found in HaschekSolutions PictShare up to 3.7.1. The impacted element is the function architect of the file src/inc/core.php of the component File Upload. This mani",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116263",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:07+00:00",
+      "summary": "A flaw has been found in HaschekSolutions PictShare up to 3.7.1. The impacted element is the function architect of the file src/inc/core.php of the component File Upload. This manipulation causes race condition. The attack can be initiated remotely. The attack's complexity is rated as high. The exploitability is regarded as difficult. The exploit has been published and may be used. Upgrading to version 3.7.2 is sufficient to resolve this issue. Patch name: 6306e33da630c04ddff60703922c2ec7b7539452. It is advisable to upgrade the affected component. The vendor was contacted early about this disclosure.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116263"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 1.2,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2d90b00b300e7a5dd459",
+      "title": "CVE-2026-116260: A weakness has been identified in libimobiledevice up to 1.4.0. This issue affects the function service_receive of the file src/afc.c of the component AFC Service. Executing a mani",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116260",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:06+00:00",
+      "summary": "A weakness has been identified in libimobiledevice up to 1.4.0. This issue affects the function service_receive of the file src/afc.c of the component AFC Service. Executing a manipulation can lead to double free. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116260"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b401238f902d927043a1",
+      "title": "CVE-2026-116261: A security vulnerability has been detected in libimobiledevice up to 1.4.0. Impacted is the function afc_file_open of the file src/afc.c of the component AFC File Handler. The mani",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116261",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:06+00:00",
+      "summary": "A security vulnerability has been detected in libimobiledevice up to 1.4.0. Impacted is the function afc_file_open of the file src/afc.c of the component AFC File Handler. The manipulation of the argument bytes leads to out-of-bounds read. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116261"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.0,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "89368b30268544af3a9c",
+      "title": "CVE-2026-116262: A vulnerability was detected in libimobiledevice up to 1.4.0. The affected element is the function webinspector_receive_with_timeout of the file src/webinspector.c of the component",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116262",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:06+00:00",
+      "summary": "A vulnerability was detected in libimobiledevice up to 1.4.0. The affected element is the function webinspector_receive_with_timeout of the file src/webinspector.c of the component Web Inspector. The manipulation results in heap-based buffer overflow. It is possible to launch the attack remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116262"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9a6b62ffde2eabdb7af9",
+      "title": "CVE-2026-115718: Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke L",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115718",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:05+00:00",
+      "summary": "Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke LLM completions without proper permission checks. Attackers can call the improve_prompt API to leverage the site owner's stored OpenRouter API key via resolve_api_key, consuming paid LLM credits and effectively turning the site into a free LLM proxy.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115718"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "83c1c9b64f924b4456ed",
+      "title": "CVE-2026-115720: Frappe Builder before 1.36.1 contains a server-side request forgery vulnerability in builder/api.py where the assert_not_private_url() guard validates only the initial hostname bef",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115720",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:05+00:00",
+      "summary": "Frappe Builder before 1.36.1 contains a server-side request forgery vulnerability in builder/api.py where the assert_not_private_url() guard validates only the initial hostname before callers invoke requests.get(url) with default redirect-following and no IP pinning, allowing an attacker-supplied public URL to HTTP-redirect to internal or link-local addresses the guard never validated. An authenticated attacker can call the convert_to_webp endpoint, which lacks a permission decorator, with a URL that redirects to internal targets such as cloud metadata services to perform SSRF, internal port scanning, or trigger a request-hang denial of service due to the missing timeout.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115720"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "008948582ab6705a270b",
+      "title": "CVE-2026-115717: Frappe Builder versions before 1.36.1 contain a server-side request forgery vulnerability in the convert_to_webp API endpoint, which lacks the has_page_write access control applied",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115717",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:04+00:00",
+      "summary": "Frappe Builder versions before 1.36.1 contain a server-side request forgery vulnerability in the convert_to_webp API endpoint, which lacks the has_page_write access control applied to similar asset-ingest handlers and performs an unprotected requests.get call that follows redirects without re-validating resolved IP addresses. A low-privilege authenticated user can supply an image_url pointing to an internal address or use DNS rebinding and open redirects to make the server fetch internal network resources or cloud metadata endpoints, with successful image responses saved to a world-readable /files/ URL enabling data exfiltration or blind probing of internal hosts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115717"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a556bb9f55ece9da24a0",
+      "title": "CVE-2026-105947: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Innotim Software, Telecommunications, and Consulting Co. Ltd. Logsign SIEM allows Pa",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105947",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:02+00:00",
+      "summary": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Innotim Software, Telecommunications, and Consulting Co. Ltd. Logsign SIEM allows Path Traversal. This issue affects Logsign SIEM: from 6.4.120 before 6.4.122.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105947"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "99e78a49cbb545d98777",
+      "title": "CVE-2012-20006: Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-20006",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-26T12:17:01+00:00",
+      "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2012-20006"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-02T10:00:52+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
       ]
     },
     {
@@ -5257,1312 +7032,6 @@
       ]
     },
     {
-      "id": "c40b0ff56231cc4c7c4b",
-      "title": "CVE-2026-95663: Insufficient Session Expiration vulnerability in Apache Camel Keycloak component. This issue affects Apache Camel: from 4.16.0 before 4.18.5, from 4.19.0 before 4.22.2. When",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95663",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:37+00:00",
-      "summary": "Insufficient Session Expiration vulnerability in Apache Camel Keycloak component. This issue affects Apache Camel: from 4.16.0 before 4.18.5, from 4.19.0 before 4.22.2. When token introspection is enabled on the camel-keycloak KeycloakSecurityPolicy (useTokenIntrospection=true), the security processor validates the access token of a request by sending it to Keycloak's OAuth 2.0 token introspection endpoint, and accepts the token while the response reports it as active. The introspection endpoint reports a token as inactive once its exp (expiration) time has passed, so on this path the active flag is what enforces token expiry. Introspection results are cached by default (introspectionCacheEnabled=true, introspectionCacheTtl=60 seconds), and both cache implementations shipped with the component, ConcurrentMapTokenCache and CaffeineTokenCache, expired an entry a fixed time after it was inserted, without bounding that lifetime by the exp claim that the cached response already carried. KeycloakSecurityProcessor in turn checked only the active flag of the result, on every path that uses introspection, and never compared exp with the current time. A response cached shortly before the tok",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-95663"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 4.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "477e7756046881a587e7",
-      "title": "CVE-2026-95664: Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection') vulnerability in Apache Camel AWS2-s3 component. This issu",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95664",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:37+00:00",
-      "summary": "Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection') vulnerability in Apache Camel AWS2-s3 component. This issue affects Apache Camel: from 4.8.0 before 4.18.5, from 4.19.0 before 4.22.2. For the object it uploads, reads or deletes, the camel-aws2-s3 producer takes the key from the CamelAwsS3Key message header and falls back to the keyName option configured on the endpoint only when that header is absent. Since 4.8.0, AWS2S3Utils.determineKey() also passed the resulting value to the Simple language whenever it contained ${ or $simple{, so that a route could use a dynamic key, and the evaluation applied to a value taken from the header as well as to the configured option. The header is not route configuration, however: the aws2-s3 consumer sets CamelAwsS3Key on the exchanges it creates to the key of the object it read, that is, the name of the object in the bucket. In a route that does nothing more than consume from one aws2-s3 endpoint and produce to another, the name of each consumed object therefore reached the producer, and a name containing either marker was evaluated as an expression, although the route author n",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "defensa_militar"
-      ],
-      "cves": [
-        "CVE-2026-95664"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0c6b1c04b2161e6a1243",
-      "title": "CVE-2026-82943: SOEM version 2.0.0 and earlier contains vulnerabilities where a malicious device can send messages that cause the master to read data from memory locations beyond the intended buff",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82943",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains vulnerabilities where a malicious device can send messages that cause the master to read data from memory locations beyond the intended buffer. The software uses length values from device responses without validating them against actual buffer sizes. An attacker can exploit this to extract up to 64KB of data from the master's memory.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82943"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5fbcff923ba8583be9fa",
-      "title": "CVE-2026-82944: SOEM version 2.0.0 and earlier contains a vulnerability in multi-segment data transfers where a malicious device can overflow memory buffers. The software checks the total size onl",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82944",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains a vulnerability in multi-segment data transfers where a malicious device can overflow memory buffers. The software checks the total size only once at the beginning, but doesn't track the cumulative size as multiple segments arrive. An attacker can declare a small initial size to pass validation, then send additional segments that exceed the allocated buffer. This allows the attacker to write controlled data beyond buffer boundaries, potentially enabling code execution.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82944"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "64fa92d89f4407348450",
-      "title": "CVE-2026-82945: SOEM version 2.0.0 and earlier contains a vulnerability during device configuration where a malicious device can cause memory corruption. The software writes configuration data to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82945",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains a vulnerability during device configuration where a malicious device can cause memory corruption. The software writes configuration data to a fixed-size array without checking if the array index exceeds its maximum size of EC_MAXFMMU entries. A device presenting more than EC_MAXFMMU configuration blocks can force writes beyond the array boundary, corrupting adjacent memory structures and potentially disrupting subsequent operations.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82945"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "241307aa0c4b13ada85c",
-      "title": "CVE-2026-82946: SOEM version 2.0.0 and earlier contains a vulnerability where a malicious device can crash the master system. When the software receives an error response, it clears an internal po",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82946",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains a vulnerability where a malicious device can crash the master system. When the software receives an error response, it clears an internal pointer but continues processing. If another message arrives before timeout, the software attempts to use the cleared pointer, causing a crash. An attacker can trigger this with a simple sequence of two messages.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82946"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "190744c3f0dec6baaf6d",
-      "title": "CVE-2026-82947: SOEM version 2.0.0 and earlier contains multiple vulnerabilities in frame processing where a malicious device can cause the master to read data outside allocated buffers. The softw",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82947",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains multiple vulnerabilities in frame processing where a malicious device can cause the master to read data outside allocated buffers. The software uses length and offset values from device messages without validating them against buffer sizes. This can cause the master to access invalid memory locations, potentially disclosing sensitive information or causing crashes.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82947"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e46e47fa5de23570c9c6",
-      "title": "CVE-2026-95628: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache Camel Docling component. This issue affects Apache Camel: from 4.15.0 befo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95628",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache Camel Docling component. This issue affects Apache Camel: from 4.15.0 before 4.18.5, from 4.19.0 before 4.22.2. DoclingProducer builds the command line of the external docling tool and appends to it the custom arguments supplied in the CamelDoclingCustomArguments header, a list of strings whose flags the fix for CVE-2026-40047 restricted to an allowlist. That fix also introduced validatePathSafety to keep path-like argument values inside the intended directory, but the method only looked for relative traversal: it rejected a value containing a traversal sequence such as ../ and a value whose normalized form still held a .. element. It never checked whether a value was an absolute path, and an absolute path without traversal segments contains neither, so it passed unchanged. Every path-like value went through this check, whether it was a separate list element following its flag or was attached to the flag after an equals sign, so an absolute path was accepted in either form, for example as the directory given to the allowlisted --artifacts-path flag, which tells docling where to fi",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-95628"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c6709c7824d5d490de30",
-      "title": "CVE-2026-95629: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache Camel Docling component. This issue affects Apache Camel: from 4.15.0 befo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95629",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:36+00:00",
-      "summary": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache Camel Docling component. This issue affects Apache Camel: from 4.15.0 before 4.18.5, from 4.19.0 before 4.22.2. DoclingProducer runs the external docling tool in CLI mode, the default, and tells it where to write the converted document through the --output flag. When the CamelDoclingOutputFilePath header was set, addOutputDirectoryArguments handed its value to that flag verbatim: the value was not normalized, an absolute path or a path containing .. segments was accepted as given, and no endpoint option could confine it to a directory. The custom-argument validation added by the fix for CVE-2026-40047 refuses the --output and -o flags in the CamelDoclingCustomArguments header and tells callers to choose the output directory with this header instead, so the one value that decides where docling writes reached the command line without any of the checks applied to custom arguments. Docling writes the conversion result, as Markdown, HTML, JSON or text, into that directory, naming the file after the input file, and the producer afterwards removes only its own temporary directory, so the",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-95629"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4d46adac301bdf0d82c3",
-      "title": "CVE-2026-116235: A flaw has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this vulnerability is an unknown functionality of the component L2TP Authentication. This manipulation of the arg",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116235",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:35+00:00",
-      "summary": "A flaw has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this vulnerability is an unknown functionality of the component L2TP Authentication. This manipulation of the argument Username causes crlf injection. The attack may be initiated remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116235"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "75735ea6160ded18aa48",
-      "title": "CVE-2026-116236: A vulnerability has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this issue is the function plugin_init of the file /tmp/upload_files of the component PPPoE WAN Setting",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116236",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:35+00:00",
-      "summary": "A vulnerability has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this issue is the function plugin_init of the file /tmp/upload_files of the component PPPoE WAN Setting Handler. Such manipulation of the argument pppd_options leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116236"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 7.3,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "886519bd2cac84f1cc03",
-      "title": "CVE-2026-116372: MISP mispguard is a security filtering proxy that inspects and blocks MISP feed responses based on configured rules. The process_feed_response method in src/mispguard.py was respon",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116372",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:35+00:00",
-      "summary": "MISP mispguard is a security filtering proxy that inspects and blocks MISP feed responses based on configured rules. The process_feed_response method in src/mispguard.py was responsible for evaluating feed responses before they reached the MISP instance. The original logic only explicitly handled the case where the HTTP status code was not 200 by passing the response through without filtering, on the assumption that non-200 responses would not carry ingestible event data. However, HTTP 2xx status codes other than 200 (such as 201 Created, 203 Non-Authoritative Information, and 206 Partial Content) were also passed through unfiltered. Because MISP may still ingest content from these responses, a malicious or compromised feed host could return a 203 or 206 status code with arbitrary content, effectively bypassing all of mispguard's filtering rules. This allowed unfiltered or malicious feed data to be ingested into the MISP instance, undermining the security controls that mispguard is designed to enforce. The vulnerability requires the attacker to control or compromise a feed endpoint configured in the MISP instance. No authentication or user interaction is required beyond the feed po",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116372"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2d0a0d71baba169dfc0b",
-      "title": "CVE-2026-70388: SOEM version 2.0.0 and earlier contains vulnerabilities where a malicious device on the network can send specially crafted messages that cause the master to write data outside allo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70388",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:35+00:00",
-      "summary": "SOEM version 2.0.0 and earlier contains vulnerabilities where a malicious device on the network can send specially crafted messages that cause the master to write data outside allocated memory boundaries. The software performs arithmetic on message length values without proper validation, allowing negative or extremely large values to bypass safety checks. This can corrupt memory and potentially allow an attacker to execute arbitrary code on the master system.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-70388"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.3,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3be52a25074cb9b34665",
-      "title": "CVE-2026-110376: Missing Authorization vulnerability in VillaTheme DEPART depart-deposit-and-part-payment-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110376",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "Missing Authorization vulnerability in VillaTheme DEPART depart-deposit-and-part-payment-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects DEPART: from n/a through 1.0.10.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110376"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "41f90ee0b96fd5bc84d6",
-      "title": "CVE-2026-111841: Cross-Site Request Forgery (CSRF) vulnerability in Aman FunnelKit Automations wp-marketing-automations allows Cross Site Request Forgery.This issue affects FunnelKit Automations: f",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111841",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "Cross-Site Request Forgery (CSRF) vulnerability in Aman FunnelKit Automations wp-marketing-automations allows Cross Site Request Forgery.This issue affects FunnelKit Automations: from n/a through 3.8.5.2.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111841"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9d4fe2ddda199a684b91",
-      "title": "CVE-2026-112828: Missing Authorization vulnerability in Meow Apps AI Engine ai-engine allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AI Engine: from n/a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112828",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "Missing Authorization vulnerability in Meow Apps AI Engine ai-engine allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AI Engine: from n/a through 3.8.6.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-112828"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "73cb5080bfe64f79bc12",
-      "title": "CVE-2026-113438: Pleasanter provided fails to properly verify passwords in LDAP authentication when processing specially crafted requests under certain configurations. If exploited, an attacker ma",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113438",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "Pleasanter provided fails to properly verify passwords in LDAP authentication when processing specially crafted requests under certain configurations. If exploited, an attacker may bypass LDAP authentication by providing only a valid Login ID, without a password. As a result, an attacker may view, alter or delete information stored in the product with the privilege of the account used to log in.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113438"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "03b9f5342f260f937563",
-      "title": "CVE-2026-115425: Multiple cross site scripting (XSS) vulnerabilities affect OPNsense firewall vesrion 26.7.1_1 and earlier allows low privileged attacker to execute Javascript in the context of ano",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115425",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "Multiple cross site scripting (XSS) vulnerabilities affect OPNsense firewall vesrion 26.7.1_1 and earlier allows low privileged attacker to execute Javascript in the context of another user visiting a specific page or clicking on a specifically crafted link.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-115425"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.6,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a77a128fc704d3a007de",
-      "title": "CVE-2026-116233: A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1. This impacts an unknown function of the component Dnsmasq. The manipulation of the argument rent_time le",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116233",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1. This impacts an unknown function of the component Dnsmasq. The manipulation of the argument rent_time leads to crlf injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116233"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "97ef5013092ddf0e8c30",
-      "title": "CVE-2026-116234: A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1. Affected is an unknown function of the file /etc/ipsec.conf of the component IPsec Policy Handler. The manipulation of",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116234",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:34+00:00",
-      "summary": "A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1. Affected is an unknown function of the file /etc/ipsec.conf of the component IPsec Policy Handler. The manipulation of the argument secproto results in crlf injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116234"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1a49cc38e48b74c69169",
-      "title": "CVE-2026-101259: Generation of Error Message Containing Sensitive Information vulnerability in Apache Camel CoAP component. This issue affects Apache Camel: from 4.0.0 before 4.18.5, from 4.19.0",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101259",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T09:16:33+00:00",
-      "summary": "Generation of Error Message Containing Sensitive Information vulnerability in Apache Camel CoAP component. This issue affects Apache Camel: from 4.0.0 before 4.18.5, from 4.19.0 before 4.22.2. When the CoAP consumer could not build its response once the route had completed, CamelCoapResource caught the resulting exception and sent its message back to the CoAP client as the payload of a 5.00 Internal Server Error response. The typical case is a type conversion failure: the consumer converts the final message body to the byte[] payload, and the CamelCoapMaxAge and CamelCoapETag headers to their types, after the route has returned, and therefore outside the route's error handler. On the affected releases the message of such a failure names the class of the value being converted, carries the value's string form, and ends with the class name and message of the underlying cause, so a remote CoAP client could read internal detail about the deployment: class and package names, the string form of the value, such as the path of a file body, and whatever the cause carries, which in practice can include paths, host names and connection detail of a backend. The consumer had no option to suppres",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-101259"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bd8786635e9d3af969d8",
-      "title": "CVE-2026-96581: Authorization Bypass Through User-Controlled Key vulnerability in ash-project ash allows a user of one tenant to read, overwrite and take over another tenant's records via an upser",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96581",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T08:17:20+00:00",
-      "summary": "Authorization Bypass Through User-Controlled Key vulnerability in ash-project ash allows a user of one tenant to read, overwrite and take over another tenant's records via an upserting create action. Under attribute multitenancy, Ash.Actions.Create (lib/ash/actions/create/create.ex) and Ash.Actions.Create.Bulk (lib/ash/actions/create/bulk.ex) upserted on the primary key, or on an all_tenants? identity, without scoping the conflicting record to the request's tenant. A caller of a create action with upsert? true that accepts the primary key, supplying a record id from another tenant, updated that record's upsert fields and received all of its attributes in the result. With the default upsert fields the tenant attribute was written too, moving the record into the caller's tenant. Read and update policies do not run for upserts, and tenant-scoped create policies pass because the tenant is the caller's own. This issue affects ash: from 1.22.0 before 3.37.2.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-96581"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 7.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "eea78cd31180ae4b7022",
-      "title": "CVE-2026-116229: A vulnerability was determined in ffxiv-teamcraft FFXIV Teamcraft up to 11.4.31. Impacted is the function clipboard.readText of the file apps/electron/src/preload.ts of the compone",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116229",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T08:17:17+00:00",
-      "summary": "A vulnerability was determined in ffxiv-teamcraft FFXIV Teamcraft up to 11.4.31. Impacted is the function clipboard.readText of the file apps/electron/src/preload.ts of the component Renderer-Process IPC Bridge. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 11.4.32 is recommended to address this issue. Patch name: def118fdf36f8f3b615966893a132dd81d9cc3dc. Upgrading the affected component is recommended.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116229"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.0,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "33cc758841835ee720c5",
-      "title": "CVE-2026-116230: A vulnerability was identified in Ndemic Creations Plague Inc Evolved up to 1.24.0.3. The affected element is an unknown function of the component Workshop Scenario Loader. Such ma",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116230",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T08:17:17+00:00",
-      "summary": "A vulnerability was identified in Ndemic Creations Plague Inc Evolved up to 1.24.0.3. The affected element is an unknown function of the component Workshop Scenario Loader. Such manipulation leads to deserialization. The attack may be performed from remote. Upgrading to version 1.24.0.4 is sufficient to fix this issue. It is recommended to upgrade the affected component.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116230"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7d111af2430c48162300",
-      "title": "CVE-2026-116231: A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116231",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T08:17:17+00:00",
-      "summary": "A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in crlf injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116231"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f6367cbc69b873b95999",
-      "title": "CVE-2026-116232: A weakness has been identified in Oray Pugongying X5 Pro 7.6.1. This affects the function snmp_set of the component SNMP Handler. Executing a manipulation of the argument info.comm",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116232",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T08:17:17+00:00",
-      "summary": "A weakness has been identified in Oray Pugongying X5 Pro 7.6.1. This affects the function snmp_set of the component SNMP Handler. Executing a manipulation of the argument info.community can lead to crlf injection. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116232"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6796b338798dc4aee06a",
-      "title": "CVE-2026-116124: A security vulnerability has been detected in GNOME libgsf up to 1.14.60. The impacted element is the function ole_info_read_metabat of the file gsf/gsf-infile-msole.c of the compo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116124",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:09+00:00",
-      "summary": "A security vulnerability has been detected in GNOME libgsf up to 1.14.60. The impacted element is the function ole_info_read_metabat of the file gsf/gsf-infile-msole.c of the component OLE2 Parser. The manipulation leads to heap-based buffer overflow. The attack can be initiated remotely. The identifier of the patch is a8e25560b74f84c3f86df6ca0ac59195fa5af68a. It is recommended to apply a patch to fix this issue.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116124"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "19de2af6742d1acddc6e",
-      "title": "CVE-2026-116223: A flaw has been found in icret EasyImage up to 2.8.7. The impacted element is an unknown function of the file app/del.php. Executing a manipulation of the argument hash can lead to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116223",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:09+00:00",
-      "summary": "A flaw has been found in icret EasyImage up to 2.8.7. The impacted element is an unknown function of the file app/del.php. Executing a manipulation of the argument hash can lead to improper privilege management. The attack can be launched remotely. The exploit has been published and may be used. This patch is called b12cb67d447bcbb67e21c8f011d0f5638229760c. A patch should be applied to remediate this issue.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116223"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e17f376e1e1f7d65dbc8",
-      "title": "CVE-2026-116224: A vulnerability has been found in fr0tt benotes up to 2.8.1. This affects the function getUrlInfo of the file app/Http/Controllers/PostController.php of the component Bookmark Meta",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116224",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:09+00:00",
-      "summary": "A vulnerability has been found in fr0tt benotes up to 2.8.1. This affects the function getUrlInfo of the file app/Http/Controllers/PostController.php of the component Bookmark Metadata Endpoint. The manipulation of the argument url leads to server-side request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116224"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "da5a7dba98807afdd260",
-      "title": "CVE-2026-116227: A vulnerability has been found in Edimax BR-6208AC 1.32. This vulnerability affects unknown code of the component Virtual Server Page. The manipulation leads to cross site scriptin",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116227",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:09+00:00",
-      "summary": "A vulnerability has been found in Edimax BR-6208AC 1.32. This vulnerability affects unknown code of the component Virtual Server Page. The manipulation leads to cross site scripting. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116227"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 1.9,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5180361929835ceaaec2",
-      "title": "CVE-2026-116228: A vulnerability was found in 777genius agent-teams-ai up to 2.17.10. This issue affects the function doStart of the file src/main/services/infrastructure/HttpServer.ts of the compo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116228",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:09+00:00",
-      "summary": "A vulnerability was found in 777genius agent-teams-ai up to 2.17.10. This issue affects the function doStart of the file src/main/services/infrastructure/HttpServer.ts of the component Local HTTP Service. The manipulation results in missing authentication. The attack is only possible with local access. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116228"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 1.9,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d6a75cacfcd98f7c1e11",
-      "title": "CVE-2026-107899: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::CheckSymbolMacroParam. Opening a crafted V7 file may lead",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107899",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:08+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::CheckSymbolMacroParam. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107899"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ce5239b3a83f99a31143",
-      "title": "CVE-2026-107900: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!CCheck::ItemCheck. Opening a crafted V7 file may lead to information exposure o",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107900",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:08+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!CCheck::ItemCheck. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107900"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4be2ec2599bd8dc3bea2",
-      "title": "CVE-2026-111974: The GiveWP WordPress plugin before 4.19.0.1 does not restrict the currency of a donation to the one the site or form accepts, while comparing its amount limits as bare numbers, all",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111974",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:08+00:00",
-      "summary": "The GiveWP WordPress plugin before 4.19.0.1 does not restrict the currency of a donation to the one the site or form accepts, while comparing its amount limits as bare numbers, allowing unauthenticated users to make donations below a form's configured minimum or fixed amount.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111974"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c667a1019a9f85d05c3a",
-      "title": "CVE-2026-103306: The Online Payments with iK Pay Gateway WordPress plugin before 3.0.4 does not properly verify the authenticity of its payment gateway callback on a default installation, allowing",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103306",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "The Online Payments with iK Pay Gateway WordPress plugin before 3.0.4 does not properly verify the authenticity of its payment gateway callback on a default installation, allowing unauthenticated attackers to forge a successful payment notification and mark arbitrary orders as paid without any payment being made, and to mark arbitrary unprocessed orders as failed.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103306"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bba50c3fb6df062c3cf5",
-      "title": "CVE-2026-103319: The OPay Payment Gateway for WooCommerce WordPress plugin through 2.5.5 does not properly verify that payment notifications originate from the payment provider, as the secret used",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103319",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "The OPay Payment Gateway for WooCommerce WordPress plugin through 2.5.5 does not properly verify that payment notifications originate from the payment provider, as the secret used to validate their signature is empty by default, allowing unauthenticated attackers to forge a valid notification and mark arbitrary orders as paid, cancelled or failed.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103319"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9be2cbd57ec6bd8ad662",
-      "title": "CVE-2026-103381: The Mintpay for WooCommerce WordPress plugin through 2.2.3 does not verify the authenticity of the payment callback it processes, allowing unauthenticated attackers to mark arbitra",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103381",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "The Mintpay for WooCommerce WordPress plugin through 2.2.3 does not verify the authenticity of the payment callback it processes, allowing unauthenticated attackers to mark arbitrary orders as paid, to cancel arbitrary orders, and to disclose order details including customer contact information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103381"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a97ef09b4876018ec8d7",
-      "title": "CVE-2026-107894: V-SFT provided by FUJI ELECTRIC CO., LTD. contains a stack-based buffer overflow vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code executi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107894",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains a stack-based buffer overflow vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107894"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9d14b9d76826fc9f82d8",
-      "title": "CVE-2026-107895: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds write vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107895",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds write vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107895"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d9dada5920a388a1a84c",
-      "title": "CVE-2026-107896: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!load_gr_item. Opening a crafted V7 file may lead to information exposure or arb",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107896",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!load_gr_item. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107896"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "42a7c714eb234643e9d8",
-      "title": "CVE-2026-107897: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6MemInIF!set_temp_type_default. Opening a crafted V7 file may lead to information exposu",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107897",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6MemInIF!set_temp_type_default. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107897"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2988edacc7fc361e9a73",
-      "title": "CVE-2026-107898: V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::MacroCommandCheck. Opening a crafted V7 file may lead to i",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107898",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:07+00:00",
-      "summary": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::MacroCommandCheck. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107898"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f62bcdec70dc08835777",
-      "title": "CVE-2026-103298: The CCAvenue Payment Gateway for WooCommerce WordPress plugin through 3.1 does not verify that a payment-confirmation request genuinely originates from the payment provider, and de",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103298",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:06+00:00",
-      "summary": "The CCAvenue Payment Gateway for WooCommerce WordPress plugin through 3.1 does not verify that a payment-confirmation request genuinely originates from the payment provider, and derives its verification key from a value that is empty on a default install, allowing unauthenticated attackers to forge a confirmation and mark any WooCommerce order as paid without payment.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103298"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a30334f693a77756c9f4",
-      "title": "CVE-2026-103299: The Payment Gateway WordPress plugin through 2.2.0 does not ensure a shared secret is configured before using it to authenticate the bank's payment-notification callback, allowing",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103299",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:06+00:00",
-      "summary": "The Payment Gateway WordPress plugin through 2.2.0 does not ensure a shared secret is configured before using it to authenticate the bank's payment-notification callback, allowing unauthenticated attackers to forge a valid notification and mark any WooCommerce order as paid on installs where the secret has not been set, and the same callback lets them move any pending order to a failed state whether or not the secret is configured.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103299"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "dd5056f188baf4e5b573",
-      "title": "CVE-2026-103300: The Eurobank WooCommerce Payment Gateway WordPress plugin through 2.1.1 does not verify that a payment-confirmation request genuinely originates from the payment provider, and ship",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103300",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T07:17:06+00:00",
-      "summary": "The Eurobank WooCommerce Payment Gateway WordPress plugin through 2.1.1 does not verify that a payment-confirmation request genuinely originates from the payment provider, and ships with the secret that would authenticate it empty by default, allowing unauthenticated attackers to mark any pending order as paid, and to force any order into a failed status without any secret at all.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103300"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "7e73eebe3e909303c4c5",
       "title": "How Fanatics and OpenAI streamline the fan experience",
       "url": "https://openai.com/index/fanatics-streamline-fan-experience",
@@ -6616,470 +7085,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "9a5a642244ddfdb5cf43",
-      "title": "CVE-2026-116121: A vulnerability was identified in NocoDB up to 2026.08.0. This issue affects some unknown processing of the file users.service.ts of the component Registration. Such manipulation l",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116121",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T06:17:41+00:00",
-      "summary": "A vulnerability was identified in NocoDB up to 2026.08.0. This issue affects some unknown processing of the file users.service.ts of the component Registration. Such manipulation leads to race condition. The attack may be performed from remote. The attack requires a high level of complexity. The exploitability is assessed as difficult. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116121"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "7e665fecba725eea9033",
-      "title": "CVE-2026-116122: A security flaw has been discovered in NocoDB up to 2026.07.0. Impacted is the function AuthService.validateUser of the component Sign-in Endpoint. Performing a manipulation of the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116122",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T06:17:41+00:00",
-      "summary": "A security flaw has been discovered in NocoDB up to 2026.07.0. Impacted is the function AuthService.validateUser of the component Sign-in Endpoint. Performing a manipulation of the argument salt results in information disclosure. It is possible to initiate the attack remotely. The attack's complexity is rated as high. The exploitability is considered difficult. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116122"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ec964e31ce54e56c1ab5",
-      "title": "CVE-2026-116123: A weakness has been identified in NocoDB up to 2026.07.0. The affected element is the function validatePassword of the file /auth/user/signup. Executing a manipulation can lead to",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116123",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T06:17:41+00:00",
-      "summary": "A weakness has been identified in NocoDB up to 2026.07.0. The affected element is the function validatePassword of the file /auth/user/signup. Executing a manipulation can lead to improper restriction of excessive authentication attempts. It is possible to launch the attack remotely. This attack is characterized by high complexity. The exploitability is described as difficult. The vendor documents this as intentional. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116123"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b1e56bca21ca9c44f31b",
-      "title": "CVE-2026-116120: A vulnerability was determined in NocoDB up to 2026.07.0. This vulnerability affects the function UserRefreshToken.deleteAllUserToken of the file /auth/user/signup of the component",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116120",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T06:17:38+00:00",
-      "summary": "A vulnerability was determined in NocoDB up to 2026.07.0. This vulnerability affects the function UserRefreshToken.deleteAllUserToken of the file /auth/user/signup of the component PublicApiLimiterGuard. This manipulation causes allocation of resources. The attack is possible to be carried out remotely. The attack is considered to have high complexity. It is stated that the exploitability is difficult. Code-verified absence of in-app rate limiting on the unauthenticated signup and password-forgot endpoints and per-request refresh/OAuth token invalidation, but the vendor documents the pass-through limiter as intentional design. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116120"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0075f9800c2f632eb239",
-      "title": "CVE-2026-113345: Electronic delivery item Inspection Support System provided by Japan's Ministry of Land, Infrastructure, Transport and Tourism contains an improper file access permission vulnerabi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113345",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T05:17:54+00:00",
-      "summary": "Electronic delivery item Inspection Support System provided by Japan's Ministry of Land, Infrastructure, Transport and Tourism contains an improper file access permission vulnerability. Files in the installation folder of the application may be tampered with, resulting in arbitrary code execution.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113345"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "760f21cd86e65fbc4f3c",
-      "title": "CVE-2026-116117: A flaw has been found in halo-dev halo up to 2.27.0-beta.1. Affected by this vulnerability is the function run.halo.app.theme.DefaultViewNameResolver.resolveViewNameOrDefault of th",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116117",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T05:17:54+00:00",
-      "summary": "A flaw has been found in halo-dev halo up to 2.27.0-beta.1. Affected by this vulnerability is the function run.halo.app.theme.DefaultViewNameResolver.resolveViewNameOrDefault of the file application/src/main/java/run/halo/app/theme/DefaultViewNameResolver.java of the component View Name Resolver. Executing a manipulation of the argument template can lead to path traversal. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116117"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "87c22600e9e299d13058",
-      "title": "CVE-2026-116118: A vulnerability has been found in Z.ai Zcode up to 3.14.3/3.15.1. Affected by this issue is some unknown functionality of the component Sed Command Filter. The manipulation leads t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116118",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T05:17:54+00:00",
-      "summary": "A vulnerability has been found in Z.ai Zcode up to 3.14.3/3.15.1. Affected by this issue is some unknown functionality of the component Sed Command Filter. The manipulation leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116118"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c98b1fdc64bf1c1f983d",
-      "title": "CVE-2026-116119: A vulnerability was found in NocoDB up to 2026.08.0. This affects an unknown part of the file packages/nocodb/src/services/users/users.service.ts of the component Password-Reset Fl",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116119",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T05:17:54+00:00",
-      "summary": "A vulnerability was found in NocoDB up to 2026.08.0. This affects an unknown part of the file packages/nocodb/src/services/users/users.service.ts of the component Password-Reset Flow. The manipulation results in race condition. The attack can be executed remotely. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116119"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.1,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "598ebb7d770d9016000a",
-      "title": "CVE-2026-116116: A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verif",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116116",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T04:17:55+00:00",
-      "summary": "A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verification of cryptographic signature. The attack needs to be approached locally. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116116"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a6707cb466a55987f588",
-      "title": "CVE-2026-116114: A weakness has been identified in Yoosee GM8135S Camera 21.00.01.36. This affects an unknown function of the file /npc/npc of the component Live UDP H.264 Video Stream Handler. Thi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116114",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T04:17:54+00:00",
-      "summary": "A weakness has been identified in Yoosee GM8135S Camera 21.00.01.36. This affects an unknown function of the file /npc/npc of the component Live UDP H.264 Video Stream Handler. This manipulation causes cleartext transmission of sensitive information. The attack can be initiated remotely. The attack's complexity is rated as high. The exploitability is reported as difficult. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116114"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.9,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "13ea50bb6ab6ced58c62",
-      "title": "CVE-2026-116115: A security vulnerability has been detected in Yoosee GM8135S Camera 21.00.01.36. This impacts an unknown function of the file wpa_supplicantX.conf of the component WiFi Configurati",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116115",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T04:17:54+00:00",
-      "summary": "A security vulnerability has been detected in Yoosee GM8135S Camera 21.00.01.36. This impacts an unknown function of the file wpa_supplicantX.conf of the component WiFi Configuration. Such manipulation leads to improper initialization. The attack can only be initiated within the local network. This attack is characterized by high complexity. The exploitability is said to be difficult. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116115"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 1.3,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f1e076680cf8085a8cf9",
-      "title": "CVE-2026-116113: A security flaw has been discovered in GouGuOA up to 6.1.2. The impacted element is the function chunkUpload of the file app/disk/controller/Api.php. The manipulation of the argume",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116113",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T04:17:47+00:00",
-      "summary": "A security flaw has been discovered in GouGuOA up to 6.1.2. The impacted element is the function chunkUpload of the file app/disk/controller/Api.php. The manipulation of the argument file_extension results in unrestricted upload. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116113"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "418e458dfbc62665b7ae",
-      "title": "CVE-2026-116110: A vulnerability was found in GiantappMan LiveWallPaper 2.6.8.0 on Windows. This issue affects some unknown processing of the file /LiveWallpaper/UploadFile of the component SignalR",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116110",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T03:17:11+00:00",
-      "summary": "A vulnerability was found in GiantappMan LiveWallPaper 2.6.8.0 on Windows. This issue affects some unknown processing of the file /LiveWallpaper/UploadFile of the component SignalR Hub. Performing a manipulation results in missing authentication. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The patch is named b62f878899adbfc2968e3345442f3a3df91b774d. It is suggested to install a patch to address this issue. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116110"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e3c16d191b517fca8a6c",
-      "title": "CVE-2026-116111: A vulnerability was determined in 2K Games Civilization V 1.0.3.144. Impacted is the function loadstring of the component Lua Sandbox. Executing a manipulation can lead to type con",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116111",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T03:17:11+00:00",
-      "summary": "A vulnerability was determined in 2K Games Civilization V 1.0.3.144. Impacted is the function loadstring of the component Lua Sandbox. Executing a manipulation can lead to type confusion. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116111"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1e67298a94a44a35f1bc",
-      "title": "CVE-2026-116112: A vulnerability was identified in HashenUdara edoc-doctor-appointment-system up to cc258425b915d1af9e298777ccd26d160493e68d. The affected element is an unknown function of the file",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116112",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T03:17:11+00:00",
-      "summary": "A vulnerability was identified in HashenUdara edoc-doctor-appointment-system up to cc258425b915d1af9e298777ccd26d160493e68d. The affected element is an unknown function of the file admin/add-new.php. The manipulation of the argument spec leads to sql injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116112"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "bb97e1ff6536906f4fe1",
-      "title": "CVE-2026-116109: A vulnerability has been found in continuedev Continue 2.0.0. This vulnerability affects the function MCPManagerSingleton.setConnections of the file core/config/ConfigHandler.ts of",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116109",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-26T03:17:10+00:00",
-      "summary": "A vulnerability has been found in continuedev Continue 2.0.0. This vulnerability affects the function MCPManagerSingleton.setConnections of the file core/config/ConfigHandler.ts of the component MCP Server Transport. Such manipulation leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-116109"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-01T14:17:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
       ]
     },
     {
@@ -49746,10 +49751,10 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "checked_at": "2026-11-01T22:51:19+00:00",
+      "checked_at": "2026-11-02T10:00:11+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-01T19:57:53+00:00",
-      "duration_ms": 82
+      "last_published_at": "2026-11-02T09:33:26+00:00",
+      "duration_ms": 150
     },
     {
       "source": "NCSC UK",
