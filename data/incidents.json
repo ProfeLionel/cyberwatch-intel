@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T02:40:31+00:00",
-  "last_checked_at": "2026-11-03T02:40:31+00:00",
+  "generated_at": "2026-11-03T10:06:47+00:00",
+  "last_checked_at": "2026-11-03T10:06:47+00:00",
   "items": [
     {
       "id": "4b940fe58ecf411e08c8",
@@ -58,6 +58,35 @@
       ],
       "related_sources": [
         "NCSC UK"
+      ]
+    },
+    {
+      "id": "8d7013fa6b0780b1caa1",
+      "title": "Sweden’s Saab launches family of AI agents for future aircraft projects",
+      "url": "https://breakingdefense.com/2026/11/swedens-saab-launches-family-of-ai-agents-for-future-aircraft-projects",
+      "source": "Breaking Defense",
+      "category": "Ciberdefensa / Tecnología militar",
+      "region": "Estados Unidos / Global",
+      "published_at": "2026-11-03T06:56:00+00:00",
+      "summary": "Key to the autonomous project is Saab’s AI Fighter Jet Pilot Academy, designed to develop the agents and, in parallel, establish infrastructure necessary to “create, train and evaluate” them, says the firm.",
+      "type": "article",
+      "tags": [
+        "defensa_militar"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "Breaking Defense"
       ]
     },
     {
@@ -521,6 +550,62 @@
       ],
       "related_sources": [
         "Breaking Defense"
+      ]
+    },
+    {
+      "id": "0d297090385ad5a72451",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-11-02T18:00:00+00:00",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "type": "article",
+      "tags": [
+        "defensa_militar"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:37+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
+      "id": "bca108e4c77bd86b238b",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-11-02T18:00:00+00:00",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 22,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "ransomware/campaña"
+      ],
+      "collected_at": "2026-11-03T10:06:37+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
       ]
     },
     {
@@ -2579,35 +2664,6 @@
       ]
     },
     {
-      "id": "5e3fd88b47fa7f198416",
-      "title": "Canada unveils first national security strategy in more than 20 years",
-      "url": "https://breakingdefense.com/2026/10/canada-unveils-first-national-security-strategy-in-more-than-20-years",
-      "source": "Breaking Defense",
-      "category": "Ciberdefensa / Tecnología militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-29T20:07:11+00:00",
-      "summary": "The strategy comes amid tension between Canada and its North American neighbor over tense trade negotiations.",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-29T23:19:12+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "Breaking Defense"
-      ]
-    },
-    {
       "id": "af5c48663e6f6aa036f6",
       "title": "Polish MiG-29s, F-16 Cannon Ammo Reportedly Headed To Ukraine As Bitter Warsaw-Kyiv Rift Heals",
       "url": "https://www.twz.com/news-features/polish-mig-29s-f-16-cannon-ammo-reportedly-headed-to-ukraine-as-bitter-warsaw-kyiv-rift-heals",
@@ -4021,6 +4077,123 @@
       ]
     },
     {
+      "id": "f0431350a6a61421971a",
+      "title": "CVE-2026-114409: Docker Desktop before version 4.97.0 could write third-party API keys and OAuth access tokens in cleartext to local application logs and diagnostics bundles due to insufficient IPC",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114409",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T13:16:56+00:00",
+      "summary": "Docker Desktop before version 4.97.0 could write third-party API keys and OAuth access tokens in cleartext to local application logs and diagnostics bundles due to insufficient IPC payload redaction. An attacker with read access to these files could obtain the credentials. These OAuth tokens are not Docker account tokens. Docker Desktop 4.94.0 and 4.95.0 addressed the known logging paths, but logs containing credentials can remain after upgrading. Docker Desktop 4.97.0 fixes the issue and includes cleanup of existing host logs and crash dumps.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "infraestructura_critica"
+      ],
+      "cves": [
+        "CVE-2026-114409"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.7,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "cb1e2ebbc7cda401ebf2",
+      "title": "CVE-2026-116627: Improper neutralization of input during web page generation ('Cross-site Scripting') in the notifications feature in Devolutions PowerShell Universal 2026.3.0 and earlier allows an",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116627",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T13:16:56+00:00",
+      "summary": "Improper neutralization of input during web page generation ('Cross-site Scripting') in the notifications feature in Devolutions PowerShell Universal 2026.3.0 and earlier allows an authenticated user with notification creation permission to execute arbitrary JavaScript in the browser of another user via a crafted notification target URL.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116627"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "83b4c70d743ab872fc3d",
+      "title": "CVE-2026-100164: Observable response discrepancy vulnerability in Rolantis Information Technologies Tourism Industry and Trade Co. Ltd. Agentis allows Account Footprinting. This issue affects Agen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100164",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T13:16:54+00:00",
+      "summary": "Observable response discrepancy vulnerability in Rolantis Information Technologies Tourism Industry and Trade Co. Ltd. Agentis allows Account Footprinting. This issue affects Agentis: before 4.8.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-100164"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2b844f20d817c8402e9d",
+      "title": "CVE-2026-107590: An out-of-bounds write vulnerability in the Qt QTextCodec iconv-based encoding of the Qt 5 Compatibility APIs module (Qt Core in Qt 5 and earlier) impacts Qt. Under certain conditi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107590",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T13:16:54+00:00",
+      "summary": "An out-of-bounds write vulnerability in the Qt QTextCodec iconv-based encoding of the Qt 5 Compatibility APIs module (Qt Core in Qt 5 and earlier) impacts Qt. Under certain conditions, encoding text with QTextCodec may write outside an internal buffer. This can cause the application to crash and may affect data integrity.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107590"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 1.9,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "5dbe689af7e6bc6e2ddb",
       "title": "Tricks from the Past deployed via signed ChatGPT and Claude binaries",
       "url": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries",
@@ -4047,6 +4220,644 @@
       ],
       "related_sources": [
         "Check Point Research"
+      ]
+    },
+    {
+      "id": "b286de23f8b2eee54572",
+      "title": "CVE-2026-4337: Unrestricted Upload of File with Dangerous Type vulnerability in the PuMuKIT application allows a unauthenticated user to upload any type of file to the server, and to any path whe",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4337",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Unrestricted Upload of File with Dangerous Type vulnerability in the PuMuKIT application allows a unauthenticated user to upload any type of file to the server, and to any path where the web server user has write permissions. This could also allow them to delete files.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-4337"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c90801c4e65c4fd9cd46",
+      "title": "CVE-2026-56084: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56084",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Server-Side Request Forgery (SSRF) vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-56084"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ee39ea2fb9b65a4d7b70",
+      "title": "CVE-2026-90728: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90728",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Improper Privilege Management vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to elevation of privileges.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90728"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8d618c2e19095025ed99",
+      "title": "CVE-2026-90729: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90729",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Improper Privilege Management vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90729"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "04d4411760bc773d5848",
+      "title": "CVE-2026-90730: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90730",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Improper Access Control vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90730"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "95ff861d75acbf0a3e16",
+      "title": "CVE-2026-90731: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40,",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90731",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Stack-based Buffer Overflow vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Denial of service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90731"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "177d8635c5017e636f14",
+      "title": "CVE-2026-90732: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through LTS 2026, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90732",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:08+00:00",
+      "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through LTS 2026, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Stack-based Buffer Overflow vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Denial of service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-90732"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1dd7726f6bb5d5876ec1",
+      "title": "CVE-2026-115216: In Eclipse ioFog Operator versions 3.8.0 before 3.9.2, TLS certificate verification is disabled when the operator contacts the Controller API and when it logs in to an external OID",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115216",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "In Eclipse ioFog Operator versions 3.8.0 before 3.9.2, TLS certificate verification is disabled when the operator contacts the Controller API and when it logs in to an external OIDC issuer. An on-path attacker can present any certificate, capture the OAuth client secret (external mode) or the Controller bootstrap admin password (embedded mode with Controller HTTPS enabled), and supply the access token the operator stores for later Controller API calls. v3.8 removed Keycloak. The exposed credential is not a Keycloak realm-admin secret.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115216"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7c215ad2e00d0605bf7f",
+      "title": "CVE-2026-115408: In `github.com/eclipse-keypont/crypto11/v2` versions `>= 2.0.0-rc3, <= 2.0.0-rc8`, the ML-KEM key-pair lookup functions (`FindMLKEMKeyPair`, `FindMLKEMKeyPairs`, `FindMLKEMKeyPairs",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115408",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "In `github.com/eclipse-keypont/crypto11/v2` versions `>= 2.0.0-rc3, <= 2.0.0-rc8`, the ML-KEM key-pair lookup functions (`FindMLKEMKeyPair`, `FindMLKEMKeyPairs`, `FindMLKEMKeyPairsWithAttributes`) locate the public half of an ML-KEM key pair by `CKA_ID`/`CKA_LABEL` and never verify it against the private key. In addition, the \"ID only\" fallback search runs even when the private key has no `CKA_ID`, so the search template reduces to the public-key class and the ML-KEM key type and the first ML-KEM public key on the token is returned. `Encapsulate()` on the resulting key pair encrypts the fresh shared secret to that key, so its owner — not the holder of the private key the caller looked up — can recover the secret. An attacker who can open an unauthenticated session on the token and plant a public `CKK_ML_KEM` object carrying the victim's `CKA_ID`/`CKA_LABEL` receives the shared secrets for encapsulations performed through the substituted key pair, compromising the confidentiality of those secrets and of everything protected by keys derived from them. The v1 module paths have no ML-KEM support and are not affected.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115408"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "50d070ee8db2991923f8",
+      "title": "CVE-2026-117499: @fastify/session is a session plugin for Fastify. In all releases before 11.1.6, with the default rolling session behavior, a request that restored a session before a logout could",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117499",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "@fastify/session is a session plugin for Fastify. In all releases before 11.1.6, with the default rolling session behavior, a request that restored a session before a logout could save its own copy after another request had completed the session destroy call, recreating the destroyed session identifier with its authenticated data. An attacker who already holds a victim's valid signed session cookie and keeps a request in flight across the logout can replay that cookie to restore the session after it was meant to be revoked, without any cookie theft or signature forgery. The issue is fixed in @fastify/session 11.1.6, which adds a per session generation marker and a conditional store write so a session restored before a logout or regeneration cannot recreate or overwrite the current entry, and users should upgrade to 11.1.6 or later. There is no workaround, and custom session stores must implement the new conditional write.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117499"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 3.7,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5e064201797af2f28e33",
+      "title": "CVE-2026-13162: An OS command vulnerability exists in CoreTec product that allows authenticated users with certain roles to execute arbitrary system commands with full control over the device. The",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13162",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "An OS command vulnerability exists in CoreTec product that allows authenticated users with certain roles to execute arbitrary system commands with full control over the device. The vulnerability exists in the configuration daemon's time synchronization handler, which is responsible for setting the system time-zone. When processing time-zone configuration updates, the daemon constructs a shell command by concatenating user-supplied input without any sanitization or validation.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-13162"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6e347eec9001cae1bad7",
+      "title": "CVE-2026-41020: Eaton easyE4 uses a static nonce during authentication, which could allow an unauthenticated attacker with access to captured authentication traffic to replay a valid authenticatio",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41020",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "Eaton easyE4 uses a static nonce during authentication, which could allow an unauthenticated attacker with access to captured authentication traffic to replay a valid authentication exchange and gain unauthorized access to the device.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-41020"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f73fc76dafba14666881",
+      "title": "CVE-2026-41021: Eaton easyE4 uses an insufficiently strong password policy. An attacker who obtains a password hash, including through CVE-2026-41020, could perform an offline password-guessing at",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41021",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "Eaton easyE4 uses an insufficiently strong password policy. An attacker who obtains a password hash, including through CVE-2026-41020, could perform an offline password-guessing attack and potentially recover user credentials.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-41021"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "77fa91efb58e460e492d",
+      "title": "CVE-2026-41022: Eaton easySoft improperly validates TLS certificates presented by easyE4 devices. A network-adjacent attacker could exploit this weakness to perform a man-in-the-middle attack and",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41022",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:07+00:00",
+      "summary": "Eaton easySoft improperly validates TLS certificates presented by easyE4 devices. A network-adjacent attacker could exploit this weakness to perform a man-in-the-middle attack and potentially intercept or modify communications between easySoft and easyE4.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-41022"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "db033f893820305ad5f4",
+      "title": "CVE-2026-113644: In Eclipse ioFog iofogctl versions 1.0.0 through 3.7.0 and 3.8.0-rc.1 through 3.9.1, the provisioning key and CA certificate returned by the Controller API are concatenated into sh",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113644",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:05+00:00",
+      "summary": "In Eclipse ioFog iofogctl versions 1.0.0 through 3.7.0 and 3.8.0-rc.1 through 3.9.1, the provisioning key and CA certificate returned by the Controller API are concatenated into shell commands (`edgelet provision` and `edgelet config cert` on supported releases; `iofog-agent provision` and `iofog-agent cert` on older releases) that run over SSH on a remote agent host and via a local shell. A party who can change that API response can include shell metacharacters and cause the operator's CLI to run additional commands on the agent host when the operator deploys or attaches an agent. This is fixed in version 3.9.2.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113644"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "38da7fc64b1381f6f58c",
+      "title": "CVE-2026-102800: Joomla Extension - dj-extensions.com - Unauthenticated Stored XSS in DJ-HelpfulArticles < 1.3.0 - The “was this article helpful” voting widget posts a client-supplied ip field to i",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102800",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "Joomla Extension - dj-extensions.com - Unauthenticated Stored XSS in DJ-HelpfulArticles quote() was applied on insert, which protects the SQL statement but does nothing for HTML output. There was no CSRF token, no rate limit, and the vote de-duplication keyed on the same attacker-controlled field.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-102800"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f9d1ec79fc5bd1b4d1c7",
+      "title": "CVE-2026-105323: Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Kulga Software and Telecommunications Limited Company Kulga News Software allo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105323",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Kulga Software and Telecommunications Limited Company Kulga News Software allows Reflected XSS. This issue affects Kulga News Software: from v26.7.4 before v26.10.0.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105323"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 6.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e214b79b109e93e7592f",
+      "title": "CVE-2026-106087: TRO600 contains an arbitrary file read vulnerability. An unauthenticated attacker can exploit this vulnerability to read or download arbitrary files on the affected device, includi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106087",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "TRO600 contains an arbitrary file read vulnerability. An unauthenticated attacker can exploit this vulnerability to read or download arbitrary files on the affected device, including sensitive configuration files and password data, resulting in the disclosure of sensitive information.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-106087"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 8.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb52472457ac17af42dd",
+      "title": "CVE-2026-109995: The Advanced Views – Display Framework for Gutenberg & Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109995",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "The Advanced Views – Display Framework for Gutenberg & Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 3.9.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability is exploitable even against pending or unapproved comments, as the plugin's get_comment() lookup applies no approval-status filter, meaning a payload executes for any visitor loading an avf-layout block bound to the attacker's comment ID before the comment is ever reviewed.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-109995"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4e1e5fd60622896447fd",
+      "title": "CVE-2026-10752: The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 0.9.2.6. This is due to the plugin not properl",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10752",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 0.9.2.6. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to permanently delete arbitrary WordPress media library attachments by supplying a numeric attachment ID in the form submission without any ownership or capability verification. Exploitation requires a site administrator to have configured a public-facing ACFE form with an Email action whose attachment row uses a dynamic {field:...} source bound to a submittable field with the Delete option enabled.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-10752"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9df0eca722e50b92909b",
+      "title": "CVE-2026-10756: TRO600 contains a vulnerability that allows an authenticated attacker to bypass network access restrictions and access services intended to be reachable only from localhost. By lev",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10756",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "TRO600 contains a vulnerability that allows an authenticated attacker to bypass network access restrictions and access services intended to be reachable only from localhost. By leveraging port forwarding, an attacker can interact with locally bound ports and services, resulting in unauthorized access to sensitive functionality and confidential information, and causing availability impact.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-10756"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9a008cf861e51fae4b6f",
+      "title": "CVE-2026-112362: @fastify/express is a Fastify plugin that runs Express middleware inside Fastify. In versions 4.0.5 through 4.0.8, when Fastify runs with the non-default ignoreDuplicateSlashes opt",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112362",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T12:17:04+00:00",
+      "summary": "@fastify/express is a Fastify plugin that runs Express middleware inside Fastify. In versions 4.0.5 through 4.0.8, when Fastify runs with the non-default ignoreDuplicateSlashes option enabled, the plugin matches path-scoped Express middleware against a URL whose duplicate-slash normalization has also collapsed the separator after an absolute-form request target's scheme, so Fastify's router resolves the request to the scoped path and runs the handler while the Express layer no longer sees that path. As a result, a request using an absolute-form target can reach a handler on a scoped route such as an admin path while the middleware for authentication, authorization, or rate limiting is skipped. An unauthenticated attacker needs only the non-default ignoreDuplicateSlashes option to be enabled. The issue is fixed in @fastify/express 4.0.9, and users should upgrade to 4.0.9 or later. As a workaround, enforce authentication in a Fastify hook such as preHandler that runs after the router resolves the request, or leave ignoreDuplicateSlashes at its default.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112362"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
       ]
     },
     {
@@ -4181,6 +4992,35 @@
       ]
     },
     {
+      "id": "3a17ce79a7e07daa1af1",
+      "title": "CVE-2026-117541: svg-sanitizer from 0.11.0 before 1.1.0 contains an uncaught exception vulnerability that allows attackers to crash callers by submitting well-formed XML without a top-level svg roo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117541",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T11:17:35+00:00",
+      "summary": "svg-sanitizer from 0.11.0 before 1.1.0 contains an uncaught exception vulnerability that allows attackers to crash callers by submitting well-formed XML without a top-level svg root. Attackers can supply documents with a non-svg root or nested svg element, causing Sanitizer::sanitize() to throw a LogicException instead of returning false, crashing workers or bypassing upload rejection.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117541"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
       "id": "337ed48cae3224be6684",
       "title": "CVE-2026-117535: REDAXO before 5.21.3 contains a reflected cross-site scripting vulnerability in the backend media pool detail page, where the opener_link parameter is rendered without HTML escapin",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117535",
@@ -4232,6 +5072,122 @@
       ],
       "collected_at": "2026-11-03T02:40:30+00:00",
       "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "af90983de266256d2612",
+      "title": "CVE-2026-117537: REDAXO before 5.21.0 contains a reflected cross-site scripting vulnerability that allows authenticated attackers to inject scripts via the type parameter of the metainfo_default_fi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117537",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T11:17:34+00:00",
+      "summary": "REDAXO before 5.21.0 contains a reflected cross-site scripting vulnerability that allows authenticated attackers to inject scripts via the type parameter of the metainfo_default_fields_create API. Attackers can craft a link with a valid CSRF token and HTML payload that rex_view::message() renders unescaped, executing scripts in a victim's backend session.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117537"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "06840f61eb2b8f4126cd",
+      "title": "CVE-2026-117538: REDAXO before 5.21.0 contains a reflected cross-site scripting vulnerability in the backend packages API, where the function parameter is concatenated into an error message rendere",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117538",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T11:17:34+00:00",
+      "summary": "REDAXO before 5.21.0 contains a reflected cross-site scripting vulnerability in the backend packages API, where the function parameter is concatenated into an error message rendered without HTML escaping. Attackers can lure an authenticated backend user to a crafted link containing a valid CSRF token, executing JavaScript that performs same-origin actions or reads DOM data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117538"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "535d5b5810edfea3ed11",
+      "title": "CVE-2026-117539: darylldoyle svg-sanitizer before 1.0.0 contains CSS injection and remote reference bypass vulnerabilities that allow attackers to embed external resources by uploading crafted SVG",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117539",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T11:17:34+00:00",
+      "summary": "darylldoyle svg-sanitizer before 1.0.0 contains CSS injection and remote reference bypass vulnerabilities that allow attackers to embed external resources by uploading crafted SVG files. Attackers can use unsanitized style content, unquoted url() values, or image href attributes to exfiltrate page data, track users, or disclose visitor IP addresses.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117539"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3c24d7c7afa6eae3f826",
+      "title": "CVE-2026-117540: svg-sanitizer from 0.5.3 before 1.1.0 contains a denial of service vulnerability in Sanitizer::sanitize() that repeatedly rescans the whole input while stripping PHP tags. Unauthen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117540",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-10-27T11:17:34+00:00",
+      "summary": "svg-sanitizer from 0.5.3 before 1.1.0 contains a denial of service vulnerability in Sanitizer::sanitize() that repeatedly rescans the whole input while stripping PHP tags. Unauthenticated attackers can upload SVGs with many overlapping PHP tag openers and closers, forcing quadratic preg_replace passes that exhaust worker CPU for minutes.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117540"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-03T10:06:47+00:00",
+      "cvss": 8.7,
       "severity": "HIGH",
       "kev": false,
       "related_sources": [
@@ -6213,644 +7169,6 @@
       ]
     },
     {
-      "id": "e52561ade2d7b270bf27",
-      "title": "CVE-2026-65213: This issue may allow an IPMI authenticated administrator to execute commands as the operating system root user on the BMC",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65213",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T09:16:34+00:00",
-      "summary": "This issue may allow an IPMI authenticated administrator to execute commands as the operating system root user on the BMC",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65213"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.6,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c74821d0875adb111fa1",
-      "title": "CVE-2026-92885: The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.0.6.2 via the qode_membership_ch",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92885",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T09:16:34+00:00",
-      "summary": "The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.0.6.2 via the qode_membership_check_facebook_user AJAX action. This is due to a typographic error in the Facebook OAuth token verification guard within the qode_membership_login_user_from_social_network function — the guard condition tests an undefined variable ($check_social_useqoder instead of $check_social_user), causing empty() to always return true and rendering the Graph API token verification branch dead code, leaving wp_set_auth_cookie() reachable with no credential or token validation whatsoever. This makes it possible for unauthenticated attackers to log in as any existing WordPress account — including Administrator-level accounts — by supplying a known or enumerated administrator login name (rather than an email address) in the response[email] parameter, which the fallback path in get_user_by('login', $email) resolves to the matching account. Exploitation does require harvesting a valid qode_validate_facebook_login nonce, but this nonce is rendered on any public front-end page containing the [qode_user_login] or [qode_user_re",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-92885"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a9099846770846260168",
-      "title": "CVE-2026-65211: This issue may allow an authenticated IPMI Administrator to read and write arbitrary BMC physical memory and thereby execute code on the BMC operating system.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65211",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T09:16:33+00:00",
-      "summary": "This issue may allow an authenticated IPMI Administrator to read and write arbitrary BMC physical memory and thereby execute code on the BMC operating system.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65211"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4976e3d7d9a2316bb0fc",
-      "title": "CVE-2026-65210: This issue may allow an authenticated IPMI Administrator to read arbitrary files from the BMC filesystem, disclosing material well beyond the intended IPMI management role.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65210",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:54+00:00",
-      "summary": "This issue may allow an authenticated IPMI Administrator to read arbitrary files from the BMC filesystem, disclosing material well beyond the intended IPMI management role.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65210"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 4.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "fdd15b84b71bfbaed32e",
-      "title": "CVE-2026-65219: A flaw in the BMC RAKP+ implementation may allow an attacker to send a request followed by a specially crafted RAKP message and establish an RMCP+ session, which could then be used",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65219",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:54+00:00",
-      "summary": "A flaw in the BMC RAKP+ implementation may allow an attacker to send a request followed by a specially crafted RAKP message and establish an RMCP+ session, which could then be used to execute commands.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65219"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.4,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f7561ccd1f205113391a",
-      "title": "CVE-2026-65220: A logic flaw in the BMC IPMI implementation may allow an attacker to send specially crafted RAKP+ messages and escalate an account to administrator privileges.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65220",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:54+00:00",
-      "summary": "A logic flaw in the BMC IPMI implementation may allow an attacker to send specially crafted RAKP+ messages and escalate an account to administrator privileges.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-65220"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4135427f56611057a626",
-      "title": "CVE-2026-111460: A hard-coded cryptographic key vulnerability exists in the OnCell G3150A-LTE Series. Under certain conditions, an unauthenticated remote attacker could obtain shared cryptographic",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111460",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "A hard-coded cryptographic key vulnerability exists in the OnCell G3150A-LTE Series. Under certain conditions, an unauthenticated remote attacker could obtain shared cryptographic key material and use it to impersonate affected devices that have not regenerated their cryptographic keys, potentially compromising the confidentiality and integrity of management communications.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111460"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9b51a71714731b2049c8",
-      "title": "CVE-2026-111461: An OS command injection vulnerability exists in OnCell G3150A-LTE Series. When the SMS management functionality is enabled and configured, a remote attacker with the required privi",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111461",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "An OS command injection vulnerability exists in OnCell G3150A-LTE Series. When the SMS management functionality is enabled and configured, a remote attacker with the required privileges could exploit insufficient input validation in the SMS management functionality to execute arbitrary commands on the affected device.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111461"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "02c9df05b698529879c2",
-      "title": "CVE-2026-16521: An OS command injection vulnerability exists because of insufficient input filtering. An attacker can inject a command payload into a BMC function; the payload may execute when the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16521",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "An OS command injection vulnerability exists because of insufficient input filtering. An attacker can inject a command payload into a BMC function; the payload may execute when the related service is restarted.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-16521"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "029fb565aeccbdeb30e7",
-      "title": "CVE-2026-18449: The BMC does not correctly enforce integrity and encryption requirements for IPMI commands. An attacker may be able to craft packets that execute arbitrary commands on an active se",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18449",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "The BMC does not correctly enforce integrity and encryption requirements for IPMI commands. An attacker may be able to craft packets that execute arbitrary commands on an active session.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-18449"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "afc008a9c47c16324bf0",
-      "title": "CVE-2026-18450: The BMC does not correctly enforce integrity and encryption requirements for IPMI commands. An attacker may be able to craft packets that execute arbitrary commands on an active se",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18450",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "The BMC does not correctly enforce integrity and encryption requirements for IPMI commands. An attacker may be able to craft packets that execute arbitrary commands on an active session.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-18450"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "fa65d3c4a950aa862642",
-      "title": "CVE-2026-18451: The HTML5 KVM-over-IP console authenticates with a token returned by the web interface. Weaknesses in token generation may allow an attacker to guess the session token and take con",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18451",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:53+00:00",
-      "summary": "The HTML5 KVM-over-IP console authenticates with a token returned by the web interface. Weaknesses in token generation may allow an attacker to guess the session token and take control of the KVM session.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-18451"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 3.1,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "4022f0b93e37074dd45c",
-      "title": "CVE-2026-101034: An attacker who obtained the hardcoded key could decrypt domain/service account passwords, task run-as credentials, and sysprep passwords stored in or transmitted by GSS Deployment",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101034",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:52+00:00",
-      "summary": "An attacker who obtained the hardcoded key could decrypt domain/service account passwords, task run-as credentials, and sysprep passwords stored in or transmitted by GSS Deployment Server installation.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-101034"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9597aec7cd0404b8fb0e",
-      "title": "CVE-2026-107472: An out-of-bounds read vulnerability in the QTextCodec TSCII encoding of the Qt 5 Compatibility APIs module (Qt Core in Qt 5 and earlier) impacts Qt. Applications that convert text",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107472",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:52+00:00",
-      "summary": "An out-of-bounds read vulnerability in the QTextCodec TSCII encoding of the Qt 5 Compatibility APIs module (Qt Core in Qt 5 and earlier) impacts Qt. Applications that convert text to the TSCII encoding through QTextCodec may read memory outside the input buffer, which can cause the application to crash or misinterpret the data.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107472"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "da2214224bb34421be66",
-      "title": "CVE-2026-10511: The Jupiter X Core plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'forget_password_link' parameter in all versions up to, and including, 4.61.0 due to in",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10511",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:52+00:00",
-      "summary": "The Jupiter X Core plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'forget_password_link' parameter in all versions up to, and including, 4.61.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-10511"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "edd42f2b3b7727ee9d5e",
-      "title": "CVE-2026-111459: An improper certificate validation vulnerability exists in Moxa Remote Connect Suite (MRC Client). Under certain conditions, an unauthenticated attacker with on-path access to the",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111459",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T08:16:52+00:00",
-      "summary": "An improper certificate validation vulnerability exists in Moxa Remote Connect Suite (MRC Client). Under certain conditions, an unauthenticated attacker with on-path access to the communication between the MRC Client and its server could impersonate a trusted server and conduct a man-in-the-middle attack, potentially compromising the confidentiality and integrity of communications.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-111459"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.6,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "876b1eea6a0867cfd57d",
-      "title": "CVE-2026-106174: A improper locking vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.4 through 7.6.6 may allow an unauthenticated attacker with network access to the device to cause a denial of",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106174",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:32+00:00",
-      "summary": "A improper locking vulnerability in Fortinet FortiOS 8.0.0, FortiOS 7.6.4 through 7.6.6 may allow an unauthenticated attacker with network access to the device to cause a denial of service of the HTTPS management interface via crafted HTTP requests.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-106174"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "77f98a710954f0ea8cd4",
-      "title": "CVE-2026-110910: ### Summary `qs.stringify` with `allowEmptyArrays: true` writes the key of an empty array without encoding it, even though keys are encoded by default. A key that contains `&` (",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110910",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:32+00:00",
-      "summary": "### Summary `qs.stringify` with `allowEmptyArrays: true` writes the key of an empty array without encoding it, even though keys are encoded by default. A key that contains `&` (or the configured `delimiter`), `=`, or `#` therefore becomes query string syntax instead of data, so a caller-supplied key name can add parameters to the serialized query string, or cut it short. ### Details In `lib/stringify.js`, the `allowEmptyArrays` branch returns `adjustedPrefix + '[]'` early, before the code that passes every other key through `encoder` and `formatter`. So `{ \"x&k=v\": [\"1\"] }` serializes as `x%26k%3Dv%5B0%5D=1`, but `{ \"x&k=v\": [] }` serializes as `x&k=v[]`. The early return applies at any depth (`{ \"a\": { \"b&k=v\": [] } }` gives `a[b&k=v][]`), under every `arrayFormat`, with `allowDots`, and with a custom `encoder`, which is never called for that key. With `encode: false` or `encodeValuesOnly: true`, keys are intentionally left unencoded on every path; those configurations are not affected. #### PoC ```js var qs = require(\"qs\"); var query = qs.stringify({ q: \"hi\", \"x&apiKey=evil&y\": [] }, { allowEmptyArrays: true }); // \"q=hi&x&apiKey=evil&y[]\" qs.parse(query); // { q: \"hi\", x: \"\", ap",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-110910"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "950b9b497dfd5d8039dc",
-      "title": "CVE-2026-75891: The Kirki plugin for WordPress is vulnerable to Privilege Escalation via PHP Object Injection in all versions up to, and including, 6.2.5 via deserialization of untrusted input thr",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75891",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:32+00:00",
-      "summary": "The Kirki plugin for WordPress is vulnerable to Privilege Escalation via PHP Object Injection in all versions up to, and including, 6.2.5 via deserialization of untrusted input through the 'get-single-symbol' branch of the kirki_post_apis() AJAX dispatcher due to a missing capability check. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject a PHP Object. The additional presence of a POP chain allows attackers to overwrite an administrator's password and gain administrative access.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-75891"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9f366faf1dc4ab8c1ffb",
-      "title": "CVE-2026-103325: The TiendaCrypto para WooCommerce WordPress plugin through 1.2.1 does not correctly verify the authenticity of its payment webhook, validating the request signature against a key t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103325",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:31+00:00",
-      "summary": "The TiendaCrypto para WooCommerce WordPress plugin through 1.2.1 does not correctly verify the authenticity of its payment webhook, validating the request signature against a key that is always empty, which allows unauthenticated attackers to forge webhook notifications and mark arbitrary WooCommerce orders as paid on web servers that preserve request header case.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103325"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 3.7,
-      "severity": "LOW",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0256e16facce0e8ae3ec",
-      "title": "CVE-2026-103359: The PayDunya WooCommerce Payment Gateway WordPress plugin through 1.1.6 does not verify the authenticity of incoming payment notifications and, until the gateway is configured, aut",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103359",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:31+00:00",
-      "summary": "The PayDunya WooCommerce Payment Gateway WordPress plugin through 1.1.6 does not verify the authenticity of incoming payment notifications and, until the gateway is configured, authenticates them with a value derived from an empty secret that anyone can compute, allowing unauthenticated attackers to mark arbitrary WooCommerce orders as paid and completed.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103359"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3f2d7890f57e8c0c57c9",
-      "title": "CVE-2026-105946: Out-of-bounds read in the QAuthenticator NTLM authentication handling in the Qt Network module in Qt Group Qt allows remote attackers to obtain sensitive information (heap memory c",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105946",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T07:16:31+00:00",
-      "summary": "Out-of-bounds read in the QAuthenticator NTLM authentication handling in the Qt Network module in Qt Group Qt allows remote attackers to obtain sensitive information (heap memory contents) or cause a denial of service (application crash) via a crafted NTLM challenge sent by a malicious server or proxy, when an application using QNetworkAccessManager or QTcpSocket authenticates with NTLM.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-105946"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "4b134cedffabe49d240e",
       "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
       "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
@@ -6905,268 +7223,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "61b6bb7b3665f802939e",
-      "title": "CVE-2026-117471: Psono Server CE && EE versions 0.1.0 through 7.2.3 accepted a user-controlled host when configuring a personal Duo device and passed it to the Duo client without an allowlist or ex",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117471",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:25+00:00",
-      "summary": "Psono Server CE && EE versions 0.1.0 through 7.2.3 accepted a user-controlled host when configuring a personal Duo device and passed it to the Duo client without an allowlist or explicit timeout. An authenticated remote attacker could cause the server to connect to selected hosts over HTTPS on port 443 and distinguish failure modes, providing an internal DNS and service-reachability oracle. Connections still required TLS certificate validation, and the flaw did not provide arbitrary protocol or port access. Unresponsive targets could also occupy a server worker until the operating-system timeout.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-117471"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8fd96828ab4546e8dd68",
-      "title": "CVE-2026-117472: Psono Server CE && EE versions 4.0.33 through 7.2.3 compared the request path for the bulk-secret-read endpoint with a hard-coded unprefixed path. In deployments configured with UR",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117472",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:25+00:00",
-      "summary": "Psono Server CE && EE versions 4.0.33 through 7.2.3 compared the request path for the bulk-secret-read endpoint with a hard-coded unprefixed path. In deployments configured with URL_PREFIX, the comparison failed and the POST request was authorized using write scope instead of read scope. An authenticated remote attacker with an unusual read-disabled, write-enabled API key could therefore retrieve encrypted secret data and nonces through the prefixed bulk-secret-read endpoint despite lacking read permission. The default configuration without URL_PREFIX was not affected.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-117472"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e943ec471349ca1ac819",
-      "title": "CVE-2026-117468: Psono Server versions 5.3.5 through 7.2.3 used a permission class that did not enforce token write scope when claiming a device code. An authenticated remote attacker holding a res",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117468",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:24+00:00",
-      "summary": "Psono Server versions 5.3.5 through 7.2.3 used a permission class that did not enforce token write scope when claiming a device code. An authenticated remote attacker holding a restricted API key-derived session could claim an attacker-controlled device code and obtain a full read-write session valid for up to 365 days, bypassing the original token's scope and lifetime restrictions. This did not bypass two-factor authentication or directly disclose plaintext secrets.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-117468"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b5f310962dd8a146f596",
-      "title": "CVE-2026-117469: Psono Server (CE & EE) versions 1.0.0 through 7.2.3 did not enforce the direction of file-transfer credentials on file-repository operations. An authenticated remote attacker with",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117469",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:24+00:00",
-      "summary": "Psono Server (CE & EE) versions 1.0.0 through 7.2.3 did not enforce the direction of file-transfer credentials on file-repository operations. An authenticated remote attacker with read-only access to a file could present a download transfer to the upload endpoint, obtain a signed upload URL for an attacker-selected object key, and append a chunk to the owner's file. Exploitation could upload or overwrite repository objects and consume storage, subject to transfer size, chunk-count, and lifetime limits.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-117469"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.4,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "5afec7af445ee3189392",
-      "title": "CVE-2026-117470: Psono Server CE & EE versions 3.1.0 through 7.2.3 did not consume a stored WebAuthn challenge after assertion verification. An unauthenticated remote attacker who possessed the use",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117470",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:24+00:00",
-      "summary": "Psono Server CE & EE versions 3.1.0 through 7.2.3 did not consume a stored WebAuthn challenge after assertion verification. An unauthenticated remote attacker who possessed the user's password and one captured valid WebAuthn assertion could replay that assertion with separate login tokens while the stored challenge remained unchanged, bypassing the WebAuthn second factor. The attack required capture of a valid assertion and did not itself disclose plaintext secrets.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-117470"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "1d9e190e5873528d0553",
-      "title": "CVE-2026-103312: The Payment Integration Wompi WordPress plugin through 4.0.1 does not verify the authenticity of incoming payment notifications on a stock install, because the callback's checksum",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103312",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:23+00:00",
-      "summary": "The Payment Integration Wompi WordPress plugin through 4.0.1 does not verify the authenticity of incoming payment notifications on a stock install, because the callback's checksum is keyed on a merchant secret that is empty until it is manually configured, allowing an unauthenticated attacker to forge a notification and mark an arbitrary order as paid.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103312"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2c35a081bd394c3a2a2a",
-      "title": "CVE-2026-103332: The Payex Payment Gateway for Woocommerce WordPress plugin through 1.2.10 does not properly verify the authenticity of incoming payment notifications, relying on a validation secre",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103332",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:23+00:00",
-      "summary": "The Payex Payment Gateway for Woocommerce WordPress plugin through 1.2.10 does not properly verify the authenticity of incoming payment notifications, relying on a validation secret that is empty by default, allowing unauthenticated attackers to forge a valid payment confirmation and mark any order as paid.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-103332"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e552410be275b801216f",
-      "title": "CVE-2026-111820: The Analytics Insights – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Page Title in all versions up to, and in",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111820",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T06:17:23+00:00",
-      "summary": "The Analytics Insights – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Page Title in all versions up to, and including, 6.3.12 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "infraestructura_critica"
-      ],
-      "cves": [
-        "CVE-2026-111820"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "73b2df1579bb9460fc9e",
-      "title": "CVE-2026-88781: Untrusted Pointer Dereference in ASUS certain motherboards firmware allows a kernel-level privileges user can supply an arbitrary memory address via an I/O command, leading to subs",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88781",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-27T03:16:26+00:00",
-      "summary": "Untrusted Pointer Dereference in ASUS certain motherboards firmware allows a kernel-level privileges user can supply an arbitrary memory address via an I/O command, leading to subsequent system information being tampered with or causing a system crash. Refer to the 'Security Update for Multiple ASUS Motherboards' section on the ASUS Security Advisory for more information.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-88781"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-03T02:40:30+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
       ]
     },
     {
@@ -12622,14 +12678,14 @@
       ]
     },
     {
-      "id": "9bf93d58cc35db9987f8",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "url": "https://openai.com/index/asana-browser-agent",
+      "id": "570fe3204556675e8dd9",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
       "type": "article",
       "tags": [
         "general"
@@ -12650,14 +12706,14 @@
       ]
     },
     {
-      "id": "570fe3204556675e8dd9",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "url": "https://openai.com/index/sophos",
+      "id": "9bf93d58cc35db9987f8",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
       "source": "OpenAI News",
       "category": "IA / Seguridad y tecnología",
       "region": "Global",
       "published_at": "2026-10-09T07:00:00+00:00",
-      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
       "type": "article",
       "tags": [
         "general"
@@ -15606,6 +15662,34 @@
       ]
     },
     {
+      "id": "4e56c7312349a760a0ed",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "source": "OpenAI News",
+      "category": "IA / Seguridad y tecnología",
+      "region": "Global",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "type": "article",
+      "tags": [
+        "general"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-10-26T23:40:12+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "OpenAI News"
+      ]
+    },
+    {
       "id": "347b65ce144a221e189c",
       "title": "Sam Altman’s remarks at the United Nations Security Council",
       "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
@@ -15670,90 +15754,6 @@
       "region": "Global",
       "published_at": "2026-09-23T12:00:00+00:00",
       "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:12+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
-      "id": "4e56c7312349a760a0ed",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-09-23T12:00:00+00:00",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:12+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
-      "id": "3d7b9aab56c8f4fe22c0",
-      "title": "Introducing MentalHealthBench",
-      "url": "https://openai.com/index/introducing-mentalhealthbench",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-09-23T10:00:00+00:00",
-      "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-26T23:40:12+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "OpenAI News"
-      ]
-    },
-    {
-      "id": "bb71e409dd7f29f762c2",
-      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "source": "OpenAI News",
-      "category": "IA / Seguridad y tecnología",
-      "region": "Global",
-      "published_at": "2026-09-23T02:00:00+00:00",
-      "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
       "type": "article",
       "tags": [
         "general"
@@ -49820,10 +49820,10 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "checked_at": "2026-11-02T20:23:17+00:00",
+      "checked_at": "2026-11-03T10:06:27+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-02T19:47:29+00:00",
-      "duration_ms": 105
+      "last_published_at": "2026-11-03T06:56:00+00:00",
+      "duration_ms": 114
     },
     {
       "source": "The War Zone (TWZ)",
@@ -49930,10 +49930,10 @@
       "ok": true,
       "count": 100,
       "error": null,
-      "checked_at": "2026-11-03T02:40:22+00:00",
+      "checked_at": "2026-11-03T10:06:37+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-02T15:30:00+00:00",
-      "duration_ms": 545
+      "last_published_at": "2026-11-02T18:00:00+00:00",
+      "duration_ms": 534
     },
     {
       "source": "NVIDIA Developer Blog — Cybersecurity",
