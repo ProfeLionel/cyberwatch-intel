@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#06111f">
-  <meta name="description" content="CyberWatch Intel: mapa mundial de actividad cibernética observada e inteligencia de amenazas pública.">
-  <title>CyberWatch Intel | Threatmap global</title>
+  <meta name="description" content="RADAR: mapa mundial de actividad cibernética observada e inteligencia de amenazas pública.">
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  <title>RADAR | Mapa global</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <style>
     :root{color-scheme:dark;--bg:#06111f;--panel:#081a2b;--panel2:#0b2034;--line:#183753;--text:#eaf4ff;--muted:#8da8c2;--cyan:#35d8e6;--blue:#258bff;--green:#18cba0;--red:#ff536f;--amber:#ffb547;--purple:#9b79ff;--shadow:0 12px 30px #0005}
     *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}body{background:radial-gradient(ellipse at 55% -25%,#123451 0,transparent 47%),var(--bg)}a{color:inherit;text-decoration:none}button,select{font:inherit}
-    .app{min-height:100vh;display:grid;grid-template-columns:162px minmax(0,1fr);max-width:2400px;margin:0 auto}.sidebar{background:#061322;border-right:1px solid var(--line);padding:15px 10px;display:flex;flex-direction:column;gap:24px}.side-brand{display:flex;align-items:center;gap:9px;padding:4px 6px 16px;border-bottom:1px solid var(--line)}.brand-shield{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#0f4d79,#073b47);color:#65e6ff;font-size:22px;border:1px solid #26739a}.brand-mini{font-size:13px;font-weight:900;line-height:1.1}.brand-mini span{color:#7db9ee}.brand-mini small{display:block;color:var(--muted);font-size:8px;font-weight:650;letter-spacing:.8px;margin-top:4px}.side-nav{display:grid;gap:6px}.side-nav a{display:flex;align-items:center;gap:10px;padding:10px 9px;border-radius:8px;color:#afc4d9;font-size:11px;font-weight:750;border:1px solid transparent}.side-nav a.active,.side-nav a:hover{color:#fff;background:#0b2c53;border-color:#174a80}.nav-icon{width:16px;text-align:center;font-size:15px}.side-note{margin-top:auto;border:1px solid var(--line);background:#091b2a;border-radius:9px;padding:10px;font-size:9px;line-height:1.5;color:var(--muted)}.side-note b{display:block;color:#8cece7;margin-bottom:4px}
+    .app{min-height:100vh;display:grid;grid-template-columns:162px minmax(0,1fr);max-width:2400px;margin:0 auto}.sidebar{background:#061322;border-right:1px solid var(--line);padding:15px 10px;display:flex;flex-direction:column;gap:24px}.side-brand{display:flex;align-items:center;gap:9px;padding:4px 6px 16px;border-bottom:1px solid var(--line)}.brand-shield{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#0f4d79,#073b47);color:#65e6ff;font-size:22px;border:1px solid #26739a}.brand-mini{font-size:13px;font-weight:900;line-height:1.1}.brand-mini span{color:#7db9ee}.brand-mini small{display:block;color:var(--muted);font-size:8px;font-weight:650;letter-spacing:.8px;margin-top:4px}.top-brand{display:flex;align-items:center;gap:9px;min-width:0}.top-brand img{width:clamp(92px,10vw,138px);height:auto;max-height:50px;object-fit:contain;flex:none}.top-brand-name{font-size:15px;font-weight:900;letter-spacing:.4px;color:var(--text);white-space:nowrap}.side-nav{display:grid;gap:6px}.side-nav a{display:flex;align-items:center;gap:10px;padding:10px 9px;border-radius:8px;color:#afc4d9;font-size:11px;font-weight:750;border:1px solid transparent}.side-nav a.active,.side-nav a:hover{color:#fff;background:#0b2c53;border-color:#174a80}.nav-icon{width:16px;text-align:center;font-size:15px}.side-note{margin-top:auto;border:1px solid var(--line);background:#091b2a;border-radius:9px;padding:10px;font-size:9px;line-height:1.5;color:var(--muted)}.side-note b{display:block;color:#8cece7;margin-bottom:4px}
     .main{min-width:0;padding:0 15px 12px}.topbar{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);margin:0 -15px 12px;padding:10px 18px;background:#061322d9}.top-left{display:flex;align-items:center;gap:18px;min-width:0}.page-tabs{display:flex;align-items:center;gap:15px}.page-tabs a{font-size:11px;color:var(--muted);padding:9px 2px;border-bottom:2px solid transparent}.page-tabs a.current{color:#58b9ff;border-color:#258bff}.top-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}.scope-pill,.status-pill{border:1px solid #24445f;background:#0b2032;border-radius:7px;padding:7px 10px;font-size:10px;color:#c8d9ea;white-space:nowrap}.status-pill{display:flex;align-items:center;gap:7px}.dot{width:7px;height:7px;border-radius:100%;background:var(--green);box-shadow:0 0 9px currentColor}.top-time{text-align:right;font:650 11px ui-monospace,monospace;color:#d2e5f6}.top-time small{display:block;color:var(--muted);font:9px system-ui;margin-top:4px}
     .content{display:grid;gap:12px}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:12px;min-height:0}.panel{background:linear-gradient(145deg,#0a1c2d,#071727);border:1px solid var(--line);border-radius:11px;overflow:hidden;min-width:0;box-shadow:var(--shadow)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}.panel-head h2{font-size:11px;font-weight:900;letter-spacing:.4px;margin:0}.panel-head small{font-size:9px;color:var(--muted);white-space:nowrap}.map-panel{display:flex;flex-direction:column;min-height:550px}.map-head-left{display:grid;gap:3px}.map-head-left strong{font-size:16px;letter-spacing:-.2px}.map-head-left span{font-size:10px;color:var(--muted)}.map-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.toolbtn{border:1px solid #244760;background:#0b2339;border-radius:7px;padding:7px 9px;color:#cce3f5;font-size:9px;font-weight:800;cursor:pointer}.toolbtn:hover{border-color:var(--cyan);color:#fff}.map-stage{position:relative;min-height:0;flex:1;background:#071522}#map{position:absolute;inset:0;background:#071522}.leaflet-container{background:#071522;color:var(--text)}.leaflet-control-attribution{background:#071522d9!important;color:#91a9bd!important;font-size:9px!important}.leaflet-control-attribution a{color:#a4d8ff!important}.leaflet-control-zoom a{background:#0b2032!important;color:#d9efff!important;border-color:#25435b!important}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#0d2235;color:var(--text);border:1px solid #2a506e}.leaflet-popup-content{font-size:11px;line-height:1.55}.map-overlay{position:absolute;z-index:500;pointer-events:none;left:12px;bottom:12px;display:grid;gap:7px}.focus-card{background:#061726e8;border:1px solid #168b8d;border-left:3px solid var(--cyan);border-radius:8px;padding:9px 11px;min-width:205px;backdrop-filter:blur(8px)}.focus-card b{display:block;font-size:11px;color:#69e4e0}.focus-card span{font-size:9px;color:#b2ccdf}.map-legend{position:absolute;z-index:500;right:12px;bottom:12px;background:#061726e8;border:1px solid #244761;border-radius:8px;padding:9px 11px;display:grid;gap:6px;pointer-events:none;backdrop-filter:blur(8px)}.legend-item{display:flex;align-items:center;gap:8px;font-size:9px;color:#d5e4f0}.legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block;box-shadow:0 0 8px currentColor}.legend-line{width:21px;height:2px;background:var(--blue);display:inline-block;box-shadow:0 0 7px var(--blue)}.flow-arc{stroke-dasharray:8 12;animation:flowDash 2.2s linear infinite}.flow-arc.is-paused{animation-play-state:paused}@keyframes flowDash{to{stroke-dashoffset:-40}}.leaflet-interactive{outline:none}
     .right-rail{display:flex;flex-direction:column;gap:12px;min-width:0}.right-rail .panel{box-shadow:none}.layer-list{display:grid}.layer-row{display:grid;grid-template-columns:23px minmax(0,1fr) auto;gap:8px;align-items:center;padding:10px 11px;border-bottom:1px solid #163149}.layer-row:last-child{border-bottom:0}.layer-symbol{width:21px;height:21px;border-radius:6px;display:grid;place-items:center;font-size:12px;background:#102a42}.layer-title{font-size:10px;font-weight:800;line-height:1.25}.layer-sub{font-size:8px;color:var(--muted);margin-top:3px;line-height:1.3}.switch{appearance:none;width:29px;height:16px;border-radius:99px;background:#294257;position:relative;cursor:pointer;outline:none;border:0}.switch:checked{background:#147ee5}.switch:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#d5e9f8;left:3px;top:3px;transition:transform .15s}.switch:checked:before{transform:translateX(13px);background:#fff}.filters{padding:10px 11px;display:grid;gap:9px}.filter-row{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;align-items:center}.filter-row label{font-size:9px;color:#b6cce0}.filter-row select{width:100%;min-width:0;background:#081a2c;border:1px solid #24445f;border-radius:7px;color:#e4f1fb;padding:8px 9px;font-size:9px}.filter-note{font-size:8px;line-height:1.45;color:var(--muted)}.method-note{font-size:9px;line-height:1.55;color:var(--muted);padding:10px 11px}.method-note b{color:#cfe2f2}
@@ -25,7 +26,7 @@
 <body>
 <div class="app">
   <aside class="sidebar">
-    <div class="side-brand"><div class="brand-shield">⬡</div><div class="brand-mini">CyberWatch <span>Intel</span><small>THREAT INTELLIGENCE</small></div></div>
+    <div class="side-brand"><div class="brand-shield">⬡</div><div class="brand-mini">RADAR<small>THREAT INTELLIGENCE</small></div></div>
     <nav class="side-nav" aria-label="Navegación">
       <a class="active" href="#map-panel"><span class="nav-icon">◎</span><span class="nav-label">Threatmap</span></a>
       <a href="#stats-panel"><span class="nav-icon">▦</span><span class="nav-label">Resumen</span></a>
@@ -40,7 +41,7 @@
   <div class="main">
     <header class="topbar">
       <div class="top-left">
-        <div class="brand-mini">CyberWatch <span>Intel</span><small>GLOBAL THREAT OPERATIONS</small></div>
+        <div class="top-brand"><img src="./assets/logo-cen.png" alt="Logotipo del Centro Espacial Nacional"><span class="top-brand-name">RADAR</span></div>
         <nav class="page-tabs"><a class="current" href="#map-panel">Threatmap</a><a href="./index.html">Indicadores</a><a href="#events-panel">Eventos</a><a href="#sources-panel">Fuentes</a></nav>
       </div>
       <div class="top-right">
@@ -55,10 +56,10 @@
       <div class="hero-grid">
         <section class="panel map-panel" id="map-panel">
           <div class="panel-head">
-            <div class="map-head-left"><strong>Threatmap global</strong><span>Actividad agregada, IP observadas e indicadores geolocalizados</span></div>
+            <div class="map-head-left"><strong>RADAR · Mapa global</strong><span>Actividad agregada, IP observadas e indicadores geolocalizados</span></div>
             <div class="map-tools"><button class="toolbtn" id="pause-animation" type="button">Ⅱ Pausar animación</button><button class="toolbtn" id="reset-view" type="button">⌖ Vista global</button><button class="toolbtn" id="refresh-data" type="button">↻ Actualizar vista</button></div>
           </div>
-          <div class="map-stage"><div id="map" role="img" aria-label="Mapa mundial con arcos agregados de Cloudflare Radar y marcadores de IP observadas e indicadores geolocalizados"></div>
+          <div class="map-stage"><div id="map" role="region" aria-label="Mapa interactivo: pares geográficos L7 agregados de Cloudflare Radar e IP observadas; consulta también la lista de actividad"></div>
             <div class="map-overlay"><div class="focus-card"><b>Chile y Latinoamérica</b><span id="regional-summary">Foco regional · datos disponibles según fuentes</span></div></div>
             <div class="map-legend">
               <div class="legend-item"><span class="legend-line"></span> Arcos L7 agregados · Cloudflare</div>
@@ -73,7 +74,7 @@
           <section class="panel">
             <div class="panel-head"><h2>CAPAS DEL MAPA</h2><small>ACTIVAR / DESACTIVAR</small></div>
             <div class="layer-list">
-              <div class="layer-row"><div class="layer-symbol" style="color:#4d9dff">⌁</div><div><div class="layer-title">Ataques geográficos</div><div class="layer-sub">Cloudflare Radar · pares L7 agregados · <span id="layer-updated-cloudflare">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-cloudflare" checked aria-label="Mostrar ataques geográficos"></div>
+              <div class="layer-row"><div class="layer-symbol" style="color:#4d9dff">⌁</div><div><div class="layer-title">Pares L7 agregados</div><div class="layer-sub">Cloudflare Radar · mitigaciones agregadas · <span id="layer-updated-cloudflare">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-cloudflare" checked aria-label="Mostrar pares geográficos L7 agregados"></div>
               <div class="layer-row"><div class="layer-symbol" style="color:#18cba0">◉</div><div><div class="layer-title">Actividad observada</div><div class="layer-sub">DShield · IP reportadas por sensores · <span id="layer-updated-dshield">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-dshield" checked aria-label="Mostrar IP DShield"></div>
               <div class="layer-row"><div class="layer-symbol" style="color:#ff536f">▲</div><div><div class="layer-title">Indicadores de malware</div><div class="layer-sub">ThreatFox · IOC recientes con IP · <span id="layer-updated-threatfox">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-threatfox" checked aria-label="Mostrar IP ThreatFox"></div>
               <div class="layer-row"><div class="layer-symbol" style="color:#ffb547">◆</div><div><div class="layer-title">URL maliciosas</div><div class="layer-sub">URLhaus · hosts IP geolocalizables · <span id="layer-updated-urlhaus">sin captura</span></div></div><input class="switch" type="checkbox" id="toggle-urlhaus" checked aria-label="Mostrar IP URLhaus"></div>
@@ -83,12 +84,12 @@
             <div class="panel-head"><h2>FILTROS</h2><small>VISTA DEL MAPA</small></div>
             <div class="filters">
               <div class="filter-row"><label for="region-filter">Región</label><select id="region-filter"><option value="global">Mundial</option><option value="latam">Latinoamérica</option><option value="chile">Chile</option></select></div>
-              <div class="filter-row"><label for="type-filter">Actividad</label><select id="type-filter"><option value="all">Todas las capas</option><option value="cloudflare">Ataques L7 agregados</option><option value="dshield">IP observadas</option><option value="threatfox">IOC de malware</option><option value="urlhaus">URL maliciosas</option></select></div>
+              <div class="filter-row"><label for="type-filter">Actividad</label><select id="type-filter"><option value="all">Todas las capas</option><option value="cloudflare">Pares L7 agregados</option><option value="dshield">IP observadas</option><option value="threatfox">IOC de malware</option><option value="urlhaus">URL maliciosas</option></select></div>
               <div class="filter-note">Los filtros afectan las capas geográficas. Los datos sin coordenadas siguen visibles en los paneles de inteligencia.</div>
               <button class="toolbtn" id="reset-filters" type="button">↺ Restablecer filtros</button>
             </div>
           </section>
-          <section class="panel method-panel"><div class="panel-head"><h2>LECTURA DEL MAPA</h2><small>METODOLOGÍA</small></div><div class="method-note"><b>Arcos:</b> pares de países y porcentajes agregados publicados por Cloudflare Radar (capa 7). No son sesiones individuales ni necesariamente ataques directos.<br><br><b>Marcadores:</b> IP reportadas por sensores o contenidas en IOC públicos, ubicadas de forma aproximada por IPWho.is.<br><br><b>Importante:</b> la geolocalización no identifica a una persona ni confirma una víctima. Un hash, dominio o URL sin IP no se dibuja en el mapa.</div></section>
+          <section class="panel method-panel"><div class="panel-head"><h2>LECTURA DEL MAPA</h2><small>METODOLOGÍA</small></div><div class="method-note"><b>Arcos:</b> pares de países y porcentajes agregados publicados por Cloudflare Radar (capa 7). No son sesiones individuales ni necesariamente ataques directos; las coordenadas usan centroides y el país de destino puede representar la ubicación de facturación de una zona protegida.<br><br><b>Marcadores:</b> IP reportadas por sensores o contenidas en IOC públicos, ubicadas de forma aproximada por IPWho.is.<br><br><b>Importante:</b> la geolocalización no identifica a una persona ni confirma una víctima. Un hash, dominio o URL sin IP no se dibuja en el mapa.</div></section>
         </aside>
       </div>
 
@@ -101,11 +102,11 @@
             <div class="stat-card" style="border-color:#795627"><div class="stat-label">URL maliciosas recientes</div><div class="stat-value" id="stat-urlhaus">—</div><div class="stat-foot">URLhaus · feed reciente</div></div>
           </div>
         </section>
-        <section class="panel bottom-panel"><div class="panel-head"><h2>TOP REGIONES</h2><small id="rank-subtitle">IP OBSERVADAS</small></div><div class="rank-tabs"><button class="rank-tab active" data-rank="ip">IP</button><button class="rank-tab" data-rank="malware">Malware</button><button class="rank-tab" data-rank="urls">URLs</button></div><div class="rank-list" id="rank-list"><div class="empty-state">Esperando registros geolocalizados.</div></div></section>
+        <section class="panel bottom-panel"><div class="panel-head"><h2>TOP REGIONES</h2><small id="rank-subtitle">IP OBSERVADAS</small></div><div class="rank-tabs" role="group" aria-label="Tipo de indicador para regiones"><button class="rank-tab active" data-rank="ip" aria-pressed="true">IP</button><button class="rank-tab" data-rank="malware" aria-pressed="false">Malware</button><button class="rank-tab" data-rank="urls" aria-pressed="false">URLs</button></div><div class="rank-list" id="rank-list"><div class="empty-state">Esperando registros geolocalizados.</div></div></section>
         <section class="panel bottom-panel" id="events-panel"><div class="panel-head"><h2>ÚLTIMOS EVENTOS</h2><small id="event-total">0 registros</small></div><div class="event-list" id="event-list"><div class="empty-state">Cargando datos públicos…</div></div></section>
         <section class="panel bottom-panel" id="sources-panel"><div class="panel-head"><h2>FUENTES Y ATRIBUCIÓN</h2><small>ESTADO</small></div><div class="source-list" id="source-list"><div class="empty-state">Comprobando fuentes…</div></div></section>
       </div>
-      <footer class="footer"><div>CyberWatch Intel · Threatmap de inteligencia de amenazas</div><div class="footer-right">Cloudflare Radar (CC BY-NC 4.0) · SANS ISC/DShield · abuse.ch ThreatFox y URLhaus · IPWho.is. Datos públicos, agregados y geolocalización aproximada; no representan una visión completa de Internet.</div></footer>
+      <footer class="footer"><div>RADAR · Threatmap de inteligencia de amenazas</div><div class="footer-right">Cloudflare Radar (CC BY-NC 4.0) · SANS ISC/DShield · abuse.ch ThreatFox y URLhaus · IPWho.is. Datos públicos, agregados y geolocalización aproximada; no representan una visión completa de Internet.</div></footer>
     </main>
   </div>
 </div>
@@ -253,7 +254,7 @@
   function renderEvents(){
     const rows=eventRecords();
     $('event-total').textContent=`${fmt(rows.length)} registros`;
-    $('event-list').innerHTML=rows.length?rows.map(row=>`<div class="event-row"><div class="event-icon" style="color:${row.color}">${row.icon}</div><div><div class="event-title">${esc(row.title)}</div><div class="event-sub">${esc(row.sub)} · ${fmtDate(row.time)}</div></div></div>`).join(''):`<div class="empty-state">Aún no hay eventos disponibles. Ejecuta el workflow de recopilación.</div>`;
+    $('event-list').innerHTML=rows.length?rows.map(row=>`<div class="event-row"><div class="event-icon" style="color:${row.color}">${row.icon}</div><div><div class="event-title">${esc(row.title)}</div><div class="event-sub">${esc(row.sub)} · ${fmtDate(row.time)}</div></div></div>`).join(''):`<div class="empty-state">Aún no hay eventos disponibles. Ejecuta el recopilador local del Threatmap.</div>`;
   }
   function renderSources(){
     const mapStatus={cloudflare:'Cloudflare Radar',dshield:'DShield / SANS ISC',threatfox:'ThreatFox',urlhaus:'URLhaus',geoip:'Geolocalización IP · IPWho.is'};
@@ -278,10 +279,12 @@
   }
   function renderDataHealth(){
     const stamp=data?.last_checked_at||data?.generated_at;
-    $('last-update').textContent=stamp?`Recopilado: ${fmtDate(stamp)}`:'Sin actualización registrada';
-    if(!stamp){$('stale-warning').textContent='Aún no existe una captura de las fuentes. Configura CLOUDFLARE_RADAR_TOKEN y ABUSECH_AUTH_KEY en GitHub Actions y ejecuta update-threatmap.';$('stale-warning').classList.add('show');return;}
+    $('last-update').textContent=stamp?`Última consulta: ${fmtDate(stamp)}`:'Sin actualización registrada';
+    const staleSources=(data?.source_status||[]).filter(row=>row.stale_data).map(row=>row.name||row.key);
+    if(staleSources.length){$('stale-warning').textContent=`Se conserva la última captura válida de: ${staleSources.join(', ')}. Revisa la fecha de cada fuente antes de interpretar estos datos.`;$('stale-warning').classList.add('show');return;}
+    if(!stamp){$('stale-warning').textContent='Aún no existe una captura de las fuentes. Configura CLOUDFLARE_RADAR_TOKEN y ABUSECH_AUTH_KEY en tu entorno local y ejecuta scripts/collect_threatmap.py.';$('stale-warning').classList.add('show');return;}
     const age=(Date.now()-new Date(stamp).getTime())/3600000;
-    if(age>3){$('stale-warning').textContent=`Datos posiblemente desactualizados: la última recolección fue hace ${age.toFixed(1)} horas. Se conserva la última captura válida; revisa GitHub Actions.`;$('stale-warning').classList.add('show');}
+    if(age>3){$('stale-warning').textContent=`Datos posiblemente desactualizados: la última recolección fue hace ${age.toFixed(1)} horas. Se conserva la última captura válida; puedes ejecutar de nuevo scripts/collect_threatmap.py.`;$('stale-warning').classList.add('show');}
     else $('stale-warning').classList.remove('show');
   }
   function renderMap(){
@@ -294,14 +297,14 @@
   }
   async function loadData(showMessage=false){
     try{
-      const response=await fetch(`./data/threatmap.json?ts=${Date.now()}`,{cache:'no-store'});
+      const response=await fetch('./data/threatmap.json',{cache:'no-cache'});
       if(!response.ok)throw new Error(`HTTP ${response.status}`);
       const payload=await response.json();
       data=payload;renderAll();
       if(showMessage){$('global-status').textContent='Vista actualizada';setTimeout(renderSources,1800);}
     }catch(error){
       $('global-status').textContent='No se pudo leer data/threatmap.json';
-      $('stale-warning').textContent=`No fue posible cargar los datos del mapa (${error.message}). Comprueba que el workflow haya generado data/threatmap.json y que GitHub Pages esté publicado.`;
+      $('stale-warning').textContent=`No fue posible cargar los datos del mapa (${error.message}). Inicia RADAR mediante el servidor web local y comprueba que exista data/threatmap.json.`;
       $('stale-warning').classList.add('show');
     }
   }
@@ -325,7 +328,7 @@
     $('type-filter').addEventListener('change',renderMap);
     $('reset-filters').addEventListener('click',()=>{$('region-filter').value='global';$('type-filter').value='all';layerIds.forEach(id=>$('toggle-'+id).checked=true);focusRegion('global');renderRanks(document.querySelector('.rank-tab.active')?.dataset.rank||'ip');});
     layerIds.forEach(id=>$('toggle-'+id).addEventListener('change',applyLayerToggles));
-    document.querySelectorAll('.rank-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.rank-tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderRanks(btn.dataset.rank);}));
+    document.querySelectorAll('.rank-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.rank-tab').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false');});btn.classList.add('active');btn.setAttribute('aria-pressed','true');renderRanks(btn.dataset.rank);}));
     loadData();setInterval(()=>loadData(),15*60*1000);
     window.addEventListener('resize',()=>map.invalidateSize());
   }

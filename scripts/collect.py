@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recopilador básico de fuentes públicas de ciberseguridad para CyberWatch Intel.
+"""Recopilador básico de fuentes públicas de ciberseguridad para RADAR.
 
 - Lee RSS/Atom.
 - Consulta el catálogo CISA KEV.
@@ -31,7 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "sources.json"
 OUTPUT_PATH = ROOT / "data" / "incidents.json"
 HISTORY_PATH = ROOT / "data" / "history.json"
-USER_AGENT = "CyberWatchIntel/1.0 (public-source aggregator)"
+USER_AGENT = "RADAR/1.0 (public-source aggregator)"
 TIMEOUT = 15
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -310,21 +310,33 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
         days = int(source.get("lookback_days", 7))
         end = datetime.now(timezone.utc)
         start = end - timedelta(days=days)
+        page_size = min(max(int(source.get("results_per_page", 2000)), 1), 2000)
         params = {
-            "pubStartDate": start.strftime("%Y-%m-%dT%H:%M:%S.000"),
-            "pubEndDate": end.strftime("%Y-%m-%dT%H:%M:%S.000"),
-            "resultsPerPage": min(int(source.get("results_per_page", 100)), 2000),
+            "pubStartDate": start.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+            "pubEndDate": end.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+            "resultsPerPage": page_size,
             "startIndex": 0
         }
         # NVD API dates are UTC; API key is optional but recommended for higher limits.
         api_key = os.getenv("NVD_API_KEY")
         headers = {"apiKey": api_key} if api_key else {}
-        response = SESSION.get(source["url"], params=params, headers=headers, timeout=TIMEOUT)
-        status["http_status"] = response.status_code
-        response.raise_for_status()
-        payload = response.json()
+        rows = []
+        total_results = None
+        while True:
+            response = SESSION.get(source["url"], params=params, headers=headers, timeout=TIMEOUT)
+            status["http_status"] = response.status_code
+            response.raise_for_status()
+            payload = response.json()
+            page_rows = payload.get("vulnerabilities", [])
+            rows.extend(page_rows)
+            total_results = int(payload.get("totalResults", len(rows)))
+            params["startIndex"] += len(page_rows)
+            if not page_rows or params["startIndex"] >= total_results:
+                break
+            # NVD recomienda espaciar consultas; evita ráfagas en paginación.
+            time.sleep(6 if not api_key else 0.7)
         items = []
-        for row in payload.get("vulnerabilities", []):
+        for row in rows:
             cve_obj = row.get("cve", {})
             cve = cve_obj.get("id", "")
             descriptions = cve_obj.get("descriptions", [])
@@ -358,7 +370,10 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
             )
             if item:
                 items.append(item)
-        status.update({"ok": True, "count": len(items)})
+        status.update({"ok": True, "count": len(items), "total_results": total_results,
+                       "partial": len(rows) < (total_results or 0)})
+        if status["partial"]:
+            status["error"] = f"Respuesta parcial: {len(rows)} de {total_results} CVE recuperadas."
         status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.info("%s: %s CVE recientes", source["name"], len(items))
         return items, status
@@ -367,6 +382,92 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
         status["duration_ms"] = round((time.monotonic() - started) * 1000)
         logging.warning("%s: %s", source["name"], status["error"])
         return [], status
+
+
+def enrich_epss(items: list[dict], previous: dict | None = None) -> dict:
+    """Añade probabilidad EPSS de FIRST sin mezclarla con CVSS o CISA KEV."""
+    started = time.monotonic()
+    status = {"source": "FIRST EPSS", "url": "https://api.first.org/data/v1/epss",
+              "ok": False, "count": 0, "error": None, "checked_at": now_iso()}
+    cves = sorted({str(cve).upper() for item in items for cve in item.get("cves", [])
+                   if CVE_PATTERN.fullmatch(str(cve))})
+    if not cves:
+        status.update({"ok": True, "note": "No hay CVE para enriquecer."})
+        return status
+    previous_items = previous.get("items", []) if isinstance(previous, dict) else []
+    if not isinstance(previous_items, list):
+        previous_items = []
+    old_scores: dict[str, dict] = {}
+    old_cves: set[str] = set()
+    for old_item in previous_items:
+        if not isinstance(old_item, dict):
+            continue
+        item_cves = {str(cve).upper() for cve in old_item.get("cves", [])}
+        old_cves.update(item_cves)
+        score = {key: old_item[key] for key in ("epss", "epss_percentile", "epss_date")
+                 if old_item.get(key) is not None}
+        if score:
+            for cve in item_cves:
+                old_scores[cve] = score
+    old_status = next((s for s in (previous.get("source_status", []) if isinstance(previous, dict) else [])
+                       if isinstance(s, dict) and s.get("source") == "FIRST EPSS"), {})
+    old_check = old_status.get("epss_checked_at") or old_status.get("checked_at") or old_status.get("last_success_at")
+    try:
+        old_check_dt = datetime.fromisoformat(str(old_check).replace("Z", "+00:00"))
+        if old_check_dt.tzinfo is None:
+            old_check_dt = old_check_dt.replace(tzinfo=timezone.utc)
+        cache_fresh = bool(old_status.get("ok")) and datetime.now(timezone.utc) - old_check_dt.astimezone(timezone.utc) < timedelta(hours=20)
+    except (TypeError, ValueError):
+        cache_fresh = False
+    if cache_fresh:
+        for item in items:
+            if item.get("epss") is None:
+                found = next((old_scores[cve] for cve in item.get("cves", []) if cve in old_scores), None)
+                if found:
+                    item.update(found)
+    requested_cves = [cve for cve in cves if not cache_fresh or cve not in old_cves]
+    if not requested_cves:
+        status.update({"ok": True, "count": sum(1 for cve in cves if cve in old_scores),
+                       "cves_requested": 0, "note": "Se reutiliza la captura EPSS reciente.",
+                       "epss_checked_at": old_check})
+        if old_check:
+            status["checked_at"] = old_check
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
+        return status
+    scores: dict[str, dict] = {}
+    try:
+        # La API acepta listas CVE; cada lote mantiene la URL dentro de límites prácticos.
+        batches = [requested_cves[i:i + 100] for i in range(0, len(requested_cves), 100)]
+        for batch in batches:
+            response = SESSION.get("https://api.first.org/data/v1/epss",
+                                   params={"cve": ",".join(batch), "limit": len(batch)},
+                                   timeout=TIMEOUT)
+            response.raise_for_status()
+            payload = response.json()
+            if payload.get("status-code") != 200:
+                raise ValueError("FIRST EPSS devolvió una respuesta no válida.")
+            for row in payload.get("data", []):
+                cve = str(row.get("cve", "")).upper()
+                if cve in batch:
+                    scores[cve] = {"epss": row.get("epss"),
+                                   "epss_percentile": row.get("percentile"),
+                                   "epss_date": row.get("date")}
+        for item in items:
+            found = next((scores[cve] for cve in item.get("cves", []) if cve in scores), None)
+            if found:
+                item.update(found)
+                item.pop("epss_stale", None)
+            else:
+                old_value = next((old_scores[cve] for cve in item.get("cves", []) if cve in old_scores), None)
+                if old_value:
+                    item.update(old_value)
+                    item["epss_stale"] = True
+        status.update({"ok": True, "count": sum(1 for cve in cves if cve in scores or cve in old_scores), "cves_requested": len(requested_cves),
+                       "error": None, "epss_checked_at": now_iso()})
+    except Exception as exc:
+        status["error"] = str(exc)[:240]
+    status["duration_ms"] = round((time.monotonic() - started) * 1000)
+    return status
 
 
 def deduplicate(items: list[dict]) -> list[dict]:
@@ -433,12 +534,65 @@ def main() -> None:
         statuses.append(status)
         time.sleep(0.5)
 
+    previous = None
+    if OUTPUT_PATH.exists():
+        try:
+            previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            previous = None
+
+    if not statuses or not any(s.get("ok") for s in statuses):
+        raise RuntimeError("Todas las fuentes fallaron; se conserva el último snapshot publicado.")
+
+    # Ante una falla parcial, conserva los registros previos atribuibles a esa fuente.
+    previous_items = previous.get("items", []) if isinstance(previous, dict) else []
+    failed_sources = {s.get("source") for s in statuses if not s.get("ok") or s.get("partial")}
+    previous_status = {s.get("source"): s for s in (previous.get("source_status", [])
+                       if isinstance(previous, dict) else []) if isinstance(s, dict)}
+    for status in statuses:
+        if status.get("source") in failed_sources:
+            old_status = previous_status.get(status.get("source"), {})
+            status["stale_data"] = bool(old_status.get("ok") or old_status.get("last_success_at"))
+            status["last_success_at"] = old_status.get("last_success_at") or old_status.get("checked_at")
+    preserved = []
+    for old_item in previous_items:
+        old_sources = set(old_item.get("related_sources", [])) | {old_item.get("source")}
+        if old_sources & failed_sources:
+            item = dict(old_item)
+            item["stale_data"] = True
+            preserved.append(item)
+    all_items.extend(preserved)
+    epss_status = enrich_epss(all_items, previous if isinstance(previous, dict) else None)
+    if not epss_status.get("ok"):
+        old_epss_by_cve = {}
+        for old_item in previous_items:
+            if not isinstance(old_item, dict):
+                continue
+            values = {key: old_item[key] for key in ("epss", "epss_percentile", "epss_date")
+                      if old_item.get(key) is not None}
+            if values:
+                for cve in old_item.get("cves", []):
+                    old_epss_by_cve[cve] = values
+        for item in all_items:
+            if item.get("epss") is None:
+                old_values = next((old_epss_by_cve[cve] for cve in item.get("cves", [])
+                                   if cve in old_epss_by_cve), None)
+                if old_values:
+                    item.update(old_values)
+                    item["epss_stale"] = True
+        old_epss_status = next((s for s in previous.get("source_status", [])
+                                if isinstance(s, dict) and s.get("source") == "FIRST EPSS"), {}) \
+            if isinstance(previous, dict) else {}
+        epss_status["stale_data"] = bool(old_epss_by_cve)
+        epss_status["last_success_at"] = old_epss_status.get("last_success_at") or old_epss_status.get("checked_at")
+    statuses.append(epss_status)
+
     unique_items = deduplicate(all_items)
     run_time = now_iso()
     payload = {
         "generated_at": run_time,
         "last_checked_at": run_time,
-        "items": unique_items[:1500],
+        "items": unique_items,
         "source_status": statuses,
         "notice": (
             "Información recopilada de fuentes públicas. Verifica siempre el informe original. "
@@ -447,7 +601,9 @@ def main() -> None:
         "stats": {
             "items_before_deduplication": len(all_items),
             "items_after_deduplication": len(unique_items),
-            "sources_ok": sum(1 for s in statuses if s["ok"]),
+            "items_published": len(unique_items),
+            "items_stale_preserved": len(preserved),
+            "sources_ok": sum(1 for s in statuses if s["ok"] and not s.get("partial")),
             "sources_total": len(statuses)
         }
     }
@@ -467,9 +623,19 @@ def main() -> None:
         "kev_total": sum(1 for item in unique_items if item.get("kev")),
         "items_with_cve": sum(1 for item in unique_items if item.get("cves")),
         "priority_high": sum(1 for item in unique_items if item.get("priority_label") in {"crítica", "alta"}),
+        "new_items": 0,
+        "new_kev": 0,
         "sources_ok": sum(1 for status in statuses if status.get("ok")),
         "sources_total": len(statuses)
     }
+    previous_by_id = {str(item.get("id") or item.get("url")): item for item in previous_items
+                      if isinstance(item, dict)}
+    new_items = sum(1 for item in unique_items if str(item.get("id") or item.get("url")) not in previous_by_id)
+    new_kev = sum(1 for item in unique_items if item.get("kev") and
+                  not previous_by_id.get(str(item.get("id") or item.get("url")), {}).get("kev"))
+    old_today = next((entry for entry in history if entry.get("date") == today), {})
+    daily_snapshot["new_items"] = int(old_today.get("new_items", 0)) + new_items
+    daily_snapshot["new_kev"] = int(old_today.get("new_kev", 0)) + new_kev
     if history and history[-1].get("date") == today:
         history[-1] = daily_snapshot
     else:
@@ -484,13 +650,6 @@ def main() -> None:
 
     # Conserva collected_at en registros sin cambios y evita commits periódicos
     # cuando el contenido y el estado de las fuentes siguen siendo iguales.
-    previous = None
-    if OUTPUT_PATH.exists():
-        try:
-            previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            previous = None
-
     if isinstance(previous, dict):
         previous_by_id = {str(item.get("id") or item.get("url") or item.get("title")): item
                           for item in previous.get("items", []) if isinstance(item, dict)}

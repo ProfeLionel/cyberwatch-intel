@@ -1,4 +1,9 @@
-# Cambios de CyberWatch Intel
+# Cambios de RADAR
+
+## Cambios recientes
+- Se agregó el favicon compartido en Dashboard, Wallboard y Threatmap.
+- El dashboard carga publicaciones progresivamente al acercarse al final de la lista y ya no muestra botones de paginación.
+- El Wallboard incorpora flechas manuales para alertas prioritarias, publicación destacada y actividad reciente.
 
 ## v4.6 — Threatmap conectado a fuentes públicas
 - El Threatmap deja el generador visual de demostración y consulta Cloudflare Radar, DShield/SANS ISC, ThreatFox y URLhaus.

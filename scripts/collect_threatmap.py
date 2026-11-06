@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect public threat-intelligence data for CyberWatch Intel Threatmap.
+"""Collect public threat-intelligence data for the RADAR Threatmap.
 
 Secrets are read only from environment variables and are never written to JSON.
 Cloudflare pairs are aggregated L7 statistics; DShield/abuse.ch records are
@@ -22,7 +22,7 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "threatmap.json"
 TIMEOUT = 18
-USER_AGENT = "CyberWatchIntel/1.0 (+https://github.com/ProfeLionel/cyberwatch-intel)"
+USER_AGENT = "RADAR/1.0 (+https://github.com/ProfeLionel/cyberwatch-intel)"
 GEO_LOOKUPS_PER_RUN = 12  # IPWho.is free endpoint: 1,000 requests/day.
 GEO_CACHE_MAX = 300
 
@@ -334,6 +334,10 @@ def main() -> None:
     dshield = update_stale(previous, "dshield", dshield, ds_status)
     threatfox = update_stale(previous, "threatfox", threatfox, tf_status)
     urlhaus = update_stale(previous, "urlhaus", urlhaus, uh_status)
+    if not any(status.get("ok") for status in (cf_status, ds_status, tf_status, uh_status)) and not any(
+        previous.get(key) for key in ("cloudflare", "dshield", "threatfox", "urlhaus")
+    ):
+        raise RuntimeError("Todas las fuentes fallaron y no hay una captura válida previa; no se publicará un snapshot vacío.")
 
     geo_cache = dict(previous.get("geo_cache") or {})
     prioritized_ips: list[str] = []

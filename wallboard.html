@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Wallboard automático de inteligencia de ciberseguridad y ciberdefensa militar para pantallas de monitoreo.">
   <meta name="theme-color" content="#070d17">
-  <title>CyberWatch Intel | Wallboard</title>
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  <title>RADAR | Wallboard</title>
   <style>
     :root{color-scheme:dark;--bg:#070d17;--panel:#0e1928;--panel2:#122238;--line:#23364c;--text:#e9f1fb;--muted:#91a6bf;--blue:#59c4ff;--cyan:#6ce3dc;--red:#ff626e;--amber:#ffc66d;--green:#62ddb0}
     *{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden}body{background:radial-gradient(ellipse at 50% -20%,#142b46 0%,var(--bg) 58%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(14px,.95vw,18px)}
     .screen{height:100dvh;min-height:0;padding:1.15vh 1.15vw;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:1vh}
     header{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:0 0 1vh;min-width:0}
-    .brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{height:clamp(38px,3.3vw,58px);width:clamp(38px,3.3vw,58px);display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,#17446b,#10263c);border:1px solid #2a5b7c;color:var(--blue);font-weight:950;font-size:clamp(18px,1.7vw,28px);flex:none}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{height:auto;width:clamp(108px,12vw,165px);max-height:58px;display:block;object-fit:contain;flex:none}
     h1{font-size:clamp(20px,1.8vw,32px);letter-spacing:-.7px;margin:0;line-height:1.1} .subtitle{margin:.35vh 0 0;color:var(--muted);font-size:clamp(10px,.75vw,14px)}
     .header-right{display:flex;align-items:center;gap:clamp(10px,1.5vw,24px);text-align:right;flex:none}.live{display:flex;align-items:center;gap:7px;color:var(--green);font-size:.8em;font-weight:800;letter-spacing:1px}.dot{height:8px;width:8px;border-radius:50%;background:currentColor;box-shadow:0 0 12px currentColor;animation:pulse 2s infinite}@keyframes pulse{50%{opacity:.45}}
     .clock{font-variant-numeric:tabular-nums;font-size:clamp(20px,2vw,35px);font-weight:750;line-height:1.1}.date{color:var(--muted);font-size:.78em;margin-top:3px}.iconbtn{border:1px solid var(--line);background:#101e30;color:var(--text);border-radius:9px;padding:8px 10px;cursor:pointer;font:inherit}
     .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7vw}.metric{border:1px solid var(--line);border-radius:11px;background:linear-gradient(130deg,#102036,#0c1625);padding:1vh 1vw;min-width:0;position:relative;overflow:hidden}.metric:after{content:"";position:absolute;right:-18px;top:-28px;width:80px;height:80px;border:1px solid #29445f;border-radius:50%;opacity:.5}.metric-label{color:var(--muted);font-size:clamp(11px,.8vw,15px);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.metric-value{font-size:clamp(22px,2vw,36px);font-weight:850;line-height:1.2;margin-top:.5vh;font-variant-numeric:tabular-nums}.metric-foot{font-size:clamp(10px,.68vw,13px);color:var(--muted);margin-top:.2vh;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.danger .metric-value{color:var(--red)}.warn .metric-value{color:var(--amber)}.good .metric-value{color:var(--green)}.blue .metric-value{color:var(--blue)}
-    .main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:.8vw;min-height:0}.column{display:grid;grid-template-rows:auto minmax(0,1fr);gap:.65vh;min-height:0}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;min-width:0}.section-head h2{font-size:clamp(15px,1.05vw,20px);margin:0;font-weight:800;letter-spacing:.2px}.section-note{color:var(--muted);font-size:.72em;white-space:nowrap}.panel{border:1px solid var(--line);background:linear-gradient(150deg,rgba(16,30,48,.97),rgba(10,19,32,.97));border-radius:12px;min-height:0;overflow:hidden}
-    .critical-panel{display:flex;flex-direction:column}.panel-top{display:flex;justify-content:space-between;align-items:center;padding:.8vh .9vw;border-bottom:1px solid var(--line);background:rgba(255,98,110,.055);gap:10px}.panel-top strong{font-size:.78em;letter-spacing:.9px}.priority{color:var(--red);display:flex;align-items:center;gap:7px}.counter{font-size:.72em;color:var(--muted);font-variant-numeric:tabular-nums}
+    .main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:.8vw;min-height:0}.column{display:grid;grid-template-rows:auto minmax(0,1fr);gap:.65vh;min-height:0}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;min-width:0}.section-head h2{font-size:clamp(15px,1.05vw,20px);margin:0;font-weight:800;letter-spacing:.2px}.section-note{color:var(--muted);font-size:.72em;white-space:nowrap}.rotation-controls{display:flex;align-items:center;gap:6px}.rotation-button{background:#13263a;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:5px 8px;font-size:.68em;cursor:pointer}.rotation-button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,rgba(16,30,48,.97),rgba(10,19,32,.97));border-radius:12px;min-height:0;overflow:hidden}
+    .critical-panel{display:flex;flex-direction:column}.panel-top{display:flex;justify-content:space-between;align-items:center;padding:.8vh .9vw;border-bottom:1px solid var(--line);background:rgba(255,98,110,.055);gap:10px}.panel-top strong{font-size:.78em;letter-spacing:.9px}.priority{color:var(--red);display:flex;align-items:center;gap:7px}.counter{font-size:.72em;color:var(--muted);font-variant-numeric:tabular-nums}.panel-controls{display:flex;align-items:center;gap:5px;flex:none}.nav-arrow{width:25px;height:25px;display:grid;place-items:center;border:1px solid var(--line);border-radius:6px;background:#13263a;color:var(--text);font-size:17px;line-height:1;cursor:pointer}.nav-arrow:hover:not(:disabled){border-color:var(--cyan);color:var(--cyan)}.nav-arrow:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.nav-arrow:disabled{opacity:.35;cursor:default}
     #critical-list{padding:.35vh .65vw;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:.45vh;min-height:0;flex:1;opacity:1;transition:opacity .3s ease}#critical-list.is-changing{opacity:.12}.alert{border:1px solid #29394d;border-left:3px solid var(--amber);border-radius:8px;padding:.7vh .75vw;display:flex;flex-direction:column;justify-content:center;gap:.4vh;min-height:0;overflow:hidden;background:rgba(18,34,56,.55)}.alert.critical{border-left-color:var(--red);background:rgba(73,25,38,.18)}.alert-title{font-weight:760;line-height:1.3;font-size:clamp(16px,1.1vw,22px);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.alert-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--muted);font-size:clamp(12px,.78vw,15px)}.pill{padding:2px 6px;border-radius:4px;font-size:.92em;font-weight:850;letter-spacing:.3px;background:#20354c;color:#b9d8f4}.pill.red{background:#4c222c;color:#ffb2b8}.pill.gold{background:#49371f;color:#ffdb9b}.alert-summary{color:#b5c6d9;font-size:clamp(14px,.9vw,17px);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.alert-review{color:#d4e4f5;font-size:clamp(12px,.72vw,14px);line-height:1.25;font-weight:700;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.empty{color:var(--muted);display:grid;place-items:center;text-align:center;padding:20px;line-height:1.5}
     .right-stack{display:grid;grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr);gap:.7vh;min-height:0}.feature-panel{display:flex;flex-direction:column}.feature-content{padding:1.1vh 1vw;display:flex;flex-direction:column;gap:.75vh;flex:1;min-height:0}.feature-kicker{display:flex;align-items:center;gap:8px;color:var(--cyan);font-size:clamp(11px,.75vw,14px);font-weight:850;letter-spacing:.8px;text-transform:uppercase}.feature-title{font-size:clamp(22px,1.7vw,34px);line-height:1.27;margin:0;font-weight:850;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.feature-summary{font-size:clamp(15px,1vw,19px);line-height:1.5;color:#b9c9dc;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.feature-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto}.source-name{color:var(--muted);font-size:.72em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.source-link{color:var(--blue);font-weight:800;text-decoration:none;font-size:.75em;white-space:nowrap}.source-link:hover{text-decoration:underline}.feature-progress{height:3px;background:#203148}.feature-progress span{height:100%;display:block;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0%;transition:width .2s linear}
     .intel-list{padding:.5vh .8vw;display:block;position:relative;overflow:hidden;min-height:0;flex:1;overscroll-behavior:contain}.intel-track{display:flex;flex-direction:column;gap:0;will-change:transform}.intel-cycle{display:flex;flex-direction:column;gap:.2vh;padding-bottom:.2vh;flex:none}.intel-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center;border-bottom:1px solid rgba(35,54,76,.7);min-height:clamp(58px,7.1vh,82px);flex:0 0 auto;padding:.45vh 0}.intel-item:last-child{border-bottom:0}.intel-time{font-size:clamp(10px,.68vw,13px);color:var(--muted);font-variant-numeric:tabular-nums}.intel-title{font-size:clamp(14px,.95vw,18px);font-weight:720;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.intel-source{font-size:clamp(10px,.65vw,12px);color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -33,7 +34,7 @@
 <body>
 <div class="screen">
   <header>
-    <div class="brand"><div class="logo">CW</div><div><h1>CyberWatch Intel</h1><p class="subtitle">Centro de monitoreo · Inteligencia pública de ciberseguridad</p></div></div>
+    <div class="brand"><img class="logo" src="./assets/logo-cen.png" alt="Logotipo del Centro Espacial Nacional"><div><h1>RADAR</h1><p class="subtitle">Centro de monitoreo · Inteligencia pública de ciberseguridad</p></div></div>
     <div class="header-right"><div><div class="live"><span class="dot"></span> MONITOREO ACTIVO</div><div class="date" id="date">Cargando fecha…</div></div><div><div class="clock" id="clock">--:--:--</div><div class="date" id="data-updated">Datos: pendientes</div></div><a class="map-link" href="./threatmap.html" title="Abrir el mapa global de amenazas">◎ MAPA GLOBAL</a><button class="iconbtn" id="fullscreen" title="Activar o salir de pantalla completa" aria-label="Pantalla completa">⛶</button></div>
   </header>
   <section class="metrics" aria-label="Indicadores principales">
@@ -46,13 +47,13 @@
   <main class="main">
     <section class="column">
       <div class="section-head"><h2>▰ ALERTAS PRIORITARIAS</h2><span class="section-note">Persistentes · priorizadas</span></div>
-      <div class="panel critical-panel"><div class="panel-top"><strong class="priority"><span class="dot"></span> REVISIÓN RECOMENDADA</strong><span class="counter" id="critical-count">0 alertas</span></div><div id="critical-list"><div class="empty">Cargando alertas…</div></div></div>
+      <div class="panel critical-panel"><div class="panel-top"><strong class="priority"><span class="dot"></span> REVISIÓN RECOMENDADA</strong><div class="panel-controls"><button class="nav-arrow" type="button" id="critical-prev" aria-label="Alertas prioritarias anteriores" title="Alertas anteriores">‹</button><span class="counter" id="critical-count">0 alertas</span><button class="nav-arrow" type="button" id="critical-next" aria-label="Alertas prioritarias siguientes" title="Alertas siguientes">›</button></div></div><div id="critical-list"><div class="empty">Cargando alertas…</div></div></div>
     </section>
     <section class="column">
-      <div class="section-head"><h2>▰ INTELIGENCIA EN FOCO</h2><span class="section-note" id="rotation-label">Rotación automática</span></div>
+      <div class="section-head"><h2>▰ INTELIGENCIA EN FOCO</h2><div class="rotation-controls"><span class="section-note" id="rotation-label">Rotación automática</span><button type="button" class="rotation-button" id="rotation-toggle" aria-pressed="false">Pausar</button></div></div>
       <div class="right-stack">
-        <div class="panel feature-panel"><div class="panel-top"><strong>PUBLICACIÓN DESTACADA</strong><span class="counter" id="feature-counter">— / —</span></div><div class="feature-content" id="feature-content"><div class="empty">Cargando publicaciones…</div></div><div class="feature-progress"><span id="progress"></span></div></div>
-        <div class="panel feature-panel"><div class="panel-top"><strong>ACTIVIDAD RECIENTE</strong><span class="counter" id="recent-note">Desplazamiento suave · 8 px/s</span></div><div class="intel-list" id="recent-list" role="region" aria-label="Actividad reciente; desplazamiento automático lento" tabindex="0"><div class="empty">Esperando datos…</div></div></div>
+        <div class="panel feature-panel"><div class="panel-top"><strong>PUBLICACIÓN DESTACADA</strong><div class="panel-controls"><button class="nav-arrow" type="button" id="feature-prev" aria-label="Publicación destacada anterior" title="Anterior">‹</button><span class="counter" id="feature-counter">— / —</span><button class="nav-arrow" type="button" id="feature-next" aria-label="Publicación destacada siguiente" title="Siguiente">›</button></div></div><div class="feature-content" id="feature-content"><div class="empty">Cargando publicaciones…</div></div><div class="feature-progress"><span id="progress"></span></div></div>
+        <div class="panel feature-panel"><div class="panel-top"><strong>ACTIVIDAD RECIENTE</strong><div class="panel-controls"><span class="counter" id="recent-note">Desplazamiento suave · 8 px/s</span><button class="nav-arrow" type="button" id="recent-prev" aria-label="Actividad reciente anterior" title="Anterior">‹</button><button class="nav-arrow" type="button" id="recent-next" aria-label="Actividad reciente siguiente" title="Siguiente">›</button></div></div><div class="intel-list" id="recent-list" role="region" aria-label="Actividad reciente; desplazamiento automático lento" tabindex="0"><div class="empty">Esperando datos…</div></div></div>
       </div>
     </section>
   </main>
@@ -69,6 +70,8 @@
   const RECENT_SCROLL_PX_PER_SEC = 8; // Desplazamiento lento para lectura en pantalla.
   const $ = id => document.getElementById(id);
   let items = [], payload = {}, featured = [], featureIndex = 0, rotateStarted = Date.now(), lastDataSignature = '';
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let rotationPaused = motionPreference.matches;
   let criticalPageIndex = 0, priorityAlerts = [];
   let recentOffset = 0, recentCycleHeight = 0, recentPaused = false, recentLastFrame = 0;
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -99,8 +102,8 @@
   if('ResizeObserver' in window){const fitObserver=new ResizeObserver(queueFit);document.querySelectorAll('.panel,.screen').forEach(el=>fitObserver.observe(el));}
   window.addEventListener('resize',queueFit);
 
-  function renderMetrics(){const statuses=payload.source_status||[];const ok=statuses.filter(s=>s.ok).length;const high=items.filter(isHigh).length; $('metric-priority').textContent=high.toLocaleString('es-CL');$('metric-kev').textContent=items.filter(i=>i.kev).length.toLocaleString('es-CL');$('metric-cve').textContent=items.filter(i=>(i.cves||[]).length).length.toLocaleString('es-CL');$('metric-total').textContent=items.length.toLocaleString('es-CL');$('metric-sources').textContent=`${ok}/${statuses.length}`;$('metric-sources-foot').textContent= statuses.length ? `${statuses.length-ok} con error o sin respuesta` : 'Sin estado de fuentes';
-    const failed=statuses.filter(s=>!s.ok);const checked=payload.last_checked_at||payload.generated_at;const checkedMs=dateValue(checked);const ageHours=checkedMs?((Date.now()-checkedMs)/3600000):Infinity;const stale=ageHours>3;
+  function renderMetrics(){const statuses=payload.source_status||[];const ok=statuses.filter(s=>s.ok&&!s.partial).length;const high=items.filter(isHigh).length; $('metric-priority').textContent=high.toLocaleString('es-CL');$('metric-kev').textContent=items.filter(i=>i.kev).length.toLocaleString('es-CL');$('metric-cve').textContent=items.filter(i=>(i.cves||[]).length).length.toLocaleString('es-CL');$('metric-total').textContent=items.length.toLocaleString('es-CL');$('metric-sources').textContent=`${ok}/${statuses.length}`;$('metric-sources-foot').textContent= statuses.length ? `${statuses.length-ok} con error o respuesta parcial` : 'Sin estado de fuentes';
+    const failed=statuses.filter(s=>!s.ok||s.partial);const checked=payload.last_checked_at||payload.generated_at;const checkedMs=dateValue(checked);const ageHours=checkedMs?((Date.now()-checkedMs)/3600000):Infinity;const stale=ageHours>3;
     $('health-dot').className='status-dot '+(statuses.length===0?'warn':failed.length===statuses.length?'bad':failed.length||stale?'warn':'');
     $('health-label').textContent=!statuses.length?'Fuentes sin estado':stale?'DATOS POSIBLEMENTE DESACTUALIZADOS':failed.length?`${failed.length} fuente(s) con problemas`:'Fuentes consultadas correctamente';
     const updated=checked?fmtDate(checked):'sin fecha';$('data-updated').textContent=`Revisión: ${updated}`;
@@ -125,31 +128,37 @@
     $('critical-count').textContent=priorityAlerts.length>ALERTS_PER_PAGE
       ? `${start+1}–${Math.min(start+ALERTS_PER_PAGE,priorityAlerts.length)} de ${priorityAlerts.length}`
       : `${priorityAlerts.length} alerta${priorityAlerts.length===1?'':'s'}`;
+    $('critical-prev').disabled=pageCount<=1;
+    $('critical-next').disabled=pageCount<=1;
     if(!chosen.length){list.innerHTML='<div class="empty">No hay alertas de prioridad alta identificadas en los datos disponibles.<br><small>Esto no garantiza ausencia de amenazas; depende de las fuentes consultadas.</small></div>';return;}
     list.innerHTML=chosen.map(i=>{
       const critical=isCritical(i);
       const pills=[`<span class="pill ${critical?'red':'gold'}">Prioridad estimada: ${esc(i.priority_label|| (critical?'crítica':'alta'))}</span>`];
       if(i.kev)pills.push('<span class="pill red">CISA KEV</span>');
+      if(i.stale_data)pills.push('<span class="pill gold">Captura anterior</span>');
+      if(i.epss!==undefined&&i.epss!==null)pills.push(`<span class="pill" title="FIRST EPSS estima probabilidad de explotación observada en 30 días; no confirma un ataque.">EPSS ${(Number(i.epss)*100).toFixed(1)}%${i.epss_stale?' · anterior':''}</span>`);
       if(i.severity)pills.push(`<span class="pill ${critical?'red':'gold'}">${esc(String(i.severity).toUpperCase())}</span>`);
       if(i.cvss!==undefined&&i.cvss!==null)pills.push(`<span class="pill">CVSS ${esc(i.cvss)}</span>`);
       (i.cves||[]).slice(0,2).forEach(c=>pills.push(`<span class="pill">${esc(c)}</span>`));
       return `<article class="alert ${critical?'critical':''}" title="${esc(i.priority_basis||'Prioridad estimada por heurística')}" ><div class="alert-meta">${pills.join('')}<span>${esc(i.source||'Fuente no identificada')}</span></div><div class="alert-title">${esc(titleText(i))}</div><div class="alert-summary">${esc(summaryText(i).slice(0,210))}</div><div class="alert-review">${esc(reviewRecommendation(i))}</div></article>`;
     }).join('');
   }
-  function advanceCriticalPage(){
+  let criticalChangeTimer=0;
+  function changeCriticalPage(direction){
     const pages=Math.ceil(priorityAlerts.length/ALERTS_PER_PAGE);
     if(pages<=1)return;
     const list=$('critical-list');
     list.classList.add('is-changing');
-    window.setTimeout(()=>{
-      criticalPageIndex=(criticalPageIndex+1)%pages;
+    window.clearTimeout(criticalChangeTimer);
+    criticalChangeTimer=window.setTimeout(()=>{
+      criticalPageIndex=(criticalPageIndex+direction+pages)%pages;
       renderCritical();
       list.classList.remove('is-changing');
       queueFit();
     },300);
   }
-  function renderFeatured(){const area=$('feature-content');if(!featured.length){area.innerHTML='<div class="empty">Aún no hay publicaciones disponibles.<br>Comprueba la ejecución de GitHub Actions y data/incidents.json.</div>';$('feature-counter').textContent='0 / 0';$('progress').style.width='0%';return;}
-    featureIndex=((featureIndex%featured.length)+featured.length)%featured.length;const i=featured[featureIndex];const tags=(i.tags||[]).slice(0,3).map(t=>`<span class="pill">${esc(t.replaceAll('_',' '))}</span>`).join('');const priorityPill=`<span class="pill ${['crítica'].includes(i.priority_label)?'red':(['alta'].includes(i.priority_label)?'gold':'')}">Prioridad estimada: ${esc(i.priority_label||'informativa')}</span>`;area.innerHTML=`<div class="feature-kicker">${i.kev?'<span class="pill red">CISA KEV</span>':'<span class="dot" style="color:var(--cyan)"></span>'}${esc(i.category||i.type||'Ciberseguridad')} ${priorityPill}</div><h3 class="feature-title">${esc(titleText(i))}</h3><p class="feature-summary">${esc(summaryText(i).slice(0,650))}</p><div class="alert-meta">${tags}${(i.cves||[]).slice(0,2).map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div><div class="feature-bottom"><span class="source-name">${esc(i.source||'Fuente desconocida')} · ${esc(fmtDate(i.published_at))}</span><a class="source-link" href="${esc(i.url||'#')}" target="_blank" rel="noopener noreferrer">FUENTE ORIGINAL ↗</a></div>`;$('feature-counter').textContent=`${featureIndex+1} / ${featured.length}`;$('progress').style.width='0%';rotateStarted=Date.now();
+  function renderFeatured(){const area=$('feature-content');if(!featured.length){area.innerHTML='<div class="empty">Aún no hay publicaciones disponibles.<br>Ejecuta el recopilador local y comprueba data/incidents.json.</div>';$('feature-counter').textContent='0 / 0';$('feature-prev').disabled=true;$('feature-next').disabled=true;$('progress').style.width='0%';return;}
+    featureIndex=((featureIndex%featured.length)+featured.length)%featured.length;const i=featured[featureIndex];const tags=(i.tags||[]).slice(0,3).map(t=>`<span class="pill">${esc(t.replaceAll('_',' '))}</span>`).join('');const priorityPill=`<span class="pill ${['crítica'].includes(i.priority_label)?'red':(['alta'].includes(i.priority_label)?'gold':'')}">Prioridad estimada: ${esc(i.priority_label||'informativa')}</span>`;area.innerHTML=`<div class="feature-kicker">${i.kev?'<span class="pill red">CISA KEV</span>':'<span class="dot" style="color:var(--cyan)"></span>'}${esc(i.category||i.type||'Ciberseguridad')} ${priorityPill}</div><h3 class="feature-title">${esc(titleText(i))}</h3><p class="feature-summary">${esc(summaryText(i).slice(0,650))}</p><div class="alert-meta">${tags}${(i.cves||[]).slice(0,2).map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div><div class="feature-bottom"><span class="source-name">${esc(i.source||'Fuente desconocida')} · ${esc(fmtDate(i.published_at))}</span><a class="source-link" href="${esc(i.url||'#')}" target="_blank" rel="noopener noreferrer">FUENTE ORIGINAL ↗</a></div>`;$('feature-counter').textContent=`${featureIndex+1} / ${featured.length}`;$('feature-prev').disabled=featured.length<=1;$('feature-next').disabled=featured.length<=1;$('progress').style.width='0%';rotateStarted=Date.now();
   }
   function renderRecent(){
     const recent=sortedNewest(items).slice(0,15);
@@ -160,12 +169,15 @@
   }
   function setupRecentScroll(){
     const viewport=$('recent-list'), track=$('recent-track');
-    if(!viewport||!track)return;
+    if(!viewport||!track){$('recent-prev').disabled=true;$('recent-next').disabled=true;return;}
     const cycle=track.querySelector('.intel-cycle');
     if(!cycle)return;
     const oldClone=track.querySelector('.intel-cycle.clone'); if(oldClone)oldClone.remove();
     track.style.transform='translate3d(0,0,0)'; recentOffset=0;
     recentCycleHeight=cycle.getBoundingClientRect().height;
+    const hasOverflow=recentCycleHeight>viewport.clientHeight+8;
+    $('recent-prev').disabled=!hasOverflow;
+    $('recent-next').disabled=!hasOverflow;
     const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if(reduceMotion || recentCycleHeight<=viewport.clientHeight+8){
       viewport.classList.remove('auto-scrolling');
@@ -196,10 +208,31 @@
   window.addEventListener('resize',setupRecentScroll);
   function renderTicker(){const sorted=[...items].sort((a,b)=>priorityScore(b)-priorityScore(a));const i=sorted[0];$('ticker').innerHTML=i?`<b>DESTACADO:</b> ${esc(titleText(i))}`:'<b>INTEL:</b> Sin publicaciones disponibles. Verifica la recopilación.';}
   function renderAll(){criticalPageIndex=0;renderMetrics();renderCritical();featured=sortedNewest(items).sort((a,b)=>priorityScore(b)-priorityScore(a));featureIndex=0;renderFeatured();renderRecent();renderTicker();queueFit();}
-  async function loadData(silent=false){try{const response=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const next=await response.json();const signature=JSON.stringify([next.generated_at,(next.items||[]).length,(next.items||[]).map(i=>i.id||i.url||i.title)]);payload=next;items=Array.isArray(next.items)?next.items:[];if(signature!==lastDataSignature){lastDataSignature=signature;renderAll();}else{renderMetrics();}if(!silent)$('refresh-status').textContent=`Datos revisados ${new Intl.DateTimeFormat('es-CL',{hour:'2-digit',minute:'2-digit',timeZone:'America/Santiago'}).format(new Date())}`;}catch(err){$('health-dot').className='status-dot bad';$('health-label').textContent='No se pudo leer el archivo de datos';$('refresh-status').textContent=`Error de datos: ${err.message}`;if(!items.length){$('critical-list').innerHTML='<div class="empty">No se pudo cargar data/incidents.json.<br>Revisa GitHub Pages y la primera ejecución del recopilador.</div>';$('feature-content').innerHTML='<div class="empty">Sin datos para mostrar.</div>';}}}
+  async function loadData(silent=false){try{const response=await fetch(DATA_URL,{cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const next=await response.json();const signature=JSON.stringify([next.generated_at,(next.items||[]).length,(next.items||[]).map(i=>i.id||i.url||i.title)]);payload=next;items=Array.isArray(next.items)?next.items:[];if(signature!==lastDataSignature){lastDataSignature=signature;renderAll();}else{renderMetrics();}if(!silent)$('refresh-status').textContent=`Datos revisados ${new Intl.DateTimeFormat('es-CL',{hour:'2-digit',minute:'2-digit',timeZone:'America/Santiago'}).format(new Date())}`;}catch(err){$('health-dot').className='status-dot bad';$('health-label').textContent='No se pudo leer el archivo de datos';$('refresh-status').textContent=`Error de datos: ${err.message}`;if(!items.length){$('critical-list').innerHTML='<div class="empty">No se pudo cargar data/incidents.json.<br>Inicia el servidor web local y comprueba el archivo de datos.</div>';$('feature-content').innerHTML='<div class="empty">Sin datos para mostrar.</div>';}}}
+  function moveFeature(direction){if(!featured.length)return;featureIndex=(featureIndex+direction+featured.length)%featured.length;renderFeatured();queueFit();}
+  function advanceFeature(){moveFeature(1);}
+  function moveRecent(direction){
+    const viewport=$('recent-list'),track=$('recent-track');
+    if(!viewport||!track||recentCycleHeight<=0)return;
+    const first=track.querySelector('.intel-cycle .intel-item');
+    const step=first?.getBoundingClientRect().height||60;
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){viewport.scrollBy({top:step*direction,behavior:'smooth'});return;}
+    recentOffset=(recentOffset+direction*step+recentCycleHeight)%recentCycleHeight;
+    track.style.transform=`translate3d(0,${-recentOffset}px,0)`;
+  }
+  function setRotationPaused(value){rotationPaused=value;$('rotation-toggle').setAttribute('aria-pressed',String(value));$('rotation-toggle').textContent=value?'Reanudar':'Pausar';$('rotation-label').textContent=value?'Rotación pausada':'Rotación automática';}
+  $('rotation-toggle').addEventListener('click',()=>setRotationPaused(!rotationPaused));
+  $('critical-prev').addEventListener('click',()=>changeCriticalPage(-1));
+  $('critical-next').addEventListener('click',()=>changeCriticalPage(1));
+  $('feature-prev').addEventListener('click',()=>moveFeature(-1));
+  $('feature-next').addEventListener('click',()=>moveFeature(1));
+  $('recent-prev').addEventListener('click',()=>moveRecent(-1));
+  $('recent-next').addEventListener('click',()=>moveRecent(1));
+  motionPreference.addEventListener?.('change',event=>{if(event.matches)setRotationPaused(true);});
   $('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen();}catch(e){$('refresh-status').textContent='Pantalla completa no disponible en este navegador';}});
   document.addEventListener('keydown',e=>{if(e.key==='f'||e.key==='F')$('fullscreen').click();});
-  updateClock();setInterval(updateClock,1000);loadData();requestAnimationFrame(animateRecentScroll);setInterval(()=>loadData(true),REFRESH_MS);setInterval(()=>{if(featured.length){featureIndex=(featureIndex+1)%featured.length;renderFeatured();queueFit();}},ROTATE_MS);setInterval(()=>{if(featured.length){const elapsed=Date.now()-rotateStarted;$('progress').style.width=Math.min(100,elapsed/ROTATE_MS*100)+'%';}},250);setInterval(advanceCriticalPage,ALERT_ROTATE_MS);
+  setRotationPaused(rotationPaused);
+  updateClock();setInterval(updateClock,1000);loadData();requestAnimationFrame(animateRecentScroll);setInterval(()=>loadData(true),REFRESH_MS);setInterval(()=>{if(!rotationPaused)advanceFeature();},ROTATE_MS);setInterval(()=>{if(!rotationPaused&&featured.length){const elapsed=Date.now()-rotateStarted;$('progress').style.width=Math.min(100,elapsed/ROTATE_MS*100)+'%';}},250);setInterval(()=>{if(!rotationPaused)changeCriticalPage(1);},ALERT_ROTATE_MS);
 })();
 </script>
 </body>

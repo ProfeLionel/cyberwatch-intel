@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Agregador público de noticias, vulnerabilidades y alertas de ciberseguridad.">
-  <title>CyberWatch Intel | Centro de monitoreo</title>
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  <title>RADAR | Centro de monitoreo</title>
   <style>
     :root {
       --bg: #0b1220; --panel: #121d30; --panel2: #17243a; --text: #e8eef8;
@@ -15,7 +16,7 @@
     body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
     header { padding: 26px clamp(16px, 4vw, 54px); border-bottom: 1px solid var(--line); background: #0e192b; }
     .brand { display:flex; gap:14px; align-items:center; }
-    .logo { width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:#16395a; color:var(--accent); font-weight:900; font-size:22px; }
+    .logo { width:clamp(118px, 13vw, 176px); height:auto; max-height:64px; display:block; object-fit:contain; flex:none; }
     h1 { font-size: clamp(22px, 3vw, 32px); margin:0; letter-spacing:-.5px; }
     header p { color:var(--muted); margin:6px 0 0; }
     .site-nav { display:flex; flex-wrap:wrap; gap:9px; margin-top:15px; }
@@ -69,6 +70,8 @@
     aside p, aside li { color:var(--muted); font-size:12px; line-height:1.6; }
     aside ul { padding-left:17px; margin:0; }
     .empty { grid-column:1/-1; text-align:center; color:var(--muted); padding:40px 20px; border:1px dashed var(--line); border-radius:14px; }
+    #scroll-sentinel { height:1px; }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     footer { text-align:center; color:var(--muted); padding:26px; border-top:1px solid var(--line); font-size:12px; }
     @media (max-width:1250px) { .filters { grid-template-columns:repeat(3,minmax(0,1fr)); } .layout { grid-template-columns:1fr; } }
     @media (max-width:700px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } #items { grid-template-columns:1fr; } .filters { grid-template-columns:1fr; } }
@@ -77,9 +80,9 @@
 <body>
 <header>
   <div class="brand">
-    <div class="logo">CW</div>
+    <img class="logo" src="./assets/logo-cen.png" alt="Logotipo del Centro Espacial Nacional">
     <div>
-      <h1>CyberWatch Intel</h1>
+      <h1>RADAR</h1>
       <p>Centro de monitoreo de amenazas, vulnerabilidades e incidentes públicos</p>
       <nav class="site-nav" aria-label="Navegación del centro de monitoreo">
         <a href="./index.html">▦ Dashboard de inteligencia</a>
@@ -119,12 +122,14 @@
     <button id="reset" type="button">Limpiar filtros</button>
   </section>
 
-  <div class="statusbox" id="status" role="status">Cargando los datos publicados…</div>
+  <div class="statusbox" id="status" role="status">Cargando los datos locales…</div>
 
   <div class="layout">
     <section>
       <div class="section-title"><h2>Últimas publicaciones</h2><small id="result-count"></small></div>
       <div id="items"><div class="empty">Cargando publicaciones…</div></div>
+      <div id="scroll-sentinel" aria-hidden="true"></div>
+      <p class="sr-only" id="scroll-status" role="status" aria-live="polite"></p>
     </section>
     <aside>
       <div class="card">
@@ -148,13 +153,16 @@
   </div>
 </main>
 <footer>
-  CyberWatch Intel · Proyecto personal · Respeta las condiciones de cada fuente y consulta los avisos oficiales.
+  RADAR · Proyecto personal · Respeta las condiciones de cada fuente y consulta los avisos oficiales.
 </footer>
 <script>
   const DATA_URL = "./data/incidents.json";
   let allItems = [];
   let payload = {};
   let historyData = [];
+  let visibleCount = 30;
+  const PAGE_SIZE = 30;
+  let filteredCount = 0;
 
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({
@@ -205,16 +213,17 @@
       $("trend-caption").textContent = "Esperando primeras muestras";
       return;
     }
-    const maxItems = Math.max(1, ...days.map(d => Number(d.items_total) || 0));
-    const maxKev = Math.max(1, ...days.map(d => Number(d.kev_total) || 0));
     const chart = (key, max, css, label) => `<div><div class="trend-title">${label}</div><div class="trend-bars">${days.map(d => {
+      const known = d[key] !== undefined && d[key] !== null;
       const value = Number(d[key]) || 0;
-      const height = value ? Math.max(4, value / max * 88) : 2;
+      const height = known && value ? Math.max(4, value / max * 88) : 2;
       const day = String(d.date || '').slice(5);
-      return `<div class="trend-day" title="${esc(d.date)}: ${value}"><div class="trend-bar ${css}" style="height:${height}px" aria-label="${esc(d.date)}: ${value}"></div><span class="trend-label">${esc(day)}</span></div>`;
+      return `<div class="trend-day" title="${esc(d.date)}: ${known ? value : 'sin dato'}"><div class="trend-bar ${css}" style="height:${height}px" aria-label="${esc(d.date)}: ${known ? value : 'sin dato'}"></div><span class="trend-label">${esc(day)}</span></div>`;
     }).join('')}</div></div>`;
-    $("trends").innerHTML = chart('items_total', maxItems, '', 'Publicaciones registradas') + chart('kev_total', maxKev, 'kev', 'Vulnerabilidades en CISA KEV');
-    $("trend-caption").textContent = `${days.length} día(s) con datos · historial conservado hasta 90 días`;
+    const maxNew = Math.max(1, ...days.map(d => Number(d.new_items) || 0));
+    const maxNewKev = Math.max(1, ...days.map(d => Number(d.new_kev) || 0));
+    $("trends").innerHTML = chart('new_items', maxNew, '', 'Publicaciones nuevas detectadas') + chart('new_kev', maxNewKev, 'kev', 'Nuevas incorporaciones a CISA KEV');
+    $("trend-caption").textContent = `${days.filter(d => d.new_items !== undefined).length} día(s) con métrica de novedades · los días anteriores se muestran sin dato`;
   }
 
   function render() {
@@ -226,6 +235,7 @@
     const priority = $("priority").value;
     const periodDays = Number($("period").value || 0);
 
+    const now = Date.now();
     const filtered = allItems.filter(item => {
       const searchable = [
         item.title, item.summary, item.source, item.category,
@@ -237,22 +247,29 @@
         && (!region || item.region === region)
         && (!source || item.source === source || (item.related_sources || []).includes(source))
         && (!priority || priorityOf(item) === priority)
-        && (!periodDays || (Date.now() - new Date(item.published_at || item.collected_at || 0).getTime()) <= periodDays * 86400000);
+        && (!periodDays || (() => { const age = now - new Date(item.published_at || item.collected_at || 0).getTime(); return Number.isFinite(age) && age >= 0 && age <= periodDays * 86400000; })());
     });
 
     $("result-count").textContent = `${filtered.length} resultado(s)`;
     const container = $("items");
+    filteredCount = filtered.length;
     if (!filtered.length) {
       container.innerHTML = '<div class="empty">No hay publicaciones que coincidan con los filtros.</div>';
+      $("scroll-sentinel").hidden = true;
+      $("scroll-status").textContent = "No hay resultados.";
       return;
     }
 
-    container.innerHTML = filtered.slice(0, 300).map(item => {
+    visibleCount = Math.min(visibleCount, filtered.length);
+    const pageItems = filtered.slice(0, visibleCount);
+    container.innerHTML = pageItems.map(item => {
       const badges = [];
       badges.push(`<span class="badge">${esc(item.category || item.type || "Ciberseguridad")}</span>`);
       const pLabel = priorityOf(item);
       badges.push(`<span class="badge ${pLabel === 'crítica' ? 'red' : pLabel === 'alta' ? 'gold' : ''}" title="Criterios: ${esc((item.priority_basis || []).join(', ') || 'clasificación orientativa')}">Prioridad estimada: ${esc(pLabel)}</span>`);
       if (item.kev) badges.push('<span class="badge red">CISA KEV · Explotación conocida</span>');
+      if (item.stale_data) badges.push('<span class="badge gold">Captura anterior conservada</span>');
+      if (item.epss !== undefined && item.epss !== null) badges.push(`<span class="badge" title="FIRST EPSS estima probabilidad de explotación observada en los próximos 30 días; no confirma un ataque.">EPSS ${ (Number(item.epss) * 100).toFixed(1) }%${item.epss_stale ? ' · valor anterior' : ''} · ${esc(item.epss_date || '')}</span>`);
       if (item.severity) badges.push(`<span class="badge ${String(item.severity).toLowerCase()==="critical" ? "red" : "gold"}">Severidad: ${esc(item.severity)}</span>`);
       if (item.cvss !== null && item.cvss !== undefined) badges.push(`<span class="badge">CVSS ${esc(item.cvss)}</span>`);
       (item.cves || []).slice(0, 3).forEach(cve => badges.push(`<span class="badge">${esc(cve)}</span>`));
@@ -267,16 +284,36 @@
         <a class="read" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">Abrir fuente original ↗</a>
       </article>`;
     }).join("");
+    $("scroll-sentinel").hidden = visibleCount >= filtered.length;
+    $("scroll-status").textContent = `Mostrando ${visibleCount} de ${filtered.length} publicaciones.`;
+  }
+
+  function loadNextBatch() {
+    if (visibleCount >= filteredCount) return;
+    visibleCount = Math.min(visibleCount + PAGE_SIZE, filteredCount);
+    render();
+  }
+
+  const scrollSentinel = $("scroll-sentinel");
+  if ("IntersectionObserver" in window) {
+    const loadObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) loadNextBatch();
+    }, { rootMargin: "500px 0px" });
+    loadObserver.observe(scrollSentinel);
+  } else {
+    window.addEventListener("scroll", () => {
+      if (scrollSentinel.getBoundingClientRect().top < window.innerHeight + 500) loadNextBatch();
+    }, { passive: true });
   }
 
   async function loadData() {
     try {
-      const response = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+      const response = await fetch(DATA_URL, { cache: "no-cache" });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       payload = await response.json();
       allItems = Array.isArray(payload.items) ? payload.items : [];
       try {
-        const historyResponse = await fetch("./data/history.json?t=" + Date.now(), { cache: "no-store" });
+        const historyResponse = await fetch("./data/history.json", { cache: "no-cache" });
         historyData = historyResponse.ok ? await historyResponse.json() : [];
         if (!Array.isArray(historyData)) historyData = [];
       } catch (_) { historyData = []; }
@@ -288,24 +325,24 @@
       $("kev").textContent = allItems.filter(i => i.kev).length.toLocaleString("es-CL");
       $("withcve").textContent = allItems.filter(i => (i.cves || []).length).length.toLocaleString("es-CL");
       const statuses = payload.source_status || [];
-      const ok = statuses.filter(s => s.ok).length;
+      const ok = statuses.filter(s => s.ok && !s.partial).length;
       $("sources").textContent = `${ok}/${statuses.length}`;
       const age = ageHours(checkedAt);
       const stale = age > 3;
       $("status").classList.toggle("stale", stale);
-      const freshness = !checkedAt ? "No hay marca de revisión disponible." : stale ? `ATENCIÓN: la última revisión registrada tiene ${Math.floor(age)} h. Verifica GitHub Actions antes de asumir que los datos están actualizados.` : `Datos revisados hace ${Math.max(0, Math.floor(age * 60))} min según la última marca registrada.`;
+      const freshness = !checkedAt ? "No hay marca de revisión disponible." : stale ? `ATENCIÓN: la última revisión registrada tiene ${Math.floor(age)} h. Ejecuta el recopilador local antes de asumir que los datos están actualizados.` : `Datos revisados hace ${Math.max(0, Math.floor(age * 60))} min según la última marca registrada.`;
       $("status").textContent = `${freshness} ${payload.notice || "Verifica siempre las fuentes originales."}`;
-      const failed = statuses.filter(s => !s.ok);
-      $("source-summary").textContent = `${ok} de ${statuses.length} fuentes respondieron correctamente; ${failed.length} con errores.`;
-      $("source-status").innerHTML = statuses.length ? [...statuses].sort((a,b)=>Number(a.ok)-Number(b.ok) || String(a.source).localeCompare(String(b.source))).map(s => {
-        const state = s.ok ? (Number(s.count) ? `${s.count} publicaciones/CVE` : 'sin publicaciones nuevas') : (s.error || 'sin respuesta');
+      const failed = statuses.filter(s => !s.ok || s.partial);
+      $("source-summary").textContent = `${ok} de ${statuses.length} fuentes respondieron completamente; ${failed.length} con errores o respuestas parciales.`;
+      $("source-status").innerHTML = statuses.length ? [...statuses].sort((a,b)=>Number(a.ok && !a.partial)-Number(b.ok && !b.partial) || String(a.source).localeCompare(String(b.source))).map(s => {
+        const state = s.stale_data ? `${s.partial ? 'respuesta parcial · ' : ''}captura anterior · ${s.error || 'última consulta fallida'}` : s.partial ? (s.error || 'respuesta parcial') : s.ok ? (Number(s.count) ? `${s.count} publicaciones/CVE` : 'sin publicaciones nuevas') : (s.error || 'sin respuesta');
         const checked = s.checked_at ? ` · revisada ${formatDate(s.checked_at)}` : '';
-        return `<li><strong class="${s.ok?'source-ok':'source-fail'}">${s.ok?'●':'●'} ${esc(s.source)}</strong><br><span class="source-note">${esc(state)}${esc(checked)}</span></li>`;
+        return `<li><strong class="${s.ok && !s.partial?'source-ok':'source-fail'}">● ${esc(s.source)}</strong><br><span class="source-note">${esc(state)}${esc(checked)}</span></li>`;
       }).join("") : "<li>Estado aún no disponible.</li>";
       render();
     } catch (error) {
-      $("status").textContent = "No fue posible cargar data/incidents.json. Ejecuta el recopilador o espera la primera automatización.";
-      $("items").innerHTML = '<div class="empty">Aún no hay datos publicados. Revisa el archivo data/incidents.json y la ejecución de GitHub Actions.</div>';
+      $("status").textContent = "No fue posible cargar data/incidents.json. Inicia RADAR desde run_local.py y verifica que el archivo exista.";
+      $("items").innerHTML = '<div class="empty">No se pudieron cargar los datos locales. Comprueba data/incidents.json y abre RADAR mediante el servidor web local.</div>';
       $("source-status").innerHTML = `<li>${esc(error.message)}</li>`;
       $("total").textContent = "0";
       $("kev").textContent = "0";
@@ -314,9 +351,9 @@
     }
   }
 
-  ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).addEventListener(id === "search" ? "input" : "change", render));
+  ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).addEventListener(id === "search" ? "input" : "change", () => { visibleCount = PAGE_SIZE; render(); }));
   $("reset").addEventListener("click", () => {
-    ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).value = ""); render();
+    ["search", "type", "tag", "region", "source", "priority", "period"].forEach(id => $(id).value = ""); visibleCount = PAGE_SIZE; render();
   });
   loadData();
 </script>
