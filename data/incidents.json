@@ -1,7 +1,326 @@
 {
-  "generated_at": "2026-11-07T15:45:48+00:00",
-  "last_checked_at": "2026-11-07T15:45:48+00:00",
+  "generated_at": "2026-11-07T19:40:36+00:00",
+  "last_checked_at": "2026-11-07T19:40:36+00:00",
   "items": [
+    {
+      "id": "a8240359d0db911dc0b7",
+      "title": "CVE-2026-124058: A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argu",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124058",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T19:17:28+00:00",
+      "summary": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can lead to buffer overflow. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-124058"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5f972e357038400950f4",
+      "title": "CVE-2026-124059: A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124059",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T19:17:28+00:00",
+      "summary": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ApCliKeyStr leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-124059"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "71ef2e959aa5d003616c",
+      "title": "CVE-2026-123472: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in eLightUp Meta Box – WordPress Custom Fields Framework meta-box allows Stored X",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123472",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:21+00:00",
+      "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in eLightUp Meta Box – WordPress Custom Fields Framework meta-box allows Stored XSS.This issue affects Meta Box – WordPress Custom Fields Framework: from n/a through 5.15.3.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-123472"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0a11324c1946e6d45e06",
+      "title": "CVE-2026-123992: A flaw has been found in DataEase up to 2.10.27. Affected by this issue is the function StaticResourceServer.validateSvgContent of the file core/core-backend/src/main/java/io/datae",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123992",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:21+00:00",
+      "summary": "A flaw has been found in DataEase up to 2.10.27. Affected by this issue is the function StaticResourceServer.validateSvgContent of the file core/core-backend/src/main/java/io/dataease/visualization/server/StaticResourceServer.java of the component SVG Handler. Executing a manipulation can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 2.10.28 can resolve this issue. This patch is called 0709fe98d6608c3507daee3e92cf433e7ff61370. You should upgrade the affected component. The vendor confirms: \"The reported tab/entity-based URL bypass is covered by our previously implemented SVG security hardening. The fix replaces the blacklist-based checks with namespace-aware element and attribute allowlists, restricts permitted references to document-local fragments, and applies a restrictive Content Security Policy to uploaded SVG responses.\"",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-123992"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a265915a55087b79adab",
+      "title": "CVE-2026-124057: A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124057",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:21+00:00",
+      "summary": "A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1 results in buffer overflow. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-124057"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3d9a565da818e3c0d3e8",
+      "title": "CVE-2026-124258: Missing Authorization vulnerability in ThemeGrill User Registration user-registration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Use",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124258",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:21+00:00",
+      "summary": "Missing Authorization vulnerability in ThemeGrill User Registration user-registration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects User Registration: from n/a through 5.3.1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-124258"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b54966ac6196a84df37d",
+      "title": "CVE-2026-123461: Missing Authorization vulnerability in PluginUs.Net FOX woocommerce-currency-switcher allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects FOX",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123461",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:20+00:00",
+      "summary": "Missing Authorization vulnerability in PluginUs.Net FOX woocommerce-currency-switcher allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects FOX: from n/a through 1.5.6.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-123461"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0f2501ba28c40c96f6c2",
+      "title": "CVE-2026-120836: Missing Authorization vulnerability in eLightUp Meta Box – WordPress Custom Fields Framework meta-box allows Exploiting Incorrectly Configured Access Control Security Levels.This i",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120836",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:18+00:00",
+      "summary": "Missing Authorization vulnerability in eLightUp Meta Box – WordPress Custom Fields Framework meta-box allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Meta Box – WordPress Custom Fields Framework: from n/a through 5.15.3.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-120836"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "74f760dde8eb4ddc27ea",
+      "title": "CVE-2026-119522: Missing Authorization vulnerability in ThemeGrill User Registration user-registration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Use",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119522",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T18:17:16+00:00",
+      "summary": "Missing Authorization vulnerability in ThemeGrill User Registration user-registration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects User Registration: from n/a through 5.3.1.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-119522"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e3cdeda1a6d77eca3b58",
+      "title": "CVE-2026-123990: A security vulnerability has been detected in DataEase up to 2.10.27/3.1.0. Affected is the function ExtWhere2Str.extWhere2sqlOjb of the file engine/trans/ExtWhere2Str.java of the",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123990",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T17:16:34+00:00",
+      "summary": "A security vulnerability has been detected in DataEase up to 2.10.27/3.1.0. Affected is the function ExtWhere2Str.extWhere2sqlOjb of the file engine/trans/ExtWhere2Str.java of the component Chart Data Handler. Such manipulation of the argument operator leads to sql injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. Upgrading to version 3.2.0 is able to address this issue. Upgrading the affected component is advised. The vendor confirms: \"The fix validates the complete compound operator and uses fixed AND / OR keywords instead of concatenating user-controlled logic into SQL.\"",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-123990"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "271b62c120867c253d7f",
+      "title": "CVE-2026-123991: A vulnerability was detected in DataEase up to 2.10.27. Affected by this vulnerability is the function WhitelistUtils.endsWithAny of the file WhitelistUtils.java of the component A",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123991",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-07T17:16:34+00:00",
+      "summary": "A vulnerability was detected in DataEase up to 2.10.27. Affected by this vulnerability is the function WhitelistUtils.endsWithAny of the file WhitelistUtils.java of the component Authentication Filter. Performing a manipulation of the argument File results in unrestricted upload. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 2.10.28 addresses this issue. It is advisable to upgrade the affected component. The vendor confirms: \"This issue has been addressed by enforcing authentication on the standalone static-resource upload endpoint independently of the URI suffix whitelist.\"",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-123991"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
     {
       "id": "fa738881f235878352b3",
       "title": "Hackers pull off $133 million French bank heist via service provider",
@@ -3274,13 +3593,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.5,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.008410000",
       "epss_percentile": "0.581150000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3306,13 +3626,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.6,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.007960000",
       "epss_percentile": "0.566870000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3338,13 +3659,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002430000",
       "epss_percentile": "0.156130000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3370,13 +3692,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 7.5,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.005410000",
       "epss_percentile": "0.457470000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3402,13 +3725,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.8,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.002010000",
       "epss_percentile": "0.099970000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3434,13 +3758,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002200000",
       "epss_percentile": "0.126720000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3466,13 +3791,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002430000",
       "epss_percentile": "0.156120000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3498,13 +3824,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002240000",
       "epss_percentile": "0.131660000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3530,13 +3857,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003130000",
       "epss_percentile": "0.243180000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3562,13 +3890,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003240000",
       "epss_percentile": "0.256530000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3652,13 +3981,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002430000",
       "epss_percentile": "0.156120000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3713,13 +4043,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003240000",
       "epss_percentile": "0.256530000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3745,13 +4076,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002820000",
       "epss_percentile": "0.207790000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3777,13 +4109,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003110000",
       "epss_percentile": "0.240870000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3809,13 +4142,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002820000",
       "epss_percentile": "0.207790000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3870,13 +4204,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003140000",
       "epss_percentile": "0.244800000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3902,13 +4237,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003490000",
       "epss_percentile": "0.286960000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3934,13 +4270,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.004300000",
       "epss_percentile": "0.374640000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -3995,13 +4332,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002590000",
       "epss_percentile": "0.176390000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4027,13 +4365,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002240000",
       "epss_percentile": "0.131540000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4117,13 +4456,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002990000",
       "epss_percentile": "0.227710000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4149,13 +4489,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 7.5,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.005670000",
       "epss_percentile": "0.472520000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4181,13 +4522,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 7.5,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.005130000",
       "epss_percentile": "0.439720000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4213,13 +4555,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003160000",
       "epss_percentile": "0.246690000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4245,13 +4588,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.002770000",
       "epss_percentile": "0.202810000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4277,13 +4621,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001210000",
       "epss_percentile": "0.019260000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4309,13 +4654,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.004760000",
       "epss_percentile": "0.413940000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4341,13 +4687,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 7.5,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.005020000",
       "epss_percentile": "0.432320000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4373,13 +4720,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.009290000",
       "epss_percentile": "0.607850000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4405,13 +4753,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.003310000",
       "epss_percentile": "0.264960000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4437,13 +4786,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.1,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.005710000",
       "epss_percentile": "0.474740000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4469,13 +4819,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.8,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.001300000",
       "epss_percentile": "0.026880000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4501,13 +4852,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.6,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.004660000",
       "epss_percentile": "0.406000000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4533,13 +4885,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001760000",
       "epss_percentile": "0.071400000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4565,13 +4918,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001940000",
       "epss_percentile": "0.091620000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4597,13 +4951,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001380000",
       "epss_percentile": "0.031880000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4629,13 +4984,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001870000",
       "epss_percentile": "0.083670000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4661,13 +5017,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001970000",
       "epss_percentile": "0.095180000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4693,13 +5050,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001870000",
       "epss_percentile": "0.083660000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4725,13 +5083,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.000910000",
       "epss_percentile": "0.004780000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4757,13 +5116,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.6,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.004660000",
       "epss_percentile": "0.406000000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4789,13 +5149,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001300000",
       "epss_percentile": "0.026820000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4821,13 +5182,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001700000",
       "epss_percentile": "0.063700000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4853,13 +5215,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001520000",
       "epss_percentile": "0.043790000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4885,13 +5248,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 4.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001520000",
       "epss_percentile": "0.043740000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4917,13 +5281,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.3,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001870000",
       "epss_percentile": "0.083660000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4949,13 +5314,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001300000",
       "epss_percentile": "0.026830000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -4981,13 +5347,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 5.4,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001700000",
       "epss_percentile": "0.063790000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -5013,13 +5380,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 6.5,
       "severity": "MEDIUM",
       "kev": false,
       "epss": "0.001300000",
       "epss_percentile": "0.026840000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -5045,13 +5413,14 @@
       "priority_basis": [
         "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T15:45:46+00:00",
+      "collected_at": "2026-11-07T19:40:35+00:00",
       "cvss": 8.1,
       "severity": "HIGH",
       "kev": false,
       "epss": "0.004460000",
       "epss_percentile": "0.390520000",
       "epss_date": "2026-11-07",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -5681,14 +6050,14 @@
       "cves": [
         "CVE-2026-122001"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5715,9 +6084,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5744,9 +6113,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5773,9 +6142,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5797,14 +6166,14 @@
       "cves": [
         "CVE-2026-121379"
       ],
-      "priority_score": 10,
-      "priority_label": "informativa",
+      "priority_score": 45,
+      "priority_label": "media",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad crítica/CVSS ≥ 9"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5831,9 +6200,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5855,14 +6224,14 @@
       "cves": [
         "CVE-2026-121491"
       ],
-      "priority_score": 10,
-      "priority_label": "informativa",
+      "priority_score": 45,
+      "priority_label": "media",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad crítica/CVSS ≥ 9"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 9.0,
+      "severity": "CRITICAL",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5889,9 +6258,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5918,9 +6287,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.8,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5942,14 +6311,14 @@
       "cves": [
         "CVE-2026-121848"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -5976,9 +6345,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 4.2,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6005,9 +6374,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6029,14 +6398,14 @@
       "cves": [
         "CVE-2026-121866"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6063,9 +6432,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6092,9 +6461,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6121,9 +6490,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 3.1,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6150,9 +6519,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 5.0,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6179,9 +6548,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6208,9 +6577,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6237,9 +6606,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6266,9 +6635,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 6.8,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6295,9 +6664,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 3.5,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -6319,14 +6688,14 @@
       "cves": [
         "CVE-2026-117525"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-07T09:17:14+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-07T19:40:35+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -111623,469 +111992,6 @@
       ]
     },
     {
-      "id": "ddc6f896f53cee3500b2",
-      "title": "CVE-2026-118147: Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118147",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T19:16:47+00:00",
-      "summary": "Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-118147"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.4,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.006120000",
-      "epss_percentile": "0.494960000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9441c6c5323656ad597b",
-      "title": "CVE-2026-120208: libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supp",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120208",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:09+00:00",
-      "summary": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supplying chroma components with unequal bit depths. Attackers can craft a HEIF file declaring, for example, 16-bit Cb and 8-bit Cr to trigger file-controlled heap writes past the Cr plane, potentially achieving code execution in image-processing pipelines.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120208"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.003650000",
-      "epss_percentile": "0.304790000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "3dfc44d2f8307165ee4f",
-      "title": "CVE-2026-120209: AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120209",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:09+00:00",
-      "summary": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the testTransform endpoint, which passes scripts to GroovyClassLoader for unauthenticated remote code execution.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120209"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "epss": "0.005440000",
-      "epss_percentile": "0.458350000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "b69219230bf2cc7bc4bf",
-      "title": "CVE-2026-120210: FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated ASSETMAP Path elements.",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120210",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:09+00:00",
-      "summary": "FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated ASSETMAP Path elements. Attackers can supply a crafted IMF package with '..' or absolute paths to demux local MXF files, probe file existence and size, or trigger server-side requests.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120210"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.002760000",
-      "epss_percentile": "0.201260000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8d18fe647d59d1d516b1",
-      "title": "CVE-2026-120202: Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because collect_bundle_siblings and walk_bund",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120202",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because collect_bundle_siblings and walk_bundle_subdir skip nested directories and .pyc files. Attackers can distribute a skill bundle with an unchecked-hash .pyc under scripts/ /__pycache__/ that ramparts silently ignores, while CPython executes it when the skill runs.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120202"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.002870000",
-      "epss_percentile": "0.213790000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d84bcb25e339e71490e7",
-      "title": "CVE-2026-120203: ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attacker",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120203",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attackers can store a template via MockController::add with escaped parentheses that mockjs evaluates with eval(), then trigger it through MockController::infoByKey to run commands, as root in the official Docker image.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120203"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.7,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.003520000",
-      "epss_percentile": "0.289770000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "87951fb216f92c5f7ada",
-      "title": "CVE-2026-120204: DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120204",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output_dir parameter. Attackers, including cross-site GET requests from an operator's browser, can write chrome trace files to exhaust disk or inodes and use error messages as a filesystem oracle.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120204"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 6.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.004300000",
-      "epss_percentile": "0.374270000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "51858b528c1d6be43ee1",
-      "title": "CVE-2026-120205: Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped cus",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120205",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attackers can register with a script payload as their name that executes when administrators view related coupons, stealing CSRF tokens to create administrator accounts.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120205"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.4,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.002630000",
-      "epss_percentile": "0.182150000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "ca3084a620f1759045ea",
-      "title": "CVE-2026-120206: Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens lea",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120206",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens leak via URL query strings. Attackers can reuse leaked tokens or target the unprotected setToggleVisibilityAction and updatePositionAction to make logged-in administrators delete, hide or reorder catalogue and configuration objects.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "filtracion"
-      ],
-      "cves": [
-        "CVE-2026-120206"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.001500000",
-      "epss_percentile": "0.042150000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "8e737bad8e761fc98126",
-      "title": "CVE-2026-120207: Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office de",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120207",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:08+00:00",
-      "summary": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office delete routes lacking CSRF tokens and permission checks. Attackers can lure a logged-in administrator into navigating to crafted GET requests that walk sequential ids, removing TheliaLibrary images, their files and variants across pages, products and categories.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120207"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.0,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.002030000",
-      "epss_percentile": "0.103300000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "acd2ed0c00af509671e0",
-      "title": "CVE-2026-120199: LearnHouse before 1.1.1 contains a missing authorization vulnerability in the assignment API that allows authenticated users to read other users' grades and submissions. Attackers",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120199",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:07+00:00",
-      "summary": "LearnHouse before 1.1.1 contains a missing authorization vulnerability in the assignment API that allows authenticated users to read other users' grades and submissions. Attackers can supply another user_id to the submissions grade endpoint or query submission read functions to view other students' work, grades and instructor feedback.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120199"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.002180000",
-      "epss_percentile": "0.123330000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "9c75e57762f0e9a0288e",
-      "title": "CVE-2026-120200: Nexterm through 1.2.2-BETA contains a missing authorization vulnerability that allows authenticated users to hibernate, resume, or terminate other users' remote sessions via sessio",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120200",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:07+00:00",
-      "summary": "Nexterm through 1.2.2-BETA contains a missing authorization vulnerability that allows authenticated users to hibernate, resume, or terminate other users' remote sessions via session lifecycle routes. Attackers who obtain a session ID can call the hibernate, resume, or DELETE connection endpoints to disrupt live SSH, RDP, VNC, or SFTP sessions.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120200"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.002270000",
-      "epss_percentile": "0.135510000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "082c497e9eb83e9f3fb4",
-      "title": "CVE-2026-120201: Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions i",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120201",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T18:17:07+00:00",
-      "summary": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TOKEN header. Attackers can send a value like 'is not null', which Hutool's Condition parser treats as an operator, then execute commands through Jpom's script features.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120201"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "epss": "0.022150000",
-      "epss_percentile": "0.827100000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f74832986a4b41762a63",
-      "title": "CVE-2026-102212: Heap-based buffer overflow in Opengear IM72XX, CM71XX, and ACM70XX firmware versions 4.8.0 through 5.5.2 on console server appliances allows an unauthenticated remote attacker to c",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102212",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-10-31T16:16:52+00:00",
-      "summary": "Heap-based buffer overflow in Opengear IM72XX, CM71XX, and ACM70XX firmware versions 4.8.0 through 5.5.2 on console server appliances allows an unauthenticated remote attacker to crash the index.cgi process via a crafted multipart/form-data POST request containing an overlong Content-Disposition name field.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-102212"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.4,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.003200000",
-      "epss_percentile": "0.250690000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "c0588a787514ce74708f",
       "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
       "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
@@ -113383,34 +113289,6 @@
       ]
     },
     {
-      "id": "b37e3d3856fc59f017c9",
-      "title": "China’s CE-25A Electric Commuter Airliner Demonstrator Emerges",
-      "url": "https://www.twz.com/air/chinas-ce-25a-electric-commuter-airliner-demonstrator-emerges-in-photos",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-28T18:26:01+00:00",
-      "summary": "The 19-seat aircraft features an unusual array of ducted fans, and the technology behind it could have implications beyond civilian aviation. The post China’s CE-25A Electric Commuter Airliner Demonstrator Emerges appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T19:53:50+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
       "id": "59f0cc34d1fc0f789c8f",
       "title": "Unwrapping Retail Peak Season Cyber Threats",
       "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats",
@@ -113437,90 +113315,6 @@
       ],
       "related_sources": [
         "Unit 42"
-      ]
-    },
-    {
-      "id": "b6c81b6a815c7a4a3e7d",
-      "title": "Ethiopia Gets 12 Russian Su-35 Fighters, Eyes S-400 Air Defenses",
-      "url": "https://www.twz.com/air/ethiopia-gets-12-russian-su-35-fighters-eyes-s-400-air-defenses",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-28T17:54:35+00:00",
-      "summary": "The Ethiopian leader says the multirole fighter jets arrived a year ahead of schedule, with four S-400 batteries also planned under the deal. The post Ethiopia Gets 12 Russian Su-35 Fighters, Eyes S-400 Air Defenses appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T19:53:50+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "ab94801b4fdaea38c7e1",
-      "title": "Hardened Shelters Critical To Survival Of USAF’s Tanker Fleet: Study",
-      "url": "https://www.twz.com/news-features/hardened-shelters-critical-to-survival-of-usafs-tanker-fleet-study",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-28T17:28:45+00:00",
-      "summary": "An independent assessment calls for new action to prevent critical aerial refueling assets from being neutralized before they even get in the air. The post Hardened Shelters Critical To Survival Of USAF’s Tanker Fleet: Study appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T19:53:50+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "d136f8498156df06821e",
-      "title": "Confessions Of An SR-71 Blackbird Pilot",
-      "url": "https://www.twz.com/air/confessions-of-an-sr-71-blackbird-pilot",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-28T15:44:30+00:00",
-      "summary": "What it was like to sit at the controls of the Skunk Works' legendary Blackbird while hurtling over hostile territory at Mach 3.3. The post Confessions Of An SR-71 Blackbird Pilot appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-28T19:53:50+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
       ]
     },
     {
@@ -195819,12 +195613,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 38,
+      "count": 34,
       "error": null,
-      "checked_at": "2026-11-07T02:23:52+00:00",
+      "checked_at": "2026-11-07T19:40:10+00:00",
       "http_status": 200,
       "last_published_at": "2026-11-06T23:06:57+00:00",
-      "duration_ms": 633
+      "duration_ms": 425
     },
     {
       "source": "CyberScoop",
@@ -195995,31 +195789,31 @@
       "source": "NVD CVE API",
       "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
       "ok": true,
-      "count": 3354,
+      "count": 3351,
       "error": null,
-      "checked_at": "2026-11-07T15:45:38+00:00",
+      "checked_at": "2026-11-07T19:40:28+00:00",
       "http_status": 200,
-      "total_results": 3354,
+      "total_results": 3351,
       "partial": false,
-      "duration_ms": 8451
+      "duration_ms": 7323
     },
     {
       "source": "FIRST EPSS",
       "url": "https://api.first.org/data/v1/epss",
       "ok": true,
-      "count": 4949,
+      "count": 4935,
       "error": null,
-      "checked_at": "2026-11-07T15:45:47+00:00",
-      "cves_requested": 167,
-      "epss_checked_at": "2026-11-07T15:45:47+00:00",
-      "duration_ms": 719
+      "checked_at": "2026-11-07T19:40:36+00:00",
+      "cves_requested": 11,
+      "epss_checked_at": "2026-11-07T19:40:36+00:00",
+      "duration_ms": 273
     }
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 5774,
-    "items_after_deduplication": 5758,
-    "items_published": 5758,
+    "items_before_deduplication": 5767,
+    "items_after_deduplication": 5751,
+    "items_published": 5751,
     "items_stale_preserved": 0,
     "sources_ok": 30,
     "sources_total": 31
