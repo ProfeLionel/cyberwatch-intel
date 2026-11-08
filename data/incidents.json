@@ -1,7 +1,2299 @@
 {
-  "generated_at": "2026-11-08T16:22:26+00:00",
-  "last_checked_at": "2026-11-08T16:22:26+00:00",
+  "generated_at": "2026-11-08T20:47:47+00:00",
+  "last_checked_at": "2026-11-08T20:47:47+00:00",
   "items": [
+    {
+      "id": "cb5f8317736c8ea9074b",
+      "title": "CVE-2026-95867: IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95867",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:25+00:00",
+      "summary": "IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-95867"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4fa9808479e1dc5bed7c",
+      "title": "CVE-2026-96146: IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96146",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:25+00:00",
+      "summary": "IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-96146"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "98df320f17a9db5cc69e",
+      "title": "CVE-2026-16682: IBM Power Systems Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16682",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:24+00:00",
+      "summary": "IBM Power Systems Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper handling of uninitialized resources.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16682"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4230155affbf447b7040",
+      "title": "CVE-2026-16697: IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16697",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:24+00:00",
+      "summary": "IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper restriction of excessive computational resources.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16697"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3819bb616343978168d7",
+      "title": "CVE-2026-17426: IBM Power Systems Firmware FW1060.00 through FW1060.81 could allow a remote attacker to cause a denial of service due to an unhandled exception.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17426",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:24+00:00",
+      "summary": "IBM Power Systems Firmware FW1060.00 through FW1060.81 could allow a remote attacker to cause a denial of service due to an unhandled exception.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-17426"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "329e1e0385eca13d1e79",
+      "title": "CVE-2026-17427: IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17427",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:24+00:00",
+      "summary": "IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper validation of input length.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-17427"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9a6748a523c312c49ed6",
+      "title": "CVE-2026-118904: IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118904",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T20:17:23+00:00",
+      "summary": "IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-118904"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "803216a99bdd48401cde",
+      "title": "CVE-2026-97677: IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the pl",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97677",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:54+00:00",
+      "summary": "IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file access isolation safeguard. Via a crafted on-disk index, the attacker could also read the contents of arbitrary files accessible to the service process — including configuration files, secrets, or database files stored under the application's data directory.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97677"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "45aee5bc38990a3641ff",
+      "title": "CVE-2026-9764: IBM Bob 1.0.4 through 2.0.1 could allow a remote attacker to inject arbitrary code on the system, due to the improper control of user input code.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9764",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:54+00:00",
+      "summary": "IBM Bob 1.0.4 through 2.0.1 could allow a remote attacker to inject arbitrary code on the system, due to the improper control of user input code.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-9764"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "465b5cbd448c1f2dd325",
+      "title": "CVE-2026-8860: IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 accepts GET requests for authentication, allowing credentials to be passed as URL parameters. Th",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8860",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:43+00:00",
+      "summary": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 accepts GET requests for authentication, allowing credentials to be passed as URL parameters. This causes passwords to be exposed in browser history and server logs.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-8860"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "84069120c1d782acc5d7",
+      "title": "CVE-2026-93005: IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated attacker to cause a denial of service through insufficient rate limiting of email notifications, resulting in ex",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93005",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:43+00:00",
+      "summary": "IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated attacker to cause a denial of service through insufficient rate limiting of email notifications, resulting in excessive emails being sent to targeted recipients.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-93005"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "54252098173643695087",
+      "title": "CVE-2026-93879: Hibernate Validator could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption resulting from improper escaping of user-controlled data in",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93879",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:43+00:00",
+      "summary": "Hibernate Validator could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption resulting from improper escaping of user-controlled data in Expression Language (EL) expressions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-93879"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ff1b3b7eb04e44b864ba",
+      "title": "CVE-2026-8639: IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 is vulnerable to session fixation. An attacker can establish a session and, after the victim aut",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8639",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:42+00:00",
+      "summary": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 is vulnerable to session fixation. An attacker can establish a session and, after the victim authenticates, hijack the authenticated session to gain unauthorized access to the directory management console.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-8639"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7b2ab22f6c1b77616160",
+      "title": "CVE-2026-8640: IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 does not set the SameSite attribute on session cookies, making it vulnerable to Cross-Site Reque",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8640",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:42+00:00",
+      "summary": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 does not set the SameSite attribute on session cookies, making it vulnerable to Cross-Site Request Forgery (CSRF) attacks. An attacker can cause authenticated users' browsers to send unauthorized requests to the application.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-8640"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 3.5,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f8abb3d34a752569fc46",
+      "title": "CVE-2026-8642: IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 exposes debug endpoints that disclose system information including server versions and session i",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8642",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:42+00:00",
+      "summary": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 exposes debug endpoints that disclose system information including server versions and session identifiers. This information can be used to identify vulnerable software versions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-8642"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "85f8dfcc16b63e8f6719",
+      "title": "CVE-2026-81542: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to delete arbitrary files due to path traversal.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81542",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to delete arbitrary files due to path traversal.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-81542"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3cfb958607b3ec63b540",
+      "title": "CVE-2026-82830: IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of argument delimiters.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82830",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of argument delimiters.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-82830"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "5e52ebac75b53b9e4e29",
+      "title": "CVE-2026-84030: IBM Guardium Data Protection 12.2.4 could allow a remote attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84030",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM Guardium Data Protection 12.2.4 could allow a remote attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84030"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.6,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7585f3f44a4e2eec9279",
+      "title": "CVE-2026-84228: IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84228",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84228"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 3.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "884e25f0f221705f489c",
+      "title": "CVE-2026-84229: IBM Guardium Data Protection 12.2.4 could allow a remote attacker to bypass security restrictions due to improper validation of CSRF tokens for GET requests.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84229",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM Guardium Data Protection 12.2.4 could allow a remote attacker to bypass security restrictions due to improper validation of CSRF tokens for GET requests.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84229"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4c194a5b8ad91ee275bd",
+      "title": "CVE-2026-84237: IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84237",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:41+00:00",
+      "summary": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-84237"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 3.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "92e9b47eb471c289572c",
+      "title": "CVE-2026-75879: IBM Content Navigator 3.0.15.0, 26.0.0.0, 3.1.0.0, and 3.2.0.0 is vulnerable to LDAP injection. A remote authenticated attacker could send a specially crafted request that could al",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75879",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM Content Navigator 3.0.15.0, 26.0.0.0, 3.1.0.0, and 3.2.0.0 is vulnerable to LDAP injection. A remote authenticated attacker could send a specially crafted request that could allow enumeration of LDAP directory information.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-75879"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "93f5a84ed96cd2a48468",
+      "title": "CVE-2026-77153: IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote unauthenticated attacker to obtain sensitive information from the Host-Based Printer Subsystem due to no authorization check. A ba",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77153",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote unauthenticated attacker to obtain sensitive information from the Host-Based Printer Subsystem due to no authorization check. A bad actor could use this vulnerability to print files they should not be able to access.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-77153"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2ca8e4a3afd6d9c4fa10",
+      "title": "CVE-2026-78537: IBM Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2, 4.2.1, 5.0, and 5.1 could allow a local attacker to obtain sensitive information due to the use of a weak cryptographic algorith",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78537",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2, 4.2.1, 5.0, and 5.1 could allow a local attacker to obtain sensitive information due to the use of a weak cryptographic algorithm.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78537"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.8,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ce4173d3fd227503e7be",
+      "title": "CVE-2026-78636: IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 is affected by an information disclosure vulnerability due to unsafe class reflection in the JMX REST connector",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78636",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 is affected by an information disclosure vulnerability due to unsafe class reflection in the JMX REST connector body parser.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-78636"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "94254ce25aa2809edee1",
+      "title": "CVE-2026-80435: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an XML external entity (XXE) injection flaw.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80435",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an XML external entity (XXE) injection flaw.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-80435"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1fd1d39cae7343e01691",
+      "title": "CVE-2026-81209: IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 Standard Edition could allow",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81209",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:40+00:00",
+      "summary": "IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 Standard Edition could allow a remote authenticated attacker to obtain sensitive information due to improper logging of sensitive credentials.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-81209"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "142f6d423e73fe63fce4",
+      "title": "CVE-2026-2477: IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 fails to enforce backend authorization checks, allowing low‑privileged users t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2477",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:39+00:00",
+      "summary": "IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 fails to enforce backend authorization checks, allowing low‑privileged users to directly invoke administrative API endpoints. This bypasses UI‑level access restrictions and may lead to unauthorized execution of privileged functions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-2477"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e32ceb0e91446cf94aed",
+      "title": "CVE-2026-2700: IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 allows low-privileged users to execute administrative functions by directly in",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2700",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:39+00:00",
+      "summary": "IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 allows low-privileged users to execute administrative functions by directly invoking backend APIs.As a result, UI-level access restrictions are ineffective, as the backend fails to enforce role-based access control.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-2700"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "438bd9da30182e5121a1",
+      "title": "CVE-2026-3684: IBM Cloud Pak for Data System 11.3.1.2 Interim Fix 001 through - 11.3.1.2 Interim Fix 002 could allow a user with administrative privileges to read and write arbitrary files on the",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3684",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:39+00:00",
+      "summary": "IBM Cloud Pak for Data System 11.3.1.2 Interim Fix 001 through - 11.3.1.2 Interim Fix 002 could allow a user with administrative privileges to read and write arbitrary files on the system due to incorrect permission assignments.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-3684"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e88310d07957b1f93329",
+      "title": "CVE-2026-6715: IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization. Succe",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6715",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:39+00:00",
+      "summary": "IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization. Successful exploitation allows remote attackers to execute arbitrary commands on the underlying operating system with the privileges of the affected service.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-6715"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2349698a571508fe2d00",
+      "title": "CVE-2026-18893: IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to privilege escalation via user-defined function.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18893",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:38+00:00",
+      "summary": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to privilege escalation via user-defined function.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18893"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "01f07ca982b07fc89bf2",
+      "title": "CVE-2026-19133: IBM Storage TS4500 Library 1.1.1.6 through 1.12.0.3 could allow a remote authenticated attacker to perform unauthorized account takeover due to improper authorization.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19133",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:38+00:00",
+      "summary": "IBM Storage TS4500 Library 1.1.1.6 through 1.12.0.3 could allow a remote authenticated attacker to perform unauthorized account takeover due to improper authorization.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-19133"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b167ccef6b0a432f07b0",
+      "title": "CVE-2026-19307: IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1, and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1 Standard",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19307",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T19:17:38+00:00",
+      "summary": "IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1, and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1 Standard Edition could allow a remote authenticated attacker to access unauthorized pages due to improper authorization.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-19307"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0a1afb9b9dad39bebaa9",
+      "title": "CVE-2026-18484: IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name coll",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18484",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:04+00:00",
+      "summary": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name collisions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18484"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1bc25844bb5c4f11bd9a",
+      "title": "CVE-2026-18525: IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP address and port.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18525",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:04+00:00",
+      "summary": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP address and port.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18525"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "af3cb69c1723a53a3d78",
+      "title": "CVE-2026-18546: IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery (SSRF). This may allow",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18546",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:04+00:00",
+      "summary": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18546"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "cd735a8e3b86ef14be5d",
+      "title": "CVE-2026-18668: IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a security misconfiguration.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18668",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:04+00:00",
+      "summary": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a security misconfiguration.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18668"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b501a95ec3a5823f5527",
+      "title": "CVE-2026-76052: IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could allow an attacker to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76052",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:04+00:00",
+      "summary": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could allow an attacker to leverage an undocumented flag to gain access to an unauthenticated path in the REST API.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-76052"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.0,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "179ea935c4ac89979c7e",
+      "title": "CVE-2026-16699: IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other users due to improper a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16699",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other users due to improper authorization.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16699"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "83a0fd184bd4c52e77c4",
+      "title": "CVE-2026-17437: IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to improper validation of",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17437",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to improper validation of pathnames during archive extraction.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-17437"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fc2f0ad662d036bb5b75",
+      "title": "CVE-2026-17466: IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17466",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-17466"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e61e78093123e2819648",
+      "title": "CVE-2026-18093: IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18093",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18093"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d6f29d2761f2e47e0018",
+      "title": "CVE-2026-18194: IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18194",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18194"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 2.5,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0e387f604dff00e0c6d5",
+      "title": "CVE-2026-18195: IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper output encoding of e",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18195",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper output encoding of error messages.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18195"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.2,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d0e2501093ff536b674a",
+      "title": "CVE-2026-18196: IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper output neutralization.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18196",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:03+00:00",
+      "summary": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper output neutralization.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-18196"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb6d6dc4d6be823d6710",
+      "title": "CVE-2026-14437: IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14437",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\" sequences (/../) to view arbitrary files on the system.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14437"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "334f0e63930910ad27e2",
+      "title": "CVE-2026-14469: IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0 could allow an authenticated attacker to access and manipulate filesets beyond their control due to improper authorization.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14469",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0 could allow an authenticated attacker to access and manipulate filesets beyond their control due to improper authorization.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14469"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb3075a23cb53b4843a7",
+      "title": "CVE-2026-14963: IBM Cognos Command Center 10.2.4.1 and 10.2.5 could allow a remote attacker to execute unauthorized processes due to cross-site request forgery.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14963",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM Cognos Command Center 10.2.4.1 and 10.2.5 could allow a remote attacker to execute unauthorized processes due to cross-site request forgery.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14963"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "db58cb19d5fe601dcb48",
+      "title": "CVE-2026-15266: IBM Concert 1.0 through 3.0.1.1 contains components that allow potentially unsafe command execution, which could be exploited to run arbitrary system commands on the host.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15266",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM Concert 1.0 through 3.0.1.1 contains components that allow potentially unsafe command execution, which could be exploited to run arbitrary system commands on the host.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-15266"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0ebaf1a6af103230a586",
+      "title": "CVE-2026-16325: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in the X-Forwarded-Host",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16325",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in the X-Forwarded-Host header.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16325"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1299d2d87ba9af231a42",
+      "title": "CVE-2026-16427: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16427",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16427"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "c6f85d36c195e929e9af",
+      "title": "CVE-2026-16433: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16433",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:02+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-16433"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4ecf1f92474234ed4354",
+      "title": "CVE-2026-12735: IBM Controller Disclosure Management 1.0.0.0 could allow an attacker to obtain sensitive EXIF metadata from uploaded images due to improper removal of sensitive information before",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12735",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Controller Disclosure Management 1.0.0.0 could allow an attacker to obtain sensitive EXIF metadata from uploaded images due to improper removal of sensitive information before storage.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-12735"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e210762c55deab5d2255",
+      "title": "CVE-2026-12737: IBM Sterling B2B Integrator 6.2.2.0 through 6.2.2.1_1 and IBM Sterling File Gateway 6.2.2.0 through 6.2.2.1_1 stores potentially sensitive information in log files that could be re",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12737",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Sterling B2B Integrator 6.2.2.0 through 6.2.2.1_1 and IBM Sterling File Gateway 6.2.2.0 through 6.2.2.1_1 stores potentially sensitive information in log files that could be read by a local privileged user.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-12737"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f90762b296a8a686b587",
+      "title": "CVE-2026-14375: IBM Storage Scale 5.2.3.0 through 5.2.3.8, and 6.0.1.0 does not validate or improperly validates TLS certificate validation when communicating with remote cluster GUI interfaces, w",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14375",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Storage Scale 5.2.3.0 through 5.2.3.8, and 6.0.1.0 does not validate or improperly validates TLS certificate validation when communicating with remote cluster GUI interfaces, which could allow an attacker to inject forged JSON responses using man in the middle techniques.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14375"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "bd25472c50da9fa70e8e",
+      "title": "CVE-2026-14377: IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests fro",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14377",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14377"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7cf439bb7b58a5a583ef",
+      "title": "CVE-2026-14434: IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive informa",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14434",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive information using man in the middle techniques.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14434"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "50d487437607084ea6e7",
+      "title": "CVE-2026-14435: IBM Turbonomic kubeturbo agent 8.16.0 through 8.20.3 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive informa",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14435",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:01+00:00",
+      "summary": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.20.3 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive information using man in the middle techniques.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-14435"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "3a8f08769e23bddcbc6f",
+      "title": "CVE-2026-120113: IBM Aspera Connect 1.6.1 through 4.2.19 could allow a remote attacker to obtain sensitive information and modify host trust configuration due to missing authentication and overly p",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120113",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:00+00:00",
+      "summary": "IBM Aspera Connect 1.6.1 through 4.2.19 could allow a remote attacker to obtain sensitive information and modify host trust configuration due to missing authentication and overly permissive cross-origin access controls in the local HTTP service. By persuading a victim to visit a malicious web page, an attacker could perform unauthorized cross-origin requests to read and modify configuration.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-120113"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6e3285db36571d581a03",
+      "title": "CVE-2026-120115: IBM Aspera Connect 1.6.1 through 4.2.19 fails to consistently enforce origin verification across all REST API endpoints. An attacker who convinces a user to visit a malicious websi",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120115",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T18:17:00+00:00",
+      "summary": "IBM Aspera Connect 1.6.1 through 4.2.19 fails to consistently enforce origin verification across all REST API endpoints. An attacker who convinces a user to visit a malicious website could delete or inspect account configurations.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-120115"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e53ef18603cd865e75bc",
+      "title": "CVE-2026-116500: IBM Qiskit SDK 2.4.0 through 2.6.1 could allow a local attacker to cause a denial of service due to unbound recursion during deserialization of untrusted QPY payloads.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116500",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:37+00:00",
+      "summary": "IBM Qiskit SDK 2.4.0 through 2.6.1 could allow a local attacker to cause a denial of service due to unbound recursion during deserialization of untrusted QPY payloads.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116500"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.2,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d86f3355915b53963c91",
+      "title": "CVE-2026-116501: IBM Qiskit SDK 2.4.0 through 2.6.1 could allow a local attacker to execute arbitrary code due to an out-of-bounds write caused by improper input validation when accessing a corrupt",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116501",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:37+00:00",
+      "summary": "IBM Qiskit SDK 2.4.0 through 2.6.1 could allow a local attacker to execute arbitrary code due to an out-of-bounds write caused by improper input validation when accessing a corrupted unitary matrix.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116501"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.4,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1b5a0df4989859f9ecb1",
+      "title": "CVE-2026-117545: IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117545",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:37+00:00",
+      "summary": "IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-117545"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f85adfaee9a234463f05",
+      "title": "CVE-2026-119670: IBM Storage Copy Data Management 2.2 could allow an authenticated user to execute arbitrary commands with normal user privileges on the system due to improper validation of user su",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119670",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:37+00:00",
+      "summary": "IBM Storage Copy Data Management 2.2 could allow an authenticated user to execute arbitrary commands with normal user privileges on the system due to improper validation of user supplied input.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-119670"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a4bb0e0983cbe78568d0",
+      "title": "CVE-2026-11547: IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 is affected by a server-side request forgery vulnerability in the Admin Center deploy validation endpoint.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11547",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:37+00:00",
+      "summary": "IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 is affected by a server-side request forgery vulnerability in the Admin Center deploy validation endpoint.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-11547"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d6fcc80e4417d9ebd49c",
+      "title": "CVE-2026-110273: IBM TRIRIGA Application Platform 5.0.0 through 5.0.9 IBM TRIRIGA could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special ele",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110273",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.9 IBM TRIRIGA could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110273"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fe2a8846ce38cbccbcff",
+      "title": "CVE-2026-112369: IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated user to perform unauthorized actions due to client-side enforcement of sever side security mechanisms.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112369",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated user to perform unauthorized actions due to client-side enforcement of sever side security mechanisms.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-112369"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "8a39b40bcb5cc41333da",
+      "title": "CVE-2026-113698: IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is vulnerable to a denial of service when executing a specially crafted query with a Materialized Query Table.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113698",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is vulnerable to a denial of service when executing a specially crafted query with a Materialized Query Table.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-113698"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fe11ef82882721278f06",
+      "title": "CVE-2026-114464: IBM Process Mining 2.0.0 through 2.2.1 could allow a remote attacker to obtain sensitive information due to improper access control.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114464",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM Process Mining 2.0.0 through 2.2.1 could allow a remote attacker to obtain sensitive information due to improper access control.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114464"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fd6d7c7e8dc3bf726b55",
+      "title": "CVE-2026-115554: IBM Tivoli Netcool/OMNIbus 8.1.0 through 8.1.0.41 is vulnerable to stored cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code i",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115554",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM Tivoli Netcool/OMNIbus 8.1.0 through 8.1.0.41 is vulnerable to stored cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115554"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.4,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2d756c4eaa622300423f",
+      "title": "CVE-2026-116499: IBM Qiskit SDK 1.4.2 through 2.6.2 could allow a local attacker to execute arbitrary code due to deserialization of untrusted data.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116499",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:36+00:00",
+      "summary": "IBM Qiskit SDK 1.4.2 through 2.6.2 could allow a local attacker to execute arbitrary code due to deserialization of untrusted data.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-116499"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.4,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "a834e810545d89f53386",
+      "title": "CVE-2026-105467: IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Reflected XSS. A victim must open a specifically crafted URL while authen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105467",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Reflected XSS. A victim must open a specifically crafted URL while authenticated to QRadar to trigger this.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105467"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "e349ed0264cdc25bbcd6",
+      "title": "CVE-2026-105473: IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Open Redirect. A victim must open a specifically crafted URL while authen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105473",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Open Redirect. A victim must open a specifically crafted URL while authenticated to QRadar to trigger this.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105473"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.6,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "09c897f287a8a7a3a6f4",
+      "title": "CVE-2026-107330: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to a Server-Side Request Forgery (SSRF) vulnerability.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107330",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to a Server-Side Request Forgery (SSRF) vulnerability.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107330"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 7.7,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "146c922c18187ccb3caf",
+      "title": "CVE-2026-107331: IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107331",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-107331"
+      ],
+      "priority_score": 45,
+      "priority_label": "media",
+      "priority_basis": [
+        "severidad crítica/CVSS ≥ 9"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "69ed945ca0b9a929ac10",
+      "title": "CVE-2026-108284: IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 could allow an authenticated user with the Reader role to obtain sensitive information.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108284",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 could allow an authenticated user with the Reader role to obtain sensitive information.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108284"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "ba6602bf802277c52752",
+      "title": "CVE-2026-108292: IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated user to upload a file with dangerous types that could be executed by another user if opened.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108292",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated user to upload a file with dangerous types that could be executed by another user if opened.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-108292"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "bd136397d06f91f867b9",
+      "title": "CVE-2026-10844: IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 could allow a remote attacker to conduct phishing attacks.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10844",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T17:16:35+00:00",
+      "summary": "IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 could allow a remote attacker to conduct phishing attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad",
+        "phishing"
+      ],
+      "cves": [
+        "CVE-2026-10844"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
     {
       "id": "3843bdf6af9074245085",
       "title": "CVE-2026-114188: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPVibes AnyWhere Elementor anywhere-elementor allows Stored XSS.This issue aff",
@@ -2731,13 +5023,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T16:22:25+00:00",
+      "collected_at": "2026-11-08T20:47:46+00:00",
       "cvss": 2.1,
       "severity": "LOW",
       "kev": false,
       "epss": "0.004460000",
       "epss_percentile": "0.390260000",
       "epss_date": "2026-11-08",
+      "epss_stale": true,
       "related_sources": [
         "NVD CVE API"
       ]
@@ -2763,9 +5056,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2792,9 +5085,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2821,9 +5114,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2850,9 +5143,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 3.5,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2879,9 +5172,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2908,9 +5201,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2937,9 +5230,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2966,9 +5259,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -2995,9 +5288,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 2.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3024,9 +5317,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 3.7,
+      "severity": "LOW",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3053,9 +5346,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.1,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3082,9 +5375,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3106,14 +5399,14 @@
       "cves": [
         "CVE-2026-106015"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.1,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3135,14 +5428,14 @@
       "cves": [
         "CVE-2026-109925"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3169,9 +5462,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3193,14 +5486,14 @@
       "cves": [
         "CVE-2026-110963"
       ],
-      "priority_score": 10,
-      "priority_label": "informativa",
+      "priority_score": 45,
+      "priority_label": "media",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad crítica/CVSS ≥ 9"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3222,14 +5515,14 @@
       "cves": [
         "CVE-2026-114432"
       ],
-      "priority_score": 10,
-      "priority_label": "informativa",
+      "priority_score": 45,
+      "priority_label": "media",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad crítica/CVSS ≥ 9"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3256,9 +5549,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3285,9 +5578,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3314,9 +5607,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3343,9 +5636,9 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -3367,14 +5660,14 @@
       "cves": [
         "CVE-2026-103303"
       ],
-      "priority_score": 10,
+      "priority_score": 32,
       "priority_label": "informativa",
       "priority_basis": [
-        "clasificación inicial por defecto"
+        "severidad alta/CVSS ≥ 7"
       ],
-      "collected_at": "2026-11-08T09:30:41+00:00",
-      "cvss": null,
-      "severity": null,
+      "collected_at": "2026-11-08T20:47:46+00:00",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "kev": false,
       "related_sources": [
         "NVD CVE API"
@@ -116451,303 +118744,6 @@
       ]
     },
     {
-      "id": "79de44e3924eb55c74c1",
-      "title": "CVE-2026-120241: A vulnerability was identified in Ruijie RG-ES205GC, RG-ES206GC-P, RG-ES208GC, RG-ES210GC-LP and RG-ES210GS-P ESW_1.0(1)B1P48. Impacted is an unknown function of the file httpupg.c",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120241",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T19:16:59+00:00",
-      "summary": "A vulnerability was identified in Ruijie RG-ES205GC, RG-ES206GC-P, RG-ES208GC, RG-ES210GC-LP and RG-ES210GS-P ESW_1.0(1)B1P48. Impacted is an unknown function of the file httpupg.cgi of the component Local Firmware Upgrade Interface. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120241"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.006190000",
-      "epss_percentile": "0.498460000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "88dfdfaab38510c530eb",
-      "title": "CVE-2026-120242: A security flaw has been discovered in Ruijie RG-ES205GC, RG-ES206GC-P, RG-ES208GC, RG-ES210GC-LP and RG-ES210GS-P ESW_1.0(1)B1P48. The affected element is an unknown function of t",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120242",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T19:16:59+00:00",
-      "summary": "A security flaw has been discovered in Ruijie RG-ES205GC, RG-ES206GC-P, RG-ES208GC, RG-ES210GC-LP and RG-ES210GS-P ESW_1.0(1)B1P48. The affected element is an unknown function of the file set_cloud_serverUrl.cgi of the component Cloud Management. The manipulation of the argument url results in cross site scripting. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120242"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 1.9,
-      "severity": "LOW",
-      "kev": false,
-      "epss": "0.002020000",
-      "epss_percentile": "0.101880000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2f8c8566d57a52663666",
-      "title": "CVE-2026-120240: A vulnerability was determined in WAVLINK WN553X1-B V260403_2.0.0. This issue affects the function sub_41A748 of the file /bin/ioos of the component WireGuard CLI Group Handler. Ex",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120240",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T19:16:57+00:00",
-      "summary": "A vulnerability was determined in WAVLINK WN553X1-B V260403_2.0.0. This issue affects the function sub_41A748 of the file /bin/ioos of the component WireGuard CLI Group Handler. Executing a manipulation of the argument group_id/group_name can lead to os command injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120240"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.016870000",
-      "epss_percentile": "0.771230000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "dfd25ecdd9798b3f3832",
-      "title": "CVE-2026-120237: A flaw has been found in ag-ui-protocol ag-ui up to 0.0.58. Affected by this issue is the function isInterruptExpired of the file sdks/typescript/packages/client/src/interrupts/ind",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120237",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T18:17:13+00:00",
-      "summary": "A flaw has been found in ag-ui-protocol ag-ui up to 0.0.58. Affected by this issue is the function isInterruptExpired of the file sdks/typescript/packages/client/src/interrupts/index.ts of the component Interrupt expiry. This manipulation causes resource consumption. Remote exploitation of the attack is possible. The exploit has been published and may be used. The pull request to fix this issue awaits acceptance.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120237"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "epss": "0.004070000",
-      "epss_percentile": "0.351410000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "2718ee285589aba7797b",
-      "title": "CVE-2026-120238: A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0. This affects the function sub_4162A8 of the file /bin/ioos of the component ovpn_file Handler. Such manipulation o",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120238",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T18:17:13+00:00",
-      "summary": "A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0. This affects the function sub_4162A8 of the file /bin/ioos of the component ovpn_file Handler. Such manipulation of the argument file_id leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120238"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.016870000",
-      "epss_percentile": "0.771240000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "e43a52a5beb309146081",
-      "title": "CVE-2026-120239: A vulnerability was found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_419DA8 of the file /bin/ioos of the component WireGuard CLI Handler. Perfo",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120239",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T18:17:13+00:00",
-      "summary": "A vulnerability was found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_419DA8 of the file /bin/ioos of the component WireGuard CLI Handler. Performing a manipulation of the argument file_id results in os command injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120239"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.016870000",
-      "epss_percentile": "0.771240000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "6e58e5f9d9cfdfa9670e",
-      "title": "CVE-2026-74759: Google::Auth versions 0.12 for Perl allow server side request forgery via unvalidated credential_source URLs in AWS external account credentials. An external_account configuration",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74759",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T17:16:34+00:00",
-      "summary": "Google::Auth versions 0.12 for Perl allow server side request forgery via unvalidated credential_source URLs in AWS external account credentials. An external_account configuration with the AWS subject token type selects Google::Auth::ExternalAccountCredentials::Aws. Its retrieve_subject_token sends requests to the imdsv2_session_token_url, url and region_url fields of credential_source without the host check that the other credential classes apply. Any caller that builds credentials from a configuration it does not fully control issues GET and PUT requests to hosts the configuration names, including internal services and link-local metadata endpoints.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-74759"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "epss": "0.001770000",
-      "epss_percentile": "0.072930000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "f7effb01327a2ffb7f46",
-      "title": "CVE-2026-74760: Google::Auth versions from 0.11 through 0.12 for Perl accept an authorization code from any local process because the gcloud-auth login callback does not check the OAuth state. Th",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74760",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T17:16:34+00:00",
-      "summary": "Google::Auth versions from 0.11 through 0.12 for Perl accept an authorization code from any local process because the gcloud-auth login callback does not check the OAuth state. The gcloud-auth login and application-default login commands send a state parameter with the authorization request, then take the code from the first request to reach their loopback listener without comparing the returned state. A local attacker can submit an authorization code for their own Google account. The CLI exchanges it and stores the refresh token as the user's credentials, so the user's tools then act as the attacker's account.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-74760"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.001240000",
-      "epss_percentile": "0.021420000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "75a70ed7d62e978c2fc3",
-      "title": "CVE-2026-120236: A vulnerability was detected in ag-ui-protocol ag-ui up to 0.0.58. Affected by this vulnerability is an unknown functionality of the component Transport Decoder Handler. The manipu",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120236",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T17:16:33+00:00",
-      "summary": "A vulnerability was detected in ag-ui-protocol ag-ui up to 0.0.58. Affected by this vulnerability is an unknown functionality of the component Transport Decoder Handler. The manipulation results in improper input validation. The attack may be launched remotely. The exploit is now public and may be used. The patch is identified as 660182b973a44b8eda5484b14b88eb9cc251edc4. It is suggested to upgrade the affected component.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120236"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "epss": "0.002670000",
-      "epss_percentile": "0.188920000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "dd7879ab65bf2bdd9937",
       "title": "OneNote File Extraction, (Sun, Nov 1st)",
       "url": "https://isc.sans.edu/diary/rss/33478",
@@ -117338,62 +119334,6 @@
       "epss_stale": true,
       "related_sources": [
         "Cisco Security Advisories (PSIRT)"
-      ]
-    },
-    {
-      "id": "af5c48663e6f6aa036f6",
-      "title": "Polish MiG-29s, F-16 Cannon Ammo Reportedly Headed To Ukraine As Bitter Warsaw-Kyiv Rift Heals",
-      "url": "https://www.twz.com/news-features/polish-mig-29s-f-16-cannon-ammo-reportedly-headed-to-ukraine-as-bitter-warsaw-kyiv-rift-heals",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-29T18:58:29+00:00",
-      "summary": "Relations between Ukraine and Poland soured in the Spring, leading to Warsaw calling off the MiG-29 deal in June. The post Polish MiG-29s, F-16 Cannon Ammo Reportedly Headed To Ukraine As Bitter Warsaw-Kyiv Rift Heals appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-29T18:58:57+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "65ecbe6672290e17d27f",
-      "title": "Let’s Talk About The U.S. Target Drone Iran Claims To Have Recovered Intact",
-      "url": "https://www.twz.com/news-features/lets-talk-about-the-u-s-target-drone-iran-claims-to-have-recovered-intact",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-10-29T18:01:13+00:00",
-      "summary": "The target drone could be of particular use in stimulating Iran's air defenses to help collect intelligence on them, among other possible tasks. The post Let’s Talk About The U.S. Target Drone Iran Claims To Have Recovered Intact appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-10-29T18:58:57+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
       ]
     },
     {
@@ -200341,12 +202281,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 33,
+      "count": 31,
       "error": null,
-      "checked_at": "2026-11-07T23:03:55+00:00",
+      "checked_at": "2026-11-08T20:47:26+00:00",
       "http_status": 200,
       "last_published_at": "2026-11-06T23:06:57+00:00",
-      "duration_ms": 650
+      "duration_ms": 353
     },
     {
       "source": "CyberScoop",
@@ -200517,31 +202457,31 @@
       "source": "NVD CVE API",
       "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
       "ok": true,
-      "count": 3524,
+      "count": 3594,
       "error": null,
-      "checked_at": "2026-11-08T16:22:17+00:00",
+      "checked_at": "2026-11-08T20:47:39+00:00",
       "http_status": 200,
-      "total_results": 3524,
+      "total_results": 3594,
       "partial": false,
-      "duration_ms": 7892
+      "duration_ms": 7512
     },
     {
       "source": "FIRST EPSS",
       "url": "https://api.first.org/data/v1/epss",
       "ok": true,
-      "count": 4865,
+      "count": 4856,
       "error": null,
-      "checked_at": "2026-11-08T16:22:26+00:00",
-      "cves_requested": 92,
-      "epss_checked_at": "2026-11-08T16:22:26+00:00",
-      "duration_ms": 226
+      "checked_at": "2026-11-08T20:47:47+00:00",
+      "cves_requested": 79,
+      "epss_checked_at": "2026-11-08T20:47:47+00:00",
+      "duration_ms": 159
     }
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 5939,
-    "items_after_deduplication": 5923,
-    "items_published": 5923,
+    "items_before_deduplication": 6007,
+    "items_after_deduplication": 5991,
+    "items_published": 5991,
     "items_stale_preserved": 0,
     "sources_ok": 30,
     "sources_total": 31
