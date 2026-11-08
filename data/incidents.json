@@ -1,7 +1,674 @@
 {
-  "generated_at": "2026-11-08T02:30:52+00:00",
-  "last_checked_at": "2026-11-08T02:30:52+00:00",
+  "generated_at": "2026-11-08T09:30:42+00:00",
+  "last_checked_at": "2026-11-08T09:30:42+00:00",
   "items": [
+    {
+      "id": "c7d46025540bafd7a914",
+      "title": "CVE-2026-97192: The Secure Custom Fields WordPress plugin before 6.9.8 does not re-apply its field-group location rules when persisting values submitted through the post editor save path, allowing",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97192",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:06+00:00",
+      "summary": "The Secure Custom Fields WordPress plugin before 6.9.8 does not re-apply its field-group location rules when persisting values submitted through the post editor save path, allowing users with contributor-level access and above to write custom fields the site restricted to administrators onto their own posts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97192"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "85114a85ea3f3b5a7730",
+      "title": "CVE-2026-97193: The Secure Custom Fields WordPress plugin before 6.9.8 does not verify that a user is allowed to edit the target object before writing to it during bidirectional relationship synch",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97193",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:06+00:00",
+      "summary": "The Secure Custom Fields WordPress plugin before 6.9.8 does not verify that a user is allowed to edit the target object before writing to it during bidirectional relationship synchronization, allowing users with contributor-level access and above to add or remove a reference to their own object on arbitrary posts, users, or terms they cannot otherwise edit.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97193"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6d85b45abff3c541e9dc",
+      "title": "CVE-2026-97194: The Secure Custom Fields WordPress plugin before 6.9.8 does not perform a read-permission check when it renders and formats the values of its relational fields, allowing users with",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97194",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:06+00:00",
+      "summary": "The Secure Custom Fields WordPress plugin before 6.9.8 does not perform a read-permission check when it renders and formats the values of its relational fields, allowing users with post-editing access (Contributor and above) to disclose the titles and non-public statuses of other users' unpublished posts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97194"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "58e0a27d064e67ffd32c",
+      "title": "CVE-2026-97195: The Secure Custom Fields WordPress plugin before 6.9.8 does not sanitize a persisted field definition before emitting part of it as an HTML attribute name, allowing a user able to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97195",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:06+00:00",
+      "summary": "The Secure Custom Fields WordPress plugin before 6.9.8 does not sanitize a persisted field definition before emitting part of it as an HTML attribute name, allowing a user able to configure its fields to store a payload that executes as JavaScript in the browser of any user who views a page rendering the affected field, which on multisite lets a site administrator who lacks the unfiltered_html capability inject script into other users' sessions.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-97195"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7db26f6f70e2cb980f00",
+      "title": "CVE-2026-122062: The Pronamic Pay WordPress plugin before 11.1.0, Pronamic Pay doneren met Mollie WordPress plugin before 1.7.1 do not restrict access to stored form submissions through the REST AP",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122062",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:05+00:00",
+      "summary": "The Pronamic Pay WordPress plugin before 11.1.0, Pronamic Pay doneren met Mollie WordPress plugin before 1.7.1 do not restrict access to stored form submissions through the REST API, allowing unauthenticated users to read the messages that visitors submitted through the bundled forms.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-122062"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b1947c104f2e139822e4",
+      "title": "CVE-2026-122085: The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not perform authorisation or a valid nonce check on its ticket-transfer feature, which is available to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122085",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:05+00:00",
+      "summary": "The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not perform authorisation or a valid nonce check on its ticket-transfer feature, which is available to unauthenticated users, allowing them to transfer other attendees' guest-checkout tickets to an email address of their choosing, invalidating the legitimate ticket and causing the victim's ticket PDF, which contains attendee personal data, to be sent to the attacker.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-122085"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fd7e5534071d378005b9",
+      "title": "CVE-2026-85344: The FV Flowplayer Video Player WordPress plugin before 7.5.57.7212 does not perform any authorization check on an AJAX action that carries out a site-wide content rewrite, so any a",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85344",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:05+00:00",
+      "summary": "The FV Flowplayer Video Player WordPress plugin before 7.5.57.7212 does not perform any authorization check on an AJAX action that carries out a site-wide content rewrite, so any authenticated user, including subscriber-level, can trigger a bulk modification of posts they should not be able to edit.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-85344"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "82ef8645285de74e8264",
+      "title": "CVE-2026-96961: The Pie Register WordPress plugin through 3.8.4.15 does not perform any capability, nonce or authentication check on one of its request handlers, allowing unauthenticated attacker",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96961",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:05+00:00",
+      "summary": "The Pie Register WordPress plugin through 3.8.4.15 does not perform any capability, nonce or authentication check on one of its request handlers, allowing unauthenticated attackers to reset the Pie Register WordPress plugin through 3.8.4.15's settings to their defaults (disabling registration security controls such as new-user email verification) and to destroy a Pie Register WordPress plugin through 3.8.4.15 data table.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-96961"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fd2929ce9001e0cd2369",
+      "title": "CVE-2026-96963: The Pie Register WordPress plugin through 3.8.4.15 does not perform an authorisation check in one of its AJAX actions, allowing users with a role as low as contributor to modify e",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96963",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:05+00:00",
+      "summary": "The Pie Register WordPress plugin through 3.8.4.15 does not perform an authorisation check in one of its AJAX actions, allowing users with a role as low as contributor to modify existing administrator-created invitation-code records.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-96963"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4d7c760cdbae47ca47b4",
+      "title": "CVE-2026-104338: The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not perform an authorization check on one of its REST routes and derives the acting user's identity from an unauthen",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104338",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not perform an authorization check on one of its REST routes and derives the acting user's identity from an unauthenticated request parameter, allowing an unauthenticated attacker to cause the request to execute as an arbitrary user account for the duration of the request. Exploitation additionally requires a specific coupon Razorpay for WooCommerce WordPress plugin before 4.8.9 to be active on the site.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-104338"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "32eb99e3560bf735700d",
+      "title": "CVE-2026-104639: The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not sanitize and escape a value derived from an incoming webhook request before using it in a SQL query, allowing us",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104639",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not sanitize and escape a value derived from an incoming webhook request before using it in a SQL query, allowing users able to obtain the webhook secret (administrators) to perform SQL injection attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-104639"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "26849c4e04a79d1f914c",
+      "title": "CVE-2026-105970: The Thanh Toán Quét Mã QR Code Tự Động WordPress plugin through 2.0.1 does not properly verify the authenticity of incoming bank-transfer payment notifications on a default instal",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105970",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Thanh Toán Quét Mã QR Code Tự Động WordPress plugin through 2.0.1 does not properly verify the authenticity of incoming bank-transfer payment notifications on a default installation, allowing unauthenticated attackers to mark arbitrary WooCommerce orders as paid.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-105970"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "2e6d95f86bf97dd07704",
+      "title": "CVE-2026-106015: The Ecommerce Affiliate WordPress plugin through 1.0.0 does not restrict one-time password issuance and verification to the legitimate account owner, nor limit verification attempt",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106015",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Ecommerce Affiliate WordPress plugin through 1.0.0 does not restrict one-time password issuance and verification to the legitimate account owner, nor limit verification attempts, allowing unauthenticated attackers to take over any account, including administrators.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-106015"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "418bf1ee99c5129cc7e9",
+      "title": "CVE-2026-109925: The Productive Commerce WordPress plugin before 1.1.54 does not sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated attackers to perform S",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109925",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Productive Commerce WordPress plugin before 1.1.54 does not sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injection attacks.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-109925"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "fb7dc122fcbb531ab838",
+      "title": "CVE-2026-110132: The Sync Post With Other Site WordPress plugin before 1.9.4 does not properly authorize a content-management action for post types other than pages, allowing users with Contributor",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110132",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Sync Post With Other Site WordPress plugin before 1.9.4 does not properly authorize a content-management action for post types other than pages, allowing users with Contributor-level access or above to create and modify arbitrary custom post types, including reassigning content authorship.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110132"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "54b58e00df6851f70dd3",
+      "title": "CVE-2026-110963: The Userplace WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action available to unauthenticated users and publicly exposes the nonce that protect",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110963",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Userplace WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action available to unauthenticated users and publicly exposes the nonce that protects it, allowing unauthenticated attackers to create an administrator account or write arbitrary site options, leading to full site takeover.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-110963"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "16a7f256bd2f67c27b40",
+      "title": "CVE-2026-114432: The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a flaw in its temporary-file cleanup leave",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114432",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a flaw in its temporary-file cleanup leaves the uploaded file on disk, allowing unauthenticated users to upload arbitrary files to the site. On a stock Debian or Ubuntu Apache configuration, which lists directory contents and maps .phar to the PHP handler, the stored file can be located and executed, leading to Remote Code Execution. On other configurations, including nginx and Apache with .htaccess overrides enabled, the issue is limited to an arbitrary file written into the uploads directory, which may still be served as active content such as HTML or SVG from the site's own origin.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114432"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b801339d8871ffa9875b",
+      "title": "CVE-2026-122060: The WP Recipe Maker WordPress plugin before 10.9.2 does not check whether the post a recipe is embedded in is password protected before returning the recipe through its REST API an",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122060",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:04+00:00",
+      "summary": "The WP Recipe Maker WordPress plugin before 10.9.2 does not check whether the post a recipe is embedded in is password protected before returning the recipe through its REST API and structured data output, allowing unauthenticated users to read the full content of recipes in password-protected posts.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-122060"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6ca21cb932dd4511d604",
+      "title": "CVE-2026-103375: The Antom Payments WordPress plugin through 2.0.11 does not perform any ownership or authorisation check before returning an order's confirmation link, which contains its secret ke",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103375",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:03+00:00",
+      "summary": "The Antom Payments WordPress plugin through 2.0.11 does not perform any ownership or authorisation check before returning an order's confirmation link, which contains its secret key, to unauthenticated visitors, allowing attackers to view any customer's order details, including name, address, phone number and email.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-103375"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "7344f3438046914ba547",
+      "title": "CVE-2026-104307: The BackUpWordPress plugin before 3.15 does not perform a capability or nonce check on an AJAX action that cleans up its backup directory, allowing any authenticated user (Subscrib",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104307",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:03+00:00",
+      "summary": "The BackUpWordPress plugin before 3.15 does not perform a capability or nonce check on an AJAX action that cleans up its backup directory, allowing any authenticated user (Subscriber and above) to delete the BackUpWordPress plugin before 3.15's backup protection and working files, removing download protection from stored backups and disrupting in-progress backups.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-104307"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "1887a1d39485463371bd",
+      "title": "CVE-2026-104337: The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not verify ownership of an order before returning a coupon discount computed against that order, allowing unauthenti",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104337",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:03+00:00",
+      "summary": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not verify ownership of an order before returning a coupon discount computed against that order, allowing unauthenticated attackers to disclose the monetary value of arbitrary customer orders by enumerating order IDs.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-104337"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "690f4e07ce4afb23a687",
+      "title": "CVE-2026-103303: The Turisbook Booking System WordPress plugin through 1.3.8 does not have authorisation and CSRF checks when saving its settings, and does not sanitise and escape one of them befor",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103303",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T06:17:02+00:00",
+      "summary": "The Turisbook Booking System WordPress plugin through 1.3.8 does not have authorisation and CSRF checks when saving its settings, and does not sanitise and escape one of them before outputting it in an admin page, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks against administrators.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-103303"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d42453b1f00a623a824f",
+      "title": "CVE-2026-114713: The labeled-response module in UnrealIRCd 6.0.0 before 6.2.7.1 does not escape the IRCv3 \"label\" message tag when echoing it into replies, which allows any user on a network with t",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-08T03:16:33+00:00",
+      "summary": "The labeled-response module in UnrealIRCd 6.0.0 before 6.2.7.1 does not escape the IRCv3 \"label\" message tag when echoing it into replies, which allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-114713"
+      ],
+      "priority_score": 32,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "severidad alta/CVSS ≥ 7"
+      ],
+      "collected_at": "2026-11-08T09:30:41+00:00",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
     {
       "id": "9f0741fa58b9dab066c3",
       "title": "CVE-2026-123615: imgproxy 3.3.0 before 4.0.17 contains an out-of-bounds heap read and write in the ICO loader's BMP header reconstruction (vips_foreign_load_ico_header in vips/icoload.c) when an IC",
@@ -114784,369 +115451,6 @@
       ]
     },
     {
-      "id": "50a0d70e55cd289e4da1",
-      "title": "CVE-2026-120218: A flaw has been found in Typemill up to 2.26.0. The impacted element is the function ControllerApiImage::saveImage of the file system/typemill/Models/SvgSanitizer.php. Executing a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120218",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T07:17:26+00:00",
-      "summary": "A flaw has been found in Typemill up to 2.26.0. The impacted element is the function ControllerApiImage::saveImage of the file system/typemill/Models/SvgSanitizer.php. Executing a manipulation can lead to cross site scripting. The attack may be performed from remote. The exploit has been published and may be used. Upgrading to version 2.27.0 is sufficient to resolve this issue. This patch is called 9ca43c4a7b6764c5a6ac11a2ccc099b036ee3cef. It is recommended to upgrade the affected component.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120218"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 2.0,
-      "severity": "LOW",
-      "kev": false,
-      "epss": "0.002540000",
-      "epss_percentile": "0.171180000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "c0af841d437c1763e8c2",
-      "title": "CVE-2026-120217: A vulnerability was detected in Delgan loguru 0.7.3. The affected element is the function AnsiParser.feed of the file loguru/_colorizer.py of the component ANSI Color-Markup Parser",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120217",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T07:17:14+00:00",
-      "summary": "A vulnerability was detected in Delgan loguru 0.7.3. The affected element is the function AnsiParser.feed of the file loguru/_colorizer.py of the component ANSI Color-Markup Parser. Performing a manipulation results in inefficient regular expression complexity. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120217"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 2.1,
-      "severity": "LOW",
-      "kev": false,
-      "epss": "0.002710000",
-      "epss_percentile": "0.194070000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "0749c56897ec91b5b555",
-      "title": "CVE-2026-113481: The Media Library Assistant WordPress plugin before 3.44 does not check that the requesting user is allowed to view a post before disclosing which taxonomy terms are assigned to it",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113481",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:57+00:00",
-      "summary": "The Media Library Assistant WordPress plugin before 3.44 does not check that the requesting user is allowed to view a post before disclosing which taxonomy terms are assigned to it, allowing any authenticated user, such as a subscriber, to learn the term assignments of private attachments and posts.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113481"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.001620000",
-      "epss_percentile": "0.053900000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "36e07967cf6206bfd48d",
-      "title": "CVE-2026-113482: The Media Library Assistant WordPress plugin before 3.44 does not escape one of its shortcode attributes before outputting it in an attribute of generated links, allowing users wit",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113482",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:57+00:00",
-      "summary": "The Media Library Assistant WordPress plugin before 3.44 does not escape one of its shortcode attributes before outputting it in an attribute of generated links, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-113482"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 6.8,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.002350000",
-      "epss_percentile": "0.145900000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a595a6bad4a0695f0391",
-      "title": "CVE-2026-118168: The MapPress WordPress plugin before 2.97.15 does not restrict which user's data its front-end map embed handler renders, allowing unauthenticated visitors to retrieve the email a",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118168",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:57+00:00",
-      "summary": "The MapPress WordPress plugin before 2.97.15 does not restrict which user's data its front-end map embed handler renders, allowing unauthenticated visitors to retrieve the email address and display name of any user on the site by enumerating user IDs.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-118168"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.001970000",
-      "epss_percentile": "0.095280000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "526a51caa2555b00d27e",
-      "title": "CVE-2026-120198: A vulnerability has been found in WAVLINK WL-WN530BE1-A V251117. Affected is the function con_check_read_finish of the file /protocol.csp. Such manipulation of the argument group_n",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120198",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:57+00:00",
-      "summary": "A vulnerability has been found in WAVLINK WL-WN530BE1-A V251117. Affected is the function con_check_read_finish of the file /protocol.csp. Such manipulation of the argument group_name/IP-FROM leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120198"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "epss": "0.020700000",
-      "epss_percentile": "0.815110000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "634fd637f5c2aa0e3355",
-      "title": "CVE-2026-107342: The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.30 does not perform a capability check when its test-email handler resolves and returns a user's e",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107342",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:56+00:00",
-      "summary": "The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.30 does not perform a capability check when its test-email handler resolves and returns a user's email address, relying only on a nonce that is available to any logged-in user, allowing authenticated users with minimal privileges (Subscriber and above) to disclose the email address of any registered user, including administrators.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107342"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.001760000",
-      "epss_percentile": "0.071930000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "41ef1da149bd568fc3ff",
-      "title": "CVE-2026-107343: The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.30 does not perform a capability check on its test-email handler, relying only on a nonce that is",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107343",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T05:18:56+00:00",
-      "summary": "The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.30 does not perform a capability check on its test-email handler, relying only on a nonce that is available to any logged-in user, so a low-privileged user such as a Subscriber can make the site send email to an arbitrary recipient with a spoofed sender address.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-107343"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "kev": false,
-      "epss": "0.001520000",
-      "epss_percentile": "0.043920000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "24de4753bdc7b1a16ac5",
-      "title": "CVE-2026-120197: A flaw has been found in WAVLINK WL-WN530HG4B M_V260724. This impacts the function port_forward of the file /cgi-bin/wapi.cgi. This manipulation of the argument Name causes os comm",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120197",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T04:18:47+00:00",
-      "summary": "A flaw has been found in WAVLINK WL-WN530HG4B M_V260724. This impacts the function port_forward of the file /cgi-bin/wapi.cgi. This manipulation of the argument Name causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120197"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.016870000",
-      "epss_percentile": "0.771240000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "a02fcdcd135ea3cfd0fc",
-      "title": "CVE-2026-120195: A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the compon",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120195",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T04:18:46+00:00",
-      "summary": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument wlan_ssid leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120195"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "epss": "0.020700000",
-      "epss_percentile": "0.815110000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "092c4fe4438b424c6ce2",
-      "title": "CVE-2026-120196: A vulnerability was detected in WAVLINK WN579X3-D V250402. This affects the function port_forward of the file /cgi-bin/wapi.cgi. The manipulation of the argument Name results in os",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120196",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-01T04:18:46+00:00",
-      "summary": "A vulnerability was detected in WAVLINK WN579X3-D V250402. This affects the function port_forward of the file /cgi-bin/wapi.cgi. The manipulation of the argument Name results in os command injection. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-120196"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-06T22:25:26+00:00",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "kev": false,
-      "epss": "0.016870000",
-      "epss_percentile": "0.771240000",
-      "epss_date": "2026-11-06",
-      "epss_stale": true,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "c0588a787514ce74708f",
       "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
       "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
@@ -198916,31 +199220,31 @@
       "source": "NVD CVE API",
       "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
       "ok": true,
-      "count": 3462,
+      "count": 3474,
       "error": null,
-      "checked_at": "2026-11-08T02:30:43+00:00",
+      "checked_at": "2026-11-08T09:30:33+00:00",
       "http_status": 200,
-      "total_results": 3462,
+      "total_results": 3474,
       "partial": false,
-      "duration_ms": 8372
+      "duration_ms": 7944
     },
     {
       "source": "FIRST EPSS",
       "url": "https://api.first.org/data/v1/epss",
       "ok": true,
-      "count": 4917,
+      "count": 4906,
       "error": null,
-      "checked_at": "2026-11-08T02:30:52+00:00",
-      "cves_requested": 125,
-      "epss_checked_at": "2026-11-08T02:30:52+00:00",
-      "duration_ms": 258
+      "checked_at": "2026-11-08T09:30:41+00:00",
+      "cves_requested": 23,
+      "epss_checked_at": "2026-11-08T09:30:42+00:00",
+      "duration_ms": 276
     }
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 5877,
-    "items_after_deduplication": 5861,
-    "items_published": 5861,
+    "items_before_deduplication": 5889,
+    "items_after_deduplication": 5873,
+    "items_published": 5873,
     "items_stale_preserved": 0,
     "sources_ok": 30,
     "sources_total": 31
