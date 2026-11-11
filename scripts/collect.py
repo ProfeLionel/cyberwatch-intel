@@ -384,6 +384,102 @@ def fetch_nvd(source: dict) -> tuple[list[dict], dict]:
         return [], status
 
 
+def fetch_cve_list_v5(source: dict) -> tuple[list[dict], dict]:
+    """Recoge CVE publicados recientemente desde el delta más reciente de CVE List V5."""
+    started = time.monotonic()
+    status = {"source": source["name"], "url": source["url"], "ok": False,
+              "count": 0, "error": None, "checked_at": now_iso()}
+    try:
+        response = SESSION.get(source["url"], timeout=TIMEOUT)
+        status["http_status"] = response.status_code
+        response.raise_for_status()
+        batch = response.json()
+        if not isinstance(batch, dict) or not isinstance(batch.get("new"), list) or not isinstance(batch.get("updated"), list):
+            raise ValueError("La respuesta no coincide con el formato delta de CVE List V5.")
+
+        records = {}
+        for change in batch["new"] + batch["updated"]:
+            if not isinstance(change, dict):
+                continue
+            cve_id = str(change.get("cveId", "")).upper()
+            record_url = change.get("githubLink", "")
+            parsed_record_url = urlsplit(record_url) if isinstance(record_url, str) else None
+            if (CVE_PATTERN.fullmatch(cve_id) and parsed_record_url
+                    and parsed_record_url.scheme == "https"
+                    and parsed_record_url.netloc == "raw.githubusercontent.com"
+                    and parsed_record_url.path.startswith("/CVEProject/cvelistV5/main/cves/")):
+                records[cve_id] = record_url
+
+        max_records = min(max(int(source.get("max_records", 100)), 1), 200)
+        selected = list(records.items())[:max_records]
+        lookback = max(int(source.get("lookback_days", 7)), 1)
+        cutoff = datetime.now(timezone.utc) - timedelta(days=lookback)
+        items = []
+        skipped_outside_window = 0
+        for cve_id, record_url in selected:
+            record_response = SESSION.get(record_url, timeout=TIMEOUT)
+            record_response.raise_for_status()
+            record = record_response.json()
+            metadata = record.get("cveMetadata", {})
+            if metadata.get("state") != "PUBLISHED":
+                continue
+            containers = record.get("containers", {})
+            cna = containers.get("cna", {})
+            published_raw = metadata.get("datePublished") or metadata.get("dateReserved")
+            published = parse_date(published_raw)
+            if not published or datetime.fromisoformat(published.replace("Z", "+00:00")) < cutoff:
+                skipped_outside_window += 1
+                continue
+            descriptions = cna.get("descriptions", [])
+            description = next((d.get("value", "") for d in descriptions if d.get("lang") == "en"), "")
+            description = description or next((d.get("value", "") for d in descriptions), "")
+            title = cna.get("title") or f"{cve_id}: {description[:180]}"
+            cvss = severity = None
+            for metric in (cna.get("metrics") or []):
+                if not isinstance(metric, dict):
+                    continue
+                cvss_data = next((metric[key] for key in ("cvssV4_0", "cvssV3_1", "cvssV3_0", "cvssV2_0")
+                                  if isinstance(metric.get(key), dict)), None)
+                if cvss_data:
+                    cvss = cvss_data.get("baseScore")
+                    severity = cvss_data.get("baseSeverity")
+                    break
+            affected = cna.get("affected") or []
+            vendors = sorted({str(entry.get("vendor")) for entry in affected
+                              if isinstance(entry, dict) and entry.get("vendor")})
+            products = sorted({str(entry.get("product")) for entry in affected
+                               if isinstance(entry, dict) and entry.get("product")})
+            item = base_item(
+                title=title,
+                link=f"https://nvd.nist.gov/vuln/detail/{cve_id}",
+                source=source["name"],
+                category=source.get("category", "Vulnerabilidades (CVE Program)"),
+                published=published,
+                summary=description,
+                item_type="vulnerability",
+                extra={"cves": [cve_id], "cvss": cvss, "severity": severity,
+                       "kev": False, "vendor": ", ".join(vendors) or None,
+                       "product": ", ".join(products) or None,
+                       "cve_record_url": f"https://www.cve.org/CVERecord?id={cve_id}"}
+            )
+            if item:
+                items.append(item)
+        status.update({"ok": True, "count": len(items), "batch_fetch_time": batch.get("fetchTime"),
+                       "records_seen": len(records), "records_checked": len(selected),
+                       "skipped_outside_lookback": skipped_outside_window,
+                       "partial": len(records) > max_records})
+        if status["partial"]:
+            status["error"] = f"Lote limitado a {max_records} de {len(records)} registros CVE."
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
+        logging.info("%s: %s CVE recientes", source["name"], len(items))
+        return items, status
+    except Exception as exc:
+        status["error"] = str(exc)[:300]
+        status["duration_ms"] = round((time.monotonic() - started) * 1000)
+        logging.warning("%s: %s", source["name"], status["error"])
+        return [], status
+
+
 def enrich_epss(items: list[dict], previous: dict | None = None) -> dict:
     """Añade probabilidad EPSS de FIRST sin mezclarla con CVSS o CISA KEV."""
     started = time.monotonic()
@@ -528,6 +624,8 @@ def main() -> None:
             items, status = fetch_cisa_kev(source)
         elif source.get("type") == "nvd_recent":
             items, status = fetch_nvd(source)
+        elif source.get("type") == "cve_list_v5_recent":
+            items, status = fetch_cve_list_v5(source)
         else:
             continue
         all_items.extend(items)
