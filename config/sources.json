@@ -287,9 +287,31 @@
       ]
     },
     {
-      "name": "Oracle Security Alerts",
-      "url": "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml",
-      "category": "Avisos de seguridad / Vulnerabilidades de software empresarial",
+      "name": "CVEFeed.io — Últimas CVE",
+      "url": "https://cvefeed.io/rssfeed/latest.xml",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "url": "https://cvefeed.io/rssfeed/severity/high.xml",
+      "category": "Vulnerabilidades de alta severidad",
+      "region": "Global",
+      "sector": [
+        "publico",
+        "privado",
+        "defensa"
+      ]
+    },
+    {
+      "name": "AssureStart — CVE de proveedores (CVSS ≥ 7)",
+      "url": "https://cve.assurestart.co/api/feed.xml?term=cisco,aruba,fortinet,f5,vmware,hpe,avigilon,checkpoint,solarwinds,microsoft&cvss_min=7",
+      "category": "Vulnerabilidades de proveedores",
       "region": "Global",
       "sector": [
         "publico",
@@ -314,6 +336,15 @@
       "region": "Global",
       "lookback_days": 7,
       "results_per_page": 2000
+    },
+    {
+      "name": "CVE List V5 — catálogo oficial (cambios recientes)",
+      "type": "cve_list_v5_recent",
+      "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/delta.json",
+      "category": "Vulnerabilidades (CVE Program)",
+      "region": "Global",
+      "lookback_days": 7,
+      "max_records": 100
     }
   ]
 }
