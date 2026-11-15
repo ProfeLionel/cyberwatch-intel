@@ -1,7 +1,354 @@
 {
-  "generated_at": "2026-11-14T23:00:47+00:00",
-  "last_checked_at": "2026-11-14T23:00:47+00:00",
+  "generated_at": "2026-11-15T02:42:05+00:00",
+  "last_checked_at": "2026-11-15T02:42:05+00:00",
   "items": [
+    {
+      "id": "c01b67ec2f48021627ce",
+      "title": "Linux Foundation Magma Host Middleware middleware.ts hostOrgMiddleware authorization",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129357",
+      "source": "CVE List V5 — catálogo oficial (cambios recientes)",
+      "category": "Vulnerabilidades (CVE Program)",
+      "region": "Global",
+      "published_at": "2026-11-15T02:30:25+00:00",
+      "summary": "A vulnerability was determined in Linux Foundation Magma up to 1.9.0. This issue affects the function hostOrgMiddleware of the file nms/server/host/middleware.ts of the component Host Middleware. This manipulation of the argument role causes missing authorization. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129357"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:42:04+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "vendor": "Linux Foundation",
+      "product": "Magma",
+      "cve_record_url": "https://www.cve.org/CVERecord?id=CVE-2026-129357",
+      "related_sources": [
+        "CVE List V5 — catálogo oficial (cambios recientes)"
+      ]
+    },
+    {
+      "id": "85591d3efedb6f28d980",
+      "title": "CVE-2026-129454 - Zr.Admin.NET commit 85cff6a through eb9228a IDOR via Workflow Instance Endpoint",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129454",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:49:37+00:00",
+      "summary": "CVE ID : CVE-2026-129454 Published : Nov. 15, 2026, 1:49 a.m. | 31 minutes ago Description : Zr.Admin.NET commit 85cff6a through commit eb9228a contains an insecure direct object reference vulnerability in GET /workflow/instance/{instanceId} that lets logged-in users view others' workflow instances. Authenticated low-privilege attackers can enumerate sequential instance IDs to read other users' approval requests, including submitted form contents, applicant details and approval records. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129454"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "2559363751e32d750800",
+      "title": "CVE-2026-129455 - Zr.Admin.NET commit e6ceaf4 through eb9228a IDOR via front/article API",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129455",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:49:37+00:00",
+      "summary": "CVE ID : CVE-2026-129455 Published : Nov. 15, 2026, 1:49 a.m. | 31 minutes ago Description : Zr.Admin.NET commit e6ceaf4 through commit eb9228a contains an insecure direct object reference vulnerability in FrontArticleController that allows authenticated users to change other users' article visibility and pin state. Attackers can send PUT /front/article/changePublic with their own UserId in the body to make private articles public, then read them anonymously via GET /front/article/{id}. Severity: 5.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129455"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "3266b9d2e1ec9e003f9e",
+      "title": "CVE-2026-129464 - Zr.Admin.NET commit 0ee1ab8 through eb9228a Path Traversal via DownloadFile",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129464",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:49:36+00:00",
+      "summary": "CVE ID : CVE-2026-129464 Published : Nov. 15, 2026, 1:49 a.m. | 31 minutes ago Description : Zr.Admin.NET commit 0ee1ab8 through commit eb9228a contains a path traversal vulnerability that allows any logged-in user to read arbitrary server files via the path parameter of /common/DownloadFile. Attackers can supply absolute paths or ../ sequences to read appsettings files and use the JwtSettings SecretKey to forge administrator tokens. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129464"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "3b27487016507d09b90c",
+      "title": "CVE-2026-129465 - Zr.Admin.NET commit af07ffc through eb9228a IDOR via /system/user/profile",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129465",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:49:35+00:00",
+      "summary": "CVE ID : CVE-2026-129465 Published : Nov. 15, 2026, 1:49 a.m. | 31 minutes ago Description : Zr.Admin.NET commit af07ffc through commit eb9228a contains an insecure direct object reference vulnerability in SysProfileController.UpdateProfile that allows any authenticated user to modify other accounts via UserId. Attackers can set the administrator's phone number to one they control, request an SMS code via /checkMobile, and log in through /PhoneLogin to take over the administrator account. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129465"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "c5197f574038521e4073",
+      "title": "CVE-2026-129466 - Zr.Admin.NET commit 1845017 through eb9228a Missing Authorization via /system/Tasks/get",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129466",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:49:34+00:00",
+      "summary": "CVE ID : CVE-2026-129466 Published : Nov. 15, 2026, 1:49 a.m. | 31 minutes ago Description : Zr.Admin.NET commit 1845017 through commit eb9228a contains a missing authorization vulnerability in TasksController.Get that allows any logged-in user to read scheduled task details without the monitor:job permission. Attackers can obtain task ids from the unprotected /monitor/jobLog/list endpoint and retrieve job parameters, API URLs, cron expressions, and stored SQL statements. Severity: 5.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129466"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "26965a2f21e856d27c14",
+      "title": "CVE-2026-129355 - sigoden dufs WebDAV COPY Operation server.rs authorization",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129355",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:18:03+00:00",
+      "summary": "CVE ID : CVE-2026-129355 Published : Nov. 15, 2026, 1:18 a.m. | 1 hour, 2 minutes ago Description : A vulnerability has been found in sigoden dufs up to 0.46.0. This affects an unknown part of the file src/server.rs of the component WebDAV COPY Operation Handler. The manipulation leads to incorrect authorization. The attack is possible to be carried out remotely. Upgrading to version 0.47.0 is able to mitigate this issue. The identifier of the patch is fba13dffb9c65b5e5e26419f64de709200277a04. It is advisable to upgrade the affected component. Severity: 6.9 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129355"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "60ee01083c169b76f433",
+      "title": "CVE-2026-129354 - D-Link DIR-600L HNAP cgibin hnap_main stack-based overflow",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129354",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:18:03+00:00",
+      "summary": "CVE ID : CVE-2026-129354 Published : Nov. 15, 2026, 1:18 a.m. | 1 hour, 2 minutes ago Description : A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used. Severity: 10.0 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129354"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "1d4b54b334be4c4bc7a9",
+      "title": "CVE-2026-129356 - vllm-project vllm Common Prefix single_type_kv_cache_manager.py race condition",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129356",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T01:15:24+00:00",
+      "summary": "CVE ID : CVE-2026-129356 Published : Nov. 15, 2026, 1:15 a.m. | 1 hour, 5 minutes ago Description : A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common Prefix Handler. The manipulation results in race condition. The attack may be performed from remote. Attacks of this nature are highly complex. It is stated that the exploitability is difficult. The exploit has been made public and could be used. Upgrading to version 0.32.0 is able to resolve this issue. The patch is identified as e687a251bb056fa527846633f7a1b0a6c0f42374. You should upgrade the affected component. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129356"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "c6ad3478b41c557a94ca",
+      "title": "CVE-2026-129353 - D-Link DIR-600L authentication.cgi authenticationcgi_main stack-based overflow",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129353",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-15T00:16:51+00:00",
+      "summary": "CVE ID : CVE-2026-129353 Published : Nov. 15, 2026, 12:16 a.m. | 2 hours, 4 minutes ago Description : A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used. Severity: 10.0 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129353"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "fa2f56f4f65f942541c0",
+      "title": "CVE-2026-129352 - TRENDnet TEW-657BRM upgrade_flash.cgi stack-based overflow",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129352",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-14T23:16:48+00:00",
+      "summary": "CVE ID : CVE-2026-129352 Published : Nov. 14, 2026, 11:16 p.m. | 3 hours, 4 minutes ago Description : A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" Severity: 9.1 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-129352"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-15T02:41:27+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
     {
       "id": "bb0cda9dbcc285ad05c4",
       "title": "CVE-2026-129351 - TRENDnet TEW-657BRM mini_httpd setup.cgi sprintf out-of-bounds write",
@@ -9,8 +356,8 @@
       "source": "CVEFeed.io — Últimas CVE",
       "category": "Vulnerabilidades",
       "region": "Global",
-      "published_at": "2026-11-14T22:30:23+00:00",
-      "summary": "CVE ID : CVE-2026-129351 Published : Nov. 14, 2026, 10:30 p.m. | 20 minutes ago Description : A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "published_at": "2026-11-14T23:16:47+00:00",
+      "summary": "CVE ID : CVE-2026-129351 Published : Nov. 14, 2026, 11:16 p.m. | 3 hours, 4 minutes ago Description : A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer. Severity: 10.0 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -23,46 +370,15 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
         "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "34ce5623965801708da3",
-      "title": "TRENDnet TEW-657BRM mini_httpd setup.cgi sprintf out-of-bounds write",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129351",
-      "source": "CVE List V5 — catálogo oficial (cambios recientes)",
-      "category": "Vulnerabilidades (CVE Program)",
-      "region": "Global",
-      "published_at": "2026-11-14T22:30:23+00:00",
-      "summary": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129351"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-14T23:00:46+00:00",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "kev": false,
-      "vendor": "TRENDnet",
-      "product": "TEW-657BRM",
-      "cve_record_url": "https://www.cve.org/CVERecord?id=CVE-2026-129351",
-      "related_sources": [
-        "CVE List V5 — catálogo oficial (cambios recientes)"
       ]
     },
     {
@@ -73,7 +389,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T20:17:40+00:00",
-      "summary": "CVE ID : CVE-2026-129456 Published : Nov. 14, 2026, 8:17 p.m. | 2 hours, 33 minutes ago Description : In FRRouting, bgpd accepts a Tunnel Encapsulation attribute (type 23) whose outer TLV length does not match the length of the attribute: the mismatch is only logged and the attribute is processed anyway. A BGP neighbor can send UPDATE messages carrying such an attribute that put the reference count of the attribute's interned sub-TLV chain out of balance, so that the chain is freed while routes stored by bgpd (Adj-RIB-In entries and RIB paths) still point to it. When those routes are later replaced, withdrawn or cleared, for example when the session goes down, bgpd reads the freed memory, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memory is written to and freed again, consequences beyond a crash cannot be ruled out. An established BGP session is required. bgpd processes attribute 23 from every neighbor, including eB",
+      "summary": "CVE ID : CVE-2026-129456 Published : Nov. 14, 2026, 8:17 p.m. | 6 hours, 3 minutes ago Description : In FRRouting, bgpd accepts a Tunnel Encapsulation attribute (type 23) whose outer TLV length does not match the length of the attribute: the mismatch is only logged and the attribute is processed anyway. A BGP neighbor can send UPDATE messages carrying such an attribute that put the reference count of the attribute's interned sub-TLV chain out of balance, so that the chain is freed while routes stored by bgpd (Adj-RIB-In entries and RIB paths) still point to it. When those routes are later replaced, withdrawn or cleared, for example when the session goes down, bgpd reads the freed memory, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memory is written to and freed again, consequences beyond a crash cannot be ruled out. An established BGP session is required. bgpd processes attribute 23 from every neighbor, including eBG",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -86,7 +402,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -104,7 +420,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T20:17:39+00:00",
-      "summary": "CVE ID : CVE-2015-10149 Published : Nov. 14, 2026, 8:17 p.m. | 2 hours, 33 minutes ago Description : Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine. read_session_id returns the cookie value as the session id without checking its characters, and Dancer hands it to the session engine to load the session. A remote attacker may cause path traversal or injection in a session engine that uses the id in a file path, cache command or query without checking it. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2015-10149 Published : Nov. 14, 2026, 8:17 p.m. | 6 hours, 3 minutes ago Description : Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine. read_session_id returns the cookie value as the session id without checking its characters, and Dancer hands it to the session engine to load the session. A remote attacker may cause path traversal or injection in a session engine that uses the id in a file path, cache command or query without checking it. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -117,7 +433,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -135,7 +451,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T18:17:21+00:00",
-      "summary": "CVE ID : CVE-2026-129447 Published : Nov. 14, 2026, 6:17 p.m. | 4 hours, 33 minutes ago Description : Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject javascript: hyperlinks by supplying crafted DBML table url, headercolor, or TableGroup color settings. Attackers can send a crafted SVG link that, when opened and the table header clicked, executes attacker JavaScript in the Kroki origin. Severity: 6.1 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129447 Published : Nov. 14, 2026, 6:17 p.m. | 8 hours, 3 minutes ago Description : Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject javascript: hyperlinks by supplying crafted DBML table url, headercolor, or TableGroup color settings. Attackers can send a crafted SVG link that, when opened and the table header clicked, executes attacker JavaScript in the Kroki origin. Severity: 6.1 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -148,7 +464,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -196,7 +512,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T18:17:20+00:00",
-      "summary": "CVE ID : CVE-2026-129267 Published : Nov. 14, 2026, 6:17 p.m. | 4 hours, 33 minutes ago Description : A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file app/Controllers/MediaController.php. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been made public and could be used. The pull request to fix this issue awaits acceptance. Severity: 4.0 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129267 Published : Nov. 14, 2026, 6:17 p.m. | 8 hours, 3 minutes ago Description : A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file app/Controllers/MediaController.php. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been made public and could be used. The pull request to fix this issue awaits acceptance. Severity: 4.0 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -209,7 +525,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -285,7 +601,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T17:16:53+00:00",
-      "summary": "CVE ID : CVE-2026-129264 Published : Nov. 14, 2026, 5:16 p.m. | 5 hours, 34 minutes ago Description : A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the component VOC Decoder. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The name of the patch is 0b40408b. A patch should be applied to remediate this issue. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product. Severity: 6.5 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129264 Published : Nov. 14, 2026, 5:16 p.m. | 9 hours, 4 minutes ago Description : A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the component VOC Decoder. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The name of the patch is 0b40408b. A patch should be applied to remediate this issue. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product. Severity: 6.5 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -298,7 +614,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -346,7 +662,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T17:16:52+00:00",
-      "summary": "CVE ID : CVE-2026-129262 Published : Nov. 14, 2026, 5:16 p.m. | 5 hours, 34 minutes ago Description : A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this vulnerability is the function DiyFileUpload of the file /ws.asmx. This manipulation causes unrestricted upload. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 7.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129262 Published : Nov. 14, 2026, 5:16 p.m. | 9 hours, 4 minutes ago Description : A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this vulnerability is the function DiyFileUpload of the file /ws.asmx. This manipulation causes unrestricted upload. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 7.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -359,7 +675,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -407,7 +723,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:04+00:00",
-      "summary": "CVE ID : CVE-2026-129261 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys of the component IOCTL Handler. Performing a manipulation results in exposed ioctl with insufficient access control. The attack is only possible with local access. Severity: 9.3 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129261 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys of the component IOCTL Handler. Performing a manipulation results in exposed ioctl with insufficient access control. The attack is only possible with local access. Severity: 9.3 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -420,7 +736,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -439,7 +755,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:04+00:00",
-      "summary": "CVE ID : CVE-2026-129260 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file local.provider.ts of the component Custom Page Handler. The manipulation of the argument path leads to path traversal. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. Upgrading to version test-20261013 is able to resolve this issue. The identifier of the patch is d63aa163f10b6dc1080e2368fe8e71aa95b765cb. Upgrading the affected component is advised. Severity: 6.6 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129260 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file local.provider.ts of the component Custom Page Handler. The manipulation of the argument path leads to path traversal. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. Upgrading to version test-20261013 is able to resolve this issue. The identifier of the patch is d63aa163f10b6dc1080e2368fe8e71aa95b765cb. Upgrading the affected component is advised. Severity: 6.6 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -452,7 +768,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -470,7 +786,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:04+00:00",
-      "summary": "CVE ID : CVE-2026-127115 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and including, 2.10.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable when a form configured with the public_submit option is published — a condition met by the plugin's bundled Post Simple template out of the box. Severity: 5.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-127115 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and including, 2.10.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable when a form configured with the public_submit option is published — a condition met by the plugin's bundled Post Simple template out of the box. Severity: 5.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -483,7 +799,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -591,7 +907,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:03+00:00",
-      "summary": "CVE ID : CVE-2026-120687 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute inside .wp-caption container' parameter in all versions up to, and including, 2.8.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable by Subscriber-level users when bbPress is installed, as its bbp_filter_kses filter chain permits img and pre tags while preserving numeric character references inside attribute values, allowing encoded payloads to bypass save-time sanitization and reach the vulnerable sink fully intact. Exploitation by attackers with subscriber-level access and above requires that bbPress 2.6.20 is installed, a public forum exists, and either the first topic has already been approved or subsequent topics clear moderation. On a default installation, where that is not configured, the vulnerability requires attackers with contributor-l",
+      "summary": "CVE ID : CVE-2026-120687 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute inside .wp-caption container' parameter in all versions up to, and including, 2.8.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable by Subscriber-level users when bbPress is installed, as its bbp_filter_kses filter chain permits img and pre tags while preserving numeric character references inside attribute values, allowing encoded payloads to bypass save-time sanitization and reach the vulnerable sink fully intact. Exploitation by attackers with subscriber-level access and above requires that bbPress 2.6.20 is installed, a public forum exists, and either the first topic has already been approved or subsequent topics clear moderation. On a default installation, where that is not configured, the vulnerability requires attackers with contributor-l",
       "type": "article",
       "tags": [
         "vulnerabilidad",
@@ -605,7 +921,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -623,7 +939,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:03+00:00",
-      "summary": "CVE ID : CVE-2026-116753 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all versions up to, and including, 2.9.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Successful exploitation requires the target CF7 form to have the 'Save every step' option enabled and the Database for Contact Form 7 companion plugin to be active with its 'Expandable' table option enabled, both of which are disabled by default. Severity: 7.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-116753 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all versions up to, and including, 2.9.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Successful exploitation requires the target CF7 form to have the 'Save every step' option enabled and the Database for Contact Form 7 companion plugin to be active with its 'Expandable' table option enabled, both of which are disabled by default. Severity: 7.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -636,7 +952,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -715,7 +1031,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T16:17:02+00:00",
-      "summary": "CVE ID : CVE-2026-110531 Published : Nov. 14, 2026, 4:17 p.m. | 6 hours, 33 minutes ago Description : The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including, 8.1.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This requires the administrator-controlled \"Allow visitors to upload videos to their profile\" setting to be enabled, without which the vulnerable save routine is inaccessible to Subscriber-level users. Severity: 6.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-110531 Published : Nov. 14, 2026, 4:17 p.m. | 10 hours, 3 minutes ago Description : The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including, 8.1.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This requires the administrator-controlled \"Allow visitors to upload videos to their profile\" setting to be enabled, without which the vulnerable save routine is inaccessible to Subscriber-level users. Severity: 6.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -728,7 +1044,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -776,7 +1092,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T15:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-129259 Published : Nov. 14, 2026, 3:16 p.m. | 7 hours, 34 minutes ago Description : A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the component Image Upload Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 4.0 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129259 Published : Nov. 14, 2026, 3:16 p.m. | 11 hours, 3 minutes ago Description : A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the component Image Upload Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 4.0 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -789,7 +1105,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -807,7 +1123,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-14T15:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-129258 Published : Nov. 14, 2026, 3:16 p.m. | 7 hours, 34 minutes ago Description : A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file /cgi-bin/upgrade of the component Firmware Upgrade Handler. Such manipulation of the argument upgradeFile leads to insufficient verification of data authenticity. The attack may be launched remotely. The exploit is publicly available and might be used. Severity: 9.1 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129258 Published : Nov. 14, 2026, 3:16 p.m. | 11 hours, 3 minutes ago Description : A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file /cgi-bin/upgrade of the component Firmware Upgrade Handler. Such manipulation of the argument upgradeFile leads to insufficient verification of data authenticity. The attack may be launched remotely. The exploit is publicly available and might be used. Severity: 9.1 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -820,7 +1136,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:27+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -920,37 +1236,6 @@
       ]
     },
     {
-      "id": "df0405b51ae766dd4d3c",
-      "title": "CVE-2011-10042 - HTTP::Session versions before 0.43 for Perl allow memcached command injection via unfiltered session ids in HTTP::Session::Store::Memcached",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2011-10042",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T14:17:21+00:00",
-      "summary": "CVE ID : CVE-2011-10042 Published : Nov. 14, 2026, 2:17 p.m. | 8 hours, 33 minutes ago Description : HTTP::Session versions before 0.43 for Perl allow memcached command injection via unfiltered session ids in HTTP::Session::Store::Memcached. The session id from the client's cookie reaches memcached unchanged as the cache key. A CR and LF in the session id end the cache command early, and the server reads the bytes after them as further commands. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2011-10042"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
       "id": "83667d87cc43a0b5bf83",
       "title": "CVE-2011-10042: HTTP::Session versions before 0.43 for Perl allow memcached command injection via unfiltered session ids in HTTP::Session::Store::Memcached. The session id from the client's cooki",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-10042",
@@ -984,11 +1269,11 @@
       "id": "d073be42c5a8976d282c",
       "title": "CVE-2026-19907 - Shipo 1.6 - 1.8.0 - Authentication Bypass to Administrator",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-19907",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T13:17:23+00:00",
-      "summary": "CVE ID : CVE-2026-19907 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : The Shipo plugin for WordPress is vulnerable to Authentication Bypass in versions 1.6 through 1.8.0. This is due to the `authenticate_rest_user()` function parsing the `LOGGED_IN_COOKIE` value and authenticating the named user without verifying the cookie's cryptographic signature. The function's intended `/wp-json/shipo/` route restriction can also be bypassed by placing that substring in the query string of an unrelated REST endpoint. This makes it possible for unauthenticated attackers who know an existing username to impersonate that user, including an administrator, and perform authorized actions through the REST API, including creating another administrator account. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-19907 Published : Nov. 14, 2026, 1:17 p.m. | 13 hours, 5 minutes ago Description : The Shipo plugin for WordPress is vulnerable to Authentication Bypass in versions 1.6 through 1.8.0. This is due to the `authenticate_rest_user()` function parsing the `LOGGED_IN_COOKIE` value and authenticating the named user without verifying the cookie's cryptographic signature. The function's intended `/wp-json/shipo/` route restriction can also be bypassed by placing that substring in the query string of an unrelated REST endpoint. This makes it possible for unauthenticated attackers who know an existing username to impersonate that user, including an administrator, and perform authorized actions through the REST API, including creating another administrator account. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1001,15 +1286,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
@@ -1046,11 +1330,11 @@
       "id": "c49ec3007a3572e0117c",
       "title": "CVE-2026-18053 - MemberDash <= 1.8.7 - Authenticated (Subscriber+) Privilege Escalation to Administrator via Edit Profile 'id' Parameter",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-18053",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-18053 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : The MemberDash plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.8.7. This is due to a mass-assignment vulnerability in the `user_account_manager()` function's edit_profile branch, where all submitted `$_POST` fields are iterated and directly assigned to the current member object via the `MS_Model` `__set()` magic method with no field allowlist and no capability or ownership check on the submitted `id` parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject an arbitrary user ID via the `id` parameter — overwriting any WordPress user's email address and password, including the site administrator's — and subsequently use those modified credentials to gain full administrative access to the site. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-18053 Published : Nov. 14, 2026, 1:17 p.m. | 13 hours, 5 minutes ago Description : The MemberDash plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.8.7. This is due to a mass-assignment vulnerability in the `user_account_manager()` function's edit_profile branch, where all submitted `$_POST` fields are iterated and directly assigned to the current member object via the `MS_Model` `__set()` magic method with no field allowlist and no capability or ownership check on the submitted `id` parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject an arbitrary user ID via the `id` parameter — overwriting any WordPress user's email address and password, including the site administrator's — and subsequently use those modified credentials to gain full administrative access to the site. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1063,26 +1347,25 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
       "id": "1ce21a00aa9c8e0d6d17",
       "title": "CVE-2026-129433 - Dokploy before 0.31.1 OS Command Injection via Compose Backup serviceName",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-129433",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129433 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter. Attackers can store serviceName values with shell metacharacters through backup.create or backup.update tRPC procedures, executing commands as root when scheduled backups run and taking over the host via the mounted Docker socket. Severity: 9.9 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129433 Published : Nov. 14, 2026, 1:17 p.m. | 13 hours, 5 minutes ago Description : Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter. Attackers can store serviceName values with shell metacharacters through backup.create or backup.update tRPC procedures, executing commands as root when scheduled backups run and taking over the host via the mounted Docker socket. Severity: 9.9 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1095,171 +1378,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "3f4c19139161108d8718",
-      "title": "CVE-2026-129432 - Ettercap through 0.8.5.1 Heap Out-of-Bounds Read in NFS mountd Dissector",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129432",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129432 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Ettercap through 0.8.5.1 contains a heap out-of-bounds read vulnerability in dissector_mountd() in src/dissectors/ec_mountd.c that validates RPC credential and directory lengths independently rather than against the packet end. Network-adjacent attackers can send a crafted MOUNT MNT call to read up to 100 bytes past the heap buffer, leaking memory to the console and logs. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad",
-        "filtracion"
-      ],
-      "cves": [
-        "CVE-2026-129432"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "f14af5c9a7a4591741c1",
-      "title": "CVE-2026-129431 - Ettercap through 0.8.5.1 Heap Out-of-Bounds Read via SOCKS5 Dissector",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129431",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129431 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Ettercap through 0.8.5.1 contains a heap out-of-bounds read vulnerability in dissector_socks() in src/dissectors/ec_socks.c that allows network-adjacent attackers to read heap memory via unchecked SOCKS5 username/password lengths. Attackers can send a crafted SOCKS5 authentication packet observed by Ettercap to read up to 255 bytes past the heap buffer, disclosing memory printed and logged as captured credentials. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129431"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "e3ac13fb40965d755c6b",
-      "title": "CVE-2026-129430 - axeloz filesharing before 2.14.3 Stored XSS via Bundle Description Markdown Links",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129430",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129430 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Axeloz Filesharing before 2.14.3 contains a stored cross-site scripting vulnerability that allows authenticated users to inject script by storing raw HTML or javascript: Markdown links in bundle descriptions. Recipients viewing the public bundle preview page execute the script via Alpine x-html, letting attackers steal the owner_token from localStorage and issue owner-scoped requests against victim bundles. Severity: 5.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129430"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "bf22ca3c43fce8c32f3a",
-      "title": "CVE-2026-129429 - Frappe india-payroll before 16.0.4 Missing Authorization via Tax Regime Selector",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129429",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129429 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Frappe india-payroll before 16.0.4 contains a missing authorization vulnerability in the get_employee_details, compute_tax_comparison and set_tax_regime methods of tax_regime_selector.py that allows authenticated low-privileged users to access other employees' payroll data. Attackers can supply another employee identifier to read base pay and earning and deduction components, or change the tax regime on draft Salary Structure Assignments to affect tax withholding. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129429"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "c2bae888f1b4c3e95e3d",
-      "title": "CVE-2026-129428 - Pulse 5.0.17 before 6.8.0 Missing Authorization via AI Assistant Approval API",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-129428",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-14T13:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-129428 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage approval requests. Attackers can list pending requests to expose proposed commands and targets, and approve or deny other users' requests, altering decision and audit state. Severity: 5.4 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129428"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
@@ -1477,11 +1603,11 @@
       "id": "5085c64613c5564b9b8e",
       "title": "CVE-2026-129255 - CoolerMaster MASTERPLUS+ Device Driver WinRing0x64.sys sub_11504 default permission",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-129255",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T13:17:21+00:00",
-      "summary": "CVE ID : CVE-2026-129255 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 33 minutes ago Description : A vulnerability was identified in CoolerMaster MASTERPLUS+ 1.9.6. This affects the function sub_11504 in the library WinRing0x64.sys of the component Device Driver. The manipulation of the argument PhysicalAddress leads to incorrect default permissions. The attack can only be performed from a local environment. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 9.3 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129255 Published : Nov. 14, 2026, 1:17 p.m. | 13 hours, 5 minutes ago Description : A vulnerability was identified in CoolerMaster MASTERPLUS+ 1.9.6. This affects the function sub_11504 in the library WinRing0x64.sys of the component Device Driver. The manipulation of the argument PhysicalAddress leads to incorrect default permissions. The attack can only be performed from a local environment. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 9.3 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1494,15 +1620,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
@@ -1573,7 +1698,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T13:17:20+00:00",
-      "summary": "CVE ID : CVE-2026-120522 Published : Nov. 14, 2026, 1:17 p.m. | 9 hours, 28 minutes ago Description : The Cloud Storage Manager for Fluent Forms – Google Drive, Dropbox, OneDrive, S3 Uploads plugin for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 1.2.0. This is due to missing authorization checks on the `connection/{driver}/save` and `/download/single-file` REST endpoints, combined with insufficient path validation in the Google Drive `downloadFile()` function, where the Google Drive metadata `name` value is concatenated into a local path without `basename()`, `sanitize_file_name()`, or canonical path validation. This makes it possible for unauthenticated attackers to store attacker-controlled Google Drive credentials, trigger a download of an attacker-owned file whose provider-returned filename contains path traversal, and write attacker-controlled content outside the intended `downloads` directory. When the written file has a PHP extension and lands in a web-accessible location, this can lead to remote code execution. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-120522 Published : Nov. 14, 2026, 1:17 p.m. | 13 hours, 5 minutes ago Description : The Cloud Storage Manager for Fluent Forms – Google Drive, Dropbox, OneDrive, S3 Uploads plugin for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 1.2.0. This is due to missing authorization checks on the `connection/{driver}/save` and `/download/single-file` REST endpoints, combined with insufficient path validation in the Google Drive `downloadFile()` function, where the Google Drive metadata `name` value is concatenated into a local path without `basename()`, `sanitize_file_name()`, or canonical path validation. This makes it possible for unauthenticated attackers to store attacker-controlled Google Drive credentials, trigger a download of an attacker-owned file whose provider-returned filename contains path traversal, and write attacker-controlled content outside the intended `downloads` directory. When the written file has a PHP extension and lands in a web-accessible location, this can lead to remote code execution. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1586,7 +1711,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1725,7 +1850,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T12:17:44+00:00",
-      "summary": "CVE ID : CVE-2026-129427 Published : Nov. 14, 2026, 12:17 p.m. | 10 hours, 28 minutes ago Description : Stored XSS via avatar upload chained with an authentication bypass in /Attachments leads to ATO in Cervantes version v1.3-beta could allow an attacker to execute arbitrary code in another user's browser with elevated privileges Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129427 Published : Nov. 14, 2026, 12:17 p.m. | 14 hours, 4 minutes ago Description : Stored XSS via avatar upload chained with an authentication bypass in /Attachments leads to ATO in Cervantes version v1.3-beta could allow an attacker to execute arbitrary code in another user's browser with elevated privileges Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1738,7 +1863,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1756,7 +1881,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T12:17:44+00:00",
-      "summary": "CVE ID : CVE-2026-129250 Published : Nov. 14, 2026, 12:17 p.m. | 10 hours, 28 minutes ago Description : A security vulnerability has been detected in Edimax BR6478ACV2 1.23. The impacted element is the function formPPTPSetup of the file webs. The manipulation of the argument pptpUserName leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 9.9 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-129250 Published : Nov. 14, 2026, 12:17 p.m. | 14 hours, 4 minutes ago Description : A security vulnerability has been detected in Edimax BR6478ACV2 1.23. The impacted element is the function formPPTPSetup of the file webs. The manipulation of the argument pptpUserName leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 9.9 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1769,7 +1894,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2209,7 +2334,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T07:17:21+00:00",
-      "summary": "CVE ID : CVE-2026-129319 Published : Nov. 14, 2026, 7:17 a.m. | 15 hours, 28 minutes ago Description : create-ecdh is a browserifiable implementation of Node.js crypto.createECDH. In versions 4.0.4 and below, the JavaScript implementation (browser.js, used by browser bundlers and on Node.js versions without a working native crypto.createECDH) did not validate peer public keys in ECDH.prototype.computeSecret or ECDH.prototype.setPublicKey. The peer point was multiplied by the local private key without checking that it was on the configured curve or in its prime-order subgroup. An attacker who can submit public keys to a party that reuses a static private key can perform an invalid-curve or small-subgroup attack and recover the private key modulo small factors, eventually recovering the full key via the Chinese Remainder Theorem. For the ed25519 and curve25519 curves, low-order points were also accepted, which could force a predictable shared secret. On modern Node.js, create-ecdh re-exports the native implementation, which is not affected. This issue is fixed in version 4.0.5. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, an",
+      "summary": "CVE ID : CVE-2026-129319 Published : Nov. 14, 2026, 7:17 a.m. | 19 hours, 5 minutes ago Description : create-ecdh is a browserifiable implementation of Node.js crypto.createECDH. In versions 4.0.4 and below, the JavaScript implementation (browser.js, used by browser bundlers and on Node.js versions without a working native crypto.createECDH) did not validate peer public keys in ECDH.prototype.computeSecret or ECDH.prototype.setPublicKey. The peer point was multiplied by the local private key without checking that it was on the configured curve or in its prime-order subgroup. An attacker who can submit public keys to a party that reuses a static private key can perform an invalid-curve or small-subgroup attack and recover the private key modulo small factors, eventually recovering the full key via the Chinese Remainder Theorem. For the ed25519 and curve25519 curves, low-order points were also accepted, which could force a predictable shared secret. On modern Node.js, create-ecdh re-exports the native implementation, which is not affected. This issue is fixed in version 4.0.5. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2222,7 +2347,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2781,7 +2906,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-14T05:18:37+00:00",
-      "summary": "CVE ID : CVE-2026-126173 Published : Nov. 14, 2026, 5:18 a.m. | 17 hours, 27 minutes ago Description : The AutomatorWP Pro plugin for WordPress' webhook addon is vulnerable to authorization bypass in all versions up to, and including, 1.4.4. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to reset the password of any WordPress account, including administrators, resulting in full account takeover. This is only exploitable when an administrator has configured an automation pairing a Receive Webhook trigger — with an 'Is the user ID' field — to an Update-User action whose User ID field is left blank and whose Password field is mapped to the webhook password tag, which is a documented, supported plugin configuration. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-126173 Published : Nov. 14, 2026, 5:18 a.m. | 21 hours, 3 minutes ago Description : The AutomatorWP Pro plugin for WordPress' webhook addon is vulnerable to authorization bypass in all versions up to, and including, 1.4.4. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to reset the password of any WordPress account, including administrators, resulting in full account takeover. This is only exploitable when an administrator has configured an automation pairing a Receive Webhook trigger — with an 'Is the user ID' field — to an Update-User action whose User ID field is left blank and whose Password field is mapped to the webhook password tag, which is a documented, supported plugin configuration. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2794,7 +2919,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2900,7 +3025,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T23:17:19+00:00",
-      "summary": "CVE ID : CVE-2026-71531 Published : Nov. 13, 2026, 11:17 p.m. | 23 hours, 28 minutes ago Description : PrestaShop before 8.2.9 and 9.2.1 contains an authorization flaw in the Webservice API that allows an attacker holding a key restricted to one shop to act on data of every shop by submitting requests with id_shop=all or id_shop_group=N, which expand the shop context without validating the key's actual shop associations and cause shopHasRight() to evaluate the expanded set as a disjunction. Attackers can exploit this flaw via classes/webservice/WebserviceRequest.php to read, modify, or delete data belonging to shops they are not authorized for, including full customer records such as email addresses, secure_key, and password hashes across the installation. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-71531 Published : Nov. 13, 2026, 11:17 p.m. | 1 day, 3 hours ago Description : PrestaShop before 8.2.9 and 9.2.1 contains an authorization flaw in the Webservice API that allows an attacker holding a key restricted to one shop to act on data of every shop by submitting requests with id_shop=all or id_shop_group=N, which expand the shop context without validating the key's actual shop associations and cause shopHasRight() to evaluate the expanded set as a disjunction. Attackers can exploit this flaw via classes/webservice/WebserviceRequest.php to read, modify, or delete data belonging to shops they are not authorized for, including full customer records such as email addresses, secure_key, and password hashes across the installation. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2913,7 +3038,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2931,7 +3056,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T23:17:19+00:00",
-      "summary": "CVE ID : CVE-2026-71519 Published : Nov. 13, 2026, 11:17 p.m. | 23 hours, 28 minutes ago Description : PrestaShop before 8.2.9 and 9.2.1 contains a broken access control vulnerability that allows an authenticated Webservice API key holder to read and modify customer records belonging to any shop in a multi-shop installation. Attackers can exploit the missing record-level shop ownership check in shopHasRight() and saveEntityFromXml() to read sensitive customer data such as password hashes and secure keys, and change a customer's email and password via create, update, and delete requests, resulting in account takeover. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-71519 Published : Nov. 13, 2026, 11:17 p.m. | 1 day, 3 hours ago Description : PrestaShop before 8.2.9 and 9.2.1 contains a broken access control vulnerability that allows an authenticated Webservice API key holder to read and modify customer records belonging to any shop in a multi-shop installation. Attackers can exploit the missing record-level shop ownership check in shopHasRight() and saveEntityFromXml() to read sensitive customer data such as password hashes and secure keys, and change a customer's email and password via create, update, and delete requests, resulting in account takeover. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2944,7 +3069,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3323,7 +3448,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:26+00:00",
-      "summary": "CVE ID : CVE-2026-91869 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : IBM Security QRadar EDR 3.12 through 3.12.26 could allow a remote authenticated attacker to bypass security restrictions due to improper rate limiting on TOTP verification. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-91869 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : IBM Security QRadar EDR 3.12 through 3.12.26 could allow a remote authenticated attacker to bypass security restrictions due to improper rate limiting on TOTP verification. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3336,7 +3461,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3564,7 +3689,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-124021 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : Control Web Panel (CWP) before webpanel_version 1.30.6 contains an authorization bypass vulnerability in the validate() function of api/v1/index.php that allows attackers holding a password-recovery token and a predictable legacy signature to obtain valid remote-API authorization without a proper API key. Attackers can exploit this flaw via the POST /cronjobsusers/ endpoint to add arbitrary cron commands and achieve command execution as the affected hosting account, and can also abuse the same token to access global account-list and account-detail routes exposing usernames, contact emails, and password hashes. Severity: 9.2 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-124021 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : Control Web Panel (CWP) before webpanel_version 1.30.6 contains an authorization bypass vulnerability in the validate() function of api/v1/index.php that allows attackers holding a password-recovery token and a predictable legacy signature to obtain valid remote-API authorization without a proper API key. Attackers can exploit this flaw via the POST /cronjobsusers/ endpoint to add arbitrary cron commands and achieve command execution as the affected hosting account, and can also abuse the same token to access global account-list and account-detail routes exposing usernames, contact emails, and password hashes. Severity: 9.2 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3577,7 +3702,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3595,7 +3720,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:22+00:00",
-      "summary": "CVE ID : CVE-2026-124020 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : Control Web Panel (CWP) before webpanel_version 1.30.6 contains a host header injection vulnerability that allows unauthenticated attackers to manipulate the password-recovery reset URL by injecting the HTTP Host header into the /v1/lostpass/ route's token generation process. Attackers can lure an automated mail-security scanner into visiting the poisoned reset link to exfiltrate the live recovery token, replay it at /login/index.php?acc=newpass to set a new password, and subsequently abuse the File Manager and Crontab modules to achieve command execution as the targeted hosting account. Severity: 9.2 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-124020 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : Control Web Panel (CWP) before webpanel_version 1.30.6 contains a host header injection vulnerability that allows unauthenticated attackers to manipulate the password-recovery reset URL by injecting the HTTP Host header into the /v1/lostpass/ route's token generation process. Attackers can lure an automated mail-security scanner into visiting the poisoned reset link to exfiltrate the live recovery token, replay it at /login/index.php?acc=newpass to set a new password, and subsequently abuse the File Manager and Crontab modules to achieve command execution as the targeted hosting account. Severity: 9.2 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3608,7 +3733,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3686,7 +3811,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:21+00:00",
-      "summary": "CVE ID : CVE-2026-115788 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : IBM App Connect Operator and IBM App Connect Enterprise Certified Containers Operands is vulnerable to Log Forging on a request to create a resource. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-115788 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : IBM App Connect Operator and IBM App Connect Enterprise Certified Containers Operands is vulnerable to Log Forging on a request to create a resource. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3699,7 +3824,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3717,7 +3842,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:21+00:00",
-      "summary": "CVE ID : CVE-2026-110279 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : IBM ContextForge MCP Gateway 1.0.0 through 1.1.0 is vulnerable to improper credential handling because the X-Upstream-Authorization request header can override the gateway-managed upstream credential for OAuth (authorization_code and client_credentials), bearer and basic authenticated gateways, which could allow an authenticated user to cause upstream requests to be made with a different credential and bypass per-user permission and audit attribution. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-110279 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : IBM ContextForge MCP Gateway 1.0.0 through 1.1.0 is vulnerable to improper credential handling because the X-Upstream-Authorization request header can override the gateway-managed upstream credential for OAuth (authorization_code and client_credentials), bearer and basic authenticated gateways, which could allow an authenticated user to cause upstream requests to be made with a different credential and bypass per-user permission and audit attribution. Severity: 8.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3730,7 +3855,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -4232,7 +4357,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-13T22:17:18+00:00",
-      "summary": "CVE ID : CVE-2025-53697 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : Use of default credentials vulnerability in Johnson Controls iSTAR Ultra, Johnson Controls iSTAR Ultra SE, Johnson Controls iSTAR Ultra G2, Johnson Controls iSTAR Ultra G2 SE, and Johnson Controls iSTAR Edge G2 allows CAPEC‑560: Use of Default Credentials. This issue affects iSTAR Ultra: before 2.9.2.CU02; iSTAR Ultra SE: before 6.9.2.CU02; iSTAR Ultra G2: before 6.9.2.CU02; iSTAR Ultra G2 SE: before 6.9.2.CU02; iSTAR Edge G2: before 6.9.2.CU02. Severity: 8.4 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2025-53697 Published : Nov. 13, 2026, 10:17 p.m. | 1 day, 4 hours ago Description : Use of default credentials vulnerability in Johnson Controls iSTAR Ultra, Johnson Controls iSTAR Ultra SE, Johnson Controls iSTAR Ultra G2, Johnson Controls iSTAR Ultra G2 SE, and Johnson Controls iSTAR Edge G2 allows CAPEC‑560: Use of Default Credentials. This issue affects iSTAR Ultra: before 2.9.2.CU02; iSTAR Ultra SE: before 6.9.2.CU02; iSTAR Ultra G2: before 6.9.2.CU02; iSTAR Ultra G2 SE: before 6.9.2.CU02; iSTAR Edge G2: before 6.9.2.CU02. Severity: 8.4 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -4245,38 +4370,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
-      "id": "b6df3b11b6a9b6a1bbb0",
-      "title": "CVE-2025-43874 - Johnson Controls iSTAR OS Command Injection Vulnerability",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2025-43874",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-13T22:17:18+00:00",
-      "summary": "CVE ID : CVE-2025-43874 Published : Nov. 13, 2026, 10:17 p.m. | 1 day ago Description : : Improper Neutralization of Special Elements used in an OS Command vulnerability in Johnson Controls iSTAR Ultra, Johnson Controls iSTAR Ultra SE, Johnson Controls iSTAR Ultra G2, Johnson Controls iSTAR Ultra G2 SE, and Johnson Controls iSTAR Edge G2 allows : OS Command Injection. This issue affects iSTAR Ultra: before 6.9.2.CU02; iSTAR Ultra SE: before 6.9.2.CU02; iSTAR Ultra G2: before 6.9.2.CU02; iSTAR Ultra G2 SE: before 6.9.2.CU02; iSTAR Edge G2: before 6.9.2.CU02. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2025-43874"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:28+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -4524,37 +4618,6 @@
       ]
     },
     {
-      "id": "27fb544343438421edb8",
-      "title": "CVE-2026-82504 - VITEC EZ TV Platform Server Unauthenticated File Upload via UploadHandler.ashx",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-82504",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-13T21:17:48+00:00",
-      "summary": "CVE ID : CVE-2026-82504 Published : Nov. 13, 2026, 9:17 p.m. | 1 day, 1 hour ago Description : VITEC EZ TV Platform Server before 8.5.0 contains an unrestricted file upload vulnerability in the upload handler that allows unauthenticated remote attackers to upload arbitrary files by supplying a target filename in the X-FILENAME request header with no authentication or file type validation required. Attackers can upload a malicious ASPX file directly to the web-accessible uploads directory, where it is immediately executable by the web server, achieving remote code execution in the context of the web server process. Patches are available for versions 8.3.0, 8.3.1, 8.4.0, and 8.4.1. Users running releases prior to 8.3.0 should upgrade to 8.5.0+. Severity: 9.8 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-82504"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
       "id": "cc4ca23db3413c59bc14",
       "title": "CVE-2026-82504: VITEC EZ TV Platform Server before 8.5.0 contains an unrestricted file upload vulnerability in the upload handler that allows unauthenticated remote attackers to upload arbitrary f",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82504",
@@ -4645,65 +4708,39 @@
       "stale_data": true
     },
     {
-      "id": "9821307db37ad98393f1",
-      "title": "CVE-2026-128132 - AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-128132",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
+      "id": "67aac981b3588005d460",
+      "title": "[HIGH 7.5] CVE-2026-20320",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+      "source": "AssureStart — CVE de proveedores (CVSS ≥ 7)",
+      "category": "Vulnerabilidades de proveedores",
       "region": "Global",
-      "published_at": "2026-11-13T21:17:45+00:00",
-      "summary": "CVE ID : CVE-2026-128132 Published : Nov. 13, 2026, 9:17 p.m. | 1 day, 1 hour ago Description : AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, the WebSocket reader continues parsing frames already received after the receive queue pauses the transport, and empty messages are not counted toward the queue size. With permessage-deflate, one read of compressed frames can add many megabytes of decompressed messages to the receive queue. A remote peer can send many small or compressed messages faster than the application consumes them and cause excessive memory use in a server or client. This issue is fixed in version 3.14.4. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "published_at": "2026-11-13T21:17:46+00:00",
+      "summary": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system. Proveedor: Cisco. Producto: BroadWorks. Acción requerida: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.. Fecha agregada al catálogo: 2026-11-10. Uso en campañas de ransomware: Unknown.",
       "type": "article",
       "tags": [
         "vulnerabilidad"
       ],
       "cves": [
-        "CVE-2026-128132"
+        "CVE-2026-20320"
       ],
       "priority_score": 10,
       "priority_label": "informativa",
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
+      "collected_at": "2026-11-15T02:41:30+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
+      "epss": "0.010600000",
+      "epss_percentile": "0.648300000",
+      "epss_date": "2026-11-10",
+      "epss_stale": true,
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
-      "id": "fa06256065a1648e368d",
-      "title": "CVE-2026-128131 - AIOHTTP: Concatenated compressed streams cause excessive CPU use",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-128131",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-13T21:17:45+00:00",
-      "summary": "CVE ID : CVE-2026-128131 Published : Nov. 13, 2026, 9:17 p.m. | 1 day, 1 hour ago Description : AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, aiohttp decompresses each member of a payload containing many concatenated gzip, deflate, or zstd streams by passing the entire remaining input to a new decompressor, causing quadratic CPU use. Empty members produce no output, so client_max_size and output backpressure do not limit the work. A remote attacker can block a server event loop with a crafted compressed request body or WebSocket message, and a malicious server can similarly block a client. This issue is fixed in version 3.14.4. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-128131"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
+        "AssureStart — CVE de proveedores (CVSS ≥ 7)",
+        "CISA Known Exploited Vulnerabilities (KEV)"
       ]
     },
     {
@@ -4855,68 +4892,6 @@
         "NVD CVE API"
       ],
       "stale_data": true
-    },
-    {
-      "id": "67a44778a1c070e117d9",
-      "title": "CVE-2026-128130 - AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-128130",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-13T21:17:44+00:00",
-      "summary": "CVE ID : CVE-2026-128130 Published : Nov. 13, 2026, 9:17 p.m. | 1 day, 1 hour ago Description : AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python parser stores the unparsed remainder internally and also returns the same data to its caller. After a handler declines an upgrade request, the caller feeds the remainder back to the parser, causing the buffer to grow with each handled request and dispatching already-handled requests to the application again. The issue affects deployments using AIOHTTP_NO_EXTENSIONS or otherwise running without the standard C-extension wheel, and can cause excessive memory use and repeated request processing. This issue is fixed in version 3.14.4. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-128130"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
-      "id": "bb7bf6e161d7c1b7ab8a",
-      "title": "CVE-2026-128129 - AIOHTTP: Unbounded buffering of data received during an upgrade request",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-128129",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-13T21:17:44+00:00",
-      "summary": "CVE ID : CVE-2026-128129 Published : Nov. 13, 2026, 9:17 p.m. | 1 day, 1 hour ago Description : AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, aiohttp buffers all additional connection data received while a request marked for upgrade, such as a WebSocket handshake, is being handled, without a size limit or flow control. A remote attacker can stream data behind an upgrade request to a handler that does not immediately accept or reject the upgrade and cause unbounded memory consumption. This issue is fixed in version 3.14.4. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-128129"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:47+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
     },
     {
       "id": "28f9b675592903cef5a3",
@@ -48040,7 +48015,7 @@
       "category": "Vulnerabilidades de proveedores",
       "region": "Global",
       "published_at": "2026-11-11T21:35:18+00:00",
-      "summary": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer Cloud 7.0 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager 7.0 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12, FortiManager Cloud 7.0 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+      "summary": "CVSS: 9.1 CRITICAL Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C Vendors: fortinet A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -48053,7 +48028,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-14T22:59:50+00:00",
+      "collected_at": "2026-11-15T02:41:30+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -49349,37 +49324,6 @@
       ],
       "cves": [
         "CVE-2026-126211"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-14T22:59:50+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "AssureStart — CVE de proveedores (CVSS ≥ 7)"
-      ]
-    },
-    {
-      "id": "a2a1d4add66ed8200bdb",
-      "title": "[HIGH 7.1] CVE-2026-126213",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126213",
-      "source": "AssureStart — CVE de proveedores (CVSS ≥ 7)",
-      "category": "Vulnerabilidades de proveedores",
-      "region": "Global",
-      "published_at": "2026-11-11T21:31:03+00:00",
-      "summary": "CVSS: 7.1 HIGH Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L/E:P/RL:O/RC:C Vendors: fortinet A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4 all versions, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.0 through 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager Cloud 8.0.0 through 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12 may allow an authenticated attacker to execute unauthorized SQL commands via specially crafted requests.",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-126213"
       ],
       "priority_score": 10,
       "priority_label": "informativa",
@@ -128757,46 +128701,6 @@
       ]
     },
     {
-      "id": "67aac981b3588005d460",
-      "title": "CVE-2026-20320: Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-      "source": "CISA Known Exploited Vulnerabilities (KEV)",
-      "category": "Vulnerabilidades explotadas (CISA KEV)",
-      "region": "Global",
-      "published_at": "2026-11-10T00:00:00+00:00",
-      "summary": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system. Proveedor: Cisco. Producto: BroadWorks. Acción requerida: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.. Fecha agregada al catálogo: 2026-11-10. Uso en campañas de ransomware: Unknown.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad",
-        "ransomware",
-        "infraestructura_critica"
-      ],
-      "cves": [
-        "CVE-2026-20320"
-      ],
-      "priority_score": 92,
-      "priority_label": "crítica",
-      "priority_basis": [
-        "incluida en CISA KEV",
-        "ransomware/campaña"
-      ],
-      "collected_at": "2026-11-12T08:22:20+00:00",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "kev": true,
-      "date_added": "2026-11-10",
-      "due_date": "2026-11-24",
-      "known_ransomware_campaign_use": "Unknown",
-      "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "epss": "0.010600000",
-      "epss_percentile": "0.648300000",
-      "epss_date": "2026-11-10",
-      "epss_stale": true,
-      "related_sources": [
-        "CISA Known Exploited Vulnerabilities (KEV)"
-      ]
-    },
-    {
       "id": "4e812905eca940551a23",
       "title": "CVE-2026-111560: Barracuda Networks Multiple Products OS Command Injection Vulnerability",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
@@ -154435,34 +154339,6 @@
       ],
       "related_sources": [
         "OpenAI News"
-      ]
-    },
-    {
-      "id": "fb38ba5bfc1b6aac1996",
-      "title": "Did The Blue Wave Just Sink Trump’s Battleship?",
-      "url": "https://www.twz.com/sea/did-the-blue-wave-just-sink-trumps-battleship",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-11-04T23:00:28+00:00",
-      "summary": "The validity and cost of President Trump's battleship program was already under fire before the Democrats' historic mid-term wins. The post Did The Blue Wave Just Sink Trump’s Battleship? appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "general"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-05T00:23:24+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
       ]
     },
     {
@@ -237306,12 +237182,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 35,
+      "count": 34,
       "error": null,
-      "checked_at": "2026-11-14T22:59:36+00:00",
+      "checked_at": "2026-11-15T02:41:12+00:00",
       "http_status": 200,
       "last_published_at": "2026-11-14T00:31:04+00:00",
-      "duration_ms": 282
+      "duration_ms": 357
     },
     {
       "source": "CyberScoop",
@@ -237462,10 +237338,10 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-14T22:59:47+00:00",
+      "checked_at": "2026-11-15T02:41:27+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-14T22:30:23+00:00",
-      "duration_ms": 141
+      "last_published_at": "2026-11-15T01:49:37+00:00",
+      "duration_ms": 109
     },
     {
       "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
@@ -237473,10 +237349,10 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-14T19:12:05+00:00",
+      "checked_at": "2026-11-15T02:41:28+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-14T16:17:04+00:00",
-      "duration_ms": 51
+      "last_published_at": "2026-11-15T01:49:36+00:00",
+      "duration_ms": 53
     },
     {
       "source": "AssureStart — CVE de proveedores (CVSS ≥ 7)",
@@ -237484,10 +237360,10 @@
       "ok": true,
       "count": 50,
       "error": null,
-      "checked_at": "2026-11-13T23:54:37+00:00",
+      "checked_at": "2026-11-15T02:41:28+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-12T14:02:13+00:00",
-      "duration_ms": 1449
+      "last_published_at": "2026-11-13T21:17:46+00:00",
+      "duration_ms": 2225
     },
     {
       "source": "CISA Known Exploited Vulnerabilities (KEV)",
@@ -237517,14 +237393,14 @@
       "ok": true,
       "count": 1,
       "error": null,
-      "checked_at": "2026-11-14T23:00:46+00:00",
+      "checked_at": "2026-11-15T02:42:03+00:00",
       "http_status": 200,
-      "batch_fetch_time": "2026-11-14T22:32:14.201Z",
+      "batch_fetch_time": "2026-11-15T02:30:58.953Z",
       "records_seen": 1,
       "records_checked": 1,
       "skipped_outside_lookback": 0,
       "partial": false,
-      "duration_ms": 55
+      "duration_ms": 543
     },
     {
       "source": "FIRST EPSS",
@@ -237532,18 +237408,18 @@
       "ok": true,
       "count": 3058,
       "error": null,
-      "checked_at": "2026-11-14T23:00:46+00:00",
-      "cves_requested": 3,
-      "epss_checked_at": "2026-11-14T23:00:47+00:00",
-      "duration_ms": 325
+      "checked_at": "2026-11-15T02:42:04+00:00",
+      "cves_requested": 11,
+      "epss_checked_at": "2026-11-15T02:42:05+00:00",
+      "duration_ms": 184
     }
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 7341,
-    "items_after_deduplication": 7269,
-    "items_published": 7269,
-    "items_stale_preserved": 4811,
+    "items_before_deduplication": 7291,
+    "items_after_deduplication": 7265,
+    "items_published": 7265,
+    "items_stale_preserved": 4762,
     "sources_ok": 33,
     "sources_total": 34
   }
