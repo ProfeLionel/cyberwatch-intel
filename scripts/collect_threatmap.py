@@ -76,8 +76,10 @@ def read_previous() -> dict[str, Any]:
 
 
 def request_json(url: str, *, method: str = "GET", headers: dict[str, str] | None = None,
-                 params: dict[str, Any] | None = None, data: dict[str, Any] | None = None) -> dict[str, Any]:
-    response = SESSION.request(method, url, headers=headers, params=params, data=data, timeout=TIMEOUT)
+                 params: dict[str, Any] | None = None, data: dict[str, Any] | None = None,
+                 json_body: dict[str, Any] | None = None) -> dict[str, Any]:
+    response = SESSION.request(method, url, headers=headers, params=params, data=data,
+                               json=json_body, timeout=TIMEOUT)
     response.raise_for_status()
     payload = response.json()
     if not isinstance(payload, dict):
@@ -173,7 +175,8 @@ def fetch_threatfox(auth_key: str) -> tuple[dict[str, Any], dict[str, Any], list
         return {}, status, []
     try:
         payload = request_json("https://threatfox-api.abuse.ch/api/v1/", method="POST",
-                               headers={"Auth-Key": auth_key}, data={"query": "get_iocs", "days": 1})
+                               headers={"Auth-Key": auth_key},
+                               json_body={"query": "get_iocs", "days": 1})
         query_status = payload.get("query_status")
         if query_status not in {"ok", "no_results"}:
             raise ValueError(f"ThreatFox query_status={query_status}")
@@ -381,6 +384,9 @@ def main() -> None:
 
     run_time = now_iso()
     statuses = [cf_status, ds_status, tf_status, uh_status]
+    for status in statuses:
+        if not status.get("ok"):
+            logging.warning("%s no respondió: %s", status.get("name"), status.get("error") or "sin detalle")
     dshield_geo_count = sum(1 for row in (dshield.get("ips") or []) if row.get("geo"))
     geolocated_ips = set()
     for rows in (dshield.get("ips") or [], threatfox.get("indicators") or [], urlhaus.get("urls") or []):
