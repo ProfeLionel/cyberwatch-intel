@@ -1,15 +1,367 @@
 {
-  "generated_at": "2026-11-21T20:07:57+00:00",
-  "last_checked_at": "2026-11-21T20:07:57+00:00",
+  "generated_at": "2026-11-22T00:22:02+00:00",
+  "last_checked_at": "2026-11-22T00:22:02+00:00",
   "items": [
     {
-      "id": "ac5959b4040761b6f4c1",
-      "title": "liukuo362573 YiShaAdmin Pagination Sorting DatabasePageExtension.cs sql injection",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134009",
-      "source": "CVE List V5 — catálogo oficial (cambios recientes)",
-      "category": "Vulnerabilidades (CVE Program)",
+      "id": "2136a691d9f99796180b",
+      "title": "CVE-2026-134543: A flaw has been found in jprocms up to 1.7.7. Affected is the function StrUtil.format of the component Database Backup Module. Executing a manipulation of the argument host/port/us",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134543",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
       "region": "Global",
-      "published_at": "2026-11-21T19:45:18+00:00",
+      "published_at": "2026-11-22T00:17:00+00:00",
+      "summary": "A flaw has been found in jprocms up to 1.7.7. Affected is the function StrUtil.format of the component Database Backup Module. Executing a manipulation of the argument host/port/username/password/dbName can lead to os command injection. The attack can be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134543"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "b8ab56d90ddcba5c4191",
+      "title": "CVE-2026-134544: A vulnerability has been found in jprocms up to 1.7.7. Affected by this vulnerability is the function validateParam of the component Expression Language Handler. The manipulation l",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134544",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-22T00:17:00+00:00",
+      "summary": "A vulnerability has been found in jprocms up to 1.7.7. Affected by this vulnerability is the function validateParam of the component Expression Language Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134544"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 2.0,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "096a82efd51871d06dab",
+      "title": "CVE-2026-134545: A vulnerability was found in Xinchen Technology Huangjintong Second-level System Third-generation Management Terminal System up to 3.2. Affected by this issue is some unknown funct",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134545",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-22T00:17:00+00:00",
+      "summary": "A vulnerability was found in Xinchen Technology Huangjintong Second-level System Third-generation Management Terminal System up to 3.2. Affected by this issue is some unknown functionality of the file /paraframework/storSelect.htm. The manipulation of the argument warehouseID results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134545"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
+      "kev": false,
+      "related_sources": [
+        "CVE List V5 — catálogo oficial (cambios recientes)",
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "9793e693158d209c0521",
+      "title": "CVE-2026-134541: A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Perform",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134541",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-22T00:16:59+00:00",
+      "summary": "A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation of the argument p results in sql injection. The attack can be initiated remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134541"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "69d6c2f15c914328acdc",
+      "title": "CVE-2026-134540: A security vulnerability has been detected in ggml-org llama.cpp 0.7.0-dev. This affects the function common_sampler_init of the file common/sampling.cpp of the component llama-ser",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134540",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T23:16:55+00:00",
+      "summary": "A security vulnerability has been detected in ggml-org llama.cpp 0.7.0-dev. This affects the function common_sampler_init of the file common/sampling.cpp of the component llama-server. Such manipulation of the argument grammar_triggers[].type leads to improper input validation. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. Upgrading to version b12405 mitigates this issue. The name of the patch is 9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d. It is advisable to upgrade the affected component.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134540"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "f57bf2baef6f77424bd5",
+      "title": "CVE-2026-115589: Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115589",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T23:16:54+00:00",
+      "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-115589"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": null,
+      "severity": null,
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0462657f74443f57e08e",
+      "title": "CVE-2026-134534: A security flaw has been discovered in Skyvern-AI Skyvern 1.0.56. The affected element is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The mani",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134534",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T23:16:54+00:00",
+      "summary": "A security flaw has been discovered in Skyvern-AI Skyvern 1.0.56. The affected element is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation results in server-side request forgery. The attack may be performed from remote. Upgrading to version 1.0.57 is sufficient to fix this issue. The patch is identified as 10b8d829c2750ebf62f2b70dec0e288297e752dd. It is recommended to upgrade the affected component.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134534"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "0351e006753e41e18de6",
+      "title": "CVE-2026-134536: A weakness has been identified in Drakeling Labs Operation Harsh Doorstop up to 0.14.2.1 Build 19523588. The impacted element is the function LaunchURL of the component Workshop Co",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134536",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T23:16:54+00:00",
+      "summary": "A weakness has been identified in Drakeling Labs Operation Harsh Doorstop up to 0.14.2.1 Build 19523588. The impacted element is the function LaunchURL of the component Workshop Configuration. This manipulation causes unrestricted upload. It is possible to initiate the attack remotely. Upgrading to version 0.14.2.2 Build 26092794 is sufficient to resolve this issue. Upgrading the affected component is advised.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134536"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "4fc724297b01d343188e",
+      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets",
+      "source": "BleepingComputer",
+      "category": "Noticias de ciberseguridad",
+      "region": "Global",
+      "published_at": "2026-11-21T22:59:58+00:00",
+      "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+      "type": "article",
+      "tags": [
+        "filtracion"
+      ],
+      "cves": [],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:21+00:00",
+      "sectors": [
+        "publico",
+        "privado"
+      ],
+      "related_sources": [
+        "BleepingComputer"
+      ]
+    },
+    {
+      "id": "54f0d1c6ee147464be02",
+      "title": "CVE-2026-134533 - Skyvern-AI Skyvern browser_egress_policy.py classify_url server-side request forgery",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134533",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T20:16:35+00:00",
+      "summary": "CVE ID : CVE-2026-134533 Published : Nov. 21, 2026, 8:16 p.m. | 2 hours, 8 minutes ago Description : A vulnerability was identified in Skyvern-AI Skyvern 1.0.56. Impacted is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation leads to server-side request forgery. The attack is possible to be carried out remotely. Upgrading to version 1.0.57 is recommended to address this issue. The identifier of the patch is 10b8d829c2750ebf62f2b70dec0e288297e752dd. Upgrading the affected component is recommended. Severity: 6.5 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134533"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "c75883b61c0f9042c78f",
+      "title": "CVE-2026-134533: A vulnerability was identified in Skyvern-AI Skyvern 1.0.56. Impacted is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation leads to",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134533",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T20:16:35+00:00",
+      "summary": "A vulnerability was identified in Skyvern-AI Skyvern 1.0.56. Impacted is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation leads to server-side request forgery. The attack is possible to be carried out remotely. Upgrading to version 1.0.57 is recommended to address this issue. The identifier of the patch is 10b8d829c2750ebf62f2b70dec0e288297e752dd. Upgrading the affected component is recommended.",
+      "type": "vulnerability",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134533"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
+      "kev": false,
+      "related_sources": [
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "049e60adb6e461729df2",
+      "title": "CVE-2026-134009 - liukuo362573 YiShaAdmin Pagination Sorting DatabasePageExtension.cs sql injection",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134009",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T20:16:34+00:00",
+      "summary": "CVE ID : CVE-2026-134009 Published : Nov. 21, 2026, 8:16 p.m. | 2 hours, 8 minutes ago Description : A vulnerability was detected in liukuo362573 YiShaAdmin up to ba04d5072885447553e372bb87e372b55a90780c. Impacted is the function SqlServerPageSql/OraclePageSql/MySqlPageSql/ of the file YiSha.Data/YiSha.Data/Extension/DatabasePageExtension.cs of the component Pagination Sorting. The manipulation of the argument sort results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The patch is identified as 19b0bdffc9587bff291bac81586953277abe5b84. Applying a patch is advised to resolve this issue. Severity: 6.5 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134009"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "ac5959b4040761b6f4c1",
+      "title": "CVE-2026-134009: A vulnerability was detected in liukuo362573 YiShaAdmin up to ba04d5072885447553e372bb87e372b55a90780c. Impacted is the function SqlServerPageSql/OraclePageSql/MySqlPageSql/ of the",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134009",
+      "source": "NVD CVE API",
+      "category": "Vulnerabilidades (NVD)",
+      "region": "Global",
+      "published_at": "2026-11-21T20:16:34+00:00",
       "summary": "A vulnerability was detected in liukuo362573 YiShaAdmin up to ba04d5072885447553e372bb87e372b55a90780c. Impacted is the function SqlServerPageSql/OraclePageSql/MySqlPageSql/ of the file YiSha.Data/YiSha.Data/Extension/DatabasePageExtension.cs of the component Pagination Sorting. The manipulation of the argument sort results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The patch is identified as 19b0bdffc9587bff291bac81586953277abe5b84. Applying a patch is advised to resolve this issue.",
       "type": "vulnerability",
       "tags": [
@@ -23,15 +375,74 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:56+00:00",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
+      "collected_at": "2026-11-22T00:22:01+00:00",
+      "cvss": 2.1,
+      "severity": "LOW",
       "kev": false,
-      "vendor": "liukuo362573",
-      "product": "YiShaAdmin",
-      "cve_record_url": "https://www.cve.org/CVERecord?id=CVE-2026-134009",
       "related_sources": [
-        "CVE List V5 — catálogo oficial (cambios recientes)"
+        "NVD CVE API"
+      ]
+    },
+    {
+      "id": "d930a74ab65c0e83451b",
+      "title": "CVE-2026-134007 - itsourcecode Banking Management System manage_handover.php sql injection",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134007",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T19:16:32+00:00",
+      "summary": "CVE ID : CVE-2026-134007 Published : Nov. 21, 2026, 7:16 p.m. | 3 hours, 8 minutes ago Description : A security vulnerability has been detected in itsourcecode Banking Management System 1.0. This issue affects some unknown processing of the file manage_handover.php. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. Severity: 6.5 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134007"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
+      "id": "a8a574823e3b09ef060e",
+      "title": "CVE-2026-134006 - Moonshot AI Kimi Code Plan Mode Permission Guard planService.ts guardToolExecution improper authorization",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134006",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T19:16:32+00:00",
+      "summary": "CVE ID : CVE-2026-134006 Published : Nov. 21, 2026, 7:16 p.m. | 3 hours, 8 minutes ago Description : A weakness has been identified in Moonshot AI Kimi Code up to 2.7.2. This vulnerability affects the function guardToolExecution of the file packages/agent-core-v2/src/features/plan/planService.ts of the component Plan Mode Permission Guard. Executing a manipulation can lead to improper authorization. The attack requires local access. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 5.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-134006"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
       ]
     },
     {
@@ -93,6 +504,38 @@
       ]
     },
     {
+      "id": "1ca2726bb98232b57150",
+      "title": "CVE-2026-125294 - Nexter Blocks Pro <= 5.0.10 - Unauthenticated Privilege Escalation to Unicode Collation Confusion in 'tpgb_acf_key' Parameter",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-125294",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T19:16:31+00:00",
+      "summary": "CVE ID : CVE-2026-125294 Published : Nov. 21, 2026, 7:16 p.m. | 3 hours, 8 minutes ago Description : The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.10 via the `tpgb_ajax_register_user()` function. This is due to a byte-level denylist on the `tpgb_acf_key[]` and `tpgb_acf[]` parameters that fails to block Unicode look-alike characters — such as U+1E87 and U+00E7 in a key like `ẇp_çapabilities` — whose UTF-8 byte sequences do not match any ASCII-based pattern check, while the database's default accent-insensitive collation (`utf8mb4_unicode_ci` / `utf8mb4_0900_ai_ci`) treats the decorated key as equivalent to the canonical `wp_capabilities` row, causing `update_user_meta()` to overwrite the newly registered user's role with `administrator`. This makes it possible for unauthenticated attackers to register a new account bearing the full Administrator role, gaining complete control over the WordPress site including the ability to install plugins, modify files, and execute arbitrary code. The nonce required by the handler is publicly emitted on any page containing the tp-login-register block, making the full expl",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-125294"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
       "id": "99d09348b4553899cb30",
       "title": "CVE-2026-125294: The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.10 via the `tpgb_ajax_register_user()` function. This is",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125294",
@@ -122,6 +565,38 @@
       ]
     },
     {
+      "id": "14d5f1e2edccfec89df4",
+      "title": "CVE-2026-133993 - D-Link DIR-600L GENA Subscription gena.cgi FUN_0040efb0 stack-based overflow",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-133993",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T18:16:54+00:00",
+      "summary": "CVE ID : CVE-2026-133993 Published : Nov. 21, 2026, 6:16 p.m. | 4 hours, 8 minutes ago Description : A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. Severity: 10.0 | CRITICAL Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-133993"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+        "CVEFeed.io — Últimas CVE"
+      ]
+    },
+    {
       "id": "8d6963922c4777a13a58",
       "title": "CVE-2026-133993: A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993",
@@ -148,6 +623,37 @@
       "kev": false,
       "related_sources": [
         "NVD CVE API"
+      ]
+    },
+    {
+      "id": "6cfbb43a6dba9ae8b2a9",
+      "title": "CVE-2026-133990 - Cockpit-HQ Cockpit Web Worker cron.php missing authentication",
+      "url": "https://cvefeed.io/vuln/detail/CVE-2026-133990",
+      "source": "CVEFeed.io — Últimas CVE",
+      "category": "Vulnerabilidades",
+      "region": "Global",
+      "published_at": "2026-11-21T18:16:53+00:00",
+      "summary": "CVE ID : CVE-2026-133990 Published : Nov. 21, 2026, 6:16 p.m. | 4 hours, 8 minutes ago Description : A vulnerability was identified in Cockpit-HQ Cockpit up to 2.14.1. Affected by this issue is some unknown functionality of the file cron.php of the component Web Worker. Such manipulation of the argument token leads to missing authentication. The attack can be executed remotely. The attack requires a high level of complexity. The exploitation is known to be difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way. Severity: 4.8 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "type": "article",
+      "tags": [
+        "vulnerabilidad"
+      ],
+      "cves": [
+        "CVE-2026-133990"
+      ],
+      "priority_score": 10,
+      "priority_label": "informativa",
+      "priority_basis": [
+        "clasificación inicial por defecto"
+      ],
+      "collected_at": "2026-11-22T00:21:40+00:00",
+      "sectors": [
+        "publico",
+        "privado",
+        "defensa"
+      ],
+      "related_sources": [
+        "CVEFeed.io — Últimas CVE"
       ]
     },
     {
@@ -301,37 +807,6 @@
       ]
     },
     {
-      "id": "14d5f1e2edccfec89df4",
-      "title": "CVE-2026-133993 - D-Link DIR-600L GENA Subscription gena.cgi FUN_0040efb0 stack-based overflow",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-133993",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-21T17:45:12+00:00",
-      "summary": "CVE ID : CVE-2026-133993 Published : Nov. 21, 2026, 5:45 p.m. | 39 minutes ago Description : A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. Severity: 0.0 | NA Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-133993"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
       "id": "4695de8c9245a326b832",
       "title": "CVE-2026-134461 - Web-Token jwt-framework before 3.4.10 DoS via Unbounded PBES2 p2c Iteration Count",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-134461",
@@ -339,7 +814,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:11+00:00",
-      "summary": "CVE ID : CVE-2026-134461 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in PBES2AESKW::unwrapKey(), which passes the attacker-controlled p2c JWE header value to hash_pbkdf2() without an upper bound. Unauthenticated attackers can send a JWE using a PBES2-HS*+A*KW algorithm with a huge p2c iteration count to force lengthy PBKDF2 computations and exhaust server CPU. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134461 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in PBES2AESKW::unwrapKey(), which passes the attacker-controlled p2c JWE header value to hash_pbkdf2() without an upper bound. Unauthenticated attackers can send a JWE using a PBES2-HS*+A*KW algorithm with a huge p2c iteration count to force lengthy PBKDF2 computations and exhaust server CPU. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -352,7 +827,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -371,7 +846,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:11+00:00",
-      "summary": "CVE ID : CVE-2026-134460 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in the experimental Chacha20Poly1305 key-encryption algorithm, which discards the Poly1305 tag in encryptKey() and calls openssl_decrypt() without it in decryptKey(). Attackers on the token path can modify the encrypted content encryption key undetected. Severity: 6.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134460 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in the experimental Chacha20Poly1305 key-encryption algorithm, which discards the Poly1305 tag in encryptKey() and calls openssl_decrypt() without it in decryptKey(). Attackers on the token path can modify the encrypted content encryption key undetected. Severity: 6.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -384,7 +859,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -402,7 +877,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:11+00:00",
-      "summary": "CVE ID : CVE-2026-134459 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15() because RSA1_5 decryption lacks implicit rejection, so invalid padding, wrong CEK length, and valid padding take measurably different time. Remote attackers can submit adaptively crafted JWE encrypted_key values and measure these timing differences to recover the wrapped content encryption key. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134459 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15() because RSA1_5 decryption lacks implicit rejection, so invalid padding, wrong CEK length, and valid padding take measurably different time. Remote attackers can submit adaptively crafted JWE encrypted_key values and measure these timing differences to recover the wrapped content encryption key. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -415,7 +890,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -434,7 +909,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:11+00:00",
-      "summary": "CVE ID : CVE-2026-134458 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es through 3.2.10, have a ConcatKDF::generate() that performs a single SHA-256 round, deriving at most 32 bytes for ECDH-ES and ECDH-SS direct key agreement. Anyone holding a JWE using A256CBC-HS512 can decrypt it under an all-zero AES key, while A192CBC-HS384 content keys have only 64-bit strength. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134458 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es through 3.2.10, have a ConcatKDF::generate() that performs a single SHA-256 round, deriving at most 32 bytes for ECDH-ES and ECDH-SS direct key agreement. Anyone holding a JWE using A256CBC-HS512 can decrypt it under an all-zero AES key, while A192CBC-HS384 content keys have only 64-bit strength. Severity: 8.2 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -447,7 +922,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -582,7 +1057,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134457 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory conditions. Attackers with a valid password can forward a crafted QUIC packet with a huge crypto length, causing the server to exhaust memory and crash. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134457 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory conditions. Attackers with a valid password can forward a crafted QUIC packet with a huge crypto length, causing the server to exhaust memory and crash. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -595,7 +1070,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -613,7 +1088,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134456 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can continuously send excessively large HTTP headers without terminating them, exhausting server memory and causing out-of-memory crashes. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134456 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can continuously send excessively large HTTP headers without terminating them, exhausting server memory and causing out-of-memory crashes. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -626,7 +1101,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -645,7 +1120,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134455 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the maximum datagram payload size. Authenticated clients can advertise a small max_datagram_frame_size and trigger a UDP response, causing a slice bounds panic that crashes the server. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134455 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the maximum datagram payload size. Authenticated clients can advertise a small max_datagram_frame_size and trigger a UDP response, causing a slice bounds panic that crashes the server. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -658,7 +1133,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -676,7 +1151,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134454 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an established UDP session. Attackers can open a session to an allowed destination, then send later packets to localhost or private-network addresses to access internal-only UDP services. Severity: 7.4 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134454 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an established UDP session. Attackers can open a session to an allowed destination, then send later packets to localhost or private-network addresses to access internal-only UDP services. Severity: 7.4 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -689,7 +1164,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -707,7 +1182,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134453 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API endpoints lacking RBAC checks. Attackers can access /api/users, /api/license, and /api/hawser/connect to obtain user emails and roles, the full license key, and environment details, while an invalid license grants all users admin rights. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134453 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API endpoints lacking RBAC checks. Attackers can access /api/users, /api/license, and /api/hawser/connect to obtain user emails and roles, the full license key, and environment details, while an invalid license grants all users admin rights. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -720,7 +1195,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -738,7 +1213,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134452 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering reserved keys such as PATH. An authenticated attacker with stacks:edit permission can set PATH to a directory containing a malicious binary and trigger a deploy, executing arbitrary commands as the Dockhand server process user. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134452 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering reserved keys such as PATH. An authenticated attacker with stacks:edit permission can set PATH to a directory containing a malicious binary and trigger a deploy, executing arbitrary commands as the Dockhand server process user. Severity: 8.8 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -751,7 +1226,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -770,7 +1245,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:10+00:00",
-      "summary": "CVE ID : CVE-2026-134451 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider configuration due to an improper permission check. Attackers can send a PUT request to /api/auth/oidc/ setting adminClaim to their own OIDC group, gaining full admin access on their next OIDC login. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134451 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider configuration due to an improper permission check. Attackers can send a PUT request to /api/auth/oidc/ setting adminClaim to their own OIDC group, gaining full admin access on their next OIDC login. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -783,7 +1258,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1005,7 +1480,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134450 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on responses. Attackers on a same-site origin can embed the UI in an invisible iframe to trick authenticated users into stopping stacks, deleting resources, or changing settings. Severity: 3.1 | LOW Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134450 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on responses. Attackers on a same-site origin can embed the UI in an invisible iframe to trick authenticated users into stopping stacks, deleting resources, or changing settings. Severity: 3.1 | LOW Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1018,7 +1493,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1036,7 +1511,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134449 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin header validation and absent CSRF tokens. Attackers can lure authenticated users to a same-site attacker page that submits forged POST requests to stop, start, or delete stacks, modify settings, and change credentials. Severity: 6.8 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134449 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin header validation and absent CSRF tokens. Attackers can lure authenticated users to a same-site attacker page that submits forged POST requests to stop, start, or delete stacks, modify settings, and change credentials. Severity: 6.8 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1049,7 +1524,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1067,7 +1542,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134448 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Finsys Dockhand 1.0.7 before 1.0.57 contains a path traversal vulnerability that allows low-privileged users to read and write arbitrary files by setting an unvalidated envPath on a stack source. Attackers with stacks:edit permission can point envPath to files like /etc/shadow or SSH keys, then use GET or PUT on /api/stacks/[name]/env/raw to read or overwrite them. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134448 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Finsys Dockhand 1.0.7 before 1.0.57 contains a path traversal vulnerability that allows low-privileged users to read and write arbitrary files by setting an unvalidated envPath on a stack source. Attackers with stacks:edit permission can point envPath to files like /etc/shadow or SSH keys, then use GET or PUT on /api/stacks/[name]/env/raw to read or overwrite them. Severity: 8.6 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1080,7 +1555,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1099,7 +1574,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134436 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 15.8.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an endpoint shared across modules that returns transaction child table rows without checking permissions on the child table or parent document. Authenticated attackers, including portal users or users without roles, can supply document types and filter conditions to read business document line details and probe record values. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134436 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 15.8.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an endpoint shared across modules that returns transaction child table rows without checking permissions on the child table or parent document. Authenticated attackers, including portal users or users without roles, can supply document types and filter conditions to read business document line details and probe record values. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1112,7 +1587,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1131,7 +1606,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134435 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext before 15.124.2 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that records bank clearance dates, which checks only a broad role permission before writing to caller-named payment documents. Authenticated Accounts Users can send crafted requests naming payment documents of other companies, outside their User Permissions, or already submitted, to alter clearance dates and compromise bank reconciliation integrity. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134435 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext before 15.124.2 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that records bank clearance dates, which checks only a broad role permission before writing to caller-named payment documents. Authenticated Accounts Users can send crafted requests naming payment documents of other companies, outside their User Permissions, or already submitted, to alter clearance dates and compromise bank reconciliation integrity. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1144,7 +1619,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1163,7 +1638,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:09+00:00",
-      "summary": "CVE ID : CVE-2026-134434 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 16.0.0 before 16.36.0 contains a missing authorization vulnerability in a Manufacturing module endpoint that allows authenticated users to cancel Stock Reservation Entries without record-level write permission. Low-privilege attackers can send crafted requests naming manufacturing documents of other companies or outside their User Permissions to release reserved stock and disrupt stock allocation. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134434 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 16.0.0 before 16.36.0 contains a missing authorization vulnerability in a Manufacturing module endpoint that allows authenticated users to cancel Stock Reservation Entries without record-level write permission. Low-privilege attackers can send crafted requests naming manufacturing documents of other companies or outside their User Permissions to release reserved stock and disrupt stock allocation. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1176,7 +1651,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1369,7 +1844,7 @@
       "category": "Vulnerabilidades",
       "region": "Global",
       "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134433 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext before 15.124.2 and 16.x before 16.53.0 fails to enforce record-level authorization in several endpoints, reports and forms, allowing authenticated low-privilege users to access data beyond their role. Attackers can send crafted requests naming out-of-scope records to read other companies' financial, stock, pricing and contact data or make constrained changes to those records. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134433 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext before 15.124.2 and 16.x before 16.53.0 fails to enforce record-level authorization in several endpoints, reports and forms, allowing authenticated low-privilege users to access data beyond their role. Attackers can send crafted requests naming out-of-scope records to read other companies' financial, stock, pricing and contact data or make constrained changes to those records. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1382,7 +1857,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:40+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1394,107 +1869,14 @@
       ]
     },
     {
-      "id": "992fbba4fd675a309c0b",
-      "title": "CVE-2026-134432 - Frappe ERPNext 15.0.0 before 15.121.4 Missing Authorization in Stock Module Import Endpoint",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134432",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134432 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 15.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module import endpoint that does not check whether the caller may create inserted records or download a named file. Authenticated attackers, including portal users or users with no roles, can send crafted import requests to read file contents and create Serial No and Batch records. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134432"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "691e400f5853cbaaba21",
-      "title": "CVE-2026-134431 - Frappe ERPNext 7.0.0 before 15.122.0 SQL Injection via Sort Parameters",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134431",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134431 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 7.0.0 before 15.122.0 and 16.x before 16.50.0 contains an SQL injection vulnerability in endpoints that build part of a query from caller-supplied sort parameters without validation. Authenticated low-privilege users can send crafted requests whose sort parameter holds SQL that the database executes as part of the query, extracting sensitive information. Severity: 7.1 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134431"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
-      "id": "31df5bfed8d7c3f1445f",
-      "title": "CVE-2026-134430 - Frappe ERPNext 12.0.0 before 15.121.4 Unauthorized Private File Read in Accounts Module",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134430",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134430 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 12.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the parsed content of private import-format files without checking permission on the requested records. Authenticated attackers, including portal users or users without roles, can send crafted requests naming records outside their permitted scope to read those private files. Severity: 5.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134430"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
-      ]
-    },
-    {
       "id": "d4be60757f935fa19b45",
       "title": "CVE-2026-134429 - Frappe ERPNext before 15.121.4 Missing Authorization in CRM and Support Communications",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-134429",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134429 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a CRM and Support module endpoint that returns Communications of documents without checking whether the caller may read them. Authenticated attackers with a common operational role can send crafted requests naming out-of-scope records to read their email communications and relink them away from their original documents. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134429 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a CRM and Support module endpoint that returns Communications of documents without checking whether the caller may read them. Authenticated attackers with a common operational role can send crafted requests naming out-of-scope records to read their email communications and relink them away from their original documents. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1507,26 +1889,25 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
       "id": "1e08f5d83ed64551f222",
       "title": "CVE-2026-134428 - Frappe ERPNext 13.0.0 before 15.121.4 Missing Authorization in Stock Module Item Records",
       "url": "https://cvefeed.io/vuln/detail/CVE-2026-134428",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
+      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
+      "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:08+00:00",
-      "summary": "CVE ID : CVE-2026-134428 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 13.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns Item master records without checking whether the caller may read the requested records. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to retrieve complete item data including costing and purchase rates. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134428 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 13.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns Item master records without checking whether the caller may read the requested records. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to retrieve complete item data including costing and purchase rates. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1539,15 +1920,14 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
         "defensa"
       ],
       "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-        "CVEFeed.io — Últimas CVE"
+        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
       ]
     },
     {
@@ -1722,37 +2102,6 @@
       "kev": false,
       "related_sources": [
         "NVD CVE API"
-      ]
-    },
-    {
-      "id": "44371e962463cd6f08b8",
-      "title": "CVE-2026-134427 - Frappe ERPNext 15.53.0 before 15.121.4 Missing Authorization in Assets Module Endpoint",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134427",
-      "source": "CVEFeed.io — Últimas CVE",
-      "category": "Vulnerabilidades",
-      "region": "Global",
-      "published_at": "2026-11-21T17:17:07+00:00",
-      "summary": "CVE ID : CVE-2026-134427 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 15.53.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Assets module endpoint that returns cost and quantity fields of purchase and stock transactions without record-level permission checks. Authenticated users, including portal users or users with no roles, can send crafted requests naming out-of-scope records to read these fields. Severity: 5.3 | MEDIUM Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134427"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:34+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — Últimas CVE"
       ]
     },
     {
@@ -1937,7 +2286,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:06+00:00",
-      "summary": "CVE ID : CVE-2026-134418 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the taxes and charges of documents without checking record permissions. Authenticated users, including portal users or users with no roles, can request arbitrary document types and records to read tax rows beyond their permitted scope. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134418 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the taxes and charges of documents without checking record permissions. Authenticated users, including portal users or users with no roles, can request arbitrary document types and records to read tax rows beyond their permitted scope. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1950,7 +2299,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -1968,7 +2317,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:06+00:00",
-      "summary": "CVE ID : CVE-2026-134417 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 13.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns uploaded bank statement file content without checking record-level permissions. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming records outside their scope to read full statement file contents. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134417 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 13.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns uploaded bank statement file content without checking record-level permissions. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming records outside their scope to read full statement file contents. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -1981,7 +2330,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2173,7 +2522,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:05+00:00",
-      "summary": "CVE ID : CVE-2026-134411 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 11.1.7 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Regional module endpoint that returns private e-invoice files after checking only document-type permissions, not per-record User Permissions. Authenticated attackers with a common operational role can send crafted requests naming out-of-scope records to read other companies' private e-invoice files. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134411 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 11.1.7 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Regional module endpoint that returns private e-invoice files after checking only document-type permissions, not per-record User Permissions. Authenticated attackers with a common operational role can send crafted requests naming out-of-scope records to read other companies' private e-invoice files. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2186,7 +2535,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2523,7 +2872,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:03+00:00",
-      "summary": "CVE ID : CVE-2026-134404 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 6.3.0 before 15.124.0 and 16.x before 16.52.0 contains a missing authorization vulnerability in the customer and supplier portal list endpoint, which returns complete selling documents and RFQs without checking permission on the requested records. Authenticated attackers, including portal users or users without roles, can request out-of-scope records to read valuation, margin, and other bidder details. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134404 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 6.3.0 before 15.124.0 and 16.x before 16.52.0 contains a missing authorization vulnerability in the customer and supplier portal list endpoint, which returns complete selling documents and RFQs without checking permission on the requested records. Authenticated attackers, including portal users or users without roles, can request out-of-scope records to read valuation, margin, and other bidder details. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2536,7 +2885,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2554,7 +2903,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:03+00:00",
-      "summary": "CVE ID : CVE-2026-134399 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 8.11.1 before 15.124.0 and 16.x before 16.52.0 is missing an authorization check in print and portal views, which fail to apply desk users' User Permissions to customer documents. Authenticated desk users with an ordinary job role can send crafted requests naming records outside their permitted scope to read documents of customers their User Permissions exclude. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134399 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 8.11.1 before 15.124.0 and 16.x before 16.52.0 is missing an authorization check in print and portal views, which fail to apply desk users' User Permissions to customer documents. Authenticated desk users with an ordinary job role can send crafted requests naming records outside their permitted scope to read documents of customers their User Permissions exclude. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2567,7 +2916,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2759,7 +3108,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:02+00:00",
-      "summary": "CVE ID : CVE-2026-134393 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 10.1.41 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in a Manufacturing module endpoint that replaces BOMs without checking whether the caller may modify either BOM or the affected assemblies. Authenticated users who can create a BOM Update Log can send a crafted request naming two BOMs to replace the first with the second in every assembly site-wide. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134393 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 10.1.41 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in a Manufacturing module endpoint that replaces BOMs without checking whether the caller may modify either BOM or the affected assemblies. Authenticated users who can create a BOM Update Log can send a crafted request naming two BOMs to replace the first with the second in every assembly site-wide. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2772,7 +3121,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -2935,7 +3284,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:17:01+00:00",
-      "summary": "CVE ID : CVE-2026-134389 Published : Nov. 21, 2026, 5:17 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 6.18.0 before 15.124.0 and 16.x before 16.52.0 contains a missing authorization vulnerability in Payment Requests that lets authenticated Accounts User role holders read source documents they lack permission to access. Attackers can create a Payment Request through the generic record interface that references another company's document, then email its loaded content to an address they choose. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134389 Published : Nov. 21, 2026, 5:17 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 6.18.0 before 15.124.0 and 16.x before 16.52.0 contains a missing authorization vulnerability in Payment Requests that lets authenticated Accounts User role holders read source documents they lack permission to access. Attackers can create a Payment Request through the generic record interface that references another company's document, then email its loaded content to an address they choose. Severity: 8.5 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -2948,7 +3297,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3459,7 +3808,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-134372 Published : Nov. 21, 2026, 5:16 p.m. | 1 hour, 8 minutes ago Description : Frappe ERPNext 4.3.0 before 15.121.6 and 16.x before 16.37.0 contains an SQL injection vulnerability in an endpoint of the Selling and Buying modules, where a request value validated early can be overridden by caller-supplied data that reaches a database query unvalidated. Any authenticated user, including a portal user with no roles, can send crafted requests to extract sensitive data, including active session data, and take over other accounts such as administrators. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134372 Published : Nov. 21, 2026, 5:16 p.m. | 5 hours, 8 minutes ago Description : Frappe ERPNext 4.3.0 before 15.121.6 and 16.x before 16.37.0 contains an SQL injection vulnerability in an endpoint of the Selling and Buying modules, where a request value validated early can be overridden by caller-supplied data that reaches a database query unvalidated. Any authenticated user, including a portal user with no roles, can send crafted requests to extract sensitive data, including active session data, and take over other accounts such as administrators. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3472,7 +3821,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3490,7 +3839,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-134370 Published : Nov. 21, 2026, 5:16 p.m. | 1 hour, 8 minutes ago Description : Frappe Framework before 15.120.1 and 16.x before 16.33.1 contains a path traversal vulnerability in file attachment handling that permits arbitrary file read. Authenticated attackers holding a single ordinary role without write permissions can abuse attachment handling to read server files outside the application boundary. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134370 Published : Nov. 21, 2026, 5:16 p.m. | 5 hours, 8 minutes ago Description : Frappe Framework before 15.120.1 and 16.x before 16.33.1 contains a path traversal vulnerability in file attachment handling that permits arbitrary file read. Authenticated attackers holding a single ordinary role without write permissions can abuse attachment handling to read server files outside the application boundary. Severity: 8.3 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3503,7 +3852,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -3521,7 +3870,7 @@
       "category": "Vulnerabilidades de alta severidad",
       "region": "Global",
       "published_at": "2026-11-21T17:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-134367 Published : Nov. 21, 2026, 5:16 p.m. | 1 hour, 8 minutes ago Description : pypdf 2.4.2 before 7.0.0 contains a resource exhaustion vulnerability in its handling of XFA forms that allows attackers to cause excessive memory consumption. Attackers can supply a crafted PDF containing XFA forms with many small fields so that loading the forms consumes large amounts of memory, causing a denial of service. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
+      "summary": "CVE ID : CVE-2026-134367 Published : Nov. 21, 2026, 5:16 p.m. | 5 hours, 8 minutes ago Description : pypdf 2.4.2 before 7.0.0 contains a resource exhaustion vulnerability in its handling of XFA forms that allows attackers to cause excessive memory consumption. Attackers can supply a crafted PDF containing XFA forms with many small fields so that loading the forms consumes large amounts of memory, causing a denial of service. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
       "type": "article",
       "tags": [
         "vulnerabilidad"
@@ -3534,69 +3883,7 @@
       "priority_basis": [
         "clasificación inicial por defecto"
       ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
-      "id": "091379e89bf6e4019e15",
-      "title": "CVE-2026-134366 - pypdf before 7.0.0 Memory Exhaustion via Cross-Reference Streams with Identical Offsets",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134366",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-21T17:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-134366 Published : Nov. 21, 2026, 5:16 p.m. | 1 hour, 8 minutes ago Description : pypdf before 7.0.0 contains a resource exhaustion vulnerability that allows attackers to cause large memory usage by supplying crafted PDF cross-reference streams. Attackers can craft a PDF whose cross-reference stream offsets all point to one large object, exhausting memory in applications parsing the file. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134366"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
-      "sectors": [
-        "publico",
-        "privado",
-        "defensa"
-      ],
-      "related_sources": [
-        "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)"
-      ]
-    },
-    {
-      "id": "a0b77616ba4a1142f878",
-      "title": "CVE-2026-134364 - pypdf 3.7.1 before 7.0.0 Placeholder Recovery via File Identifier in Encrypted Documents",
-      "url": "https://cvefeed.io/vuln/detail/CVE-2026-134364",
-      "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
-      "category": "Vulnerabilidades de alta severidad",
-      "region": "Global",
-      "published_at": "2026-11-21T17:16:58+00:00",
-      "summary": "CVE ID : CVE-2026-134364 Published : Nov. 21, 2026, 5:16 p.m. | 1 hour, 8 minutes ago Description : pypdf 3.7.1 before 7.0.0 contains an information disclosure vulnerability that allows attackers to guess placeholders in encrypted templated documents by analyzing file identifiers. Attackers with a document sharing the same template and access to other documents' file identifiers can recover placeholder contents from encrypted PDFs. Severity: 8.7 | HIGH Visit the link for more details, such as CVSS details, affected products, timeline, and more...",
-      "type": "article",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-134364"
-      ],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-21T20:07:35+00:00",
+      "collected_at": "2026-11-22T00:21:41+00:00",
       "sectors": [
         "publico",
         "privado",
@@ -45605,34 +45892,6 @@
       ]
     },
     {
-      "id": "3c83563b2f3b61138cc9",
-      "title": "Transport for London breach exposes 265,000 Oyster card users' data",
-      "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data",
-      "source": "BleepingComputer",
-      "category": "Noticias de ciberseguridad",
-      "region": "Global",
-      "published_at": "2026-11-19T18:20:01+00:00",
-      "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]",
-      "type": "article",
-      "tags": [
-        "filtracion"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-19T18:41:10+00:00",
-      "sectors": [
-        "publico",
-        "privado"
-      ],
-      "related_sources": [
-        "BleepingComputer"
-      ]
-    },
-    {
       "id": "12cb9d02cbb3219f32eb",
       "title": "CVE-2026-133221: A flaw was found in Keycloak. An authenticated remote user with a pending required security action, such as configuring multi-factor authentication (MFA), can bypass the mandatory",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133221",
@@ -58904,11 +59163,12 @@
       "priority_basis": [
         "severidad crítica/CVSS ≥ 9"
       ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
+      "collected_at": "2026-11-22T00:22:00+00:00",
       "cvss": 9.2,
       "severity": "CRITICAL",
       "kev": false,
       "related_sources": [
+        "CVE List V5 — catálogo oficial (cambios recientes)",
         "NVD CVE API"
       ]
     },
@@ -143055,151 +143315,6 @@
       ]
     },
     {
-      "id": "9e7700a0a62afca10395",
-      "title": "CVE-2026-129353: A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a man",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129353",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-15T00:16:51+00:00",
-      "summary": "A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129353"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "d0acc862761245f34ba4",
-      "title": "CVE-2026-129352: A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the arg",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129352",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-14T23:16:48+00:00",
-      "summary": "A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\"",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129352"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "34ce5623965801708da3",
-      "title": "CVE-2026-129351: A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such m",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129351",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-14T23:16:47+00:00",
-      "summary": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129351"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "04c2f997e05236fa8edf",
-      "title": "CVE-2026-129456: In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is received from a neighbor",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129456",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-14T20:17:40+00:00",
-      "summary": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is received from a neighbor that has \"soft-reconfiguration inbound\" configured. A cache added to speed up attribute interning while processing the prefixes of an UPDATE checks whether an interned attribute set may be reused by comparing the parsed attributes with themselves, so the check always succeeds. Interning the parsed attributes for the Adj-RIB-In removes the Tunnel Encapsulation sub-TLVs from them, and the copy that bgpd then interns for the route reuses the cached attribute set, which still holds the sub-TLVs, without taking a reference on them. When the route is later replaced, withdrawn or cleared, for example when the session goes down, the sub-TLV chain is freed while still in use, and bgpd then reads it, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memor",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2026-129456"
-      ],
-      "priority_score": 32,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "severidad alta/CVSS ≥ 7"
-      ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
-      "cvss": 7.7,
-      "severity": "HIGH",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
-      "id": "73f0fda1728057bdca05",
-      "title": "CVE-2015-10149: Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine. read_session_id returns the cookie value as the session id witho",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-10149",
-      "source": "NVD CVE API",
-      "category": "Vulnerabilidades (NVD)",
-      "region": "Global",
-      "published_at": "2026-11-14T20:17:39+00:00",
-      "summary": "Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine. read_session_id returns the cookie value as the session id without checking its characters, and Dancer hands it to the session engine to load the session. A remote attacker may cause path traversal or injection in a session engine that uses the id in a file path, cache command or query without checking it.",
-      "type": "vulnerability",
-      "tags": [
-        "vulnerabilidad"
-      ],
-      "cves": [
-        "CVE-2015-10149"
-      ],
-      "priority_score": 45,
-      "priority_label": "media",
-      "priority_basis": [
-        "severidad crítica/CVSS ≥ 9"
-      ],
-      "collected_at": "2026-11-21T13:03:55+00:00",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "kev": false,
-      "related_sources": [
-        "NVD CVE API"
-      ]
-    },
-    {
       "id": "29ee56425863277adc24",
       "title": "FAA Orders Ground Stop For All Flights Across The U.S. (Updated)",
       "url": "https://www.twz.com/air/faa-orders-ground-stop-for-all-flights-across-the-u-s",
@@ -144280,62 +144395,6 @@
       ],
       "related_sources": [
         "Unit 42"
-      ]
-    },
-    {
-      "id": "12580e46c8f119b74879",
-      "title": "Ukraine Regretting White House-Brokered Temporary Ceasefire In Strategic Riverside Town Of Oleshky",
-      "url": "https://www.twz.com/news-features/ukraine-regretting-white-house-brokered-temporary-ceasefire-in-strategic-riverside-town-of-oleshky",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-11-11T21:23:00+00:00",
-      "summary": "Ukrainian officials are expressing concern that a renewed Russian military presence in Oleshky will result in new waves of attacks across the Dnipro River. The post Ukraine Regretting White House-Brokered Temporary Ceasefire In Strategic Riverside Town Of Oleshky appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-12T01:02:04+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
-      ]
-    },
-    {
-      "id": "dceb923a3b7487dfaa3d",
-      "title": "Plans To Fly Talon Blue CCA Drone From British Carrier Confirmed By Northrop Grumman",
-      "url": "https://www.twz.com/news-features/plans-to-fly-talon-blue-cca-drone-from-british-carrier-confirmed-by-northrop-grumman",
-      "source": "The War Zone (TWZ)",
-      "category": "Defensa / Inteligencia militar",
-      "region": "Estados Unidos / Global",
-      "published_at": "2026-11-11T20:30:40+00:00",
-      "summary": "The Royal Navy wants to infuse drone capabilities into its air wings and Talon Blue would be far more advanced than anything that has flown off the carriers yet. The post Plans To Fly Talon Blue CCA Drone From British Carrier Confirmed By Northrop Grumman appeared first on TWZ .",
-      "type": "article",
-      "tags": [
-        "defensa_militar"
-      ],
-      "cves": [],
-      "priority_score": 10,
-      "priority_label": "informativa",
-      "priority_basis": [
-        "clasificación inicial por defecto"
-      ],
-      "collected_at": "2026-11-12T01:02:04+00:00",
-      "sectors": [
-        "publico",
-        "defensa"
-      ],
-      "related_sources": [
-        "The War Zone (TWZ)"
       ]
     },
     {
@@ -225993,10 +226052,10 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "checked_at": "2026-11-21T20:07:15+00:00",
+      "checked_at": "2026-11-22T00:21:21+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-21T18:01:58+00:00",
-      "duration_ms": 93
+      "last_published_at": "2026-11-21T22:59:58+00:00",
+      "duration_ms": 114
     },
     {
       "source": "The Hacker News",
@@ -226101,12 +226160,12 @@
       "source": "The War Zone (TWZ)",
       "url": "https://www.twz.com/feed",
       "ok": true,
-      "count": 40,
+      "count": 38,
       "error": null,
-      "checked_at": "2026-11-21T20:07:22+00:00",
+      "checked_at": "2026-11-22T00:21:28+00:00",
       "http_status": 200,
       "last_published_at": "2026-11-21T18:11:09+00:00",
-      "duration_ms": 408
+      "duration_ms": 458
     },
     {
       "source": "CyberScoop",
@@ -226257,10 +226316,10 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-21T20:07:34+00:00",
+      "checked_at": "2026-11-22T00:21:40+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-21T17:45:12+00:00",
-      "duration_ms": 61
+      "last_published_at": "2026-11-21T20:16:35+00:00",
+      "duration_ms": 234
     },
     {
       "source": "CVEFeed.io — CVE altas y críticas (CVSS ≥ 8)",
@@ -226268,10 +226327,10 @@
       "ok": true,
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-21T20:07:35+00:00",
+      "checked_at": "2026-11-22T00:21:41+00:00",
       "http_status": 200,
-      "last_published_at": "2026-11-21T17:17:11+00:00",
-      "duration_ms": 38
+      "last_published_at": "2026-11-21T19:16:31+00:00",
+      "duration_ms": 70
     },
     {
       "source": "AssureStart — CVE de proveedores (CVSS ≥ 7)",
@@ -226298,28 +226357,28 @@
       "source": "NVD CVE API",
       "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
       "ok": true,
-      "count": 4602,
+      "count": 4607,
       "error": null,
-      "checked_at": "2026-11-21T20:07:40+00:00",
+      "checked_at": "2026-11-22T00:21:44+00:00",
       "http_status": 200,
-      "total_results": 4602,
+      "total_results": 4607,
       "partial": false,
-      "duration_ms": 15361
+      "duration_ms": 16350
     },
     {
       "source": "CVE List V5 — catálogo oficial (cambios recientes)",
       "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/delta.json",
       "ok": true,
-      "count": 1,
+      "count": 2,
       "error": null,
-      "checked_at": "2026-11-21T20:07:56+00:00",
+      "checked_at": "2026-11-22T00:22:01+00:00",
       "http_status": 200,
-      "batch_fetch_time": "2026-11-21T19:48:12.934Z",
-      "records_seen": 1,
-      "records_checked": 1,
+      "batch_fetch_time": "2026-11-22T00:08:42.482Z",
+      "records_seen": 2,
+      "records_checked": 2,
       "skipped_outside_lookback": 0,
       "partial": false,
-      "duration_ms": 145
+      "duration_ms": 47
     },
     {
       "source": "FIRST EPSS",
@@ -226327,17 +226386,17 @@
       "ok": true,
       "count": 2078,
       "error": null,
-      "checked_at": "2026-11-21T20:07:57+00:00",
-      "cves_requested": 199,
-      "epss_checked_at": "2026-11-21T20:07:57+00:00",
-      "duration_ms": 309
+      "checked_at": "2026-11-22T00:22:02+00:00",
+      "cves_requested": 9,
+      "epss_checked_at": "2026-11-22T00:22:02+00:00",
+      "duration_ms": 367
     }
   ],
   "notice": "Información recopilada de fuentes públicas. Verifica siempre el informe original. La presencia de una publicación no implica que todos sus datos estén confirmados.",
   "stats": {
-    "items_before_deduplication": 7146,
-    "items_after_deduplication": 7106,
-    "items_published": 7106,
+    "items_before_deduplication": 7150,
+    "items_after_deduplication": 7108,
+    "items_published": 7108,
     "items_stale_preserved": 0,
     "sources_ok": 34,
     "sources_total": 34
